@@ -20,4 +20,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.pillarIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.roleCards {
+  padding: 3rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.roleCard {
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.roleCard:hover {
+  transform: translateY(-4px);
+}
+
+.roleIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.community {
+  padding: 3rem 0;
+}
+
+.communityLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .communityLinks {
+    flex-direction: column;
+  }
 }

@@ -38,3 +38,13 @@ The site is automatically deployed to GitHub Pages using GitHub Actions.
 - **Trigger**: Any push to the `main` branch automatically triggers deployment
 - **Workflow**: See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for the deployment configuration
 - **Process**: Build → Deploy to GitHub Pages → Live in ~2-3 minutes
+
+## Contributing
+
+We welcome contributions from security practitioners, compliance experts, and engineers building connected devices! 
+
+- **📋 How to contribute**: See our [Contributing Guide](CONTRIBUTING.md)
+- **💡 Suggest improvements**: Open an [Issue](https://github.com/sbd-community/handbook/issues)
+- **💬 Ask questions**: Start a [Discussion](https://github.com/sbd-community/handbook/discussions)
+
+Whether you want to add implementation guides, fix typos, or suggest new topics, your contributions help make connected devices more secure.
