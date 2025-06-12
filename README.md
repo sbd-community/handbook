@@ -5,6 +5,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 ## Documentation
 
 - [Purpose & Positioning Statement](purpose-and-positioning.md) - Mission, audience, and strategic vision
+- [Navigation Structure](navigation-structure.md) - Proposed site structure and user journeys (draft)
 - [Content & Brand Style Guide](style-guide.md) - Editorial standards and guidelines for contributors
 
 ## Installation
