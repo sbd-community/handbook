@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Secure-by-Design Handbook',
+  tagline: 'Authoritative standards breakdowns and practical playbooks for building cyber-resilient connected devices',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sbd-community/handbook/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -56,7 +56,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sbd-community/handbook/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -73,9 +73,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Secure-by-Design Handbook',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Secure-by-Design Handbook Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -83,11 +83,17 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Standards',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Playbooks',
+        },
+        {to: '/blog', label: 'Resources', position: 'left'},
+        {
+          href: 'https://github.com/sbd-community/handbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -97,11 +103,36 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Standards',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Cyber-Resilience Act',
+              to: '/docs/standards/cra-overview',
+            },
+            {
+              label: 'NIS 2 Directive',
+              to: '/docs/standards/nis2-overview',
+            },
+            {
+              label: 'ETSI EN 303 645',
+              to: '/docs/standards/en303645-overview',
+            },
+          ],
+        },
+        {
+          title: 'Implementation',
+          items: [
+            {
+              label: 'Secure Boot',
+              to: '/docs/playbooks/secure-boot',
+            },
+            {
+              label: 'SBOM & VEX',
+              to: '/docs/playbooks/sbom-vex',
+            },
+            {
+              label: 'OTA Updates',
+              to: '/docs/playbooks/ota-updates',
             },
           ],
         },
@@ -109,34 +140,21 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/sbd-community/handbook',
+            },
+            {
+              label: 'Contribute',
+              to: '/docs/contribute',
+            },
+            {
+              label: 'Glossary',
+              to: '/docs/glossary',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Secure-by-Design Handbook contributors. Licensed under CC BY-SA 4.0.`,
     },
     prism: {
       theme: prismThemes.github,
