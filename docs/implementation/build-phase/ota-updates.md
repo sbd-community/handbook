@@ -1,3 +1,8 @@
+---
+title: "Secure OTA Updates"
+sidebar_label: "OTA Updates"
+---
+
 # Secure OTA Updates
 
 **Status**: Coming soon

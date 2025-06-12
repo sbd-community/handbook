@@ -1,3 +1,8 @@
+---
+title: "Secure Boot Implementation Playbook"
+sidebar_label: "Secure Boot"
+---
+
 # Secure Boot Implementation Playbook
 
 **Status**: Coming soon

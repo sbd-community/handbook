@@ -81,17 +81,34 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'quickStartSidebar',
+          position: 'left',
+          label: 'Quick Start',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'standardsSidebar',
           position: 'left',
           label: 'Standards',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'implementationSidebar',
           position: 'left',
-          label: 'Playbooks',
+          label: 'Implementation',
         },
-        {to: '/blog', label: 'Resources', position: 'left'},
+        {
+          type: 'docSidebar',
+          sidebarId: 'templatesSidebar',
+          position: 'left',
+          label: 'Templates',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'resourcesSidebar',
+          position: 'left',
+          label: 'Resources',
+        },
         {
           href: 'https://github.com/sbd-community/handbook',
           label: 'GitHub',
@@ -103,19 +120,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Standards',
+          title: 'Quick Start',
           items: [
             {
-              label: 'Cyber-Resilience Act',
-              to: '/docs/standards/cra-overview',
+              label: 'How to Use Handbook',
+              to: '/docs/quick-start/how-to-use-handbook',
             },
             {
-              label: 'NIS 2 Directive',
-              to: '/docs/standards/nis2-overview',
+              label: 'CRA 5-Minute Primer',
+              to: '/docs/quick-start/cra-primer',
             },
             {
-              label: 'ETSI EN 303 645',
-              to: '/docs/standards/en303645-overview',
+              label: 'First Sprint Checklist',
+              to: '/docs/quick-start/first-sprint-checklist',
             },
           ],
         },
@@ -124,15 +141,15 @@ const config: Config = {
           items: [
             {
               label: 'Secure Boot',
-              to: '/docs/playbooks/secure-boot',
+              to: '/docs/implementation/build-phase/secure-boot',
             },
             {
               label: 'SBOM & VEX',
-              to: '/docs/playbooks/sbom-vex',
+              to: '/docs/implementation/build-phase/sbom-vex',
             },
             {
-              label: 'OTA Updates',
-              to: '/docs/playbooks/ota-updates',
+              label: 'Vulnerability Disclosure',
+              to: '/docs/implementation/operate-phase/vulnerability-disclosure',
             },
           ],
         },
@@ -149,7 +166,7 @@ const config: Config = {
             },
             {
               label: 'Glossary',
-              to: '/docs/glossary',
+              to: '/docs/resources/glossary',
             },
           ],
         },

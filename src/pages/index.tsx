@@ -21,13 +21,13 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/standards/cra-overview">
-            What the Cyber-Resilience Act means
+            to="/docs/quick-start/cra-primer">
+            CRA 5-Minute Primer
           </Link>
           <Link
             className="button button--primary button--lg"
-            to="/docs/playbooks/secure-boot">
-            Implementation Playbooks
+            to="/docs/implementation/build-phase/secure-boot">
+            Implementation Guides
           </Link>
         </div>
       </div>
@@ -82,21 +82,21 @@ function RoleBasedCards(): ReactNode {
       title: 'Compliance Lead',
       description: 'Start with regulatory gap analysis',
       cta: 'Get CRA Checklist',
-      link: '/docs/checklists/cra-gap-analysis',
+      link: '/docs/templates/cra-gap-analysis',
       icon: '⚖️'
     },
     {
       title: 'Firmware Engineer',
       description: 'Jump into secure implementation',
       cta: 'Secure Boot Quick-Start',
-      link: '/docs/playbooks/secure-boot',
+      link: '/docs/implementation/build-phase/secure-boot',
       icon: '⚙️'
     },
     {
       title: 'DevOps Engineer',
       description: 'Harden your CI/CD pipeline',
       cta: 'CI/CD Security Guide',
-      link: '/docs/playbooks/cicd-hardening',
+      link: '/docs/implementation/operate-phase/cicd-hardening',
       icon: '🚀'
     }
   ];

@@ -1,3 +1,8 @@
+---
+title: "CI/CD Pipeline Hardening"
+sidebar_label: "CI/CD Security"
+---
+
 # CI/CD Pipeline Hardening
 
 **Status**: Coming soon

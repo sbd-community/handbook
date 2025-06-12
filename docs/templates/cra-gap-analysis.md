@@ -1,3 +1,8 @@
+---
+title: "CRA Gap Analysis Checklist"
+sidebar_label: "CRA Gap Analysis"
+---
+
 # CRA Gap Analysis Checklist
 
 **Status**: Coming soon

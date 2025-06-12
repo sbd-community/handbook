@@ -2,54 +2,71 @@
 
 **Aim**: clear, role‑oriented path from landing to implementation material.
 
+---
+
 ## Top‑level menu
 
-1. **Home** – Hero value prop, latest posts, search bar.
+1. **Quick Start**
 
-2. **Standards Overview**
-   - Cyber‑Resilience Act (CRA)
-   - NIS 2 Directive
-   - ETSI EN 303 645
-   - IEC 62443 Series
-   - Other Regional Schemes (UK PSTI, US NTIA SBOM)
+   * “How to use this handbook”
+   * CRA 5‑minute primer
+   * First‑sprint checklist
+2. **Standards & Regulations**
 
-3. **Implementation Playbooks**
-   - Secure Boot & Root of Trust
-   - Key Provisioning & Storage
-   - SBOM & VEX Workflows
-   - Secure Update / OTA
-   - Hardening the Cloud Back‑End
+   * **EU**
 
-4. **Lifecycle & Operations**
-   - Vulnerability Disclosure & CVE Flow
-   - Patch Management Cadence
-   - Incident Response Integration
-   - Continuous Compliance (CI/CD)
+     * Cyber‑Resilience Act (CRA)
+     * NIS 2 Directive
+   * **International**
 
+     * IEC 62443 series
+   * **Consumer IoT**
+
+     * ETSI EN 303 645
+   * **Regional**
+
+     * UK PSTI • US SBOM rules
+3. **Implementation Guides**
+
+   * **Build Phase**
+
+     * Secure Boot & Root of Trust
+     * Key Provisioning & Storage
+     * SBOM & VEX Generation
+     * Secure Update / OTA
+   * **Operate Phase**
+
+     * Patch Cadence & Rollback
+     * Vulnerability Disclosure (CVD)
+     * Continuous Compliance (CI/CD)
+4. **Templates & Checklists**
+
+   * Gap‑analysis worksheets
+   * Audit evidence pack
+   * Policy templates (CVD, update cadence)
 5. **Resources**
-   - Checklists & Templates
-   - Maturity Model Worksheets
-   - Reference Architectures (PDF/SVG)
-   - Tooling Directory
 
-6. **Glossary** – Acronyms & definitions.
+   * Glossary
+   * Maturity‑model worksheets
+   * Tool Directory
+   * Reference Architectures (PDF/SVG)
 
-7. **About / Contribute** – Mission, contributor guide, contact.
+### Secondary elements
 
-## Secondary elements
+* **Search** (global, top‑right)
+* **Breadcrumbs** on article pages
+* **Footer quick links**: GitHub repo, Discussions, RSS, Privacy, Licence.
 
-- **Search** (global, top‑right)
-- **Breadcrumbs** on article pages
-- **Footer quick links**: Privacy, Licences, RSS, GitHub repo, LinkedIn.
+---
 
 ## User journeys
 
-| Persona | Likely path |
-|---------|-------------|
-| Compliance Lead | Home → Standards Overview → CRA → Download Gap Checklist |
-| Firmware Engineer | Home → Implementation Playbooks → Secure Boot & Root of Trust |
-| DevOps | Home → Lifecycle & Ops → Continuous Compliance |
-| CTO / Decision‑maker | Home → Standards Overview → Maturity Model → Contact |
+| Persona              | Likely path                                                                       |
+| -------------------- | --------------------------------------------------------------------------------- |
+| Compliance Lead      | Quick Start → CRA primer → Templates & Checklists                                 |
+| Firmware Engineer    | Standards & Regulations → CRA → Implementation Guides → Build Phase → Secure Boot |
+| DevOps               | Implementation Guides → Operate Phase → Continuous Compliance                     |
+| CTO / Decision‑maker | Quick Start → Maturity model → Contact                                            |
 
 ---
 

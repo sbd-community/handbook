@@ -1,0 +1,8 @@
+{
+  "label": "Build Phase",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Implementation guides for the development and build phase of connected devices."
+  }
+} 

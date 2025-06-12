@@ -1,3 +1,8 @@
+---
+title: "SBOM & VEX Workflows"
+sidebar_label: "SBOM & VEX"
+---
+
 # SBOM & VEX Workflows
 
 **Status**: Coming soon
