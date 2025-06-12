@@ -145,7 +145,7 @@ const config: Config = {
             },
             {
               label: 'Contribute',
-              to: '/docs/contribute',
+              href: 'https://github.com/sbd-community/handbook/blob/main/CONTRIBUTING.md',
             },
             {
               label: 'Glossary',
