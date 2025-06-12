@@ -77,6 +77,7 @@ const config: Config = {
       logo: {
         alt: 'Secure-by-Design Handbook Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo.svg',
       },
       items: [
         {
