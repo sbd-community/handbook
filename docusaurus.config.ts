@@ -73,7 +73,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Secure-by-Design Handbook',
+      title: 'Secure-By-Design',
       logo: {
         alt: 'Secure-by-Design Handbook Logo',
         src: 'img/logo.svg',
