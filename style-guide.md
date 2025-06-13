@@ -55,7 +55,7 @@ Provide a glossary page and link from first usage.
 
 - Keep paragraphs ≤ 120 words.
 - Break complex sequences into ordered lists.
-- Use tables for clause mappings; keep ≤ 6 columns.
+- Use tables for clause mappings; keep ≤ 4 columns for mobile readability.
 
 ### Call‑outs
 
@@ -77,6 +77,7 @@ Include full example artefacts in repo `/examples/` and link inline.
 ## 7. Citation & References
 
 - **Standards**: include document number, part, and clause (e.g., EN 303 645 §5.2).
+- **Legal citations**: when quoting EU regulations, cite Article and paragraph (e.g., Art. 53 §2).
 - **External links**: markdown footnotes or inline [text](url); open in new tab.
 - For long reference tables, link to downloadable CSV/Excel.
 
