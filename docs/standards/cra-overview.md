@@ -52,37 +52,37 @@ The consolidated version is easier for clause citations, but in case of doubt th
 
 ### 2.1 Statutory definition
 
-A **product with digital elements (PDE)** is *“any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network”* ([Art 3 § 1][cra_art3]).
+A **product with digital elements (PDE)** is *"any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network"* ([Art 3 § 1][cra_art3]).
 
-A **remote data-processing solution** is the cloud or back-end essential to the PDE’s core function ([Art 3 § 2][cra_art3]). Stand-alone SaaS without a hardware or software client **is not** a PDE.
+A **remote data-processing solution** is the cloud or back-end essential to the PDE's core function ([Art 3 § 2][cra_art3]). Stand-alone SaaS without a hardware or software client **is not** a PDE.
 
 ### 2.2 In-scope examples (non-exhaustive)
 
 | Category | Example PDE | Why it falls in scope |
 |----------|-------------|-----------------------|
-| Consumer IoT | Smart lock, robot vacuum, wearable fitness band | Network-connected + embedded software |
-| Enterprise & IT | Office router, managed switch, remote-access VPN client | Annex III lists “network management” devices as critical |
-| Industrial | Programmable-logic controller (PLC), smart meter | Part of critical infrastructure; remote data-processing portal counts |
-| Software-only | Desktop password manager, mobile messaging app | Art 3 includes *software placed on the market independently* |
-| Firmware | Microcontroller firmware blob sold to OEMs | Firmware ≡ software product (Recital 19) |
+| Consumer IoT | Smart lock, robot vacuum, wearable fitness band | Network-connected + embedded software ([Art 3 § 1][cra_art3]) |
+| Enterprise & IT | Office router, managed switch, remote-access VPN client | Annex III lists "network management" devices as critical ([Annex III][cra_annexIII]) |
+| Industrial | Programmable-logic controller (PLC), smart meter | Critical infrastructure devices fall under Annex III class II ([Annex III][cra_annexIII]) |
+| Software-only | Desktop password manager, mobile messaging app | Stand-alone software placed on the market → PDE by definition ([Art 3 § 1][cra_art3]) |
+| Firmware | Microcontroller firmware blob sold to OEMs | Firmware is expressly software in scope ([Art 3 § 1][cra_art3]) |
 
 ### 2.3 Out-of-scope & special regimes
 
 | Excluded or separate regime | Legal reason |
 |-----------------------------|--------------|
 | Medical devices | Already covered by **MDR** 2017/745 ([CRA Art 2 § 2 a][cra_art2]) |
-| Automotive ECUs | Covered by Vehicle Type-Approval Reg 2018/858 |
-| Aviation & drones | EASA cyber rules override (CRA Art 2 § 4 f) |
-| Defence & national security items | Art 2 § 5 |
-| Non-commercial OSS distributed “as is” | Recital 10 + Art 2 § 6 |
-| Pure SaaS (no local client) | Does not meet PDE definition (Art 3 § 2) |
+| Automotive ECUs | Covered by Vehicle Type-Approval rules ([CRA Art 2 § 4][cra_art2]) |
+| Aviation & drones | EASA cyber rules override ([CRA Art 2 § 4 f][cra_art2]) |
+| Defence & national security items | Excluded ([CRA Art 2 § 5][cra_art2]) |
+| Non-commercial OSS distributed "as is" | Exempt when no commercial support ([CRA Recital 10][cra_rec10]) |
+| Pure SaaS (no local client) | Not a PDE – remote data processing alone not sufficient ([Art 3 § 2][cra_art3]) |
 
 ### 2.4 Conformity-assessment classes (Annex III)
 
 | Class | Typical devices | Assessment route |
 |-------|-----------------|------------------|
 | **Class I** (default risk) | Smart bulbs, fitness bands, desktop apps | Self-assessment (Module A) |
-| **Class II** (“critical”) | Routers, firewalls, PLCs, smart meters | Notified-Body audit (Modules B + C or H) |
+| **Class II** (“critical”) | Routers, firewalls, PLCs, smart meters | Notified-Body audit per Annex III ([Annex III][cra_annexIII]) |
 
 > **Shortcut:** If your device is in an Annex III list or has a *direct* network-management function, assume **Class II** until proven otherwise.
 
@@ -145,9 +145,13 @@ Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN
 [cra_art64]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_64 "CRA Article 64 – Penalties"
 [cra_art71]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71 "CRA Article 71 – Entry into force & application"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[cra_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_III "CRA Annex III – Critical product classes"
+[cra_rec10]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_10 "CRA Recital 10 – OSS without commercial support"
 [cra_rec15]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_15 "CRA Recital 15 – NIS 2 interplay"
+[cra_rec19]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_19 "CRA Recital 19 – Software in scope"
 [cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – RED reference"
 [cra_rec89]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_89 "CRA Recital 89 – CE reference"
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_del]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – security clauses for radio equipment"
+
