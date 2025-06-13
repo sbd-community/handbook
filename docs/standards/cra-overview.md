@@ -7,20 +7,20 @@ tags: [cra, compliance, eu, secure-by-design]
 
 ## 1. Why the CRA matters now
 
-The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU’s first horizontal law that *legally mandates secure-by-design* for every **“product with digital elements” (PDE)**.
+The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates secure-by-design* for every **"product with digital elements" (PDE)**.
 
-| CRA milestone                                        | Legal source | Date                                                            |
-| ---------------------------------------------------- | ------------ | --------------------------------------------------------------- |
-| Text adopted by Parliament & Council                 | Art. 75      | **2024-10-23**                                                  |
-| Published in the *Official Journal* (OJ L 2024/2847) | OJ link      | **2024-11-20** ([eur-lex.europa.eu][1])                         |
-| Regulation entered into force (Art. 76 §1 + 20 days) | Art. 76      | **2024-12-10** ([eur-lex.europa.eu][1], [eur-lex.europa.eu][2]) |
-| Main obligations apply (24-month “grace” + 20 d)     | Art. 76 §2   | **2027-12-11** ([eur-lex.europa.eu][2])                         |
+| CRA milestone                                        | Legal basis | Date |
+| ---------------------------------------------------- | ----------- | ---- |
+| Text adopted by Parliament & Council                 | Signing date | **2024-10-23** |
+| Published in the *Official Journal* (OJ L 2024/2847) | [Official Journal link][oj] | **2024-11-20** |
+| Regulation entered into force (Art. 71 § 1 + 20 d)   | [Art. 71 § 1][art71] | **2024-12-10** |
+| Main obligations apply (Art. 71 § 2 + 24 m + 20 d)   | [Art. 71 § 2][art71] | **2027-12-11** |
 
 **What changes on 11 Dec 2027?**
 
 * You may not place *any* new PDE on the EU market unless it conforms to CRA Annex I and Annex II requirements.
 * **Market Surveillance Authorities** can force withdrawals or recalls of non-compliant products (Art. 41–45).
-* **Penalties**—set by each Member State but capped in the CRA—can reach **€15 000 000** *or* **2.5 % of global annual turnover**, whichever is higher (Art. 53 §2). ([eur-lex.europa.eu][3])
+* **Penalties**—set by each Member State but capped in the CRA—can reach **€15 000 000** *or* **2.5 % of global annual turnover**, whichever is higher ([Art. 64 § 2][art64]).
 
 > **Take-away:** If your average embedded design cycle is ≥ 30 months, the 24-month grace period is already half-gone.
 
@@ -28,15 +28,16 @@ The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU�
 
 | Law                             | How it interacts with CRA                                                                                                              |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **NIS 2 Directive**             | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers of NIS-2 “essential” entities must comply with both. |
+| **NIS 2 Directive**             | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers of NIS-2 "essential" entities must comply with both. |
 | **RED Delegated Act (2022/30)** | Covers *radio* devices; CRA supersedes for broader security scope but RED requirements still apply to RF interfaces.                   |
 | **CE marking**                  | CRA adds a new CE presumption—compliance proof now needs security evidence (risk assessment, Annex I mapping).                         |
 
-<small>Authoritative text (consolidated): EUR-Lex ELI [https://data.europa.eu/eli/reg/2024/2847/oj](https://data.europa.eu/eli/reg/2024/2847/oj)</small>
+<small>Authoritative text (consolidated): EUR-Lex CELEX [02024R2847-20241120][consolidated]</small>
 
-[1]: https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng "Regulation - 2024/2847 - EN - EUR-Lex"
-[2]: https://eur-lex.europa.eu/eli/reg/2024/2847/oj/eng "Regulation - 2024/2847 - EN - EUR-Lex"
-[3]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A52022PC0454 "proposed Cyber Resilience Act - EUR-Lex - European Union"
+[consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120 "CRA consolidated text (20 Nov 2024)"
+[art71]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71 "CRA Article 71 – Entry into force & application"
+[art64]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_64 "CRA Article 64 – Penalties"
+[oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847 "Official Journal – OJ L 2024/2847, 20 Nov 2024 (HTML)"
 
 ---
 
@@ -75,10 +76,10 @@ The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU�
 
 | Clause (abridged) | Build-phase action | Operate-phase action | Evidence artefact |
 |-------------------|--------------------|----------------------|-------------------|
-| §1(2)(a) “No exploitable vulnerabilities” | SBOM diff & scan | Issue VEX within 24 h | SBOM + scan report |
-| §1(2)(c) “Secure-by-default config” | Hardened defaults | Cust. reset to factory | Config manifest |
-| §2(5) “CVD policy” | Publish CVD policy | Track disclosure KPI | CVD log |
-| §1(2)(f) “Logging & monitoring” | Enable tamper-proof logs | Retain SIEM ≥ 18 m | Log-pipeline diagram |
+| §1(2)(a) "No exploitable vulnerabilities" | SBOM diff & scan | Issue VEX within 24 h | SBOM + scan report |
+| §1(2)(c) "Secure-by-default config" | Hardened defaults | Cust. reset to factory | Config manifest |
+| §2(5) "CVD policy" | Publish CVD policy | Track disclosure KPI | CVD log |
+| §1(2)(f) "Logging & monitoring" | Enable tamper-proof logs | Retain SIEM ≥ 18 m | Log-pipeline diagram |
 
 *(A full clause-by-clause table will ship in our upcoming CRA Gap-Assessment workbook.)*
 
@@ -97,4 +98,4 @@ The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU�
 ---
 
 ### Authoritative reference  
-Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2847](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R2847)
+Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120)
