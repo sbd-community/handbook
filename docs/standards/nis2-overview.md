@@ -1,13 +1,15 @@
-# NIS 2 Directive Overview
+---
+title: NIS 2 Directive Overview
+sidebar_position: 2
+tags: [nis2, compliance, eu]
+---
+# NIS 2 Directive (EU 2022/2555) – Overview
 
-**Status**: Coming soon
+🚧 *This page is a stub.*
 
-This section will cover the NIS 2 Directive and its implications for connected device security:
+NIS 2 modernises the EU's cybersecurity obligations for 'essential' and 'important' entities. It introduces stricter risk-management measures and wider supervisory powers.
 
-- Scope and affected sectors
-- Cybersecurity risk management requirements
-- Incident reporting obligations
-- Supply chain security considerations
+Forthcoming content: scope checklist, timelines, overlap with the CRA, and a controls-mapping workbook.
 
 ## What to expect
 

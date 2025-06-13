@@ -1,4 +1,15 @@
-# ETSI EN 303 645 Overview
+---
+title: ETSI EN 303 645 Overview
+sidebar_position: 5
+tags: [en303645, iot, security]
+---
+# ETSI EN 303 645 – Consumer IoT Security Baseline
+
+🚧 *This page is a stub.*
+
+EN 303 645 defines baseline security requirements for consumer IoT devices and is referenced by many national schemes (UK PSTI, Singapore CLS, etc.).
+
+Content coming soon: requirement breakdown, test methods, and comparison with CRA Annex I.
 
 **Status**: Coming soon
 
