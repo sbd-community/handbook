@@ -105,8 +105,13 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Product & Category | Default | Important<br/>(Class I) | Important<br/>(Class II) | Critical |
 | :--- | :---: | :---: | :---: | :---: |
 | **Consumer** |
-| Smart speaker (no VA) | ✅ | | | |
+| Smart speaker (no virtual assistant) | ✅ | | | |
 | Smart TV | ✅ | | | |
+| Smart thermostat | ✅ | | | |
+| Smart refrigerator | ✅ | | | |
+| Smart doorbell (with no lock) | ✅ | | | |
+| Smart Lighting Controller/Hub | ✅ | | | |
+| Smartphone | ✅ | | | |
 | Smart speaker with virtual assistant ([Annex III.I.16][cra_annexIII]) | | ✅ | | |
 | Smart lock ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
 | Home alarm system ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
@@ -116,6 +121,9 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | **General IT** |
 | Printer | ✅ | | | |
 | Office Suite | ✅ | | | |
+| Laptop | ✅ | | | |
+| Network-Attached Storage (NAS) device | ✅ | | | |
+| Digital Signage Display | ✅ | | | |
 | Web browser ([Annex III.I.2][cra_annexIII]) | | ✅ | | |
 | Password manager ([Annex III.I.3][cra_annexIII]) | | ✅ | | |
 | SIEM ([Annex III.I.7][cra_annexIII]) | | ✅ | | |
@@ -125,6 +133,7 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Firewall ([Annex III.II.3][cra_annexIII]) | | | ✅ | |
 | Intrusion Detection System ([Annex III.II.2][cra_annexIII]) | | | ✅ | |
 | **Specialised H/W** |
+| Basic Barcode Scanner / RFID Reader | ✅ | | | |
 | Microprocessor w/ security features ([Annex III.I.14][cra_annexIII]) | | ✅ | | |
 | Tamper-resistant microprocessor ([Annex III.II.4][cra_annexIII]) | | | ✅ | |
 | Tamper-resistant microcontroller ([Annex III.II.5][cra_annexIII]) | | | ✅ | |
@@ -132,6 +141,7 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Smartcard / Secure Element ([Annex IV.3][cra_annexIV]) | | | | ✅ |
 | **Industrial (OT)** |
 | Non-critical IoT sensor | ✅ | | | |
+| Industrial IoT Temperature Sensor | ✅ | | | |
 | Industrial VPN gateway ([Annex III.I.5][cra_annexIII]) | | ✅ | | |
 | Industrial firewall ([Annex III.II.3][cra_annexIII]) | | | ✅ | |
 | Industrial IDS ([Annex III.II.2][cra_annexIII]) | | | ✅ | |
