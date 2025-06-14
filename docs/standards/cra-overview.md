@@ -50,90 +50,94 @@ The consolidated version is easier for clause citations, but in case of doubt th
 
 ## 2 Scope – which products are in?
 
-### 2.1 Statutory definition
+### 2.1 Statutory Definition & Interpretation
 
-A **product with digital elements (PDE)** is *"any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network"* ([Art 3 § 1][cra_art3]).  
-A **remote data-processing solution** is the cloud or back-end essential to the PDE's core function and **"designed and developed by, or under the responsibility of, the manufacturer"** ([Art 3 § 2][cra_art3]). Third-party SaaS that an OEM merely consumes is therefore out of scope for the CRA (though it may fall under NIS 2).
+#### Official Definition
+A **product with digital elements (PDE)** is *"any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network"* ([CRA Art. 3 § 1][cra_art3]). 
 
-### 2.2 In-scope examples (non-exhaustive)
+A **remote data-processing solution**, which is also in scope, is the cloud or back-end essential to the PDE's core function and *"designed and developed by, or under the responsibility of, the manufacturer"* ([CRA Art. 3 § 2][cra_art3], see also [CRA Recital 11][cra_rec11]).
 
-| Category | Example PDE | Why it falls in scope |
-|----------|-------------|-----------------------|
-| Consumer IoT | Smart lock, robot vacuum, wearable fitness band | Network-connected + embedded software ([Art 3 § 1][cra_art3]) |
-| Enterprise & IT | Office router, managed switch, remote-access VPN client | Annex III lists "network management" devices as critical ([Annex III][cra_annexIII]) |
-| Industrial | Programmable-logic controller (PLC), smart meter | Critical infrastructure devices fall under Annex III class II ([Annex III][cra_annexIII]) |
-| Software-only | Desktop password manager, mobile messaging app | Stand-alone software placed on the market → PDE by definition ([Art 3 § 1][cra_art3]) |
-| Firmware | Microcontroller firmware blob sold to OEMs | Firmware is expressly software in scope ([Art 3 § 1][cra_art3]) |
+#### Interpretation
+This broad definition effectively covers almost any modern electronic device or piece of software. It creates a two-part test:
 
-> **Note – purely offline hardware**: a device with **no logical or physical data pathway** to another device/network (e.g., a USB-powered lamp) is out of scope ([CRA Recital 9][cra_rec9]).
+1.  **Does it have "digital elements"?** This means does it contain a microprocessor, firmware, or software?
+2.  **Can it connect to something else?** This means does it have a "direct or indirect logical or physical data connection" to another device or network?
 
-### 2.3 Out-of-scope & special regimes
+Both conditions must be met.
 
-| Excluded or separate regime | Legal reason |
-|-----------------------------|--------------|
-| Medical devices | Already covered by **MDR** 2017/745 ([CRA Art 2 § 2 a][cra_art2]) |
-| Automotive ECUs | Covered by Vehicle Type-Approval rules ([CRA Art 2 § 4][cra_art2]) |
-| Aviation & drones | EASA cyber rules override ([CRA Art 2 § 4 f][cra_art2]) |
-| Defence & national security items | Excluded ([CRA Art 2 § 5][cra_art2]) |
-| Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 10][cra_rec10]). *If commercial support is later offered, CRA duties apply.* |
-| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [Art 20 § 8][cra_art20]) |
-| Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([Art. 32 § 5][cra_art32]). |
-| Pure SaaS (no local client) | Not a PDE – remote data processing alone not sufficient ([Art 3 § 2][cra_art3]) |
-| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([Art 71 § 3][cra_art71]) |
+- **Example 1: A "dumb" toaster with a digital timer but no connectivity.**
+  - *Digital elements?* **Yes** (firmware for the timer).
+  - *Connectable?* **No**.
+  - **Result: Out of scope.**
 
-### 2.4 Conformity Assessment — Which Route to Take?
+- **Example 2: A "smart" toaster with a Bluetooth app.**
+  - *Digital elements?* **Yes** (firmware, app, and the cloud service).
+  - *Connectable?* **Yes** (Bluetooth).
+  - **Result: In scope.** The manufacturer is responsible for the toaster, the app, and any back-end cloud service they provide that is essential for its function.
 
-The CRA mandates a conformity assessment before a CE mark can be affixed. The specific procedure depends on the product's risk class, which is determined by Annex III. **Article 32** lays out the possible routes.
+- **Example 3: A high-end toaster updated via USB stick.**
+  - *Digital elements?* **Yes** (firmware for new toast profiles).
+  - *Connectable?* **Yes**. (USB Stick)
+  - **Result: In scope.** The USB port is a physical data connection. The overall update process creates an *indirect connection* to the network where the firmware originated.
 
-**The Three-Step Classification Process:**
+### 2.2 Product Risk Classification (The Four Tiers)
 
-1.  **Check Annex III, Part II (Critical):** Does the product match any category here (e.g., OS, hypervisor, firewall)?
-    *   **Yes** → It is **Class II**. A third-party Notified Body audit is mandatory ([Art. 32 § 3][cra_art32]).
-2.  **Check Annex III, Part I (Important):** If not Class II, does it match a category here (e.g., VPN client, password manager)?
-    *   **Yes** → It is **Class I**.
-3.  **Unlisted Products:** If the product is not in Part I or Part II, it falls into the default category.
-    *   **Result** → It is **Class I**.
+The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [Annex III][cra_annexIII] or [Annex IV][cra_annexIV] of the regulation.
 
-**Assessment Routes per Class:**
+- **Default Category (Unclassified):** This is the baseline tier for the vast majority (~90%) of products with digital elements. It covers any product **not listed** in Annex III or Annex IV.
+    - **Assessment:** Manufacturers can typically perform a self-assessment (**Module A**).
+    - *Example:* A smart toaster, connected toy, or a general-purpose software library.
+
+- **Important Products — Class I:** This tier covers products listed in **[Annex III, Part I][cra_annexIII]**. These products perform functions critical to cybersecurity or pose a significant risk of disruption ([CRA Art. 7 § 2][cra_art7]).
+    - **Assessment:** Self-assessment (**Module A**) is possible *if* the manufacturer fully applies relevant harmonised standards. Otherwise, a third-party audit is required ([CRA Art. 32 § 2][cra_art32]).
+    - *Examples (from Annex III, Part I):* Identity management systems, password managers, web browsers, smart home products with security functions (e.g., smart locks).
+
+- **Important Products — Class II:** This tier covers a smaller list of higher-risk products defined in **[Annex III, Part II][cra_annexIII]**.
+    - **Assessment:** A third-party audit by a Notified Body is **mandatory** ([CRA Art. 32 § 3][cra_art32]).
+    - *Examples (from Annex III, Part II):* Hypervisors, firewalls, industrial intrusion detection systems, tamper-resistant microprocessors.
+
+- **Critical Products:** The highest risk tier, for products listed in **[Annex IV][cra_annexIV]**. These are products upon which the EU's critical infrastructure (as defined in NIS 2) may depend, or whose failure could disrupt critical supply chains ([CRA Art. 8 § 2][cra_art8]).
+    - **Assessment:** The Commission may require a mandatory **European cybersecurity certificate** at assurance level 'substantial' or higher. If no such scheme is mandated, these products follow the same rules as Class II ([CRA Art. 32 § 4][cra_art32]).
+    - *Examples (from Annex IV):* Hardware Security Modules (HSMs), smart meter gateways, smartcards.
+
+The table below provides a non-exhaustive list of examples mapping product categories to the four risk tiers:
+
+| Product Category | Default Examples | Important (Class I) Examples | Important (Class II) Examples | Critical (Annex IV) Examples |
+:--- | :--- | :--- | :--- | :--- |
+| **Consumer** | Smart speaker (no VA)<br/>Smart TV | Smart speaker with virtual assistant ([Annex III.I.16][cra_annexIII])<br/>Smart lock ([Annex III.I.17][cra_annexIII])<br/>Home alarm system ([Annex III.I.17][cra_annexIII])<br/>Baby monitor ([Annex III.I.17][cra_annexIII])<br/>Fitness band ([Annex III.I.19][cra_annexIII])<br/>Connected toy ([Annex III.I.19][cra_annexIII]) | n/a | n/a |
+| **General IT** | Printer<br/>Office Suite | Web browser ([Annex III.I.2][cra_annexIII])<br/>Password manager ([Annex III.I.3][cra_annexIII])<br/>SIEM ([Annex III.I.7][cra_annexIII])<br/>Operating System ([Annex III.I.12][cra_annexIII])<br/>Router / Modem ([Annex III.I.13][cra_annexIII]) | Hypervisor / Container runtime ([Annex III.II.1][cra_annexIII])<br/>Firewall ([Annex III.II.3][cra_annexIII])<br/>Intrusion Detection System ([Annex III.II.2][cra_annexIII]) | n/a |
+| **Specialised H/W**| n/a | Microprocessor w/ security features ([Annex III.I.14][cra_annexIII]) | Tamper-resistant microprocessor ([Annex III.II.4][cra_annexIII])<br/>Tamper-resistant microcontroller ([Annex III.II.5][cra_annexIII]) | HSM ([Annex IV.1][cra_annexIV])<br/>Smartcard / Secure Element ([Annex IV.3][cra_annexIV]) |
+| **Industrial (OT)**| Non-critical IoT sensor | Industrial VPN gateway ([Annex III.I.5][cra_annexIII]) | PLC<br/>Industrial firewall ([Annex III.II.3][cra_annexIII])<br/>Industrial IDS ([Annex III.II.2][cra_annexIII]) | Smart meter gateway ([Annex IV.2][cra_annexIV]) |
+| **Component** | General-purpose library | Firmware for a Class I product | Firmware for a Class II product | n/a |
+
+### 2.3 Conformity Assessment Routes
+
+The specific conformity assessment procedure required by the CRA depends directly on the product's risk class. **Article 32** lays out the possible routes:
 
 | Class | Conditions | Assessment Procedure |
 |---|---|---|
-| **Class I** | **Default path:** The manufacturer follows relevant **harmonised standards** or an EU cybersecurity certification scheme. | **Module A** (Internal Control) → Manufacturer performs self-assessment ([Art. 32 § 1][cra_art32]). |
-| | **Exception:** The manufacturer does **not** follow harmonised standards or a relevant certification scheme. | **Modules B+C** or **Module H** → Mandatory third-party audit by a Notified Body ([Art. 32 § 2][cra_art32]). |
-| **Class II** | All Class II products. | **Modules B+C** or **Module H** → Mandatory third-party audit by a Notified Body ([Art. 32 § 3][cra_art32]). |
+| **Default** | All unclassified products. | **Module A** (Internal Control) → Manufacturer performs self-assessment ([CRA Art. 32 § 1][cra_art32]). |
+| **Important (Class I)** | Manufacturer fully applies harmonised standards or a relevant certification scheme. | **Module A** (Internal Control) → Manufacturer performs self-assessment. |
+| | Manufacturer does **not** fully apply harmonised standards or a scheme. | **Modules B+C** or **Module H** → Mandatory third-party audit by a Notified Body ([CRA Art. 32 § 2][cra_art32]). |
+| **Important (Class II)** | All Class II products. | **Modules B+C** or **Module H** → Mandatory third-party audit by a Notified Body ([CRA Art. 32 § 3][cra_art32]). |
+| **Critical (Annex IV)** | Commission mandates a specific European Cybersecurity Certification Scheme. | Mandatory certification under the specified scheme. |
+| | No scheme is mandated by the Commission. | **Modules B+C** or **Module H** → Mandatory third-party audit by a Notified Body (same as Class II) ([CRA Art. 32 § 4][cra_art32]). |
 
-> **Key takeaway:** For Class I products, following harmonised standards is the express lane to self-assessment. Ignoring them means you face the same third-party audit burden as a Class II product.
+> **Key takeaway:** For Class I products, following harmonised standards is the express lane to self-assessment. For all higher classes, some form of third-party assessment is either likely or mandatory.
 
-Below is a *non-exhaustive* cheat-sheet mapping common device types to the two tiers. The Annex III reference numbers let you cross-check in the legal text.
+### 2.4 Out-of-scope & special regimes
 
-#### Annex III — Part I (Important ⇢ Class I)
-
-- (1) Identity- and access-management software/hardware (e.g., SSO platforms).  
-- (5) **VPN clients & gateways** — included in the Important tier.  
-- (10) **Password managers** and credential vaults.  
-- (11) Development tools such as IDEs, code repositories.  
-- (14) Backup & restore software.
-
-#### Annex III — Part II (Critical ⇢ Class II)
-
-- (2) **Hypervisors** and virtualisation platforms.  
-- (3) Operating systems and kernel-level components.  
-- (8) **Network IDS/IPS** and deep-packet-inspection (DPI) tools.  
-- (12) Cloud-service orchestration & management planes.  
-- (15) Industrial control systems for critical infrastructure.
-
-##### Quick examples
-
-| Product example | Likely tier | Why |
-|-----------------|-------------|-----|
-| Smart bulb, fitness band | Class I | Not listed — default Important tier |
-| **VPN client** | Class I | Explicit Part I point 5 |
-| **Password manager** | Class I | Explicit Part I point 10 |
-| Router, firewall | Class II | Network boundary devices in Part II point 1 |
-| **Hypervisor** | Class II | Virtualisation platforms in Part II point 2 |
-| **Network IDS** | Class II | IDS/IPS in Part II point 8 |
-
-> **Tip:** Keep a one-page lookup of Annex III and your product catalogue. During design reviews, flag any features that could push a device from Important to Critical.
+| Excluded or separate regime | Legal reason |
+|-----------------------------|--------------|
+| Medical devices | Already covered by **MDR** 2017/745 ([CRA Art. 2 § 2(a)][cra_art2]) |
+| Automotive ECUs | Covered by Vehicle Type-Approval rules ([CRA Art. 2 § 4][cra_art2]) |
+| Aviation & drones | EASA cyber rules override ([CRA Art. 2 § 4(f)][cra_art2]) |
+| Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
+| Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 10][cra_rec10]). *If commercial support is later offered, CRA duties apply.* |
+| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 20 § 8][cra_art20]) |
+| Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
+| Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
+| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 71 § 3][cra_art71]) |
 
 ---
 
@@ -182,6 +186,8 @@ Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN
 [cra_chIV]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#cpt_IV "CRA Chapter IV – Notification of Conformity Assessment Bodies"
 [cra_art2]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_2 "CRA Article 2 – Scope"
 [cra_art3]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_3 "CRA Article 3 – Definitions"
+[cra_art7]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_7 "CRA Article 7 – Important products with digital elements"
+[cra_art8]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_8 "CRA Article 8 – Critical products with digital elements"
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
 [cra_art16]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_16 "CRA Article 16 – Single reporting platform"
 [cra_art18]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_18 "CRA Article 18 – Authorised representatives"
@@ -195,9 +201,12 @@ Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN
 [cra_art64]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_64 "CRA Article 64 – Penalties"
 [cra_art71]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71 "CRA Article 71 – Entry into force & application"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[cra_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_III "CRA Annex III – Critical product classes"
+[cra_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_III "CRA Annex III – Important products with digital elements"
+[cra_annexIV]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_IV "CRA Annex IV – Critical products with digital elements"
 [cra_rec9]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_9 "CRA Recital 9 – Connection requirement"
 [cra_rec10]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_10 "CRA Recital 10 – OSS without commercial support"
+[cra_rec11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_11 "CRA Recital 11 – Remote data processing"
+[cra_rec12]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_12 "CRA Recital 12 – Cloud services vs remote data processing"
 [cra_rec15]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_15 "CRA Recital 15 – NIS 2 interplay"
 [cra_rec19]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_19 "CRA Recital 19 – Software in scope"
 [cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – RED reference"
@@ -205,3 +214,4 @@ Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_del]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – security clauses for radio equipment"
+
