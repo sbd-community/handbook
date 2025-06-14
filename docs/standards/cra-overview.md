@@ -102,13 +102,42 @@ The CRA establishes a four-tier risk classification system. A product's classifi
 
 The table below provides a non-exhaustive list of examples mapping product categories to the four risk tiers:
 
-| Product Category | Default Examples | Important (Class I) Examples | Important (Class II) Examples | Critical (Annex IV) Examples |
-:--- | :--- | :--- | :--- | :--- |
-| **Consumer** | Smart speaker (no VA)<br/>Smart TV | Smart speaker with virtual assistant ([Annex III.I.16][cra_annexIII])<br/>Smart lock ([Annex III.I.17][cra_annexIII])<br/>Home alarm system ([Annex III.I.17][cra_annexIII])<br/>Baby monitor ([Annex III.I.17][cra_annexIII])<br/>Fitness band ([Annex III.I.19][cra_annexIII])<br/>Connected toy ([Annex III.I.19][cra_annexIII]) | n/a | n/a |
-| **General IT** | Printer<br/>Office Suite | Web browser ([Annex III.I.2][cra_annexIII])<br/>Password manager ([Annex III.I.3][cra_annexIII])<br/>SIEM ([Annex III.I.7][cra_annexIII])<br/>Operating System ([Annex III.I.12][cra_annexIII])<br/>Router / Modem ([Annex III.I.13][cra_annexIII]) | Hypervisor / Container runtime ([Annex III.II.1][cra_annexIII])<br/>Firewall ([Annex III.II.3][cra_annexIII])<br/>Intrusion Detection System ([Annex III.II.2][cra_annexIII]) | n/a |
-| **Specialised H/W**| n/a | Microprocessor w/ security features ([Annex III.I.14][cra_annexIII]) | Tamper-resistant microprocessor ([Annex III.II.4][cra_annexIII])<br/>Tamper-resistant microcontroller ([Annex III.II.5][cra_annexIII]) | HSM ([Annex IV.1][cra_annexIV])<br/>Smartcard / Secure Element ([Annex IV.3][cra_annexIV]) |
-| **Industrial (OT)**| Non-critical IoT sensor | Industrial VPN gateway ([Annex III.I.5][cra_annexIII]) | PLC<br/>Industrial firewall ([Annex III.II.3][cra_annexIII])<br/>Industrial IDS ([Annex III.II.2][cra_annexIII]) | Smart meter gateway ([Annex IV.2][cra_annexIV]) |
-| **Component** | General-purpose library | Firmware for a Class I product | Firmware for a Class II product | n/a |
+| Product & Category | Default | Important<br/>(Class I) | Important<br/>(Class II) | Critical |
+| :--- | :---: | :---: | :---: | :---: |
+| **Consumer** |
+| Smart speaker (no VA) | ✅ | | | |
+| Smart TV | ✅ | | | |
+| Smart speaker with virtual assistant ([Annex III.I.16][cra_annexIII]) | | ✅ | | |
+| Smart lock ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
+| Home alarm system ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
+| Baby monitor ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
+| Fitness band ([Annex III.I.19][cra_annexIII]) | | ✅ | | |
+| Connected toy ([Annex III.I.19][cra_annexIII]) | | ✅ | | |
+| **General IT** |
+| Printer | ✅ | | | |
+| Office Suite | ✅ | | | |
+| Web browser ([Annex III.I.2][cra_annexIII]) | | ✅ | | |
+| Password manager ([Annex III.I.3][cra_annexIII]) | | ✅ | | |
+| SIEM ([Annex III.I.7][cra_annexIII]) | | ✅ | | |
+| Operating System ([Annex III.I.12][cra_annexIII]) | | ✅ | | |
+| Router / Modem ([Annex III.I.13][cra_annexIII]) | | ✅ | | |
+| Hypervisor / Container runtime ([Annex III.II.1][cra_annexIII]) | | | ✅ | |
+| Firewall ([Annex III.II.3][cra_annexIII]) | | | ✅ | |
+| Intrusion Detection System ([Annex III.II.2][cra_annexIII]) | | | ✅ | |
+| **Specialised H/W** |
+| Microprocessor w/ security features ([Annex III.I.14][cra_annexIII]) | | ✅ | | |
+| Tamper-resistant microprocessor ([Annex III.II.4][cra_annexIII]) | | | ✅ | |
+| Tamper-resistant microcontroller ([Annex III.II.5][cra_annexIII]) | | | ✅ | |
+| HSM ([Annex IV.1][cra_annexIV]) | | | | ✅ |
+| Smartcard / Secure Element ([Annex IV.3][cra_annexIV]) | | | | ✅ |
+| **Industrial (OT)** |
+| Non-critical IoT sensor | ✅ | | | |
+| Industrial VPN gateway ([Annex III.I.5][cra_annexIII]) | | ✅ | | |
+| Industrial firewall ([Annex III.II.3][cra_annexIII]) | | | ✅ | |
+| Industrial IDS ([Annex III.II.2][cra_annexIII]) | | | ✅ | |
+| Smart meter gateway ([Annex IV.2][cra_annexIV]) | | | | ✅ |
+| **Component** |
+| General-purpose library ([Art. 3 § 1][cra_art3]) | ✅ | | | |
 
 ### 2.3 Conformity Assessment Routes
 
