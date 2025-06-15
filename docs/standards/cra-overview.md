@@ -149,7 +149,23 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | **Component** |
 | General-purpose library ([Art. 3 § 1][cra_art3]) | ✅ | | | |
 
-### 2.3 Conformity Assessment Routes
+### 2.3 Out-of-scope & special regimes
+
+| Excluded or separate regime | Legal reason |
+|-----------------------------|--------------|
+| Medical devices | Already covered by **MDR** 2017/745 ([CRA Art. 2 § 2(a)][cra_art2]) |
+| Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 4][cra_art2]) |
+| Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 4(f)][cra_art2]) |
+| Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
+| Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 15][cra_rec15], [CRA Recital 18][cra_rec18], [CRA Recital 19][cra_rec19]). *If commercial support is later offered, CRA duties apply.* |
+| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 20 § 8][cra_art20]) |
+| Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
+| Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
+| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 71 § 3][cra_art71]) |
+
+---
+
+## 3 Conformity Assessment Routes
 
 The specific conformity assessment procedure required by the CRA depends directly on the product's risk class. **Article 32** lays out the possible routes:
 
@@ -164,23 +180,9 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 > **Key takeaway:** For Class I products, following harmonised standards is the express lane to self-assessment. For all higher classes, some form of third-party assessment is either likely or mandatory.
 
-### 2.4 Out-of-scope & special regimes
-
-| Excluded or separate regime | Legal reason |
-|-----------------------------|--------------|
-| Medical devices | Already covered by **MDR** 2017/745 ([CRA Art. 2 § 2(a)][cra_art2]) |
-| Automotive ECUs | Covered by Vehicle Type-Approval rules ([CRA Art. 2 § 4][cra_art2]) |
-| Aviation & drones | EASA cyber rules override ([CRA Art. 2 § 4(f)][cra_art2]) |
-| Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
-| Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 10][cra_rec10]). *If commercial support is later offered, CRA duties apply.* |
-| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 20 § 8][cra_art20]) |
-| Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
-| Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
-| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 71 § 3][cra_art71]) |
-
 ---
 
-## 3 Secure-by-design principles baked into the CRA
+## 4 Secure-by-design principles baked into the CRA
 
 | Principle | Build-phase activity | Operate-phase activity |
 |-----------|---------------------|------------------------|
@@ -191,7 +193,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ---
 
-## 4 Annex I essentials → engineering tasks
+## 5 Annex I essentials → engineering tasks
 
 | Clause (abridged) | Build-phase action | Operate-phase action | Evidence artefact |
 |-------------------|--------------------|----------------------|-------------------|
@@ -204,20 +206,15 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ---
 
-## 5 Clause-by-clause breakdown — *Coming soon*
+## 6 Clause-by-clause breakdown — *Coming soon*
 
-## 6 Practical gap-assessment workflow — *Coming soon*
+## 7 Practical gap-assessment workflow — *Coming soon*
 
-## 7 Ready-to-use templates & checklists — *Coming soon*
+## 8 Ready-to-use templates & checklists — *Coming soon*
 
-## 8 Frequently asked questions — *Coming soon*
+## 9 Frequently asked questions — *Coming soon*
 
-## 9 Next steps & further reading — *Coming soon*
-
----
-
-### Authoritative reference  
-Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120)
+## 10 Next steps & further reading — *Coming soon*
 
 
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120 "CRA Official Journal – OJ"
@@ -242,14 +239,14 @@ Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
 [cra_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_III "CRA Annex III – Important products with digital elements"
 [cra_annexIV]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_IV "CRA Annex IV – Critical products with digital elements"
-[cra_rec9]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_9 "CRA Recital 9 – Connection requirement"
-[cra_rec10]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_10 "CRA Recital 10 – OSS without commercial support"
+[cra_rec9]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_9 "CRA Recital 9 – All connected products as potential attack vectors"
 [cra_rec11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_11 "CRA Recital 11 – Remote data processing"
 [cra_rec12]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_12 "CRA Recital 12 – Cloud services vs remote data processing"
-[cra_rec15]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_15 "CRA Recital 15 – NIS 2 interplay"
-[cra_rec19]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_19 "CRA Recital 19 – Software in scope"
-[cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – RED reference"
-[cra_rec89]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_89 "CRA Recital 89 – CE reference"
+[cra_rec15]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_15 "CRA Recital 15 – Definition of commercial activity"
+[cra_rec18]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_18 "CRA Recital 18 – Non-commercial free and open-source software"
+[cra_rec19]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_19 "CRA Recital 19 – Open-source software stewards"
+[cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – Relationship with Radio Equipment Directive (RED)"
+[cra_rec89]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_89 "CRA Recital 89 – General principles of the CE marking"
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_del]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – security clauses for radio equipment"
