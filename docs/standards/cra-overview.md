@@ -204,18 +204,6 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 *(A full clause-by-clause table will ship in our upcoming CRA Gap-Assessment workbook.)*
 
----
-
-## 6 Clause-by-clause breakdown — *Coming soon*
-
-## 7 Practical gap-assessment workflow — *Coming soon*
-
-## 8 Ready-to-use templates & checklists — *Coming soon*
-
-## 9 Frequently asked questions — *Coming soon*
-
-## 10 Next steps & further reading — *Coming soon*
-
 
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120 "CRA Official Journal – OJ"
 [cra_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120 "CRA consolidated text"
