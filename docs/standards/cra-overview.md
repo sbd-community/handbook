@@ -182,28 +182,93 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ---
 
-## 4 Secure-by-design principles baked into the CRA
+## 4 Core manufacturer obligations
 
-| Principle | Build-phase activity | Operate-phase activity |
-|-----------|---------------------|------------------------|
-| **No known exploitable vulns** (Annex I §1(2)(a)) | CVE scan in CI/CD, fail build on CVSS ≥ 7 HIGH | Continuous VEX + 24 h triage |
-| **Secure configuration by default** (Annex I §1(2)(c)) | Hardened kernel, services disabled | Remote factory-reset workflow |
-| **Cryptographic integrity** | Secure-Boot chain, key injection | Signed OTA with rollback guard |
-| **Co-ordinated vulnerability disclosure (CVD)** | Publish `CVD.md` and `security.txt` | 90-day remediation SLA |
+| Obligation area | CRA trigger | Starts* | Key actions & evidence |
+|---|---|---|---|
+| **Secure-by-design** | [CRA Art. 13 § 1][cra_art13] + [Annex I][cra_annexI] | 2027-12-11 | Implement essential security requirements from Annex I. See Section 5 for a detailed engineering breakdown. **Evidence:** Risk assessment, test reports. |
+| **Vulnerability handling** | [CRA Art. 13 § 8][cra_art13] + [Annex I][cra_annexI] | 2027-12-11 | Establish CVD policy; track & fix vulns "without delay"; provide security updates for the support period (min. 5 years). **Evidence:** Published CVD policy, patch records. |
+| **Technical documentation** | [CRA Art. 31][cra_art31] | 2027-12-11 | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. |
+| **Conformity & CE mark** | [CRA Art. 28][cra_art28]–[30][cra_art30] | 2027-12-11 | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). |
+| **Information to users**| [CRA Art. 13 § 18][cra_art13] + [Annex II][cra_annexII] | 2027-12-11 | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. |
+| **ENISA reporting** | [CRA Art. 14][cra_art14] | **2026-09-11** | Notify ENISA within **24h** of an actively exploited vulnerability. Submit a mitigation report within **14 days**. **Evidence:** Incident logs. |
+
+\* *Dates derive from [CRA Art. 71 § 2][cra_art71]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
 
 ---
 
-## 5 Annex I essentials → engineering tasks
+## 5 Secure-by-Design Engineering Benchmarks (Annex I Deep-Dive)
 
-| Clause (abridged) | Build-phase action | Operate-phase action | Evidence artefact |
-|-------------------|--------------------|----------------------|-------------------|
-| §1(2)(a) "No exploitable vulnerabilities" | SBOM diff & scan | Issue VEX within 24 h | SBOM + scan report |
-| §1(2)(c) "Secure-by-default config" | Hardened defaults | Cust. reset to factory | Config manifest |
-| §2(5) "CVD policy" | Publish CVD policy | Track disclosure KPI | CVD log |
-| §1(2)(f) "Logging & monitoring" | Enable tamper-proof logs | Retain SIEM ≥ 18 m | Log-pipeline diagram |
+This section provides a technical deep-dive into the essential secure-by-design requirements mandated by **[Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
 
-*(A full clause-by-clause table will ship in our upcoming CRA Gap-Assessment workbook.)*
+### 5.1 No Known Exploitable Vulnerabilities
+*Legal hook: [Annex I.I.2(a)][cra_annexI]*
 
+> The product must be "made available on the market without any known exploitable vulnerabilities."
+
+- **Action:** Integrate automated security scanning into your CI/CD pipeline.
+- **Tools:** Use static analysis (SAST) tools like `Semgrep` or `CodeQL` to find flaws in your source code, and software composition analysis (SCA) tools like `Trivy`, `Grype`, or `Dependency-Check` to find CVEs in your third-party libraries.
+- **Benchmark:** The build must fail if a vulnerability with a CVSS score of 7.0 or higher is detected and a patch is available. Maintain a Software Bill of Materials (SBOM) for all components.
+
+### 5.2 Secure Configuration by Default
+*Legal hook: [Annex I.I.2(c)][cra_annexI]*
+
+> The product must be "configured to be secure by default, allowing users to enable, disable or configure functions only where this does not create significant weaknesses."
+
+- **Action:** Ship the product with a hardened configuration.
+- **Benchmark:**
+    - All non-essential ports and services must be disabled.
+    - Strong, randomly generated passwords must be required on first use (no default credentials like `admin`/`admin`).
+    - The most secure available protocols (e.g., TLS 1.3, SSHv2) must be enabled by default.
+    - Provide a secure factory-reset mechanism that wipes all user data.
+
+### 5.3 Confidentiality & Integrity Protection
+*Legal hook: [Annex I.I.2(e) & (f)][cra_annexI]*
+
+> The product must "protect the confidentiality of stored, transmitted or otherwise processed data...by encrypting relevant data at rest or in transit" and "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user."
+
+- **Action:** Implement end-to-end cryptographic protections.
+- **Benchmark:**
+    - **Data-in-transit:** All external network communication must be encrypted using standard, state-of-the-art protocols (e.g., TLS).
+    - **Data-at-rest:** Sensitive user data and configuration secrets stored on the device must be encrypted.
+    - **Code & config integrity:** Use a secure boot chain where each stage (bootloader, kernel, rootfs) is cryptographically signed and verified. Firmware updates must be signed, and the signature must be verified before installation.
+
+### 5.4 Access Control
+*Legal hook: [Annex I.I.2(d)][cra_annexI]*
+
+> The product must "protect against unauthorised access by controlling access...through appropriate control mechanisms, including authentication, identity and access management systems."
+
+- **Action:** Enforce the principle of least privilege.
+- **Benchmark:**
+    - Implement role-based access control (RBAC) to separate user and administrator privileges.
+    - System processes should run with the minimum permissions necessary.
+    - Protect against brute-force attacks with mechanisms like account lockout or rate limiting.
+
+### 5.5 Attack Surface Reduction
+*Legal hook: [Annex I.I.2(j)][cra_annexI]*
+
+> The product must be "designed, developed and produced to limit attack surfaces, including external interfaces."
+
+- **Action:** Minimize the number of exposed entry points.
+- **Benchmark:**
+    - Disable all physical debug interfaces (e.g., JTAG, UART) on production builds.
+    - Minimize open network ports to only what is essential for the product's function.
+    - Validate and sanitize all inputs from external sources to prevent injection attacks (e.g., SQLi, command injection).
+
+### 5.6 Resilience & Mitigation
+*Legal hook: [Annex I.I.2(h) & (k)][cra_annexI]*
+
+> The product must "protect the availability of essential and basic functions...including through resilience and mitigation measures against denial-of-service attacks" and "reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques."
+
+- **Action:** Build in modern memory protections and DoS resistance.
+- **Benchmark:**
+    - Compile code with exploit mitigations like Address Space Layout Randomization (ASLR), Stack Canaries, and No-eXecute (NX) bit protection.
+    - Implement rate limiting on APIs and network services to resist resource exhaustion attacks.
+
+---
+
+### Authoritative reference
+Consolidated CRA text on EUR-Lex → [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120)
 
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120 "CRA Official Journal – OJ"
 [cra_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120 "CRA consolidated text"
@@ -212,6 +277,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 [cra_art3]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_3 "CRA Article 3 – Definitions"
 [cra_art7]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_7 "CRA Article 7 – Important products with digital elements"
 [cra_art8]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_8 "CRA Article 8 – Critical products with digital elements"
+[cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
 [cra_art16]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_16 "CRA Article 16 – Single reporting platform"
 [cra_art18]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_18 "CRA Article 18 – Authorised representatives"
@@ -220,11 +286,13 @@ The specific conformity assessment procedure required by the CRA depends directl
 [cra_art28]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_28 "CRA Article 28 – EU declaration of conformity"
 [cra_art29]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_29 "CRA Article 29 – General principles of the CE marking"
 [cra_art30]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_30 "CRA Article 30 – Rules and conditions for affixing the CE marking"
+[cra_art31]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_31 "CRA Article 31 – Technical documentation"
 [cra_art32]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_32 "CRA Article 32 – Conformity assessment procedures for products with digital elements"
 [cra_art43]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_43 "CRA Article 43 – Notification procedure"
 [cra_art64]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_64 "CRA Article 64 – Penalties"
 [cra_art71]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71 "CRA Article 71 – Entry into force & application"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[cra_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_II "CRA Annex II – Information and instructions to the user"
 [cra_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_III "CRA Annex III – Important products with digital elements"
 [cra_annexIV]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_IV "CRA Annex IV – Critical products with digital elements"
 [cra_rec9]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_9 "CRA Recital 9 – All connected products as potential attack vectors"

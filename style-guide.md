@@ -77,7 +77,7 @@ Include full example artefacts in repo `/examples/` and link inline.
 ## 7. Citation & References
 
 - **Standards**: include document number, part, and clause (e.g., EN 303 645 §5.2).
-- **Legal citations**: For EU regulations, use the format `[ACRONYM Art. X § Y(z)][link_id]`. Always include the regulation's acronym (e.g., `CRA`), a period after "Art", and the section symbol (§) for paragraphs. Example: `[CRA Art. 71 § 3][cra_art71]`.
+- **Legal citations**: For EU regulations, use the format `[ACRONYM Art. X § Y(z)][link_id]`. Always include the regulation's acronym (e.g., `CRA`), a period after "Art", and the section symbol (§) for paragraphs. Example: `[CRA Art. 71 § 3][cra_art71]`. For Annexes, use the format `[Annex III.I.5][link_id]`, using Roman numerals for the annex number.
 - **External links**: Use Markdown footnotes `[^1]` or inline links `[text](url)`. Open external sites in a new tab.
 - For long reference tables, link to downloadable CSV/Excel.
 
