@@ -12,9 +12,9 @@ The **Radio Equipment Directive (RED)** cybersecurity rules are defined by two k
 From **1 August 2025**, any internet-connected radio device, any product that can process personal data, or any connected toy must meet these essential requirements to receive a CE mark. This regulation acts as a precursor to the broader Cyber-Resilience Act (CRA), but with a compliance deadline that is over two years earlier.
 
 :::info Official texts
-- **Official Journal (Directive)** – Legally binding text of Directive 2014/53/EU as published on 22 May 2014: [OJ:L:2014:153][red_dir].
-- **Official Journal (Delegated Act)** – Activates the security requirements for specific product classes: [CELEX:32022R0030][red_del_act].
-- **Consolidated Version (RED)** – Integrates subsequent corrections and amendments: [CELEX:02014L0053-20241228][red_consolidated].
+- **Official Journal (Directive)** – Legally binding text of Directive 2014/53/EU as published on 22 May 2014: [OJ:L:2014:153 HTML][red_dir].
+- **Official Journal (Delegated Act)** – Activates the security requirements for specific product classes: [CELEX:32022R0030 HTML][red_del_act].
+- **Consolidated Version (RED)** – Integrates subsequent corrections and amendments: [CELEX:02014L0053-20241228 HTML][red_consolidated].
 
 
 The consolidated version is easier for clause citations, but in case of doubt the official journal prevails.
