@@ -69,16 +69,20 @@ const config: Config = {
     ],
   ],
 
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Code+Pro:wght@500&display=swap',
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Secure-By-Design',
+      title: 'Secure by Design',
       logo: {
         alt: 'Secure-by-Design Handbook Logo',
         src: 'img/logo.svg',
-        srcDark: 'img/logo.svg',
       },
+      style: 'dark',
       items: [
         {
           type: 'docSidebar',

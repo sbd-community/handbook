@@ -6,25 +6,48 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #00c5d8;
+  --ifm-color-primary-dark: #00b1c2;
+  --ifm-color-primary-darker: #00a6b6;
+  --ifm-color-primary-darkest: #008996;
+  --ifm-color-primary-light: #00d9f0;
+  --ifm-color-primary-lighter: #00e4fe;
+  --ifm-color-primary-lightest: #1ffffd;
+
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'Source Code Pro', monospace;
+
+  --ifm-font-weight-semibold: 700;
+
+  --ifm-heading-font-weight: 700;
+
+  --ifm-color-warning: #ff9f45; /* Highlight Orange */
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-background-color: #013b4e; /* Deep Teal */
+  --ifm-font-color-base: #f5fcfd; /* Surface Light */
+  --ifm-navbar-background-color: #012a38; /* Darker teal for navbar */
+  --ifm-footer-background-color: #013b4e; /* Deep Teal */
+  --ifm-code-background: #024c63;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Light Mode Overrides */
+[data-theme='light'] {
+  --ifm-background-color: #f5fcfd; /* Surface Light */
+  --ifm-font-color-base: #5e6e75; /* Mid Grey */
+  --ifm-navbar-background-color: #013b4e; /* Deep Teal */
+  --ifm-footer-background-color: #f5fcfd; /* Surface Light */
+  --ifm-code-background: #eef9fb;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #013b4e;
+  --ifm-footer-color: #f5fcfd;
+  --ifm-footer-link-color: #f5fcfd;
 }

@@ -81,29 +81,11 @@ Include full example artefacts in repo `/examples/` and link inline.
 - **External links**: Use Markdown footnotes `[^1]` or inline links `[text](url)`. Open external sites in a new tab.
 - For long reference tables, link to downloadable CSV/Excel.
 
-## 8. Visual Identity
+## 8. Visual Identity & Branding
 
-### Colour palette (WCAG AA contrast)
+All visual elements of the brand—including the logo, color palette, typography, and iconography—are defined in the official **[Brand Guidelines](brand-guidelines.md)**.
 
-| Purpose | Hex | Notes |
-|---------|-----|-------|
-| Primary Accent | #005B96 | Links, buttons. |
-| Secondary Accent | #0083D1 | Highlights, icons. |
-| Success | #0A8754 | |
-| Warning | #E67E22 | |
-| Danger | #C0392B | |
-
-### Typography
-
-- **Headings**: Inter SemiBold, 1.25× line‑height.
-- **Body**: Inter Regular, 1.6× line‑height.
-- **Monospace**: IBM Plex Mono.
-
-### Imagery & Icons
-
-- Use simple, line‑iconography (Lucide) for consistency.
-- Diagrams: draw.io exported as SVG.
-- Screenshots: mask secrets, highlight focus areas.
+That document is the single source of truth for the brand's visual identity. This style guide concerns itself with how to apply that identity to the content and structure of this website.
 
 ## 9. Accessibility
 
