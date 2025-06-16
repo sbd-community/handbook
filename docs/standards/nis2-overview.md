@@ -1,6 +1,6 @@
 ---
 title: NIS 2 Directive Overview
-sidebar_position: 2
+sidebar_position: 3
 tags: [nis2, compliance, eu]
 ---
 # NIS 2 Directive (EU 2022/2555) – Overview
