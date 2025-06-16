@@ -71,11 +71,11 @@ We believe in recognizing the valuable contributions of security researchers. Wi
 
 While we don't provide a full template for every policy, the following guides in this handbook provide the framework and key requirements for creating them:
 
--   **Patch Management Policy:** Use the framework in the [Patch Cadence & Rollback Strategy Guide](../implementation/operate-phase/patch-cadence.md) to define your update timelines and support periods.
--   **Secure Development Lifecycle (SDL) Policy:** Your SDL policy should document the processes and controls outlined in the [CI/CD Pipeline Hardening Guide](../implementation/operate-phase/cicd-hardening.md).
+-   **Patch Management Policy:** Use the framework in the [Patch Cadence & Rollback Strategy Guide](../../implementation/operate-phase/patch-cadence.md) to define your update timelines and support periods.
+-   **Secure Development Lifecycle (SDL) Policy:** Your SDL policy should document the processes and controls outlined in the [CI/CD Pipeline Hardening Guide](../../implementation/operate-phase/cicd-hardening.md).
 
 ---
 
 *This guide provides starting points for your policy documentation. Adapt them to your team's specific needs and integrate them into your compliance workflow.*
 
-[cra_annexI_partII]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 
+[cra_annexI_partII]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 

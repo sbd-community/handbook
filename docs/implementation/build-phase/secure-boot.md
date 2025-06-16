@@ -56,4 +56,4 @@ To build a secure boot mechanism that meets regulatory requirements, ensure you 
 *This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
 
 <!-- Shared links -->
-[cra_annexI]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+[cra_annexI]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 

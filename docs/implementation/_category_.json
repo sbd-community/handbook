@@ -1,0 +1,8 @@
+{
+  "label": "Implementation Guides",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Step-by-step technical guidance for build and operational phases."
+  }
+} 

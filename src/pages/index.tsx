@@ -82,7 +82,7 @@ function RoleBasedCards(): ReactNode {
       title: 'Compliance Lead',
       description: 'Start with regulatory gap analysis',
       cta: 'Get CRA Checklist',
-      link: '/docs/templates/cra-gap-analysis',
+      link: '/docs/resources/checklists-and-worksheets/cra-gap-analysis',
       icon: '⚖️'
     },
     {

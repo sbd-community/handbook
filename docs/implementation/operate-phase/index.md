@@ -14,13 +14,13 @@ Once your devices are deployed, ongoing operational security becomes critical. T
 
 ## Available Guides
 
-### [Vulnerability Disclosure](/docs/implementation/operate-phase/vulnerability-disclosure)
+### [Vulnerability Disclosure](./vulnerability-disclosure.md)
 Establish coordinated vulnerability disclosure processes to work effectively with security researchers and manage security issues.
 
-### [Patch Management](/docs/implementation/operate-phase/patch-cadence)
+### [Patch Management](./patch-cadence.md)
 Implement systematic patch management with risk-based prioritization, testing frameworks, and rollback capabilities.
 
-### [CI/CD Security](/docs/implementation/operate-phase/cicd-hardening)
+### [CI/CD Security](./cicd-hardening.md)
 Harden your continuous integration and deployment pipelines with secure build environments and automated security checks.
 
 ---

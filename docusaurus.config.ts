@@ -104,12 +104,6 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'templatesSidebar',
-          position: 'left',
-          label: 'Templates',
-        },
-        {
-          type: 'docSidebar',
           sidebarId: 'resourcesSidebar',
           position: 'left',
           label: 'Resources',
@@ -171,7 +165,7 @@ const config: Config = {
             },
             {
               label: 'Glossary',
-              to: '/docs/resources/glossary',
+              to: '/docs/resources/reference/glossary',
             },
           ],
         },

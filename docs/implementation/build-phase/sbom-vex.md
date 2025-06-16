@@ -57,6 +57,6 @@ To meet modern security requirements, your vulnerability management workflow sho
 *This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
 
 <!-- Shared links -->
-[cra_art13_obligation]: /docs/standards/cra-overview#core-manufacturer-obligations "CRA Article 13 – Obligations of manufacturers"
-[cra_annexI]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements"
-[cra_annexI_partII]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 
+[cra_art13_obligation]: ../../standards/cra-overview#core-manufacturer-obligations "CRA Article 13 – Obligations of manufacturers"
+[cra_annexI]: ../../standards/cra-overview#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements"
+[cra_annexI_partII]: ../../standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 

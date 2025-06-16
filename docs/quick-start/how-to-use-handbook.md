@@ -17,10 +17,10 @@ This page helps you find the content most relevant to your role and your immedia
 
 The handbook is organized into four main sections:
 
--   **[Quick Start](/docs/quick-start/how-to-use-handbook)`:** For when you need the essentials, fast. Start here if you're new to the topic or need a high-level overview.
--   **[Standards & Regulations](/docs/standards)`:** Deep-dives into the legal texts like the CRA, RED, and NIS 2. Read these for authoritative context on your legal obligations.
--   **[Implementation Guides](/docs/implementation/build-phase)`:** Step-by-step technical playbooks for implementing specific security controls like secure boot, OTA updates, and CI/CD hardening.
--   **[Templates & Checklists](/docs/templates/audit-evidence-pack)`:** Downloadable artefacts like checklists and policy templates to use in your projects.
+-   **[Quick Start](./how-to-use-handbook.md):** For when you need the essentials, fast. Start here if you're new to the topic or need a high-level overview.
+-   **[Standards & Regulations](../standards):** Deep-dives into the legal texts like the CRA, RED, and NIS 2. Read these for authoritative context on your legal obligations.
+-   **[Implementation Guides](../implementation/build-phase):** Step-by-step technical playbooks for implementing specific security controls like secure boot, OTA updates, and CI/CD hardening.
+-   **[Resources](../resources):** Downloadable artefacts like checklists and policy templates to use in your projects.
 
 ---
 
@@ -38,12 +38,12 @@ _Your goal: Understand what we need to do, why, and how to plan the work._
 ### For the Firmware or Embedded Engineer
 _Your goal: Understand what I need to build on the device._
 
-1.  **Understand Requirements:** Read the [CRA Overview](/docs/standards/cra-overview), focusing on the [Secure-by-Design Engineering Benchmarks](/docs/standards/cra-overview#annex-i-benchmarks). This is your list of technical requirements.
-2.  **Implement Core Features:** Dive into the **[Build Phase](/docs/implementation/build-phase)** implementation guides:
-    -   [Key Provisioning & Storage](/docs/implementation/build-phase/key-provisioning)
-    -   [Secure Boot Implementation](/docs/implementation/build-phase/secure-boot)
-    -   [Secure OTA Updates](/docs/implementation/build-phase/ota-updates)
-3.  **Check Radio Requirements:** If your product has Wi-Fi, Bluetooth, or any other radio, read the [Radio Equipment Directive (RED) Overview](/docs/standards/red-overview).
+1.  **Understand Requirements:** Read the [CRA Overview](../standards/cra-overview.md), focusing on the [Secure-by-Design Engineering Benchmarks](../standards/cra-overview.md#annex-i-benchmarks). This is your list of technical requirements.
+2.  **Implement Core Features:** Dive into the **[Build Phase](../implementation/build-phase)** implementation guides:
+    -   [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)
+    -   [Secure Boot Implementation](../implementation/build-phase/secure-boot.md)
+    -   [Secure OTA Updates](../implementation/build-phase/ota-updates.md)
+3.  **Check Radio Requirements:** If your product has Wi-Fi, Bluetooth, or any other radio, read the [Radio Equipment Directive (RED) Overview](../standards/red-overview.md).
 
 ### For the DevOps or Security Engineer (SecOps)
 _Your goal: Understand how to automate security, manage vulnerabilities, and harden our infrastructure._
@@ -55,9 +55,9 @@ _Your goal: Understand how to automate security, manage vulnerabilities, and har
 ### For the Compliance Lead or Auditor
 _Your goal: Understand the legal requirements in detail and find evidence of compliance._
 
-1.  **Know the Law:** Read all the overviews in the **[Standards & Regulations](/docs/standards/cra-overview)** section. These are your primary source of truth for the legal obligations.
-2.  **Assess Gaps:** Use the **[Templates & Checklists](/docs/templates/cra-gap-analysis)** section for gap analysis and audit preparation materials.
-3.  **Verify Controls:** Review the checklists at the end of each **[Implementation Guide](/docs/implementation/build-phase)** to verify that the required technical controls have been implemented by the engineering teams.
+1.  **Know the Law:** Read all the overviews in the **[Standards & Regulations](../standards)** section. These are your primary source of truth for the legal obligations.
+2.  **Assess Gaps:** Use the **[Resources](../resources)** section for gap analysis and audit preparation materials.
+3.  **Verify Controls:** Review the checklists at the end of each **[Implementation Guide](../implementation/build-phase)** to verify that the required technical controls have been implemented by the engineering teams.
 
 ---
 
@@ -69,4 +69,4 @@ This handbook is a living document and a community effort. If you see something 
 
 *This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
 
-[cra_annex_i]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+[cra_annex_i]: ../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 

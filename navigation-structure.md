@@ -8,7 +8,7 @@
 
 1. **Quick Start**
 
-   * “How to use this handbook”
+   * "How to use this handbook"
    * CRA 5‑minute primer
    * First‑sprint checklist
 2. **Standards & Regulations**
@@ -39,17 +39,18 @@
      * Patch Cadence & Rollback
      * Vulnerability Disclosure (CVD)
      * Continuous Compliance (CI/CD)
-4. **Templates & Checklists**
+4. **Tools & Templates**
 
-   * Gap‑analysis worksheets
-   * Audit evidence pack
-   * Policy templates (CVD, update cadence)
-5. **Resources**
-
-   * Glossary
-   * Maturity‑model worksheets
-   * Tool Directory
-   * Reference Architectures (PDF/SVG)
+   * **Checklists & Worksheets**
+     * Gap‑analysis worksheets
+     * Maturity‑model worksheets
+   * **Policy & Evidence**
+     * Policy templates (CVD, update cadence)
+     * Audit evidence pack
+   * **Reference**
+     * Glossary
+     * Tool Directory
+     * Reference Architectures (PDF/SVG)
 
 ### Secondary elements
 
@@ -63,10 +64,10 @@
 
 | Persona              | Likely path                                                                       |
 | -------------------- | --------------------------------------------------------------------------------- |
-| Compliance Lead      | Quick Start → CRA primer → Templates & Checklists                                 |
+| Compliance Lead      | Quick Start → CRA primer → Tools & Templates → Gap-analysis worksheets            |
 | Firmware Engineer    | Standards & Regulations → CRA → Implementation Guides → Build Phase → Secure Boot |
 | DevOps               | Implementation Guides → Operate Phase → Continuous Compliance                     |
-| CTO / Decision‑maker | Quick Start → Maturity model → Contact                                            |
+| CTO / Decision‑maker | Quick Start → Tools & Templates → Maturity model → Contact                        |
 
 ---
 
