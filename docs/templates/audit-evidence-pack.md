@@ -53,9 +53,8 @@ _This section contains ongoing records generated after the product is on the mar
 
 *This guide provides a template for the technical documentation required under the CRA. Use it to build a comprehensive and auditable evidence pack.*
 
-<!-- Shared links -->
-[cra_art14]: ../../standards/cra-overview.md#4-core-manufacturer-obligations "CRA Article 14 – Reporting obligations of manufacturers"
-[cra_art31]: ../../standards/cra-overview.md#4-core-manufacturer-obligations "CRA Article 31 – Technical documentation"
-[cra_annexI_partI]: ../../standards/cra-overview.md#5-secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part I – Security requirements relating to the properties of products with digital elements"
-[cra_annexI_partII]: ../../standards/cra-overview.md#5-secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part II – Vulnerability handling requirements"
-[cra_annexII]: ../../standards/cra-overview.md#5-secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex II – Information and instructions to the user" 
+[cra_art14]: /docs/standards/cra-overview#4core-manufacturer-obligations "CRA Article 14 – Reporting obligations of manufacturers"
+[cra_art31]: /docs/standards/cra-overview#4core-manufacturer-obligations "CRA Article 31 – Technical documentation"
+[cra_annexI_partI]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part I – Security requirements relating to the properties of products with digital elements"
+[cra_annexI_partII]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part II – Vulnerability handling requirements"
+[cra_annexII]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex II – Information and instructions to the user" 
