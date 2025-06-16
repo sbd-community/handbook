@@ -43,7 +43,7 @@ Deploying a new update to your entire device fleet at once is risky. A single bu
 Even with a phased rollout, a critical bug might slip through. You must have a plan to recover.
 
 -   **Server-Side Rollback:** The simplest approach is to halt the deployment campaign on your update server. This prevents any more devices from downloading the faulty update.
--   **Client-Side Rollback:** A robust device must be able to recover from a bad update. As described in the [Secure OTA Updates guide](./ota-updates.md), an **A/B partition scheme** is the gold standard. If the new firmware in partition B fails to boot or is unstable, the device should automatically revert to the last known-good version in partition A.
+-   **Client-Side Rollback:** A robust device must be able to recover from a bad update. As described in the [Secure OTA Updates guide](/docs/implementation/build-phase/ota-updates), an **A/B partition scheme** is the gold standard. If the new firmware in partition B fails to boot or is unstable, the device should automatically revert to the last known-good version in partition A.
 
 ## 4. Compliance Checklist
 

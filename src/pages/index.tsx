@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--primary button--lg"
-            to="/docs/implementation/build-phase/secure-boot">
+            to="/docs/implementation/build-phase/key-provisioning">
             Implementation Guides
           </Link>
         </div>
