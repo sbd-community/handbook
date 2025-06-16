@@ -78,4 +78,4 @@ While we don't provide a full template for every policy, the following guides in
 
 *This guide provides starting points for your policy documentation. Adapt them to your team's specific needs and integrate them into your compliance workflow.*
 
-[cra_annexI_partII]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive  "CRA Annex I, Part II – Vulnerability handling requirements" 
+[cra_annexI_partII]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 

@@ -48,4 +48,4 @@ To meet the requirements of modern cybersecurity standards, your key management 
 *This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
 
 <!-- Shared links -->
-[cra_annexI]: ../../standards/cra-overview.md#5-secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I – Essential cybersecurity requirements" 
+[cra_annexI]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 

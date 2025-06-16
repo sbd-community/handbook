@@ -5,15 +5,65 @@ facebook:
 
 hello:
   label: Hello
+  description: Greetings from the team!
   permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
 
 hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+docusaurus:
+  label: Docusaurus
+  description: All Docusaurus blog posts
+  permalink: /docusaurus
+
+secure-by-design:
+  label: Secure-by-Design
+  description: Core principles of building secure products from the ground up.
+  permalink: /secure-by-design
+
+cra:
+  label: CRA
+  description: Posts related to the EU's Cyber-Resilience Act.
+  permalink: /cra
+
+standards:
+  label: Standards
+  description: News and analysis about cybersecurity standards.
+  permalink: /standards
+
+compliance:
+  label: Compliance
+  description: Topics related to regulatory compliance for connected devices.
+  permalink: /compliance
+
+eu:
+  label: EU
+  description: Focus on European Union regulations.
+  permalink: /eu
+
+iot:
+  label: IoT
+  description: Posts about the Internet of Things.
+  permalink: /iot
+
+consumer:
+  label: Consumer
+  description: Topics related to consumer-facing products.
+  permalink: /consumer
+
+red:
+  label: RED
+  description: Posts about the Radio Equipment Directive.
+  permalink: /red
+
+nis2:
+  label: NIS 2
+  description: Posts about the NIS 2 Directive.
+  permalink: /nis2
+
+en303645:
+  label: EN 303 645
+  description: Posts related to the ETSI EN 303 645 standard.
+  permalink: /en303645

@@ -50,7 +50,7 @@ The consolidated version is easier for clause citations, but in case of doubt th
 
 ## 2 Scope – which products are in?
 
-### 2.1 Statutory Definition & Interpretation
+### 2.1 Statutory Definition & Interpretation {#statutory-definition}
 
 #### Official Definition
 A **product with digital elements (PDE)** is *"any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network"* ([CRA Art. 3 § 1][cra_art3]). 
@@ -80,7 +80,7 @@ Both conditions must be met.
   - *Connectable?* **Yes**. (USB Stick)
   - **Result: In scope.** The USB port is a physical data connection. The overall update process creates an *indirect connection* to the network where the firmware originated.
 
-### 2.2 Product Risk Classification (The Four Tiers)
+### 2.2 Product Risk Classification (The Four Tiers) {#product-risk-classes}
 
 The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [Annex III][cra_annexIII] or [Annex IV][cra_annexIV] of the regulation.
 
@@ -165,7 +165,7 @@ The table below provides a non-exhaustive list of examples mapping product categ
 
 ---
 
-## 3 Conformity Assessment Routes
+## 3 Conformity Assessment Routes {#conformity-assessment-routes}
 
 The specific conformity assessment procedure required by the CRA depends directly on the product's risk class. **Article 32** lays out the possible routes:
 
@@ -182,7 +182,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ---
 
-## 4 Core manufacturer obligations
+## 4 Core manufacturer obligations {#core-manufacturer-obligations}
 
 | Obligation area | CRA trigger | Starts* | Key actions & evidence |
 |---|---|---|---|
@@ -197,7 +197,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ---
 
-## 5 Secure-by-Design Engineering Benchmarks (Annex I Deep-Dive)
+## 5 Secure-by-Design Engineering Benchmarks (Annex I Deep-Dive) {#annex-i-benchmarks}
 
 This section provides a technical deep-dive into the essential secure-by-design requirements mandated by **[Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
 

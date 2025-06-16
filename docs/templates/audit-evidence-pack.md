@@ -5,7 +5,7 @@ tags: [templates, audit, compliance, cra, technical-documentation]
 ---
 # Guide: Assembling Your Audit Evidence Pack
 
-An **Audit Evidence Pack** is a structured collection of documents, records, and technical artefacts that demonstrates your product's compliance with a given regulation. For the **Cyber-Resilience Act (CRA)**, this pack constitutes the **technical documentation** that manufacturers are legally required to maintain and provide to market surveillance authorities upon request ([CRA Art. 31][cra_art31]).
+An **Audit Evidence Pack** is a structured collection of documents, records, and technical artefacts that demonstrates your product's compliance with a given regulation. For the **Cyber-Resilience Act (CRA)**, this pack constitutes the **technical documentation** that manufacturers are legally required to maintain and provide to market surveillance authorities upon request ([CRA Article 31][cra_art31]).
 
 This is not a one-time task but a "living" collection of evidence that must be updated throughout the product's lifecycle. This guide provides a template for organizing this information.
 
@@ -20,8 +20,8 @@ Your evidence pack should be organized logically, making it easy for an auditor 
 ### Section 1: Governance & Risk Management
 _This section contains your high-level policies and risk assessment artefacts._
 
--   [ ] **Cybersecurity Risk Assessment:** The foundational document outlining the product's intended use, key assets, identified threats, and risk mitigation strategies. This is the starting point for your entire security posture. ([CRA Annex I.I.1][cra_annexI_partI])
--   [ ] **Secure Development Lifecycle (SDL) Policy:** Your internal, documented process for how you build security into every stage of development. This should reference your [CI/CD hardening practices](../implementation/operate-phase/cicd-hardening.md). ([CRA Annex I.II.1][cra_annexI_partII])
+-   [ ] **Cybersecurity Risk Assessment:** The foundational document outlining the product's intended use, key assets, identified threats, and risk mitigation strategies. This is the starting point for your entire security posture. ([CRA Annex I, Part I][cra_annexI_partI])
+-   [ ] **Secure Development Lifecycle (SDL) Policy:** Your internal, documented process for how you build security into every stage of development. This should reference your [CI/CD hardening practices](../implementation/operate-phase/cicd-hardening.md). ([CRA Annex I, Part II][cra_annexI_partII])
 -   [ ] **Vulnerability Handling Policy:** Your public Coordinated Vulnerability Disclosure (CVD) policy and your internal procedures for triaging and managing reported vulnerabilities. ([See CVD Guide](../implementation/operate-phase/vulnerability-disclosure.md))
 -   [ ] **Patch Management Policy:** Your public commitment to providing security updates, including timelines based on severity. ([See Patch Cadence Guide](../implementation/operate-phase/patch-cadence.md))
 
@@ -30,7 +30,7 @@ _This section details the product's design and the information provided to users
 
 -   [ ] **Detailed Architecture Diagram:** A diagram showing the product's key hardware and software components, network interfaces, security boundaries, and trust zones.
 -   [ ] **Hardware Root of Trust Specification:** Documentation of the hardware used to anchor security (e.g., SE, TPM, TEE) and the process for protecting keys. ([See Key Provisioning Guide](../implementation/build-phase/key-provisioning.md))
--   [ ] **Software Bill of Materials (SBOM):** A complete, machine-readable SBOM (in SPDX or CycloneDX format) for the specific version of the software placed on the market. ([CRA Annex I.I.9][cra_annexI_partI])
+-   [ ] **Software Bill of Materials (SBOM):** A complete, machine-readable SBOM (in SPDX or CycloneDX format) for the specific version of the software placed on the market. ([CRA Annex I, Part I][cra_annexI_partI])
 -   [ ] **User Manual & Secure Configuration Guide:** A copy of the instructions provided to the user, which must include guidance on secure use, the product's support period, and how to report vulnerabilities. ([CRA Annex II][cra_annexII])
 
 ### Section 3: Security Verification & Validation
@@ -47,14 +47,14 @@ _This section contains ongoing records generated after the product is on the mar
 
 -   [ ] **Vulnerability Log:** A complete log of all vulnerabilities reported and discovered, including their source, triage status, severity score, and final resolution.
 -   [ ] **Patch Log:** A record of all security patches released, including the release date, CVEs addressed, and the firmware version that contains the fix.
--   [ ] **Incident Response Records:** If you have experienced a breach or an actively exploited vulnerability, this includes copies of the notification reports sent to ENISA and/or other authorities. ([CRA Art. 14][cra_art14])
+-   [ ] **Incident Response Records:** If you have experienced a breach or an actively exploited vulnerability, this includes copies of the notification reports sent to ENISA and/or other authorities. ([CRA Article 14][cra_art14])
 
 ---
 
 *This guide provides a template for the technical documentation required under the CRA. Use it to build a comprehensive and auditable evidence pack.*
 
-[cra_art14]: /docs/standards/cra-overview#4core-manufacturer-obligations "CRA Article 14 – Reporting obligations of manufacturers"
-[cra_art31]: /docs/standards/cra-overview#4core-manufacturer-obligations "CRA Article 31 – Technical documentation"
-[cra_annexI_partI]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part I – Security requirements relating to the properties of products with digital elements"
-[cra_annexI_partII]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part II – Vulnerability handling requirements"
-[cra_annexII]: /docs/standards/cra-overview#5secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex II – Information and instructions to the user" 
+[cra_art14]: /docs/standards/cra-overview#core-manufacturer-obligations "CRA Article 14 – Reporting obligations of manufacturers"
+[cra_art31]: /docs/standards/cra-overview#core-manufacturer-obligations "CRA Article 31 – Technical documentation"
+[cra_annexI_partI]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part I – Security requirements relating to the properties of products with digital elements"
+[cra_annexI_partII]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements"
+[cra_annexII]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex II – Information and instructions to the user" 

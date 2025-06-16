@@ -7,7 +7,7 @@ tags: [sbom, vex, spdx, cyclonedx, cra, supply-chain]
 
 A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of the software components and dependencies included in a product. It provides essential transparency into the software supply chain, enabling rapid identification of components affected by newly discovered vulnerabilities.
 
-The **Cyber-Resilience Act (CRA)** legally mandates that manufacturers must create and maintain an SBOM for their products ([CRA Art. 13 § 1][cra_art13] referencing [Annex I][cra_annexI_partI]). This document must be provided to national authorities upon request. While an SBOM tells you *what* is in your software, a **Vulnerability Exploitability eXchange (VEX)** document tells you whether a known vulnerability in a component actually affects your product. Together, they are the cornerstones of modern vulnerability management.
+The **Cyber-Resilience Act (CRA)** legally mandates that manufacturers must create and maintain an SBOM for their products ([CRA Article 13 – Obligations of manufacturers][cra_art13_obligation] referencing [CRA Annex I – Essential cybersecurity requirements][cra_annexI]). This document must be provided to national authorities upon request. While an SBOM tells you *what* is in your software, a **Vulnerability Exploitability eXchange (VEX)** document tells you whether a known vulnerability in a component actually affects your product. Together, they are the cornerstones of modern vulnerability management.
 
 ## 1. SBOM: The Ingredients List
 
@@ -57,5 +57,6 @@ To meet modern security requirements, your vulnerability management workflow sho
 *This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
 
 <!-- Shared links -->
-[cra_art13]: ../../standards/cra-overview.md#4-core-manufacturer-obligations "CRA Article 13 – Obligations of manufacturers"
-[cra_annexI_partI]: ../../standards/cra-overview.md#5-secure-by-design-engineering-benchmarks-annex-i-deep-dive "CRA Annex I, Part I – Security requirements relating to the properties of products with digital elements" 
+[cra_art13_obligation]: /docs/standards/cra-overview#core-manufacturer-obligations "CRA Article 13 – Obligations of manufacturers"
+[cra_annexI]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements"
+[cra_annexI_partII]: /docs/standards/cra-overview#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 
