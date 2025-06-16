@@ -1,7 +1,7 @@
 ---
 sidebar_position: 0
 slug: /standards
-title: Standards & Regulations Overview
+title: Overview
 ---
 
 # Standards & Regulations
