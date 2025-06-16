@@ -39,8 +39,7 @@
      * Patch Cadence & Rollback
      * Vulnerability Disclosure (CVD)
      * Continuous Compliance (CI/CD)
-4. **Tools & Templates**
-
+4. **Resources**
    * **Checklists & Worksheets**
      * Gap‑analysis worksheets
      * Maturity‑model worksheets
@@ -49,8 +48,13 @@
      * Audit evidence pack
    * **Reference**
      * Glossary
-     * Tool Directory
      * Reference Architectures (PDF/SVG)
+5. **Tools**
+   * SBOM & Supply Chain Security
+   * Static & Dynamic Analysis (SAST/DAST)
+   * Firmware & Binary Analysis
+   * Secure Update & OTA Frameworks
+   * Vulnerability & Threat Intelligence
 
 ### Secondary elements
 
@@ -64,10 +68,10 @@
 
 | Persona              | Likely path                                                                       |
 | -------------------- | --------------------------------------------------------------------------------- |
-| Compliance Lead      | Quick Start → CRA primer → Tools & Templates → Gap-analysis worksheets            |
+| Compliance Lead      | Quick Start → CRA primer → Resources → Gap-analysis worksheets            |
 | Firmware Engineer    | Standards & Regulations → CRA → Implementation Guides → Build Phase → Secure Boot |
 | DevOps               | Implementation Guides → Operate Phase → Continuous Compliance                     |
-| CTO / Decision‑maker | Quick Start → Tools & Templates → Maturity model → Contact                        |
+| CTO / Decision‑maker | Quick Start → Resources → Maturity model → Contact                        |
 
 ---
 

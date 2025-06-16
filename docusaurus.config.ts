@@ -109,6 +109,12 @@ const config: Config = {
           label: 'Resources',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'toolsSidebar',
+          position: 'left',
+          label: 'Tools',
+        },
+        {
           href: 'https://github.com/sbd-community/handbook',
           label: 'GitHub',
           position: 'right',
