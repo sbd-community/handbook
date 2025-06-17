@@ -67,3 +67,23 @@ en303645:
   label: EN 303 645
   description: Posts related to the ETSI EN 303 645 standard.
   permalink: /en303645
+
+ico:
+  label: ICO
+  description: Posts related to the UK's Information Commissioner's Office.
+  permalink: /ico
+
+pecr:
+  label: PECR
+  description: Posts related to the Privacy and Electronic Communications Regulations.
+  permalink: /pecr
+
+privacy:
+  label: Privacy
+  description: Topics related to data privacy and protection.
+  permalink: /privacy
+
+uk:
+  label: UK
+  description: Focus on United Kingdom regulations and standards.
+  permalink: /uk
