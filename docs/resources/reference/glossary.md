@@ -12,6 +12,9 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 <dfn>CE Marking</dfn>
 : A mandatory marking for certain products sold within the European Economic Area (EEA), indicating conformity with health, safety, and environmental protection standards. The CRA adds cybersecurity requirements to the CE mark for products with digital elements. See the [CRA Overview](../../standards/cra-overview.md) for more details.
 
+<dfn>Connected Device</dfn>
+: A general, plain-English term for any physical object that can connect to a network (like the internet) to exchange data. This is the handbook's preferred general term, encompassing both specific legal definitions like "Products with Digital Elements" and common industry terms like "IoT".
+
 <dfn>Conformity Assessment</dfn>
 : The process of demonstrating whether a product meets specified requirements. Under the CRA, this can range from a manufacturer's self-assessment (Module A) to a mandatory third-party audit by a Notified Body, depending on the product's risk classification. See the [CRA Conformity Routes](../../standards/cra-overview.md#conformity-assessment-routes) for more.
 
@@ -32,6 +35,9 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 
 <dfn>IACS (Industrial Automation and Control Systems)</dfn>
 : The collection of personnel, hardware, and software that can affect or influence the safe, secure, and reliable operation of an industrial process. Also known as Operational Technology (OT). See the [IEC 62443 Overview](../../standards/iec62443-overview.md).
+
+<dfn>IoT (Internet of Things)</dfn>
+: The network of physical products that incorporate sensors, software, and connectivity to exchange data. While it can apply broadly, the term is often associated with consumer products (e.g., smart home devices, wearables). See the [ETSI EN 303 645 Overview](../../standards/en303645-overview.md) and [PECR Overview](../../standards/pecr-overview.md) for IoT-specific standards.
 
 <dfn>NIS 2 Directive</dfn>
 : An EU-wide law on cybersecurity that establishes security obligations for "essential" and "important" entities in critical sectors (e.g., energy, transport, health). It primarily governs *organisational* cyber-risk, whereas the CRA governs *product* security.

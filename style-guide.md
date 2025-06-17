@@ -33,7 +33,9 @@ Define a consistent voice, visual language, and editorial standard so every arti
 ## 4. Terminology
 
 - **Secure‑by‑Design (SbD)**: always capitalize S, D; hyphenate.
-- **Products with digital elements**: preferred CRA phrase; introduce early.
+- **Product with Digital Elements (PDE)**: The formal, legal term from the Cyber-Resilience Act. Use this for precision when discussing the CRA's scope. Abbreviate as PDE after the first full mention.
+- **Connected Device**: The preferred, general-purpose term for this handbook. It is a plain-English umbrella term covering PDEs, IoT devices, and other network-connected hardware.
+- **IoT (Internet of Things)**: Use when discussing consumer-focused products or when referencing specific standards or guidance that use the term (e.g., ETSI EN 303 645, ICO's IoT guidance). Define on first use.
 - **Cyber‑Resilience Act**: abbreviate as CRA after first mention.
 - **NIS 2 Directive**: no hyphen (EU style).
 - **SBOM, VEX**: define on first appearance.
