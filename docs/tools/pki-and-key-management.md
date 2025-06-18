@@ -14,11 +14,11 @@ The following platforms provide the infrastructure needed to issue and manage de
 | Tool / Provider | Type | Description |
 | :--- | :--: | :--- |
 | [**Keyfactor EJBCA & Command**](https://www.keyfactor.com/products/ejbca-enterprise/) | <i class="fa-solid fa-code-branch"></i> | An open-source, enterprise-grade CA software solution (EJBCA) paired with a commercial Certificate Lifecycle Management (CLM) platform (Command). Supports a wide range of protocols, including ACME, SCEP, and EST. |
+| [**QuarkLink**](https://www.cryptoquantique.com/products/quarklink/) | <i class="fa-solid fa-dollar-sign"></i> | A commercial IoT security platform for provisioning, onboarding, and lifecycle management, including OTA updates. |
 | [**Nexus Go IoT**](https://www.nexusgroup.com/solutions/online-services/iot/) | <i class="fa-solid fa-dollar-sign"></i> | A PKI service delivered from the cloud, specifically designed for issuing and managing certificates for IoT devices. It automates certificate management, allowing devices to be onboarded securely to IoT platforms like Azure IoT Hub and AWS IoT Core. |
 | [**DigiCert IoT Trust Manager**](https://www.digicert.com/iot-trust-manager) | <i class="fa-solid fa-dollar-sign"></i> | A comprehensive platform that combines a high-availability CA with device and certificate lifecycle management. It is designed to handle the scale of large IoT deployments and supports flexible deployment models. |
 | [**Commscope Sentry PKIWorks**](https://www.commscopesentry.com/solutions/pkiworks-solutions) | <i class="fa-solid fa-dollar-sign"></i> | An on-premise, enterprise-grade PKI from DigiCert for managing device and network element certificates. |
 | [**Kudelski IoT keyStream**](https://www.kudelski-iot.com/services-and-systems/keystream-iot-security-system) | <i class="fa-solid fa-dollar-sign"></i> | An end-to-end security solution that provides device-to-cloud data protection. It includes secure identity provisioning, PKI management, and a client library to integrate into device firmware, abstracting much of the complexity from the developer. |
-| [**QuarkLink**](https://www.cryptoquantique.com/products/quarklink/) | <i class="fa-solid fa-dollar-sign"></i> | A commercial IoT security platform for provisioning, onboarding, and lifecycle management, including OTA updates. |
 
 ### Key Protocols for IoT Certificate Management
 These protocols are commonly used to automate the process of enrolling devices and renewing certificates.
