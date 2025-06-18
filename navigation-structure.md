@@ -1,78 +1,77 @@
-# SecureByDesignHandbook.com – Draft Navigation
+# SecureByDesignHandbook.com – Site Navigation
 
-**Aim**: clear, role‑oriented path from landing to implementation material.
+**Aim**: A clear, role-oriented path from landing page to implementation material.
 
 ---
 
-## Top‑level menu
+## Top-Level Menu
 
-1. **Quick Start**
+This structure reflects the implemented navigation in the `/docs` folder and the `sidebar_position` metadata within each page.
 
-   * "How to use this handbook"
-   * CRA 5‑minute primer
-   * First‑sprint checklist
-2. **Standards & Regulations**
+1.  **Quick Start**
+    -   How to use this handbook
+    -   CRA 5-minute primer
+    -   First-sprint checklist
 
-   * **EU**
+2.  **Standards & Regulations**
+    -   Overview
+    -   Cyber-Resilience Act (CRA)
+    -   NIS 2 Directive
+    -   Radio Equipment Directive (RED)
+    -   ETSI EN 303 645
+    -   IEC 62443 Series
+    -   UK PSTI Act
+    -   EU PECR
 
-     * Cyber‑Resilience Act (CRA)
-     * NIS 2 Directive
-   * **International**
+3.  **Implementation Guides**
+    -   **Build Phase** (Ordered by workflow)
+        -   Unique Device Identity
+        -   Secure Boot
+        -   Key Provisioning & Storage
+        -   Secure OTA Updates
+        -   SBOM & VEX Workflows
+    -   **Operate Phase**
+        -   Vulnerability Disclosure
+        -   Patch Cadence
+        -   CI/CD Hardening
 
-     * IEC 62443 series
-   * **Consumer IoT**
+4.  **Resources**
+    -   **Checklists & Worksheets**
+        -   CRA Gap Analysis
+        -   Maturity Model
+    -   **Policy & Evidence**
+        -   Policy Templates
+        -   Audit Evidence Pack
+    -   **Reference**
+        -   Glossary
+    -   **Real-World Vulnerabilities**
+        -   *Case studies of security flaws.*
 
-     * ETSI EN 303 645
-   * **Regional**
-
-     * UK PSTI • US SBOM rules
-3. **Implementation Guides**
-
-   * **Build Phase**
-
-     * Secure Boot & Root of Trust
-     * Key Provisioning & Storage
-     * SBOM & VEX Generation
-     * Secure Update / OTA
-   * **Operate Phase**
-
-     * Patch Cadence & Rollback
-     * Vulnerability Disclosure (CVD)
-     * Continuous Compliance (CI/CD)
-4. **Resources**
-   * **Checklists & Worksheets**
-     * Gap‑analysis worksheets
-     * Maturity‑model worksheets
-   * **Policy & Evidence**
-     * Policy templates (CVD, update cadence)
-     * Audit evidence pack
-   * **Reference**
-     * Glossary
-     * Reference Architectures (PDF/SVG)
-5. **Tools**
-   * SBOM & Supply Chain Security
-   * Static & Dynamic Analysis (SAST/DAST)
-   * Firmware & Binary Analysis
-   * Secure Update & OTA Frameworks
-   * Vulnerability & Threat Intelligence
+5.  **Tools** (Ordered by workflow)
+    -   Static & Dynamic Analysis (SAST / DAST)
+    -   SBOM & Supply Chain Security
+    -   PKI & Key Management
+    -   Secure Update & OTA Frameworks
+    -   Firmware & Binary Analysis
+    -   Vulnerability & Threat Intelligence
 
 ### Secondary elements
 
-* **Search** (global, top‑right)
-* **Breadcrumbs** on article pages
-* **Footer quick links**: GitHub repo, Discussions, RSS, Privacy, Licence.
+*   **Search** (global, top-right)
+*   **Breadcrumbs** on article pages
+*   **Footer quick links**: GitHub repo, Discussions, RSS, Privacy, Licence.
 
 ---
 
-## User journeys
+## User Journeys
 
-| Persona              | Likely path                                                                       |
-| -------------------- | --------------------------------------------------------------------------------- |
-| Compliance Lead      | Quick Start → CRA primer → Resources → Gap-analysis worksheets            |
-| Firmware Engineer    | Standards & Regulations → CRA → Implementation Guides → Build Phase → Secure Boot |
-| DevOps               | Implementation Guides → Operate Phase → Continuous Compliance                     |
-| CTO / Decision‑maker | Quick Start → Resources → Maturity model → Contact                        |
+| Persona | Likely Path |
+| :--- | :--- |
+| **Compliance Lead** | Quick Start → Standards & Regulations → CRA → Resources → Checklists → CRA Gap Analysis |
+| **Firmware Engineer** | Implementation Guides → Build Phase → Unique Device Identity → Secure Boot |
+| **DevOps Engineer** | Implementation Guides → Operate Phase → CI/CD Hardening → Tools → SAST / DAST |
+| **CTO / Decision-maker** | Quick Start → Resources → Checklists → Maturity Model |
 
 ---
 
-**Note**: This navigation structure is subject to change as we learn more about user needs and content development priorities. 
+**Note**: This document reflects the current "as-built" navigation structure. 
