@@ -1,6 +1,7 @@
 ---
 title: "Secure Boot Implementation"
 sidebar_label: "Secure Boot"
+sidebar_position: 2
 tags: [secure-boot, root-of-trust, chain-of-trust, cra, integrity]
 ---
 # Guide: Implementing Secure Boot

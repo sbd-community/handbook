@@ -1,6 +1,7 @@
 ---
 title: "Key Provisioning & Storage"
 sidebar_label: "Key Management"
+sidebar_position: 3
 tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 ---
 # Guide: Key Provisioning & Storage

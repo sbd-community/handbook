@@ -1,30 +1,26 @@
 ---
-title: "Build Phase"
-sidebar_label: "Build Phase"
-slug: /implementation/build-phase
+title: "Build Phase Guides"
+sidebar_label: "Overview"
 ---
 
-# Build Phase Implementation Guides
+# Implementation Guides: Build Phase
 
-Secure-by-design practices for the development and build phase of connected devices.
+The "Build Phase" covers the core engineering tasks involved in creating a secure-by-design product, from the earliest stages of manufacturing to the point where software is deployed. These guides provide practical, step-by-step advice for implementing the foundational security controls required by modern regulations.
 
-## Essential Build Phase Security
+This section will help you answer questions like:
+- How do I establish a hardware root of trust?
+- What's the right way to sign and verify firmware?
+- How can I automate the creation of an SBOM?
 
-During the build phase, you establish the foundation of your device's security posture. These guides cover the core security implementations that must be built into your device before it ships.
+---
 
-## Available Guides
+### Core Topics
 
-### [Key Management](./key-provisioning.md)
-Implement secure key generation, provisioning, and storage using hardware security modules and secure elements.
-
-### [OTA Updates](./ota-updates.md)
-Design secure over-the-air update mechanisms with cryptographic verification and rollback protection.
-
-### [SBOM & VEX](./sbom-vex.md)
-Generate and manage Software Bills of Materials and Vulnerability Exchange documents for supply chain transparency.
-
-### [Secure Boot](./secure-boot.md)
-Establish hardware root of trust and verified boot chains to ensure only authorized firmware runs on your devices.
+-   **[Unique Device Identity](./unique-device-identity.md):** Learn how to establish a hardware-based root of trust, which is the cornerstone of all device security.
+-   **[Secure Boot](./secure-boot.md):** Implement a chain of trust to ensure that only authenticated, unmodified software can run on your device.
+-   **[Key Provisioning & Storage](./key-provisioning.md):** Master the lifecycle of cryptographic keys, from secure generation and provisioning to hardware-backed storage.
+-   **[Secure OTA Updates](./ota-updates.md):** Build a resilient and secure Over-the-Air update mechanism to patch vulnerabilities in the field.
+-   **[SBOM & VEX Workflows](./sbom-vex.md):** Integrate automated SBOM and VEX generation into your CI/CD pipeline to meet transparency and vulnerability management requirements.
 
 ---
 
