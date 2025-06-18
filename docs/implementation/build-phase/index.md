@@ -14,17 +14,17 @@ During the build phase, you establish the foundation of your device's security p
 
 ## Available Guides
 
-### [Secure Boot](./secure-boot.md)
-Establish hardware root of trust and verified boot chains to ensure only authorized firmware runs on your devices.
-
 ### [Key Management](./key-provisioning.md)
 Implement secure key generation, provisioning, and storage using hardware security modules and secure elements.
+
+### [OTA Updates](./ota-updates.md)
+Design secure over-the-air update mechanisms with cryptographic verification and rollback protection.
 
 ### [SBOM & VEX](./sbom-vex.md)
 Generate and manage Software Bills of Materials and Vulnerability Exchange documents for supply chain transparency.
 
-### [OTA Updates](./ota-updates.md)
-Design secure over-the-air update mechanisms with cryptographic verification and rollback protection.
+### [Secure Boot](./secure-boot.md)
+Establish hardware root of trust and verified boot chains to ensure only authorized firmware runs on your devices.
 
 ---
 
