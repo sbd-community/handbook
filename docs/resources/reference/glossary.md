@@ -78,6 +78,4 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 <dfn>VEX (Vulnerability Exploitability eXchange)</dfn>
 : A security advisory that clarifies whether a specific product is affected by a known vulnerability in one of its included components. It is a companion document to an SBOM, used to suppress false positives from scanners. See the [SBOM & VEX Guide](../../implementation/build-phase/sbom-vex.md).
 
----
-
-*This content is being developed. Contribute definitions via our [GitHub repository](https://github.com/sbd-community/handbook).* 
+<!-- Citations -->

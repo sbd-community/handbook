@@ -23,3 +23,5 @@ This case demonstrates that "local-only" vulnerabilities cannot be ignored, espe
 | **Harden the Operating Environment** | A "kiosk mode" must be more than just a full-screen application. The underlying operating system should be hardened to prevent unauthorized applications from running and to block attempts to escape the kiosk and access system resources. Techniques like application allow-listing and sandboxing are critical. |
 | **Encrypt Data at Rest** | Even if an attacker gains access to the underlying system, sensitive data should remain protected. All stored patient data on the device's local storage must be encrypted. This renders the data useless to an attacker who manages to exfiltrate it. |
 | **Assume Insider Threats** | The security model for a device must always account for the possibility of an insider threat or an attacker gaining temporary physical access. Relying solely on the physical security of the hospital environment is insufficient. The device must be able to defend itself. | 
+
+<!-- Citations -->

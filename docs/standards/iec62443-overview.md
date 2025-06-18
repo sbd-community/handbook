@@ -53,9 +53,7 @@ The IEC 62443 series is organized into four main groups of documents, each targe
     - **[62443-4-1][iec_4_1]:** Secure Product Development Lifecycle Requirements
     - **[62443-4-2][iec_4_2]:** Technical Security Requirements for IACS Components
 
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-<!-- IEC 62443 Links -->
+<!-- Citations -->
 [iec_webstore]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC 62443 Series on the IEC Webstore"
 [iec_1_1]: https://webstore.iec.ch/en/publication/7029 "IEC 62443-1-1:2009"
 [iec_1_3]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC TR 62443-1-3:2011"

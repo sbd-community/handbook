@@ -15,3 +15,5 @@ Tools and frameworks for building robust, secure over-the-air (OTA) update mecha
 | [**The Update Framework (TUF)**](https://theupdateframework.io/) | <i class="fa-solid fa-code-branch"></i> | A CNCF-graduated project that provides a specification and libraries for securing software update systems. |
 | [**Uptane**](https://uptane.github.io/) | <i class="fa-solid fa-code-branch"></i> | An extension of TUF specifically designed for the high-security demands of automotive software updates. |
 | [**Sigstore**](https://www.sigstore.dev/) | <i class="fa-solid fa-code-branch"></i> | A Linux Foundation project for signing, verifying, and proving the provenance of software artifacts. | 
+
+<!-- Citations -->

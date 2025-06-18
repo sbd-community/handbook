@@ -64,10 +64,7 @@ A smart TV uses Automatic Content Recognition (ACR) to identify what a user is w
 | **PSTI Act** | The Product Security and Telecommunications Infrastructure (PSTI) Act 2022 focuses on the security of the device itself (e.g., banning default passwords). PECR focuses on the privacy of the communications that use that device. The two are complementary: a PSTI-compliant device helps ensure the confidentiality that PECR requires. |
 | **EU CRA** | For UK manufacturers selling into the EU, the Cyber-Resilience Act will impose product security requirements. Like PSTI, the CRA is complementary to PECR, ensuring the device is secure enough to protect the communications flowing through it. |
 
----
-
-*This content is based on the ICO's guidance on consumer IoT. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
+<!-- Citations -->
 [pecr_legislation]: https://www.legislation.gov.uk/uksi/2003/2426/contents
 [ico_guide]: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/
 [ico_iot_guide]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/online-tracking/guidance-for-consumer-internet-of-things-products-and-services/ 

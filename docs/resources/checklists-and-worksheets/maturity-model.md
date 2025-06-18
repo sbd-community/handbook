@@ -63,6 +63,4 @@ Using this model, you can benchmark your current state against the practices req
 | **Secure Update Mechanism** | Updates are delivered via insecure means or require manual installation. | Updates are cryptographically signed, but no rollback protection exists. | Updates are signed, delivered over a secure channel, and include anti-rollback protection. | The update success rate across the device fleet is monitored. | A/B testing of updates is used to ensure stability before full rollout. |
 | **Public Disclosure Policy (CVD)** | No public policy. | A `security@` email is listed, but with no commitment. | A formal CVD policy is published, including scope, safe harbor, and response SLAs. | The organization tracks its performance against its public SLAs. | The company actively engages with the research community and offers bug bounties. |
 
----
-
-*This model is a guide for self-assessment and improvement, not a formal audit checklist. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).* 
+<!-- Citations -->

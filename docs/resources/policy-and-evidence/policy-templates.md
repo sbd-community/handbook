@@ -13,7 +13,7 @@ This section provides ready-to-use templates for common cybersecurity policies r
 
 ## 1. Coordinated Vulnerability Disclosure (CVD) Policy
 
-A public CVD policy is a legal requirement under the CRA ([CRA Annex I.II.5][cra_annexI_partII]). It provides a clear, safe channel for security researchers to report vulnerabilities to you.
+A public CVD policy is a legal requirement under the CRA ([Annex I.II.5][cra_annexI]). It provides a clear, safe channel for security researchers to report vulnerabilities to you.
 
 You can adapt the markdown template below and host it on a dedicated security page on your company website (e.g., `https://www.example.com/security`). You should then link to this page from a `security.txt` file located at `https://www.example.com/.well-known/security.txt`.
 
@@ -78,4 +78,5 @@ While we don't provide a full template for every policy, the following guides in
 
 *This guide provides starting points for your policy documentation. Adapt them to your team's specific needs and integrate them into your compliance workflow.*
 
-[cra_annexI_partII]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements" 
+<!-- Citations -->
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

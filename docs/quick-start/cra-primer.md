@@ -89,9 +89,5 @@ Market surveillance authorities will also have the power to order product recall
 
 3.  **Assign Ownership (1 min):** Assign a person or team to be responsible for leading your CRA compliance effort. Have them read the [full CRA overview](../standards/cra-overview.md) and start a detailed gap analysis.
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-[cra_risk_classes]: ../standards/cra-overview.md#product-risk-classes "CRA Product Risk Classification"
-[cra_annexI]: ../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+<!-- Citations -->
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

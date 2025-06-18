@@ -43,17 +43,11 @@ After this date, manufacturers placing relevant radio equipment on the EU market
 | **NIS 2 Directive** | NIS 2 governs *organisational* cyber risk for critical sectors, while the RED focuses on *product* security. An organisation might be a NIS 2 "essential entity" and also manufacture products that must comply with the RED. The obligations are cumulative. ([NIS 2 Art. 21 § 2][nis2_art21]) |
 | **CE-marking framework** (Reg 765/2008) | The RED security requirements are enforced through the CE-marking framework. A product may only bear the CE mark if it complies with *all* applicable legislation, which, from Aug 2025, includes [RED Art. 3 § 3(d-f)][red_art3] for in-scope devices. ([Reg. 765/2008 Art. 30][ce_marking_reg]) |
 
----
-
-A full quick-start guide—including scope, timelines, and overlap with the CRA—will appear here soon.
-
-<!-- Shared links -->
+<!-- Citations -->
 [cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – Relationship with Radio Equipment Directive (RED)"
 [cra_art11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_11 "CRA Article 11 – More specific Union law"
 [cra_art71]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71 "CRA Article 71 – Entry into force and application"
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
-
-<!-- RED-specific links -->
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Official Journal of Directive 2014/53/EU"
 [red_del_act]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – activating security clauses"
 [red_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228 "Consolidated text of Directive 2014/53/EU"

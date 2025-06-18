@@ -65,8 +65,4 @@ _Your goal: Understand the legal requirements in detail and find evidence of com
 
 This handbook is a living document and a community effort. If you see something missing, find an error, or have a suggestion, please see our [Contributing Guide](https://github.com/sbd-community/handbook/blob/main/CONTRIBUTING.md) or open an issue on our GitHub repository.
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-[cra_annex_i]: ../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+<!-- Citations -->

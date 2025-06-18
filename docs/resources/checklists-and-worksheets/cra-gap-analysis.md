@@ -64,3 +64,5 @@ _Based on [CRA Annex I, Part I](../../standards/cra-overview.md#annex-i-benchmar
 ---
 
 *This checklist provides a starting point. Adapt it to your team's specific needs and integrate these tasks into your project management system.* 
+
+<!-- Citations -->

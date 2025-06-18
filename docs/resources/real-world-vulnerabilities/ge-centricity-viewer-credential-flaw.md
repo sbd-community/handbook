@@ -20,3 +20,5 @@ This case study highlights the importance of securing not just the device, but t
 | **Implement Credential Rotation** | For any system with service credentials, there must be a policy and a mechanism to regularly rotate them. This limits the window of opportunity for an attacker who manages to acquire a password. |
 | **Favor Certificate-Based Authentication** | For machine-to-machine communication, such as between an imaging device, a viewer, and a PACS server, password-based authentication is brittle. Modern systems should use stronger, more manageable methods like mutual TLS (mTLS) with client certificates for authentication. |
 | **Regular Security Audits** | A networked platform that handles sensitive patient data is a high-value target. It requires regular, rigorous security auditing and penetration testing to proactively identify and fix authentication and authorization weaknesses before they lead to a recall. | 
+
+<!-- Citations -->

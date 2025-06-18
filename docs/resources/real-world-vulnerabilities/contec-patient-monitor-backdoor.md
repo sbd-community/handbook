@@ -23,3 +23,5 @@ This incident highlights multiple failures in fundamental security design. A sec
 | **Encrypted Communications** | All network communications, especially telemetry containing patient data, must be encrypted using standard, robust protocols like TLS. This would have prevented the plaintext data leak, protecting patient privacy even if network traffic was intercepted. |
 | **Principle of Least Privilege** | The firmware update process should not have been able to override user-configured network settings. An update mechanism should only have the permissions necessary to do its job, not to reconfigure the entire device's network stack. |
 | **Code Audits & Supply Chain Security** | Regular security audits of the device's code and a thorough review of third-party components would almost certainly have discovered an undocumented and insecure update mechanism before the product ever shipped to customers. | 
+
+<!-- Citations -->

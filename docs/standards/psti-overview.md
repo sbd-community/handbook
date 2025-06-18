@@ -65,9 +65,6 @@ The Act gives an enforcement authority (the Office for Product Safety and Standa
 | **EU CRA** | The Cyber-Resilience Act is the EU's equivalent of PSTI, but with a broader scope and more detailed requirements. A product compliant with the CRA will likely meet PSTI's requirements, but manufacturers selling in both markets must ensure compliance with both regimes. |
 | **EU RED** | The Radio Equipment Directive's cybersecurity requirements (under Delegated Act 2022/30) overlap with PSTI, particularly on aspects of network protection. However, PSTI's focus is more on the baseline security configuration of the device itself. |
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
+<!-- Citations -->
 [psti_act_2022]: https://www.legislation.gov.uk/ukpga/2022/46/contents
 [psti_regs_2023]: https://www.legislation.gov.uk/uksi/2023/1007/contents 

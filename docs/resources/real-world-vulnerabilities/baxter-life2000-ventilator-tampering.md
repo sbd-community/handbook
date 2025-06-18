@@ -28,3 +28,5 @@ This case is a powerful lesson in the need for **defense-in-depth**. A single se
 | **Encrypt All Communications** | Even for a tethered "Service PC," all communications should be encrypted. Assuming a physical connection is a "trusted" one is a dangerous mistake. Encrypting the USB/serial link would have prevented snooping and man-in-the-middle attacks. |
 | **Basic Authentication Hardening** | A simple control like rate-limiting password attempts makes brute-force attacks significantly more difficult. |
 | **Implement Access Logging** | Even if an attacker is attempting to gain access, the device should log these attempts. Sufficient logging provides an essential audit trail for forensic analysis after a potential incident is discovered. | 
+
+<!-- Citations -->

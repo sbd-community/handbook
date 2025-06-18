@@ -48,3 +48,5 @@ This sprint focuses on auditing and planning for the most critical on-device sec
 ---
 
 *This checklist provides a starting point. Adapt it to your team's specific needs and integrate these tasks into your project management system.* 
+
+<!-- Citations -->

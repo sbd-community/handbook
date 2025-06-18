@@ -14,3 +14,5 @@ Tools for reverse engineering and analyzing compiled firmware images to find vul
 | [**FACT** (Firmware Analysis & Comparison Tool)](https://f-a-c-t.com/) | <i class="fa-solid fa-code-branch"></i> | An automated platform for unpacking firmware, running analyses, and comparing versions. |
 | [**EMBA** (Embedded-device MAnufacturer's security check)](https://github.com/e-m-b-a/emba) | <i class="fa-solid fa-code-branch"></i> | A security analyzer for firmware images that can identify vulnerabilities and configuration weaknesses. |
 | [**Firmwalker**](https://github.com/craigz28/firmwalker) | <i class="fa-solid fa-code-branch"></i> | A script for searching extracted firmware filesystems for common vulnerabilities and misconfigurations. | 
+
+<!-- Citations -->

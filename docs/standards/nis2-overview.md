@@ -40,10 +40,7 @@ Management bodies of these entities can be held personally liable for non-compli
 | **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS 2 Art. 4][nis2_art4]). |
 | **CER Directive** | The Critical Entities Resilience Directive (EU 2022/2557) covers the *physical* resilience of critical infrastructure (e.g., against natural disasters or sabotage). NIS 2 covers their *cyber* resilience. The two directives are designed to work in parallel. |
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
+<!-- Citations -->
 [nis2_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R2554 "Official Journal of Directive (EU) 2022/2555"
 [nis2_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227 "Consolidated text of Directive (EU) 2022/2555"
 [nis2_art4]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_4 "NIS 2 Article 4 – Sector-specific Union legal acts"

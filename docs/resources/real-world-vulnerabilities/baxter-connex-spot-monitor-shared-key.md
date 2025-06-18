@@ -20,3 +20,5 @@ This incident is a classic example of cryptographic malpractice. The use of a sh
 | **Hardware-Protected Keys** | Private keys should be generated and stored in a secure, hardware-backed environment on the device (such as a TPM, Secure Element, or TEE). They should never be hard-coded into firmware or be extractable from the device. |
 | **Secure Provisioning at Manufacture** | The manufacturing process must include a secure provisioning step to inject these unique identities and certificates into each device. This process should be automated and auditable to ensure no two devices share the same identity. |
 | **Authenticated Updates** | Firmware updates should be signed using the manufacturer's private key, and the device should verify the signature using the corresponding public key before installation. The shared key in this case made any such signature process ineffective, as an attacker could use the same key to sign their own malicious update. | 
+
+<!-- Citations -->

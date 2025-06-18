@@ -17,3 +17,5 @@ Tools for generating, managing, and analyzing Software Bills of Materials (SBOMs
 | [**OSV-Scanner**](https://github.com/google/osv-scanner) | <i class="fa-solid fa-code-branch"></i> | A Google-maintained scanner that finds vulnerabilities in dependencies by cross-referencing against the OSV.dev database. |
 | [**FOSSA**](https://fossa.com/) | <i class="fa-solid fa-dollar-sign"></i> | Commercial platform for license compliance and open source vulnerability management. |
 | [**Snyk**](https://snyk.io/) | <i class="fa-solid fa-dollar-sign"></i> | Developer-focused security platform for SAST, SCA, and container scanning. | 
+
+<!-- Citations -->

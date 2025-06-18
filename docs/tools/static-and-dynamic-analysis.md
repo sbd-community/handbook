@@ -15,3 +15,5 @@ Tools for analyzing source code and running applications to find security flaws.
 | [**gitleaks**](https://github.com/gitleaks/gitleaks) | <i class="fa-solid fa-code-branch"></i> | Scans git repository history for hardcoded secrets and sensitive data. |
 | [**Checkmarx**](https://www.checkmarx.com/) | <i class="fa-solid fa-dollar-sign"></i> | Enterprise-grade platform for static and dynamic application security testing. |
 | [**OWASP ZAP**](https://www.zaproxy.org/) | <i class="fa-solid fa-code-branch"></i> | The world's most widely used open-source web application scanner. | 
+
+<!-- Citations -->
