@@ -1,7 +1,6 @@
 ---
-title: "Operate Phase"
+title: "Operate Phase Guides"
 sidebar_label: "Operate Phase"
-slug: /implementation/operate-phase
 ---
 
 # Operate Phase Implementation Guides

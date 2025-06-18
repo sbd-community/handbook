@@ -6,9 +6,21 @@ tags: [secure-boot, root-of-trust, chain-of-trust, cra, integrity]
 ---
 # Guide: Implementing Secure Boot
 
-**Secure Boot** is a security mechanism that ensures every piece of software loaded during a device's startup process is authentic and has not been tampered with. It creates a **"chain of trust,"** starting from a hardware-based root of trust and extending through each stage of the boot sequence—from the bootloader to the operating system kernel and finally to the application code.
+## 1. What is Secure Boot?
 
-A robust secure boot process is a non-negotiable requirement for building a trustworthy device. The **Cyber-Resilience Act (CRA)** legally mandates the protection of software integrity against modification ([CRA Annex I.I.2(f)][cra_annexI]). Secure boot is the primary technical control used to meet this requirement.
+**Secure Boot** is a security mechanism that ensures only trusted, authenticated software is allowed to run on a device. It works by creating a **chain of trust**, starting from an immutable hardware anchor and extending through every piece of software loaded during the boot sequence—from the initial bootloader to the operating system kernel and applications.
+
+The process cryptographically verifies the signature of each software component before it is executed. If any signature is invalid or the software has been tampered with, the boot process is halted.
+
+This is a foundational requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)**, which mandates that products "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user" ([CRA Annex I.I.2(f)][cra_annexI]).
+
+## 2. The Chain of Trust
+
+The entire secure boot process depends on a single, unchangeable starting point known as the **Hardware Root of Trust (HRoT)**.
+
+-   **The Anchor:** The chain begins with a public key that is permanently burned into the device's silicon (e.g., into One-Time-Programmable (OTP) memory). This key corresponds to the private key used by the manufacturer to sign the initial bootloader code. This anchor is part of the device's core **[Hardware-Based Identity](./unique-device-identity.md)**.
+-   **The First Link:** At power-on, the device's boot ROM—which is immutable—uses this public key to verify the signature of the first-stage bootloader stored in flash memory.
+-   **Subsequent Links:** If the first bootloader is authentic, it is loaded into memory. It then verifies the signature of the next component (e.g., the operating system kernel) using a key that it has been provisioned with. This process continues until the main application is running.
 
 ## 1. Core Concepts of Secure Boot
 

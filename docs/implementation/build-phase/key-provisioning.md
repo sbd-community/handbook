@@ -6,6 +6,28 @@ tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 ---
 # Guide: Key Provisioning & Storage
 
+## 1. What is Key Provisioning?
+
+**Key Provisioning** is the process of securely generating, injecting, and managing cryptographic keys on a device. This process is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
+
+While the device identity proves *who* a device is, the keys provisioned onto it are the tools it *uses* to perform cryptographic operations like encrypting data, verifying software signatures, and authenticating to a network.
+
+The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material.
+
+## 2. Key Types & The Provisioning Workflow
+
+A secure product uses different keys for different purposes. The provisioning process must distinguish between the foundational identity keys and the operational keys used by the application.
+
+1.  **Hardware Root of Trust Keys:**
+    -   **What:** The asymmetric key pair that forms the device's core **Hardware-Based Root Identity**.
+    -   **When:** Provisioned once, at the silicon level or in a highly secure factory environment. The private key should never be extractable.
+    -   **How:** Often injected by the chipmaker or provisioned into a Secure Element (SE) or TPM using a Hardware Security Module (HSM).
+
+2.  **Operational Keys & Certificates:**
+    -   **What:** Application-level keys, certificates, and credentials used for specific tasks (e.g., connecting to the cloud, signing data). These form the **Operational Identity**.
+    -   **When:** Can be provisioned in the factory after the root identity is established, or later in the lifecycle (e.g., during cloud onboarding).
+    -   **How:** The device uses its root private key to sign a Certificate Signing Request (CSR). The signed CSR is sent to a Certificate Authority (CA)—often managed by the manufacturer—which returns a signed operational certificate. This process anchors the trust of the operational key to the hardware root key.
+
 Securely managing cryptographic keys is the foundation upon which nearly every other device security guarantee is built. Without a trusted source of cryptographic material, features like secure boot, secure updates, and data protection are impossible to implement effectively.
 
 Regulations like the **Cyber-Resilience Act (CRA)** mandate the protection of integrity and confidentiality ([CRA Annex I.I.2(f)][cra_annexI]), which implicitly requires that cryptographic keys are protected from disclosure and modification. This guide outlines the best practices for provisioning and storing keys in a way that establishes a robust, hardware-based root of trust.

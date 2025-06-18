@@ -1,6 +1,6 @@
 ---
 title: "Build Phase Guides"
-sidebar_label: "Overview"
+sidebar_label: "Build Phase"
 ---
 
 # Implementation Guides: Build Phase
