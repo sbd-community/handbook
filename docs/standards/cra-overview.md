@@ -27,7 +27,7 @@ The consolidated version is easier for clause citations, but in case of doubt th
 
 **Early duties from 11 Jun 2026**  
 *Importers*, *distributors* & *authorised representatives* → must verify that a draft EU Declaration of Conformity and technical file exist, keep conformity documentation for **10 years**, and ensure storage/transport does not compromise firmware integrity ([CRA Ch. IV][cra_chIV]).  
-*Market-surveillance authorities* → gain power to sample, test, and order withdrawals or recalls of insecure products ([Arts 35–51][cra_chIV]).
+*Market-surveillance authorities* → gain power to sample, test, and order withdrawals or recalls of insecure products ([CRA Arts 35–51][cra_chIV]).
 
 **Early duties from 11 Sep 2026**  
 *Manufacturers* → must operate a vulnerability-handling process:  
@@ -82,21 +82,21 @@ Both conditions must be met.
 
 ### 2.2 Product Risk Classification (The Four Tiers) {#product-risk-classes}
 
-The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [Annex III][cra_annexIII] or [Annex IV][cra_annexIV] of the regulation.
+The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation.
 
 - **Default Category (Unclassified):** This is the baseline tier for the vast majority (~90%) of products with digital elements. It covers any product **not listed** in Annex III or Annex IV.
     - **Assessment:** Manufacturers can typically perform a self-assessment (**Module A**).
     - *Example:* A smart toaster, connected toy, or a general-purpose software library.
 
-- **Important Products — Class I:** This tier covers products listed in **[Annex III, Part I][cra_annexIII]**. These products perform functions critical to cybersecurity or pose a significant risk of disruption ([CRA Art. 7 § 2][cra_art7]).
+- **Important Products — Class I:** This tier covers products listed in **[CRA Annex III, Part I][cra_annexIII]**. These products perform functions critical to cybersecurity or pose a significant risk of disruption ([CRA Art. 7 § 2][cra_art7]).
     - **Assessment:** Self-assessment (**Module A**) is possible *if* the manufacturer fully applies relevant harmonised standards. Otherwise, a third-party audit is required ([CRA Art. 32 § 2][cra_art32]).
     - *Examples (from Annex III, Part I):* Identity management systems, password managers, web browsers, smart home products with security functions (e.g., smart locks).
 
-- **Important Products — Class II:** This tier covers a smaller list of higher-risk products defined in **[Annex III, Part II][cra_annexIII]**.
+- **Important Products — Class II:** This tier covers a smaller list of higher-risk products defined in **[CRA Annex III.II][cra_annexIII]**.
     - **Assessment:** A third-party audit by a Notified Body is **mandatory** ([CRA Art. 32 § 3][cra_art32]).
     - *Examples (from Annex III, Part II):* Hypervisors, firewalls, industrial intrusion detection systems, tamper-resistant microprocessors.
 
-- **Critical Products:** The highest risk tier, for products listed in **[Annex IV][cra_annexIV]**. These are products upon which the EU's critical infrastructure (as defined in NIS 2) may depend, or whose failure could disrupt critical supply chains ([CRA Art. 8 § 2][cra_art8]).
+- **Critical Products:** The highest risk tier, for products listed in **[CRA Annex IV][cra_annexIV]**. These are products upon which the EU's critical infrastructure (as defined in NIS 2) may depend, or whose failure could disrupt critical supply chains ([CRA Art. 8 § 2][cra_art8]).
     - **Assessment:** The Commission may require a mandatory **European cybersecurity certificate** at assurance level 'substantial' or higher. If no such scheme is mandated, these products follow the same rules as Class II ([CRA Art. 32 § 4][cra_art32]).
     - *Examples (from Annex IV):* Hardware Security Modules (HSMs), smart meter gateways, smartcards.
 
@@ -112,42 +112,42 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Smart doorbell (with no lock) | ✅ | | | |
 | Smart Lighting Controller/Hub | ✅ | | | |
 | Smartphone | ✅ | | | |
-| Smart speaker with virtual assistant ([Annex III.I.16][cra_annexIII]) | | ✅ | | |
-| Smart lock ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
-| Home alarm system ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
-| Baby monitor ([Annex III.I.17][cra_annexIII]) | | ✅ | | |
-| Fitness band ([Annex III.I.19][cra_annexIII]) | | ✅ | | |
-| Connected toy ([Annex III.I.19][cra_annexIII]) | | ✅ | | |
+| Smart speaker with virtual assistant ([CRA Annex III.I.16][cra_annexIII]) | | ✅ | | |
+| Smart lock ([CRA Annex III.I.17][cra_annexIII]) | | ✅ | | |
+| Home alarm system ([CRA Annex III.I.17][cra_annexIII]) | | ✅ | | |
+| Baby monitor ([CRA Annex III.I.17][cra_annexIII]) | | ✅ | | |
+| Fitness band ([CRA Annex III.I.19][cra_annexIII]) | | ✅ | | |
+| Connected toy ([CRA Annex III.I.19][cra_annexIII]) | | ✅ | | |
 | **General IT** |
 | Printer | ✅ | | | |
 | Office Suite | ✅ | | | |
 | Laptop | ✅ | | | |
 | Network-Attached Storage (NAS) device | ✅ | | | |
 | Digital Signage Display | ✅ | | | |
-| Web browser ([Annex III.I.2][cra_annexIII]) | | ✅ | | |
-| Password manager ([Annex III.I.3][cra_annexIII]) | | ✅ | | |
-| SIEM ([Annex III.I.7][cra_annexIII]) | | ✅ | | |
-| Operating System ([Annex III.I.12][cra_annexIII]) | | ✅ | | |
-| Router / Modem ([Annex III.I.13][cra_annexIII]) | | ✅ | | |
-| Hypervisor / Container runtime ([Annex III.II.1][cra_annexIII]) | | | ✅ | |
-| Firewall ([Annex III.II.3][cra_annexIII]) | | | ✅ | |
-| Intrusion Detection System ([Annex III.II.2][cra_annexIII]) | | | ✅ | |
+| Web browser ([CRA Annex III.I.2][cra_annexIII]) | | ✅ | | |
+| Password manager ([CRA Annex III.I.3][cra_annexIII]) | | ✅ | | |
+| SIEM ([CRA Annex III.I.7][cra_annexIII]) | | ✅ | | |
+| Operating System ([CRA Annex III.I.12][cra_annexIII]) | | ✅ | | |
+| Router / Modem ([CRA Annex III.I.13][cra_annexIII]) | | ✅ | | |
+| Hypervisor / Container runtime ([CRA Annex III.II.1][cra_annexIII]) | | | ✅ | |
+| Firewall ([CRA Annex III.II.3][cra_annexIII]) | | | ✅ | |
+| Intrusion Detection System ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
 | **Specialised H/W** |
 | Basic Barcode Scanner / RFID Reader | ✅ | | | |
-| Microprocessor w/ security features ([Annex III.I.14][cra_annexIII]) | | ✅ | | |
-| Tamper-resistant microprocessor ([Annex III.II.4][cra_annexIII]) | | | ✅ | |
-| Tamper-resistant microcontroller ([Annex III.II.5][cra_annexIII]) | | | ✅ | |
-| HSM ([Annex IV.1][cra_annexIV]) | | | | ✅ |
-| Smartcard / Secure Element ([Annex IV.3][cra_annexIV]) | | | | ✅ |
+| Microprocessor w/ security features ([CRA Annex III.I.14][cra_annexIII]) | | ✅ | | |
+| Tamper-resistant microprocessor ([CRA Annex III.II.4][cra_annexIII]) | | | ✅ | |
+| Tamper-resistant microcontroller ([CRA Annex III.II.5][cra_annexIII]) | | | ✅ | |
+| HSM ([CRA Annex IV.1][cra_annexIV]) | | | | ✅ |
+| Smartcard / Secure Element ([CRA Annex IV.3][cra_annexIV]) | | | | ✅ |
 | **Industrial (OT)** |
 | Non-critical IoT sensor | ✅ | | | |
 | Industrial IoT Temperature Sensor | ✅ | | | |
-| Industrial VPN gateway ([Annex III.I.5][cra_annexIII]) | | ✅ | | |
-| Industrial firewall ([Annex III.II.3][cra_annexIII]) | | | ✅ | |
-| Industrial IDS ([Annex III.II.2][cra_annexIII]) | | | ✅ | |
-| Smart meter gateway ([Annex IV.2][cra_annexIV]) | | | | ✅ |
+| Industrial VPN gateway ([CRA Annex III.I.5][cra_annexIII]) | | ✅ | | |
+| Industrial firewall ([CRA Annex III.II.3][cra_annexIII]) | | | ✅ | |
+| Industrial IDS ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
+| Smart meter gateway ([CRA Annex IV.2][cra_annexIV]) | | | | ✅ |
 | **Component** |
-| General-purpose library ([Art. 3 § 1][cra_art3]) | ✅ | | | |
+| General-purpose library ([CRA Art. 3 § 1][cra_art3]) | ✅ | | | |
 
 ### 2.3 Out-of-scope & special regimes
 
@@ -186,11 +186,11 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 | Obligation area | CRA trigger | Starts* | Key actions & evidence |
 |---|---|---|---|
-| **Secure-by-design** | [CRA Art. 13 § 1][cra_art13] + [Annex I][cra_annexI] | 2027-12-11 | Implement essential security requirements from Annex I. See Section 5 for a detailed engineering breakdown. **Evidence:** Risk assessment, test reports. |
-| **Vulnerability handling** | [CRA Art. 13 § 8][cra_art13] + [Annex I][cra_annexI] | 2027-12-11 | Establish CVD policy; track & fix vulns "without delay"; provide security updates for the support period (min. 5 years). **Evidence:** Published CVD policy, patch records. |
+| **Secure-by-design** | [CRA Art. 13 § 1][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Implement essential security requirements from Annex I. See Section 5 for a detailed engineering breakdown. **Evidence:** Risk assessment, test reports. |
+| **Vulnerability handling** | [CRA Art. 13 § 8][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Establish CVD policy; track & fix vulns "without delay"; provide security updates for the support period (min. 5 years). **Evidence:** Published CVD policy, patch records. |
 | **Technical documentation** | [CRA Art. 31][cra_art31] | 2027-12-11 | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. |
 | **Conformity & CE mark** | [CRA Art. 28][cra_art28]–[30][cra_art30] | 2027-12-11 | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). |
-| **Information to users**| [CRA Art. 13 § 18][cra_art13] + [Annex II][cra_annexII] | 2027-12-11 | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. |
+| **Information to users**| [CRA Art. 13 § 18][cra_art13] + [CRA Annex II][cra_annexII] | 2027-12-11 | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. |
 | **ENISA reporting** | [CRA Art. 14][cra_art14] | **2026-09-11** | Notify ENISA within **24h** of an actively exploited vulnerability. Submit a mitigation report within **14 days**. **Evidence:** Incident logs. |
 
 \* *Dates derive from [CRA Art. 71 § 2][cra_art71]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
@@ -199,10 +199,10 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ## 5 Secure-by-Design Engineering Benchmarks (Annex I Deep-Dive) {#annex-i-benchmarks}
 
-This section provides a technical deep-dive into the essential secure-by-design requirements mandated by **[Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
+This section provides a technical deep-dive into the essential secure-by-design requirements mandated by **[CRA Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
 
 ### 5.1 No Known Exploitable Vulnerabilities
-*Legal hook: [Annex I.I.2(a)][cra_annexI]*
+*Legal hook: [CRA Annex I.I.2(a)][cra_annexI]*
 
 > The product must be "made available on the market without any known exploitable vulnerabilities."
 
@@ -211,7 +211,7 @@ This section provides a technical deep-dive into the essential secure-by-design 
 - **Benchmark:** The build must fail if a vulnerability with a CVSS score of 7.0 or higher is detected and a patch is available. Maintain a Software Bill of Materials (SBOM) for all components.
 
 ### 5.2 Secure Configuration by Default
-*Legal hook: [Annex I.I.2(c)][cra_annexI]*
+*Legal hook: [CRA Annex I.I.2(c)][cra_annexI]*
 
 > The product must be "configured to be secure by default, allowing users to enable, disable or configure functions only where this does not create significant weaknesses."
 
@@ -223,7 +223,7 @@ This section provides a technical deep-dive into the essential secure-by-design 
     - Provide a secure factory-reset mechanism that wipes all user data.
 
 ### 5.3 Confidentiality & Integrity Protection
-*Legal hook: [Annex I.I.2(e) & (f)][cra_annexI]*
+*Legal hook: [CRA Annex I.I.2(e) & (f)][cra_annexI]*
 
 > The product must "protect the confidentiality of stored, transmitted or otherwise processed data...by encrypting relevant data at rest or in transit" and "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user."
 
@@ -234,7 +234,7 @@ This section provides a technical deep-dive into the essential secure-by-design 
     - **Code & config integrity:** Use a secure boot chain where each stage (bootloader, kernel, rootfs) is cryptographically signed and verified. Firmware updates must be signed, and the signature must be verified before installation.
 
 ### 5.4 Access Control
-*Legal hook: [Annex I.I.2(d)][cra_annexI]*
+*Legal hook: [CRA Annex I.I.2(d)][cra_annexI]*
 
 > The product must "protect against unauthorised access by controlling access...through appropriate control mechanisms, including authentication, identity and access management systems."
 
@@ -245,7 +245,7 @@ This section provides a technical deep-dive into the essential secure-by-design 
     - Protect against brute-force attacks with mechanisms like account lockout or rate limiting.
 
 ### 5.5 Attack Surface Reduction
-*Legal hook: [Annex I.I.2(j)][cra_annexI]*
+*Legal hook: [CRA Annex I.I.2(j)][cra_annexI]*
 
 > The product must be "designed, developed and produced to limit attack surfaces, including external interfaces."
 
@@ -256,7 +256,7 @@ This section provides a technical deep-dive into the essential secure-by-design 
     - Validate and sanitize all inputs from external sources to prevent injection attacks (e.g., SQLi, command injection).
 
 ### 5.6 Resilience & Mitigation
-*Legal hook: [Annex I.I.2(h) & (k)][cra_annexI]*
+*Legal hook: [CRA Annex I.I.2(h) & (k)][cra_annexI]*
 
 > The product must "protect the availability of essential and basic functions...including through resilience and mitigation measures against denial-of-service attacks" and "reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques."
 

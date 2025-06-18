@@ -5,7 +5,7 @@ tags: [templates, audit, compliance, cra, technical-documentation]
 ---
 # Guide: Assembling Your Audit Evidence Pack
 
-An **Audit Evidence Pack** is a structured collection of documents, records, and technical artefacts that demonstrates your product's compliance with a given regulation. For the **Cyber-Resilience Act (CRA)**, this pack constitutes the **technical documentation** that manufacturers are legally required to maintain and provide to market surveillance authorities upon request ([CRA Article 31][cra_art31]).
+An **Audit Evidence Pack** is a structured collection of documents, records, and technical artefacts that demonstrates your product's compliance with a given regulation. For the **Cyber-Resilience Act (CRA)**, this pack constitutes the **technical documentation** that manufacturers are legally required to maintain and provide to market surveillance authorities upon request ([CRA Art. 31][cra_art31]).
 
 This is not a one-time task but a "living" collection of evidence that must be updated throughout the product's lifecycle. This guide provides a template for organizing this information.
 
@@ -30,7 +30,7 @@ _This section details the product's design and the information provided to users
 
 -   [ ] **Detailed Architecture Diagram:** A diagram showing the product's key hardware and software components, network interfaces, security boundaries, and trust zones.
 -   [ ] **Hardware Root of Trust Specification:** Documentation of the hardware used to anchor security (e.g., SE, TPM, TEE) and the process for protecting keys. ([See Key Provisioning Guide](../../implementation/build-phase/key-provisioning.md))
--   [ ] **Software Bill of Materials (SBOM):** A complete, machine-readable SBOM (in SPDX or CycloneDX format) for the specific version of the software placed on the market. ([CAR Annex I.I][cra_annexI])
+-   [ ] **Software Bill of Materials (SBOM):** A complete, machine-readable SBOM (in SPDX or CycloneDX format) for the specific version of the software placed on the market. ([CRA Annex I.I][cra_annexI])
 -   [ ] **User Manual & Secure Configuration Guide:** A copy of the instructions provided to the user, which must include guidance on secure use, the product's support period, and how to report vulnerabilities. ([CRA Annex II][cra_annexII])
 
 ### Section 3: Security Verification & Validation
@@ -47,7 +47,7 @@ _This section contains ongoing records generated after the product is on the mar
 
 -   [ ] **Vulnerability Log:** A complete log of all vulnerabilities reported and discovered, including their source, triage status, severity score, and final resolution.
 -   [ ] **Patch Log:** A record of all security patches released, including the release date, CVEs addressed, and the firmware version that contains the fix.
--   [ ] **Incident Response Records:** If you have experienced a breach or an actively exploited vulnerability, this includes copies of the notification reports sent to ENISA and/or other authorities. ([CRA Article 14][cra_art14])
+-   [ ] **Incident Response Records:** If you have experienced a breach or an actively exploited vulnerability, this includes copies of the notification reports sent to ENISA and/or other authorities. ([CRA Art. 14][cra_art14])
 
 ---
 

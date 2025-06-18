@@ -23,7 +23,7 @@ Use this checklist to perform a high-level assessment of your organization's rea
 ---
 
 ## 2. Process & Vulnerability Handling Requirements
-_Based on [CRA Annex I, Part II](../../standards/cra-overview.md#annex-i-benchmarks)_
+_Based on [CRA Annex I.II][cra_annexI]_
 
 | Question | Status (Yes/No/Partial) | Evidence / Notes |
 | :--- | :--- | :--- |
@@ -31,12 +31,12 @@ _Based on [CRA Annex I, Part II](../../standards/cra-overview.md#annex-i-benchma
 | **Do you have a public Coordinated Vulnerability Disclosure (CVD) policy?**<br/>([CVD Guide](../../implementation/operate-phase/vulnerability-disclosure.md)) | | URL of the public policy page. |
 | **Is there a `security.txt` file on your website pointing to the CVD policy?** | | URL of the `security.txt` file. |
 | **Do you have a defined Patch Management Policy / Cadence?**<br/>([Patch Cadence Guide](../../implementation/operate-phase/patch-cadence.md)) | | Link to patch policy; document defining timelines. |
-| **Do you have a plan to meet the 24h ENISA reporting deadline for active exploits?**<br/>([CRA Art. 14 Reporting](../../implementation/operate-phase/vulnerability-disclosure.md#3-mandatory-enisa-reporting-cra-art-14)) | | Link to internal incident response plan. |
+| **Do you have a plan to meet the 24h ENISA reporting deadline for active exploits?**<br/>([CRA Art. 14][cra_art14]) | | Link to internal incident response plan. |
 
 ---
 
 ## 3. Product Security Requirements
-_Based on [CRA Annex I, Part I](../../standards/cra-overview.md#annex-i-benchmarks)_
+_Based on [CRA Annex I.I][cra_annexI]_
 
 | Question | Status (Yes/No/Partial) | Evidence / Notes |
 | :--- | :--- | :--- |
@@ -66,3 +66,5 @@ _Based on [CRA Annex I, Part I](../../standards/cra-overview.md#annex-i-benchmar
 *This checklist provides a starting point. Adapt it to your team's specific needs and integrate these tasks into your project management system.* 
 
 <!-- Citations -->
+[cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

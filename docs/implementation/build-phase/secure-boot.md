@@ -7,7 +7,7 @@ tags: [secure-boot, root-of-trust, chain-of-trust, cra, integrity]
 
 **Secure Boot** is a security mechanism that ensures every piece of software loaded during a device's startup process is authentic and has not been tampered with. It creates a **"chain of trust,"** starting from a hardware-based root of trust and extending through each stage of the boot sequence—from the bootloader to the operating system kernel and finally to the application code.
 
-A robust secure boot process is a non-negotiable requirement for building a trustworthy device. The **Cyber-Resilience Act (CRA)** legally mandates the protection of software integrity against modification ([CRA Annex I.I.2(f)][cra_annexI_partI]). Secure boot is the primary technical control used to meet this requirement.
+A robust secure boot process is a non-negotiable requirement for building a trustworthy device. The **Cyber-Resilience Act (CRA)** legally mandates the protection of software integrity against modification ([CRA Annex I.I.2(f)][cra_annexI]). Secure boot is the primary technical control used to meet this requirement.
 
 ## 1. Core Concepts of Secure Boot
 
@@ -51,9 +51,5 @@ To build a secure boot mechanism that meets regulatory requirements, ensure you 
 - [ ] **Fail-Secure Design:** Does the device refuse to boot or enter a safe recovery mode if any part of the chain of trust is broken?
 - [ ] **Process Documentation:** Is your code signing and key management process documented in your technical file?
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-<!-- Shared links -->
-[cra_annexI]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+<!-- Citations -->
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

@@ -20,24 +20,24 @@ The consolidated version is the primary reference for this directive.
 
 | NIS 2 milestone | Legal basis | Date |
 | --- | --- | --- |
-| Directive entered into force | [NIS 2 Art. 42][nis2_art42] | **2023-01-16** |
-| Member States must adopt national laws (transposition deadline) | [NIS 2 Art. 41][nis2_art41] | **2024-10-17** |
-| **NIS 2 rules become applicable in all Member States** | [NIS 2 Art. 41][nis2_art41] | **2024-10-18** |
+| Directive entered into force | [NIS2 Art. 42][nis2_art42] | **2023-01-16** |
+| Member States must adopt national laws (transposition deadline) | [NIS2 Art. 41][nis2_art41] | **2024-10-17** |
+| **NIS 2 rules become applicable in all Member States** | [NIS2 Art. 41][nis2_art41] | **2024-10-18** |
 
 **Key Obligations from 18 October 2024**  
 From this date, organisations within the scope of NIS 2 must:
-*   Comply with the risk-management measures outlined in **[Article 21][nis2_art21]**, which include policies on supply chain security, incident handling, and the use of cryptography.
-*   Adhere to the strict incident reporting timelines defined in **[Article 23][nis2_art23]**, including an initial warning to national authorities within **24 hours** of becoming aware of a significant incident.
+*   Comply with the risk-management measures outlined in **[NIS2 Art. 21][nis2_art21]**, which include policies on supply chain security, incident handling, and the use of cryptography.
+*   Adhere to the strict incident reporting timelines defined in **[NIS2 Art. 23][nis2_art23]**, including an initial warning to national authorities within **24 hours** of becoming aware of a significant incident.
 *   Register with their national competent authority.
 
-Management bodies of these entities can be held personally liable for non-compliance ([NIS 2 Art. 32 § 6][nis2_art32]).
+Management bodies of these entities can be held personally liable for non-compliance ([NIS2 Art. 32 § 6][nis2_art32]).
 
 **Relationship to other EU laws**
 
 | Law | How it interacts with NIS 2 |
 |-----|---------------------------|
-| **Cyber-Resilience Act (CRA)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" (like a hospital) must ensure its supply chain is secure ([NIS 2 Art. 21][nis2_art21]), which means procuring products that are CRA-compliant. |
-| **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS 2 Art. 4][nis2_art4]). |
+| **Cyber-Resilience Act (CRA)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" (like a hospital) must ensure its supply chain is secure ([NIS2 Art. 21][nis2_art21]), which means procuring products that are CRA-compliant. |
+| **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS2 Art. 4][nis2_art4]). |
 | **CER Directive** | The Critical Entities Resilience Directive (EU 2022/2557) covers the *physical* resilience of critical infrastructure (e.g., against natural disasters or sabotage). NIS 2 covers their *cyber* resilience. The two directives are designed to work in parallel. |
 
 <!-- Citations -->

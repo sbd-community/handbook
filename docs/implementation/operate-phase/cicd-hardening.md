@@ -7,7 +7,7 @@ tags: [cicd, github-actions, devsecops, supply-chain, cra]
 
 A secure product begins with a secure development process. The CI/CD (Continuous Integration / Continuous Deployment) pipeline, which automates the building, testing, and deployment of software, is a high-value target for attackers. A compromised pipeline can be used to inject malicious code, steal credentials, or tamper with build artifacts.
 
-The **Cyber-Resilience Act (CRA)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI_partII]). Hardening your CI/CD pipeline is essential for meeting these requirements.
+The **Cyber-Resilience Act (CRA)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI]). Hardening your CI/CD pipeline is essential for meeting these requirements.
 
 ## 1. "Shifting Left": Integrating Security Early
 
@@ -78,10 +78,5 @@ jobs:
 - [ ] **Secrets Management:** Are you using a dedicated secrets manager (e.g., GitHub Secrets, Vault) instead of hardcoding credentials?
 - [ ] **Secure Lifecycle Documentation:** Is your CI/CD hardening process documented as part of the evidence for your secure development lifecycle?
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-<!-- Shared links -->
-[cra_annexI_partII]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements"
-[cra_annexI]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+<!-- Citations -->
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

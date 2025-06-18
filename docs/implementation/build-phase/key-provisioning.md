@@ -43,9 +43,5 @@ To meet the requirements of modern cybersecurity standards, your key management 
 - [ ] **Limited Access:** Does your application code only access cryptographic *functions*? The raw key material should never be directly readable by the non-secure application processor.
 - [ ] **Lifecycle Documentation:** Is your key management plan (generation, provisioning, rotation, revocation) documented in your technical file to demonstrate compliance to auditors and authorities?
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-<!-- Shared links -->
-[cra_annexI]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+<!-- Citations -->
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

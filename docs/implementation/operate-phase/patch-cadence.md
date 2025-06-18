@@ -7,7 +7,7 @@ tags: [patch-management, vulnerability-handling, cra, ota, policy]
 
 Having a secure OTA update mechanism is only the first step; you also need a clear, documented policy for *when* and *how* you will use it. A **Patch Management Policy** is a critical operational document that defines your organization's commitment to fixing vulnerabilities and delivering updates.
 
-The **Cyber-Resilience Act (CRA)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI_partII]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
+The **Cyber-Resilience Act (CRA)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
 
 ## 1. Defining Your Patch Management Policy
 
@@ -54,10 +54,5 @@ Even with a phased rollout, a critical bug might slip through. You must have a p
 - [ ] **EOL Communication:** Does your policy clearly state the support lifetime for your product, after which security updates will no longer be provided?
 - [ ] **Process Documentation:** Is your patch management process—from vulnerability report to deployment and monitoring—fully documented in your technical file?
 
----
-
-*This content is being developed. Contribute to this page via our [GitHub repository](https://github.com/sbd-community/handbook).*
-
-<!-- Shared links -->
-[cra_annexI_partII]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I, Part II – Vulnerability handling requirements"
-[cra_annexI]: ../../standards/cra-overview.md#annex-i-benchmarks "CRA Annex I – Essential cybersecurity requirements" 
+<!-- Citations -->
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
