@@ -1,8 +1,4 @@
 {
   "label": "Real-World Vulnerabilities",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "A collection of case studies analyzing real-world security incidents in connected devices. These examples illustrate why a secure-by-design approach is critical."
-  }
+  "position": 4
 } 
