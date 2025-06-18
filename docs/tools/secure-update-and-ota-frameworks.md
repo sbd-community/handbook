@@ -1,11 +1,14 @@
 ---
 title: "Secure Update & OTA Frameworks"
 sidebar_label: "Secure Update & OTA"
+sidebar_position: 4
 tags: [tools, ota, secure-update, firmware, open-source, commercial]
 ---
 # Secure Update & OTA Frameworks
 
-Tools and frameworks for building robust, secure over-the-air (OTA) update mechanisms for connected devices.
+A secure **Over-the-Air (OTA)** update mechanism is a critical piece of infrastructure for maintaining product security throughout its lifecycle. The **[Cyber-Resilience Act](../standards/cra-overview.md)** requires manufacturers to handle vulnerabilities "without delay" and provide security updates for a defined support period ([CRA Art. 13 § 8][cra_art13]). An OTA framework is the primary means of fulfilling this obligation.
+
+These tools and frameworks provide the building blocks for creating a robust update system. They handle the complexities of delivering firmware to devices, ensuring updates are properly signed and verified, and managing the update process across a fleet of devices, including rollbacks in case of failure.
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |
@@ -17,3 +20,4 @@ Tools and frameworks for building robust, secure over-the-air (OTA) update mecha
 | [**Sigstore**](https://www.sigstore.dev/) | <i class="fa-solid fa-code-branch"></i> | A Linux Foundation project for signing, verifying, and proving the provenance of software artifacts. | 
 
 <!-- Citations -->
+[cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"

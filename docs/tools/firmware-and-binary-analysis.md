@@ -1,11 +1,14 @@
 ---
 title: "Firmware & Binary Analysis"
 sidebar_label: "Firmware & Binary Analysis"
+sidebar_position: 5
 tags: [tools, firmware, binary-analysis, reverse-engineering, open-source]
 ---
 # Firmware & Binary Analysis
 
-Tools for reverse engineering and analyzing compiled firmware images to find vulnerabilities when source code is not available.
+Firmware and binary analysis tools are essential for performing security assessments when you don't have access to the source code. This is a common scenario when integrating third-party components, such as binary-only drivers or closed-source libraries, into your product. To meet the legal requirement of ensuring the security of the entire product, manufacturers must have the capability to inspect these opaque components.
+
+These tools allow engineers to reverse-engineer compiled firmware images, inspect their contents, extract file systems, and analyze the executable code to find hidden vulnerabilities, hardcoded secrets, or insecure configurations.
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |

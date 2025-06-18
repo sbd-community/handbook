@@ -1,11 +1,14 @@
 ---
 title: "SBOM & Supply Chain Security"
 sidebar_label: "SBOM & Supply Chain"
+sidebar_position: 2
 tags: [tools, sbom, supply-chain, open-source, commercial]
 ---
 # SBOM & Supply Chain Security
 
-Tools for generating, managing, and analyzing Software Bills of Materials (SBOMs) and securing your dependencies.
+A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of all the software components, libraries, and dependencies included in a product. Maintaining an SBOM is a cornerstone of modern cybersecurity and a key requirement for the **[Cyber-Resilience Act](../standards/cra-overview.md)**, which mandates that manufacturers provide one as part of their technical documentation ([CRA Art. 13][cra_art13]).
+
+These tools help automate the creation, management, and analysis of SBOMs. They enable manufacturers to quickly identify which products are affected by a newly discovered vulnerability in a third-party component, allowing them to meet the CRA's strict vulnerability handling timelines.
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |
@@ -19,3 +22,4 @@ Tools for generating, managing, and analyzing Software Bills of Materials (SBOMs
 | [**Snyk**](https://snyk.io/) | <i class="fa-solid fa-dollar-sign"></i> | Developer-focused security platform for SAST, SCA, and container scanning. | 
 
 <!-- Citations -->
+[cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
