@@ -36,7 +36,7 @@ Management bodies of these entities can be held personally liable for non-compli
 
 | Law | How it interacts with NIS 2 |
 |-----|---------------------------|
-| **Cyber-Resilience Act (CRA)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" (like a hospital) must ensure its supply chain is secure ([NIS2 Art. 21][nis2_art21]), which means procuring products that are CRA-compliant. |
+| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" (like a hospital) must ensure its supply chain is secure ([NIS2 Art. 21][nis2_art21]), which means procuring products that are CRA-compliant. |
 | **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS2 Art. 4][nis2_art4]). |
 | **CER Directive** | The Critical Entities Resilience Directive (EU 2022/2557) covers the *physical* resilience of critical infrastructure (e.g., against natural disasters or sabotage). NIS 2 covers their *cyber* resilience. The two directives are designed to work in parallel. |
 

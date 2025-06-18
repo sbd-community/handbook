@@ -61,9 +61,9 @@ The Act gives an enforcement authority (the Office for Product Safety and Standa
 
 | Law | How it interacts with PSTI |
 |-----|----------------------------|
-| **UK GDPR & PECR** | PSTI focuses on the technical security of the device itself. GDPR and PECR focus on the protection of personal data processed by the device and its services. A secure device (PSTI) is a prerequisite for protecting data (GDPR/PECR). |
-| **EU CRA** | The Cyber-Resilience Act is the EU's equivalent of PSTI, but with a broader scope and more detailed requirements. A product compliant with the CRA will likely meet PSTI's requirements, but manufacturers selling in both markets must ensure compliance with both regimes. |
-| **EU RED** | The Radio Equipment Directive's cybersecurity requirements (under Delegated Act 2022/30) overlap with PSTI, particularly on aspects of network protection. However, PSTI's focus is more on the baseline security configuration of the device itself. |
+| **UK GDPR & [PECR](./pecr-overview.md)** | PSTI focuses on the technical security of the device itself. GDPR and PECR focus on the protection of personal data processed by the device and its services. A secure device (PSTI) is a prerequisite for protecting data (GDPR/PECR). |
+| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | The Cyber-Resilience Act is the EU's equivalent of PSTI, but with a broader scope and more detailed requirements. A product compliant with the CRA will likely meet PSTI's requirements, but manufacturers selling in both markets must ensure compliance with both regimes. |
+| **[Radio Equipment Directive (RED)](./red-overview.md)** | The Radio Equipment Directive's cybersecurity requirements (under Delegated Act 2022/30) overlap with PSTI, particularly on aspects of network protection. However, PSTI's focus is more on the baseline security configuration of the device itself. |
 
 <!-- Citations -->
 [psti_act_2022]: https://www.legislation.gov.uk/ukpga/2022/46/contents
