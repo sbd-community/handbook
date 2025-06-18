@@ -21,13 +21,13 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/quick-start/cra-primer">
-            CRA 5-Minute Primer
+            to="/docs/quick-start/what-is-secure-by-design">
+            What is Secure by Design?
           </Link>
           <Link
             className="button button--primary button--lg"
-            to="/docs/implementation/build-phase/key-provisioning">
-            Implementation Guides
+            to="/docs/quick-start/cra-primer">
+            CRA 5-Minute Primer
           </Link>
         </div>
       </div>
