@@ -9,7 +9,7 @@
 This structure reflects the implemented navigation in the `/docs` folder and the `sidebar_position` metadata within each page.
 
 1.  **Quick Start**
-    -   What is Secure by Design?
+    -   What is Secure-by-Design?
     -   How to use this handbook
     -   CRA 5-minute primer
     -   First-sprint checklist
@@ -68,10 +68,10 @@ This structure reflects the implemented navigation in the `/docs` folder and the
 
 | Persona | Likely Path |
 | :--- | :--- |
-| **Compliance Lead** | Quick Start → What is Secure by Design? → Standards & Regulations → CRA |
+| **Compliance Lead** | Quick Start → What is Secure-by-Design? → Standards & Regulations → CRA |
 | **Firmware Engineer** | Implementation Guides → Build Phase → Unique Device Identity → Secure Boot |
 | **DevOps Engineer** | Implementation Guides → Operate Phase → CI/CD Hardening → Tools → SAST / DAST |
-| **CTO / Decision-maker** | Quick Start → What is Secure by Design? → Resources → Checklists → Maturity Model |
+| **CTO / Decision-maker** | Quick Start → What is Secure-by-Design? → Resources → Checklists → Maturity Model |
 
 ---
 

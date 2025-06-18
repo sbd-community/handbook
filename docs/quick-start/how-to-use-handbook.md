@@ -7,7 +7,7 @@ tags: [quick-start, navigation, getting-started]
 
 # How to Use This Handbook
 
-The Secure by Design Handbook is a practical, actionable guide for anyone involved in building and maintaining connected devices. It translates complex regulatory requirements from laws like the **Cyber-Resilience Act (CRA)** into concrete engineering tasks.
+The Secure-by-Design Handbook is a practical, actionable guide for anyone involved in building and maintaining connected devices. It translates complex regulatory requirements from laws like the **Cyber-Resilience Act (CRA)** into concrete engineering tasks.
 
 This page helps you find the content most relevant to your role and your immediate questions.
 

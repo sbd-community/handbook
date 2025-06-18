@@ -55,7 +55,7 @@ The IEC 62443 series is organized into four main groups of documents, each targe
 
 ## 3. A Secure-by-Design Approach for Component Suppliers (IEC 62443-4-2)
 
-For manufacturers of IACS components, Part 4-2 of the standard provides the core technical security requirements. A secure-by-design approach, centered on establishing a robust and unique identity for each component, is the most effective way to meet these requirements. This identity, or "root of trust," is the foundation for authentication, integrity, and confidentiality.
+For manufacturers of IACS components, Part 4-2 of the standard provides the core technical security requirements. A Secure-by-Design approach, centered on establishing a robust and unique identity for each component, is the most effective way to meet these requirements. This identity, or "root of trust," is the foundation for authentication, integrity, and confidentiality.
 
 ### 3.1 The Foundation: Hardware Root of Trust (FR3)
 

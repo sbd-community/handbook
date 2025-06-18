@@ -32,11 +32,11 @@ Define a consistent voice, visual language, and editorial standard so every arti
 
 ## 4. Terminology
 
-- **Secure‑by‑Design (SbD)**: always capitalize S, D; hyphenate.
+- **Secure-by-Design**: Always capitalize S and D, and always hyphenate. The abbreviation (SbD) may be used after the first full use, where appropriate.
 - **Product with Digital Elements (PDE)**: The formal, legal term from the Cyber-Resilience Act. Use this for precision when discussing the CRA's scope. Abbreviate as PDE after the first full mention.
 - **Connected Device**: The preferred, general-purpose term for this handbook. It is a plain-English umbrella term covering PDEs, IoT devices, and other network-connected hardware.
 - **IoT (Internet of Things)**: Use when discussing consumer-focused products or when referencing specific standards or guidance that use the term (e.g., ETSI EN 303 645, ICO's IoT guidance). Define on first use.
-- **Cyber‑Resilience Act**: abbreviate as CRA after first mention.
+- **Cyber-Resilience Act**: abbreviate as CRA after first mention.
 - **NIS 2 Directive**: no hyphen (EU style).
 - **SBOM, VEX**: define on first appearance.
 
@@ -98,7 +98,7 @@ That document is the single source of truth for the brand's visual identity. Thi
 
 ## 10. SEO & Metadata
 
-- Title tags ≤ 60 chars; include "Secure‑by‑Design" + topic keyword.
+- Title tags ≤ 60 chars; include "Secure-by-Design" + topic keyword.
 - Meta description ≤ 155 chars; mention "connected devices" or "products with digital elements".
 - Use OpenGraph images (1200×630) with simple title overlay.
 

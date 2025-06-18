@@ -29,7 +29,7 @@ If yes, it is considered a **"product with digital elements" (PDE)** and you mus
 
 As a manufacturer, you have two main sets of duties:
 
-#### Product Requirements (Secure by Design)
+#### Product Requirements (Secure-by-Design)
 -   Ship products without any known exploitable vulnerabilities.
 -   Protect the integrity and confidentiality of data.
 -   Control access with secure authentication.

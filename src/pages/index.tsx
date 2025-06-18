@@ -22,7 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--primary button--lg"
             to="/docs/quick-start/what-is-secure-by-design">
-            What is Secure by Design?
+            What is Secure-by-Design?
           </Link>
           <Link
             className="button button--primary button--lg"

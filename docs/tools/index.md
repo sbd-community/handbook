@@ -6,7 +6,7 @@ sidebar_position: 0
 
 # Tools Overview
 
-This section provides a curated list of tools to help you implement secure-by-design practices throughout the product lifecycle. The tools are categorized by their primary function.
+This section provides a curated list of tools to help you implement Secure-by-Design practices throughout the product lifecycle. The tools are categorized by their primary function.
 
 A robust toolchain is essential for building and maintaining secure connected devices. The resources listed here cover key areas:
 

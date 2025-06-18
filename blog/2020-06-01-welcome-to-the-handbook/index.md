@@ -21,4 +21,4 @@ This handbook is designed to bridge the gap between legal text and firmware comm
 
 This is a community-driven project, and we welcome your contributions. Whether you're an embedded engineer, a compliance lead, or a security researcher, you can help us improve the content by opening an issue or submitting a pull request on our [GitHub repository](https://github.com/sbd-community/handbook).
 
-Let's work together to make the next generation of connected devices secure by design. 
+Let's work together to make the next generation of connected devices Secure-by-Design. 

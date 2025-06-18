@@ -35,4 +35,4 @@ SecureByDesignHandbook.com will be an authoritative, vendor-neutral reference an
 
 ## Why it matters now
 
-With the CRA's expected enforcement window (24 months after publication) and NIS 2 transposition deadlines approaching, manufacturers risk market withdrawal or fines unless they can prove security-by-design. SecureByDesignHandbook.com bridges the gap between legal text and firmware commit, helping teams move from "What does the law say?" to "What do we build next sprint?" 
+With the CRA's expected enforcement window (24 months after publication) and NIS 2 transposition deadlines approaching, manufacturers risk market withdrawal or fines unless they can prove Secure-by-Design. SecureByDesignHandbook.com bridges the gap between legal text and firmware commit, helping teams move from "What does the law say?" to "What do we build next sprint?" 

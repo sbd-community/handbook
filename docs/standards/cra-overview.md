@@ -7,7 +7,7 @@ tags: [cra, compliance, eu, secure-by-design]
 
 ## 1. Why the CRA matters now
 
-The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates secure-by-design* for every **"product with digital elements" (PDE)**.
+The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates Secure-by-Design* for every **"product with digital elements" (PDE)**.
 
 :::info Official texts
 - **Official Journal** – legally binding record as published on 20 Nov 2024: [OJ:L_202402847 HTML][cra_oj].
@@ -186,7 +186,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 | Obligation area | CRA trigger | Starts* | Key actions & evidence |
 |---|---|---|---|
-| **Secure-by-design** | [CRA Art. 13 § 1][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Implement essential security requirements from Annex I. See Section 5 for a detailed engineering breakdown. **Evidence:** Risk assessment, test reports. |
+| **Secure-by-Design** | [CRA Art. 13 § 1][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Implement essential security requirements from Annex I. See Section 5 for a detailed engineering breakdown. **Evidence:** Risk assessment, test reports. |
 | **Vulnerability handling** | [CRA Art. 13 § 8][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Establish CVD policy; track & fix vulns "without delay"; provide security updates for the support period (min. 5 years). **Evidence:** Published CVD policy, patch records. |
 | **Technical documentation** | [CRA Art. 31][cra_art31] | 2027-12-11 | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. |
 | **Conformity & CE mark** | [CRA Art. 28][cra_art28]–[30][cra_art30] | 2027-12-11 | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). |
@@ -199,7 +199,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ## 5 Secure-by-Design Engineering Benchmarks (Annex I Deep-Dive) {#annex-i-benchmarks}
 
-This section provides a technical deep-dive into the essential secure-by-design requirements mandated by **[CRA Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
+This section provides a technical deep-dive into the essential Secure-by-Design requirements mandated by **[CRA Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
 
 ### 5.1 No Known Exploitable Vulnerabilities
 *Legal hook: [CRA Annex I.I.2(a)][cra_annexI]*

@@ -26,7 +26,7 @@ EN 303 645 is available to download for free directly from ETSI.
 
 ## 2. A Secure-by-Design Approach to EN 303 645
 
-For manufacturers, EN 303 645 is more than a checklist; it's a guide to implementing a secure-by-design strategy. A core principle of this approach is establishing a strong, unique, and tamper-resistant identity for every device at the point of manufacture. This single step is the foundation for meeting numerous provisions throughout the standard.
+For manufacturers, EN 303 645 is more than a checklist; it's a guide to implementing a Secure-by-Design strategy. A core principle of this approach is establishing a strong, unique, and tamper-resistant identity for every device at the point of manufacture. This single step is the foundation for meeting numerous provisions throughout the standard.
 
 ### 2.1 The Cornerstone: Unique and Tamper-Resistant Device Identity
 
@@ -40,7 +40,7 @@ A robust device identity, often called a hardware root of trust, is the starting
 
 Once a device has a trustworthy identity, it unlocks capabilities for secure communication and maintenance.
 
--   **Secure Updates**: A unique identity allows the backend service to authenticate the device before sending a firmware update. This protects your intellectual property and prevents attackers from reverse-engineering updates ([`EN303645 §5.3.10`][en303645]). While the standard requires devices to have a *model* designation ([`EN303645 §5.3.16`][en303645]), a unique per-device identifier is a secure-by-design best practice that enables individualized management.
+-   **Secure Updates**: A unique identity allows the backend service to authenticate the device before sending a firmware update. This protects your intellectual property and prevents attackers from reverse-engineering updates ([`EN303645 §5.3.10`][en303645]). While the standard requires devices to have a *model* designation ([`EN303645 §5.3.16`][en303645]), a unique per-device identifier is a Secure-by-Design best practice that enables individualized management.
 -   **Authenticated Communication**: Secure channels rely on authentication. A unique device identity is essential for mutual authentication protocols like mTLS ([`EN303645 §5.5.1`][en303645]), which in turn protects the confidentiality of critical security parameters and other data sent over the network ([`EN303645 §5.5.6`][en303645], [`§5.5.7`][en303645]).
 
 ### 2.3 Enhancing Usability and Resilience

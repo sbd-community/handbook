@@ -1,4 +1,4 @@
-# Secure by Design Handbook – Brand Guidelines
+# Secure-by-Design Handbook – Brand Guidelines
 
 > **Purpose**  This document codifies visual and written conventions so every contributor can present a consistent, credible brand experience across web, slide decks, and social channels.
 
@@ -76,7 +76,7 @@ Follow `docs/style-guide.md`. Key reminders:
 
 * Active voice, Oxford comma.
 * Define acronyms on first use.
-* Avoid hyperbole (“world‑class”, “ground‑breaking”).
+* Avoid hyperbole ("world‑class", "ground‑breaking").
 
 ---
 
