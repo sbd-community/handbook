@@ -53,6 +53,25 @@ The IEC 62443 series is organized into four main groups of documents, each targe
     - **[62443-4-1][iec_4_1]:** Secure Product Development Lifecycle Requirements
     - **[62443-4-2][iec_4_2]:** Technical Security Requirements for IACS Components
 
+## 3. A Secure-by-Design Approach for Component Suppliers (IEC 62443-4-2)
+
+For manufacturers of IACS components, Part 4-2 of the standard provides the core technical security requirements. A secure-by-design approach, centered on establishing a robust and unique identity for each component, is the most effective way to meet these requirements. This identity, or "root of trust," is the foundation for authentication, integrity, and confidentiality.
+
+### 3.1 The Foundation: Hardware Root of Trust (FR3)
+
+The standard emphasizes the need for a strong foundation for component identity.
+
+-   **Tamper Resistance**: Components must have measures for physical tamper resistance and detection ([`IEC62443-4-2 CR 3.11`][iec_4_2]).
+-   **Roots of Trust**: The standard requires mechanisms for provisioning roots of trust from both the product supplier ([`IEC62443-4-2 CR 3.12`][iec_4_2]) and the asset owner ([`IEC62443-4-2 CR 3.13`][iec_4_2]). This establishes an anchor of trust for all other security functions.
+
+### 3.2 Building on Identity: Authentication (FR1) and Confidentiality (FR4)
+
+Once a root of trust is established, it enables critical authentication capabilities which in turn protect data.
+
+-   **Component Authentication**: Every component must be able to identify and authenticate itself to other components ([`IEC62443-4-2 CR 1.2`][iec_4_2]). An authenticator is required to prove this identity ([`IEC62443-4-2 CR 1.5`][iec_4_2]).
+-   **Identity Management**: Components must be designed to integrate into a broader system for managing identifiers, often using a Public Key Infrastructure (PKI) ([`IEC62443-4-2 CR 1.4`][iec_4_2], [`CR 1.8`][iec_4_2], & [`CR 1.9`][iec_4_2]). This allows for scalable and secure management of trust across the IACS.
+-   **Secure Communication**: This trusted identity is the basis for establishing secure communication channels. For instance, it allows for mutual trust using symmetric keys ([`IEC62443-4-2 CR 1.14`][iec_4_2]) and is a prerequisite for ensuring data confidentiality, which relies on successful mutual authentication ([`IEC62443-4-2 CR 4.1`][iec_4_2]).
+
 <!-- Citations -->
 [iec_webstore]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC 62443 Series on the IEC Webstore"
 [iec_1_1]: https://webstore.iec.ch/en/publication/7029 "IEC 62443-1-1:2009"
