@@ -160,7 +160,7 @@ function CommunitySection(): ReactNode {
               new implementation guides and regulatory updates.
             </p>
             <Link className="button button--primary" to="/blog">
-              Latest Updates
+              Latest News
             </Link>
           </div>
         </div>

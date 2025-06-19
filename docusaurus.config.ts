@@ -128,12 +128,12 @@ const config: Config = {
               to: '/docs/quick-start/how-to-use-handbook',
             },
             {
-              label: 'CRA 5-Minute Primer',
-              to: '/docs/quick-start/cra-primer',
+              label: 'What is Secure-by-Design?',
+              to: '/docs/quick-start/what-is-secure-by-design',
             },
             {
-              label: 'First Sprint Checklist',
-              to: '/docs/quick-start/first-sprint-checklist',
+              label: 'CRA 5-Minute Primer',
+              to: '/docs/quick-start/cra-primer',
             },
           ],
         },
@@ -158,8 +158,8 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/sbd-community/handbook',
+              label: 'Latest News',
+              to: '/blog',
             },
             {
               label: 'Contribute',
