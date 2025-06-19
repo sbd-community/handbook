@@ -153,7 +153,7 @@ The table below provides a non-exhaustive list of examples mapping product categ
 
 | Excluded or separate regime | Legal reason |
 |-----------------------------|--------------|
-| Medical devices | Already covered by **MDR** 2017/745 ([CRA Art. 2 § 2(a)][cra_art2]) |
+| Medical devices | Already covered by **[MDR 2017/745](./mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
 | Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 4][cra_art2]) |
 | Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 4(f)][cra_art2]) |
 | Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
