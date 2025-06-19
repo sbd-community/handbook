@@ -20,6 +20,6 @@ The regulation activates three key articles of the RED:
 *   **Article 3(3)(e):** Safeguarding of personal data and privacy.
 *   **Article 3(3)(f):** Protection from fraud.
 
-Compliance with these articles can be achieved by following harmonised standards, with **ETSI EN 303 645** being the most prominent one for consumer devices.
+Compliance with these articles can be achieved by following harmonised standards, with **[ETSI EN 303 645](/docs/standards/en303645-overview)** being the most prominent one for consumer devices.
 
 This delegated act signals a clear shift in the EU's approach: cybersecurity is no longer optional. For a detailed guide on the scope, timelines, and its relationship with the CRA, see our [**RED Overview**](/docs/standards/red-overview). 

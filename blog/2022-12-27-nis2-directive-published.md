@@ -20,4 +20,4 @@ While the Cyber-Resilience Act (CRA) focuses on the security of *products*, NIS 
 
 For manufacturers, the link between NIS 2 and the CRA is crucial. An organisation that is deemed an "essential entity" under NIS 2 *and* manufactures products with digital elements will have to comply with both sets of regulations. The organisational security practices mandated by NIS 2 (like vulnerability management) are the necessary foundation for producing the secure products required by the CRA.
 
-For more details on how NIS 2 interacts with product-specific laws, see our main [**CRA Overview**](/docs/standards/cra-overview). 
+For more details on how NIS 2 interacts with product-specific laws, see our main **[NIS 2 Directive Overview](/docs/standards/nis2-overview)** and our [**CRA Overview**](/docs/standards/cra-overview). 

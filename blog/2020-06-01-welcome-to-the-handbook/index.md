@@ -7,7 +7,7 @@ Welcome to the **SecureByDesignHandbook.com** project!
 
 <!-- truncate -->
 
-Our mission is to build an authoritative, vendor-neutral reference for teams that make, integrate, or operate products with digital elements—from IoT sensors and industrial controllers to connected consumer devices. We're here to translate fast-moving regulatory obligations like the EU's **Cyber-Resilience Act (CRA)** and **NIS 2 Directive** into concrete engineering practices that you can adopt without guesswork.
+Our mission is to build an authoritative, vendor-neutral reference for teams that make, integrate, or operate products with digital elements—from IoT sensors and industrial controllers to connected consumer devices. We're here to translate fast-moving regulatory obligations like the EU's **[Cyber-Resilience Act (CRA)](/docs/standards/cra-overview)** and **[NIS 2 Directive](/docs/standards/nis2-overview)** into concrete engineering practices that you can adopt without guesswork.
 
 The regulatory landscape is shifting. For years, device security was a best practice; soon, it will be a legal requirement for market access in major economies. Manufacturers who cannot prove their products are secure-by-design risk fines, recalls, and reputational damage.
 
@@ -15,9 +15,9 @@ This handbook is designed to bridge the gap between legal text and firmware comm
 
 ### What You'll Find Here
 
-*   **Regulatory Explainers**: Succinct breakdowns of the CRA, NIS 2, RED, EN 303 645, IEC 62443, and more.
-*   **Implementation Playbooks**: Step-by-step guides for enabling secure boot, generating SBOMs, and hardening your OTA update pipelines.
-*   **Templates & Checklists**: Ready-to-use artefacts like vulnerability disclosure policies and gap-analysis worksheets.
+*   **[Regulatory Explainers](/docs/standards)**: Succinct breakdowns of the CRA, NIS 2, RED, EN 303 645, IEC 62443, and more.
+*   **[Implementation Playbooks](/docs/implementation)**: Step-by-step guides for enabling secure boot, generating SBOMs, and hardening your OTA update pipelines.
+*   **[Templates & Checklists](/docs/resources)**: Ready-to-use artefacts like vulnerability disclosure policies and gap-analysis worksheets.
 
 This is a community-driven project, and we welcome your contributions. Whether you're an embedded engineer, a compliance lead, or a security researcher, you can help us improve the content by opening an issue or submitting a pull request on our [GitHub repository](https://github.com/sbd-community/handbook).
 
