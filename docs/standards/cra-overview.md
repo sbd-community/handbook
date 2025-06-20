@@ -16,6 +16,12 @@ The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's
 The consolidated version is easier for clause citations, but in case of doubt the official journal prevails.
 :::
 
+:::info Implementation Guidance
+While harmonised standards are still under development, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance.
+
+- **BSI TR-03183**: [Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
+:::
+
 | CRA milestone                                        | Legal basis | Date |
 | ---------------------------------------------------- | ----------- | ---- |
 | Text adopted by Parliament & Council                 | Signing date | **2024-10-23** |
@@ -197,21 +203,27 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 ---
 
-## 5 Secure-by-Design Engineering Benchmarks (Annex I Deep-Dive) {#annex-i-benchmarks}
+## 5. Essential Cybersecurity Requirements (Annex I) {#annex-i-requirements}
 
-This section provides a technical deep-dive into the essential Secure-by-Design requirements mandated by **[CRA Annex I.I][cra_annexI]**. These are the core engineering tasks required to build a compliant product.
+The CRA's mandatory security obligations are detailed in **[CRA Annex I][cra_annexI]**, which is split into two parts:
+- **Part I**: Defines the **product security requirements** that must be designed into the device from the start.
+- **Part II**: Defines the **vulnerability handling requirements** the manufacturer must follow throughout the product's support lifecycle.
 
-### 5.1 No Known Exploitable Vulnerabilities
-*Legal hook: [CRA Annex I.I.2(a)][cra_annexI]*
+While the CRA defines the legal requirements, Germany's **[BSI Technical Guideline TR-03183][bsi_tr_03183]** provides a practical, state-of-the-art playbook for implementing them. It offers specific guidance on everything from threat modelling (`REQ_ER 1`) to SBOM formats and vulnerability disclosure.
+
+### 5.1 Product Security Requirements (Annex I, Part I)
+
+#### 5.1.1 No Known Exploitable Vulnerabilities
+*Legal hook: [CRA Annex I.I.2(a)][cra_annexI] & [BSI TR-03183-1 REQ_ER 2][bsi_tr_03183]*
 
 > The product must be "made available on the market without any known exploitable vulnerabilities."
 
 - **Action:** Integrate automated security scanning into your CI/CD pipeline.
-- **Tools:** Use static analysis (SAST) tools like `Semgrep` or `CodeQL` to find flaws in your source code, and software composition analysis (SCA) tools like `Trivy`, `Grype`, or `Dependency-Check` to find CVEs in your third-party libraries.
-- **Benchmark:** The build must fail if a vulnerability with a CVSS score of 7.0 or higher is detected and a patch is available. Maintain a Software Bill of Materials (SBOM) for all components.
+- **Tools:** Use static analysis (SAST) tools like `Semgrep` or `CodeQL` to find flaws in source code, and software composition analysis (SCA) tools like `Trivy` or `Grype` to find CVEs in third-party libraries.
+- **Benchmark:** The build must fail if a vulnerability with a CVSS score of 7.0 or higher is detected and a patch is available. Maintain a Software Bill of Materials (SBOM) for all components (see §5.2.2).
 
-### 5.2 Secure Configuration by Default
-*Legal hook: [CRA Annex I.I.2(c)][cra_annexI]*
+#### 5.1.2 Secure Configuration by Default
+*Legal hook: [CRA Annex I.I.2(c)][cra_annexI] & [BSI TR-03183-1 REQ_ER 3][bsi_tr_03183]*
 
 > The product must be "configured to be secure by default, allowing users to enable, disable or configure functions only where this does not create significant weaknesses."
 
@@ -222,8 +234,8 @@ This section provides a technical deep-dive into the essential Secure-by-Design 
     - The most secure available protocols (e.g., TLS 1.3, SSHv2) must be enabled by default.
     - Provide a secure factory-reset mechanism that wipes all user data.
 
-### 5.3 Confidentiality & Integrity Protection
-*Legal hook: [CRA Annex I.I.2(e) & (f)][cra_annexI]*
+#### 5.1.3 Confidentiality & Integrity Protection
+*Legal hook: [CRA Annex I.I.2(e) & (f)][cra_annexI] & [BSI TR-03183-1 REQ_ER 6, 7][bsi_tr_03183]*
 
 > The product must "protect the confidentiality of stored, transmitted or otherwise processed data...by encrypting relevant data at rest or in transit" and "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user."
 
@@ -233,8 +245,8 @@ This section provides a technical deep-dive into the essential Secure-by-Design 
     - **Data-at-rest:** Sensitive user data and configuration secrets stored on the device must be encrypted.
     - **Code & config integrity:** Use a secure boot chain where each stage (bootloader, kernel, rootfs) is cryptographically signed and verified. Firmware updates must be signed, and the signature must be verified before installation.
 
-### 5.4 Access Control
-*Legal hook: [CRA Annex I.I.2(d)][cra_annexI]*
+#### 5.1.4 Access Control
+*Legal hook: [CRA Annex I.I.2(d)][cra_annexI] & [BSI TR-03183-1 REQ_ER 5][bsi_tr_03183]*
 
 > The product must "protect against unauthorised access by controlling access...through appropriate control mechanisms, including authentication, identity and access management systems."
 
@@ -244,8 +256,8 @@ This section provides a technical deep-dive into the essential Secure-by-Design 
     - System processes should run with the minimum permissions necessary.
     - Protect against brute-force attacks with mechanisms like account lockout or rate limiting.
 
-### 5.5 Attack Surface Reduction
-*Legal hook: [CRA Annex I.I.2(j)][cra_annexI]*
+#### 5.1.5 Attack Surface Reduction
+*Legal hook: [CRA Annex I.I.2(j)][cra_annexI] & [BSI TR-03183-1 REQ_ER 11][bsi_tr_03183]*
 
 > The product must be "designed, developed and produced to limit attack surfaces, including external interfaces."
 
@@ -255,8 +267,8 @@ This section provides a technical deep-dive into the essential Secure-by-Design 
     - Minimize open network ports to only what is essential for the product's function.
     - Validate and sanitize all inputs from external sources to prevent injection attacks (e.g., SQLi, command injection).
 
-### 5.6 Resilience & Mitigation
-*Legal hook: [CRA Annex I.I.2(h) & (k)][cra_annexI]*
+#### 5.1.6 Resilience & Mitigation
+*Legal hook: [CRA Annex I.I.2(h) & (k)][cra_annexI] & [BSI TR-03183-1 REQ_ER 9, 12][bsi_tr_03183]*
 
 > The product must "protect the availability of essential and basic functions...including through resilience and mitigation measures against denial-of-service attacks" and "reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques."
 
@@ -264,6 +276,33 @@ This section provides a technical deep-dive into the essential Secure-by-Design 
 - **Benchmark:**
     - Compile code with exploit mitigations like Address Space Layout Randomization (ASLR), Stack Canaries, and No-eXecute (NX) bit protection.
     - Implement rate limiting on APIs and network services to resist resource exhaustion attacks.
+
+### 5.2 Vulnerability Handling Requirements (Annex I, Part II)
+
+Once the product is on the market, the manufacturer must have processes in place to manage vulnerabilities throughout its lifecycle.
+
+#### 5.2.1 Coordinated Vulnerability Disclosure (CVD)
+*Legal hook: [CRA Annex I.II.5][cra_annexI] & [BSI TR-03183-1 REQ_VH 5][bsi_tr_03183]*
+
+Manufacturers must establish and publish a CVD policy. This policy must:
+- Provide a clear and accessible way for security researchers to report vulnerabilities.
+- Include information on the timelines for acknowledging and addressing reports.
+
+For detailed guidance on implementation, see **[BSI TR-03183-3][bsi_tr_03183]**.
+
+#### 5.2.2 Software Bill of Materials (SBOM)
+*Legal hook: [CRA Annex I.II.1][cra_annexI] & [BSI TR-03183-1 REQ_VH 1][bsi_tr_03183]*
+
+Manufacturers must create and maintain a Software Bill of Materials (SBOM) as part of their technical documentation. This must include, at a minimum, the top-level dependencies of the software components integrated in the product.
+- **Practical Guidance**: **[BSI TR-03183-2][bsi_tr_03183]** provides a detailed profile for creating a machine-readable SBOM using the **CycloneDX** standard.
+
+#### 5.2.3 Security Updates
+*Legal hook: [CRA Annex I.II.1-3][cra_annexI] & [BSI TR-03183-1 REQ_ER 4, REQ_VH 2, 6][bsi_tr_03183]*
+
+Manufacturers must have a process to "handle and remediate vulnerabilities without delay." This means:
+- **Patching**: Having an established process to develop and test security patches.
+- **Distribution**: Providing a mechanism to distribute updates securely to end-users.
+- **Timeliness**: Ensuring that patches are released in a timely manner, free of charge.
 
 <!-- Citations -->
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847 "CRA Official Journal – OJ"
@@ -304,4 +343,5 @@ This section provides a technical deep-dive into the essential Secure-by-Design 
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_del]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – security clauses for radio equipment"
+[bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183"
 
