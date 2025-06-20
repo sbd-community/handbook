@@ -53,6 +53,8 @@ Provide a glossary page and link from first usage.
 | ### (H3) | Sub‑sections (e.g., "Generate Keys"). |
 | #### (H4) | Optional deep sub‑sections; avoid > H4. |
 
+- **Numbered Headings**: For instructional content (especially in the *Quick Start* and *Implementation Guides* sections), use hierarchical numbering for H2 and H3 headings to clarify structure (e.g., `## 1. Title`, `### 1.1. Sub-title`). For narrative or high-level overviews, unnumbered headings are preferred.
+
 ### Paragraphs & Lists
 
 - Keep paragraphs ≤ 120 words.

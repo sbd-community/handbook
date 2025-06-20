@@ -6,11 +6,13 @@ tags: [sbom, vex, spdx, cyclonedx, cra, supply-chain]
 ---
 # Guide: SBOM & VEX Workflows
 
+## 1. What are SBOM and VEX?
+
 A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of the software components and dependencies included in a product. It provides essential transparency into the software supply chain, enabling rapid identification of components affected by newly discovered vulnerabilities.
 
-The **Cyber-Resilience Act (CRA)** legally mandates that manufacturers must create and maintain an SBOM for their products ([CRA Art. 13][cra_art13] referencing [CRA Annex I][cra_annexI]). This document must be provided to national authorities upon request. While an SBOM tells you *what* is in your software, a **Vulnerability Exploitability eXchange (VEX)** document tells you whether a known vulnerability in a component actually affects your product. Together, they are the cornerstones of modern vulnerability management.
+The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** legally mandates that manufacturers must create and maintain an SBOM for their products ([CRA Art. 13][cra_art13] referencing [CRA Annex I][cra_annexI]). This document must be provided to national authorities upon request. While an SBOM tells you *what* is in your software, a **Vulnerability Exploitability eXchange (VEX)** document tells you whether a known vulnerability in a component actually affects your product. Together, they are the cornerstones of modern vulnerability management.
 
-## 1. SBOM: The Ingredients List
+## 2. SBOM: The Ingredients List
 
 An SBOM is analogous to a list of ingredients on a food package. It should be comprehensive, accurate, and kept up-to-date.
 
@@ -20,7 +22,7 @@ An SBOM is analogous to a list of ingredients on a food package. It should be co
     -   **CycloneDX:** A lightweight SBOM standard designed for use in application security contexts and supply chain component analysis, created by the OWASP community.
 -   **Why it's required:** An accurate SBOM allows a manufacturer (or their customer) to instantly determine if they are affected by a new vulnerability disclosure (e.g., "Log4Shell"). Without an SBOM, this process can take weeks of manual effort.
 
-## 2. VEX: The Allergy Information
+## 3. VEX: The Allergy Information
 
 A VEX document is a companion to an SBOM. It provides an assertion from the manufacturer about the exploitability of a specific vulnerability in their product.
 
@@ -31,7 +33,7 @@ A VEX document is a companion to an SBOM. It provides an assertion from the manu
     -   `under_investigation`: The manufacturer is analyzing the impact of the vulnerability.
 -   **Why it's essential:** Vulnerability scanners often produce thousands of alerts. A VEX document provides crucial context, allowing asset owners to filter out the noise and focus on real, exploitable risks. This dramatically reduces alert fatigue and prioritizes remediation efforts.
 
-## 3. An Automated SBOM & VEX Workflow
+## 4. An Automated SBOM & VEX Workflow
 
 Manually creating and managing these documents is not scalable. They should be integrated directly into your CI/CD pipeline.
 
@@ -42,7 +44,7 @@ Manually creating and managing these documents is not scalable. They should be i
 | **3. Triage & Create VEX** | When a new vulnerability is found, the security team investigates its exploitability. Based on the analysis, they create or update a VEX document asserting the status. | `OpenVEX` tools |
 | **4. Distribute & Monitor** | The SBOM is stored as a build artifact and included in the product's technical documentation. The VEX is published to customers. The process repeats for every new build and every new vulnerability disclosure. | Artifactory, Company Security Advisories |
 
-## 4. Compliance Checklist
+## 5. Compliance Checklist
 
 To meet modern security requirements, your vulnerability management workflow should include the following:
 

@@ -14,7 +14,7 @@ The goal is not to achieve full compliance in three sprints, but to build founda
 
 ---
 
-## Sprint 1: Foundational Setup & Policy
+## 1. First Sprint: Foundational Setup & Policy
 
 This sprint focuses on the essential "paperwork" and process setup. These tasks are critical for establishing a compliant posture and can be done in parallel with development work.
 
@@ -25,7 +25,7 @@ This sprint focuses on the essential "paperwork" and process setup. These tasks 
 
 ---
 
-## Sprint 2: Hardening the Build Pipeline ("Shift Left")
+## 2. Second Sprint: Hardening the Build Pipeline ("Shift Left")
 
 This sprint focuses on automating security checks in your CI/CD pipeline. These steps provide the fastest feedback on new and existing security issues.
 
@@ -36,7 +36,7 @@ This sprint focuses on automating security checks in your CI/CD pipeline. These 
 
 ---
 
-## Sprint 3: Core Product Security Features
+## 3. Third Sprint: Core Product Security Features
 
 This sprint focuses on auditing and planning for the most critical on-device security features.
 

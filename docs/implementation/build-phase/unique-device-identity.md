@@ -14,13 +14,13 @@ A robust identity framework is a prerequisite for meeting the security requireme
 
 A mature security model distinguishes between two types of identity.
 
-### Hardware-Based Root Identity
+### 1.1 Hardware-Based Root Identity
 This is the foundational, unchangeable identity of the device, often called the **Hardware Root of Trust (HRoT)**.
 -   **Purpose:** To guarantee the authenticity and uniqueness of the hardware itself.
 -   **Characteristics:** It is permanent and cannot be cloned. It is established during chip manufacturing and protected by a hardware security element (e.g., TPM, SE, PUF).
 -   **Implementation:** It typically consists of a unique asymmetric key pair where the private key never leaves the secure hardware. It is sometimes referred to as an Initial Device Identifier (`IDevID`) as defined in the IEEE 802.1AR standard.
 
-### Operational Identity
+### 1.2 Operational Identity
 This is a secondary identity used to authenticate the device to a specific service, such as your cloud backend.
 -   **Purpose:** To identify and authenticate the device for a particular operational context (e.g., connecting to a cloud MQTT broker).
 -   **Characteristics:** It must be anchored cryptographically to the Hardware Root Identity. It is often shorter-lived and can be rotated or revoked. A device can have multiple operational identities for different services to maintain separation.

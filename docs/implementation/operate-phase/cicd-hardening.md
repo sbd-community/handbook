@@ -6,17 +6,19 @@ sidebar_position: 4
 ---
 # Guide: Hardening the CI/CD Pipeline
 
+## 1. What is CI/CD Hardening?
+
 A secure product begins with a secure development process. The CI/CD (Continuous Integration / Continuous Deployment) pipeline, which automates the building, testing, and deployment of software, is a high-value target for attackers. A compromised pipeline can be used to inject malicious code, steal credentials, or tamper with build artifacts.
 
-The **Cyber-Resilience Act (CRA)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI]). Hardening your CI/CD pipeline is essential for meeting these requirements.
+The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI]). Hardening your CI/CD pipeline is essential for meeting these requirements.
 
-## 1. "Shifting Left": Integrating Security Early
+## 2. "Shifting Left": Integrating Security Early
 
 "Shifting left" is the practice of moving security testing and validation as early as possible in the development lifecycle. Instead of waiting for a final security review before release, security checks are automated and run continuously as code is written. This provides immediate feedback to developers, making vulnerabilities faster, cheaper, and easier to fix.
 
 A hardened CI/CD pipeline is the engine that drives the "shift left" model.
 
-## 2. Key Hardening Measures
+## 3. Key Hardening Measures
 
 A secure pipeline is built in layers, with security controls applied at each stage.
 
@@ -32,7 +34,7 @@ A secure pipeline is built in layers, with security controls applied at each sta
 | **Artifact Storage**| **Signing & Attestation** | Cryptographically sign all build artifacts to ensure their integrity. Use tools like `sigstore` to generate attestations about how the artifact was built. |
 | | **Secure Repository** | Store signed artifacts in a secure, access-controlled repository (e.g., Artifactory, GitHub Packages). |
 
-## 3. Example Secure Workflow (GitHub Actions)
+## 4. Example Secure Workflow (GitHub Actions)
 
 ```yaml
 jobs:
@@ -69,7 +71,7 @@ jobs:
           fail-on: 'critical' # Fail build if critical vulns found
 ```
 
-## 4. Compliance Checklist
+## 5. Compliance Checklist
 
 - [ ] **Branch Protection:** Are all production branches protected with mandatory reviews and passing checks?
 - [ ] **Automated Scanning:** Are SAST, SCA, and secret scanning integrated into your pipeline and run on every pull request?

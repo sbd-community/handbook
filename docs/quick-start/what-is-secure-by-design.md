@@ -10,7 +10,7 @@ tags: [secure-by-design, cra, psti, product-security, sbd, sdd]
 
 This approach marks a fundamental change in responsibility. As CISA, the US Cybersecurity & Infrastructure Security Agency, states, the goal is to move away from a system where the "cybersecurity burden is placed disproportionately on the shoulders of consumers and small organizations" and towards a future where technology providers "take ownership at theexecutive level to ensure their products are Secure-by-Design" ([CISA][cisa_sbd]).
 
-## Why It Matters: The Regulatory Shift
+## 1. Why It Matters: The Regulatory Shift
 
 Secure-by-Design is no longer just a best practice; it is rapidly becoming a legal requirement for placing products on the market. Major global economies are enacting legislation that codifies these principles into law.
 
@@ -19,7 +19,7 @@ Secure-by-Design is no longer just a best practice; it is rapidly becoming a leg
 
 These regulations signal a clear international trend: manufacturers are now legally accountable for the security of their products.
 
-## Core Principles of Secure-by-Design
+## 2. Core Principles of Secure-by-Design
 
 While specific requirements vary, the underlying philosophy of Secure-by-Design is consistent across international guidance. Key principles include:
 
@@ -27,7 +27,7 @@ While specific requirements vary, the underlying philosophy of Secure-by-Design 
 2.  **Build for the Long Term (Secure by Default):** Products must ship with secure configurations enabled out-of-the-box, without requiring a consumer to be a security expert. This includes enforcing strong, unique passwords and disabling all unnecessary attack surfaces.
 3.  **Commit to Security Lifecycle Management:** Security does not end when a product ships. Manufacturers must have processes in place to handle vulnerability reports, deliver security updates in a timely manner, and be transparent about the product's end-of-life support.
 
-## How This Handbook Helps
+## 3. How This Handbook Helps
 
 Understanding the principles of Secure-by-Design is the first step. Implementing them is the next. This handbook is designed to bridge that gap.
 

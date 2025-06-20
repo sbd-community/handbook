@@ -12,39 +12,23 @@ tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 
 While the device identity proves *who* a device is, the keys provisioned onto it are the tools it *uses* to perform cryptographic operations like encrypting data, verifying software signatures, and authenticating to a network.
 
-The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material.
+The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material. Regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** mandate the protection of integrity and confidentiality ([CRA Annex I.I.2(f)][cra_annexI]), which implicitly requires that cryptographic keys are protected from disclosure and modification.
 
-## 2. Key Types & The Provisioning Workflow
+## 2. The Key Management Lifecycle & Workflow
 
-A secure product uses different keys for different purposes. The provisioning process must distinguish between the foundational identity keys and the operational keys used by the application.
+Effective key management is a continuous process that covers the entire life of a key, from its birth to its eventual retirement. A secure product uses different keys for different purposes, and the provisioning workflow must handle them accordingly.
 
-1.  **Hardware Root of Trust Keys:**
-    -   **What:** The asymmetric key pair that forms the device's core **Hardware-Based Root Identity**.
-    -   **When:** Provisioned once, at the silicon level or in a highly secure factory environment. The private key should never be extractable.
-    -   **How:** Often injected by the chipmaker or provisioned into a Secure Element (SE) or TPM using a Hardware Security Module (HSM).
+### 2.1 Key Generation & Provisioning
+-   **Hardware Root of Trust Keys:** These form the device's core **Hardware-Based Root Identity**. They are provisioned once, at the silicon level or in a highly secure factory environment, often injected by the chipmaker into a Secure Element (SE) or TPM using a Hardware Security Module (HSM). The private key should never be extractable. Keys must be created using a high-quality entropy source, like a hardware-based True Random Number Generator (TRNG).
+-   **Operational Keys & Certificates:** These are application-level credentials used for specific tasks (e.g., connecting to the cloud). They can be provisioned in the factory or later in the lifecycle. The device uses its root private key to sign a Certificate Signing Request (CSR), which is sent to a Certificate Authority (CA) to receive a signed operational certificate. This anchors the trust of the operational key to the hardware root key.
 
-2.  **Operational Keys & Certificates:**
-    -   **What:** Application-level keys, certificates, and credentials used for specific tasks (e.g., connecting to the cloud, signing data). These form the **Operational Identity**.
-    -   **When:** Can be provisioned in the factory after the root identity is established, or later in the lifecycle (e.g., during cloud onboarding).
-    -   **How:** The device uses its root private key to sign a Certificate Signing Request (CSR). The signed CSR is sent to a Certificate Authority (CA)—often managed by the manufacturer—which returns a signed operational certificate. This process anchors the trust of the operational key to the hardware root key.
+### 2.2 Secure Storage
+Keys must be stored in a way that prevents their unauthorized extraction. The ideal storage location is within a hardware-backed secure vault, such as a Trusted Platform Module (TPM), a Secure Element (SE), or a protected region of memory managed by a Trusted Execution Environment (TEE). Storing keys in regular flash memory is less secure as it may be vulnerable to physical attacks.
 
-Securely managing cryptographic keys is the foundation upon which nearly every other device security guarantee is built. Without a trusted source of cryptographic material, features like secure boot, secure updates, and data protection are impossible to implement effectively.
+### 2.3 Usage, Rotation & Revocation
+Cryptographic operations (e.g., signing, encrypting) should be performed *inside* the hardware security boundary. The key material itself should never be exposed to the main, non-secure processor. A mature security posture also includes plans for rotating keys over time and revoking them if they are compromised, often leveraging the device's secure update mechanism.
 
-Regulations like the **Cyber-Resilience Act (CRA)** mandate the protection of integrity and confidentiality ([CRA Annex I.I.2(f)][cra_annexI]), which implicitly requires that cryptographic keys are protected from disclosure and modification. This guide outlines the best practices for provisioning and storing keys in a way that establishes a robust, hardware-based root of trust.
-
-## 1. The Key Management Lifecycle
-
-Effective key management is a continuous process that covers the entire life of a key, from its birth to its eventual retirement.
-
-1.  **Generation:** Keys must be created using a high-quality entropy source. A hardware-based True Random Number Generator (TRNG) is the gold standard. Generating keys off-device in a secure environment (like a Hardware Security Module - HSM) and then injecting them is often more secure and auditable than generating them on the device itself.
-
-2.  **Provisioning:** This is the process of securely injecting keys and other secrets (like device identity certificates) into a device during manufacturing. This is a critical one-way step. Keys should be provisioned into a protected, write-once, or access-controlled hardware location. Insecure methods like including keys in a plaintext firmware image or flashing them over an unprotected interface must be avoided.
-
-3.  **Storage:** Keys must be stored in a way that prevents their unauthorized extraction. The ideal storage location is within a hardware-backed secure vault, such as a Trusted Platform Module (TPM), a Secure Element (SE), or a protected region of memory managed by a Trusted Execution Environment (TEE). Storing keys in regular flash memory, even in an encrypted form, is less secure as it may be vulnerable to physical attacks.
-
-4.  **Usage, Rotation & Revocation:** Cryptographic operations (e.g., signing, encrypting) should be performed *inside* the hardware security boundary. The key material itself should never be exposed to the main, non-secure processor. A mature security posture also includes plans for rotating keys over time and revoking them if they are compromised, often leveraging the device's secure update mechanism.
-
-## 2. Hardware Roots of Trust
+## 3. Hardware Roots of Trust for Key Storage
 
 A "Root of Trust" (RoT) is a component that is inherently trusted within a system. For key management, this trust must be anchored in hardware. Here are common hardware technologies used to build a RoT:
 
@@ -55,7 +39,7 @@ A "Root of Trust" (RoT) is a component that is inherently trusted within a syste
 | **Trusted Execution Environment (TEE)** | A secure area inside the main processor (e.g., ARM TrustZone, Intel SGX) that isolates security-critical code and data from the normal operating system. Keys are protected in memory, not necessarily a separate chip. | Protecting key *operations* when a separate hardware vault is not available. The keys are only as secure as the TEE's software implementation. |
 | **Physically Unclonable Function (PUF)** | A circuit that leverages minute physical variations from the manufacturing process to produce a unique, device-specific "fingerprint". This can be used as a root key that is never explicitly stored in memory. | Creating a unique, unclonable device identity and a hardware-derived root key without needing to provision one. |
 
-## 3. Compliance Checklist
+## 4. Compliance Checklist
 
 To meet the requirements of modern cybersecurity standards, your key management strategy should address the following points:
 

@@ -6,11 +6,11 @@ sidebar_position: 2
 ---
 # Guide: Patch Cadence & Rollback Strategy
 
+## 1. What is a Patch Management Policy?
+
 Having a secure OTA update mechanism is only the first step; you also need a clear, documented policy for *when* and *how* you will use it. A **Patch Management Policy** is a critical operational document that defines your organization's commitment to fixing vulnerabilities and delivering updates.
 
-The **Cyber-Resilience Act (CRA)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
-
-## 1. Defining Your Patch Management Policy
+The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
 
 Your patch management policy should be a public-facing document that sets clear expectations for your customers. It should define:
 -   The types of updates you provide (e.g., security, feature).
@@ -32,7 +32,7 @@ Not all patches are created equal. A "one size fits all" approach to updates is 
 
 ## 3. Rollout & Rollback Strategies
 
-### Phased Rollouts
+### 3.1 Phased Rollouts
 Deploying a new update to your entire device fleet at once is risky. A single bug could brick every device. A **phased rollout** (or "canary release") mitigates this risk by deploying the update to progressively larger groups of devices.
 
 1.  **Internal & QA:** First, deploy to internal test devices.
@@ -40,7 +40,7 @@ Deploying a new update to your entire device fleet at once is risky. A single bu
 3.  **Phased Deployment (10-50%):** Gradually increase the deployment percentage, pausing to monitor for issues at each stage.
 4.  **Full Deployment (100%):** Once confident, release to all remaining devices.
 
-### Planning for Rollback
+### 3.2 Planning for Rollback
 Even with a phased rollout, a critical bug might slip through. You must have a plan to recover.
 
 -   **Server-Side Rollback:** The simplest approach is to halt the deployment campaign on your update server. This prevents any more devices from downloading the faulty update.

@@ -81,7 +81,7 @@ Market surveillance authorities will also have the power to order product recall
 
 ---
 
-## Your 3-Minute Action Plan
+## 6. Your 3-Minute Action Plan
 
 1.  **Inventory & Classify (1 min):** List your products with digital elements and determine their risk class (Default, Class I, etc.). Most will be "Default". For examples, see the [Product Risk Classification table](../standards/cra-overview.md#product-risk-classes).
 
