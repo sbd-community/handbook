@@ -3,24 +3,23 @@ title: "Operate Phase Guides"
 sidebar_label: "Operate Phase"
 ---
 
-# Operate Phase Implementation Guides
+# Implementation Guides: Operate Phase
 
-Operational security practices for managing connected devices throughout their production lifecycle.
+Once a device is in the hands of customers, the focus shifts from building security *in* to maintaining security *at scale*. The "Operate Phase" covers the essential processes and infrastructure needed to monitor the device fleet, respond to emerging threats, and ensure continuous compliance throughout the product's supported lifecycle.
 
-## Operational Security Excellence
+This section will help you answer questions like:
+- How do I set up a compliant vulnerability disclosure program?
+- What is a reasonable patch cadence for my product?
+- How can I detect and respond to attacks on my devices?
 
-Once your devices are deployed, ongoing operational security becomes critical. These guides help you maintain security posture, respond to threats, and ensure continuous compliance.
+---
 
-## Available Guides
+### Core Topics
 
-### [CI/CD Security](./cicd-hardening.md)
-Harden your continuous integration and deployment pipelines with secure build environments and automated security checks.
-
-### [Patch Management](./patch-cadence.md)
-Implement systematic patch management with risk-based prioritization, testing frameworks, and rollback capabilities.
-
-### [Vulnerability Disclosure](./vulnerability-disclosure.md)
-Establish coordinated vulnerability disclosure processes to work effectively with security researchers and manage security issues.
+-   **[Vulnerability Disclosure](./vulnerability-disclosure.md):** Establish a public-facing, compliant Coordinated Vulnerability Disclosure (CVD) policy to work effectively with security researchers and manage incoming reports.
+-   **[Patch Cadence & Management](./patch-cadence.md):** Define a systematic process for creating, testing, and deploying security patches "without delay" to meet regulatory timelines and customer expectations.
+-   **[Security Logging & Monitoring](./security-logging.md):** Implement robust logging on both the device and backend services to detect, investigate, and respond to security incidents in the field.
+-   **[CI/CD Hardening](./cicd-hardening.md):** Secure the software supply chain by hardening your build pipelines against attack and ensuring that no known exploitable vulnerabilities are present in your final release.
 
 ---
 
