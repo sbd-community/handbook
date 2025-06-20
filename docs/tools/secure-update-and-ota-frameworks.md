@@ -12,12 +12,12 @@ These tools and frameworks provide the building blocks for creating a robust upd
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |
-| [**QuarkLink**](https://www.cryptoquantique.com/products/quarklink) | <i class="fa-solid fa-dollar-sign"></i> | A commercial IoT security platform for provisioning, onboarding, and lifecycle management, including OTA updates. |
-| [**SWUpdate**](https://sbabic.github.io/swupdate/) | <i class="fa-solid fa-code-branch"></i> | A widely-used, feature-rich update framework for embedded Linux devices. |
-| [**Mender**](https://mender.io/) | <i class="fa-solid fa-code-branch"></i> | An end-to-end OTA software update platform with both open-source and commercial offerings. |
-| [**The Update Framework (TUF)**](https://theupdateframework.io/) | <i class="fa-solid fa-code-branch"></i> | A CNCF-graduated project that provides a specification and libraries for securing software update systems. |
-| [**Uptane**](https://uptane.github.io/) | <i class="fa-solid fa-code-branch"></i> | An extension of TUF specifically designed for the high-security demands of automotive software updates. |
-| [**Sigstore**](https://www.sigstore.dev/) | <i class="fa-solid fa-code-branch"></i> | A Linux Foundation project for signing, verifying, and proving the provenance of software artifacts. | 
+| [**QuarkLink**](https://www.cryptoquantique.com/products/quarklink) | 💰 | A commercial IoT security platform for provisioning, onboarding, and lifecycle management, including OTA updates. |
+| [**SWUpdate**](https://sbabic.github.io/swupdate/) | 🐙 | A widely-used, feature-rich update framework for embedded Linux devices. |
+| [**Mender**](https://mender.io/) | 🐙 | An end-to-end OTA software update platform with both open-source and commercial offerings. |
+| [**The Update Framework (TUF)**](https://theupdateframework.io/) | 🐙 | A CNCF-graduated project that provides a specification and libraries for securing software update systems. |
+| [**Uptane**](https://uptane.github.io/) | 🐙 | An extension of TUF specifically designed for the high-security demands of automotive software updates. |
+| [**Sigstore**](https://www.sigstore.dev/) | 🐙 | A Linux Foundation project for signing, verifying, and proving the provenance of software artifacts. | 
 
 <!-- Citations -->
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"

@@ -12,10 +12,12 @@ These tools allow engineers to reverse-engineer compiled firmware images, inspec
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |
-| [**Binwalk**](https://github.com/ReFirmLabs/binwalk) | <i class="fa-solid fa-code-branch"></i> | A classic tool for analyzing, reverse engineering, and extracting firmware images. |
-| [**Ghidra**](https://ghidra-sre.org/) | <i class="fa-solid fa-code-branch"></i> | A software reverse engineering (SRE) framework developed by the NSA. |
-| [**FACT** (Firmware Analysis & Comparison Tool)](https://f-a-c-t.com/) | <i class="fa-solid fa-code-branch"></i> | An automated platform for unpacking firmware, running analyses, and comparing versions. |
-| [**EMBA** (Embedded-device MAnufacturer's security check)](https://github.com/e-m-b-a/emba) | <i class="fa-solid fa-code-branch"></i> | A security analyzer for firmware images that can identify vulnerabilities and configuration weaknesses. |
-| [**Firmwalker**](https://github.com/craigz28/firmwalker) | <i class="fa-solid fa-code-branch"></i> | A script for searching extracted firmware filesystems for common vulnerabilities and misconfigurations. | 
+| [**Binwalk**](https://github.com/ReFirmLabs/binwalk) | 🐙 | A fast, easy-to-use tool for analyzing, reverse engineering, and extracting firmware images. |
+| [**Ghidra**](https://ghidra-sre.org/) | 🐙 | A free, open-source software reverse engineering (SRE) suite of tools developed by the NSA. |
+| [**Radare2**](https://radare.org/r/)| 🐙 | An open-source framework for reverse engineering and analyzing binaries. |
+| [**FACT (Firmware Analysis & Comparison Tool)**](https://fkie-cad.github.io/fact_documentation/) | 🐙 | An open-source, extensible platform for performing automated firmware security analysis. |
+| [**Firmwalker**](https://github.com/craigz28/firmwalker) | 🐙 | A script for searching extracted firmware filesystems for common vulnerabilities and interesting files. |
+| [**IDA Pro**](https://hex-rays.com/ida-pro/) | 💰 | A powerful, industry-standard commercial disassembler and debugger for software reverse engineering. |
+| [**JEB Decompiler**](https://www.pnfsoftware.com/) | 💰 | A professional reverse engineering platform for Android, ARM, and MIPS binaries. |
 
 <!-- Citations -->

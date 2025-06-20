@@ -15,12 +15,17 @@ Tools for analyzing source code and running applications to find security flaws.
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |
-| [**CodeQL**](https://codeql.github.com/) | <i class="fa-solid fa-code-branch"></i> | A powerful semantic code analysis engine for finding security vulnerabilities. Free for open source projects. |
-| [**Semgrep**](https://semgrep.dev/) | <i class="fa-solid fa-code-branch"></i> | A fast, open-source static analysis tool for finding bugs and enforcing code standards. |
-| [**SonarQube**](https://www.sonarsource.com/products/sonarqube/) | <i class="fa-solid fa-code-branch"></i> | A platform for continuous inspection of code quality and security. Community edition is open-source. |
-| [**gitleaks**](https://github.com/gitleaks/gitleaks) | <i class="fa-solid fa-code-branch"></i> | Scans git repository history for hardcoded secrets and sensitive data. |
-| [**Checkmarx**](https://www.checkmarx.com/) | <i class="fa-solid fa-dollar-sign"></i> | Enterprise-grade platform for static and dynamic application security testing. |
-| [**OWASP ZAP**](https://www.zaproxy.org/) | <i class="fa-solid fa-code-branch"></i> | The world's most widely used open-source web application scanner. | 
+| [**Semgrep**](https://semgrep.dev/) | 🐙 | An open-source, fast, and customizable static analysis tool for finding bugs and enforcing code standards. |
+| [**CodeQL**](https://codeql.github.com/) | 🐙 | A powerful semantic code analysis engine, developed by GitHub, for automating security checks. |
+| [**Bandit**](https://bandit.readthedocs.io/) | 🐙 | An open-source tool specifically designed to find common security issues in Python code. |
+| [**GDB**](https://www.sourceware.org/gdb/) | 🐙 | The GNU Project Debugger, a powerful command-line debugger that can be used for dynamic analysis and reverse engineering. |
+| [**Ghidra**](https://ghidra-sre.org/) | 🐙 | A free, open-source software reverse engineering (SRE) suite of tools developed by the NSA. |
+| [**Veracode**](https://www.veracode.com/) | 💰 | A commercial application security platform that provides SAST, DAST, and SCA capabilities. |
+| [**Synopsys Coverity**](https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html) | 💰 | A commercial static analysis tool known for its low false-positive rates in large C/C++ codebases. |
+| [**SonarQube**](https://www.sonarsource.com/products/sonarqube/) | 💰 | A platform for continuous inspection of code quality and security, with both free (community) and paid editions. |
+| [**Checkmarx**](https://checkmarx.com/) | 💰 | A commercial SAST solution that provides detailed vulnerability analysis and remediation guidance. |
+| [**gitleaks**](https://github.com/gitleaks/gitleaks) | 🐙 | Scans git repository history for hardcoded secrets and sensitive data. |
+| [**OWASP ZAP**](https://www.zaproxy.org/) | 🐙 | The world's most widely used open-source web application scanner. | 
 
 <!-- Citations -->
 

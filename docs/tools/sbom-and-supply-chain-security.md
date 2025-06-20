@@ -12,14 +12,14 @@ These tools help automate the creation, management, and analysis of SBOMs. They 
 
 | Tool | Type | Description |
 | :--- | :--: | :---------- |
-| [**Syft**](https://github.com/anchore/syft) | <i class="fa-solid fa-code-branch"></i> | Generates an SBOM from container images and filesystems. |
-| [**SPDX SBOM Generator**](https://github.com/spdx/spdx-sbom-generator) | <i class="fa-solid fa-code-branch"></i> | Official command-line tool for generating SPDX-compliant SBOMs. |
-| [**CycloneDX CLI**](https://github.com/CycloneDX/cyclonedx-cli) | <i class="fa-solid fa-code-branch"></i> | Command-line tool for converting between SBOM formats and validating CycloneDX SBOMs. |
-| [**Dependency-Track**](https://dependencytrack.org/) | <i class="fa-solid fa-code-branch"></i> | A platform for continuous SBOM analysis that helps identify component-based risks. |
-| [**Grype**](https://github.com/anchore/grype) | <i class="fa-solid fa-code-branch"></i> | A vulnerability scanner for container images and filesystems that can use an SBOM as its input. |
-| [**OSV-Scanner**](https://github.com/google/osv-scanner) | <i class="fa-solid fa-code-branch"></i> | A Google-maintained scanner that finds vulnerabilities in dependencies by cross-referencing against the OSV.dev database. |
-| [**FOSSA**](https://fossa.com/) | <i class="fa-solid fa-dollar-sign"></i> | Commercial platform for license compliance and open source vulnerability management. |
-| [**Snyk**](https://snyk.io/) | <i class="fa-solid fa-dollar-sign"></i> | Developer-focused security platform for SAST, SCA, and container scanning. | 
+| [**SPDX Tool**](https://tools.spdx.org/app/) | 🐙 | Official command-line tool from the SPDX project for creating and validating SPDX SBOMs. |
+| [**CycloneDX CLI**](https://github.com/CycloneDX/cyclonedx-cli) | 🐙 | Official command-line tool from the CycloneDX project for converting between formats and validating SBOMs. |
+| [**Trivy**](https://github.com/aquasecurity/trivy) | 🐙 | A popular open-source scanner that can find vulnerabilities in container images, filesystems, and Git repos, and also generate SBOMs. |
+| [**Syft**](https://github.com/anchore/syft) | 🐙 | An open-source CLI tool and library from Anchore for generating an SBOM from container images and filesystems. |
+| [**Grype**](https://github.com/anchore/grype) | 🐙 | An open-source vulnerability scanner for container images and filesystems that can use Syft's SBOM output. |
+| [**Dependency-Track**](https://dependencytrack.org/) | 🐙 | An open-source component analysis platform that allows you to manage SBOMs and track vulnerabilities across your portfolio. |
+| [**FOSSA**](https://fossa.com/) | 💰 | A commercial platform for managing open-source license compliance and security vulnerabilities. |
+| [**Snyk**](https://snyk.io/) | 💰 | A developer security platform that provides vulnerability scanning, license compliance, and SCA. |
 
 <!-- Citations -->
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
