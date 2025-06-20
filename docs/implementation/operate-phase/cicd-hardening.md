@@ -2,6 +2,7 @@
 title: "CI/CD Pipeline Hardening"
 sidebar_label: "CI/CD Security"
 tags: [cicd, github-actions, devsecops, supply-chain, cra]
+sidebar_position: 4
 ---
 # Guide: Hardening the CI/CD Pipeline
 

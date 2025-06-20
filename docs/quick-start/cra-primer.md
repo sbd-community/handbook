@@ -85,7 +85,7 @@ Market surveillance authorities will also have the power to order product recall
 
 1.  **Inventory & Classify (1 min):** List your products with digital elements and determine their risk class (Default, Class I, etc.). Most will be "Default". For examples, see the [Product Risk Classification table](../standards/cra-overview.md#product-risk-classes).
 
-2.  **Identify Your Biggest Gap (1 min):** Review the core obligations. Is your biggest gap in product security (e.g., no secure boot) or process (e.g., no public vulnerability disclosure policy)? Use the [engineering benchmarks](../standards/cra-overview.md#annex-i-benchmarks) as a checklist.
+2.  **Identify Your Biggest Gap (1 min):** Review the core obligations. Is your biggest gap in product security (e.g., no secure boot) or process (e.g., no public vulnerability disclosure policy)? Use the [engineering benchmarks](../standards/cra-overview.md#annex-i-requirements) as a checklist.
 
 3.  **Assign Ownership (1 min):** Assign a person or team to be responsible for leading your CRA compliance effort. Have them read the [full CRA overview](../standards/cra-overview.md) and start a detailed gap analysis.
 

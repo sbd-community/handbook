@@ -1,7 +1,7 @@
 ---
 title: "SBOM & VEX Workflows"
 sidebar_label: "SBOM & VEX"
-sidebar_position: 5
+sidebar_position: 7
 tags: [sbom, vex, spdx, cyclonedx, cra, supply-chain]
 ---
 # Guide: SBOM & VEX Workflows

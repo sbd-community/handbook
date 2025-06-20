@@ -2,6 +2,7 @@
 title: "Patch Cadence & Rollback Strategy"
 sidebar_label: "Patch Management"
 tags: [patch-management, vulnerability-handling, cra, ota, policy]
+sidebar_position: 2
 ---
 # Guide: Patch Cadence & Rollback Strategy
 

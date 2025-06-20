@@ -1,7 +1,7 @@
 ---
 title: "Secure OTA Updates"
 sidebar_label: "OTA Updates"
-sidebar_position: 4
+sidebar_position: 6
 tags: [ota, secure-update, firmware, cra, integrity, rollback-protection]
 ---
 # Guide: Secure Over-the-Air (OTA) Updates

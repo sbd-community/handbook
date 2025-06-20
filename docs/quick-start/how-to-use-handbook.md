@@ -38,7 +38,7 @@ _Your goal: Understand what we need to do, why, and how to plan the work._
 ### For the Firmware or Embedded Engineer
 _Your goal: Understand what I need to build on the device._
 
-1.  **Understand Requirements:** Read the [CRA Overview](../standards/cra-overview.md), focusing on the [Secure-by-Design Engineering Benchmarks](../standards/cra-overview.md#annex-i-benchmarks). This is your list of technical requirements.
+1.  **Understand Requirements:** Read the [CRA Overview](../standards/cra-overview.md), focusing on the [Secure-by-Design Engineering Benchmarks](../standards/cra-overview.md#annex-i-requirements). This is your list of technical requirements.
 2.  **Implement Core Features:** Dive into the **[Build Phase](../implementation/build-phase)** implementation guides:
     -   [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)
     -   [Secure Boot Implementation](../implementation/build-phase/secure-boot.md)
