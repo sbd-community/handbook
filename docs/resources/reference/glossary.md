@@ -1,6 +1,7 @@
 ---
 title: Glossary of Terms
 sidebar_label: Glossary
+sidebar_position: 1
 tags: [glossary, definitions, cra, sbom, secure-by-design]
 ---
 # Glossary
