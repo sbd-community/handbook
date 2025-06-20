@@ -1,8 +1,8 @@
 ---
 title: "PKI & Key Management"
 sidebar_label: "PKI & Key Management"
-sidebar_position: 3
-tags: [pki, key-management, hsm, certificate-authority, cra, iec62443]
+sidebar_position: 7
+tags: [pki, key-management, hsm, certificate-authority, cra, iec62443, tools, certificates, open-source, commercial]
 ---
 
 # PKI & Key Management Platforms

@@ -1,8 +1,8 @@
 ---
 title: "Firmware & Binary Analysis"
 sidebar_label: "Firmware & Binary Analysis"
-sidebar_position: 5
-tags: [tools, firmware, binary-analysis, reverse-engineering, open-source]
+sidebar_position: 4
+tags: [tools, firmware, binary, analysis, reverse-engineering, open-source, commercial]
 ---
 # Firmware & Binary Analysis
 

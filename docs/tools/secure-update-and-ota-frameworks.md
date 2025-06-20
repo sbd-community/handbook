@@ -1,7 +1,7 @@
 ---
 title: "Secure Update & OTA Frameworks"
 sidebar_label: "Secure Update & OTA"
-sidebar_position: 4
+sidebar_position: 9
 tags: [tools, ota, secure-update, firmware, open-source, commercial]
 ---
 # Secure Update & OTA Frameworks

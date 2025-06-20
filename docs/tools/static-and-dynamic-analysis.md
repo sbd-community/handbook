@@ -1,8 +1,8 @@
 ---
 title: "Static & Dynamic Analysis (SAST / DAST)"
-sidebar_label: "SAST & DAST"
-sidebar_position: 1
-tags: [tools, sast, dast, open-source, commercial]
+sidebar_label: "SAST / DAST"
+sidebar_position: 2
+tags: [tools, sast, dast, security, scanning, open-source, commercial]
 ---
 # Static & Dynamic Analysis (SAST / DAST)
 

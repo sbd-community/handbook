@@ -1,8 +1,8 @@
 ---
 title: "SBOM & Supply Chain Security"
 sidebar_label: "SBOM & Supply Chain"
-sidebar_position: 2
-tags: [tools, sbom, supply-chain, open-source, commercial]
+sidebar_position: 3
+tags: [tools, sbom, sca, supply-chain, security, open-source, commercial]
 ---
 # SBOM & Supply Chain Security
 
