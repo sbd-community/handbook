@@ -87,3 +87,13 @@ uk:
   label: UK
   description: Focus on United Kingdom regulations and standards.
   permalink: /uk
+
+strategy:
+  label: Strategy
+  description: High-level planning and process for product security.
+  permalink: /strategy
+
+security-culture:
+  label: Security Culture
+  description: Topics related to building a security-aware mindset in organizations.
+  permalink: /security-culture
