@@ -1,20 +1,27 @@
 ---
 title: "Device Lifecycle Management"
-sidebar_label: "Device Lifecycle Management"
-sidebar_position: 8
+sidebar_label: "Device Lifecycle Mgmt"
+sidebar_position: 7
 tags: [tools, onboarding, bootstrapping, device-management, iot, cloud, dps, monitoring]
 ---
-# Device Lifecycle Management Platforms
+# Tools: Device Lifecycle Management
 
-A device's security needs don't end after it's manufactured; they extend across its entire operational life. This category covers platforms that manage the device's security posture from its first connection to its last day in the field.
+Device lifecycle management platforms are essential for securely operating a fleet of connected devices at scale. They provide the infrastructure to handle key operational phases, from initial secure onboarding to ongoing monitoring, updates, and eventual decommissioning.
 
-This involves two key phases:
-1.  **Secure Onboarding (Bootstrapping):** Automating the complex workflow where a new device uses its factory identity to securely connect to a cloud service, prove its legitimacy, and get provisioned with its operational credentials.
-2.  **Operational Management:** Continuously monitoring the device's integrity, managing its credentials (e.g., renewing certificates), and securely handling end-of-life events like revoking access for decommissioned or compromised devices.
+These platforms are crucial for meeting the continuous vulnerability management and update requirements of regulations like the [CRA][cra_art13].
 
-| Platform | Type | Description |
-| :--- | :--: | :---------- |
-| [**Azure IoT Hub DPS**](https://learn.microsoft.com/en-us/azure/iot-dps/about-iot-dps) | 💰 | A helper service for Azure IoT Hub that enables zero-touch, just-in-time provisioning to the right IoT hub without requiring human intervention. |
-| [**AWS IoT Core Provisioning**](https://aws.amazon.com/iot-core/features/#Device_provisioning) | 💰 | AWS provides multiple methods for device provisioning, including fleet provisioning and just-in-time provisioning, to securely register devices at scale. |
-| [**QuarkLink**](https://www.cryptoquantique.com/products/quarklink/) | 💰 | Automates the secure onboarding of devices with hardware roots of trust to multiple cloud platforms and provides ongoing lifecycle management and monitoring. |
-| [**Pelion Device Management**](https://pelion.com/) | 💰 | An Arm-backed platform providing secure device onboarding, lifecycle management, and firmware updates for a wide range of IoT devices. | 
+| Tool | Type | Description |
+| :--- | :--- | :--- |
+| [Memfault](https://memfault.com/) | 💰 | A commercial platform providing device observability, remote debugging, and OTA update management for IoT fleets running on RTOS or Linux. |
+| [Golioth](https://golioth.io/) | 💰 | A commercial cloud platform for IoT fleets, offering device management, data routing, and OTA updates, with a strong focus on Zephyr RTOS. |
+| [QuarkLink](https://www.cryptoquantique.com/products/quarklink/) | 💰 | An end-to-end, hardware-agnostic IoT security platform. It provides secure provisioning, device-to-cloud onboarding, and full lifecycle management, including certificate rotation and OTA updates. |
+| [Thistle Technologies](https://thistle.tech/) | 💰 | A commercial security platform that provides a device control center for fleet monitoring and management, alongside secure boot and update services. |
+| [Pelion](https://pelion.com/) | 💰 | An Arm-backed platform providing secure device onboarding, lifecycle management, and firmware updates for a wide range of IoT devices. |
+
+<!-- vale off -->
+*Type: 💰=Commercial, 🐙=Open-Source*
+<!-- vale on -->
+
+<!-- Citations -->
+[cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
+ 
