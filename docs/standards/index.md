@@ -17,6 +17,7 @@ This section provides high-level summaries of the key global regulations and sta
 | **In Vitro Diagnostic Regulation (IVDR)** | <i class="fa-solid fa-earth-europe"></i> EU | Safety and security requirements for in vitro diagnostic devices, also exempt from the CRA. | [IVDR Overview](./ivdr-overview.md) |
 | **ETSI EN 303 645** | <i class="fa-solid fa-globe"></i> Global | Baseline standard for consumer IoT security; harmonised standard for the RED. | [ETSI EN 303 645 Overview](./en303645-overview.md) |
 | **IEC 62443 Series** | <i class="fa-solid fa-globe"></i> Global | Leading standard for Industrial Automation and Control Systems (IACS / OT). | [IEC 62443 Overview](./iec62443-overview.md) |
+| **NIST IR 8259 Series** | <i class="fa-solid fa-flag-usa"></i> US | Foundational guidance and baseline capabilities for IoT device manufacturers. | [NIST IR 8259 Series Overview](./nistir8259-overview.md) |
 | **PSTI Act** | <i class="fa-solid fa-flag"></i> UK | Baseline security requirements (no default passwords, CVD) for UK consumer IoT devices. | [PSTI Act Overview](./psti-overview.md) |
 | **PECR** | <i class="fa-solid fa-flag"></i> UK | UK rules on privacy for electronic communications, cookies, and tracking technologies. | [PECR Overview](./pecr-overview.md) |
 
