@@ -18,6 +18,7 @@ This section provides high-level summaries of the key global regulations and sta
 | **PSTI Act** | <i class="fa-solid fa-flag"></i> UK | Baseline security requirements (no default passwords, CVD) for UK consumer IoT devices. | [PSTI Act Overview](./psti-overview.md) |
 | **PECR** | <i class="fa-solid fa-flag"></i> UK | UK rules on privacy for electronic communications, cookies, and tracking technologies. | [PECR Overview](./pecr-overview.md) |
 | **NIST IR 8259 Series** | <i class="fa-solid fa-flag-usa"></i> US | Foundational guidance and baseline capabilities for IoT device manufacturers. | [NIST IR 8259 Series Overview](./nistir8259-overview.md) |
+| **FCC Cyber Trust Mark** | <i class="fa-solid fa-flag-usa"></i> US | Voluntary labeling program to help consumers identify secure IoT products. | [FCC Cyber Trust Mark Overview](./fcc-cyber-trust-mark-overview.md) |
 | **ANSI/CTA-2088** | <i class="fa-solid fa-flag-usa"></i> US | Industry-led baseline security capabilities for consumer IoT devices. | [ANSI/CTA-2088 Overview](./cta2088-overview.md) |
 | **FDA Cybersecurity** | <i class="fa-solid fa-flag-usa"></i> US | Mandatory pre-market requirements for connected medical devices. | [FDA Cybersecurity Overview](./fda-cybersecurity-overview.md) |
 | **ETSI EN 303 645** | <i class="fa-solid fa-globe"></i> Global | Baseline standard for consumer IoT security; harmonised standard for the RED. | [ETSI EN 303 645 Overview](./en303645-overview.md) |

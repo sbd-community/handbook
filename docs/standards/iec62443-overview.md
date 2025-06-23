@@ -1,6 +1,6 @@
 ---
 title: IEC 62443 Series
-sidebar_position: 12
+sidebar_position: 13
 tags: [iec62443, industrial, ot, iacs, security]
 ---
 # IEC 62443 – Operational Technology (OT)

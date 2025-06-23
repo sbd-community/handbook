@@ -94,6 +94,7 @@ The feedback summarized in this report will be used to revise the core `NIST IR 
 | Law / Standard | How it interacts with the NIST IR 8259 Series |
 |---|---|
 | **[US IoT Cybersecurity Improvement Act][us_iot_act]** | The series provides the technical baseline that underpins this law, which applies to any IoT device sold to the U.S. federal government. |
+| **[FCC Cyber Trust Mark](./fcc-cyber-trust-mark-overview.md)** | This voluntary labeling program uses NIST guidance as its technical foundation. The specific requirements for the mark are based on NIST work, making the 8259 series essential reading for any manufacturer seeking the label. |
 | **[ETSI EN 303 645](./en303645-overview.md)** | Both establish a baseline for IoT security. EN 303 645 is more focused on consumer IoT and has become a harmonised standard for EU law, while the NIST series is more of a technical capabilities inventory applicable to any IoT device. There is significant overlap in their principles. |
 | **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | Similar to EN 303 645, the principles in the NIST series align closely with the essential requirements in CRA Annex I. A manufacturer compliant with the NIST baseline would be well-positioned for CRA compliance. |
 
