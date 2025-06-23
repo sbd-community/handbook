@@ -9,7 +9,7 @@ A **Gap Analysis** is a critical first step in your journey to compliance with t
 
 Use this checklist to perform a high-level assessment of your organization's readiness. For each requirement, assess your current status and note the location of any existing evidence. This document can form the foundation of your compliance project plan.
 
-> This checklist is a starting point. It should be used in conjunction with the detailed guides in this handbook and a thorough reading of the [full CRA Overview](../../standards/cra-overview.md).
+> This checklist is a starting point. It should be used in conjunction with the detailed guides in this handbook and a thorough reading of the [full CRA Overview](../../standards/eu/cra-overview.md).
 
 ---
 
@@ -18,7 +18,7 @@ Use this checklist to perform a high-level assessment of your organization's rea
 | Question | Status (Yes/No/Partial) | Evidence / Notes |
 | :--- | :--- | :--- |
 | **Is the product a "Product with Digital Elements" (PDE)?**<br/>([CRA Primer](../../quick-start/cra-primer.md)) | | Justification for in/out of scope. |
-| **What is the product's CRA Risk Class?**<br/>(Default, Class I, or Class II)<br/>([CRA Product Risk Classes](../../standards/cra-overview.md#product-risk-classes)) | | Link to product list and classification matrix. |
+| **What is the product's CRA Risk Class?**<br/>(Default, Class I, or Class II)<br/>([CRA Product Risk Classes](../../standards/eu/cra-overview.md#product-risk-classes)) | | Link to product list and classification matrix. |
 
 ---
 

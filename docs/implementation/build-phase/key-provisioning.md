@@ -12,7 +12,7 @@ tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 
 While the device identity proves *who* a device is, the keys provisioned onto it are the tools it *uses* to perform cryptographic operations like encrypting data, verifying software signatures, and authenticating to a network.
 
-The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material. Regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** mandate the protection of integrity and confidentiality ([CRA Annex I.I.2(f)][cra_annexI]), which implicitly requires that cryptographic keys are protected from disclosure and modification.
+The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material. Regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandate the protection of integrity and confidentiality ([CRA Annex I.I.2(f)][cra_annexI]), which implicitly requires that cryptographic keys are protected from disclosure and modification.
 
 ## 2. The Key Management Lifecycle & Workflow
 

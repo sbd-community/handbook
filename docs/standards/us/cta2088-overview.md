@@ -22,7 +22,7 @@ The standard can be purchased from the CTA webstore. A free version is also avai
 | Standard / Law | How it interacts with CTA-2088 |
 |---|---|
 | **[FCC Cyber Trust Mark](./fcc-cyber-trust-mark-overview.md)** | The Trust Mark's technical requirements are based on NIST guidance, which has significant overlap with CTA-2088. As a practical, testable standard, CTA-2088 provides an excellent framework for manufacturers preparing for the Trust Mark certification process. |
-| **[ETSI EN 303 645](./en303645-overview.md)** | CTA-2088 is the closest U.S. counterpart to Europe's EN 303 645. Both are baseline standards for consumer IoT security, and compliance with one provides a strong foundation for compliance with the other. |
+| **[ETSI EN 303 645](../global/en303645-overview.md)** | CTA-2088 is the closest U.S. counterpart to Europe's EN 303 645. Both are baseline standards for consumer IoT security, and compliance with one provides a strong foundation for compliance with the other. |
 | **[NIST IR 8259 Series](./nistir8259-overview.md)** | CTA-2088 complements the foundational guidance from NIST. While NIST provides a high-level framework of activities and capabilities, CTA-2088 defines a specific, testable set of technical requirements for the device itself. |
 | **State-level IoT Security Laws** | Several U.S. states (e.g., California, Oregon) have laws requiring "reasonable security features" for IoT devices. CTA-2088 provides a well-defined benchmark that can help manufacturers meet these legal requirements. |
 

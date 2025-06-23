@@ -51,7 +51,7 @@ The MOD asks:
 
 This is the essence of "DevSecOps" and lifecycle management. The answer lies in building the mechanisms for through-life support from day one:
 -   **[Secure OTA Updates](/docs/implementation/build-phase/ota-updates):** A robust and secure update mechanism is non-negotiable for delivering security patches.
--   **[Vulnerability Disclosure & Patch Cadence](/docs/implementation/operate-phase/vulnerability-disclosure):** Having a clear, public process for handling vulnerability reports is now a legal requirement under laws like the [CRA](/docs/standards/cra-overview).
+-   **[Vulnerability Disclosure & Patch Cadence](/docs/implementation/operate-phase/vulnerability-disclosure):** Having a clear, public process for handling vulnerability reports is now a legal requirement under laws like the [CRA](/docs/standards/eu/cra-overview).
 
 ## Conclusion: A Shared Challenge
 

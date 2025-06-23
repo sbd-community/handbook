@@ -313,20 +313,20 @@ The following table maps the essential requirements of the CRA and related guide
 | Implementation Guide | Key Regulatory Requirements Satisfied |
 | :--- | :--- |
 | **BUILD PHASE** | |
-| [Threat Modeling & Risk Assessment](../implementation/build-phase/threat-modeling.md) | **CRA**: Annex I.I.1 `(Risk Assessment)` <br/> **BSI TR-03183-1**: REQ_RA 1 `(Risk assessment)`, REQ_ER 1 `(Security by design)` |
-| [Secure Configuration & Hardening](../implementation/build-phase/secure-configuration.md) | **CRA**: Annex I.I.2(c) `(Secure by default)`, Annex I.I.2(j) `(Limit attack surfaces)` <br/> **BSI TR-03183-1**: REQ_ER 3 `(Secure default configuration)`, REQ_ER 11 `(Limit attack surfaces)` |
-| [Unique Device Identity](../implementation/build-phase/unique-device-identity.md) | **CRA**: Annex I.I.2(d) `(Access Control)` <br/> **BSI TR-03183-1**: REQ_ER 5 `(Access control)` <br/> **RED**: Art 3.3(i) `(Protection from fraud)` |
-| [Secure Boot](../implementation/build-phase/secure-boot.md) | **CRA**: Annex I.I.2(f) `(Integrity)` <br/> **BSI TR-03183-1**: REQ_ER 7 `(Integrity protection)` |
-| [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md) | **CRA**: Annex I.I.2(e) `(Confidentiality)` <br/> **BSI TR-03183-1**: REQ_ER 6 `(Confidentiality protection)` |
-| [Data Privacy & Secure Deletion](../implementation/build-phase/data-privacy.md) | **RED**: Art 3.3(e) `(Protect privacy)` <br/> **BSI TR-03183-1**: REQ_ER 8 `(Data minimisation)`, REQ_ER 14 `(Deletion of data)` |
-| [Secure OTA Updates](../implementation/build-phase/ota-updates.md) | **CRA**: Annex I.II.2-3 `(Security Updates)` <br/> **BSI TR-03183-1**: REQ_ER 4 `(Security updates)`, REQ_VH 6 `(Secure distribution of updates)` |
-| [SBOM & VEX Workflows](../implementation/build-phase/sbom-vex.md) | **CRA**: Annex I.II.1 `(Identify components)` <br/> **BSI TR-03183-1**: REQ_VH 1 `(Identify components)`, REQ_VH 4 `(Publish addressed vulnerabilities)` <br/> **BSI TR-03183-2**: `(SBOM format)` |
-| [User Information & Documentation](../implementation/build-phase/user-documentation.md) | **CRA**: Annex II `(Information and instructions to the user)` <br/> **BSI TR-03183-1**: REQ_UD 1-6 `(User documentation)` |
+| [Threat Modeling & Risk Assessment](../../implementation/build-phase/threat-modeling.md) | **CRA**: Annex I.I.1 `(Risk Assessment)` <br/> **BSI TR-03183-1**: REQ_RA 1 `(Risk assessment)`, REQ_ER 1 `(Security by design)` |
+| [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) | **CRA**: Annex I.I.2(c) `(Secure by default)`, Annex I.I.2(j) `(Limit attack surfaces)` <br/> **BSI TR-03183-1**: REQ_ER 3 `(Secure default configuration)`, REQ_ER 11 `(Limit attack surfaces)` |
+| [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) | **CRA**: Annex I.I.2(d) `(Access Control)` <br/> **BSI TR-03183-1**: REQ_ER 5 `(Access control)` <br/> **RED**: Art 3.3(i) `(Protection from fraud)` |
+| [Secure Boot](../../implementation/build-phase/secure-boot.md) | **CRA**: Annex I.I.2(f) `(Integrity)` <br/> **BSI TR-03183-1**: REQ_ER 7 `(Integrity protection)` |
+| [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) | **CRA**: Annex I.I.2(e) `(Confidentiality)` <br/> **BSI TR-03183-1**: REQ_ER 6 `(Confidentiality protection)` |
+| [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) | **RED**: Art 3.3(e) `(Protect privacy)` <br/> **BSI TR-03183-1**: REQ_ER 8 `(Data minimisation)`, REQ_ER 14 `(Deletion of data)` |
+| [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) | **CRA**: Annex I.II.2-3 `(Security Updates)` <br/> **BSI TR-03183-1**: REQ_ER 4 `(Security updates)`, REQ_VH 6 `(Secure distribution of updates)` |
+| [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) | **CRA**: Annex I.II.1 `(Identify components)` <br/> **BSI TR-03183-1**: REQ_VH 1 `(Identify components)`, REQ_VH 4 `(Publish addressed vulnerabilities)` <br/> **BSI TR-03183-2**: `(SBOM format)` |
+| [User Information & Documentation](../../implementation/build-phase/user-documentation.md) | **CRA**: Annex II `(Information and instructions to the user)` <br/> **BSI TR-03183-1**: REQ_UD 1-6 `(User documentation)` |
 | **OPERATE PHASE** | |
-| [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md) | **CRA**: Annex I.II.5 `(CVD Policy)`, Art. 14 `(Reporting)` <br/> **BSI TR-03183-1**: REQ_VH 5 `(CVD policy)` <br/> **BSI TR-03183-3**: `(Vulnerability Reports)` |
-| [Patch Cadence & Management](../implementation/operate-phase/patch-cadence.md) | **CRA**: Annex I.II.1-3 `(Handle and remediate vulnerabilities without delay)` <br/> **BSI TR-03183-1**: REQ_VH 2 `(Address vulnerabilities)` |
-| [Security Logging & Monitoring](../implementation/operate-phase/security-logging.md) | **BSI TR-03183-1**: REQ_ER 13 `(Recording and monitoring)` |
-| [CI/CD Hardening](../implementation/operate-phase/cicd-hardening.md) | **CRA**: Annex I.I.2(a) `(No known exploitable vulnerabilities)` <br/> **BSI TR-03183-1**: REQ_ER 2 `(No known vulnerabilities)` |
+| [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) | **CRA**: Annex I.II.5 `(CVD Policy)`, Art. 14 `(Reporting)` <br/> **BSI TR-03183-1**: REQ_VH 5 `(CVD policy)` <br/> **BSI TR-03183-3**: `(Vulnerability Reports)` |
+| [Patch Cadence & Management](../../implementation/operate-phase/patch-cadence.md) | **CRA**: Annex I.II.1-3 `(Handle and remediate vulnerabilities without delay)` <br/> **BSI TR-03183-1**: REQ_VH 2 `(Address vulnerabilities)` |
+| [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) | **BSI TR-03183-1**: REQ_ER 13 `(Recording and monitoring)` |
+| [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) | **CRA**: Annex I.I.2(a) `(No known exploitable vulnerabilities)` <br/> **BSI TR-03183-1**: REQ_ER 2 `(No known vulnerabilities)` |
 
 <!-- Citations -->
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847 "CRA Official Journal – OJ"

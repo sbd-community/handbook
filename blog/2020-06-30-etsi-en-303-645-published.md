@@ -21,4 +21,4 @@ While compliance is voluntary, EN 303 645 has quickly become the foundation for 
 
 More importantly, it serves as the primary **harmonised standard** for the EU's **Radio Equipment Directive (RED)**. As of August 1, 2025, manufacturers of in-scope radio devices can use compliance with EN 303 645 to demonstrate they meet the RED's mandatory cybersecurity requirements.
 
-For a full breakdown of the standard and its relationship with EU law, see our [**ETSI EN 303 645 Overview**](/docs/standards/en303645-overview). 
+For a full breakdown of the standard and its relationship with EU law, see our [**ETSI EN 303 645 Overview**](/docs/standards/global/en303645-overview). 

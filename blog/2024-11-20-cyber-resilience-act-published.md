@@ -27,4 +27,4 @@ If you manufacture any product with digital elements sold in the EU, you must no
 
 The CRA is the most significant piece of product security legislation in a generation. It creates a level playing field and ensures that only secure products can reach EU consumers.
 
-To understand the full scope, obligations, and timelines, dive into our complete [**CRA Overview**](/docs/standards/cra-overview). 
+To understand the full scope, obligations, and timelines, dive into our complete [**CRA Overview**](/docs/standards/eu/cra-overview). 

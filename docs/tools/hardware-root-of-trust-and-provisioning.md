@@ -23,4 +23,4 @@ The tools and platforms in this category help manufacturers either create this i
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[iec_62443]: ../../docs/standards/iec62443-overview.md
+[iec_62443]: ../../docs/standards/global/iec62443-overview.md

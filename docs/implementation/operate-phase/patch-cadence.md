@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Having a secure OTA update mechanism is only the first step; you also need a clear, documented policy for *when* and *how* you will use it. A **Patch Management Policy** is a critical operational document that defines your organization's commitment to fixing vulnerabilities and delivering updates.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
 
 Your patch management policy should be a public-facing document that sets clear expectations for your customers. It should define:
 -   The types of updates you provide (e.g., security, feature).

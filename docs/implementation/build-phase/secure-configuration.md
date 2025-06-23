@@ -10,7 +10,7 @@ tags: [secure-default, hardening, attack-surface, cra, secure-by-design]
 
 Secure Configuration, also known as hardening, is the process of designing and shipping a product in its most secure possible state by default. It is a direct implementation of the **principle of least privilege**: a product should only have the permissions, features, and network exposure that are absolutely essential for its core functionality.
 
-This is a non-negotiable requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)**, which mandates that products be "configured to be secure by default" ([CRA Annex I.I.2(c)][cra_annexI]) and "designed, developed and produced to limit attack surfaces, including external interfaces" ([CRA Annex I.I.2(j)][cra_annexI]). The BSI's technical guideline reinforces this with requirements for a secure default configuration ([REQ_ER 3][bsi_tr_03183]) and limited attack surfaces ([REQ_ER 11][bsi_tr_03183]).
+This is a non-negotiable requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, which mandates that products be "configured to be secure by default" ([CRA Annex I.I.2(c)][cra_annexI]) and "designed, developed and produced to limit attack surfaces, including external interfaces" ([CRA Annex I.I.2(j)][cra_annexI]). The BSI's technical guideline reinforces this with requirements for a secure default configuration ([REQ_ER 3][bsi_tr_03183]) and limited attack surfaces ([REQ_ER 11][bsi_tr_03183]).
 
 Any insecure setting should require a deliberate, explicit action from the user to enable, and only after being warned of the potential risks.
 

@@ -54,7 +54,7 @@ This category covers more complex systems that don't fit neatly into the first t
 
 ## Why This Matters for Compliance
 
-Your choice of security controls to meet regulations like the **[Cyber-Resilience Act](../../standards/cra-overview.md)** will be dictated by your device's classification. You cannot claim to provide process isolation if your device is built on an MCU with no MMU. The risk assessment for a simple sensor will be vastly different from that of a Linux-based gateway. Documenting this classification is a key part of justifying your security architecture in your technical file.
+Your choice of security controls to meet regulations like the **[Cyber-Resilience Act](../../standards/eu/cra-overview.md)** will be dictated by your device's classification. You cannot claim to provide process isolation if your device is built on an MCU with no MMU. The risk assessment for a simple sensor will be vastly different from that of a Linux-based gateway. Documenting this classification is a key part of justifying your security architecture in your technical file.
 
 <!-- Citations -->
 [ndss18_muench]: https://www.s3.eurecom.fr/docs/ndss18_muench.pdf "Muench et al. - What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices" 

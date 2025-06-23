@@ -3,7 +3,7 @@ title: NIS 2 Directive
 sidebar_position: 2
 tags: [nis2, compliance, eu, critical-infrastructure]
 ---
-# NIS 2 Directive (EU 2022/2555)
+# NIS 2 Directive (EU) 2022/2555
 
 ## 1. Why NIS 2 matters now
 

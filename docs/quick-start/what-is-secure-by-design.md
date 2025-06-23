@@ -14,8 +14,8 @@ This approach marks a fundamental change in responsibility. As CISA, the US Cybe
 
 Secure-by-Design is no longer just a best practice; it is rapidly becoming a legal requirement for placing products on the market. Major global economies are enacting legislation that codifies these principles into law.
 
--   The **[EU Cyber-Resilience Act (CRA)](../standards/cra-overview.md)** establishes rigorous security standards for all "products with digital elements" sold in the European Union, making SbD the starting point for compliance by mandating the essential security requirements laid out in **[CRA Annex I][cra_annexI]**.
--   The **[UK's Product Security and Telecommunications Infrastructure (PSTI) Act](../standards/psti-overview.md)** legally requires manufacturers of consumer connectable products to follow a set of security principles, effectively banning default passwords and mandating transparent vulnerability disclosure ([UK PSTI Act][uk_psti_law]).
+-   The **[EU Cyber-Resilience Act (CRA)](../standards/eu/cra-overview.md)** establishes rigorous security standards for all "products with digital elements" sold in the European Union, making SbD the starting point for compliance by mandating the essential security requirements laid out in **[CRA Annex I][cra_annexI]**.
+-   The **[UK's Product Security and Telecommunications Infrastructure (PSTI) Act](../standards/uk/psti-overview.md)** legally requires manufacturers of consumer connectable products to follow a set of security principles, effectively banning default passwords and mandating transparent vulnerability disclosure ([UK PSTI Act][uk_psti_law]).
 
 These regulations signal a clear international trend: manufacturers are now legally accountable for the security of their products.
 

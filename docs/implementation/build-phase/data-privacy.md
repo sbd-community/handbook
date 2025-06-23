@@ -11,8 +11,8 @@ tags: [privacy, data-protection, gdpr, red, cra, secure-by-design]
 While cybersecurity focuses on protecting the device, data privacy focuses on protecting the *user*. Modern regulations recognize that the two are inseparable. Poor security leads to data breaches, and a failure to respect user privacy can create security risks.
 
 Several regulations mandate privacy-preserving features:
-- The **[Radio Equipment Directive (RED)](./../../standards/red-overview.md)** requires that products incorporate safeguards to ensure that "personal data and privacy of the user and of the subscriber are protected" ([RED Art 3.3.e][red_dir]).
-- The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** includes requirements for data minimization.
+- The **[Radio Equipment Directive (RED)](./../../standards/eu/red-overview.md)** requires that products incorporate safeguards to ensure that "personal data and privacy of the user and of the subscriber are protected" ([RED Art 3.3.e][red_dir]).
+- The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** includes requirements for data minimization.
 - **BSI TR-03183-1** contains explicit requirements for **data minimisation** ([REQ_ER 8][bsi_tr_03183]) and the **secure deletion of data** ([REQ_ER 14][bsi_tr_03183]).
 
 Building these capabilities is not just about compliance; it's about building trust with your users.

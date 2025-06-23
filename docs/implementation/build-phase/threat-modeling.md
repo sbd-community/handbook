@@ -10,7 +10,7 @@ tags: [threat-modeling, risk-assessment, stride, cra, secure-by-design]
 
 **Threat Modeling** is a structured, systematic process for identifying potential security threats and vulnerabilities in a product, determining their risk, and defining mitigations. It is the foundational activity of a **Secure-by-Design** approach. Instead of waiting for vulnerabilities to be discovered after release, you proactively anticipate how an attacker might try to compromise your system.
 
-This is not just a best practice; it is a core requirement of the EU's cybersecurity legislation. The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** is built on the principle of risk management, and Germany's **[BSI TR-03183-1][bsi_tr_03183]** technical guideline explicitly requires manufacturers to perform and document a cybersecurity risk assessment ([REQ_RA 1][bsi_tr_03183]) and to build products that are "secure by design" ([REQ_ER 1][bsi_tr_03183]).
+This is not just a best practice; it is a core requirement of the EU's cybersecurity legislation. The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** is built on the principle of risk management, and Germany's **[BSI TR-03183-1][bsi_tr_03183]** technical guideline explicitly requires manufacturers to perform and document a cybersecurity risk assessment ([REQ_RA 1][bsi_tr_03183]) and to build products that are "secure by design" ([REQ_ER 1][bsi_tr_03183]).
 
 The output of this process is the blueprint for your product's security architecture and the primary evidence for your technical file to demonstrate that you have built security in from the start.
 

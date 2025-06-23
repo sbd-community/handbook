@@ -21,8 +21,8 @@ EN 303 645 is available to download for free directly from ETSI.
 
 | Law | How it interacts with EN 303 645 |
 |-----|---------------------------|
-| **[Radio Equipment Directive (RED)](./red-overview.md)** | EN 303 645 is the primary **harmonised standard** for demonstrating compliance with the cybersecurity requirements of the RED Delegated Act (EU) 2022/30. Manufacturers who follow the provisions of this standard can claim a "presumption of conformity" with the RED's essential requirements for network protection, privacy, and fraud prevention when the deadline arrives on 1 August 2025. |
-| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | The CRA's essential security requirements in Annex I are heavily based on the principles in EN 303 645. It is expected that a future version of this standard (or a new standard based on it) will become a harmonised standard for the CRA. For manufacturers of "Default" category consumer products, compliance with EN 303 645 is an excellent way to prepare for future CRA obligations. |
+| **[Radio Equipment Directive (RED)](../eu/red-overview.md)** | EN 303 645 is the primary **harmonised standard** for demonstrating compliance with the cybersecurity requirements of the RED Delegated Act (EU) 2022/30. Manufacturers who follow the provisions of this standard can claim a "presumption of conformity" with the RED's essential requirements for network protection, privacy, and fraud prevention when the deadline arrives on 1 August 2025. |
+| **[Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA's essential security requirements in Annex I are heavily based on the principles in EN 303 645. It is expected that a future version of this standard (or a new standard based on it) will become a harmonised standard for the CRA. For manufacturers of "Default" category consumer products, compliance with EN 303 645 is an excellent way to prepare for future CRA obligations. |
 
 ## 2. A Secure-by-Design Approach to EN 303 645
 

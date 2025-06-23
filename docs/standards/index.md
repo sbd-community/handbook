@@ -8,19 +8,12 @@ title: Overview
 
 This section provides high-level summaries of the key global regulations and standards that mandate Secure-by-Design principles for connected devices.
 
-| Standard | Jurisdiction | Summary | Link |
-| :--- | :--- | :--- | :--- |
-| **Cyber-Resilience Act (CRA)** | <i class="fa-solid fa-earth-europe"></i> EU | Horizontal cybersecurity law for all "products with digital elements". | [CRA Overview](./cra-overview.md) |
-| **NIS 2 Directive** | <i class="fa-solid fa-earth-europe"></i> EU | Risk management rules for operators of essential and important services. | [NIS 2 Overview](./nis2-overview.md) |
-| **Radio Equipment Directive (RED)** | <i class="fa-solid fa-earth-europe"></i> EU | Security & privacy rules for network-connected radio equipment. | [RED Overview](./red-overview.md) |
-| **Medical Device Regulation (MDR)** | <i class="fa-solid fa-earth-europe"></i> EU | Safety and security requirements for medical devices, which are exempt from the CRA. | [MDR Overview](./mdr-overview.md) |
-| **In Vitro Diagnostic Regulation (IVDR)** | <i class="fa-solid fa-earth-europe"></i> EU | Safety and security requirements for in vitro diagnostic devices, also exempt from the CRA. | [IVDR Overview](./ivdr-overview.md) |
-| **PSTI Act** | <i class="fa-solid fa-flag"></i> UK | Baseline security requirements (no default passwords, CVD) for UK consumer IoT devices. | [PSTI Act Overview](./psti-overview.md) |
-| **PECR** | <i class="fa-solid fa-flag"></i> UK | UK rules on privacy for electronic communications, cookies, and tracking technologies. | [PECR Overview](./pecr-overview.md) |
-| **NIST IR 8259 Series** | <i class="fa-solid fa-flag-usa"></i> US | Foundational guidance and baseline capabilities for IoT device manufacturers. | [NIST IR 8259 Series Overview](./nistir8259-overview.md) |
-| **FCC Cyber Trust Mark** | <i class="fa-solid fa-flag-usa"></i> US | Voluntary labeling program to help consumers identify secure IoT products. | [FCC Cyber Trust Mark Overview](./fcc-cyber-trust-mark-overview.md) |
-| **ANSI/CTA-2088** | <i class="fa-solid fa-flag-usa"></i> US | Industry-led baseline security capabilities for consumer IoT devices. | [ANSI/CTA-2088 Overview](./cta2088-overview.md) |
-| **FDA Cybersecurity** | <i class="fa-solid fa-flag-usa"></i> US | Mandatory pre-market requirements for connected medical devices. | [FDA Cybersecurity Overview](./fda-cybersecurity-overview.md) |
-| **ETSI EN 303 645** | <i class="fa-solid fa-globe"></i> Global | Baseline standard for consumer IoT security; harmonised standard for the RED. | [ETSI EN 303 645 Overview](./en303645-overview.md) |
-| **IEC 62443 Series** | <i class="fa-solid fa-globe"></i> Global | Leading standard for Industrial Automation and Control Systems (IACS / OT). | [IEC 62443 Overview](./iec62443-overview.md) |
+The landscape is divided into four main jurisdictions:
+
+- **[European Union](./eu/index.md):** A comprehensive legal framework for cybersecurity, with horizontal requirements for products and specific rules for critical sectors.
+- **[United States](./us/index.md):** A mix of voluntary guidance, federal procurement laws, and emerging consumer-facing labeling programs.
+- **[United Kingdom](./uk/index.md):** A post-Brexit regulatory regime focused on baseline security for consumer devices.
+- **[Global & International](./global/index.md):** Foundational standards that form the technical basis for many regional laws and certifications.
+
+Click into a jurisdiction to see the detailed list of standards and regulations for that region.
 

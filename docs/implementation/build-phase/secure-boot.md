@@ -12,7 +12,7 @@ tags: [secure-boot, root-of-trust, chain-of-trust, cra, integrity]
 
 The process cryptographically verifies the signature of each software component before it is executed. If any signature is invalid or the software has been tampered with, the boot process is halted.
 
-This is a foundational requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)**, which mandates that products "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user" ([CRA Annex I.I.2(f)][cra_annexI]).
+This is a foundational requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, which mandates that products "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user" ([CRA Annex I.I.2(f)][cra_annexI]).
 
 ## 2. Core Concepts: The Chain of Trust
 

@@ -8,7 +8,7 @@ tags: [documentation, user-guide, compliance, cra, annex-ii]
 
 ## 1. Why User Documentation is a Compliance Issue
 
-Clear, comprehensive user documentation is no longer just a "nice-to-have" for a good user experience; it is a mandatory legal requirement under the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)**. **Annex II** of the CRA provides a detailed list of information that manufacturers **must** provide to users.
+Clear, comprehensive user documentation is no longer just a "nice-to-have" for a good user experience; it is a mandatory legal requirement under the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**. **Annex II** of the CRA provides a detailed list of information that manufacturers **must** provide to users.
 
 This documentation is a key part of the evidence that will be reviewed by market surveillance authorities. Its purpose is to ensure users have all the information they need to install, use, and maintain the product securely throughout its lifecycle. The BSI technical guideline also specifies numerous requirements for user documentation ([REQ_UD 1-6][bsi_tr_03183]).
 

@@ -33,17 +33,17 @@ _Your goal: Understand what we need to do, why, and how to plan the work._
 
 1.  **Start Here:** Read the [CRA 5-Minute Primer](./cra-primer.md) to grasp the business impact and key deadlines.
 2.  **Plan the Work:** Use the [First-Sprint Checklist](./first-sprint-checklist.md) to create an initial project plan and prioritize foundational tasks.
-3.  **Understand the Landscape:** Skim the overviews in the [Standards & Regulations](../standards/cra-overview.md) section to understand the legal context your teams are working in.
+3.  **Understand the Landscape:** Skim the overviews in the [Standards & Regulations](../standards/eu/cra-overview.md) section to understand the legal context your teams are working in.
 
 ### 2.2 For the Firmware or Embedded Engineer
 _Your goal: Understand what I need to build on the device._
 
-1.  **Understand Requirements:** Read the [CRA Overview](../standards/cra-overview.md), focusing on the [Secure-by-Design Engineering Benchmarks](../standards/cra-overview.md#annex-i-requirements). This is your list of technical requirements.
+1.  **Understand Requirements:** Read the [CRA Overview](../standards/eu/cra-overview.md), focusing on the [Secure-by-Design Engineering Benchmarks](../standards/eu/cra-overview.md#annex-i-requirements). This is your list of technical requirements.
 2.  **Implement Core Features:** Dive into the **[Build Phase](../implementation/build-phase)** implementation guides:
     -   [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)
     -   [Secure Boot Implementation](../implementation/build-phase/secure-boot.md)
     -   [Secure OTA Updates](../implementation/build-phase/ota-updates.md)
-3.  **Check Radio Requirements:** If your product has Wi-Fi, Bluetooth, or any other radio, read the [Radio Equipment Directive (RED) Overview](../standards/red-overview.md).
+3.  **Check Radio Requirements:** If your product has Wi-Fi, Bluetooth, or any other radio, read the [Radio Equipment Directive (RED) Overview](../standards/eu/red-overview.md).
 
 ### 2.3 For the DevOps or Security Engineer (SecOps)
 _Your goal: Understand how to automate security, manage vulnerabilities, and harden our infrastructure._

@@ -84,12 +84,12 @@ Follow `docs/style-guide.md`. Key reminders:
 
 All internal links to other documents within the handbook **must** be relative file paths. This ensures that the navigation remains robust and does not break if the site's URL structure is changed in the future.
 
--   **Good:** `[CRA Overview](../standards/cra-overview.md)`
+-   **Good:** `[CRA Overview](../standards/eu/cra-overview.md)`
 -   **Bad:** `[CRA Overview](/docs/standards/cra-overview)`
 
 When linking to a specific section, use the markdown file extension and the anchor:
 
--   **Good:** `[Engineering Benchmarks](../standards/cra-overview.md#annex-i-benchmarks)`
+-   **Good:** `[Engineering Benchmarks](../standards/eu/cra-overview.md#annex-i-benchmarks)`
 -   **Bad:** `[Engineering Benchmarks](/docs/standards/cra-overview#annex-i-benchmarks)`
 
 ---

@@ -8,7 +8,7 @@ tags: [identity, secure-by-design, build, root-of-trust, pki]
 
 A **Unique Device Identity** is a non-cloneable, permanent, and trustworthy identifier that is cryptographically bound to a single device. It is the foundation of all product security and the first, most critical secret established during the manufacturing process.
 
-A robust identity framework is a prerequisite for meeting the security requirements of the **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)**, **[ETSI EN 303 645](./../../standards/en303645-overview.md)**, and **[IEC 62443](./../../standards/iec62443-overview.md)**.
+A robust identity framework is a prerequisite for meeting the security requirements of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, **[ETSI EN 303 645](./../../standards/global/en303645-overview.md)**, and **[IEC 62443](./../../standards/global/iec62443-overview.md)**.
 
 ## 1. Core Concepts: Root vs. Operational Identity
 

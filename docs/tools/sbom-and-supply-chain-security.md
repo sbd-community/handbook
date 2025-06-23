@@ -6,7 +6,7 @@ tags: [tools, sbom, sca, supply-chain, security, open-source, commercial]
 ---
 # Tools: SBOM & Supply Chain Security
 
-A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of all software components and dependencies in a product. Maintaining an SBOM is a cornerstone of modern cybersecurity and a key requirement for the **[Cyber-Resilience Act](../standards/cra-overview.md)** ([CRA Art. 13][cra_art13]).
+A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of all software components and dependencies in a product. Maintaining an SBOM is a cornerstone of modern cybersecurity and a key requirement for the **[Cyber-Resilience Act](../standards/eu/cra-overview.md)** ([CRA Art. 13][cra_art13]).
 
 These tools help automate the creation, management, and analysis of SBOMs. They enable manufacturers to quickly identify which products are affected by a newly discovered vulnerability in a third-party component, a critical capability for meeting the CRA's strict vulnerability handling timelines.
 

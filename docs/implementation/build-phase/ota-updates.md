@@ -10,7 +10,7 @@ tags: [ota, secure-update, firmware, cra, integrity, rollback-protection]
 
 A secure Over-the-Air (OTA) update mechanism is a fundamental requirement for any connected device. It is the only practical way to patch security vulnerabilities discovered after a product has been shipped. Without a robust OTA system, manufacturers cannot fulfill their legal and ethical responsibility to protect users from emerging threats.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** explicitly mandates that manufacturers must provide security updates without delay and have a mechanism to distribute them securely ([CRA Annex I.II.2 & 4][cra_annexI]). Furthermore, the integrity of these updates must be cryptographically protected ([CRA Annex I.I.2(f)][cra_annexI]). This guide outlines the core principles for building a compliant and resilient OTA system.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** explicitly mandates that manufacturers must provide security updates without delay and have a mechanism to distribute them securely ([CRA Annex I.II.2 & 4][cra_annexI]). Furthermore, the integrity of these updates must be cryptographically protected ([CRA Annex I.I.2(f)][cra_annexI]). This guide outlines the core principles for building a compliant and resilient OTA system.
 
 ## 2. Core Principles of a Secure OTA Process
 

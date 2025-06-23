@@ -7,7 +7,7 @@ Welcome to the **SecureByDesignHandbook.com** project!
 
 <!-- truncate -->
 
-Our mission is to build an authoritative, vendor-neutral reference for teams that make, integrate, or operate products with digital elements—from IoT sensors and industrial controllers to connected consumer devices. We're here to translate fast-moving regulatory obligations like the EU's **[Cyber-Resilience Act (CRA)](/docs/standards/cra-overview)** and **[NIS 2 Directive](/docs/standards/nis2-overview)** into concrete engineering practices that you can adopt without guesswork.
+Our mission is to build an authoritative, vendor-neutral reference for teams that make, integrate, or operate products with digital elements—from IoT sensors and industrial controllers to connected consumer devices. We're here to translate fast-moving regulatory obligations like the EU's **[Cyber-Resilience Act (CRA)](/docs/standards/eu/cra-overview)** and **[NIS 2 Directive](/docs/standards/eu/nis2-overview)** into concrete engineering practices that you can adopt without guesswork.
 
 The regulatory landscape is shifting. For years, device security was a best practice; soon, it will be a legal requirement for market access in major economies. Manufacturers who cannot prove their products are secure-by-design risk fines, recalls, and reputational damage.
 

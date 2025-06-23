@@ -10,7 +10,7 @@ sidebar_position: 4
 
 A secure product begins with a secure development process. The CI/CD (Continuous Integration / Continuous Deployment) pipeline, which automates the building, testing, and deployment of software, is a high-value target for attackers. A compromised pipeline can be used to inject malicious code, steal credentials, or tamper with build artifacts.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/cra-overview.md)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI]). Hardening your CI/CD pipeline is essential for meeting these requirements.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI]). Hardening your CI/CD pipeline is essential for meeting these requirements.
 
 ## 2. "Shifting Left": Integrating Security Early
 

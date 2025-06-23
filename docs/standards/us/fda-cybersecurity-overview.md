@@ -29,7 +29,7 @@ This means that for any new medical device submission, manufacturers must provid
 
 | Regulation | How it interacts with FDA Requirements |
 |---|---|
-| **[EU MDR / IVDR](./mdr-overview.md)** | The FDA's rules are the US counterpart to the cybersecurity requirements in the EU's Medical Device Regulation (MDR) and In Vitro Diagnostic Regulation (IVDR). While the legal structures differ, the core principles of secure-by-design, risk management, and lifecycle support are closely aligned. |
+| **[EU MDR / IVDR](../eu/mdr-overview.md)** | The FDA's rules are the US counterpart to the cybersecurity requirements in the EU's Medical Device Regulation (MDR) and In Vitro Diagnostic Regulation (IVDR). While the legal structures differ, the core principles of secure-by-design, risk management, and lifecycle support are closely aligned. |
 | **HIPAA** | The Health Insurance Portability and Accountability Act (HIPAA) focuses on protecting patient health information. FDA cybersecurity rules focus on the safety and effectiveness of the device itself. The two are complementary: a secure device is essential for protecting the data it processes. |
 
 ---

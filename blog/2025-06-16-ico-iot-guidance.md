@@ -33,7 +33,7 @@ These points are directly relevant to the design of device setup processes, comp
 
 This new guidance from the ICO provides a clear framework for applying the Privacy and Electronic Communications Regulations (PECR) and UK GDPR to the unique challenges of IoT.
 
-We have updated our own documentation to reflect this. For a detailed breakdown of how these rules affect device and cloud architecture, see our updated **[PECR & IoT Overview page](/docs/standards/pecr-overview)**.
+We have updated our own documentation to reflect this. For a detailed breakdown of how these rules affect device and cloud architecture, see our updated **[PECR & IoT Overview page](/docs/standards/uk/pecr-overview)**.
 
 ---
 *The ICO's draft guidance is open for consultation for twelve weeks from the date of publication. You can read the [official announcement here](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/new-guidance-to-help-smart-product-manufacturers-get-data-protection-right/) and the [full draft guidance here](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/online-tracking/guidance-for-consumer-internet-of-things-products-and-services/).* 
