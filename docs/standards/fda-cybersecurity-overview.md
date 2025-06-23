@@ -14,10 +14,15 @@ The **Consolidated Appropriations Act, 2023** amended the Federal Food, Drug, an
 
 This means that for any new medical device submission, manufacturers must provide evidence to the FDA that their device is cyber-resilient by design.
 
-:::info Official Texts & Guidance
-- **FD&C Act Section 524B**: The full text of the law is embedded within the [Consolidated Appropriations Act, 2023 (see Sec. 3305)][patch_act].
-- **FDA Cybersecurity Guidance**: The FDA maintains a central page for all its [cybersecurity guidance and resources][fda_cyber_guidance].
-- **Recognized Standards**: The FDA recognizes certain standards that manufacturers can use. The key one for medical device cybersecurity is [UL 2900-2-1][ul_2900_std].
+:::info Official Guidance & Key Documents
+- **Premarket Cybersecurity Guidance**: This is the core FDA guidance detailing the specific documentation and technical controls required in a premarket submission. It outlines expectations for threat modeling, risk management, and SBOMs.
+  - [Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions][fda_main_guidance] (Sept 2023)
+
+- **Enforcement & Process**: This policy explains how the FDA will reject submissions that are incomplete. A lack of required cybersecurity information is a reason for a "Refuse to Accept" (RTA) decision.
+  - [Refuse to Accept Policy for 510(k)s][fda_rta_policy]
+
+- **Frequently Asked Questions**: A helpful resource answering common questions about the FDA's cybersecurity requirements.
+  - [Cybersecurity in Medical Devices FAQs][fda_faq]
 :::
 
 **Relationship to other regulations**
@@ -65,5 +70,7 @@ By designing a product in accordance with UL 2900-2-1, manufacturers can provide
 
 <!-- Citations -->
 [patch_act]: https://www.congress.gov/bill/117th-congress/house-bill/2617/text "Consolidated Appropriations Act, 2023"
-[fda_cyber_guidance]: https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity "FDA Cybersecurity Guidance"
+[fda_main_guidance]: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations-and-content-premarket-submissions "Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions"
+[fda_rta_policy]: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/refuse-accept-policy-510ks "Refuse to Accept Policy for 510(k)s"
+[fda_faq]: https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions-faqs "Cybersecurity in Medical Devices FAQs"
 [ul_2900_std]: https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2900-2-1_1_S_20171030 "UL 2900-2-1 Standard" 
