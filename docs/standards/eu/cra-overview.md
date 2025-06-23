@@ -29,6 +29,7 @@ While harmonised standards are still under development, Germany's Federal Office
 | Regulation entered into force (Art. 71 § 1 + 20 d)   | [CRA Art. 71 § 1][cra_art71] | **2024-12-10** |
 | Notified-body framework applies to importers and distributors ([CRA Ch. IV][cra_chIV]) | [CRA Art. 71 § 2][cra_art71] | **2026-06-11** |
 | Vulnerability & incident reporting applies to manufacturers ([CRA Art. 14][cra_art14]) | [CRA Art. 71 § 2][cra_art71] | **2026-09-11** |
+| First set of harmonised standards published<br/>*See [The Role of Harmonised Standards](#harmonised-standards)* | [CRA Art. 27][cra_art27] | **Q2 2027 (est.)** |
 | All CRA requirements apply (Annex I/II, CE-marking, enforcement) | [CRA Art. 71 § 2][cra_art71] | **2027-12-11** |
 
 **Early duties from 11 Jun 2026**  
@@ -185,6 +186,21 @@ The specific conformity assessment procedure required by the CRA depends directl
 | | No scheme is mandated by the Commission. | **Modules B+C** or **Module H** → Mandatory third-party audit by a Notified Body (same as Class II) ([CRA Art. 32 § 4][cra_art32]). |
 
 > **Key takeaway:** For Class I products, following harmonised standards is the express lane to self-assessment. For all higher classes, some form of third-party assessment is either likely or mandatory.
+
+### 3.1 The Role of Harmonised Standards {#harmonised-standards}
+
+A **harmonised standard (hEN)** is a standard created by a European Standardisation Organisation (e.g., ETSI) following a formal request from the European Commission. When a product complies with a relevant hEN, it gains a **"presumption of conformity"** with the CRA's essential requirements ([CRA Art. 27][cra_art27]).
+
+This provides two key benefits for manufacturers:
+
+1.  **Simplified Assessment:** For **Important (Class I)** products, it allows the manufacturer to perform a self-assessment (**Module A**) instead of requiring a third-party audit.
+2.  **Simpler Documentation:** The manufacturer can cite the harmonised standard in their EU Declaration of Conformity, rather than documenting compliance with every requirement in Annex I individually.
+
+:::tip Harmonised Standards Timeline
+The first harmonised standards for the CRA are expected to be published in the Official Journal around **Q2 2027**. This follows a standardisation request ([Mandate M/606][mandate_m606]) and an 18-24 month drafting period.
+:::
+
+*In the absence of a suitable harmonised standard, the Commission may issue a **common specification** to provide the same presumption of conformity ([CRA Art. 27][cra_art27]).*
 
 ---
 
@@ -344,6 +360,7 @@ The following table maps the essential requirements of the CRA and related guide
 [cra_art18]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_18 "CRA Article 18 – Authorised representatives"
 [cra_art19]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_19 "CRA Article 19 – Obligations of importers"
 [cra_art20]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_20 "CRA Article 20 – Obligations of distributors"
+[cra_art27]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_27 "CRA Article 27 - Presumption of conformity"
 [cra_art28]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_28 "CRA Article 28 – EU declaration of conformity"
 [cra_art29]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_29 "CRA Article 29 – General principles of the CE marking"
 [cra_art30]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_30 "CRA Article 30 – Rules and conditions for affixing the CE marking"
@@ -368,4 +385,5 @@ The following table maps the essential requirements of the CRA and related guide
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_del]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – security clauses for radio equipment"
 [bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183"
+[mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
 
