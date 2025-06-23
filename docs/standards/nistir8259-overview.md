@@ -1,6 +1,6 @@
 ---
 title: "NIST IR 8259 Series"
-sidebar_position: 6
+sidebar_position: 8
 tags: [nist, us, iot, cybersecurity, standards, baseline, manufacturing, guidance]
 ---
 # NIST IR 8259 Series – Foundational IoT Cybersecurity

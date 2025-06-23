@@ -1,7 +1,7 @@
 ---
 title: In Vitro Diagnostic Regulation (IVDR)
 sidebar_label: 'EU IVDR 2017/746'
-sidebar_position: 8
+sidebar_position: 5
 tags: [ivdr, medical, compliance, eu, security]
 ---
 # In Vitro Diagnostic Regulation (EU) 2017/746

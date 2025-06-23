@@ -1,6 +1,7 @@
 ---
 title: "PECR (UK)"
 sidebar_label: "PECR"
+sidebar_position: 7
 tags: [pecr, compliance, uk, privacy, iot]
 ---
 # PECR (Privacy and Electronic Communications Regulations)

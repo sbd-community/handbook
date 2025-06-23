@@ -1,6 +1,6 @@
 ---
 title: Radio Equipment Directive (RED)
-sidebar_position: 2
+sidebar_position: 3
 tags: [red, compliance, eu, radio]
 ---
 # Radio Equipment Directive (RED)

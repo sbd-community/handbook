@@ -1,7 +1,7 @@
 ---
 title: Medical Device Regulation (MDR)
 sidebar_label: 'EU MDR 2017/745'
-sidebar_position: 7
+sidebar_position: 4
 tags: [mdr, medical, compliance, eu, security]
 ---
 # Medical Device Regulation (EU) 2017/745

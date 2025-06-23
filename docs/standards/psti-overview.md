@@ -1,6 +1,7 @@
 ---
 title: "PSTI Act (UK)"
 sidebar_label: "PSTI Act"
+sidebar_position: 6
 tags: [psti, compliance, uk, security, iot]
 ---
 # UK Product Security and Telecommunications Infrastructure (PSTI) Act 2022
