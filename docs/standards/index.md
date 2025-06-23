@@ -19,6 +19,7 @@ This section provides high-level summaries of the key global regulations and sta
 | **PECR** | <i class="fa-solid fa-flag"></i> UK | UK rules on privacy for electronic communications, cookies, and tracking technologies. | [PECR Overview](./pecr-overview.md) |
 | **NIST IR 8259 Series** | <i class="fa-solid fa-flag-usa"></i> US | Foundational guidance and baseline capabilities for IoT device manufacturers. | [NIST IR 8259 Series Overview](./nistir8259-overview.md) |
 | **ANSI/CTA-2088** | <i class="fa-solid fa-flag-usa"></i> US | Industry-led baseline security capabilities for consumer IoT devices. | [ANSI/CTA-2088 Overview](./cta2088-overview.md) |
+| **FDA Cybersecurity** | <i class="fa-solid fa-flag-usa"></i> US | Mandatory pre-market requirements for connected medical devices. | [FDA Cybersecurity Overview](./fda-cybersecurity-overview.md) |
 | **ETSI EN 303 645** | <i class="fa-solid fa-globe"></i> Global | Baseline standard for consumer IoT security; harmonised standard for the RED. | [ETSI EN 303 645 Overview](./en303645-overview.md) |
 | **IEC 62443 Series** | <i class="fa-solid fa-globe"></i> Global | Leading standard for Industrial Automation and Control Systems (IACS / OT). | [IEC 62443 Overview](./iec62443-overview.md) |
 

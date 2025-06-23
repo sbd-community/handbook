@@ -1,6 +1,6 @@
 ---
 title: ETSI EN 303 645
-sidebar_position: 10
+sidebar_position: 11
 tags: [en303645, iot, consumer, security, etsi]
 ---
 # ETSI EN 303 645 – Consumer IoT Security
