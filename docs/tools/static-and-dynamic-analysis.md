@@ -21,7 +21,9 @@ tags: [tools, sast, dast, security, scanning, open-source, commercial]
 | [Veracode](https://www.veracode.com/) | 💰 | A commercial application security platform that provides SAST, DAST, and SCA capabilities. |
 | [Synopsys Coverity](https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html) | 💰 | A commercial static analysis tool known for its low false-positive rates in large C/C++ codebases. |
 | [SonarQube](https://www.sonarsource.com/products/sonarqube/) | 💰🐙 | A platform for continuous inspection of code quality and security, with both free (community) and paid editions. |
-| [Checkmarx](https://checkmarx.com/) | 💰 | A commercial SAST solution that provides detailed vulnerability analysis and remediation guidance. |
+| [Checkmarx](https://checkmarx.com/) | 💰 | A commercial enterprise platform for SAST, DAST, IAST, and SCA. | Provides a comprehensive suite of tools for securing the entire software development lifecycle. |
+| [Finite State](https://finitestate.io/) | 💰 | A comprehensive product security platform that combines source code analysis (SAST) with advanced binary analysis for connected devices. | Provides a unified view of risks from both source code and third-party components, bridging the gap between application security and embedded systems security. |
+| [Snyk](https://snyk.io/) | 💰 | A developer security platform focused on finding and fixing vulnerabilities in open-source dependencies and container images. | Integrates directly into developer workflows and CI/CD pipelines to provide early feedback. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
