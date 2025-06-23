@@ -87,7 +87,75 @@ Both conditions must be met.
   - *Connectable?* **Yes**. (USB Stick)
   - **Result: In scope.** The USB port is a physical data connection. The overall update process creates an *indirect connection* to the network where the firmware originated.
 
-### 2.2 Product Risk Classification (The Four Tiers) {#product-risk-classes}
+### 2.2 Out-of-scope & special regimes
+
+| Excluded or separate regime | Legal reason |
+|-----------------------------|--------------|
+| Medical devices | Already covered by **[MDR 2017/745](./mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
+| Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 4][cra_art2]) |
+| Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 4(f)][cra_art2]) |
+| Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
+| Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 15][cra_rec15], [CRA Recital 18][cra_rec18], [CRA Recital 19][cra_rec19]). *If commercial support is later offered, CRA duties apply.* |
+| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 20 § 8][cra_art20]) |
+| Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
+| Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
+| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 71 § 3][cra_art71]) |
+
+---
+
+## 3 CRA Requirements & How to Implement Them
+
+The CRA's mandatory security obligations are detailed in **[CRA Annex I][cra_annexI]**. This annex is split into two parts:
+- **Part I** defines the **product security requirements** that must be designed into the device from the start.
+- **Part II** defines the **vulnerability handling requirements** the manufacturer must follow throughout the product's support lifecycle.
+
+The following tables translate those legal requirements into a practical engineering checklist. To provide a more concrete technical interpretation, they also map each CRA clause to the corresponding requirement in Germany's influential **BSI TR-03183** technical guideline. Each row links to the relevant implementation guide in this handbook, providing a clear, actionable path from the legal text to the code and configuration required for compliance.
+
+### 3.1 Product security (Part I)
+
+| Clause & links | Key engineering tasks | Implementation Guide |
+|---------------|----------------------|-------------------|
+| **No known exploitable vulns**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1] | Integrate CVE scanning into CI/CD pipeline | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
+| **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1] | Ship hardened defaults; provide a reset function | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Security updates by design**<br/>[Annex I § 1 (2)(c)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4][bsi_tr_03183_p1] | Enable automatic security updates with a user opt-out | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
+| **Access control**<br/>[Annex I § 1 (2)(d)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 5][bsi_tr_03183_p1] | Enforce least privilege and report unauthorised access | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
+| **Confidentiality protection**<br/>[Annex I § 1 (2)(e)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 6][bsi_tr_03183_p1] | Encrypt sensitive data at-rest and in-transit | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
+| **Integrity protection**<br/>[Annex I § 1 (2)(f)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 7][bsi_tr_03183_p1] | Verify code and data with signatures; report corruption | [Secure Boot](../../implementation/build-phase/secure-boot.md) |
+| **Data minimisation**<br/>[Annex I § 1 (2)(g)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 8][bsi_tr_03183_p1] | Process only data necessary for the intended purpose | [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
+| **Resilience & availability**<br/>[Annex I § 1 (2)(h), (i)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 9, 10][bsi_tr_03183_p1] | Implement DoS resilience and limit negative impact on others | [Device Lifecycle Management](../../tools/device-lifecycle-management.md) |
+| **Attack surface reduction**<br/>[Annex I § 1 (2)(j)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 11][bsi_tr_03183_p1] | Limit external interfaces and disable unused services | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Exploit mitigation**<br/>[Annex I § 1 (2)(k)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 12][bsi_tr_03183_p1] | Use memory safety features (ASLR, canaries) | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Security logging**<br/>[Annex I § 1 (2)(l)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 13][bsi_tr_03183_p1] | Log security events with a user opt-out mechanism | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
+| **Secure data deletion**<br/>[Annex I § 1 (2)(m)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 14][bsi_tr_03183_p1] | Provide a mechanism to permanently wipe user data | [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
+
+### 3.2 Vulnerability handling (Part II)
+
+| Clause & link | Key engineering task | Handbook playbook |
+|---------------|----------------------|-------------------|
+| **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>*See also: [Part 2][bsi_tr_03183_p2]* | Generate SBOM in CycloneDX format for each release | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1] | Provide timely, free security updates via a secure mechanism | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
+| **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Run regular penetration tests and code reviews | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
+| **Public vulnerability information**<br/>[Annex I Part II § 4][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 4][bsi_tr_03183_p1] | Publish security advisories for fixed vulnerabilities | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 5 & 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>*See also: [Part 3][bsi_tr_03183_p3]* | Publish a CVD policy and provide a contact address | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+
+### 3.3 Other Key Obligations
+
+Beyond the direct product and vulnerability requirements in Annex I, the CRA imposes several other crucial obligations on manufacturers regarding documentation, conformity, and reporting.
+
+| Obligation area | CRA trigger | Starts* | Key actions & evidence |
+|---|---|---|---|
+| **Technical documentation** | [CRA Art. 31][cra_art31] | 2027-12-11 | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. |
+| **Conformity & CE mark** | [CRA Art. 28][cra_art28]–[30][cra_art30] | 2027-12-11 | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). |
+| **Information to users**| [CRA Art. 13 § 18][cra_art13] + [CRA Annex II][cra_annexII] | 2027-12-11 | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. |
+| **ENISA reporting** | [CRA Art. 14][cra_art14] | **2026-09-11** | Notify ENISA within **24h** of an actively exploited vulnerability. Submit a mitigation report within **14 days**. **Evidence:** Incident logs. |
+
+\* *Dates derive from [CRA Art. 71 § 2][cra_art71]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
+
+---
+
+## 4 Self-Assessment vs. Third-Party Audit? {#conformity-assessment-routes}
+
+### 4.1 Product Risk Classification (The Four Tiers) {#product-risk-classes}
 
 The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation.
 
@@ -156,27 +224,10 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | **Component** |
 | General-purpose library ([CRA Art. 3 § 1][cra_art3]) | ✅ | | | |
 
-### 2.3 Out-of-scope & special regimes
+### 4.2 Assessment Routes for Each Tier
+Once a manufacturer has determined their product's risk class using the tiers above, the next step is to identify the specific conformity assessment procedure required to earn the CE mark. The CRA lays out several distinct 'modules' or routes, and the path you must take is dictated directly by your product's classification.
 
-| Excluded or separate regime | Legal reason |
-|-----------------------------|--------------|
-| Medical devices | Already covered by **[MDR 2017/745](./mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
-| Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 4][cra_art2]) |
-| Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 4(f)][cra_art2]) |
-| Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
-| Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 15][cra_rec15], [CRA Recital 18][cra_rec18], [CRA Recital 19][cra_rec19]). *If commercial support is later offered, CRA duties apply.* |
-| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 20 § 8][cra_art20]) |
-| Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
-| Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
-| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 71 § 3][cra_art71]) |
-
----
-
-## 3 Conformity Assessment Routes {#conformity-assessment-routes}
-
-The specific conformity assessment procedure required by the CRA depends directly on the product's risk class. **Article 32** lays out the possible routes:
-
-| Class | Conditions | Assessment Procedure |
+| Class | Conditions | Assessment Route |
 |---|---|---|
 | **Default** | All unclassified products. | **Module A** (Internal Control) → Manufacturer performs self-assessment ([CRA Art. 32 § 1][cra_art32]). |
 | **Important (Class I)** | Manufacturer fully applies harmonised standards or a relevant certification scheme. | **Module A** (Internal Control) → Manufacturer performs self-assessment. |
@@ -187,7 +238,7 @@ The specific conformity assessment procedure required by the CRA depends directl
 
 > **Key takeaway:** For Class I products, following harmonised standards is the express lane to self-assessment. For all higher classes, some form of third-party assessment is either likely or mandatory.
 
-### 3.1 The Role of Harmonised Standards {#harmonised-standards}
+### 4.3 The Role of Harmonised Standards {#harmonised-standards}
 
 A **harmonised standard (hEN)** is a standard created by a European Standardisation Organisation (e.g., ETSI) following a formal request from the European Commission. When a product complies with a relevant hEN, it gains a **"presumption of conformity"** with the CRA's essential requirements ([CRA Art. 27][cra_art27]).
 
@@ -201,148 +252,6 @@ The first harmonised standards for the CRA are expected to be published in the O
 :::
 
 *In the absence of a suitable harmonised standard, the Commission may issue a **common specification** to provide the same presumption of conformity ([CRA Art. 27][cra_art27]).*
-
----
-
-## 4 Core manufacturer obligations {#core-manufacturer-obligations}
-
-| Obligation area | CRA trigger | Starts* | Key actions & evidence |
-|---|---|---|---|
-| **Secure-by-Design** | [CRA Art. 13 § 1][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Implement essential security requirements from Annex I. See Section 5 for a detailed engineering breakdown. **Evidence:** Risk assessment, test reports. |
-| **Vulnerability handling** | [CRA Art. 13 § 8][cra_art13] + [CRA Annex I][cra_annexI] | 2027-12-11 | Establish CVD policy; track & fix vulns "without delay"; provide security updates for the support period (min. 5 years). **Evidence:** Published CVD policy, patch records. |
-| **Technical documentation** | [CRA Art. 31][cra_art31] | 2027-12-11 | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. |
-| **Conformity & CE mark** | [CRA Art. 28][cra_art28]–[30][cra_art30] | 2027-12-11 | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). |
-| **Information to users**| [CRA Art. 13 § 18][cra_art13] + [CRA Annex II][cra_annexII] | 2027-12-11 | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. |
-| **ENISA reporting** | [CRA Art. 14][cra_art14] | **2026-09-11** | Notify ENISA within **24h** of an actively exploited vulnerability. Submit a mitigation report within **14 days**. **Evidence:** Incident logs. |
-
-\* *Dates derive from [CRA Art. 71 § 2][cra_art71]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
-
----
-
-## 5. Essential Cybersecurity Requirements (Annex I) {#annex-i-requirements}
-
-The CRA's mandatory security obligations are detailed in **[CRA Annex I][cra_annexI]**, which is split into two parts:
-- **Part I**: Defines the **product security requirements** that must be designed into the device from the start.
-- **Part II**: Defines the **vulnerability handling requirements** the manufacturer must follow throughout the product's support lifecycle.
-
-While the CRA defines the legal requirements, Germany's **[BSI Technical Guideline TR-03183][bsi_tr_03183]** provides a practical, state-of-the-art playbook for implementing them. It offers specific guidance on everything from threat modelling (`REQ_ER 1`) to SBOM formats and vulnerability disclosure.
-
-### 5.1 Product Security Requirements (Annex I, Part I)
-
-#### 5.1.1 No Known Exploitable Vulnerabilities
-*Legal hook: [CRA Annex I.I.2(a)][cra_annexI] & [BSI TR-03183-1 REQ_ER 2][bsi_tr_03183]*
-
-> The product must be "made available on the market without any known exploitable vulnerabilities."
-
-- **Action:** Integrate automated security scanning into your CI/CD pipeline.
-- **Tools:** Use static analysis (SAST) tools like `Semgrep` or `CodeQL` to find flaws in source code, and software composition analysis (SCA) tools like `Trivy` or `Grype` to find CVEs in third-party libraries.
-- **Benchmark:** The build must fail if a vulnerability with a CVSS score of 7.0 or higher is detected and a patch is available. Maintain a Software Bill of Materials (SBOM) for all components (see §5.2.2).
-
-#### 5.1.2 Secure Configuration by Default
-*Legal hook: [CRA Annex I.I.2(c)][cra_annexI] & [BSI TR-03183-1 REQ_ER 3][bsi_tr_03183]*
-
-> The product must be "configured to be secure by default, allowing users to enable, disable or configure functions only where this does not create significant weaknesses."
-
-- **Action:** Ship the product with a hardened configuration.
-- **Benchmark:**
-    - All non-essential ports and services must be disabled.
-    - Strong, randomly generated passwords must be required on first use (no default credentials like `admin`/`admin`).
-    - The most secure available protocols (e.g., TLS 1.3, SSHv2) must be enabled by default.
-    - Provide a secure factory-reset mechanism that wipes all user data.
-
-#### 5.1.3 Confidentiality & Integrity Protection
-*Legal hook: [CRA Annex I.I.2(e) & (f)][cra_annexI] & [BSI TR-03183-1 REQ_ER 6, 7][bsi_tr_03183]*
-
-> The product must "protect the confidentiality of stored, transmitted or otherwise processed data...by encrypting relevant data at rest or in transit" and "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user."
-
-- **Action:** Implement end-to-end cryptographic protections.
-- **Benchmark:**
-    - **Data-in-transit:** All external network communication must be encrypted using standard, state-of-the-art protocols (e.g., TLS).
-    - **Data-at-rest:** Sensitive user data and configuration secrets stored on the device must be encrypted.
-    - **Code & config integrity:** Use a secure boot chain where each stage (bootloader, kernel, rootfs) is cryptographically signed and verified. Firmware updates must be signed, and the signature must be verified before installation.
-
-#### 5.1.4 Access Control
-*Legal hook: [CRA Annex I.I.2(d)][cra_annexI] & [BSI TR-03183-1 REQ_ER 5][bsi_tr_03183]*
-
-> The product must "protect against unauthorised access by controlling access...through appropriate control mechanisms, including authentication, identity and access management systems."
-
-- **Action:** Enforce the principle of least privilege.
-- **Benchmark:**
-    - Implement role-based access control (RBAC) to separate user and administrator privileges.
-    - System processes should run with the minimum permissions necessary.
-    - Protect against brute-force attacks with mechanisms like account lockout or rate limiting.
-
-#### 5.1.5 Attack Surface Reduction
-*Legal hook: [CRA Annex I.I.2(j)][cra_annexI] & [BSI TR-03183-1 REQ_ER 11][bsi_tr_03183]*
-
-> The product must be "designed, developed and produced to limit attack surfaces, including external interfaces."
-
-- **Action:** Minimize the number of exposed entry points.
-- **Benchmark:**
-    - Disable all physical debug interfaces (e.g., JTAG, UART) on production builds.
-    - Minimize open network ports to only what is essential for the product's function.
-    - Validate and sanitize all inputs from external sources to prevent injection attacks (e.g., SQLi, command injection).
-
-#### 5.1.6 Resilience & Mitigation
-*Legal hook: [CRA Annex I.I.2(h) & (k)][cra_annexI] & [BSI TR-03183-1 REQ_ER 9, 12][bsi_tr_03183]*
-
-> The product must "protect the availability of essential and basic functions...including through resilience and mitigation measures against denial-of-service attacks" and "reduce the impact of an incident using appropriate exploitation mitigation mechanisms and techniques."
-
-- **Action:** Build in modern memory protections and DoS resistance.
-- **Benchmark:**
-    - Compile code with exploit mitigations like Address Space Layout Randomization (ASLR), Stack Canaries, and No-eXecute (NX) bit protection.
-    - Implement rate limiting on APIs and network services to resist resource exhaustion attacks.
-
-### 5.2 Vulnerability Handling Requirements (Annex I, Part II)
-
-Once the product is on the market, the manufacturer must have processes in place to manage vulnerabilities throughout its lifecycle.
-
-#### 5.2.1 Coordinated Vulnerability Disclosure (CVD)
-*Legal hook: [CRA Annex I.II.5][cra_annexI] & [BSI TR-03183-1 REQ_VH 5][bsi_tr_03183]*
-
-Manufacturers must establish and publish a CVD policy. This policy must:
-- Provide a clear and accessible way for security researchers to report vulnerabilities.
-- Include information on the timelines for acknowledging and addressing reports.
-
-For detailed guidance on implementation, see **[BSI TR-03183-3][bsi_tr_03183]**.
-
-#### 5.2.2 Software Bill of Materials (SBOM)
-*Legal hook: [CRA Annex I.II.1][cra_annexI] & [BSI TR-03183-1 REQ_VH 1][bsi_tr_03183]*
-
-Manufacturers must create and maintain a Software Bill of Materials (SBOM) as part of their technical documentation. This must include, at a minimum, the top-level dependencies of the software components integrated in the product.
-- **Practical Guidance**: **[BSI TR-03183-2][bsi_tr_03183]** provides a detailed profile for creating a machine-readable SBOM using the **CycloneDX** standard.
-
-#### 5.2.3 Security Updates
-*Legal hook: [CRA Annex I.II.1-3][cra_annexI] & [BSI TR-03183-1 REQ_ER 4, REQ_VH 2, 6][bsi_tr_03183]*
-
-Manufacturers must have a process to "handle and remediate vulnerabilities without delay." This means:
-- **Patching**: Having an established process to develop and test security patches.
-- **Distribution**: Providing a mechanism to distribute updates securely to end-users.
-- **Timeliness**: Ensuring that patches are released in a timely manner, free of charge.
-
----
-
-## 6. Implementation Mapping: From Requirements to Practice {#implementation-mapping}
-
-The following table maps the essential requirements of the CRA and related guidelines to the practical implementation guides found in this handbook. This provides a direct path from a legal obligation to the specific engineering tasks required to meet it.
-
-| Implementation Guide | Key Regulatory Requirements Satisfied |
-| :--- | :--- |
-| **BUILD PHASE** | |
-| [Threat Modeling & Risk Assessment](../../implementation/build-phase/threat-modeling.md) | **CRA**: Annex I.I.1 `(Risk Assessment)` <br/> **BSI TR-03183-1**: REQ_RA 1 `(Risk assessment)`, REQ_ER 1 `(Security by design)` |
-| [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) | **CRA**: Annex I.I.2(c) `(Secure by default)`, Annex I.I.2(j) `(Limit attack surfaces)` <br/> **BSI TR-03183-1**: REQ_ER 3 `(Secure default configuration)`, REQ_ER 11 `(Limit attack surfaces)` |
-| [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) | **CRA**: Annex I.I.2(d) `(Access Control)` <br/> **BSI TR-03183-1**: REQ_ER 5 `(Access control)` <br/> **RED**: Art 3.3(i) `(Protection from fraud)` |
-| [Secure Boot](../../implementation/build-phase/secure-boot.md) | **CRA**: Annex I.I.2(f) `(Integrity)` <br/> **BSI TR-03183-1**: REQ_ER 7 `(Integrity protection)` |
-| [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) | **CRA**: Annex I.I.2(e) `(Confidentiality)` <br/> **BSI TR-03183-1**: REQ_ER 6 `(Confidentiality protection)` |
-| [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) | **RED**: Art 3.3(e) `(Protect privacy)` <br/> **BSI TR-03183-1**: REQ_ER 8 `(Data minimisation)`, REQ_ER 14 `(Deletion of data)` |
-| [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) | **CRA**: Annex I.II.2-3 `(Security Updates)` <br/> **BSI TR-03183-1**: REQ_ER 4 `(Security updates)`, REQ_VH 6 `(Secure distribution of updates)` |
-| [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) | **CRA**: Annex I.II.1 `(Identify components)` <br/> **BSI TR-03183-1**: REQ_VH 1 `(Identify components)`, REQ_VH 4 `(Publish addressed vulnerabilities)` <br/> **BSI TR-03183-2**: `(SBOM format)` |
-| [User Information & Documentation](../../implementation/build-phase/user-documentation.md) | **CRA**: Annex II `(Information and instructions to the user)` <br/> **BSI TR-03183-1**: REQ_UD 1-6 `(User documentation)` |
-| **OPERATE PHASE** | |
-| [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) | **CRA**: Annex I.II.5 `(CVD Policy)`, Art. 14 `(Reporting)` <br/> **BSI TR-03183-1**: REQ_VH 5 `(CVD policy)` <br/> **BSI TR-03183-3**: `(Vulnerability Reports)` |
-| [Patch Cadence & Management](../../implementation/operate-phase/patch-cadence.md) | **CRA**: Annex I.II.1-3 `(Handle and remediate vulnerabilities without delay)` <br/> **BSI TR-03183-1**: REQ_VH 2 `(Address vulnerabilities)` |
-| [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) | **BSI TR-03183-1**: REQ_ER 13 `(Recording and monitoring)` |
-| [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) | **CRA**: Annex I.I.2(a) `(No known exploitable vulnerabilities)` <br/> **BSI TR-03183-1**: REQ_ER 2 `(No known vulnerabilities)` |
 
 <!-- Citations -->
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847 "CRA Official Journal – OJ"
@@ -385,5 +294,8 @@ The following table maps the essential requirements of the CRA and related guide
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_del]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – security clauses for radio equipment"
 [bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p2]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-2-2_0_0.pdf "BSI TR-03183 Part 2: Software Bill of Materials (SBOM)"
+[bsi_tr_03183_p3]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-3-0_9_0.pdf "BSI TR-03183 Part 3: Vulnerability Reports and Notifications"
 [mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
 
