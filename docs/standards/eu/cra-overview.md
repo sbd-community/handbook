@@ -92,14 +92,14 @@ Both conditions must be met.
 | Excluded or separate regime | Legal reason |
 |-----------------------------|--------------|
 | Medical devices | Already covered by **[MDR 2017/745](./mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
-| Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 4][cra_art2]) |
-| Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 4(f)][cra_art2]) |
-| Defence & national security items | Excluded ([CRA Art. 2 § 5][cra_art2]) |
+| Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 2(c)][cra_art2]) |
+| Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 3][cra_art2]) |
+| Defence & national security items | Excluded ([CRA Art. 2 § 7][cra_art2]) |
 | Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 15][cra_rec15], [CRA Recital 18][cra_rec18], [CRA Recital 19][cra_rec19]). *If commercial support is later offered, CRA duties apply.* |
-| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 20 § 8][cra_art20]) |
+| **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 24][cra_art24]) |
 | Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
 | Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
-| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 71 § 3][cra_art71]) |
+| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 69 § 2][cra_art69]) |
 
 ---
 
@@ -279,6 +279,7 @@ The first harmonised standards for the CRA are expected to be published in the O
 [cra_art18]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_18 "CRA Article 18 – Authorised representatives"
 [cra_art19]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_19 "CRA Article 19 – Obligations of importers"
 [cra_art20]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_20 "CRA Article 20 – Obligations of distributors"
+[cra_art24]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_24 "CRA Article 24 - Obligations of open-source software stewards"
 [cra_art27]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_27 "CRA Article 27 - Presumption of conformity"
 [cra_art28]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_28 "CRA Article 28 – EU declaration of conformity"
 [cra_art29]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_29 "CRA Article 29 – General principles of the CE marking"
@@ -287,6 +288,7 @@ The first harmonised standards for the CRA are expected to be published in the O
 [cra_art32]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_32 "CRA Article 32 – Conformity assessment procedures for products with digital elements"
 [cra_art43]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_43 "CRA Article 43 – Notification procedure"
 [cra_art64]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_64 "CRA Article 64 – Penalties"
+[cra_art69]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_69 "CRA Article 69 – Transitional provisions"
 [cra_art71]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71 "CRA Article 71 – Entry into force and application"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
 [cra_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_II "CRA Annex II – Information and instructions to the user"
