@@ -18,7 +18,18 @@ The primary legal basis for user documentation is **Annex II of the CRA**, which
 
 Failing to provide this information means your product is not compliant.
 
-### 1.2. What Constitutes User Documentation?
+### 1.2. Do I Really Need to Do This?
+
+**Yes. This is not just about good customer service; it is a direct and detailed legal obligation.** The Cyber-Resilience Act is very specific about the information you **must** provide to users. Failing to do so makes your product non-compliant.
+
+-   **It's a Legal Mandate:** **[CRA Annex II](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_II)** provides a checklist of information that must be included in user instructions. Market surveillance authorities will use this as a simple, objective check of your product's compliance. If the information is missing, your product fails.
+-   **Empowers Users to Be Secure:** A secure product is only effective if it's used securely. Your documentation is the primary tool to educate users on how to configure the device, change default passwords, and understand their role in maintaining its security. An informed user is a more secure user.
+-   **Manages Expectations and Liability:** Clearly stating the product's intended use and, crucially, its **support end-date** manages customer expectations and your own liability. It defines the period during which you are responsible for providing security updates.
+-   **Provides Transparency:** Disclosing information about open-source components (via an SBOM) and how to report vulnerabilities builds trust and demonstrates a commitment to transparency, which is highly valued by both customers and the security community.
+
+Think of your user documentation as part of the product itself. It is a compliance deliverable that is just as important as any hardware or software feature.
+
+### 1.3. What Constitutes User Documentation?
 
 This refers to any information provided to the end-user, whether it's a printed quick-start guide, an in-app help section, or a full online user manual. The information must be clear, concise, and easy for a non-technical user to understand.
 

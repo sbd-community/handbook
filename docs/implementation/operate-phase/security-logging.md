@@ -21,7 +21,18 @@ The legal basis for logging comes from the CRA's essential requirements, which a
 
 Effective logging allows you to answer the critical question "What happened?" after a security event has occurred.
 
-### 1.2. What is Security Logging?
+### 1.2. Do I Really Need to Do This?
+
+**Yes. If you can't see what's happening on your devices, you can't defend them.** Security logging is a fundamental requirement for incident detection and response, and it is explicitly mandated by law.
+
+-   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** is unequivocal: products must "log all security-relevant events by default." This is a baseline requirement for market access. If your product doesn't log security events, it is not compliant.
+-   **Enables Incident Response:** When a security incident occurs, the first question everyone will ask is, "What happened?" Your logs are the only way to answer this. They provide the forensic evidence needed to understand how an attacker got in, what they did, and how to prevent it from happening again.
+-   **You Can't Detect Attacks Without It:** Many attacks, like brute-force password guessing, are only detectable by analyzing patterns in event logs. Monitoring for anomalies in your logs is a primary method for detecting an active attack before it succeeds.
+-   **Provides a Forensic Trail:** In the event of a serious breach, regulators and law enforcement will require evidence. Your logs are a critical part of this evidence trail, demonstrating that you had measures in place and helping to identify the attackers.
+
+Without security logs, you are blind to both ongoing attacks and the details of past incidents. Implementing robust logging is a non-negotiable part of building a defensible product.
+
+### 1.3. What is Security Logging?
 
 Security logging involves systematically recording key events on a device and its associated services. This provides an audit trail that can be used to:
 -   Detect and respond to security incidents in real-time.

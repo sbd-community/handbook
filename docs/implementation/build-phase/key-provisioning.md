@@ -20,7 +20,17 @@ While regulations may not specify the exact method of key storage, they mandate 
 
 State-of-the-art encryption is only effective if the keys themselves are protected from disclosure and modification. Therefore, a robust key provisioning and storage strategy is an implicit and non-negotiable requirement.
 
-### 1.2. What is Key Provisioning?
+### 1.2. Do I Really Need to Do This?
+
+**Yes, without question.** If your product uses cryptography for any reason—to encrypt communications, verify firmware updates, or protect data on the device—then securely managing the keys is an absolute requirement.
+
+Your threat model must consider the risk of key extraction. What happens if an attacker finds a key in your firmware binary or extracts it from a flash chip?
+-   If it's a **shared symmetric key**, every device you've ever shipped is now compromised. An attacker can decrypt all communications and potentially impersonate your services.
+-   If it's a **shared private key**, an attacker can sign malicious firmware updates that all your devices will trust and install.
+
+Storing keys insecurely (e.g., hardcoded in source code or in unprotected external flash) is a critical design flaw that would make it impossible to demonstrate compliance with the CRA's requirements for secure-by-design, confidentiality, and integrity. There is no credible risk assessment that could justify such a design for a connected product.
+
+### 1.3. What is Key Provisioning?
 
 Key Provisioning is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
 

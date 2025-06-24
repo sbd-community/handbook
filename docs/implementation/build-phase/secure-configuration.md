@@ -19,7 +19,18 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** expli
 
 Any insecure setting should require a deliberate, explicit action from the user to enable, and only after being warned of the potential risks.
 
-### 1.2. What is Secure Configuration?
+### 1.2. Do I Really Need to Do This?
+
+**Yes. This is one of the most fundamental principles of building a secure product and a direct legal requirement.** Shipping a product with an insecure default configuration is a major source of vulnerabilities and is explicitly forbidden by modern regulations.
+
+-   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** states that products must be "placed on the market with a secure-by-default configuration." Standards like **[ETSI EN 303 645](https://www.etsi.org/deliver/etsi_en/303600_303699/303645/02.01.01_60/en_303645v020101p.pdf)** also ban universal default passwords. This is a clear, non-negotiable requirement for market access.
+-   **Protects Non-Expert Users:** Most users are not security experts. They will not change complex settings and will assume the product is secure out of the box. Secure-by-default protects them from being easy targets for automated attacks that scan for devices with weak or default credentials.
+-   **Reduces Attack Surface:** Hardening is the practical application of attack surface reduction. By disabling unused ports and services, you give attackers fewer opportunities to gain a foothold on your device. Every open port is a potential vulnerability.
+-   **Prevents Simple Mistakes:** A hardened configuration prevents simple but critical mistakes, like leaving a debug port open on a production device, which could give an attacker complete control.
+
+Shipping a product in its most secure state by default is the most effective way to protect your customers and comply with the law. Any insecure setting should require a deliberate, informed action by the user to enable.
+
+### 1.3. What is Secure Configuration?
 
 Secure configuration is the practical implementation of the **principle of least privilege**. It is a systematic process to ensure a product only has the permissions, features, and network exposure that are absolutely essential for its core functionality.
 

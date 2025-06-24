@@ -19,7 +19,15 @@ The legal basis for threat modeling is established in two key places:
 
 The output of your threat model is the primary evidence that you have fulfilled this requirement. It provides the documented rationale for your security architecture and proves to regulators that you have built security in from the start.
 
-### 1.2. What is Threat Modeling?
+### 1.2. Do I Really Need to Do This?
+
+**Yes.** Of all the security activities in this handbook, this is the one that is most explicitly and unambiguously required by the law.
+
+The Cyber-Resilience Act is a **risk-based** regulation. The entire framework is built upon the manufacturer's duty to perform a risk assessment and then implement security controls that are appropriate to the identified risks.
+
+If you have not performed and documented a threat model, you have not met the most fundamental obligation of the CRA. There are no exceptions for connected devices, regardless of their size or perceived simplicity.
+
+### 1.3. What is Threat Modeling?
 
 **Threat Modeling** is a structured, systematic process for fulfilling the risk assessment requirement. It involves:
 1.  Identifying potential security threats and vulnerabilities in a product.

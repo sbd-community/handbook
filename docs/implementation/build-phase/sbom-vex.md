@@ -20,7 +20,18 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** estab
 -   The BSI TR-03183-1 reinforces this, requiring a documented list of all integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
 -   Furthermore, the CRA mandates that this SBOM must be provided to national authorities upon request ([Art. 13][cra_art13]).
 
-### 1.2. What are SBOM and VEX?
+### 1.2. Do I Really Need to Do This?
+
+**Yes, absolutely.** Providing a Software Bill of Materials is no longer a best practice; it is a legal requirement for placing a product on the EU market.
+
+-   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** explicitly states that manufacturers must "identify and document components, including by drawing up a software bill of materials." This is not optional.
+-   **You Can't Secure What You Can't See:** Your product is built on hundreds, if not thousands, of third-party software components. When a new vulnerability like "Log4Shell" is discovered, an SBOM is the only way to know *instantly* if your product is affected. Without it, you are blind to supply chain risks.
+-   **Enables Efficient Vulnerability Management:** An SBOM is the input for modern security tools. When combined with a VEX, it allows you to automate vulnerability tracking and communicate precisely to your customers which risks are real and which are false positives, saving everyone time and effort.
+-   **Required By Customers:** Beyond EU law, major enterprise and government customers worldwide are now demanding SBOMs as a standard procurement requirement. Not having one is a significant commercial disadvantage.
+
+In short, an SBOM is the foundational element of modern software security and supply chain risk management. It is a legal, security, and commercial necessity.
+
+### 1.3. What are SBOM and VEX?
 
 -   An **SBOM** is analogous to a list of ingredients on a food package. It provides a formal, machine-readable inventory of the software components and dependencies included in a product, enabling rapid identification of components affected by newly discovered vulnerabilities.
 -   A **VEX** document is a companion to an SBOM that provides an assertion from the manufacturer about the exploitability of a specific vulnerability in their product. This provides crucial context, allowing asset owners to filter out the noise from scanners and focus on real risks.

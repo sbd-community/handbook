@@ -20,7 +20,18 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** manda
 
 This policy should be public-facing, setting clear expectations for customers about support lifetime and response timelines.
 
-### 1.2. What is a Patch Management Policy?
+### 1.2. Do I Really Need to Do This?
+
+**Yes. A public, defined patch management policy is a direct legal requirement and a critical part of customer trust.** Simply having an OTA mechanism is not enough; you must have a documented process for how you will use it.
+
+-   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** requires that you handle vulnerabilities "without delay." A patch cadence based on severity is the only credible way to demonstrate to regulators that you have a systematic process for meeting this obligation. This policy will be a key piece of evidence in your technical file.
+-   **It Builds Trust:** When customers (and security researchers) know you have a clear, time-bound commitment to fixing security issues, it builds enormous trust in your brand. A public policy shows maturity and a serious commitment to security.
+-   **It Manages Expectations:** A clear policy, especially one with a defined End-of-Life (EOL) date, manages customer expectations. It sets the terms for your support window and prevents ambiguity about your responsibilities.
+-   **It Drives Internal Process:** A public commitment to a patch cadence forces your internal teams to be prepared. It drives the creation of efficient internal processes for vulnerability triage, development, testing, and deployment, ensuring you can meet your own deadlines when a critical vulnerability appears.
+
+Without a defined policy, your response to a vulnerability will be ad-hoc, slow, and chaotic. A risk-based patch cadence provides the structure needed for a timely, compliant, and trustworthy response.
+
+### 1.3. What is a Patch Management Policy?
 
 A patch management policy is a document that outlines your commitment to users. It defines:
 -   The types of updates you provide (e.g., security, feature).

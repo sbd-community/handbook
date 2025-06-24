@@ -18,7 +18,17 @@ While regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/eu/c
 
 A robust access control system can only function if it can reliably distinguish between legitimate and illegitimate devices and users. A unique, hardware-backed identity is the only way to provide this trust anchor.
 
-### 1.2. What is a Unique Device Identity?
+### 1.2. Do I Really Need to Do This?
+
+**Almost certainly, yes.** While the CRA mandates *access control* rather than "unique identity," a robust and compliant access control system is nearly impossible to build without a unique identity for each device.
+
+Could you build a system where all your devices share a single password or API key? Technically, yes. But this creates a single point of failure. If that one secret is ever compromised—from a single lost device, a disgruntled employee, or a reverse-engineered firmware image—your entire fleet of products becomes vulnerable. An attacker with that secret can impersonate *any* of your devices, and you would have no way to tell the difference.
+
+For this reason, a shared-secret model is considered a major security anti-pattern and would likely fail a regulatory assessment for any non-trivial product. It violates the core "secure-by-design" principle. Your threat model would have to robustly justify why a compromise of one device would not impact any other, a justification that is virtually impossible to make with a shared secret.
+
+Establishing a unique, hardware-backed identity is the only practical way to ensure one compromised device does not compromise the entire system.
+
+### 1.3. What is a Unique Device Identity?
 
 A unique device identity is a cryptographic credential that proves a device is genuine. A mature security model distinguishes between two types of identity.
 

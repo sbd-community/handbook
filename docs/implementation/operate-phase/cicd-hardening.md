@@ -17,7 +17,18 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** manda
 - **No Known Exploitable Vulnerabilities ([Annex I § 1 (2)(a)][cra_annexI])**: The CRA requires products to be delivered "without known exploitable vulnerabilities." An automated scanning process in the CI/CD pipeline is the primary mechanism for identifying and blocking these vulnerabilities before release.
 - **Vulnerability Handling ([Annex I § 2 (2)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 clarifies this, stating that manufacturers must "continuously search for vulnerabilities in their own product" ([REQ_VH 2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this continuous search.
 
-### 1.2. What is CI/CD Hardening?
+### 1.2. Do I Really Need to Do This?
+
+**Yes. Your CI/CD pipeline is the factory that builds your product. If the factory is compromised, everything it produces is tainted.** A hardened pipeline is not just about development efficiency; it is a critical control for ensuring the integrity of your software supply chain.
+
+-   **It's a Direct Compliance Evidence:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** requires you to implement a secure development lifecycle. A hardened CI/CD pipeline with automated security checks is one of the most powerful pieces of evidence you can provide to demonstrate that you are meeting this obligation.
+-   **Prevents Supply Chain Attacks:** High-profile attacks like SolarWinds and Codecov have shown that CI/CD pipelines are a prime target for sophisticated attackers. By compromising the pipeline, attackers can inject malicious code into a trusted product, which is then distributed to all of your customers. Hardening the pipeline is a direct defense against this.
+-   **Automates Security and Reduces Human Error:** "Shifting left" by integrating security into the pipeline automates critical checks. It ensures that no release can accidentally ship with a known critical vulnerability or a hardcoded password. This systematic approach is far more reliable than relying on manual reviews.
+-   **Ensures Integrity:** A compromised pipeline can do more than inject malware; it can simply tamper with build artifacts in subtle ways. Cryptographically signing artifacts and generating attestations provide a verifiable chain of custody, proving that the code your users receive is exactly the code that you intended to ship.
+
+Securing your CI/CD pipeline is foundational. It protects your developers, your code, your company, and ultimately, all of your customers.
+
+### 1.3. What is CI/CD Hardening?
 
 CI/CD Hardening involves embedding automated security checks and controls directly into your build and release pipeline. It is the practical application of "DevSecOps," where security is a shared responsibility and integrated from the very beginning. A compromised pipeline can be used to inject malicious code, steal credentials, or tamper with build artifacts, making its security paramount.
 
