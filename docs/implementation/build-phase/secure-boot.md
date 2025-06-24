@@ -21,7 +21,22 @@ The legal basis for implementing secure boot is clear and direct:
 
 Secure boot is the state-of-the-art mechanism for fulfilling this requirement. It provides auditable proof that only the manufacturer's authentic software is executing on the device.
 
-### 1.2. What is Secure Boot?
+### 1.2. Do I Really Need to Do This?
+
+This is a fair question. Could the outcome of a threat model ever justify *not* implementing secure boot?
+
+While theoretically possible, the answer for any modern connected device falling under the CRA is almost certainly **no**. Secure boot is considered a foundational, non-negotiable control for several reasons:
+
+-   **State of the Art:** It is the universally accepted state-of-the-art mechanism for ensuring software integrity at boot time. It would be extremely difficult to argue to a regulator that any lesser alternative meets this requirement.
+-   **The Root of All Trust:** If the initial boot code can be tampered with, no other security control on the device can be trusted. Encryption, access control, and secure updates all depend on the underlying code being authentic.
+
+A threat model might only conclude that secure boot is unnecessary in a very limited set of circumstances, such as a device with:
+-   No updateable software whatsoever (e.g., all code is in a true Read-Only Memory).
+-   No sensitive data, no secret keys, and no ability to impact other systems (i.e., it cannot be used in a DDoS attack).
+
+For any product that has firmware that can be updated, stores secrets, or controls sensitive functions, the answer is clear: **Yes, you absolutely need to do this.**
+
+### 1.3. What is Secure Boot?
 
 Secure Boot works by creating a **chain of trust**, starting from an immutable hardware anchor and extending through every piece of software loaded during the boot sequence—from the initial bootloader to the operating system kernel and applications.
 
