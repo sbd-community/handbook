@@ -25,16 +25,29 @@ Implementing secure boot provides auditable proof that only the manufacturer's a
 
 ### 1.3. Do I Really Need to Do This?
 
-For any modern connected device falling under the CRA, the answer is almost certainly **yes**. Secure boot is considered a foundational, non-negotiable control for several reasons:
+Secure boot is the state-of-the-art technical solution for meeting the software integrity requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**. For the majority of connected products, it is a mandatory, foundational security control.
 
--   **State of the Art:** It is the universally accepted state-of-the-art mechanism for ensuring software integrity at boot time. It would be extremely difficult to argue to a regulator that any lesser alternative meets this requirement.
--   **The Root of All Trust:** If the initial boot code can be tampered with, no other security control on the device can be trusted. Encryption, access control, and secure updates all depend on the underlying code being authentic.
+However, the question is not whether you can ignore the integrity requirement, but whether there are circumstances where it can be met without a full secure boot implementation. The BSI's technical guideline ([REC_ER 7.1][bsi_tr_03183_p1]) provides a specific condition: the recommendation to verify software integrity applies if "The TOE [product] stores sensitive user or system data."
 
-A threat model might only conclude that secure boot is unnecessary in a very limited set of circumstances, such as a device with:
--   No updateable software whatsoever (e.g., all code is in a true Read-Only Memory).
--   No sensitive data, no secret keys, and no ability to impact other systems (i.e., it cannot be used in a DDoS attack).
+This provides two clear, but very narrow, grounds for exemption:
 
-For any product that has firmware that can be updated, stores secrets, or controls sensitive functions, secure boot is an essential requirement.
+#### Exception 1: The Product's Firmware Cannot Be Modified
+
+If your product's software is physically immutable—for example, it is burned into a true Read-Only Memory (ROM) or the write-enable fuses are permanently disabled at the factory—then its integrity cannot be modified after it is produced. In this case, a secure boot process is not necessary because the software cannot be changed. This is extremely rare for connected products, which almost always require the ability to be updated.
+
+#### Exception 2: The Product is Simple and Stores No Sensitive Data
+
+This is the most likely exception, but it requires careful justification. According to the BSI guideline, if a product does *not* store any sensitive data, the need to verify its own integrity is a recommendation (`SHOULD`) rather than a strict mandate (`MUST`). To qualify, a product would need to meet all of the following criteria:
+-   It does not store any cryptographic keys, credentials, or other security-critical parameters.
+-   It does not store any sensitive personal data (e.g., health data, private messages).
+-   It does not store any sensitive system data (e.g., proprietary configuration, business information).
+-   A compromise of its software integrity would not create a significant safety risk or a risk to other systems (e.g., it could not be used as part of a DDoS attack).
+
+**Example:** A simple, battery-powered environmental sensor that transmits public data (like air quality readings) over a local network. It has updateable firmware but stores no keys or sensitive configuration. While a compromise is possible, the impact is low. In this case, a manufacturer could argue in their risk assessment that while secure boot is best practice, its absence does not create a significant risk.
+
+#### The Bottom Line
+
+For any product that receives software updates **and** handles any kind of secret key, credential, or sensitive user data, secure boot is **mandatory**. If an attacker can modify the software on a device that holds secrets, no other security control can be trusted. The burden is on the manufacturer to document a compelling justification for why their product's limited functionality and simple data-handling model makes it eligible for an exception.
 
 ## 2. Core Concepts: The Chain of Trust
 

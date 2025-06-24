@@ -27,13 +27,28 @@ State-of-the-art encryption is only effective if the keys themselves are protect
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes, without question.** If your product uses cryptography for any reason—to encrypt communications, verify firmware updates, or protect data on the device—then securely managing the keys is an absolute requirement.
+The need for secure key provisioning and storage is a direct consequence of other security requirements. Rather than asking *if* you need to do it, the better question is: **"Does my product use cryptography for any of its functions?"**
 
-Your threat model must consider the risk of key extraction. What happens if an attacker finds a key in your firmware binary or extracts it from a flash chip?
--   If it's a **shared symmetric key**, every device you've ever shipped is now compromised. An attacker can decrypt all communications and potentially impersonate your services.
--   If it's a **shared private key**, an attacker can sign malicious firmware updates that all your devices will trust and install.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates several security outcomes that implicitly require the use of cryptography, and therefore keys:
 
-Storing keys insecurely (e.g., hardcoded in source code or in unprotected external flash) is a critical design flaw that would make it impossible to demonstrate compliance with the CRA's requirements for secure-by-design, confidentiality, and integrity. There is no credible risk assessment that could justify such a design for a connected product.
+-   **Confidentiality ([Annex I § 1 (2)(e)][cra_annexI])**: If you store or transmit any sensitive data (e.g., user credentials, network passwords, personal information), you must encrypt it. Encryption requires keys.
+-   **Integrity of Software Updates ([Annex I § 1 (2)(d)][cra_annexI])**: Your device must be able to address vulnerabilities through security updates. The BSI's guideline ([REQ_ER 4.2][bsi_tr_03183_p1]) clarifies this means verifying the "integrity and authenticity of the update package". This requires cryptographic signatures, which in turn rely on keys.
+-   **Access Control ([Annex I § 1 (2)(d)][cra_annexI])**: If your product has user accounts or restricted interfaces, it needs a way to authenticate users. Secure authentication mechanisms often rely on cryptographic credentials.
+
+#### When is key management *not* required?
+
+A product is exempt from these requirements only if it uses **no cryptographic functions at all**. Such a device would have to meet all of the following conditions:
+
+-   It does not store or transmit any sensitive, personal, or secret data that requires encryption.
+-   It does not have a secure update mechanism that relies on signature verification.
+-   It does not implement any cryptographic access control or authentication methods.
+-   It has no other feature that relies on cryptography (e.g., secure boot, remote attestation).
+
+An example of such a device might be a simple, battery-powered sensor that periodically broadcasts non-sensitive data (like a temperature reading) over an unencrypted, local radio protocol.
+
+#### The Bottom Line
+
+For virtually any modern connected product that receives software updates, connects to a network, or handles any user-specific information, the answer is **yes, this is required**. An insecure key management strategy (like hardcoding a key in firmware) is a critical vulnerability that makes compliance with the CRA impossible. The real engineering decision is not *if* you should do it, but *how*—choosing the right hardware and processes to protect your keys throughout their lifecycle.
 
 ## 2. The Key Management Lifecycle & Workflow
 

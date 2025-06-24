@@ -22,9 +22,27 @@ Failing to provide this information renders a product non-compliant.
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes. This is a non-negotiable legal requirement.** There are no use-cases where a connected product subject to the CRA can be placed on the market without the user documentation outlined in Annex II.
+**Yes.** Providing documentation is a non-negotiable legal requirement for any product with digital elements placed on the EU market. Market surveillance authorities will use the list in **[CRA Annex II][cra_annexII]** as an objective checklist, and missing information can block a product from the market.
 
-Market surveillance authorities will use this Annex as a simple, objective checklist. If the information is missing, the product is non-compliant. The documentation is considered part of the product itself.
+However, while the requirement to provide the information is absolute, the **form and audience** of that documentation can differ. The real question is not *if* you must provide it, but **"Who is the 'user' for my product?"**
+
+#### Case 1: Products for End-Users (B2C or B2B)
+
+If your product is sold directly to an end-user (whether a consumer or a business), then you must provide the full, user-friendly documentation described in this guide. The information must be clear, easy to understand for a non-technical audience, and readily accessible (e.g., in the box, in an app, or on a website linked from the product). For these products, there are no exceptions.
+
+#### Case 2: Products for Integration (Components)
+
+If your product is a component intended for integration into another product (e.g., a Wi-Fi module, a communication stack, a software library), you are still legally required to provide the information from Annex II. However, in this scenario, your "user" is the *integrating manufacturer*.
+
+-   **Form of Documentation:** Instead of a glossy user manual, your documentation will likely be a technical data sheet, an integration guide, or API documentation.
+-   **Content Requirement:** This technical documentation **must** contain all the security information the integrator needs to produce their own compliant end-user documentation for the final product. The BSI TR-03183-1 makes this clear, requiring documentation for integrators to "comply with the essential requirements" ([REQ_UD 5.1][bsi_tr_03183_p1]). This includes details like:
+    -   The component's software bill of materials (SBOM).
+    -   The end-of-support date for the component.
+    -   Any default configurations that need to be secured.
+
+#### The Bottom Line
+
+You cannot place a product with digital elements on the EU market without providing the information listed in Annex II of the CRA. The only flexibility is in the format. If you sell to end-users, you need a user manual. If you sell to other manufacturers, you need a comprehensive technical datasheet that gives them all the information they need to comply in turn.
 
 ## 2. Information Required by CRA Annex II
 

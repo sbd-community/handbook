@@ -25,14 +25,24 @@ Beyond the CRA, the **[Radio Equipment Directive (RED)](./../../standards/eu/red
 
 ### 1.3. Do I Really Need to Do This?
 
-Yes. In the modern regulatory landscape, data privacy is not optional. It's a fundamental user right and a legal obligation for any product that processes personal data.
+This guide covers two key privacy obligations from the EU's **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**: **Data Minimisation** and **Secure Data Deletion**. While these principles have a broad scope, their application depends on the specific nature of your product. Rather than being a simple "yes" or "no", the question is about understanding *which* rules apply.
 
--   **Legal & Market Access Requirement:** Regulations like the EU's **[GDPR](https://gdpr.eu/)**, **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)**, and **[Radio Equipment Directive (RED)](../../standards/eu/red-overview.md)** mandate strong data protection. Non-compliance can lead to significant fines and, under the CRA, a block from the EU market.
--   **It's a Security Issue:** Personal data is a primary target for attackers. The less data you hold, the lower the impact of a potential breach. Data minimisation isn't just a privacy principle; it's a security best practice.
--   **Builds Customer Trust:** When users see that you respect their privacy—by asking for consent, minimizing data collection, and providing easy deletion tools—you build trust. In a competitive market, a strong privacy stance can be a key differentiator. Conversely, a single privacy-related incident can cause irreparable brand damage.
--   **Reduces Future Risk:** Holding onto data you don't need creates a liability. It becomes a target for attackers and a compliance burden. By deleting data securely and minimizing what you collect, you reduce your long-term risk and maintenance overhead.
+#### Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])
 
-While a detailed threat model might inform *how* you implement specific privacy controls, it does not remove the fundamental requirement to provide them. If your product handles any personal or user-specific data, you need to implement these privacy measures.
+The CRA requires that products "process only data, personal or other, that are adequate, relevant and limited to what is necessary".
+
+-   **Is there an exception?** Strictly speaking, the only way this requirement doesn't apply is if your product processes **no data at all**. For any 'product with digital elements', this is exceptionally rare.
+-   **What if I don't process personal data?** The principle of data minimisation still applies. You must be able to justify that any non-personal data you collect (e.g., performance metrics, operational logs) is necessary for the product's intended purpose. The BSI guideline ([REQ_ER 8.1][bsi_tr_03183_p1]) is clear on this point.
+-   **The Bottom Line:** You almost certainly need to conduct a data minimisation review. The real task is to identify what data you process and justify why it is necessary. If that data includes personal information, additional obligations under regulations like GDPR will also apply.
+
+#### Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])
+
+The CRA mandates that manufacturers must "provide the possibility for users to securely and easily remove on a permanent basis all data and settings".
+
+-   **Exception 1: The Product is Stateless.** If your product does not store *any* user data (personal or otherwise) and has no user-configurable settings saved to persistent memory, there is no data to delete. An example is a simple sensor that only transmits a live reading without ever storing it.
+-   **Exception 2: The Product is Not Configurable.** The BSI guideline for implementing a factory reset ([REQ_ER 3.1][bsi_tr_03183_p1]) includes the condition: "The TOE can be configured". If your product genuinely has no user-configurable settings (e.g., no network settings, no user preferences), then a reset function may not be required.
+-   **What if I don't store personal data?** If your product stores settings or operational data but no *personal data*, you still need a mechanism to delete that data. You must provide a "factory reset" function that clears all settings and non-personal data, allowing a user to return the device to its original state.
+-   **The Bottom Line:** For the vast majority of connected products—which store at least some configuration data like Wi-Fi credentials—a secure reset or deletion function is mandatory. While your threat model will inform *how* you implement it (e.g., simple file deletion vs. cryptographic erasure), the legal requirement for the function itself is rarely exempted.
 
 ## 2. Key Privacy-Enhancing Practices
 

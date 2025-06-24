@@ -28,14 +28,35 @@ Effective logging allows you to answer the critical question "What happened?" af
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes. If you can't see what's happening on your devices, you can't defend them.** Security logging is a fundamental requirement for incident detection and response, and it is explicitly mandated by law.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** explicitly requires products to "provide security related information by recording and monitoring relevant internal activity". This is a direct legal requirement.
 
--   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** is unequivocal: products must "log all security-relevant events by default." This is a baseline requirement for market access. If your product doesn't log security events, it is not compliant.
--   **Enables Incident Response:** When a security incident occurs, the first question everyone will ask is, "What happened?" Your logs are the only way to answer this. They provide the forensic evidence needed to understand how an attacker got in, what they did, and how to prevent it from happening again.
--   **You Can't Detect Attacks Without It:** Many attacks, like brute-force password guessing, are only detectable by analyzing patterns in event logs. Monitoring for anomalies in your logs is a primary method for detecting an active attack before it succeeds.
--   **Provides a Forensic Trail:** In the event of a serious breach, regulators and law enforcement will require evidence. Your logs are a critical part of this evidence trail, demonstrating that you had measures in place and helping to identify the attackers.
+The nuance, however, is in the definition of "relevant internal activity." The key question for a manufacturer is not *if* they should log, but **"What events are security-relevant for my product, and what is a proportionate logging mechanism?"**
 
-Without security logs, you are blind to both ongoing attacks and the details of past incidents. Implementing robust logging is a non-negotiable part of building a defensible product.
+#### Case 1: Products with No Security-Relevant Events
+
+A logging mechanism is only required if there are events to log. A product might be exempt if it is so simple that it generates no security-relevant events. To qualify for this narrow exception, a device would need to have:
+-   No user authentication or access control to generate login events.
+-   No user-configurable settings to generate modification events.
+-   No services whose status needs to be monitored.
+-   No network connectivity that could be subject to attack.
+
+**Example:** A simple, air-gapped industrial sensor with fixed-function firmware that reports a value to a local, wired display. It has no user interaction, no configuration, and no connectivity. There are simply no "security-relevant" events to record.
+
+#### Case 2: Standard Connected Products
+
+For any product that has user accounts, configuration settings, or network connectivity, logging is **mandatory**. The scope of the logging, however, should be proportionate to the risk profile of the product.
+
+-   **For a low-risk product:** (e.g., a smart light bulb)
+    -   *What to log:* Key events like firmware updates, failed connection attempts, and resets.
+    -   *Proportionate mechanism:* Logging to a local, circular buffer in flash memory may be sufficient. The primary purpose is to enable forensic analysis *after* an incident is reported, not to perform real-time threat detection.
+
+-   **For a high-risk product:** (e.g., a security camera or a medical device)
+    -   *What to log:* A comprehensive set of events, including every access attempt, all configuration changes, and detailed network traffic information.
+    -   *Proportionate mechanism:* Events should be streamed to a secure, remote log management system in real-time, with automated alerting configured to detect anomalies and potential attacks as they happen.
+
+#### The Bottom Line
+
+If your product has any form of authentication, configuration, or connectivity, you must implement security logging. Your risk assessment should define which events are relevant and justify the design of your logging mechanism (e.g., local vs. remote, basic vs. comprehensive) as being appropriate for the product's risk profile.
 
 ## 2. Key Logging Practices
 

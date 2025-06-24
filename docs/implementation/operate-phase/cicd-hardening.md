@@ -23,14 +23,25 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** manda
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes. Your CI/CD pipeline is the factory that builds your product. If the factory is compromised, everything it produces is tainted.** A hardened pipeline is not just about development efficiency; it is a critical control for ensuring the integrity of your software supply chain.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to follow best practices for a secure development lifecycle. Hardening your development and release process is therefore a direct and non-negotiable legal obligation.
 
--   **Direct Compliance Evidence:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** requires you to implement a secure development lifecycle. A hardened CI/CD pipeline with automated security checks is one of the most powerful pieces of evidence you can provide to demonstrate that you are meeting this obligation.
--   **Defense Against Supply Chain Attacks:** High-profile attacks like SolarWinds and Codecov have shown that CI/CD pipelines are a prime target. Hardening the pipeline is a direct defense against attackers injecting malicious code into your trusted product.
--   **Automated Security:** "Shifting left" by integrating security into the pipeline automates critical checks. It ensures that no release can accidentally ship with a known critical vulnerability or a hardcoded password, which is far more reliable than relying on manual reviews.
--   **Guaranteed Integrity:** Cryptographically signing artifacts and generating attestations in the pipeline provide a verifiable chain of custody, proving that the code your users receive is exactly the code that you intended to ship.
+However, the regulations define the **"what" (the security outcomes)**, not the **"how" (the specific tools)**. The real question is not *if* you need a secure process, but **"What does a compliant secure development process look like for a team of my size and a product of my complexity?"**
 
-Securing your CI/CD pipeline is a foundational requirement. There is no threat model outcome that would justify leaving your software's "factory" unprotected.
+#### The "Manual" Exception
+
+A hardened, automated CI/CD pipeline is the state-of-the-art method for achieving compliance. It provides automatic, repeatable, and auditable proof that security checks have been performed.
+
+Could you comply without a formal CI/CD system? Theoretically, yes. For a very simple product with a single developer and infrequent releases, a compliant process might consist of:
+-   A documented checklist that a developer must follow before every release.
+-   Manually running scanners (for secrets, SAST, and SCA) on the developer's local machine.
+-   Manually generating an SBOM.
+-   Keeping a signed, dated log of the results of these checks for every release.
+
+This approach is **not recommended**. It is slow, prone to human error, and creates a significant documentation burden. As soon as a team grows to more than one person or releases become more frequent, this manual process becomes untenable and fails to scale.
+
+#### The Bottom Line
+
+You **must** have a documented, secure process for building, testing, and releasing your software. An automated CI/CD pipeline that integrates security scanning is the most effective, efficient, and reliable way to meet this requirement. While a manual process is not explicitly forbidden, it is far more burdensome to manage and much harder to prove to an auditor that it is being followed consistently. For any modern development team, investing in a hardened CI/CD pipeline is a foundational requirement for both security and compliance.
 
 ## 2. "Shifting Left": Integrating Security Early
 

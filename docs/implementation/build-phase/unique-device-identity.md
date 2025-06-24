@@ -22,13 +22,23 @@ A robust access control system can only function if it can reliably distinguish 
 
 ### 1.3. Do I Really Need to Do This?
 
-**Almost certainly, yes.** While the CRA mandates *access control* rather than "unique identity," a robust and compliant access control system is nearly impossible to build without a unique identity for each device.
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires products to be protected from unauthorized access via "appropriate control mechanisms". For any non-trivial product, this makes some form of authentication mandatory, which in turn requires a form of identity.
 
-Could you build a system where all your devices share a single password or API key? Technically, yes. But this creates a single point of failure. If that one secret is ever compromised—from a single lost device, a disgruntled employee, or a reverse-engineered firmware image—your entire fleet of products becomes vulnerable. An attacker with that secret can impersonate *any* of your devices, and you would have no way to tell the difference.
+The real question is not *if* you need an identity, but **"Does my product's access control model require a unique identity?"**
 
-For this reason, a shared-secret model is considered a major security anti-pattern and would likely fail a regulatory assessment for any non-trivial product. It violates the core "secure-by-design" principle. Your threat model would have to robustly justify why a compromise of one device would not impact any other, a justification that is virtually impossible to make with a shared secret.
+-   **The Shared-Secret Anti-Pattern:** Could you build a system where all devices share one secret key for authentication? Technically, yes. However, this is a critical design flaw. If that single secret is ever compromised (from one lost device, one firmware leak), your entire fleet is compromised. An attacker can impersonate any device, and you cannot revoke the secret without updating every device in the field. A risk assessment for such a design would almost certainly fail a regulatory audit.
 
-Establishing a unique, hardware-backed identity is the only practical way to ensure one compromised device does not compromise the entire system.
+-   **The "No Access Control" Exception:** A unique identity is only unnecessary if the product requires **no access control** whatsoever. Such a device would need to meet all of the following conditions:
+    -   It has no user accounts.
+    -   It has no restricted functions or administrative interfaces.
+    -   It does not receive commands from a remote server.
+    -   It only transmits non-sensitive data.
+
+    **Example:** A simple, one-way Bluetooth Low Energy (BLE) beacon that periodically broadcasts public information, like a temperature reading or a marketing URL. It receives no incoming connections and has no restricted data to protect.
+
+#### The Bottom Line
+
+If your product needs to authenticate itself to another system (like a cloud backend) or if it has any functions or data that need to be protected from unauthorized access, then it needs an identity. Given the extreme risks of a shared-secret model, a **unique, hardware-backed identity is the only practical and compliant way** to implement this for any product that has an active command-and-control relationship with a user or a service.
 
 ## 2. Core Concepts: Root vs. Operational Identity
 

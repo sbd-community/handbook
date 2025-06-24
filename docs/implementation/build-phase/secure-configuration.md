@@ -25,14 +25,27 @@ Any insecure setting should require a deliberate, explicit action from the user 
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes. This is one of the most fundamental principles of building a secure product and a direct legal requirement.** Shipping a product with an insecure default configuration is a major source of vulnerabilities and is explicitly forbidden by modern regulations.
+This guide covers two foundational principles of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**: placing products on the market with a **Secure-by-Default Configuration** and ensuring they are designed to **Limit Attack Surfaces**. While these are universal goals, their implementation depends on the nature of your product.
 
--   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** states that products must be "placed on the market with a secure-by-default configuration." Standards like **[ETSI EN 303 645](https://www.etsi.org/deliver/etsi_en/303600_303699/303645/02.01.01_60/en_303645v020101p.pdf)** also ban universal default passwords. This is a clear, non-negotiable requirement for market access.
--   **Protects Non-Expert Users:** Most users are not security experts. They will not change complex settings and will assume the product is secure out of the box. Secure-by-default protects them from being easy targets for automated attacks that scan for devices with weak or default credentials.
--   **Reduces Attack Surface:** Hardening is the practical application of attack surface reduction. By disabling unused ports and services, you give attackers fewer opportunities to gain a foothold on your device. Every open port is a potential vulnerability.
--   **Prevents Simple Mistakes:** A hardened configuration prevents simple but critical mistakes, like leaving a debug port open on a production device, which could give an attacker complete control.
+#### Secure-by-Default Configuration ([§ 1 (2)(b)][cra_annexI])
 
-Shipping a product in its most secure state by default is the most effective way to protect your customers and comply with the law. Any insecure setting should require a deliberate, informed action by the user to enable.
+This requirement is about ensuring the product's out-of-the-box state is as secure as possible.
+
+-   **Is there an exception?** Yes, but it's very specific. The BSI guideline for implementing a resettable, secure default configuration ([REQ_ER 3.1][bsi_tr_03183_p1]) includes the condition: "The TOE [product] can be configured." If your product is a fixed-function device with **no user-configurable settings**, then this requirement does not apply in the same way. Its configuration is not "default"; it is constant and immutable.
+
+-   **Example:** A simple industrial sensor that is pre-programmed at the factory with fixed network settings and has no web interface, user accounts, or other configurable parameters.
+
+#### Limiting Attack Surfaces ([§ 1 (2)(j)][cra_annexI])
+
+This requirement is about minimizing the number of entry points for an attacker. The BSI guideline ([REQ_ER 11.1][bsi_tr_03183_p1]) clarifies this means deactivating "interfaces and services not required for usage by default."
+
+-   **Is there an exception?** The exception is built into the rule. You are not required to disable interfaces that are **essential** for the product's core function. The task is to review every interface (physical ports like JTAG/UART, network services like SSH/HTTP) and disable any that are not strictly necessary for the intended use case.
+
+-   **Example:** An enterprise network device might require an SSH port to be open by default for initial administration. In this case, the port should not be disabled, but it **must** be secured (e.g., require a unique, strong password to be set on first login). Conversely, a consumer smart plug has no legitimate need for an open SSH port, so it must be disabled.
+
+#### The Bottom Line
+
+For any product that allows user configuration, a secure default state is **mandatory**. For any product with multiple physical or network interfaces, a systematic process of disabling non-essential services is **mandatory**. The burden is on the manufacturer to document which settings and interfaces are essential and to ensure that all others are disabled by default.
 
 ## 2. Key Hardening Practices
 

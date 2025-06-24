@@ -25,11 +25,27 @@ The output of your threat model is the primary evidence that you have fulfilled 
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes.** Of all the security activities in this handbook, this is the one that is most explicitly and unambiguously required by the law.
+**Yes.** Performing and documenting a cybersecurity risk assessment is the most explicit and foundational requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**. There are no exceptions for any 'product with digital elements'.
 
-The Cyber-Resilience Act is a **risk-based** regulation. The entire framework is built upon the manufacturer's duty to perform a risk assessment and then implement security controls that are appropriate to the identified risks.
+The CRA is a **risk-based** regulation. This means the risk assessment is the engine that drives all other security decisions. You cannot justify the security controls you choose to implement (or not implement) without first having a documented analysis of the risks.
 
-If you have not performed and documented a threat model, you have not met the most fundamental obligation of the CRA. There are no exceptions for connected devices, regardless of their size or perceived simplicity.
+However, the requirement to perform a risk assessment does not mean that every product requires a week-long, formal threat modeling workshop. The principle of **proportionality** applies: the effort you invest should be appropriate for the complexity and risk profile of your product.
+
+#### The Question is Scale, Not "If"
+
+The real question is not *if* you need to do this, but **"What is the appropriate scale for my product's risk assessment?"**
+
+-   **For a simple, low-risk product:**
+    -   *Example:* A battery-powered temperature sensor that reports readings over a local, non-IP network.
+    -   *Appropriate Effort:* The risk assessment might be a single, concise document. It would identify the key assets (the sensor reading, the firmware), list a few obvious threats (e.g., data spoofing, physical tampering), and conclude that because the data is not sensitive and the device cannot be used in wider attacks, the risk is low and minimal mitigations are required. **This is still a risk assessment.**
+
+-   **For a complex, high-risk product:**
+    -   *Example:* A network-connected medical device that handles patient data and can perform critical functions.
+    -   *Appropriate Effort:* The assessment would need to be far more comprehensive. It would likely involve formal threat modeling methodologies (like STRIDE), detailed data flow diagrams, a quantitative risk rating system, and a comprehensive risk register tracking mitigations for dozens of identified threats across the device, cloud, and mobile app.
+
+#### The Bottom Line
+
+You must perform a risk assessment. The threat model is the documented output of that assessment, and it serves as the cornerstone of your technical file. It is your key piece of evidence to justify your security design choices to regulators. The key is to scale the formality and depth of the exercise to match the actual risk of your product.
 
 ## 2. The Threat Modeling Process
 

@@ -23,14 +23,32 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** place
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes.** The ability to patch vulnerabilities after a product is in the hands of users is one of the most fundamental and explicitly stated requirements of the Cyber-Resilience Act. Without a secure update mechanism, you cannot fulfill the core obligation to address vulnerabilities "without delay."
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** makes the ability to address vulnerabilities a cornerstone of compliance. For nearly all modern connected products, this translates to a mandatory requirement for a secure update mechanism.
 
-The CRA does contain a narrow exception if implementing an update mechanism is "not technically feasible." However, for any modern connected product containing a microcontroller and a network interface, this is an extremely difficult argument to make. A manufacturer choosing this path would need an exceptionally strong, documented justification in their risk assessment, proving that:
-1.  The product's attack surface is so minimal and its function so simple that the likelihood of a vulnerability is negligible.
-2.  The impact of any potential vulnerability would be insignificant.
-3.  A secure, effective, and timely physical replacement or recall process is in place for the entire fleet.
+However, the regulations do not demand the impossible. The BSI's guideline ([REQ_ER 4.1][bsi_tr_03183_p1]) states that a product's components must be updateable, but makes an exception for components that cannot be updated due to "security architecture or technical limitations." This provides two specific, narrow paths for exemption:
 
-For the vast majority of products, this is an untenable position. A secure OTA update mechanism is not an optional feature; it is a foundational pillar of regulatory compliance and product responsibility.
+#### Exception 1: Technical Limitations
+
+This exception applies to highly constrained or simple devices where implementing an update mechanism is genuinely not viable. To claim this exemption, you would need to document a compelling case based on factors like:
+
+-   **Immutable Memory:** The device's firmware is stored in factory-programmed, read-only memory (ROM) and cannot be modified.
+-   **Extreme Resource Constraints:** The microcontroller lacks the necessary code space, RAM, or processing power to run an update client, perform cryptographic checks, or store a new image.
+-   **No Network Interface:** The device has no physical or wireless interface capable of receiving an update package. Note that this only exempts you from *Over-the-Air* updates. If the device has a USB port or other physical interface, you may still be required to provide updates via that channel.
+
+**Example:** A disposable, battery-powered temperature sensor that uses a tiny microcontroller to transmit readings over a simple, one-way radio and is then discarded.
+
+#### Exception 2: Security Architecture
+
+This applies to products where the *absence* of a remote update mechanism is a deliberate and critical security feature. This is most common in high-assurance, safety-critical, or air-gapped systems.
+
+-   **The Argument:** The risk of an attacker compromising the OTA update server and pushing a malicious update to the entire fleet is greater than the risk of an individual device being exploited by a local attacker.
+-   **The Prerequisite:** This is not a justification for shipping a product and forgetting about it. A manufacturer claiming this exemption **must** have a robust, documented, and secure process for *physical* updates or replacement. This could involve a technician securely applying updates via a direct connection or a full recall-and-replace program.
+
+**Example:** A medical device or industrial controller where remote changes are forbidden by safety regulations, and all software updates must be performed and validated on-site by a certified technician.
+
+#### The Bottom Line
+
+For the vast majority of mainstream connected products—from smart home devices to wearables to connected appliances—an OTA update mechanism is **mandatory**. These products are neither too simple to support updates nor too critical to forbid them. The burden of proof is on the manufacturer to provide a detailed and convincing justification in their technical file for why their product qualifies for one of these narrow exceptions.
 
 ## 2. Core Principles of a Secure OTA Process
 

@@ -26,14 +26,26 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** estab
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes, absolutely.** Providing a Software Bill of Materials is no longer a best practice; it is a legal requirement for placing a product on the EU market.
+The legal mandate from the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** is to "identify and document components, including by drawing up a software bill of materials." This makes the core question for a manufacturer not *if* they need to comply, but rather: **"Does my product contain software components?"**
 
--   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** explicitly states that manufacturers must "identify and document components, including by drawing up a software bill of materials." This is not optional.
--   **You Can't Secure What You Can't See:** Your product is built on hundreds, if not thousands, of third-party software components. When a new vulnerability like "Log4Shell" is discovered, an SBOM is the only way to know *instantly* if your product is affected. Without it, you are blind to supply chain risks.
--   **Enables Efficient Vulnerability Management:** An SBOM is the input for modern security tools. When combined with a VEX, it allows you to automate vulnerability tracking and communicate precisely to your customers which risks are real and which are false positives, saving everyone time and effort.
--   **Required By Customers:** Beyond EU law, major enterprise and government customers worldwide are now demanding SBOMs as a standard procurement requirement. Not having one is a significant commercial disadvantage.
+#### The SBOM Requirement
 
-In short, an SBOM is the foundational element of modern software security and supply chain risk management. It is a legal, security, and commercial necessity.
+For any product that runs firmware, uses a real-time operating system (RTOS), includes third-party libraries, or is built with modern development tools, the answer is unequivocally **yes**. An SBOM is mandatory.
+
+-   **What if we write all our own code?** The requirement is to document *components*. This includes your own internal modules, not just third-party dependencies. An SBOM is still the required format for this documentation. This practice is essential for tracking vulnerabilities, even in your own first-party code, and is a core part of a secure development lifecycle.
+-   **Is there any exception?** The only credible exception is for a product that contains **no software components at all**. This would be a very simple device where the logic is implemented entirely in a fixed-function hardware chip (an ASIC, or Application-Specific Integrated Circuit) with no associated firmware. For any 'product with digital elements' that uses a microcontroller or a processor, this is extremely rare.
+
+#### The VEX Requirement
+
+While the CRA does not explicitly use the term "VEX", it *does* require manufacturers to:
+1.  Address and remediate vulnerabilities "without delay".
+2.  Publicly disclose information about fixed vulnerabilities, their impact, and how to remediate them.
+
+A VEX document is the most efficient, standardized way to fulfill this communication requirement. It provides a machine-readable statement of a vulnerability's status, which is essential for managing the "noise" from security scanners.
+
+-   **The Bottom Line:** While you could theoretically communicate vulnerability status in an unstructured way (like a simple text file), a VEX stream is the industry best practice and the only scalable way to manage this process. For practical purposes, implementing a VEX workflow is a necessity for any manufacturer managing an SBOM.
+
+In short, for any product with software, an SBOM is a legal necessity. For any product with an SBOM, a VEX workflow is a practical necessity for efficient vulnerability management and communication.
 
 ## 2. SBOM: The Ingredients List
 
