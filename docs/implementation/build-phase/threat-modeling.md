@@ -1,18 +1,32 @@
 ---
-title: "Threat Modeling & Risk Assessment"
+title: "Threat Modeling"
 sidebar_label: "Threat Modeling"
 sidebar_position: 0
 tags: [threat-modeling, risk-assessment, stride, cra, secure-by-design]
 ---
-# Guide: Threat Modeling & Risk Assessment
+# Guide: Threat Modeling
 
-## 1. What is Threat Modeling?
+## 1. The 'Why': Threat Modeling as a Compliance Cornerstone
 
-**Threat Modeling** is a structured, systematic process for identifying potential security threats and vulnerabilities in a product, determining their risk, and defining mitigations. It is the foundational activity of a **Secure-by-Design** approach. Instead of waiting for vulnerabilities to be discovered after release, you proactively anticipate how an attacker might try to compromise your system.
+Threat modeling is not just a technical best practice; it is the foundational activity for building a secure and compliant product. The EU's **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** is built on the principle of risk management, making this process a core legal obligation for manufacturers.
 
-This is not just a best practice; it is a core requirement of the EU's cybersecurity legislation. The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** is built on the principle of risk management, and Germany's **[BSI TR-03183-1][bsi_tr_03183]** technical guideline explicitly requires manufacturers to perform and document a cybersecurity risk assessment ([REQ_RA 1][bsi_tr_03183]) and to build products that are "secure by design" ([REQ_ER 1][bsi_tr_03183]).
+### 1.1. The Regulatory Requirement
 
-The output of this process is the blueprint for your product's security architecture and the primary evidence for your technical file to demonstrate that you have built security in from the start.
+The legal basis for threat modeling is established in two key places:
+
+- **Cyber-Resilience Act ([Art. 13 § 2][cra_art13])**: The CRA mandates that manufacturers must "undertake a cybersecurity risk assessment" and include the documentation of this assessment in their technical file.
+- **BSI TR-03183-1 ([REQ_RA 1][bsi_tr_03183_p1])**: Germany's influential technical guideline, which provides a concrete interpretation of the CRA's essential requirements, explicitly requires a documented "risk assessment covering the product's intended and reasonably foreseeable use."
+
+The output of your threat model is the primary evidence that you have fulfilled this requirement. It provides the documented rationale for your security architecture and proves to regulators that you have built security in from the start.
+
+### 1.2. What is Threat Modeling?
+
+**Threat Modeling** is a structured, systematic process for fulfilling the risk assessment requirement. It involves:
+1.  Identifying potential security threats and vulnerabilities in a product.
+2.  Analyzing the risks they pose.
+3.  Defining and prioritizing mitigations to reduce that risk.
+
+Instead of waiting for vulnerabilities to be discovered after release, you proactively anticipate how an attacker might try to compromise your system. This is the core of a **Secure-by-Design** approach.
 
 ## 2. The Threat Modeling Process
 
@@ -53,4 +67,5 @@ To ensure your threat modeling process meets regulatory expectations, you should
 - [ ] **Documentation for Audit:** Is the output of your threat model (diagrams, threat list, mitigations) included in the product's technical file as evidence of your risk assessment process?
 
 <!-- Citations -->
-[bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183" 
+[cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

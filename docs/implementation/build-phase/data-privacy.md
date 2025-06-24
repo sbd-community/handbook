@@ -6,16 +6,22 @@ tags: [privacy, data-protection, gdpr, red, cra, secure-by-design]
 ---
 # Guide: Implementing Data Privacy & Secure Deletion
 
-## 1. Why Data Privacy Matters for Device Security
+## 1. The 'Why': Privacy as a Security Imperative
 
-While cybersecurity focuses on protecting the device, data privacy focuses on protecting the *user*. Modern regulations recognize that the two are inseparable. Poor security leads to data breaches, and a failure to respect user privacy can create security risks.
+While cybersecurity focuses on protecting the device from attack, data privacy focuses on protecting the *user's* information. Modern regulations recognize that the two are inseparable; good security is essential for privacy, and privacy-enhancing features are a core component of a secure product. Building these capabilities is not just about compliance; it's about building trust with your users.
 
-Several regulations mandate privacy-preserving features:
-- The **[Radio Equipment Directive (RED)](./../../standards/eu/red-overview.md)** requires that products incorporate safeguards to ensure that "personal data and privacy of the user and of the subscriber are protected" ([RED Art 3.3.e][red_dir]).
-- The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** includes requirements for data minimization.
-- **BSI TR-03183-1** contains explicit requirements for **data minimisation** ([REQ_ER 8][bsi_tr_03183]) and the **secure deletion of data** ([REQ_ER 14][bsi_tr_03183]).
+### 1.1. The Regulatory Requirement
 
-Building these capabilities is not just about compliance; it's about building trust with your users.
+Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guidelines:
+
+-   **Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])**: The CRA requires that data collection and processing is limited "to only what is necessary". The BSI guideline ([REQ_ER 8][bsi_tr_03183_p1]) reinforces this, stating data should only be processed for the product's intended purpose.
+-   **Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])**: The CRA mandates that manufacturers must "provide a function for users to securely and completely delete all personal and configuration data." This is mirrored in the BSI's requirement for a secure deletion mechanism ([REQ_ER 14][bsi_tr_03183_p1]).
+
+Beyond the CRA, the **[Radio Equipment Directive (RED)](./../../standards/eu/red-overview.md)** also requires that products incorporate safeguards to ensure that "personal data and privacy of the user... are protected" ([RED Art 3.3.e][red_dir]).
+
+### 1.2. What is Data Privacy by Design?
+
+Data Privacy by Design means integrating privacy-enhancing controls into the core architecture of your product from the beginning. It involves a commitment to two key principles: giving users control over their data, and minimizing the amount of data you collect in the first place.
 
 ## 2. Key Privacy-Enhancing Practices
 
@@ -50,4 +56,5 @@ To ensure your product's design respects user privacy and meets regulatory requi
 
 <!-- Citations -->
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
-[bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183" 
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

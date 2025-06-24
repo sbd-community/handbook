@@ -6,15 +6,28 @@ tags: [sbom, vex, spdx, cyclonedx, cra, supply-chain]
 ---
 # Guide: SBOM & VEX Workflows
 
-## 1. What are SBOM and VEX?
+## 1. The 'Why': Supply Chain Transparency as a Mandate
 
-A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of the software components and dependencies included in a product. It provides essential transparency into the software supply chain, enabling rapid identification of components affected by newly discovered vulnerabilities.
+A **Software Bill of Materials (SBOM)** is a formal inventory of the software components in a product. Providing an SBOM is a cornerstone of modern software supply chain security and a mandatory legal requirement under the EU's cybersecurity framework.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** legally mandates that manufacturers must create and maintain an SBOM for their products ([CRA Art. 13][cra_art13] referencing [CRA Annex I][cra_annexI]). This document must be provided to national authorities upon request. While an SBOM tells you *what* is in your software, a **Vulnerability Exploitability eXchange (VEX)** document tells you whether a known vulnerability in a component actually affects your product. Together, they are the cornerstones of modern vulnerability management.
+While an SBOM tells you *what* is in your software, a **Vulnerability Exploitability eXchange (VEX)** document tells you whether a known vulnerability in a component actually affects your product. Together, they are the key to efficient and transparent vulnerability management.
+
+### 1.1. The Regulatory Requirement
+
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** establishes the legal obligation for manufacturers to provide an SBOM:
+
+-   **Component Documentation ([Annex I, Part II, § 1][cra_annexI])**: The CRA requires manufacturers to "identify and document components, including by drawing up a software bill of materials".
+-   The BSI TR-03183-1 reinforces this, requiring a documented list of all integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
+-   Furthermore, the CRA mandates that this SBOM must be provided to national authorities upon request ([Art. 13][cra_art13]).
+
+### 1.2. What are SBOM and VEX?
+
+-   An **SBOM** is analogous to a list of ingredients on a food package. It provides a formal, machine-readable inventory of the software components and dependencies included in a product, enabling rapid identification of components affected by newly discovered vulnerabilities.
+-   A **VEX** document is a companion to an SBOM that provides an assertion from the manufacturer about the exploitability of a specific vulnerability in their product. This provides crucial context, allowing asset owners to filter out the noise from scanners and focus on real risks.
 
 ## 2. SBOM: The Ingredients List
 
-An SBOM is analogous to a list of ingredients on a food package. It should be comprehensive, accurate, and kept up-to-date.
+An SBOM should be comprehensive, accurate, and kept up-to-date.
 
 -   **What it contains:** A complete list of all software components, including open-source libraries, commercial software, and internal modules. For each component, it should list the supplier, version number, and a unique identifier (e.g., a PURL or CPE).
 -   **Standard Formats:** To be useful, SBOMs must be machine-readable. The two most widely adopted standards are:
@@ -58,3 +71,4 @@ To meet modern security requirements, your vulnerability management workflow sho
 <!-- Citations -->
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

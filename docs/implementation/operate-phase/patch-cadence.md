@@ -6,18 +6,28 @@ sidebar_position: 2
 ---
 # Guide: Patch Cadence & Rollback Strategy
 
-## 1. What is a Patch Management Policy?
+## 1. The 'Why': A Policy for Timely Vulnerability Response
 
-Having a secure OTA update mechanism is only the first step; you also need a clear, documented policy for *when* and *how* you will use it. A **Patch Management Policy** is a critical operational document that defines your organization's commitment to fixing vulnerabilities and delivering updates.
+Having a secure OTA update mechanism is only the first step; you also need a clear, documented policy for *when* and *how* you will use it. This policy is a critical operational document that defines your organization's commitment to fixing vulnerabilities and delivering updates, and it is a core legal requirement.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** legally requires manufacturers to handle vulnerabilities "without delay" and distribute security updates effectively ([CRA Annex I.II.2 & 4][cra_annexI]). A well-defined patch cadence is how you demonstrate compliance with this obligation.
+### 1.1. The Regulatory Requirement
 
-Your patch management policy should be a public-facing document that sets clear expectations for your customers. It should define:
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates that manufacturers must address and remediate vulnerabilities "without delay." A patch management policy is the primary way to demonstrate compliance. Key requirements include:
+
+-   **Handling Vulnerabilities ([Annex I, Part II, § 2][cra_annexI])**: Manufacturers must have processes to "handle and remediate vulnerabilities without delay".
+-   **Distribution of Updates ([Annex I, Part II, § 4][cra_annexI])**: Manufacturers must have a mechanism to "securely distribute updates".
+-   The BSI TR-03183-1 clarifies this, requiring a process for providing timely security updates ([REQ_ER 4][bsi_tr_03183_p1]) and a public policy for vulnerability handling ([REQ_VH 6][bsi_tr_03183_p1]).
+
+This policy should be public-facing, setting clear expectations for customers about support lifetime and response timelines.
+
+### 1.2. What is a Patch Management Policy?
+
+A patch management policy is a document that outlines your commitment to users. It defines:
 -   The types of updates you provide (e.g., security, feature).
 -   Your target timelines for addressing vulnerabilities based on severity.
 -   The product's support lifetime and end-of-life (EOL) date.
 
-This policy is not just a legal requirement; it's a key part of building trust with your users.
+This policy is not just a legal requirement; it's a key part of building trust.
 
 ## 2. Establishing a Risk-Based Cadence
 
@@ -57,3 +67,4 @@ Even with a phased rollout, a critical bug might slip through. You must have a p
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

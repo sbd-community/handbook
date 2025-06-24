@@ -6,13 +6,24 @@ tags: [secure-default, hardening, attack-surface, cra, secure-by-design]
 ---
 # Guide: Secure Configuration & Hardening
 
-## 1. What is Secure Configuration?
+## 1. The 'Why': Secure by Default as a Core Principle
 
-Secure Configuration, also known as hardening, is the process of designing and shipping a product in its most secure possible state by default. It is a direct implementation of the **principle of least privilege**: a product should only have the permissions, features, and network exposure that are absolutely essential for its core functionality.
+Secure Configuration, also known as hardening, is a foundational element of a Secure-by-Design strategy. It ensures a product is delivered to the customer in its most secure possible state out-of-the-box. This is not merely a best practice but a core legal requirement under the EU's cybersecurity framework.
 
-This is a non-negotiable requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, which mandates that products be "configured to be secure by default" ([CRA Annex I.I.2(c)][cra_annexI]) and "designed, developed and produced to limit attack surfaces, including external interfaces" ([CRA Annex I.I.2(j)][cra_annexI]). The BSI's technical guideline reinforces this with requirements for a secure default configuration ([REQ_ER 3][bsi_tr_03183]) and limited attack surfaces ([REQ_ER 11][bsi_tr_03183]).
+### 1.1. The Regulatory Requirement
+
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** explicitly mandates this approach through two key essential requirements in Annex I:
+
+-   **Secure by Default ([§ 1 (2)(b)][cra_annexI])**: The CRA requires that products be "placed on the market with a secure-by-default configuration." This is further detailed in the BSI's technical guideline as requiring a configuration that "can be fully restored via a reset function" ([REQ_ER 3][bsi_tr_03183_p1]).
+-   **Attack Surface Reduction ([§ 1 (2)(j)][cra_annexI])**: The act also requires products to be "designed, developed and produced to limit attack surfaces." The BSI guideline reinforces this, stating manufacturers must secure interfaces and disable unused ports and services ([REQ_ER 11][bsi_tr_03183_p1]).
 
 Any insecure setting should require a deliberate, explicit action from the user to enable, and only after being warned of the potential risks.
+
+### 1.2. What is Secure Configuration?
+
+Secure configuration is the practical implementation of the **principle of least privilege**. It is a systematic process to ensure a product only has the permissions, features, and network exposure that are absolutely essential for its core functionality.
+
+This involves reviewing every potential entry point for an attacker—both physical and digital—and disabling or restricting everything that is not critical for the product's intended use.
 
 ## 2. Key Hardening Practices
 
@@ -49,4 +60,4 @@ To ensure your product is sufficiently hardened to meet regulatory requirements,
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183" 
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

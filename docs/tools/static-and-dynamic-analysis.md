@@ -6,10 +6,26 @@ tags: [tools, sast, dast, security, scanning, open-source, commercial]
 ---
 # Tools: Static & Dynamic Analysis (SAST / DAST)
 
-**Static Application Security Testing (SAST)** and **Dynamic Application Security Testing (DAST)** are core components of a secure development lifecycle. These tools help manufacturers meet the **[Cyber-Resilience Act's](../standards/eu/cra-overview.md)** requirement to deliver products "without any known exploitable vulnerabilities" ([CRA Annex I.I.2(a)][cra_annexI]) by finding security flaws before a product is shipped.
+## 1. The 'Why': Automating Code Security for Compliance
 
--   **SAST** tools analyze source code, bytecode, or binaries without executing them. They are excellent at finding issues like SQL injection, buffer overflows, and insecure coding patterns early in the CI/CD pipeline.
--   **DAST** tools test a running application from the outside, simulating attacks to find vulnerabilities that only appear at runtime, such as authentication flaws or server misconfigurations.
+Automated security testing is a cornerstone of any modern, secure development lifecycle. Static and Dynamic Application Security Testing (SAST/DAST) tools provide the continuous, automated analysis needed to find and fix vulnerabilities early, making them essential for meeting the stringent requirements of the **[Cyber-Resilience Act (CRA)](../standards/eu/cra-overview.md)**.
+
+### 1.1. The Regulatory Requirement
+
+These tools directly help manufacturers provide evidence for several of the CRA's essential requirements as detailed in Annex I:
+
+-   **No Known Exploitable Vulnerabilities ([§ 1 (2)(a)][cra_annexI])**: This is the most direct application. SAST and DAST are the primary methods for automatically discovering vulnerabilities in your own code before the product is shipped.
+-   **Integrity Protection ([§ 1 (2)(f)][cra_annexI])**: SAST, in particular, helps ensure the integrity of code by identifying weaknesses and potential backdoors that could be used to tamper with software.
+-   **Exploit Mitigation ([§ 1 (2)(k)][cra_annexI])**: BSI TR-03183-1 requires that products "use and enable modern exploit mitigation techniques" ([REQ_ER 12][bsi_tr_03183_p1]). SAST tools can verify that compiler-level protections (like stack canaries and ASLR) have been correctly enabled during the build process.
+
+### 1.2. What are SAST & DAST?
+
+-   **SAST (Static Application Security Testing)** tools analyze source code, bytecode, or binaries without executing them. They are excellent at finding issues like SQL injection, buffer overflows, and insecure coding patterns early in the CI/CD pipeline.
+-   **DAST (Dynamic Application Security Testing)** tools test a running application from the outside, simulating attacks to find vulnerabilities that only appear at runtime, such as authentication flaws or server misconfigurations.
+
+## 2. SAST & DAST Tooling
+
+The following table provides a non-exhaustive list of popular open-source and commercial tools.
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
@@ -31,3 +47,4 @@ tags: [tools, sast, dast, security, scanning, open-source, commercial]
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

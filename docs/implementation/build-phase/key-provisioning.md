@@ -6,13 +6,26 @@ tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 ---
 # Guide: Key Provisioning & Storage
 
-## 1. What is Key Provisioning?
+## 1. The 'Why': Protecting Secrets for Data Confidentiality
 
-**Key Provisioning** is the process of securely generating, injecting, and managing cryptographic keys on a device. This process is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
+**Key Provisioning and Management** is the process of securely generating, injecting, and managing the cryptographic keys a device uses to perform secure operations. This is the bedrock of data protection for any connected device.
 
-While the device identity proves *who* a device is, the keys provisioned onto it are the tools it *uses* to perform cryptographic operations like encrypting data, verifying software signatures, and authenticating to a network.
+The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material.
 
-The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material. Regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandate the protection of integrity and confidentiality ([CRA Annex I.I.2(f)][cra_annexI]), which implicitly requires that cryptographic keys are protected from disclosure and modification.
+### 1.1. The Regulatory Requirement
+
+While regulations may not specify the exact method of key storage, they mandate outcomes that depend entirely on secure key management. The primary driver is:
+
+-   **Confidentiality Protection ([Annex I § 1 (2)(e)][cra_annexI])**: The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to protect the confidentiality of data "at-rest and in-transit using state-of-the-art encryption." The BSI TR-03183-1 reinforces this, requiring the protection of all "sensitive data and parameters" ([REQ_ER 6][bsi_tr_03183_p1]).
+
+State-of-the-art encryption is only effective if the keys themselves are protected from disclosure and modification. Therefore, a robust key provisioning and storage strategy is an implicit and non-negotiable requirement.
+
+### 1.2. What is Key Provisioning?
+
+Key Provisioning is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
+
+-   A **Device Identity** proves *who* a device is.
+-   **Provisioned Keys** are the tools the device *uses* to act on that identity (e.g., encrypting data, verifying software signatures, authenticating to a network).
 
 ## 2. The Key Management Lifecycle & Workflow
 
@@ -52,3 +65,4 @@ To meet the requirements of modern cybersecurity standards, your key management 
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

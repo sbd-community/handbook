@@ -6,11 +6,20 @@ sidebar_position: 4
 ---
 # Guide: Hardening the CI/CD Pipeline
 
-## 1. What is CI/CD Hardening?
+## 1. The 'Why': Secure Pipelines for Compliant Products
 
-A secure product begins with a secure development process. The CI/CD (Continuous Integration / Continuous Deployment) pipeline, which automates the building, testing, and deployment of software, is a high-value target for attackers. A compromised pipeline can be used to inject malicious code, steal credentials, or tamper with build artifacts.
+A secure product begins with a secure development and delivery process. The CI/CD (Continuous Integration / Continuous Deployment) pipeline, which automates how software is built, tested, and released, is a critical piece of infrastructure. Hardening this pipeline is essential for ensuring the integrity of your product and demonstrating compliance with modern cybersecurity regulations.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to follow secure development lifecycle practices, including implementing automated testing and ensuring the integrity of the final product ([CRA Annex I.II.1 & 6][cra_annexI]). Hardening your CI/CD pipeline is essential for meeting these requirements.
+### 1.1. The Regulatory Requirement
+
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates secure development lifecycle practices. A hardened CI/CD pipeline directly addresses several key requirements:
+
+- **No Known Exploitable Vulnerabilities ([Annex I § 1 (2)(a)][cra_annexI])**: The CRA requires products to be delivered "without known exploitable vulnerabilities." An automated scanning process in the CI/CD pipeline is the primary mechanism for identifying and blocking these vulnerabilities before release.
+- **Vulnerability Handling ([Annex I § 2 (2)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 clarifies this, stating that manufacturers must "continuously search for vulnerabilities in their own product" ([REQ_VH 2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this continuous search.
+
+### 1.2. What is CI/CD Hardening?
+
+CI/CD Hardening involves embedding automated security checks and controls directly into your build and release pipeline. It is the practical application of "DevSecOps," where security is a shared responsibility and integrated from the very beginning. A compromised pipeline can be used to inject malicious code, steal credentials, or tamper with build artifacts, making its security paramount.
 
 ## 2. "Shifting Left": Integrating Security Early
 
@@ -83,3 +92,4 @@ jobs:
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

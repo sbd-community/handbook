@@ -6,11 +6,20 @@ tags: [ota, secure-update, firmware, cra, integrity, rollback-protection]
 ---
 # Guide: Secure Over-the-Air (OTA) Updates
 
-## 1. What are Secure OTA Updates?
+## 1. The 'Why': OTA as a Critical Compliance Function
 
 A secure Over-the-Air (OTA) update mechanism is a fundamental requirement for any connected device. It is the only practical way to patch security vulnerabilities discovered after a product has been shipped. Without a robust OTA system, manufacturers cannot fulfill their legal and ethical responsibility to protect users from emerging threats.
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** explicitly mandates that manufacturers must provide security updates without delay and have a mechanism to distribute them securely ([CRA Annex I.II.2 & 4][cra_annexI]). Furthermore, the integrity of these updates must be cryptographically protected ([CRA Annex I.I.2(f)][cra_annexI]). This guide outlines the core principles for building a compliant and resilient OTA system.
+### 1.1. The Regulatory Requirement
+
+The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** places a heavy emphasis on the manufacturer's ability to provide timely and secure updates. A compliant OTA system is essential for meeting several key requirements:
+
+-   **Security Updates by Design ([Annex I § 1 (2)(c)][cra_annexI])**: The CRA mandates that products be designed to ensure that security updates "can be installed separately from functionality updates." The BSI TR-03183-1 clarifies this, requiring a mechanism for "timely, integrity-protected security updates" ([REQ_ER 4][bsi_tr_03183_p1]).
+-   **Integrity Protection ([Annex I § 1 (2)(f)][cra_annexI])**: The act requires manufacturers to protect the integrity of all code and data. For OTA, this means the update package itself must be cryptographically protected to prevent tampering.
+
+### 1.2. What are Secure OTA Updates?
+
+A secure OTA update process is a multi-stage defense system designed to deliver new firmware to a device without introducing new vulnerabilities. It is more than just transferring a file; it must defend against attacks at every step of the process, from the code signing server to the device's final boot.
 
 ## 2. Core Principles of a Secure OTA Process
 
@@ -59,3 +68,4 @@ To meet modern security requirements, your OTA update system should satisfy the 
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

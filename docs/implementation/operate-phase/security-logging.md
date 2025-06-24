@@ -6,13 +6,27 @@ tags: [logging, monitoring, audit, forensics, cra, secure-by-design]
 ---
 # Guide: Implementing Security Logging & Monitoring
 
-## 1. What is Security Logging?
+## 1. The 'Why': Logging as a Forensic Foundation
 
-**Security Logging** is the practice of recording security-relevant events that occur on a device and in its associated services. These logs provide a crucial audit trail that can be used to investigate security incidents, debug issues, and demonstrate compliance to auditors.
+**Security Logging** is the practice of recording security-relevant events that occur on a device. These logs provide a crucial audit trail for investigating security incidents, debugging issues, and demonstrating compliance.
 
-While the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** focuses more on prevention and response, the underlying best practices for forensics and incident analysis are explicitly required by other state-of-the-art guidelines. Germany's **[BSI TR-03183-1][bsi_tr_03183]** requires that products have the capability to create logs for security-relevant events ([REQ_ER 13][bsi_tr_03183]).
+While much of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** focuses on prevention, the ability to analyze events after they occur is a key part of state-of-the-art security practices. Without logs, you are operating blind when an incident happens.
 
-Effective logging allows you to answer the question "What happened?" after a security event has occurred. Without it, you are operating blind.
+### 1.1. The Regulatory Requirement
+
+The legal basis for logging comes from the CRA's essential requirements, which are designed to enable forensic analysis:
+
+-   **Security Logging ([Annex I § 1 (2)(l)][cra_annexI])**: The CRA requires that products "log all security-relevant events by default."
+-   This is reinforced by the BSI's technical guideline, which requires the capability to "create logs for security-relevant events" ([REQ_ER 13][bsi_tr_03183_p1]).
+
+Effective logging allows you to answer the critical question "What happened?" after a security event has occurred.
+
+### 1.2. What is Security Logging?
+
+Security logging involves systematically recording key events on a device and its associated services. This provides an audit trail that can be used to:
+-   Detect and respond to security incidents in real-time.
+-   Perform post-incident forensic analysis to understand an attacker's methods.
+-   Provide evidence of compliance to auditors and regulators.
 
 ## 2. Key Logging Practices
 
@@ -47,4 +61,5 @@ To ensure your logging mechanism is robust and meets best practices, ensure you 
 - [ ] **Documentation:** Is the logging mechanism, including what is logged and how logs are protected, documented in your technical file?
 
 <!-- Citations -->
-[bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183" 
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

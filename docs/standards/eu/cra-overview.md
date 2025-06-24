@@ -103,7 +103,7 @@ Both conditions must be met.
 
 ---
 
-## 3 CRA Requirements & How to Implement Them
+## 3 CRA Requirements & How to Implement Them {#annex-i-requirements}
 
 The CRA's mandatory security obligations are detailed in **[CRA Annex I][cra_annexI]**. This annex is split into two parts:
 - **Part I** defines the **product security requirements** that must be designed into the device from the start.
