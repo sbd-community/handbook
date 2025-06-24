@@ -111,9 +111,19 @@ The CRA's mandatory security obligations are detailed in **[CRA Annex I][cra_ann
 
 The following tables translate those legal requirements into a practical engineering checklist. To provide a more concrete technical interpretation, they also map each CRA clause to the corresponding requirement in Germany's influential **BSI TR-03183** technical guideline. Each row links to the relevant implementation guide in this handbook, providing a clear, actionable path from the legal text to the code and configuration required for compliance.
 
-### 3.1 Product security (Part I)
+### 3.1 Risk Assessment & Threat Modeling
 
-| Clause & links | Key engineering tasks | Implementation Guide |
+Before implementing specific security controls, the CRA requires manufacturers to perform a comprehensive cybersecurity risk assessment ([CRA Art. 13 § 2][cra_art13]). Threat modeling is the core practice for fulfilling this obligation. It is a structured process to identify, analyze, and mitigate potential threats and vulnerabilities early in the design phase.
+
+This proactive approach ensures that security is not an afterthought but a foundational part of the product's architecture. The outcomes of this threat model directly inform the security measures required in the subsequent sections.
+
+| Obligations | Engineering Tasks | Implementation Guides |
+|---|---|---|
+| **Cybersecurity risk assessment**<br/>[CRA Art. 13 § 2][cra_art13]<br/>[BSI TR-03183-1: REQ_RA 1][bsi_tr_03183_p1] | Identify and document cybersecurity risks and threats | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
+
+### 3.2 Product security (Annex I Part I)
+
+| Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
 | **No known exploitable vulns**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1] | Integrate CVE scanning into CI/CD pipeline | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
 | **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1] | Ship hardened defaults; provide a reset function | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
@@ -128,26 +138,26 @@ The following tables translate those legal requirements into a practical enginee
 | **Security logging**<br/>[Annex I § 1 (2)(l)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 13][bsi_tr_03183_p1] | Log security events with a user opt-out mechanism | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
 | **Secure data deletion**<br/>[Annex I § 1 (2)(m)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 14][bsi_tr_03183_p1] | Provide a mechanism to permanently wipe user data | [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
 
-### 3.2 Vulnerability handling (Part II)
+### 3.3 Vulnerability handling (Annex I Part II)
 
-| Clause & link | Key engineering task | Handbook playbook |
+| Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
-| **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>*See also: [Part 2][bsi_tr_03183_p2]* | Generate SBOM in CycloneDX format for each release | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1] | Provide timely, free security updates via a secure mechanism | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
+| **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>[BSI TR-03183-2 § 5.2][bsi_tr_03183_p2] | Generate SBOM in CycloneDX format for each release | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1] | Define an update policy and provide timely security updates via a secure mechanism | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 | **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Run regular penetration tests and code reviews | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Public vulnerability information**<br/>[Annex I Part II § 4][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 4][bsi_tr_03183_p1] | Publish security advisories for fixed vulnerabilities | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 5 & 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>*See also: [Part 3][bsi_tr_03183_p3]* | Publish a CVD policy and provide a contact address | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Public vulnerability information**<br/>[Annex I Part II § 4, 5][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.3][bsi_tr_03183_p3] | Publish information about fixed vulnerabilities | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Provide a channel for third parties to report vulnerabilities | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 
-### 3.3 Other Key Obligations
+### 3.4 Other Key Obligations
 
 Beyond the direct product and vulnerability requirements in Annex I, the CRA imposes several other crucial obligations on manufacturers regarding documentation, conformity, and reporting.
 
-| Obligation area | CRA trigger | Starts* | Key actions & evidence |
-|---|---|---|---|
-| **Technical documentation** | [CRA Art. 31][cra_art31] | 2027-12-11 | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. |
-| **Conformity & CE mark** | [CRA Art. 28][cra_art28]–[30][cra_art30] | 2027-12-11 | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). |
-| **Information to users**| [CRA Art. 13 § 18][cra_art13] + [CRA Annex II][cra_annexII] | 2027-12-11 | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. |
-| **ENISA reporting** | [CRA Art. 14][cra_art14] | **2026-09-11** | Notify ENISA within **24h** of an actively exploited vulnerability. Submit a mitigation report within **14 days**. **Evidence:** Incident logs. |
+| Obligations | Engineering Tasks | Implementation Guides |
+|---|---|---|
+| **Technical documentation**<br/>[CRA Art. 31][cra_art31] | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. | n/a |
+| **Conformity & CE mark**<br/>[CRA Art. 28][cra_art28]–[30][cra_art30] | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). | n/a |
+| **Information to users**<br/>[CRA Art. 13 § 18][cra_art13]<br/>[CRA Annex II][cra_annexII] | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md) |
+| **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Notify ENISA within **24h** of an actively exploited vulnerability. Submit a mitigation report within **14 days**. **Evidence:** Incident logs. | n/a |
 
 \* *Dates derive from [CRA Art. 71 § 2][cra_art71]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
 
