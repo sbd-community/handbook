@@ -6,32 +6,25 @@ tags: [documentation, user-guide, compliance, cra, annex-ii]
 ---
 # Guide: Creating Compliant User Documentation
 
-## 1. The 'Why': Documentation as a Legal Requirement
+## 1. Introduction to User Documentation
 
-Clear, comprehensive user documentation is no longer just a "nice-to-have" for a good user experience; it is a mandatory legal requirement. The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** provides a detailed list of information that manufacturers **must** provide to users to ensure they can install, use, and maintain the product securely.
+### 1.1. What is User Documentation?
 
-This documentation is a key part of the evidence that will be reviewed by market surveillance authorities.
+**User Documentation** refers to any information provided to the end-user to ensure they can install, use, and maintain a product securely. This includes printed quick-start guides, in-app help sections, and full online user manuals.
 
-### 1.1. The Regulatory Requirement
+Under modern regulations like the CRA, clear and comprehensive documentation is no longer just a "nice-to-have" for a good user experience; it is a mandatory legal deliverable. It serves as key evidence for market surveillance authorities and must be clear, concise, and easy for a non-technical user to understand.
 
-The primary legal basis for user documentation is **Annex II of the CRA**, which outlines the "Information and instructions to be provided to the user." The BSI's technical guideline TR-03183-1 provides a corresponding set of requirements ([REQ_UD 1-6][bsi_tr_03183_p1]) that mirror the CRA's list.
+### 1.2. The Regulatory Requirement
 
-Failing to provide this information means your product is not compliant.
+The primary legal basis for user documentation is **[Annex II of the CRA][cra_annexII]**, which outlines the "Information and instructions to be provided to the user." The BSI's technical guideline TR-03183-1 provides a corresponding set of requirements ([REQ_UD 1-6][bsi_tr_03183_p1]) that mirror the CRA's list.
 
-### 1.2. Do I Really Need to Do This?
+Failing to provide this information renders a product non-compliant.
 
-**Yes. This is not just about good customer service; it is a direct and detailed legal obligation.** The Cyber-Resilience Act is very specific about the information you **must** provide to users. Failing to do so makes your product non-compliant.
+### 1.3. Do I Really Need to Do This?
 
--   **It's a Legal Mandate:** **[CRA Annex II](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_II)** provides a checklist of information that must be included in user instructions. Market surveillance authorities will use this as a simple, objective check of your product's compliance. If the information is missing, your product fails.
--   **Empowers Users to Be Secure:** A secure product is only effective if it's used securely. Your documentation is the primary tool to educate users on how to configure the device, change default passwords, and understand their role in maintaining its security. An informed user is a more secure user.
--   **Manages Expectations and Liability:** Clearly stating the product's intended use and, crucially, its **support end-date** manages customer expectations and your own liability. It defines the period during which you are responsible for providing security updates.
--   **Provides Transparency:** Disclosing information about open-source components (via an SBOM) and how to report vulnerabilities builds trust and demonstrates a commitment to transparency, which is highly valued by both customers and the security community.
+**Yes. This is a non-negotiable legal requirement.** There are no use-cases where a connected product subject to the CRA can be placed on the market without the user documentation outlined in Annex II.
 
-Think of your user documentation as part of the product itself. It is a compliance deliverable that is just as important as any hardware or software feature.
-
-### 1.3. What Constitutes User Documentation?
-
-This refers to any information provided to the end-user, whether it's a printed quick-start guide, an in-app help section, or a full online user manual. The information must be clear, concise, and easy for a non-technical user to understand.
+Market surveillance authorities will use this Annex as a simple, objective checklist. If the information is missing, the product is non-compliant. The documentation is considered part of the product itself.
 
 ## 2. Information Required by CRA Annex II
 

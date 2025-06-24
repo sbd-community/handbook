@@ -6,11 +6,15 @@ tags: [privacy, data-protection, gdpr, red, cra, secure-by-design]
 ---
 # Guide: Implementing Data Privacy & Secure Deletion
 
-## 1. The 'Why': Privacy as a Security Imperative
+## 1. Introduction to Data Privacy
 
-While cybersecurity focuses on protecting the device from attack, data privacy focuses on protecting the *user's* information. Modern regulations recognize that the two are inseparable; good security is essential for privacy, and privacy-enhancing features are a core component of a secure product. Building these capabilities is not just about compliance; it's about building trust with your users.
+### 1.1. What is Data Privacy?
 
-### 1.1. The Regulatory Requirement
+Data privacy is the practice of protecting a user's personal information from unauthorized access, use, or disclosure. While cybersecurity focuses on defending the device itself against attacks, data privacy is centered on the user's rights and control over their data.
+
+It involves integrating privacy-enhancing controls into the product's core architecture from the start—a concept known as 'Privacy by Design'. This means giving users clear control over their information and, just as importantly, collecting only the data that is absolutely necessary for the product to function (data minimisation).
+
+### 1.2. The Regulatory Requirement
 
 Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guidelines:
 
@@ -19,20 +23,16 @@ Several regulations mandate privacy-preserving features. For the **[Cyber-Resili
 
 Beyond the CRA, the **[Radio Equipment Directive (RED)](./../../standards/eu/red-overview.md)** also requires that products incorporate safeguards to ensure that "personal data and privacy of the user... are protected" ([RED Art 3.3.e][red_dir]).
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
-Yes. In the modern regulatory landscape, data privacy is not optional. It's a fundamental user right and a legal obligation.
+Yes. In the modern regulatory landscape, data privacy is not optional. It's a fundamental user right and a legal obligation for any product that processes personal data.
 
 -   **Legal & Market Access Requirement:** Regulations like the EU's **[GDPR](https://gdpr.eu/)**, **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)**, and **[Radio Equipment Directive (RED)](../../standards/eu/red-overview.md)** mandate strong data protection. Non-compliance can lead to significant fines and, under the CRA, a block from the EU market.
 -   **It's a Security Issue:** Personal data is a primary target for attackers. The less data you hold, the lower the impact of a potential breach. Data minimisation isn't just a privacy principle; it's a security best practice.
 -   **Builds Customer Trust:** When users see that you respect their privacy—by asking for consent, minimizing data collection, and providing easy deletion tools—you build trust. In a competitive market, a strong privacy stance can be a key differentiator. Conversely, a single privacy-related incident can cause irreparable brand damage.
 -   **Reduces Future Risk:** Holding onto data you don't need creates a liability. It becomes a target for attackers and a compliance burden. By deleting data securely and minimizing what you collect, you reduce your long-term risk and maintenance overhead.
 
-In short, implementing robust data privacy and deletion features is essential for legal compliance, core to good security, and critical for building a trusted brand.
-
-### 1.3. What is Data Privacy by Design?
-
-Data Privacy by Design means integrating privacy-enhancing controls into the core architecture of your product from the beginning. It involves a commitment to two key principles: giving users control over their data, and minimizing the amount of data you collect in the first place.
+While a detailed threat model might inform *how* you implement specific privacy controls, it does not remove the fundamental requirement to provide them. If your product handles any personal or user-specific data, you need to implement these privacy measures.
 
 ## 2. Key Privacy-Enhancing Practices
 

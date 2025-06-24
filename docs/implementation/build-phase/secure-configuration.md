@@ -6,11 +6,15 @@ tags: [secure-default, hardening, attack-surface, cra, secure-by-design]
 ---
 # Guide: Secure Configuration & Hardening
 
-## 1. The 'Why': Secure by Default as a Core Principle
+## 1. Introduction to Secure Configuration
 
-Secure Configuration, also known as hardening, is a foundational element of a Secure-by-Design strategy. It ensures a product is delivered to the customer in its most secure possible state out-of-the-box. This is not merely a best practice but a core legal requirement under the EU's cybersecurity framework.
+### 1.1. What is Secure Configuration?
 
-### 1.1. The Regulatory Requirement
+Secure Configuration, also known as hardening, is the practical implementation of a Secure-by-Design strategy. It is a systematic process to ensure a product is delivered to the customer in its most secure possible state out-of-the-box by applying the principle of least privilege.
+
+This means reviewing every potential entry point for an attacker—both physical and digital—and disabling or restricting everything that is not absolutely essential for the product's core functionality.
+
+### 1.2. The Regulatory Requirement
 
 The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** explicitly mandates this approach through two key essential requirements in Annex I:
 
@@ -19,7 +23,7 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** expli
 
 Any insecure setting should require a deliberate, explicit action from the user to enable, and only after being warned of the potential risks.
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
 **Yes. This is one of the most fundamental principles of building a secure product and a direct legal requirement.** Shipping a product with an insecure default configuration is a major source of vulnerabilities and is explicitly forbidden by modern regulations.
 
@@ -29,12 +33,6 @@ Any insecure setting should require a deliberate, explicit action from the user 
 -   **Prevents Simple Mistakes:** A hardened configuration prevents simple but critical mistakes, like leaving a debug port open on a production device, which could give an attacker complete control.
 
 Shipping a product in its most secure state by default is the most effective way to protect your customers and comply with the law. Any insecure setting should require a deliberate, informed action by the user to enable.
-
-### 1.3. What is Secure Configuration?
-
-Secure configuration is the practical implementation of the **principle of least privilege**. It is a systematic process to ensure a product only has the permissions, features, and network exposure that are absolutely essential for its core functionality.
-
-This involves reviewing every potential entry point for an attacker—both physical and digital—and disabling or restricting everything that is not critical for the product's intended use.
 
 ## 2. Key Hardening Practices
 

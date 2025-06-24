@@ -6,11 +6,13 @@ tags: [identity, secure-by-design, build, root-of-trust, pki]
 
 # Guide: Establishing a Unique Device Identity
 
-## 1. The 'Why': Identity as the Foundation of Security
+## 1. Introduction to Unique Device Identity
 
-A **Unique Device Identity** is the foundation of all product security. It is a non-cloneable, permanent, and trustworthy identifier that is cryptographically bound to a single device. Establishing this identity is the most critical secret created during the manufacturing process and is a prerequisite for meeting the security requirements of modern regulations.
+### 1.1. What is a Unique Device Identity?
 
-### 1.1. The Regulatory Requirement
+A **Unique Device Identity** is a non-cloneable, permanent, and trustworthy cryptographic credential that is bound to a single physical device. It serves as the foundation of all product security by providing a way to prove that a device is genuine. Establishing this identity is the most critical secret created during the manufacturing process and is a prerequisite for meeting the security requirements of modern regulations.
+
+### 1.2. The Regulatory Requirement
 
 While regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** may not explicitly use the term "unique device identity," they mandate security outcomes that are impossible to achieve without it. The key requirement this guide addresses is:
 
@@ -18,7 +20,7 @@ While regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/eu/c
 
 A robust access control system can only function if it can reliably distinguish between legitimate and illegitimate devices and users. A unique, hardware-backed identity is the only way to provide this trust anchor.
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
 **Almost certainly, yes.** While the CRA mandates *access control* rather than "unique identity," a robust and compliant access control system is nearly impossible to build without a unique identity for each device.
 
@@ -27,10 +29,6 @@ Could you build a system where all your devices share a single password or API k
 For this reason, a shared-secret model is considered a major security anti-pattern and would likely fail a regulatory assessment for any non-trivial product. It violates the core "secure-by-design" principle. Your threat model would have to robustly justify why a compromise of one device would not impact any other, a justification that is virtually impossible to make with a shared secret.
 
 Establishing a unique, hardware-backed identity is the only practical way to ensure one compromised device does not compromise the entire system.
-
-### 1.3. What is a Unique Device Identity?
-
-A unique device identity is a cryptographic credential that proves a device is genuine. A mature security model distinguishes between two types of identity.
 
 ## 2. Core Concepts: Root vs. Operational Identity
 

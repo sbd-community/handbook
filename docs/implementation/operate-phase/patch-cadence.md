@@ -6,11 +6,18 @@ sidebar_position: 2
 ---
 # Guide: Patch Cadence & Rollback Strategy
 
-## 1. The 'Why': A Policy for Timely Vulnerability Response
+## 1. Introduction to Patch Management
 
-Having a secure OTA update mechanism is only the first step; you also need a clear, documented policy for *when* and *how* you will use it. This policy is a critical operational document that defines your organization's commitment to fixing vulnerabilities and delivering updates, and it is a core legal requirement.
+### 1.1. What is a Patch Management Policy?
 
-### 1.1. The Regulatory Requirement
+A **Patch Management Policy** is a public, documented commitment that defines *when* and *how* you will use your secure OTA update mechanism to respond to vulnerabilities. It is a critical operational document that outlines:
+-   The types of updates you provide (e.g., security, feature).
+-   Your target timelines for addressing vulnerabilities based on their severity (your "patch cadence").
+-   The product's support lifetime and its official end-of-life (EOL) date.
+
+This policy is not just a technical document; it's a key part of building customer trust and a core legal requirement.
+
+### 1.2. The Regulatory Requirement
 
 The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates that manufacturers must address and remediate vulnerabilities "without delay." A patch management policy is the primary way to demonstrate compliance. Key requirements include:
 
@@ -18,27 +25,18 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** manda
 -   **Distribution of Updates ([Annex I, Part II, § 4][cra_annexI])**: Manufacturers must have a mechanism to "securely distribute updates".
 -   The BSI TR-03183-1 clarifies this, requiring a process for providing timely security updates ([REQ_ER 4][bsi_tr_03183_p1]) and a public policy for vulnerability handling ([REQ_VH 6][bsi_tr_03183_p1]).
 
-This policy should be public-facing, setting clear expectations for customers about support lifetime and response timelines.
+This policy must be public-facing to set clear expectations for customers about support lifetime and response timelines.
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
 **Yes. A public, defined patch management policy is a direct legal requirement and a critical part of customer trust.** Simply having an OTA mechanism is not enough; you must have a documented process for how you will use it.
 
--   **It's a Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** requires that you handle vulnerabilities "without delay." A patch cadence based on severity is the only credible way to demonstrate to regulators that you have a systematic process for meeting this obligation. This policy will be a key piece of evidence in your technical file.
--   **It Builds Trust:** When customers (and security researchers) know you have a clear, time-bound commitment to fixing security issues, it builds enormous trust in your brand. A public policy shows maturity and a serious commitment to security.
--   **It Manages Expectations:** A clear policy, especially one with a defined End-of-Life (EOL) date, manages customer expectations. It sets the terms for your support window and prevents ambiguity about your responsibilities.
--   **It Drives Internal Process:** A public commitment to a patch cadence forces your internal teams to be prepared. It drives the creation of efficient internal processes for vulnerability triage, development, testing, and deployment, ensuring you can meet your own deadlines when a critical vulnerability appears.
+-   **Legal Mandate:** The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** requires that you handle vulnerabilities "without delay." A patch cadence based on severity is the only credible way to demonstrate to regulators that you have a systematic process for meeting this obligation.
+-   **Builds Trust:** When customers know you have a clear, time-bound commitment to fixing security issues, it builds enormous trust. A public policy shows maturity and a serious commitment to security.
+-   **Manages Expectations:** A clear policy, especially one with a defined End-of-Life (EOL) date, manages customer expectations and prevents ambiguity about your responsibilities.
+-   **Drives Internal Process:** A public commitment to a patch cadence forces your internal teams to be prepared, ensuring you can meet deadlines when a critical vulnerability appears.
 
-Without a defined policy, your response to a vulnerability will be ad-hoc, slow, and chaotic. A risk-based patch cadence provides the structure needed for a timely, compliant, and trustworthy response.
-
-### 1.3. What is a Patch Management Policy?
-
-A patch management policy is a document that outlines your commitment to users. It defines:
--   The types of updates you provide (e.g., security, feature).
--   Your target timelines for addressing vulnerabilities based on severity.
--   The product's support lifetime and end-of-life (EOL) date.
-
-This policy is not just a legal requirement; it's a key part of building trust.
+While your threat model will inform the *severity* of vulnerabilities, the requirement to have a policy for addressing them is universal for any product with updateable software under the CRA. Without a defined policy, your response will be ad-hoc, slow, and non-compliant.
 
 ## 2. Establishing a Risk-Based Cadence
 

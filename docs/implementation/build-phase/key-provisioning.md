@@ -6,13 +6,18 @@ tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 ---
 # Guide: Key Provisioning & Storage
 
-## 1. The 'Why': Protecting Secrets for Data Confidentiality
+## 1. Introduction to Key Provisioning & Storage
 
-**Key Provisioning and Management** is the process of securely generating, injecting, and managing the cryptographic keys a device uses to perform secure operations. This is the bedrock of data protection for any connected device.
+### 1.1. What is Key Provisioning & Storage?
 
-The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material.
+Key Provisioning and Management is the process of securely generating, injecting, and managing the cryptographic keys a device uses to perform secure operations. The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material.
 
-### 1.1. The Regulatory Requirement
+This process is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
+
+-   A **Device Identity** proves *who* a device is.
+-   **Provisioned Keys** are the tools the device *uses* to act on that identity (e.g., encrypting data, verifying software signatures, authenticating to a network).
+
+### 1.2. The Regulatory Requirement
 
 While regulations may not specify the exact method of key storage, they mandate outcomes that depend entirely on secure key management. The primary driver is:
 
@@ -20,7 +25,7 @@ While regulations may not specify the exact method of key storage, they mandate 
 
 State-of-the-art encryption is only effective if the keys themselves are protected from disclosure and modification. Therefore, a robust key provisioning and storage strategy is an implicit and non-negotiable requirement.
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
 **Yes, without question.** If your product uses cryptography for any reason—to encrypt communications, verify firmware updates, or protect data on the device—then securely managing the keys is an absolute requirement.
 
@@ -29,13 +34,6 @@ Your threat model must consider the risk of key extraction. What happens if an a
 -   If it's a **shared private key**, an attacker can sign malicious firmware updates that all your devices will trust and install.
 
 Storing keys insecurely (e.g., hardcoded in source code or in unprotected external flash) is a critical design flaw that would make it impossible to demonstrate compliance with the CRA's requirements for secure-by-design, confidentiality, and integrity. There is no credible risk assessment that could justify such a design for a connected product.
-
-### 1.3. What is Key Provisioning?
-
-Key Provisioning is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
-
--   A **Device Identity** proves *who* a device is.
--   **Provisioned Keys** are the tools the device *uses* to act on that identity (e.g., encrypting data, verifying software signatures, authenticating to a network).
 
 ## 2. The Key Management Lifecycle & Workflow
 

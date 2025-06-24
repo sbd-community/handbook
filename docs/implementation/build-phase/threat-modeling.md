@@ -6,35 +6,30 @@ tags: [threat-modeling, risk-assessment, stride, cra, secure-by-design]
 ---
 # Guide: Threat Modeling
 
-## 1. The 'Why': Threat Modeling as a Compliance Cornerstone
+## 1. Introduction to Threat Modeling
 
-Threat modeling is not just a technical best practice; it is the foundational activity for building a secure and compliant product. The EU's **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** is built on the principle of risk management, making this process a core legal obligation for manufacturers.
+### 1.1. What is Threat Modeling?
 
-### 1.1. The Regulatory Requirement
+**Threat Modeling** is a structured, systematic process for identifying potential security threats to a system, analyzing the risks they pose, and defining mitigations to reduce that risk. Instead of waiting for vulnerabilities to be discovered after release, you proactively anticipate how an attacker might try to compromise your product.
+
+It is the foundational activity for building a secure product and the practical implementation of a risk assessment. The process provides the rationale for your security architecture and proves to regulators that you have built security in from the start.
+
+### 1.2. The Regulatory Requirement
 
 The legal basis for threat modeling is established in two key places:
 
-- **Cyber-Resilience Act ([Art. 13 § 2][cra_art13])**: The CRA mandates that manufacturers must "undertake a cybersecurity risk assessment" and include the documentation of this assessment in their technical file.
-- **BSI TR-03183-1 ([REQ_RA 1][bsi_tr_03183_p1])**: Germany's influential technical guideline, which provides a concrete interpretation of the CRA's essential requirements, explicitly requires a documented "risk assessment covering the product's intended and reasonably foreseeable use."
+-   **Cyber-Resilience Act ([Art. 13 § 2][cra_art13])**: The CRA mandates that manufacturers must "undertake a cybersecurity risk assessment" and include the documentation of this assessment in their technical file.
+-   **BSI TR-03183-1 ([REQ_RA 1][bsi_tr_03183_p1])**: Germany's influential technical guideline, which provides a concrete interpretation of the CRA's essential requirements, explicitly requires a documented "risk assessment covering the product's intended and reasonably foreseeable use."
 
-The output of your threat model is the primary evidence that you have fulfilled this requirement. It provides the documented rationale for your security architecture and proves to regulators that you have built security in from the start.
+The output of your threat model is the primary evidence that you have fulfilled this requirement.
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
 **Yes.** Of all the security activities in this handbook, this is the one that is most explicitly and unambiguously required by the law.
 
 The Cyber-Resilience Act is a **risk-based** regulation. The entire framework is built upon the manufacturer's duty to perform a risk assessment and then implement security controls that are appropriate to the identified risks.
 
 If you have not performed and documented a threat model, you have not met the most fundamental obligation of the CRA. There are no exceptions for connected devices, regardless of their size or perceived simplicity.
-
-### 1.3. What is Threat Modeling?
-
-**Threat Modeling** is a structured, systematic process for fulfilling the risk assessment requirement. It involves:
-1.  Identifying potential security threats and vulnerabilities in a product.
-2.  Analyzing the risks they pose.
-3.  Defining and prioritizing mitigations to reduce that risk.
-
-Instead of waiting for vulnerabilities to be discovered after release, you proactively anticipate how an attacker might try to compromise your system. This is the core of a **Secure-by-Design** approach.
 
 ## 2. The Threat Modeling Process
 

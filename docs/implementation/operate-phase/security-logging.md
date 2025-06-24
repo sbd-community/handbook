@@ -6,13 +6,18 @@ tags: [logging, monitoring, audit, forensics, cra, secure-by-design]
 ---
 # Guide: Implementing Security Logging & Monitoring
 
-## 1. The 'Why': Logging as a Forensic Foundation
+## 1. Introduction to Security Logging
 
-**Security Logging** is the practice of recording security-relevant events that occur on a device. These logs provide a crucial audit trail for investigating security incidents, debugging issues, and demonstrating compliance.
+### 1.1. What is Security Logging?
+
+**Security Logging** is the practice of systematically recording security-relevant events that occur on a device and its associated services. These logs provide a crucial audit trail that can be used to:
+-   Detect and respond to security incidents in real-time.
+-   Perform post-incident forensic analysis to understand an attacker's methods.
+-   Provide evidence of compliance to auditors and regulators.
 
 While much of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** focuses on prevention, the ability to analyze events after they occur is a key part of state-of-the-art security practices. Without logs, you are operating blind when an incident happens.
 
-### 1.1. The Regulatory Requirement
+### 1.2. The Regulatory Requirement
 
 The legal basis for logging comes from the CRA's essential requirements, which are designed to enable forensic analysis:
 
@@ -21,7 +26,7 @@ The legal basis for logging comes from the CRA's essential requirements, which a
 
 Effective logging allows you to answer the critical question "What happened?" after a security event has occurred.
 
-### 1.2. Do I Really Need to Do This?
+### 1.3. Do I Really Need to Do This?
 
 **Yes. If you can't see what's happening on your devices, you can't defend them.** Security logging is a fundamental requirement for incident detection and response, and it is explicitly mandated by law.
 
@@ -31,13 +36,6 @@ Effective logging allows you to answer the critical question "What happened?" af
 -   **Provides a Forensic Trail:** In the event of a serious breach, regulators and law enforcement will require evidence. Your logs are a critical part of this evidence trail, demonstrating that you had measures in place and helping to identify the attackers.
 
 Without security logs, you are blind to both ongoing attacks and the details of past incidents. Implementing robust logging is a non-negotiable part of building a defensible product.
-
-### 1.3. What is Security Logging?
-
-Security logging involves systematically recording key events on a device and its associated services. This provides an audit trail that can be used to:
--   Detect and respond to security incidents in real-time.
--   Perform post-incident forensic analysis to understand an attacker's methods.
--   Provide evidence of compliance to auditors and regulators.
 
 ## 2. Key Logging Practices
 
