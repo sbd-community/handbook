@@ -2,25 +2,28 @@
 title: "Threat Modeling"
 sidebar_label: "Threat Modeling"
 sidebar_position: 1
-tags: [tools, threat-modeling, stride, secure-by-design, open-source, commercial]
+tags: [tools, threat-modeling, stride, security, open-source, commercial]
 ---
 # Tools: Threat Modeling
 
-**[Threat Modeling](../implementation/build-phase/threat-modeling.md)** is a systematic process for identifying and mitigating security risks early in the development lifecycle. While it can be done with a simple whiteboard, dedicated tools can help structure the process, create professional data flow diagrams (DFDs), and maintain a living document of your product's security architecture.
+## 1. Introduction
 
-These tools facilitate the key steps of threat modeling: defining what you're building, identifying what can go wrong (threats), and deciding what to do about it (mitigations). This is the first and most critical step in creating a risk assessment, as required by **[CRA Annex I][cra_annexI]**.
+Threat modeling is a structured process for identifying and prioritizing potential threats and vulnerabilities in a system. It is a proactive security practice that helps inform design decisions and security testing efforts.
+
+For a detailed explanation of how threat modeling fits into a compliant development process and what is required, see our guide on **[Threat Modeling & Risk Analysis](../implementation/build-phase/threat-modeling.md)**.
+
+## 2. Tooling Landscape
+
+The following tools help teams create, manage, and collaborate on threat models. They provide graphical interfaces for building data flow diagrams (DFDs) and systematically identifying threats using methodologies like STRIDE.
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
-| [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) | 🐙 | An open-source, cross-platform threat modeling tool from OWASP. It's a great starting point for teams new to the practice. |
-| [Microsoft Threat Modeling Tool](https://aka.ms/tmt) | 🐙 | A free tool from Microsoft that uses the STRIDE methodology to guide users through the process of creating and analyzing threat models. Runs on Windows only. |
-| [Threagile](https://threagile.io/) | 🐙 | An open-source, agile threat modeling toolkit that uses a declarative approach, defining the architecture as a YAML file and auto-generating diagrams and threats. |
-| [IriusRisk](https://www.iriusrisk.com/) | 💰 | A commercial threat modeling platform that automates the process and integrates with development tools like Jira and version control systems. |
-| [Tutum](https://www.tutum.com/) | 💰 | A commercial platform focused on collaborative threat modeling, designed to integrate into the entire SDLC. |
+| [Microsoft Threat Modeling Tool](https://aka.ms/threatmodelingtool) | 🐙 | A free, downloadable tool for finding threats in the design phase of software projects. It uses the STRIDE methodology and is ideal for Windows-based systems. |
+| [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) | 🐙 | An open-source, web-based threat modeling tool from OWASP. It provides a graphical interface for creating threat models and follows the STRIDE methodology. |
+| [IriusRisk](https://www.iriusrisk.com/) | 🐙💰 | An open-source and commercial platform that automates the threat modeling process. It integrates with development tools to create a living threat model that evolves with the product. |
+| [Threagile](https://threagile.io/) | 🐙 | An open-source, agile threat modeling toolkit that uses a YAML-based definition file to automatically generate threat models and diagrams. |
+| [Tutum](https://www.tutum.tech) | 💰 | A commercial, collaborative threat modeling platform designed for enterprise teams. It focuses on usability and integration with the SDLC. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-<!-- Citations -->
-[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements" 

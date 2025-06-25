@@ -6,11 +6,15 @@ tags: [pki, key-management, hsm, certificate-authority, cra, iec62443, tools, ce
 ---
 # Tools: PKI & Key Management
 
-A **Public Key Infrastructure (PKI)** is the backbone for managing the lifecycle of digital certificates that enable secure communication and authentication. For a product manufacturer, establishing or integrating with a PKI is essential for securely provisioning device identities.
+## 1. Introduction
 
-While a **[Hardware Root of Trust](./hardware-root-of-trust-and-provisioning.md)** anchors identity in silicon, a PKI is what allows you to issue, manage, and revoke the operational certificates your devices will use in the field, often via automated protocols like SCEP, EST, or ACME.
+A Public Key Infrastructure (PKI) is the backbone for managing the lifecycle of digital certificates that enable secure communication and authentication. For a product manufacturer, establishing or integrating with a PKI is essential for securely provisioning device identities.
 
-The following platforms provide the infrastructure needed to issue and manage device certificates at scale.
+For a detailed explanation of the compliance requirements for key management, see our guide on **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**.
+
+## 2. Tooling Landscape
+
+The following platforms provide the infrastructure needed to issue and manage device certificates at scale, often via automated protocols like SCEP, EST, or ACME.
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |

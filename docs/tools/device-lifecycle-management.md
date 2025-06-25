@@ -1,27 +1,33 @@
 ---
 title: "Device Lifecycle Management"
-sidebar_label: "Device Lifecycle Mgmt"
-sidebar_position: 7
-tags: [tools, onboarding, bootstrapping, device-management, iot, cloud, dps, monitoring]
+sidebar_label: "Device Lifecycle Management"
+sidebar_position: 11
+tags: [tools, dlm, device-management, iot, security, cra]
 ---
 # Tools: Device Lifecycle Management
 
-Device lifecycle management platforms are essential for securely operating a fleet of connected devices at scale. They provide the infrastructure to handle key operational phases, from initial secure onboarding to ongoing monitoring, updates, and eventual decommissioning.
+## 1. Introduction
 
-These platforms are crucial for meeting the continuous vulnerability management and update requirements of regulations like the [CRA][cra_art13].
+Device Lifecycle Management (DLM) platforms provide the cloud-based infrastructure to manage a fleet of connected devices from initial activation through to end-of-life. They are a crucial component for meeting ongoing compliance and operational security requirements.
+
+For a detailed overview of the different phases of a product's lifecycle, see our **[Implementation Guides](../implementation/index.md)**.
+
+## 2. Tooling Landscape
+
+These platforms typically offer a suite of services, including device monitoring, remote access, OTA updates, and security log collection. They are the operational backbone that enables a manufacturer to fulfill its post-market obligations under regulations like the CRA.
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
-| [Memfault](https://memfault.com/) | 💰 | A commercial platform providing device observability, remote debugging, and OTA update management for IoT fleets running on RTOS or Linux. |
-| [Golioth](https://golioth.io/) | 💰 | A commercial cloud platform for IoT fleets, offering device management, data routing, and OTA updates, with a strong focus on Zephyr RTOS. |
-| [QuarkLink](https://www.cryptoquantique.com/products/quarklink/) | 💰 | An end-to-end, hardware-agnostic IoT security platform. It provides secure provisioning, device-to-cloud onboarding, and full lifecycle management, including certificate rotation and OTA updates. |
-| [Thistle Technologies](https://thistle.tech/) | 💰 | A commercial security platform that provides a device control center for fleet monitoring and management, alongside secure boot and update services. |
-| [Pelion](https://pelion.com/) | 💰 | An Arm-backed platform providing secure device onboarding, lifecycle management, and firmware updates for a wide range of IoT devices. |
+| [Golioth](https://golioth.io/) | 💰 | An IoT device management cloud that provides a suite of services for connecting, managing, and collecting data from a fleet of devices. |
+| [QuarkLink](https://www.cryptoquantique.com/products/quarklink/) | 💰 | An end-to-end IoT security platform providing secure provisioning, onboarding, and full lifecycle management. |
+| [Memfault](https://memfault.com/) | 💰 | An observability platform for IoT that combines remote debugging, monitoring, and OTA update capabilities to help teams proactively manage device health and security. |
+| [Balena](https://www.balena.io/) | 💰 | A complete IoT fleet management platform that uses a container-based approach to deploy and manage applications on connected Linux devices. |
+| [AWS IoT Device Management](https://aws.amazon.com/iot-device-management/) | 💰 | A suite of services from Amazon Web Services for registering, organizing, monitoring, and remotely managing IoT devices at scale. |
+| [Azure IoT Hub](https://azure.microsoft.com/en-us/products/iot-hub) | 💰 | Microsoft's cloud service for bi-directional communication between IoT applications and the devices it manages. Includes device management capabilities. |
+| [ThingsBoard](https://thingsboard.io/) | 🐙💰 | An open-source IoT platform for data collection, processing, visualization, and device management. It offers both a community edition and commercial options. |
+| [Thistle Technologies](https://thistle.tech/) | 💰 | A commercial security platform providing a device control center for fleet monitoring and management. |
+| [Pelion](https://pelion.com/) | 💰 | An Arm-backed platform providing secure device onboarding and lifecycle management for a wide range of IoT devices. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-<!-- Citations -->
-[cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
- 

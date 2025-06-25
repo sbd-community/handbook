@@ -6,9 +6,15 @@ tags: [tools, hardware, root-of-trust, rot, puf, provisioning, secure-element]
 ---
 # Tools: Hardware Root of Trust & Provisioning
 
-A **Hardware Root of Trust (RoT)** is a secure, immutable foundation within a device's hardware that the rest of the system can rely on. It's the cornerstone of a zero-trust architecture, providing the basis for critical security functions like secure boot and cryptographic operations.
+## 1. Introduction
 
-The tools and platforms in this category help manufacturers either create this identity at the point of manufacture or leverage hardware that already contains a secure identity. This process is fundamental to meeting the device integrity requirements of regulations like the [CRA][cra_annexI] and [IEC 62443][iec_62443].
+A Hardware Root of Trust (RoT) is a secure, immutable foundation within a device's hardware that the rest of the system can rely on. It is the cornerstone of a zero-trust architecture, providing the basis for critical security functions like secure boot and cryptographic operations.
+
+For a detailed explanation of the compliance requirements that a Hardware RoT helps to meet, see our guide on **[Unique Device Identity](../implementation/build-phase/unique-device-identity.md)**.
+
+## 2. Tooling Landscape
+
+The tools and platforms in this category help manufacturers either create this identity at the point of manufacture or leverage hardware that already contains a secure identity.
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
@@ -21,7 +27,3 @@ The tools and platforms in this category help manufacturers either create this i
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-<!-- Citations -->
-[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[iec_62443]: ../../docs/standards/global/iec62443-overview.md
