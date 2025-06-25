@@ -69,7 +69,17 @@ This is one of the most critical requirements of all modern IoT regulations.
 - **Force User Change:** The device must force the user to set a strong, unique password during the initial setup process.
 - **Unique Per-Device:** If a password is required for initial access (e.g., printed on a label), it must be unique for every single device produced.
 
-## 3. Compliance Checklist
+## 3. Accelerating Compliance with Tooling
+
+While hardening is a manual process of making good design decisions, automated tools are essential for efficiently *verifying* that the configuration is secure. Integrating these tools into your development process can make compliance much easier to demonstrate.
+
+-   **Network Scanners:** Instead of manually checking open ports, an automated scanner like the industry-standard [Nmap](https://nmap.org/) can quickly and reliably identify all exposed network services.
+-   **Binary Analysis Tools:** Manually inspecting compiled firmware for vulnerabilities is extremely difficult. A simple utility like `strings` can find obvious hardcoded credentials, while more advanced tools like [Binwalk](https://github.com/ReFirmLabs/binwalk) can extract the entire filesystem from a firmware image for deeper, automated inspection.
+-   **Configuration Checklists:** Rather than creating a hardening checklist from scratch, you can leverage comprehensive, peer-reviewed frameworks like the [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks/) as a baseline for your device's configuration.
+
+For more details, see the tools pages for [Configuration & Hardening](../../tools/configuration-and-hardening.md) and [Firmware & Binary Analysis](../../tools/firmware-and-binary-analysis.md).
+
+## 4. Compliance Checklist
 
 To ensure your product is sufficiently hardened to meet regulatory requirements, ensure you can answer "yes" to the following:
 

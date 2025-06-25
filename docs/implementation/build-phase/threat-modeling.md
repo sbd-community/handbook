@@ -74,7 +74,17 @@ For each high or medium-priority threat, define a specific technical control or 
 - **Threat:** An attacker can read the firmware from the external flash chip. (Information Disclosure)
 - **Mitigation:** Encrypt the firmware on the flash storage. This mitigation now becomes a security requirement for your product.
 
-## 3. Compliance Checklist
+## 3. Accelerating Compliance with Tooling
+
+While threat modeling can be done with a whiteboard and a spreadsheet, using a dedicated tool can make the process more systematic, repeatable, and easier to document for compliance purposes.
+
+-   **Why use a tool?** Specialized tools help structure the process of creating data flow diagrams (DFDs), provide a framework for enumerating threats, and generate reports that can be used as evidence in your technical file.
+-   **What do they do?** A widely-used free example is the [Microsoft Threat Modeling Tool](https://aka.ms/tmt), which formalizes the process of creating diagrams and identifying threats using the STRIDE methodology.
+-   **The Benefit:** Using a dedicated tool is especially helpful for complex products, as it ensures the threat model becomes a living document that can be maintained and updated over time, rather than a one-off exercise.
+
+For more specific examples, see the [Threat Modeling Tools](../../tools/threat-modeling-tools.md) page.
+
+## 4. Compliance Checklist
 
 To ensure your threat modeling process meets regulatory expectations, you should be able to answer "yes" to the following:
 

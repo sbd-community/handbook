@@ -79,7 +79,16 @@ Simply collecting logs is not enough. You must have a process for reviewing them
 - **Automated Alerts:** Configure your remote logging system to generate automatic alerts for suspicious event patterns (e.g., more than 10 failed login attempts in one minute).
 - **Periodic Review:** Have a documented process for periodically reviewing logs for unusual activity.
 
-## 3. Compliance Checklist
+## 3. Accelerating Compliance with Tooling
+
+While a basic logging system can be built with simple libraries, leveraging dedicated tools for log collection and analysis can provide a much more robust and scalable solution, making it easier to meet compliance goals for monitoring and forensics.
+
+-   **On-Device Logging:** Instead of just printing text, a structured logging agent like [Fluentd](https://www.fluentd.org/) can parse, buffer, and reliably forward log events from your device.
+-   **Log Aggregation & Analysis:** Rather than building a log analysis system from scratch, a full-featured open-source Security Information and Event Management (SIEM) platform like [Wazuh](https://wazuh.com/) provides a ready-made solution for collecting, searching, and generating alerts from log data across your entire fleet.
+
+For specific examples of tools, see the [Security Logging & Monitoring](../../tools/security-logging-and-monitoring.md) page.
+
+## 4. Compliance Checklist
 
 To ensure your logging mechanism is robust and meets best practices, ensure you can answer "yes" to the following:
 

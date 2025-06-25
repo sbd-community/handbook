@@ -65,7 +65,17 @@ A secure pipeline is built in layers, with security controls applied at each sta
 | **Artifact Storage**| **Signing & Attestation** | Cryptographically sign all build artifacts to ensure their integrity. Use tools like `sigstore` to generate attestations about how the artifact was built. |
 | | **Secure Repository** | Store signed artifacts in a secure, access-controlled repository (e.g., Artifactory, GitHub Packages). |
 
-## 4. Example Secure Workflow (GitHub Actions)
+## 4. Accelerating Compliance with Tooling
+
+A hardened pipeline is created by integrating various security tools. While you could manually run these checks, automating them in the CI/CD pipeline is the only scalable way to ensure they are performed consistently and to provide an auditable trail for compliance.
+
+-   **Static & Dynamic Analysis (SAST/DAST):** Instead of relying solely on manual code reviews, automated tools can continuously scan for bugs. A powerful open-source example that integrates directly into source control is [GitHub CodeQL](https://codeql.github.com/).
+-   **Software Composition Analysis (SCA):** Manually tracking third-party dependencies is impossible at scale. An SCA tool like [Trivy](https://github.com/aquasecurity/trivy) can automatically scan for known vulnerabilities and generate the required SBOM.
+-   **Secret Scanning:** Automated tools can scan every commit to ensure no developer accidentally includes cryptographic keys, passwords, or other secrets in the codebase.
+
+For a detailed list of tools, see the pages for [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) and [SBOM & Supply Chain Security](../../tools/sbom-and-supply-chain-security.md).
+
+## 5. Example Secure Workflow (GitHub Actions)
 
 ```yaml
 jobs:
@@ -102,7 +112,7 @@ jobs:
           fail-on: 'critical' # Fail build if critical vulns found
 ```
 
-## 5. Compliance Checklist
+## 6. Compliance Checklist
 
 - [ ] **Branch Protection:** Are all production branches protected with mandatory reviews and passing checks?
 - [ ] **Automated Scanning:** Are SAST, SCA, and secret scanning integrated into your pipeline and run on every pull request?

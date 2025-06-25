@@ -68,18 +68,24 @@ A VEX document is a companion to an SBOM. It provides an assertion from the manu
     -   `under_investigation`: The manufacturer is analyzing the impact of the vulnerability.
 -   **Why it's essential:** Vulnerability scanners often produce thousands of alerts. A VEX document provides crucial context, allowing asset owners to filter out the noise and focus on real, exploitable risks. This dramatically reduces alert fatigue and prioritizes remediation efforts.
 
-## 4. An Automated SBOM & VEX Workflow
+## 4. The SBOM & VEX Workflow
 
-Manually creating and managing these documents is not scalable. They should be integrated directly into your CI/CD pipeline.
+Manually creating and managing these documents is not scalable. They should be integrated directly into your CI/CD pipeline. The workflow typically involves:
 
-| Step | Action | Popular Tools |
-| :--- | :--- | :--- |
-| **1. Generate SBOM** | In your CI pipeline, after a build is complete, use an SCA tool to scan the build artifact and generate an SBOM in a standard format (e.g., CycloneDX JSON). | `Trivy`, `Syft`, `tern` |
-| **2. Scan for Vulns** | Feed the generated SBOM into a vulnerability scanner. This tool compares the component list against public vulnerability databases (NVD, GHSA, etc.). | `Trivy`, `Grype` |
-| **3. Triage & Create VEX** | When a new vulnerability is found, the security team investigates its exploitability. Based on the analysis, they create or update a VEX document asserting the status. | `OpenVEX` tools |
-| **4. Distribute & Monitor** | The SBOM is stored as a build artifact and included in the product's technical documentation. The VEX is published to customers. The process repeats for every new build and every new vulnerability disclosure. | Artifactory, Company Security Advisories |
+1.  **Generate SBOM:** In your CI pipeline, after a build is complete, use a Software Composition Analysis (SCA) tool like [Syft](https://github.com/anchore/syft) to scan the build artifact and generate an SBOM in a standard format (e.g., CycloneDX JSON).
+2.  **Scan for Vulnerabilities:** Feed the generated SBOM into a vulnerability scanner, such as [Grype](https://github.com/anchore/grype). This tool compares the component list against public vulnerability databases (NVD, GHSA, etc.).
+3.  **Triage & Create VEX:** When a new vulnerability is found, the security team investigates its exploitability. Based on the analysis, they create or update a VEX document asserting the status.
+4.  **Distribute & Monitor:** The SBOM is stored as a build artifact and included in the product's technical documentation. The VEX is published to customers. The process repeats for every new build and every new vulnerability disclosure.
 
-## 5. Compliance Checklist
+## 5. Accelerating Compliance with Tooling
+
+While it is possible to manually create an SBOM, this is not a scalable or reliable approach. Using automated tools is the only practical way to ensure your SBOM is accurate, up-to-date, and integrated into your development process.
+
+These tools, often called **Software Composition Analysis (SCA)** tools, can be integrated directly into your CI/CD pipeline to provide continuous insight into your software supply chain.
+
+For a detailed list of tools for both generating SBOMs and working with VEX, see the [SBOM & Supply Chain Security](../../tools/sbom-and-supply-chain-security.md) page.
+
+## 6. Compliance Checklist
 
 To meet modern security requirements, your vulnerability management workflow should include the following:
 

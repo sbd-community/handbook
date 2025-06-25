@@ -77,7 +77,17 @@ A typical secure boot flow on an embedded device follows these steps:
 | **4. Kernel Verification** | The now-trusted bootloader loads the main OS kernel (e.g., Linux) and verifies its signature. | **Boot Halted.** The device will not proceed, preventing a compromised kernel from running. |
 | **5. System & App Verification** | The trusted kernel mounts and verifies the integrity of the root filesystem and key applications. | The specific service or application fails to start. |
 
-## 4. Compliance Checklist
+## 4. Accelerating Compliance with Tooling
+
+Implementing secure boot requires a combination of hardware capabilities and software components. While these can be built from scratch, leveraging existing open-source solutions can significantly reduce development time.
+
+-   **Hardware Root of Trust:** The foundation of secure boot is a feature of the microcontroller (SoC) itself. Choosing a chip with built-in support for secure boot (e.g., Boot ROM, eFuses) is the most direct path to compliance.
+-   **Code-Signing Tools:** The process of signing firmware images requires a secure offline process. Protecting the private signing key is paramount, and using a **Hardware Security Module (HSM)** is the industry-standard approach.
+-   **Secure Bootloaders:** Developing a secure bootloader is a complex task. For devices running a full OS like Linux, adapting a widely-used open-source bootloader that already supports verified boot, such as [U-Boot](https://www.denx.de/wiki/U-Boot), is often more secure and efficient than creating one from scratch.
+
+For more details on the hardware that enables secure boot, see the [Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md) tools page.
+
+## 5. Compliance Checklist
 
 To build a secure boot mechanism that meets regulatory requirements, ensure you can answer "yes" to the following:
 
