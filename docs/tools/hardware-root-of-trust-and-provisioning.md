@@ -27,3 +27,11 @@ The tools and platforms in this category help manufacturers either create this i
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
+
+## 3. Build vs. Buy: A Clear Choice
+
+The decision in this category is straightforward: **you must buy the core silicon**.
+
+A manufacturer cannot "build" their own secure microcontrollers (like a Secure Element or TPM) from scratch. The design, fabrication, and certification of secure silicon is a multi-billion dollar industry requiring immense, specialized expertise.
+
+The only practical path is to **buy** a hardware component that can serve as a Root of Trust. The subsequent decision is whether to build the complex provisioning infrastructure around it or to buy an integrated platform that handles the entire device identity lifecycle. For all but the largest organizations, buying a complete solution that combines the hardware and a management platform is the most secure and cost-effective path to compliance.

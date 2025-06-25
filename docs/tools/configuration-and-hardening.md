@@ -31,3 +31,9 @@ These tools can be used to scan for misconfigurations, enforce security policies
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
+
+## 3. Build vs. Buy: A Strategic Choice
+
+The choice here is not whether to build a new configuration management system from scratch, but how to best use the mature, industry-standard tools that already exist.
+
+It would be an inefficient use of resources to try and create a new version of Ansible or Nmap. The pragmatic decision is to **leverage these existing tools**. The real engineering work is not in building the tools, but in using them to create a robust, automated, and repeatable process for hardening your devices and verifying their configuration against a defined security baseline like the CIS Benchmarks.
