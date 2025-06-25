@@ -12,7 +12,16 @@ Secure Over-the-Air (OTA) update capabilities are a legal and technical necessit
 
 For a detailed explanation of the compliance requirements for OTA updates, see our guide on **[OTA Updates & Patching](../implementation/build-phase/ota-updates.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: Key Considerations
+
+The decision to build a custom OTA solution or buy a commercial one is a critical strategic choice. While open-source tools like `swupdate` or `TUF` provide excellent, secure foundations, the engineering effort to build and maintain a complete, robust, and scalable OTA backend is significant.
+
+-   **Time-to-Market**: Commercial platforms can be deployed in a fraction of the time it takes to build a production-ready system from scratch. This can be crucial for meeting the CRA's compliance deadlines.
+-   **Total Cost of Ownership (TCO)**: A "free" open-source tool requires significant investment in engineering, infrastructure, and ongoing maintenance. Commercial solutions have upfront costs but can offer a lower TCO by offloading this operational burden.
+-   **Focus & Expertise**: Building an OTA system requires deep expertise in embedded systems, cloud infrastructure, and security. Buying a solution allows your engineering team to focus on your core product's features and functionality.
+-   **Compliance Acceleration**: Commercial vendors often provide documentation, support, and pre-built integrations that can simplify the process of demonstrating compliance with the CRA's secure update requirements.
+
+## 3. Tooling Landscape
 
 The following tools provide end-to-end frameworks for deploying OTA updates to a fleet of devices. They handle the complexities of update creation, secure delivery, and on-device installation, ensuring that updates are applied reliably and without introducing new security risks.
 
@@ -30,12 +39,3 @@ The following tools provide end-to-end frameworks for deploying OTA updates to a
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-## 3. Build vs. Buy: Key Considerations
-
-The decision to build a custom OTA solution or buy a commercial one is a critical strategic choice. While open-source tools like `swupdate` or `TUF` provide excellent, secure foundations, the engineering effort to build and maintain a complete, robust, and scalable OTA backend is significant.
-
--   **Time-to-Market**: Commercial platforms can be deployed in a fraction of the time it takes to build a production-ready system from scratch. This can be crucial for meeting the CRA's compliance deadlines.
--   **Total Cost of Ownership (TCO)**: A "free" open-source tool requires significant investment in engineering, infrastructure, and ongoing maintenance. Commercial solutions have upfront costs but can offer a lower TCO by offloading this operational burden.
--   **Focus & Expertise**: Building an OTA system requires deep expertise in embedded systems, cloud infrastructure, and security. Buying a solution allows your engineering team to focus on your core product's features and functionality.
--   **Compliance Acceleration**: Commercial vendors often provide documentation, support, and pre-built integrations that can simplify the process of demonstrating compliance with the CRA's secure update requirements.

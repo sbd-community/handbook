@@ -12,7 +12,15 @@ Device Lifecycle Management (DLM) platforms provide the cloud-based infrastructu
 
 For a detailed overview of the different phases of a product's lifecycle, see our **[Implementation Guides](../implementation/index.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: A Clear Choice
+
+Unless a company's core business is providing a global IoT cloud platform, the decision is straightforward: **buy a managed service**.
+
+Building a secure, scalable, and reliable device management platform from the ground up is an immense undertaking. It requires dedicated teams of experts in cloud infrastructure, database management, security, and network operations. The cost and complexity are prohibitive for any company whose primary focus is manufacturing a physical product.
+
+The practical and intelligent choice is to leverage one of the mature commercial platforms available. This allows you to focus your resources on your product's unique features and your customers' needs, while offloading the complex, undifferentiated work of cloud infrastructure to a trusted partner.
+
+## 3. Tooling Landscape
 
 These platforms typically offer a suite of services, including device monitoring, remote access, OTA updates, and security log collection. They are the operational backbone that enables a manufacturer to fulfill its post-market obligations under regulations like the CRA.
 
@@ -31,11 +39,3 @@ These platforms typically offer a suite of services, including device monitoring
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-## 3. Build vs. Buy: A Clear Choice
-
-Unless a company's core business is providing a global IoT cloud platform, the decision is straightforward: **buy a managed service**.
-
-Building a secure, scalable, and reliable device management platform from the ground up is an immense undertaking. It requires dedicated teams of experts in cloud infrastructure, database management, security, and network operations. The cost and complexity are prohibitive for any company whose primary focus is manufacturing a physical product.
-
-The practical and intelligent choice is to leverage one of the mature commercial platforms available. This allows you to focus your resources on your product's unique features and your customers' needs, while offloading the complex, undifferentiated work of cloud infrastructure to a trusted partner.

@@ -12,7 +12,16 @@ A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of a
 
 For a detailed explanation of the compliance requirements for SBOMs, see our guide on **[SBOM & VEX Workflows](../implementation/build-phase/sbom-vex.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: Key Considerations
+
+While open-source tools like `Syft` or the `SPDX` and `CycloneDX` CLIs are excellent for generating SBOMs, managing them across an entire product portfolio becomes a significant challenge.
+
+-   **Generation vs. Management**: Open-source tools are great at *generating* an SBOM for a single build. Commercial platforms are designed to *manage* SBOMs at scale, providing a centralized inventory, tracking changes over time, and automating vulnerability correlation.
+-   **Vulnerability Intelligence**: A key function of an SBOM is to quickly identify assets affected by new vulnerabilities. Commercial platforms automate this by continuously monitoring vulnerability databases (like the NVD) and correlating them against the components in your SBOMs. Building this correlation engine yourself is a major undertaking.
+-   **Workflow Integration**: Commercial SCA tools are often designed to integrate directly into CI/CD pipelines and developer workflows, providing immediate feedback and policy enforcement (e.g., failing a build if a critical vulnerability is found).
+-   **VEX Generation**: Creating and managing Vulnerability Exploitability eXchange (VEX) documents is a critical part of the SBOM lifecycle. Commercial platforms often provide tools to streamline the creation and distribution of VEX statements, which are essential for communicating the impact of vulnerabilities to your customers.
+
+## 3. Tooling Landscape
 
 These tools help automate the creation, management, and analysis of SBOMs. They enable manufacturers to quickly identify which products are affected by a newly discovered vulnerability in a third-party component, a critical capability for meeting the CRA's strict vulnerability handling timelines.
 
@@ -33,12 +42,3 @@ These tools help automate the creation, management, and analysis of SBOMs. They 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-## 3. Build vs. Buy: Key Considerations
-
-While open-source tools like `Syft` or the `SPDX` and `CycloneDX` CLIs are excellent for generating SBOMs, managing them across an entire product portfolio becomes a significant challenge.
-
--   **Generation vs. Management**: Open-source tools are great at *generating* an SBOM for a single build. Commercial platforms are designed to *manage* SBOMs at scale, providing a centralized inventory, tracking changes over time, and automating vulnerability correlation.
--   **Vulnerability Intelligence**: A key function of an SBOM is to quickly identify assets affected by new vulnerabilities. Commercial platforms automate this by continuously monitoring vulnerability databases (like the NVD) and correlating them against the components in your SBOMs. Building this correlation engine yourself is a major undertaking.
--   **Workflow Integration**: Commercial SCA tools are often designed to integrate directly into CI/CD pipelines and developer workflows, providing immediate feedback and policy enforcement (e.g., failing a build if a critical vulnerability is found).
--   **VEX Generation**: Creating and managing Vulnerability Exploitability eXchange (VEX) documents is a critical part of the SBOM lifecycle. Commercial platforms often provide tools to streamline the creation and distribution of VEX statements, which are essential for communicating the impact of vulnerabilities to your customers.

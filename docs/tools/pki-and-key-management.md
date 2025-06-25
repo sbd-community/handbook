@@ -12,7 +12,16 @@ A Public Key Infrastructure (PKI) is the backbone for managing the lifecycle of 
 
 For a detailed explanation of the compliance requirements for key management, see our guide on **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: Key Considerations
+
+Operating a Certificate Authority (CA) is a high-stakes, high-cost endeavor that requires significant cryptographic expertise and robust physical and procedural security. For all but the largest and most mature organizations, buying a PKI service is the recommended approach.
+
+-   **Security & Expertise**: Running a secure CA is a specialized discipline. A single mistake in key management or procedure can compromise your entire device fleet. Commercial providers have dedicated teams and audited infrastructure focused solely on this task.
+-   **Cost & Complexity**: The cost of building and maintaining a secure PKI, including Hardware Security Modules (HSMs), secure facilities, and personnel, is extremely high. Commercial services provide a much lower and more predictable TCO.
+-   **Compliance & Audits**: Reputable commercial PKI providers are typically already compliant with standards like WebTrust and ETSI, which provides a strong foundation for demonstrating compliance with the CRA.
+-   **Scalability & Automation**: Commercial platforms are built to handle certificate issuance and management at IoT scale, with ready-to-use automation protocols (SCEP, EST, ACME) that would require significant engineering effort to build in-house.
+
+## 3. Tooling Landscape
 
 The following platforms provide the infrastructure needed to issue and manage device certificates at scale, often via automated protocols like SCEP, EST, or ACME.
 
@@ -27,12 +36,3 @@ The following platforms provide the infrastructure needed to issue and manage de
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on --> 
-
-## 3. Build vs. Buy: Key Considerations
-
-Operating a Certificate Authority (CA) is a high-stakes, high-cost endeavor that requires significant cryptographic expertise and robust physical and procedural security. For all but the largest and most mature organizations, buying a PKI service is the recommended approach.
-
--   **Security & Expertise**: Running a secure CA is a specialized discipline. A single mistake in key management or procedure can compromise your entire device fleet. Commercial providers have dedicated teams and audited infrastructure focused solely on this task.
--   **Cost & Complexity**: The cost of building and maintaining a secure PKI, including Hardware Security Modules (HSMs), secure facilities, and personnel, is extremely high. Commercial services provide a much lower and more predictable TCO.
--   **Compliance & Audits**: Reputable commercial PKI providers are typically already compliant with standards like WebTrust and ETSI, which provides a strong foundation for demonstrating compliance with the CRA.
--   **Scalability & Automation**: Commercial platforms are built to handle certificate issuance and management at IoT scale, with ready-to-use automation protocols (SCEP, EST, ACME) that would require significant engineering effort to build in-house. 

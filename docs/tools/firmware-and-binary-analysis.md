@@ -12,7 +12,15 @@ Firmware and binary analysis tools are essential for performing security assessm
 
 For a detailed explanation of the compliance requirements this helps to meet, see our guide on **[Secure Configuration & Hardening](../implementation/build-phase/secure-configuration.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: A Strategic Choice
+
+The choice in this category is not whether to build your own analysis tools from scratch, but how to best leverage the powerful tools that already exist.
+
+Developing a software reverse-engineering framework like Ghidra or radare2, or a disassembler like IDA Pro, is a monumental task that requires years of specialized research and development. It is not a practical or value-adding activity for a product manufacturer.
+
+The most effective path is to integrate these industry-standard tools into your security testing workflow and train your team to use them effectively, rather than attempting to reinvent them.
+
+## 3. Tooling Landscape
 
 These tools allow engineers to reverse-engineer compiled firmware images, inspect their contents, extract file systems, and analyze the executable code to find hidden vulnerabilities.
 
@@ -31,11 +39,3 @@ These tools allow engineers to reverse-engineer compiled firmware images, inspec
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-## 3. Build vs. Buy: A Strategic Choice
-
-The choice in this category is not whether to build your own analysis tools from scratch, but how to best leverage the powerful tools that already exist.
-
-Developing a software reverse-engineering framework like Ghidra or radare2, or a disassembler like IDA Pro, is a monumental task that requires years of specialized research and development. It is not a practical or value-adding activity for a product manufacturer.
-
-The most effective path is to integrate these industry-standard tools into your security testing workflow and train your team to use them effectively, rather than attempting to reinvent them.

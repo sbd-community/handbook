@@ -12,7 +12,13 @@ Configuration and hardening tools help automate the process of securing a device
 
 For a detailed explanation of the compliance requirements this helps to meet, see our guide on **[Secure Configuration & Hardening](../implementation/build-phase/secure-configuration.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: A Strategic Choice
+
+The choice here is not whether to build a new configuration management system from scratch, but how to best use the mature, industry-standard tools that already exist.
+
+It would be an inefficient use of resources to try and create a new version of Ansible or Nmap. The pragmatic decision is to **leverage these existing tools**. The real engineering work is not in building the tools, but in using them to create a robust, automated, and repeatable process for hardening your devices and verifying their configuration against a defined security baseline like the CIS Benchmarks.
+
+## 3. Tooling Landscape
 
 These tools can be used to scan for misconfigurations, enforce security policies, and automate the application of hardening guides like the CIS Benchmarks.
 
@@ -31,9 +37,3 @@ These tools can be used to scan for misconfigurations, enforce security policies
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-## 3. Build vs. Buy: A Strategic Choice
-
-The choice here is not whether to build a new configuration management system from scratch, but how to best use the mature, industry-standard tools that already exist.
-
-It would be an inefficient use of resources to try and create a new version of Ansible or Nmap. The pragmatic decision is to **leverage these existing tools**. The real engineering work is not in building the tools, but in using them to create a robust, automated, and repeatable process for hardening your devices and verifying their configuration against a defined security baseline like the CIS Benchmarks.

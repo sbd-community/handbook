@@ -12,7 +12,15 @@ A Hardware Root of Trust (RoT) is a secure, immutable foundation within a device
 
 For a detailed explanation of the compliance requirements that a Hardware RoT helps to meet, see our guide on **[Unique Device Identity](../implementation/build-phase/unique-device-identity.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: A Clear Choice
+
+The decision in this category is straightforward: **you must buy the core silicon**.
+
+A manufacturer cannot "build" their own secure microcontrollers (like a Secure Element or TPM) from scratch. The design, fabrication, and certification of secure silicon is a multi-billion dollar industry requiring immense, specialized expertise.
+
+The only practical path is to **buy** a hardware component that can serve as a Root of Trust. The subsequent decision is whether to build the complex provisioning infrastructure around it or to buy an integrated platform that handles the entire device identity lifecycle. For all but the largest organizations, buying a complete solution that combines the hardware and a management platform is the most secure and cost-effective path to compliance.
+
+## 3. Tooling Landscape
 
 The tools and platforms in this category help manufacturers either create this identity at the point of manufacture or leverage hardware that already contains a secure identity.
 
@@ -27,11 +35,3 @@ The tools and platforms in this category help manufacturers either create this i
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on -->
-
-## 3. Build vs. Buy: A Clear Choice
-
-The decision in this category is straightforward: **you must buy the core silicon**.
-
-A manufacturer cannot "build" their own secure microcontrollers (like a Secure Element or TPM) from scratch. The design, fabrication, and certification of secure silicon is a multi-billion dollar industry requiring immense, specialized expertise.
-
-The only practical path is to **buy** a hardware component that can serve as a Root of Trust. The subsequent decision is whether to build the complex provisioning infrastructure around it or to buy an integrated platform that handles the entire device identity lifecycle. For all but the largest organizations, buying a complete solution that combines the hardware and a management platform is the most secure and cost-effective path to compliance.

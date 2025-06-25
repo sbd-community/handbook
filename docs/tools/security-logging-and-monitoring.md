@@ -12,7 +12,16 @@ Security logging is the process of generating and collecting logs of security-re
 
 For a detailed explanation of the compliance requirements for security logging, see our guide on **[Security Logging & Monitoring](../implementation/operate-phase/security-logging.md)**.
 
-## 2. Tooling Landscape
+## 2. Build vs. Buy: Key Considerations
+
+The choice between building your own logging infrastructure with open-source tools versus buying a commercial service is a classic trade-off between control and convenience.
+
+-   **Infrastructure Management**: The "build" approach, using a stack like Grafana Loki or ELK, requires you to manage the deployment, scaling, and maintenance of the entire backend. This can be complex and costly. The "buy" approach, using a SaaS platform like Datadog or Memfault, offloads this entire operational burden.
+-   **Agent & Device Integration**: While open-source agents like Fluentd and Vector are powerful, integrating them into a resource-constrained embedded device can be challenging. Commercial platforms designed for IoT often provide lightweight, purpose-built agents and SDKs that are easier to deploy on-device.
+-   **Total Cost of Ownership (TCO)**: Self-hosting an open-source stack may have no licensing fees, but the TCO includes server costs, data storage, and the engineering time spent on maintenance and scaling. A commercial service has a clear subscription cost, which can often be lower and more predictable than the hidden costs of a self-hosted solution.
+-   **Focus on Core Business**: Buying a managed logging solution allows your team to focus on analyzing the data and improving your product, rather than on managing the underlying infrastructure required to collect that data.
+
+## 3. Tooling Landscape
 
 The following tools provide the infrastructure for collecting, storing, and analyzing security logs from a fleet of devices. They enable manufacturers to detect and respond to security incidents in the field.
 
@@ -31,12 +40,3 @@ The following tools provide the infrastructure for collecting, storing, and anal
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
 <!-- vale on --> 
-
-## 3. Build vs. Buy: Key Considerations
-
-The choice between building your own logging infrastructure with open-source tools versus buying a commercial service is a classic trade-off between control and convenience.
-
--   **Infrastructure Management**: The "build" approach, using a stack like Grafana Loki or ELK, requires you to manage the deployment, scaling, and maintenance of the entire backend. This can be complex and costly. The "buy" approach, using a SaaS platform like Datadog or Memfault, offloads this entire operational burden.
--   **Agent & Device Integration**: While open-source agents like Fluentd and Vector are powerful, integrating them into a resource-constrained embedded device can be challenging. Commercial platforms designed for IoT often provide lightweight, purpose-built agents and SDKs that are easier to deploy on-device.
--   **Total Cost of Ownership (TCO)**: Self-hosting an open-source stack may have no licensing fees, but the TCO includes server costs, data storage, and the engineering time spent on maintenance and scaling. A commercial service has a clear subscription cost, which can often be lower and more predictable than the hidden costs of a self-hosted solution.
--   **Focus on Core Business**: Buying a managed logging solution allows your team to focus on analyzing the data and improving your product, rather than on managing the underlying infrastructure required to collect that data. 
