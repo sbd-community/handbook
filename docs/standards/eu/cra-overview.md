@@ -33,12 +33,12 @@ While harmonised standards are still under development, Germany's Federal Office
 | All CRA requirements apply (Annex I/II, CE-marking, enforcement) | [CRA Art. 71 § 2][cra_art71] | **2027-12-11** |
 
 **Early duties from 11 Jun 2026**  
-*Importers*, *distributors* & *authorised representatives* → must verify that a draft EU Declaration of Conformity and technical file exist, keep conformity documentation for **10 years**, and ensure storage/transport does not compromise firmware integrity ([CRA Ch. IV][cra_chIV]).  
+*Importers*, *distributors* & *authorised representatives* → must verify that a draft EU Declaration of Conformity and technical file exist, keep conformity documentation for **at least 10 years or the product's support period, whichever is longer**, and ensure storage/transport does not compromise firmware integrity ([CRA Ch. IV][cra_chIV]).  
 *Market-surveillance authorities* → gain power to sample, test, and order withdrawals or recalls of insecure products ([CRA Art. 35–51][cra_chV]).
 
 **Early duties from 11 Sep 2026**  
 *Manufacturers* → must operate a vulnerability-handling process:  
-• Notify ENISA single portal within **24 h** of an actively-exploited vulnerability ([CRA Art. 14 § 1][cra_art14] + [CRA Art. 16][cra_art16])  
+• Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively-exploited vulnerability ([CRA Art. 14 § 1][cra_art14] + [CRA Art. 16][cra_art16])  
 • Publish a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI])  
 • If requested by a CSIRT, provide an intermediate report on the status of a vulnerability ([CRA Art. 14 § 6][cra_art14]).
 
@@ -50,7 +50,7 @@ While harmonised standards are still under development, Germany's Federal Office
 |-----|---------------------------|
 | **[NIS 2 Directive](./nis2-overview.md)** | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 13][cra_rec13], [CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
 | **[Radio Equipment Directive (RED)](./red-overview.md)** | Radio device security requirements exist in **[RED Art. 3 § 3 (d-f)][red_art3]**. CRA covers a wider range of products and its requirements include all elements of the RED's. ([CRA Recital 30][cra_rec30]) |
-| **RED Delegated Act** | Makes those security clauses mandatory for certain Bluetooth / Wi-Fi devices by **1 Aug 2025**. Manufacturers must meet both this Act and the CRA. This was established by **[Regulation (EU) 2022/30][red_del_22_30]**, as amended by **[Regulation (EU) 2023/2444][red_del_23_2444]**. |
+| **RED Delegated Act** | Makes security clauses mandatory for certain wireless devices from **1 August 2025**. This date is the result of a 12-month extension, granted by **[Regulation (EU) 2023/2444][red_del_23_2444]**, to allow more time for harmonised standards to be developed. The original act is **[Regulation (EU) 2022/30][red_del_22_30]**. |
 | **CE-marking framework** | CRA **adds** cybersecurity to the CE mark through Articles **28–30**. A PDE may affix the mark only *after* Annex I/II compliance and completion of the appropriate conformity-assessment route. ([CRA Art. 28][cra_art28], [CRA Art. 30][cra_art30], [CRA Rec. 89][cra_rec89], [CRA Rec. 93][cra_rec93]) |
 
 ---
@@ -154,10 +154,10 @@ Beyond the direct product and vulnerability requirements in Annex I, the CRA imp
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Technical documentation**<br/>[CRA Art. 31, Annex VII][cra_art31] | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **10 years**. **Evidence:** Technical file. | n/a |
+| **Technical documentation**<br/>[CRA Art. 31, Annex VII][cra_art31] | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **at least 10 years or the support period, whichever is longer**. **Evidence:** Technical file. | n/a |
 | **Conformity & CE mark**<br/>[CRA Art. 13(12), 28, 30][cra_art13] | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). | n/a |
 | **Information to users**<br/>[CRA Art. 13(17-19), Annex II][cra_art13] | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md) |
-| **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Notify ENISA within **24h** of an actively exploited vulnerability. If requested, provide intermediate status reports. **Evidence:** Incident logs. | n/a |
+| **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively exploited vulnerability. If requested, provide intermediate status reports. **Evidence:** Incident logs. | n/a |
 
 \* *Dates derive from [CRA Art. 71 § 2][cra_art71] and [Art. 69 § 3][cra_art69]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
 
