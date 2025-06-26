@@ -71,7 +71,7 @@ The Delegated Regulation (EU) 2022/30 applies the cybersecurity requirements to 
 
 ---
 
-## 3. The Essential Requirements (Article 3.3 d, e, f)
+## 3. RED Requirements & How to Implement Them
 
 The Delegated Act activates three key security requirements from the main RED text. While these are the focus for the 2025 deadline, it is important to remember that **[RED Article 3][red_art3]** also contains foundational requirements for all radio equipment, including the protection of health and safety ([Art. 3(1a)][red_art3_1a]) and electromagnetic compatibility (EMC) ([Art. 3(1b)][red_art3_1b]).
 
@@ -85,7 +85,7 @@ Manufacturers of in-scope products must design their devices to comply with the 
 
 ---
 
-## 4. Conformity Assessment & Harmonised Standards
+## 4. Self-Assessment vs. Third-Party Audit?
 
 ### 4.1 Assessment Routes
 To demonstrate compliance and affix the CE mark, manufacturers must follow a conformity assessment procedure laid out in the RED ([RED Art. 17][red_art17]). The route depends on whether they fully apply **harmonised standards**.
