@@ -99,10 +99,7 @@ When a manufacturer follows a relevant hEN, their product gains a **"presumption
 For the cybersecurity requirements, the key standards are the **ETSI EN 18031** series. The standardisation request from the Commission is detailed in **[Mandate M/585][std_mandate_m585]**.
 
 <!-- Citations -->
-[cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – Relationship with Radio Equipment Directive (RED)"
-[cra_art11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_11 "CRA Article 11 – More specific Union law"
-[nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
-[red_oj_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L:2014:153 "Official Journal of Directive 2014/53/EU"
+[red_oj_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Official Journal of Directive 2014/53/EU"
 [red_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228 "Consolidated text of Directive 2014/53/EU"
 [red_del_act]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30 – activating security clauses"
 [red_del_act_amend]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202302444 "Amendment to Delegated Regulation (EU) 2022/30"
@@ -119,3 +116,6 @@ For the cybersecurity requirements, the key standards are the **ETSI EN 18031** 
 [red_annexIV]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#anx_IV "RED Annex IV - Conformity assessment module H"
 [std_mandate_m585]: https://ec.europa.eu/growth/tools-databases/mandates/index.cfm?fuseaction=search.detail&id=612 "Standardisation Mandate M/585 for Radio Equipment"
 [ce_marking_reg]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R0765#art_30 "Regulation (EC) No 765/2008 on CE Marking" 
+[cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – Relationship with Radio Equipment Directive (RED)"
+[cra_art11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_11 "CRA Article 11 – More specific Union law"
+[nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
