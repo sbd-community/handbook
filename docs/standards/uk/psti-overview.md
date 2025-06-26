@@ -30,7 +30,7 @@ The substantive security rules, detailed in the 2023 Regulations, came into forc
 | Law | How it interacts with PSTI |
 |-----|----------------------------|
 | **UK GDPR & [PECR](./pecr-overview.md)** | PSTI focuses on the technical security of the device itself. GDPR and PECR focus on the protection of personal data processed by the device. A secure device (PSTI) is a prerequisite for protecting data (GDPR/PECR). |
-| **[Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA is the EU's equivalent of PSTI but is significantly broader in scope and detail. A product compliant with the CRA will almost certainly meet PSTI's requirements, but manufacturers must formally ensure compliance with both regimes if selling in both markets. |
+| **[Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA is the EU's counterpart to PSTI but is significantly broader in scope and detail. While PSTI focuses on a narrow set of baseline rules (passwords, CVD, support periods), the CRA mandates comprehensive secure-by-design principles for all "products with digital elements". Key differences include the CRA's mandatory SBOM requirement and a stricter 24-hour vulnerability reporting timeline for active exploits. A product compliant with the CRA's essential requirements will generally meet PSTI's, but manufacturers must still issue a UK-specific Statement of Compliance if selling in the UK market. |
 | **[Radio Equipment Directive (RED)](../eu/red-overview.md)** | The RED's cybersecurity requirements overlap with PSTI, particularly on aspects of network protection and data security. However, PSTI's focus is on a specific, narrow set of baseline security configurations (passwords, CVD, support period). |
 
 ## 2. Scope – Which products are in?
@@ -61,9 +61,9 @@ Beyond the direct security requirements, the Act imposes several crucial duties 
 | Obligation | Description | Legal Basis |
 |---|---|---|
 | **Statement of Compliance** | Manufacturers **must** produce a "Statement of Compliance" declaring that the product meets the security requirements. This can be based on the requirements in Schedule 1 of the Regulations or the "deemed compliance" conditions in Schedule 2 (i.e., by following a designated standard).<br/><br/>If using a standard, the statement must include its identification number, version, and date. | [Act Part 1, § 9][psti_act_s9]<br/>[Regs. Schedule 4][psti_regs_sched4] |
-| **Duty to Investigate** | A manufacturer must investigate without undue delay if they are informed of, or become aware of, a potential compliance failure. | [Act Part 1, § 14][psti_act_s14] |
-| **Duty to Act & Notify** | Following an investigation, manufacturers must take appropriate action to remedy any failure, including preventing the product being made available. If the product presents a serious risk, they must notify the enforcement authority with details of the failure, risks, and remedial steps. | [Act Part 1, § 15][psti_act_s15] & [§ 16][psti_act_s16] |
-| **Record Keeping** | Manufacturers must maintain records of investigations into potential compliance failures. The **Statement of Compliance** must be retained for at least **10 years** from when it was created, or the length of the product's defined support period, whichever is longer. | [Act Part 1, § 18][psti_act_s18] |
+| **Duty to Investigate** | A manufacturer must investigate without undue delay if they are informed of, or become aware of, a potential compliance failure. | [Act Part 1, § 10][psti_act_s10] |
+| **Duty to Act & Notify** | Following an investigation, manufacturers must take appropriate action to remedy any failure, including preventing the product being made available. If the product presents a serious risk, they must notify the enforcement authority with details of the failure, risks, and remedial steps, including "details, in particular, of the non-compliance, of any corrective measures taken and of the results thereof". | [Act Part 1, § 11][psti_act_s11] |
+| **Record Keeping** | Manufacturers must maintain records of investigations into potential compliance failures. The **Statement of Compliance** must be retained for at least **10 years** from when it was created, or the length of the product's defined support period, whichever is longer. | [Act Part 1, § 12][psti_act_s12]<br/>[Regs. 8][psti_regs_reg8] |
 
 ## 4. How is PSTI Enforced?
 
@@ -76,11 +76,11 @@ The authority can also issue significant monetary penalties for non-compliance. 
 [psti_act_2022]: https://www.legislation.gov.uk/ukpga/2022/46 "PSTI Act 2022"
 [psti_regs_2023]: https://www.legislation.gov.uk/uksi/2023/1007 "PSTI Security Regulations 2023"
 [psti_act_s9]: https://www.legislation.gov.uk/ukpga/2022/46#section-9 "PSTI Act 2022, Section 9 – Statement of compliance"
-[psti_act_s14]: https://www.legislation.gov.uk/ukpga/2022/46#section-14 "PSTI Act 2022, Section 14 – Duty to investigate"
-[psti_act_s15]: https://www.legislation.gov.uk/ukpga/2022/46#section-15 "PSTI Act 2022, Section 15 – Duty to remedy failure"
-[psti_act_s16]: https://www.legislation.gov.uk/ukpga/2022/46#section-16 "PSTI Act 2022, Section 16 – Duty to notify"
-[psti_act_s18]: https://www.legislation.gov.uk/ukpga/2022/46#section-18 "PSTI Act 2022, Section 18 – Record-keeping"
+[psti_act_s10]: https://www.legislation.gov.uk/ukpga/2022/46#section-10 "PSTI Act 2022, Section 10 – Duty to investigate potential compliance failures"
+[psti_act_s11]: https://www.legislation.gov.uk/ukpga/2022/46#section-11 "PSTI Act 2022, Section 11 – Duties to take action in relation to compliance failure"
+[psti_act_s12]: https://www.legislation.gov.uk/ukpga/2022/46#section-12 "PSTI Act 2022, Section 12 – Duty to maintain records"
 [psti_act_s37]: https://www.legislation.gov.uk/ukpga/2022/46#section-37 "PSTI Act 2022, Section 37 – Monetary penalties"
+[psti_regs_reg8]: https://www.legislation.gov.uk/uksi/2023/1007#regulation-8 "PSTI Regulations 2023, Regulation 8 - Manufacturer retention of statement of compliance"
 [psti_regs_sched1]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-1 "PSTI Regulations 2023, Schedule 1 – Security requirements"
 [psti_regs_sched2]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-2 "PSTI Regulations 2023, Schedule 2 – Conditions for deemed compliance"
 [psti_regs_sched3]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-3 "PSTI Regulations 2023, Schedule 3 – Conditions relating to the defined support period"
