@@ -53,8 +53,6 @@ While harmonised standards are still under development, Germany's Federal Office
 | **RED Delegated Act** | Makes security clauses mandatory for certain wireless devices from **1 August 2025**. This date is the result of a 12-month extension, granted by **[Regulation (EU) 2023/2444][red_del_23_2444]**, to allow more time for harmonised standards to be developed. The original act is **[Regulation (EU) 2022/30][red_del_22_30]**. |
 | **CE-marking framework** | CRA **adds** cybersecurity to the CE mark through Articles **28–30**. A PDE may affix the mark only *after* Annex I/II compliance and completion of the appropriate conformity-assessment route. ([CRA Art. 28][cra_art28], [CRA Art. 30][cra_art30], [CRA Rec. 89][cra_rec89], [CRA Rec. 93][cra_rec93]) |
 
----
-
 ## 2 Scope – which products are in?
 
 ### 2.1 Statutory Definition & Interpretation {#statutory-definition}
@@ -100,8 +98,6 @@ Both conditions must be met.
 | Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
 | Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
 | Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 69 § 2][cra_art69]) |
-
----
 
 ## 3 CRA Requirements & How to Implement Them {#annex-i-requirements}
 
@@ -173,8 +169,6 @@ Beyond the direct product and vulnerability requirements in Annex I, the CRA imp
 | **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively exploited vulnerability. If requested, provide intermediate status reports. **Evidence:** Incident logs. | n/a |
 
 \* *Dates derive from [CRA Art. 71 § 2][cra_art71] and [Art. 69 § 3][cra_art69]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
-
----
 
 ## 4 Self-Assessment vs. Third-Party Audit? {#conformity-assessment-routes}
 

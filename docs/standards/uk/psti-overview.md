@@ -33,8 +33,6 @@ The substantive security rules, detailed in the 2023 Regulations, came into forc
 | **[Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA is the EU's equivalent of PSTI but is significantly broader in scope and detail. A product compliant with the CRA will almost certainly meet PSTI's requirements, but manufacturers must formally ensure compliance with both regimes if selling in both markets. |
 | **[Radio Equipment Directive (RED)](../eu/red-overview.md)** | The RED's cybersecurity requirements overlap with PSTI, particularly on aspects of network protection and data security. However, PSTI's focus is on a specific, narrow set of baseline security configurations (passwords, CVD, support period). |
 
----
-
 ## 2. Scope – Which products are in?
 
 The PSTI regime applies to "relevant connectable products" made available to consumers in the UK. A product is considered "connectable" if it has an internet-connection capability (e.g., Wi-Fi, Ethernet) or a network-connection capability (e.g., Bluetooth), and is not explicitly exempted.
@@ -45,8 +43,6 @@ The 2023 Regulations **exempt** several product categories from the security req
 - Medical devices
 - Smart meter products
 - Computers (desktops, laptops, and tablets that do not have cellular connectivity)
-
----
 
 ## 3. PSTI Requirements & How to Implement Them
 
@@ -68,8 +64,6 @@ Beyond the direct security requirements, the Act imposes several crucial duties 
 | **Duty to Investigate** | A manufacturer must investigate without undue delay if they are informed of, or become aware of, a potential compliance failure. | [Act Part 1, § 14][psti_act_s14] |
 | **Duty to Act & Notify** | Following an investigation, manufacturers must take appropriate action to remedy any failure, including preventing the product being made available. If the product presents a serious risk, they must notify the enforcement authority with details of the failure, risks, and remedial steps. | [Act Part 1, § 15][psti_act_s15] & [§ 16][psti_act_s16] |
 | **Record Keeping** | Manufacturers must maintain records of investigations into potential compliance failures. The **Statement of Compliance** must be retained for at least **10 years** from when it was created, or the length of the product's defined support period, whichever is longer. | [Act Part 1, § 18][psti_act_s18] |
-
----
 
 ## 4. How is PSTI Enforced?
 

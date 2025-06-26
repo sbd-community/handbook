@@ -12,8 +12,6 @@ This section will help you answer questions like:
 - What's the right way to sign and verify firmware?
 - How can I automate the creation of an SBOM?
 
----
-
 ### Core Topics
 
 -   **[Threat Modeling & Risk Assessment](./threat-modeling.md):** Adopt a "think like an attacker" mindset to identify and mitigate security risks early in the design phase, before a single line of code is written.
@@ -25,7 +23,5 @@ This section will help you answer questions like:
 -   **[Secure OTA Updates](./ota-updates.md):** Build a resilient and secure Over-the-Air update mechanism to patch vulnerabilities in the field.
 -   **[SBOM & VEX Workflows](./sbom-vex.md):** Integrate automated SBOM and VEX generation into your CI/CD pipeline to meet transparency and vulnerability management requirements.
 -   **[User Information & Documentation](./user-documentation.md):** Provide users with clear, transparent, and actionable information about how to use and maintain their device securely, as mandated by CRA Annex II.
-
----
 
 *These implementation guides translate regulatory requirements into concrete engineering practices.* 
