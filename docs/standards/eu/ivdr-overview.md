@@ -117,4 +117,4 @@ Manufacturers must clearly document the minimum IT and security measures the dev
 [ivdr_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110 "IVDR Consolidated Version"
 [ivdr_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_I "IVDR Annex I – General Safety and Performance Requirements"
 [cra_art2]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_2 "CRA Article 2 – Scope"
-[mdcg_2019_16]: https://health.ec.europa.eu/system/files/2020-01/md_mdcg_2019_16_guidance_cybersecurity_en_0.pdf "MDCG 2019-16 – Guidance on Cybersecurity for medical devices" 
+[mdcg_2019_16]: https://ec.europa.eu/docsroom/documents/41863/attachments/1/translations/en/renditions/native "MDCG 2019-16 – Guidance on Cybersecurity for medical devices" 
