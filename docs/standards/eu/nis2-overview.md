@@ -30,7 +30,7 @@ The consolidated version is the primary reference for this directive.
 
 | Law | How it interacts with NIS 2 |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" must ensure its supply chain is secure ([NIS2 Art. 21(2d)][nis2_art21]), which includes procuring products that are CRA-compliant. |
+| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" must ensure its supply chain is secure ([NIS2 Art. 21(2d)][nis2_art21]), which includes procuring CRA-compliant products. The reporting platform used by manufacturers under the CRA is established and operated under the NIS 2 framework, feeding vulnerability data directly into the EU's incident response system. |
 | **[Radio Equipment Directive (RED)](./red-overview.md)** | An organisation may be a NIS 2 entity and also manufacture products subject to the RED. The obligations are cumulative; organisational resilience under NIS 2 must be maintained, and products must meet RED requirements. |
 | **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS2 Art. 4][nis2_art4]). |
 | **CER Directive** | The Critical Entities Resilience Directive (EU 2022/2557) covers the *physical* resilience of critical infrastructure (e.g., against natural disasters). NIS 2 covers their *cyber* resilience. The two directives are designed to work in parallel. |
@@ -91,7 +91,29 @@ The table below provides a non-exhaustive list of examples to help organisations
 
 ---
 
-## 3. Key Obligations for Management
+## 3. How NIS 2 Impacts Product Manufacturers
+
+While NIS 2 directly regulates service providers, it has significant indirect consequences for any company that manufactures products with digital elements. Regulated entities are legally required to secure their supply chains, which means they will pass down strict cybersecurity requirements to their suppliers.
+
+### 3.1 Supply Chain Security Demands
+
+Essential and Important Entities are explicitly required to manage risks in their supply chains. This includes assessing "the overall quality of products and cybersecurity practices of their suppliers and service providers, including their secure development procedures" ([NIS2 Art. 21(3)][nis2_art21]).
+
+This means product manufacturers selling to NIS 2-regulated customers should expect to be asked for:
+-   Evidence of secure development practices.
+-   Software Bills of Materials (SBOMs).
+-   Information about their vulnerability management processes.
+-   Contractual security commitments.
+
+### 3.2 Mandatory Product Certification
+
+NIS 2 empowers Member States to *require* regulated entities to use specific ICT products or services that are certified under a **European cybersecurity certification scheme** (established under the EU's Cybersecurity Act). The European Commission can also adopt acts to mandate this for certain categories of entity ([NIS2 Art. 24][nis2_art24]).
+
+For manufacturers, this can turn cybersecurity certification from a market advantage into a **market access requirement**. If a customer in a critical sector is legally obliged to use certified products, uncertified products will be locked out of that segment.
+
+---
+
+## 4. Key Obligations for Management
 
 NIS 2 places direct responsibility on the management bodies of both essential and important entities.
 
@@ -103,9 +125,9 @@ NIS 2 places direct responsibility on the management bodies of both essential an
 
 ---
 
-## 4. Risk Management & Reporting
+## 5. NIS 2 Requirements & How to Implement Them
 
-### 4.1 Cybersecurity Risk-Management Measures
+### 5.1 Cybersecurity Risk-Management Measures
 
 All essential and important entities must take "appropriate and proportionate technical, operational and organisational measures" to manage cybersecurity risks ([NIS2 Art. 21(1)][nis2_art21]). These measures must be based on an all-hazards approach and cover at least the following areas:
 
@@ -122,7 +144,7 @@ All essential and important entities must take "appropriate and proportionate te
 | **HR Security & Access Control**<br/>[Art. 21(2i)][nis2_art21] | Define and enforce access control policies based on the principle of least privilege and "need to know". Manage assets and ensure personnel security. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
 | **Authentication & Secure Comms**<br/>[Art. 21(2j)][nis2_art21] | Use multi-factor authentication (MFA) or continuous authentication solutions. Ensure voice, video, and text communications are secured. | n/a |
 
-### 4.2 Incident Reporting Obligations
+### 5.2 Incident Reporting Obligations
 
 Entities must notify their national CSIRT or competent authority of any incident that has a **significant impact** on the provision of their services. A significant incident is one that causes severe operational disruption or financial loss, or affects others by causing considerable material or non-material damage ([NIS2 Art. 23(3)][nis2_art23]).
 
@@ -137,15 +159,15 @@ The notification must follow a multi-stage process:
 
 ---
 
-## 5. Supervision and Enforcement
+## 6. How is NIS 2 Enforced?
 
 NIS 2 grants national authorities strong powers to supervise and enforce the rules, with different regimes for Essential and Important entities.
 
-### 5.1 Supervisory Powers
+### 6.1 Supervisory Powers
 -   **Essential Entities** are subject to **proactive supervision**. This includes on-site inspections, regular and targeted security audits, and requests for information to verify compliance.
 -   **Important Entities** are subject to **reactive supervision**. Authorities will act *ex-post* if they are provided with evidence or indication of non-compliance.
 
-### 5.2 Penalties for Non-Compliance
+### 6.2 Penalties for Non-Compliance
 Member States must ensure penalties are "effective, proportionate and dissuasive". The Directive sets maximum fines that can be imposed ([NIS2 Art. 34][nis2_art34]):
 
 -   **Essential Entities:** Fines of up to **€10,000,000** or **2%** of the total worldwide annual turnover of the preceding financial year, whichever is higher.
@@ -159,6 +181,7 @@ Member States must ensure penalties are "effective, proportionate and dissuasive
 [nis2_art20]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_20 "NIS 2 Article 20 - Governance"
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_21 "NIS 2 Article 21 – Cybersecurity risk-management measures"
 [nis2_art23]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_23 "NIS 2 Article 23 – Reporting obligations"
+[nis2_art24]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_24 "NIS 2 Article 24 – Use of European cybersecurity certification schemes"
 [nis2_art32]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_32 "NIS 2 Article 32 – Supervisory and enforcement measures in relation to essential entities"
 [nis2_art33]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_33 "NIS 2 Article 33 – Supervisory and enforcement measures in relation to important entities"
 [nis2_art34]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_34 "NIS 2 Article 34 – General conditions for imposing administrative fines"
