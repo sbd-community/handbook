@@ -67,7 +67,7 @@ The ICO's guidance clarifies how PECR's rules apply to consumer IoT products. Th
 
 ## 4. Enforcement & Penalties
 
-PECR is enforced by the UK's **Information Commissioner's Office (ICO)**. The ICO has a range of powers to investigate and penalise non-compliance.
+PECR is enforced by the UK's **Information Commissioner's Office (ICO)**. As the ICO's own guidance clarifies, this includes its application to consumer Internet of Things (IoT) products ([ICO IoT Guidance][ico_iot_guide]). The ICO has a range of powers to investigate and penalise non-compliance.
 
 - **Audits & Notices**: The ICO can conduct compulsory audits of providers and issue information notices (requiring organisations to provide information) and enforcement notices (requiring them to take specific steps to comply).
 - **Fines**: For most breaches, the ICO can issue a fine of up to **£500,000**. However, for serious failures to comply with Regulation 5 (Confidentiality) and Regulation 6 (Consent for cookies), the ICO can use its powers under the UK GDPR. This allows for significantly higher fines of up to **£17.5 million or 4% of total annual worldwide turnover**, whichever is greater.
