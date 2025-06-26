@@ -140,6 +140,8 @@ This proactive approach ensures that security is not an afterthought but a found
 
 ### 3.3 Vulnerability handling (Annex I Part II)
 
+The CRA makes it a **hard-wired legal duty** for manufacturers to "address and remediate vulnerabilities without undue delay" throughout the product's entire lifecycle ([Annex I, Part II, § 2][cra_annexI]). This obligation lasts for a mandatory **support period**, which the manufacturer must define. This period cannot be shorter than **five years** from the date the product is placed on the market, unless its expected usable life is shorter ([CRA Art. 13 § 8, 9][cra_art13]). During this time, security updates must be provided free of charge.
+
 | Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
 | **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>[BSI TR-03183-2 § 5.2][bsi_tr_03183_p2] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
@@ -147,6 +149,17 @@ This proactive approach ensures that security is not an afterthought but a found
 | **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Regularly test the product for vulnerabilities using both internal processes and independent experts. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
 | **Public vulnerability information**<br/>[Annex I Part II § 4, 5][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.3][bsi_tr_03183_p3] | Inform users about fixed vulnerabilities, their impact, and mitigation steps via security advisories. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Publish a clear vulnerability disclosure policy and provide an easily accessible contact channel for vulnerability reporting. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+
+#### How Vulnerabilities are Discovered and Handled
+
+The CRA anticipates that vulnerabilities will be discovered through multiple channels, both internal and external. Manufacturers must have processes in place to handle all of them.
+
+| Discovery Channel | CRA Hook | What it looks like in practice |
+|---|---|---|
+| **Internal Security Testing** | [Annex I, Part II, § 3][cra_annexI]: *"apply effective and regular tests and reviews"* | DevSecOps pipelines flag flaws before and after release; automated SBOM scanning against vulnerability databases (e.g., NVD) catches new CVEs in third-party libraries. |
+| **Supply-Chain Monitoring** | [Annex I, Part II, § 1, 2][cra_annexI]: *"identify and document components... address and remediate vulnerabilities"* | The manufacturer monitors advisories for all components in their SBOM (e.g., OpenSSL, Linux kernel, RTOS, chipset firmware) and integrates or back-ports security patches. |
+| **Coordinated Disclosure** | [Annex I, Part II, § 5, 6][cra_annexI], [Recital 76][cra_rec76] | Security researchers, customers, or bug bounty hunters report flaws via the manufacturer's published CVD policy and secure contact channel. |
+| **In-Field Detection** | [Art. 14][cra_art14], [Annex I, Part II, § 4, 8][cra_annexI] | If active exploitation is detected in the wild, the manufacturer must: (i) notify the designated CSIRT **without undue delay** (within 24h), (ii) develop a remediation, and (iii) provide a security update to users. |
 
 ### 3.4 Other Key Obligations
 
@@ -307,6 +320,7 @@ The first harmonised standards for the CRA are expected to be published in the O
 [cra_rec24]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_24 "CRA Recital 24 – Relationship with other Union law"
 [cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – Relationship with Radio Equipment Directive (RED)"
 [cra_rec39]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_39 "CRA Recital 39 – Objective-oriented and technology-neutral requirements"
+[cra_rec76]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_76 "CRA Recital 76 - Coordinated vulnerability disclosure"
 [cra_rec89]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_89 "CRA Recital 89 – General principles of the CE marking"
 [cra_rec93]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_93 "CRA Recital 93 – Conformity assessment procedures"
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
