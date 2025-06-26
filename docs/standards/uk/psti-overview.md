@@ -55,19 +55,19 @@ The 2023 Regulations impose three main security requirements on manufacturers. T
 
 | Requirement & Legal Basis | Interpretation & Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **1. Ban on universal default passwords**<br/>[Regs. Schedule 1][psti_regs_sched1] | Products must **not** be supplied with a default password that is universal or easily guessable. Passwords must be unique per-device or defined by the user. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **2. Provide a public point of contact**<br/>[Regs. Schedule 2][psti_regs_sched2] | Manufacturers must provide a public, clear, and accessible contact point for security researchers and others to report vulnerabilities. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **3. State the minimum support period**<br/>[Regs. Schedule 3][psti_regs_sched3] | Manufacturers must publish the minimum length of time for which they will provide security updates. This "defined support period" must be made available to consumers. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
+| **1. Ban on universal default passwords**<br/>[Regs. Schedule 1, Para 1][psti_regs_sched1] | Products must **not** be supplied with a default password that is universal or easily guessable. Passwords must be unique per-device or defined by the user.<br/><br/>*Compliance is deemed if the manufacturer meets **ETSI EN 303 645 provision 5.1-1***. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **2. Provide a public point of contact**<br/>[Regs. Schedule 1, Para 2][psti_regs_sched2] | Manufacturers must provide a public, clear, and accessible contact point for security researchers and others to report vulnerabilities.<br/><br/>*Compliance is deemed if the manufacturer meets **ETSI EN 303 645 provision 5.2-1** or **ISO/IEC 29147 (paras 6.2.2, 6.2.5, 6.5)***. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **3. State the minimum support period**<br/>[Regs. Schedule 1, Para 3][psti_regs_sched3] | Manufacturers must publish the minimum length of time for which they will provide security updates. This "defined support period" must be made available to consumers.<br/><br/>The published information must be accessible, clear, transparent, in English, free of charge, and understandable without prior technical knowledge. It cannot be shortened after publication.<br/><br/>*Compliance is deemed if the manufacturer meets **ETSI EN 303 645 provision 5.3-13***. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 
 ### 3.2 Statement of Compliance & Other Duties
 Beyond the direct security requirements, the Act imposes several crucial duties on manufacturers.
 
 | Obligation | Description | Legal Basis |
 |---|---|---|
-| **Statement of Compliance** | Manufacturers **must** produce a "Statement of Compliance" for their products. This document confirms the product meets the security requirements and must include the defined support period. | [Act Part 1, § 17][psti_act_s17]<br/>[Regs. Schedule 4][psti_regs_sched4] |
-| **Duty to Investigate** | If a manufacturer becomes aware of a potential compliance failure, they have a duty to investigate it without undue delay. | [Act Part 1, § 14][psti_act_s14] |
-| **Duty to Act & Notify** | Following an investigation, manufacturers must take appropriate action to remedy any failure. If the product presents a serious risk, they must notify the enforcement authority. | [Act Part 1, § 15-16][psti_act_s15] |
-| **Record Keeping** | Manufacturers must maintain records of investigations into potential compliance failures for at least 10 years. | [Act Part 1, § 18][psti_act_s18] |
+| **Statement of Compliance** | Manufacturers **must** produce a "Statement of Compliance" declaring that the product meets the security requirements. This can be based on the requirements in Schedule 1 of the Regulations or the "deemed compliance" conditions in Schedule 2 (i.e., by following a designated standard).<br/><br/>If using a standard, the statement must include its identification number, version, and date. | [Act Part 1, § 9][psti_act_s9]<br/>[Regs. Schedule 4][psti_regs_sched4] |
+| **Duty to Investigate** | A manufacturer must investigate without undue delay if they are informed of, or become aware of, a potential compliance failure. | [Act Part 1, § 14][psti_act_s14] |
+| **Duty to Act & Notify** | Following an investigation, manufacturers must take appropriate action to remedy any failure, including preventing the product being made available. If the product presents a serious risk, they must notify the enforcement authority with details of the failure, risks, and remedial steps. | [Act Part 1, § 15][psti_act_s15] & [§ 16][psti_act_s16] |
+| **Record Keeping** | Manufacturers must maintain records of investigations into potential compliance failures. The **Statement of Compliance** must be retained for at least **10 years** from when it was created, or the length of the product's defined support period, whichever is longer. | [Act Part 1, § 18][psti_act_s18] |
 
 ---
 
@@ -79,14 +79,15 @@ The authority can also issue significant monetary penalties for non-compliance. 
 
 
 <!-- Citations -->
-[psti_act_2022]: https://www.legislation.gov.uk/ukpga/2022/46
-[psti_regs_2023]: https://www.legislation.gov.uk/uksi/2023/1007
-[psti_act_s14]: https://www.legislation.gov.uk/ukpga/2022/46/section/14
-[psti_act_s15]: https://www.legislation.gov.uk/ukpga/2022/46/section/15
-[psti_act_s17]: https://www.legislation.gov.uk/ukpga/2022/46/section/17
-[psti_act_s18]: https://www.legislation.gov.uk/ukpga/2022/46/section/18
-[psti_act_s37]: https://www.legislation.gov.uk/ukpga/2022/46/section/37
-[psti_regs_sched1]: https://www.legislation.gov.uk/uksi/2023/1007/schedule/1
-[psti_regs_sched2]: https://www.legislation.gov.uk/uksi/2023/1007/schedule/2
-[psti_regs_sched3]: https://www.legislation.gov.uk/uksi/2023/1007/schedule/3
-[psti_regs_sched4]: https://www.legislation.gov.uk/uksi/2023/1007/schedule/4
+[psti_act_2022]: https://www.legislation.gov.uk/ukpga/2022/46 "PSTI Act 2022"
+[psti_regs_2023]: https://www.legislation.gov.uk/uksi/2023/1007 "PSTI Security Regulations 2023"
+[psti_act_s9]: https://www.legislation.gov.uk/ukpga/2022/46#section-9 "PSTI Act 2022, Section 9 – Statement of compliance"
+[psti_act_s14]: https://www.legislation.gov.uk/ukpga/2022/46#section-14 "PSTI Act 2022, Section 14 – Duty to investigate"
+[psti_act_s15]: https://www.legislation.gov.uk/ukpga/2022/46#section-15 "PSTI Act 2022, Section 15 – Duty to remedy failure"
+[psti_act_s16]: https://www.legislation.gov.uk/ukpga/2022/46#section-16 "PSTI Act 2022, Section 16 – Duty to notify"
+[psti_act_s18]: https://www.legislation.gov.uk/ukpga/2022/46#section-18 "PSTI Act 2022, Section 18 – Record-keeping"
+[psti_act_s37]: https://www.legislation.gov.uk/ukpga/2022/46#section-37 "PSTI Act 2022, Section 37 – Monetary penalties"
+[psti_regs_sched1]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-1 "PSTI Regulations 2023, Schedule 1 – Security requirements"
+[psti_regs_sched2]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-2 "PSTI Regulations 2023, Schedule 2 – Conditions for deemed compliance"
+[psti_regs_sched3]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-3 "PSTI Regulations 2023, Schedule 3 – Conditions relating to the defined support period"
+[psti_regs_sched4]: https://www.legislation.gov.uk/uksi/2023/1007#schedule-4 "PSTI Regulations 2023, Schedule 4 – Statement of compliance"
