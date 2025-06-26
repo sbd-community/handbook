@@ -26,7 +26,7 @@ The consolidated version is easier for clause citations, but in case of doubt th
 | :--- | :--- | :--- |
 | **2022-01-12** | Delegated Regulation (EU) 2022/30 is published, activating RED's security articles. | [Delegated Act][red_del_act] |
 | **2023-10-18** | Regulation (EU) 2023/2444 is published, postponing the compliance deadline by 12 months. | [Amendment to Delegated Act][red_del_act_amend] |
-| **2025-01-30** | Harmonised standards (e.g., EN 18031 series) expected to be cited in the OJEU. | [Standardisation Mandate M/585][std_mandate_m585] |
+| **2025-01-30** | **Anticipated** Harmonised standards (e.g., ETSI EN 18031 series) expected to be cited in the OJEU.<br/>*Note: This date may change, as standardisation bodies have noted the complexity of the work.* | [Standardisation Mandate M/585][std_mandate_m585] |
 | **2025-08-01** | **Compliance is mandatory.** Products placed on the market must meet the essential requirements. | [Delegated Act Art. 2][red_del_act_art2] |
 
 **Relationship to other EU laws**
@@ -67,13 +67,15 @@ The Delegated Regulation (EU) 2022/30 applies the cybersecurity requirements to 
 
 ## 3. The Essential Requirements (Article 3.3 d, e, f)
 
-The Delegated Act activates three key security requirements from the main RED text. Manufacturers of in-scope products must design their devices to comply with these obligations.
+The Delegated Act activates three key security requirements from the main RED text. While these are the focus for the 2025 deadline, it is important to remember that **[RED Article 3][red_art3]** also contains foundational requirements for all radio equipment, including the protection of health and safety, and electromagnetic compatibility (EMC).
+
+Manufacturers of in-scope products must design their devices to comply with the following obligations.
 
 | Obligation & Legal Basis | Interpretation & Engineering Tasks | Implementation Guides |
 |---|---|---|
 | **(d) No Network Harm**<br/>[RED Art. 3(3)(d)][red_art3_3d] | The product must not harm the network or misuse its resources, causing service degradation. This means designing for resilience against DoS attacks and ensuring the device cannot be easily co-opted into a botnet. | [Device Lifecycle Management](../../tools/device-lifecycle-management.md)<br/>[CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
-| **(e) Protect Personal Data & Privacy**<br/>[RED Art. 3(3)(e)][red_art3_3e] | The product must include safeguards to protect personal data and user privacy. This requires implementing strong access control, state-of-the-art encryption for data-at-rest and in-transit, and providing secure identity mechanisms. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)<br/>[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
-| **(f) Protection from Fraud**<br/>[RED Art. 3(3)(f)][red_art3_3f] | The product must support features that protect against fraudulent activity. This means ensuring the integrity of the device's software (e.g., via secure boot) and its identity to prevent it from being cloned or used for fraudulent transactions. | [Secure Boot](../../implementation/build-phase/secure-boot.md)<br/>[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
+| **(e) Protect Personal Data & Privacy**<br/>[RED Art. 3(3)(e)][red_art3_3e] | The product must include safeguards to protect personal data and user privacy. This requires implementing strong access control and state-of-the-art encryption. Manufacturers must also provide clear instructions to the user and maintain comprehensive technical documentation outlining the risks and implemented solutions ([RED Art. 10, 21][red_art10_21]). | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)<br/>[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
+| **(f) Protection from Fraud**<br/>[RED Art. 3(3)(f)][red_art3_3f] | The product must support features that protect against fraudulent activity. This means ensuring the integrity of its software (e.g., via secure boot) and its identity. To aid traceability, manufacturers must also ensure their products bear a type, batch, or serial number for identification ([RED Art. 10(6)][red_art10_6]). | [Secure Boot](../../implementation/build-phase/secure-boot.md)<br/>[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
 
 ---
 
@@ -91,10 +93,16 @@ To demonstrate compliance and affix the CE mark, manufacturers must follow a con
 - **Module B+C** ([RED Annex III][red_annexIII]): A Notified Body performs an "EU-type examination" of the technical design (Module B), and the manufacturer ensures ongoing production conforms to that approved type (Module C).
 - **Module H** ([RED Annex IV][red_annexIV]): A Notified Body approves a full quality assurance system covering the design, manufacture, and testing of the product.
 
+:::info Planning for the Cyber Resilience Act (CRA)
+These modules are foundational concepts in EU regulation. For long-term planning, manufacturers should be aware that the upcoming CRA builds upon them with a more detailed, risk-based approach. The CRA's conformity route depends on a product's risk classification, which determines whether self-assessment (Module A) is permitted or a third-party audit is required.
+
+See the **[CRA Overview](./cra-overview.md#conformity-assessment-routes)** for a full breakdown of its risk classes and assessment routes.
+:::
+
 ### 4.2 The Role of Harmonised Standards
 A **harmonised standard (hEN)** is a standard created by a European Standardisation Organisation (e.g., ETSI) that provides a technical specification for meeting the RED's essential requirements.
 
-When a manufacturer follows a relevant hEN, their product gains a **"presumption of conformity"** with the legal requirements covered by that standard ([RED Art. 16][red_art16]). This is the key that unlocks the simplest path to compliance: self-assessment (Module A).
+When a manufacturer follows a relevant hEN, their product gains a **"presumption of conformity"** with the legal requirements covered by that standard, or parts thereof ([RED Art. 16][red_art16]). This is the key that unlocks the simplest path to compliance: self-assessment (Module A).
 
 For the cybersecurity requirements, the key standards are the **ETSI EN 18031** series. The standardisation request from the Commission is detailed in **[Mandate M/585][std_mandate_m585]**.
 
@@ -109,6 +117,8 @@ For the cybersecurity requirements, the key standards are the **ETSI EN 18031** 
 [red_art3_3d]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_3 "RED Article 3(3)(d) – Network Harm"
 [red_art3_3e]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_3 "RED Article 3(3)(e) – Data & Privacy Protection"
 [red_art3_3f]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_3 "RED Article 3(3)(f) – Fraud Protection"
+[red_art10_6]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_10 "RED Article 10(6) – Manufacturer obligation for identification"
+[red_art10_21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_10 "RED Article 10, 21 – Manufacturer obligations for instructions and technical documentation"
 [red_art16]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_16 "RED Article 16 – Presumption of conformity"
 [red_art17]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_17 "RED Article 17 – Conformity assessment procedures"
 [red_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#anx_II "RED Annex II - Conformity assessment module A"
