@@ -97,3 +97,23 @@ security-culture:
   label: Security Culture
   description: Topics related to building a security-aware mindset in organizations.
   permalink: /security-culture
+
+fda:
+  label: FDA
+  description: Posts related to the US Food and Drug Administration.
+  permalink: /fda
+
+medical:
+  label: Medical Devices
+  description: Posts related to medical devices.
+  permalink: /medical
+
+us:
+  label: US
+  description: Focus on United States regulations and standards.
+  permalink: /us
+
+524b:
+  label: Section 524B
+  description: Posts related to Section 524B of the FD&C Act.
+  permalink: /524b
