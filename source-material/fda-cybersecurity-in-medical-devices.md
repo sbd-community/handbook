@@ -8,18 +8,20 @@
 
 # Food and Drug Administration Staff
 
-**Document issued on September 27, 2023.**
+**Document issued on June 27, 2025.**
 
-**The draft of this document was issued on April 8, 2022.**
+**A draft select update to this document was issued on March 13, 2024.**
+
+**This document supersedes “Cybersecurity in Medical Devices: Quality System**
 
 ```
-This document supersedes “Content of Premarket Submissions for
-Management of Cybersecurity in Medical Devices,” issued October 2, 2014.
+Considerations and Content of Premarket Submissions,” issued September
+27, 2023.
 ```
 For questions about this document regarding CDRH-regulated devices, contact
 CyberMed@fda.hhs.gov. For questions about this document regarding CBER-regulated devices,
 contact the Office of Communication, Outreach, and Development (OCOD) at 1-800-835-4709 or
-240-402-8010, or by email at ocod@fda.hhs.gov.
+240-402-8010, or by email at industry.biologics@fda.hhs.gov.
 
 ```
 U.S. Department of Health and Human Services
@@ -48,8 +50,8 @@ number GUI00001825 and complete title of the guidance in the request.
 **CBER**
 Additional copies are available from the Center for Biologics Evaluation and Research (CBER),
 Office of Communication, Outreach, and Development (OCOD), 10903 New Hampshire Ave.,
-WO71, Room 3128, Silver Spring, MD 20903, or by calling 1-800-835-4709 or 240-402-8010,
-by email, ocod@fda.hhs.gov, or from the Internet at
+WO71, Room 3103, Silver Spring, MD 20903, or by calling 1-800-835-4709 or 240-402-8010,
+by email, industry.biologics@fda.hhs.gov, or from the Internet at
 https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-
 biologics/biologics-guidances
 
@@ -62,25 +64,36 @@ biologics/biologics-guidances
 - III. Background
 - IV. General Principles
    - A. Cybersecurity is Part of Device Safety and the Quality System Regulation
-            - QS regulation 1. A Secure Product Development Framework (SPDF) may be one way to satisfy the
+      - QS regulation 1. A Secure Product Development Framework (SPDF) may be one way to satisfy the
    - B. Designing for Security
    - C. Transparency
    - D. Submission Documentation..............................................................................................
 - V. Using an SPDF to Manage Cybersecurity Risks
    - A. Security Risk Management
-            - 1. Threat Modeling
-            - 2. Cybersecurity Risk Assessment
-            - 3. Interoperability Considerations
-            - 4. Third-Party Software Components
-            - 5. Security Assessment of Unresolved Anomalies
-            - 6. TPLC Security Risk Management
+      - 1. Threat Modeling
+      - 2. Cybersecurity Risk Assessment
+      - 3. Interoperability Considerations
+      - 4. Third-Party Software Components
+      - 5. Security Assessment of Unresolved Anomalies
+      - 6. TPLC Security Risk Management
    - B. Security Architecture
-            - 1. Implementation of Security Controls
-            - 2. Security Architecture Views
+      - 1. Implementation of Security Controls
+      - 2. Security Architecture Views
    - C. Cybersecurity Testing
 - VI. Cybersecurity Transparency
    - A. Labeling Recommendations for Devices with Cybersecurity Risks
    - B. Cybersecurity Management Plans
+- VII. Cyber Devices
+   - A. Who is Required to Comply with Section 524B of the FD&C Act
+   - B. Devices Subject to Section 524B of the FD&C Act
+   - C. Documentation Recommendations to Comply with Section 524B of the FD&C Act
+      - 1. Plans and Procedures (Section 524B(b)(1))
+      - Assurance of Cybersecurity (Section 524B(b)(2)) 2. Design, Develop, and Maintain Processes and Procedures to Provide a Reasonable
+            - 3. Software Bill of Materials (SBOM) (Section 524B(b)(3))
+   - D. Modifications
+            - 1. Changes That May Impact Cybersecurity
+            - 2. Changes Unlikely to Impact Cybersecurity
+   - E. Reasonable Assurance of Cybersecurity of Cyber Devices
 - Appendix 1. Security Control Categories and Associated Recommendations
             - Authentication
          - Authorization
@@ -88,8 +101,8 @@ biologics/biologics-guidances
             - Code, Data, and Execution Integrity
       - Confidentiality
       - Event Detection and Logging
-      - Resiliency and Recovery
-      - Firmware and Software Updates
+            - Resiliency and Recovery
+            - Firmware and Software Updates
 - Appendix 2. Submission Documentation for Security Architecture Flows
    - A. Diagrams
    - B. Information Details for an Architecture View
@@ -122,10 +135,10 @@ related health information and other information, the need for robust cybersecur
 ensure medical device safety and effectiveness has become more important.
 
 In addition, cybersecurity threats to the healthcare sector have become more frequent and more
-severe, carrying increased potential for clinical impact. Cybersecurity incidents have rendered
-medical devices and hospital networks inoperable, disrupting the delivery of patient care across
-healthcare facilities in the U.S. and globally. Such cyber attacks and exploits may lead to patient
-harm as a result of clinical hazards, such as delay in diagnoses and/or treatment.
+severe, carrying increased potential for clinical impact. Cyber incidents have rendered medical
+devices and hospital networks inoperable, disrupting the delivery of patient care across
+healthcare facilities in the U.S. and globally. Such cyber incidents and exploits may lead to
+patient harm as a result of clinical hazards, such as delay in diagnoses and/or treatment.
 
 Increased connectivity has resulted in individual devices operating as single elements of larger
 medical device systems. These systems can include healthcare facility networks, other devices,
@@ -136,20 +149,13 @@ any asset in the system. As a result, ensuring device safety and effectiveness i
 device cybersecurity, as well as its security as part of the larger system.
 
 For the current edition of the FDA-recognized consensus standard(s) referenced in this
-document, see the FDA Recognized Consensus Standards Database.^1 For more information
-
-(^1) Available at https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfStandards/search.cfm
-
-
+document, see the FDA Recognized Consensus Standards Database. For more information
 regarding use of consensus standards in regulatory submissions, please refer to the FDA
 guidance titled “Appropriate Use of Voluntary Consensus Standards in Premarket Submissions
-for Medical Devices”^2 and “Standards Development and the Use of Standards in Regulatory
-Submissions Reviewed in the Center for Biologics Evaluation and Research.”^3
 
-For applications currently pending with FDA at the time of initial publication of this guidance, as
-well as those submitted after initial publication of this guidance, FDA intends to work
-collaboratively with manufacturers of such premarket submissions as part of the FDA review
-process.
+
+for Medical Devices” and “Standards Development and the Use of Standards in Regulatory
+Submissions Reviewed in the Center for Biologics Evaluation and Research.”
 
 In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
 Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
@@ -159,15 +165,15 @@ not required.
 
 ## II. Scope
 
-This guidance document is applicable to devices with cybersecurity considerations, including but
-not limited to devices that have a device software function^4 or that contain software (including
-firmware) or programmable logic. The guidance is not limited to devices that are network-enabled
-or contain other connected capabilities. This guidance describes recommendations regarding the
+This guidance is applicable to devices with cybersecurity considerations, including but not limited
+to devices that include a device software function^1 or that contain software (including firmware)
+or programmable logic. The guidance is not limited to devices that are network-enabled or contain
+other connected capabilities. This guidance describes recommendations regarding the
 cybersecurity information to be submitted for devices under the following premarket submission
 types, when submitted to the Center for Devices and Radiological Health (CDRH) or the Center
 for Biologics Evaluation and Research (CBER):^
 
-- Premarket Notification (510(k)) submissions;
+- Premarket Notifi cation (510(k)) submissions;
 - De Novo requests;
 - Premarket Approval Applications (PMAs) and PMA supplements;
 - Product Development Protocols (PDPs);
@@ -176,32 +182,29 @@ for Biologics Evaluation and Research (CBER):^
 - Biologics License Application (BLA) submissions; and
 - Investigational New Drug (IND) submissions.
 
-(^2) Available at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/appropriate-use-
-voluntary-consensus-standards-premarket-submissions-medical-devices
-(^3) Available at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/standards-development-
-and-use-standards-regulatory-submissions-reviewed-center-biologics-evaluation
-(^4) For the purposes of this guidance, “device software function” means software function that meets the device
-definition in section 201(h) of the Federal Food, Drug, and Cosmetic Act (FD&C Act). The term “function” is a
-distinct purpose of the product, which could be the intended use or a subset of the intended use of the product. For
-more information, see FDA’s guidance: Content of Premarket Submissions for Device Software Functions, available
-at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/content-premarket-submissions-
-device-software-functions
-
-
-This guidance applies to all types of devices within the meaning of section 201(h) of the Federal
-Food, Drug, and Cosmetic Act (FD&C Act), including devices that meet the definition of a
-biological product under section 351 of the Public Health Service Act, whether or not they
-require a premarket submission. Therefore, the recommendations in this guidance also apply to
-devices for which a premarket submission is not required (e.g., for 510(k)-exempt devices). This
-guidance also applies to cyber devices, as defined in section 524B of the FD&C Act, which are a
-subset of devices.
+Furthermore, this guidance applies to all types of devices within the meaning of section 201(h) of
+the FD&C Act, including devices that meet the definition of a biological product under section
+351 of the Public Health Service Act, whether or not they require a premarket submission.
+Therefore, the recommendations in this guidance also apply to devices for which a premarket
+submission is not required (e.g., for 510(k)-exempt devices). This guidance also applies to cyber
+devices, as defined in section 524B of the FD&C Act, which are a subset of devices.
 
 Generally, the recommendations in this guidance apply to the device constituent part of a
-combination product^5 (such as drug-device and biologic-device combination products) when the
-device constituent part presents cybersecurity considerations,^6 including but not limited to
-devices that that have a device software function or that contain software (including firmware) or
+combination product^2 (such as drug-device and biologic-device combination products) when the
+device constituent part presents cybersecurity considerations,^3 including but not limited to
+
+(^1) For the purposes of this guidance, “device software function” means a software function that meets the definition
+of a device in section 201(h) of the Federal Food, Drug, and Cosmetic Act (FD&C Act). For the purposes of this
+guidance, the term “function” is a distinct purpose of the product, which could be the intended use or a subset of the
+intended use of the product. For more information, see FDA’s guidance “Multiple Function Device Products: Policy
+and Considerations.”
+(^2) 21 CFR 3.2(e).
+(^3) 21 CFR 4.2.
+
+
+devices that include a device software function or that contain software (including firmware) or
 programmable logic. For more information, contact the FDA review division that will have the
-lead review for the combination product.^7
+lead review for the combination product.^4
 
 As IDE submissions have a different benefit-risk threshold and are not marketing authorizations,
 specific recommendations for IDE submission documentation are provided in Appendix 3.
@@ -209,115 +212,112 @@ Additionally, Appendix 5 contains terminology used throughout the guidance.
 
 ## III. Background
 
-FDA recognizes that medical device cybersecurity is a shared responsibility among stakeholders
-throughout the use environment of the medical device system, including healthcare facilities,
-patients, healthcare providers, and manufacturers of medical devices. For the purposes of this
-guidance, the term “medical device system” includes the device and systems—such as healthcare
-facility networks, other devices, and software update servers—to which it is connected.
+FDA recognizes that medical device cybersecurity is a shared responsibility among interested
+parties throughout the use environment of the medical device system, including healthcare
+facilities, patients, healthcare providers, and manufacturers of medical devices. For the purposes
+of this guidance, the term “medical device system” includes the device and systems—such as
+healthcare facility networks, other devices, and software update servers—to which it is
+connected.
 
 Events across the healthcare sector have stressed the importance of cybersecurity to patient
-safety. The WannaCry^8 ransomware^9 affected hospital systems and medical devices across the
-globe. Vulnerabilities identified in commonly used third-party components, like URGENT/11^10
-and SweynTooth,^11 have led to potential safety concerns across a broad range of devices that are
-
-(^5) 21 CFR 3.2(e).
-(^6) 21 CFR 4.2.
-(^7) This guidance has been prepared by CDRH and CBER, in consultation with the Center for Drug Evaluation and
-Research (CDER) and the Office of Combination Products (OCP).
-(^8) Additional information on the WannaCry Ransomware attack is available at https://h-isac.org/may-16-2017-
-wannacry-update/
-(^9) For the purposes of this guidance, we consider “ransomware” an ever-evolving form of malware designed to
-encrypt files on a device, rendering any files and the systems that rely on them unusable. This definition is cited
-from the Cybersecurity & Infrastructure Security Agency’s (CISA’s) webpage
-https://www.cisa.gov/stopransomware/ransomware-
-(^10) For more information, see FDA’s Cybersecurity webpage, available at https://www.fda.gov/medical-
-devices/digital-health-center-excellence/cybersecurity
-(^11) The FDA Safety Communication on the SweynTooth vulnerabilities is available at
-https://public4.pagefreezer.com/browse/FDA/08-02-2023T11:48/https:/www.fda.gov/medical-devices/safety-
-communications/sweyntooth-cybersecurity-vulnerabilities-may-affect-certain-medical-devices-fda-safety-
-communication
-
-
+safety. The WannaCry^5 ransomware^6 affected hospital systems and medical devices across the
+globe. Vulnerabilities identified in commonly used third-party components, like URGENT/11^7
+and SweynTooth,^8 have led to potential safety concerns across a broad range of devices that are
 used in various clinical specialties. In 2020, a ransomware attack on a German hospital
 highlighted the potential impacts due to delayed patient care when a cybersecurity attack forced
-patients to be diverted to another hospital.^12
+patients to be diverted to another hospital.^9
 
 FDA issued a final cybersecurity guidance addressing premarket expectations in 2014 “Content
 of Premarket Submissions for Management of Cybersecurity in Medical Devices,” and the
-complementary guidance “Postmarket Management of Cybersecurity in Medical Devices,”^13
+complementary guidance “Postmarket Management of Cybersecurity in Medical Devices,”
 hereafter referred to as the “Postmarket Cybersecurity Guidance,” in 2016. However, the rapidly
 evolving landscape, an increased understanding of emerging threats, and the need for capable
 deployment of mitigations throughout the total product lifecycle (TPLC) warrants an updated,
 iterative approach to device cybersecurity. The changes since the 2014 guidance are intended to
 further emphasize the importance of ensuring that devices are designed securely, are designed to
 be capable of mitigating emerging cybersecurity risks throughout the TPLC, and to more clearly
+
+(^4) This guidance has been prepared by CDRH and CBER, in consultation with the Center for Drug Evaluation and
+Research (CDER) and the Office of Combination Products (OCP).
+(^5) For more information on the WannaCry Ransomware attack, see Indicators Associated With WannaCry
+Ransomware.
+(^6) For the purposes of this guidance, we consider “ransomware” an ever-evolving form of malware designed to
+encrypt files on a device, rendering any files and the systems that rely on them unusable. This definition is cited
+from the Cybersecurity & Infrastructure Security Agency’s (CISA’s) webpage Ransomware 101.
+(^7) For more information, see FDA’s Cybersecurity webpage.
+(^8) For more information, see FDA’s SweynTooth Cybersecurity Vulnerabilities May Affect Certain Medical Devices:
+FDA Safety Communication.
+(^9) For more information on the German hospital ransomware attack, see The untold story of a cyberattack, a hospital
+and a dying woman.
+
+
 outline FDA’s recommendations for premarket submission information to address cybersecurity
 concerns.
 
 One way these TPLC considerations for devices can be achieved is through the implementation
-and adoption of a Secure Product Development Framework (SPDF).^14 An SPDF, as described in
-this guidance, is a set of processes that reduce the number and severity of vulnerabilities in
-products throughout the device lifecycle. Examples of such frameworks exist in many sectors
+and adoption of a Secure Product Development Framework (SPDF).^10 An SPDF, as described in
+this guidance, is a set of processes that reduces the number and severity of vulnerabilities in
+products throughout the device lifecycle. Examples of such frameworks exist in many sectors,
 including the medical device sector.
 
 Risk management for device manufacturers is the essential systematic practice of identifying,
 analyzing, evaluating, controlling, and monitoring risk throughout the product lifecycle to ensure
 that the devices they manufacture are safe and effective. The Quality System (QS) regulation in
-21 CFR Part 820 explicitly addresses risk management activities in 21 CFR 820.30(g). Although
-FDA is currently in the process of rulemaking^15 to revise the QS regulation, including 21 CFR
-820.30(g), should FDA finalize the rule as proposed, the concept of risk management as
-described in 21 CFR 820.30(g) would remain.
+21 CFR Part 820 explicitly addresses risk management activities in 21 CFR 820.30(g). FDA
+issued a final rule^11 amending the device current good manufacturing practice (CGMP)
+requirements of the Quality System (QS) Regulation under 21 CFR 820 to align more closely
+with the international consensus standard for Quality Management Systems for medical devices
+used by many other regulatory authorities around the world, and the final rule incorporates risk
+management throughout its requirements.^12
 
-The recommendations contained in this guidance document are intended to supplement FDA’s
-Postmarket Cybersecurity Guidance, “Cybersecurity for Networked Medical Devices Containing
-
-(^12) Additional information on the German hospital ransomware attack is available at
-https://www.wired.co.uk/article/ransomware-hospital-death-germany
-(^13) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/postmarket-
-management-cybersecurity-medical-devices
-(^14) See Appendix 5, Terminology.
-(^15) On February 23, 2022, FDA issued a proposed rule to amend the device QS regulation, 21 CFR Part 820, to align
-more closely with international consensus standards for devices (87 FR 10119; available at
-https://www.federalregister.gov/documents/2022/02/23/2022-03227/medical-devices-quality-system-regulation-
-amendments). Specifically, FDA proposed to withdraw the majority of the current requirements in Part 820 and
-instead incorporate by reference the 2016 edition of the International Organization for Standardization (ISO) 13485,
-Medical devices- Quality management systems- Requirements for regulatory purposes, in Part 820. As stated in that
-proposed rule, the requirements in ISO 13485 are, when taken in totality, substantially similar to the requirements of
-the current Part 820, providing a similar level of assurance in a firm’s quality management system and ability to
-consistently manufacture devices that are safe and effective and otherwise in compliance with the FD&C Act. FDA
-intends to finalize this proposed rule expeditiously. When the final rule takes effect, FDA will also update the
-references to provisions in 21 CFR Part 820 in this guidance to be consistent with that rule.
-
-
-Off-the-Shelf (OTS) Software,”^16 and “Content of Premarket Submissions for Device Software
-Functions,”^17 hereafter referred to as the “Premarket Software Guidance.” This guidance replaces
+The recommendations contained in this guidance are intended to supplement FDA’s Postmarket
+Cybersecurity Guidance, and “Content of Premarket Submissions for Device Software
+Functions,” h ereafter referred to as the “Premarket Software Guidance.” This guidance replaces
 the 2014 final guidance “Content of Premarket Submissions for Management of Cybersecurity in
 Medical Devices.”
 
 The recommendations in this guidance also generally align with or expand upon the
 recommendations in the Pre-Market Considerations for Medical Device Cybersecurity section of
 the International Medical Device Regulators Forum (IMDRF) final guidance “Principles and
-Practices for Medical Device Cybersecurity,”^18 issued March 2020.
+Practices for Medical Device Cybersecurity,” issued in March 2020.
 
-Additionally, section 3305 of the Consolidated Appropriations Act, 2023, enacted on December
-29, 2022, added section 524B “Ensuring Cybersecurity of Medical Devices” to the FD&C Act.
-Under section 524B(a) of the FD&C Act, a person who submits a 510(k), PMA, PDP, De Novo,
-or HDE for a device that meets the definition of a cyber device, as defined under section 524B(c)
-of the FD&C Act, is required to submit information to ensure that cyber devices meet the
-cybersecurity requirements under section 524B(b) of the FD&C Act.^19 Section 524B(c) of the
-FD&C Act defines “cyber device” as a device that “(1) includes software validated, installed, or
-authorized by the sponsor as a device or in a device; (2) has the ability to connect to the internet;
-and (3) contains any such technological characteristics validated, installed, or authorized by the
-sponsor that could be vulnerable to cybersecurity threats.” The recommendations in this
-guidance are intended to help manufacturers meet their obligations under section 524B of the
-FD&C Act.
+Additionally, section 3305 of the Food and Drug Omnibus Reform Act of 2022 (“FDORA”),
+enacted on December 29, 2022, added section 524B “Ensuring Cybersecurity of Medical
+Devices” to the FD&C Act. Effective March 29, 2023, with respect to premarket submissions for
+“cyber devices,” section 524B(a) provides that sponsors must include information to ensure the
+
+(^10) See Appendix 5, Terminology.
+(^11) See 89 FR 7496.
+(^12) See 89 FR 7496 at 7505. On February 2, 2024, FDA issued a final rule amending the device Quality System
+Regulation, 21 CFR Part 820, to align more closely with international consensus standards for devices (89 FR 7496).
+This final rule will take effect on February 2, 2026. Once in effect, this rule will withdraw the majority of the current
+requirements in Part 820 and instead incorporate by reference the 2016 edition of the International Organization for
+Standardization (ISO) 13485, Medical devices - Quality management systems – Requirements for regulatory
+purposes, in Part 820. As stated in the final rule, the requirements in ISO 13485 are, when taken in totality,
+substantially similar to the requirements of the current Part 820, providing a similar level of assurance in a firm’s
+quality management system and ability to consistently manufacture devices that are safe and effective and otherwise
+in compliance with the FD&C Act. When the final rule takes effect, FDA will also update this guidance, including
+the references to provisions in Part 820 in this guidance to be consistent with the rule.
+
+
+device meets the cybersecurity requirements under section 524B(b).^13 Under section 524B(a) of
+the FD&C Act, a person who submits a 510(k), PMA, PDP, De Novo, or HDE for a device that
+meets the definition of a cyber device, as defined under section 524B(c), is required to submit
+information to ensure that cyber devices meet the cybersecurity requirements under section
+524B(b).^14 Section 524B(c) of the FD&C Act defines “cyber device” as a device that “(1)
+includes software validated, installed, or authorized by the sponsor as a device or in a device; (2)
+has the ability to connect to the internet; and (3) contains any such technological characteristics
+validated, installed, or authorized by the sponsor that could be vulnerable to cybersecurity
+threats” (see Section VII.B for more information on the term “cyber device”). The
+recommendations in this guidance are intended to help manufacturers meet their obligations
+under section 524B of the FD&C Act.
 
 ## IV. General Principles
 
 This section provides general principles for device cybersecurity relevant to device
-manufacturers. The principles in this guidance document are important to the improvement of
-device cybersecurity and, when followed, are expected to have a positive impact on the safety
-and effectiveness of the device. The recommendations in this guidance cover all relevant
+manufacturers. The principles in this guidance are important to the improvement of device
+cybersecurity and, when followed, are expected to have a positive impact on the safety and
+effectiveness of the device. The recommendations in this guidance cover all relevant
 cybersecurity considerations that may affect device safety and effectiveness, including but not
 limited to software, hardware, and firmware.
 
@@ -325,69 +325,54 @@ limited to software, hardware, and firmware.
 
 Device manufacturers must establish and follow quality systems to help ensure that their
 products consistently meet applicable requirements and specifications. The quality systems
-
-(^16) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-
-networked-medical-devices-containing-shelf-ots-software
-(^17) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-content-
-premarket-submissions-software-contained-medical-devices
-(^18) A vailable at [http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-pp-mdc-n60.pdf](http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-pp-mdc-n60.pdf)
-(^19) In addition to the cybersecurity requirements set forth in section 524B(b) of the FD&C Act, section 524B(b)(4) of
-the FD&C Act requires cyber device manufacturers to comply with any other such requirements FDA sets forth in
-regulations “to demonstrate reasonable assurance that the device and related systems are cybersecure.”
-
-
 requirements are found in the QS regulation in 21 CFR Part 820. Depending on the device, QS
-requirements may be relevant at the premarket stage, postmarket stage,^20 or both.
+requirements may be relevant at the premarket stage, postmarket stage,^15 or both.
 
 In the premarket context, in order to demonstrate a reasonable assurance of safety and
 effectiveness for certain devices with cybersecurity risks, documentation outputs related to the
-requirements of the QS regulation may be one source of documentation to include as part of the
-premarket submission.^21 This guidance is intended to explain how such documentation that may
-be relevant for QS regulation compliance can also be used to show how a sponsor or
-manufacturer is addressing cybersecurity considerations relevant to a device. For example, 21
-CFR 820.30(a) requires that for all classes of devices automated with software, a manufacturer
-must establish and maintain procedures to control the design of the device in order to ensure that
-specified design requirements are met (“design controls”). As part of design controls, a
-manufacturer must “establish and maintain procedures for validating the device design,” which
-“shall include software validation and risk analysis, where appropriate” (21 CFR 820.30(g)). As
-part of the software validation and risk analysis required by 21 CFR 820.30(g), software device
-manufacturers may need to establish cybersecurity risk management and validation processes,
-where appropriate. See also FDA’s guidance titled “Content of Premarket Submissions for
-Device Software Functions.”^22
+ongoing requirements of the QS regulation may be one source of documentation to include as
+
+(^13) While section 524B(b)(4) of the FD&C Act authorizes FDA to promulgate additional cybersecurity requirements
+via regulation, FDA is not required to promulgate a regulation to elaborate on the new requirements specified in
+section 524B of the FD&C Act.
+(^14) In addition to the cybersecurity requirements set forth in section 524B(b) of the FD&C Act, section 524B(b)(4) of
+the FD&C Act requires cyber device manufacturers to comply with any other such requirements FDA sets forth in
+regulations “to demonstrate reasonable assurance that the device and related systems are cybersecure.”
+(^15) In the postmarket context, design controls may also be important to ensure medical device cybersecurity and
+maintain medical device safety and effectiveness. FDA recommends that device manufacturers implement
+comprehensive cybersecurity risk management programs and documentation consistent with the QS regulation,
+including but not limited to complaint handling (21 CFR 820.198), quality audit (21 CFR 820.22), corrective and
+preventive action (21 CFR 820.100), software validation and risk analysis (21 CFR 820.30(g)), and servicing (
+CFR 820.200).
+
+
+part of the premarket submission.^16 This guidance is intended to explain how such
+documentation that may be relevant for QS regulation compliance can also be used to show how
+a sponsor or manufacturer is addressing cybersecurity considerations relevant to a device. For
+example, 21 CFR 820.30(a) requires that for all classes of devices automated with software, a
+manufacturer must establish and maintain procedures to control the design of the device in order
+to ensure that specified design requirements are met (“design controls”). As part of design
+controls, a manufacturer must “establish and maintain procedures for validating the device
+design,” which “shall include software validation and risk analysis, where appropriate” (21 CFR
+820.30(g)). As part of the software validation and risk analysis required by 21 CFR 820.30(g),
+software device manufacturers may need to establish cybersecurity risk management and
+validation processes, where appropriate. See also FDA’s guidance titled “Content of Premarket
+Submissions for Device Software Functions.”
 
 Software validation and risk management are key elements of cybersecurity analyses and
 demonstrating whether a device has a reasonable assurance of safety and effectiveness. FDA
 requires manufacturers to implement development processes that account for and address
 software risks throughout the design and development process as part of design controls, as
 discussed in FDA’s regulations regarding design control, which may include cybersecurity
-considerations.23 For example, these processes should address the identification of security
-risks, the design requirements for how the risks will be controlled, and the evidence that the
-controls function as designed and are effective in their environment of use for ensuring adequate
-security.
+considerations.^17 For example, these processes should address the identification of security risks,
+the design requirements for how the risks will be controlled, and the evidence that the controls
+function as designed and are effective in their environment of use for ensuring adequate security.
 
 **1. A Secure Product Development Framework (SPDF) may be**
     **one way to satisfy the QS regulation**
 
 Cybersecurity threats have the potential to exploit one or more vulnerabilities that could lead to
 patient harm. The greater the number of vulnerabilities that exist and/or are identified over time
-
-(^20) In the postmarket context, design controls may also be important to ensure medical device cybersecurity and
-maintain medical device safety and effectiveness. FDA recommends that device manufacturers implement
-comprehensive cybersecurity risk management programs and documentation consistent with the QS regulation,
-including but not limited to complaint handling (21 CFR 820.198), quality audit (21 CFR 820.22), corrective and
-preventive action (21 CFR 820.100), software validation and risk analysis (21 CFR 820.30(g)), and servicing (
-CFR 820.200).
-(^21) The recommendations in this guidance are not intended to suggest that FDA will evaluate an applicant’s
-compliance with the QS regulation as part of its premarket submission under section 510(k) of the FD&C Act in our
-determination of a device’s substantial equivalence, as this is not a requirement for such decision under section
-513(i) of the FD&C Act. This guidance is intended to explain how FDA evaluates the performance of device
-cybersecurity and the cybersecurity outputs of activities that are part and parcel of QS regulation compliance, and
-explain how the QS regulation can be leveraged to demonstrate these performance outputs.
-(^22) Available at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/guidance-content-
-premarket-submissions-software-contained-medical-devices
-(^23) See 21 CFR 820.30.
-
-
 in a system in which a device operates, the easier a threat can compromise the safety and
 effectiveness of the medical device. An SPDF is a set of processes that help identify and reduce
 the number and severity of vulnerabilities in products. An SPDF encompasses all aspects of a
@@ -402,14 +387,22 @@ Using an SPDF is one approach to help ensure that the QS regulation is met. Beca
 benefits in helping comply with the QS regulation and cybersecurity, FDA encourages
 manufacturers to use an SPDF, but other approaches might also satisfy the QS regulation.
 
+(^16) The recommendations in this guidance are not intended to suggest that FDA will evaluate an applicant’s
+compliance with the QS regulation as part of its premarket submission under section 510(k) of the FD&C Act in our
+determination of a device’s substantial equivalence, as this is not a requirement for such decision under section
+513(i) of the FD&C Act. This guidance is intended to explain how FDA evaluates the performance of device
+cybersecurity and the cybersecurity outputs of activities that are part and parcel of QS regulation compliance, and
+explain how the QS regulation can be leveraged to demonstrate these performance outputs.
+(^17) See 21 CFR 820.30.
+
+
 ### B. Designing for Security
 
 When reviewing premarket submissions, FDA intends to assess device cybersecurity based on a
 number of factors, including, but not limited to, the device’s ability to provide and implement the
 security objectives below throughout the device architecture. The security objectives below
 generally may apply broadly to devices within the scope of this guidance, including, but not
-limited to, devices containing artificial intelligence and machine learning (AI/ML) and cloud-
-based services.
+limited to, devices containing artificial intelligence (AI) and cloud-based services.
 
 ```
 Security Objectives:
@@ -427,21 +420,16 @@ will depend on but may not be limited to:
 
 - The device’s intended use, indications for use, and reasonably foreseeable misuse;
 - The presence and functionality of its electronic data interfaces;
-- Its intended and actual environment of use;^24
+- Its intended and actual environment of use;^18
 - The risks presented by cybersecurity vulnerabilities;
 - The exploitability of the vulnerabilities; and
 - The risk of patient harm due to vulnerability exploitation.
-
-(^24) Manufacturers may not be able to account for all potential environments of use, but should consider the range of
-use environments and ensure the risks are identified and controlled for the worst-case environments of use (e.g.,
-least secure expected network configuration(s)).
-
 
 SPDF processes aim to reduce the number and severity of vulnerabilities and thereby reduce the
 exploitability of a medical device system and the associated risk of patient harm. Because
 exploitation of known vulnerabilities or weak cybersecurity controls should be considered
 reasonably foreseeable failure modes for medical device systems, these factors should be
-addressed in the device design.^25 One of the key benefits of using an SPDF is that a medical
+addressed in the device design.^19 One of the key benefits of using an SPDF is that a medical
 device system is more likely to be secure by design, such that the device is designed from the
 outset to be secure within its system and/or network of use throughout the device lifecycle.
 
@@ -451,6 +439,14 @@ A lack of cybersecurity information, such as information necessary to integrate 
 the use environment, as well as information needed by users to maintain the medical device
 system’s cybersecurity over the device lifecycle, has the potential to affect the safety and
 effectiveness of a device. In order to address these concerns, it is important for device users to
+
+(^18) Manufacturers may not be able to account for all potential environments of use, but should consider the range of
+use environments and ensure the risks are identified and controlled for the worst-case environments of use (e.g.,
+least secure expected network configuration(s)).
+(^19) For more information on reasonably foreseeable misuse, see the IMDRF final guidance “Principles and Practices
+for Medical Device Cybersecurity.”
+
+
 have access to information pertaining to the device’s cybersecurity controls, potential risks to the
 medical device system, and other relevant information. For example:
 
@@ -481,61 +477,52 @@ be used. For example, a cybersecurity risk assessment performed on a simple, non
 thermometer may conclude that the risks are limited, and therefore such a device needs only a
 limited security architecture (i.e., addressing only device hardware and software) and few
 security controls based on the technical characteristics and design of the device. However, if a
-
-(^25) For more information on reasonably foreseeable misuse, see the IMDRF final guidance “Principles and Practices
-for Medical Device Cybersecurity” available at [http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-](http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-)
-pp-mdc-n60.pdf
-
-
 thermometer is used in a safety-critical control loop, or is connected to networks or other
 devices, then the cybersecurity risks for the device are considered to be greater and more
 substantial design controls should result. Submitters should consider including in premarket
-submissions to FDA documentation generation from those design controls used during the
+submissions to FDA documentation generated from those design controls used during the
 development of a device with cybersecurity risks as a way to demonstrate reasonable assurance
 of safety and effectiveness. This guidance identifies the cybersecurity information FDA
 recommends to help support a premarket submission for devices within the scope of this
-guidance.^26
+guidance, including but not limited to cyber devices.^20
 
 As cybersecurity is part of device safety and effectiveness, cybersecurity controls established
 during premarket development should also take into consideration the intended and actual use
-environment (see Section IV.B.). Cybersecurity risks evolve over time and as a result, the
+environment (see Section IV.B ). Cybersecurity risks evolve over time and as a result, the
 effectiveness of cybersecurity controls may degrade as new risks, threats, and attack methods
 emerge. In the 510(k) context, FDA evaluates the cybersecurity information submitted and the
+
+(^20) As previously discussed, section 524B of the FD&C Act requires the submission of certain documentation for
+cyber devices. See Section VII of this guidance for more information on cyber devices.
+
+
 protections the cybersecurity controls provide in demonstrating substantial equivalence (see
-section 513(i) of the FD&C Act and 21 CFR 807.100(b)(2)(ii)(B)).^27
+section 513(i) of the FD&C Act and 21 CFR 807.100(b)(2)(ii)(B)).^21
 
 In addition, inadequate cybersecurity information in the device labeling may cause a device to be
 misbranded under section 502(f) of the FD&C Act if its labeling does not bear adequate
 directions for use or under section 502(j) of the FD&C Act because it is dangerous to health
 when used in the manner recommended or suggested in the labeling, among other possible
 violations. For cyber devices, failure to comply with any requirement under section 524B(b)(2)
-(relating to ensuring device cybersecurity) is considered a prohibited act under section 301(q) of
-the FD&C Act.
+of the FD&C Act (relating to ensuring device cybersecurity) is considered a prohibited act under
+section 301(q) of the FD&C Act.
 
-The cybersecurity information being recommended to be included in submissions as detailed in
-this guidance is based on risks due to cybersecurity, not on any other criteria or level of
-risk/concern established in a separate FDA guidance (e.g., the risk-based approach in the
-Premarket Software Guidance to help determine a device’s Documentation Level). For example,
-a device that is determined to have a greater software risk may only have a small cybersecurity
-risk due to how the device is designed. Likewise, a device with a smaller software risk may have
-a significant cybersecurity risk. Therefore, the recommendations in this guidance regarding
-information to be submitted to the FDA are intended to address the cybersecurity risk, as
-assessed by the cybersecurity risk assessment during development of a device, and are expected
-to scale based on the cybersecurity risk. The premarket submission documentation
-recommendations throughout this guidance apply to all premarket submissions and are intended
-to be used to support FDA’s assessment of a device’s safety and effectiveness.
-
-(^26) As previously discussed, section 524B of the FD&C Act requires the submission of certain documentation for
-cyber devices.
-(^27) For more information regarding the substantial equivalence review standard, please refer to FDA’s guidance, “ The
-510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications [510(k)],” available at
-https://www.fda.gov/regulatory-information/search-fda-guidance-documents/510k-program-evaluating-substantial-
-equivalence-premarket-notifications-510k
-
+This guidance recommends cybersecurity information be included in submissions based on
+cybersecurity risks, not on any other criteria or level of risk/concern established in a separate
+FDA guidance (e.g., the risk-based approach in the Premarket Software Guidance to help
+determine a device’s Documentation Level). For example, a device that is determined to have a
+greater software risk may only have a small cybersecurity risk due to how the device is designed.
+Likewise, a device with a smaller software risk may have a significant cybersecurity risk.
+Therefore, the recommendations in this guidance regarding information to be submitted to FDA
+are intended to address the cybersecurity risk, as assessed by the cybersecurity risk assessment
+during development of a device, and are expected to scale based on the cybersecurity risk. The
+premarket submission documentation recommendations throughout this guidance apply to all
+premarket submissions and are intended to be used to support FDA’s assessment of a device’s
+safety and effectiveness.
 
 For cyber devices, some of the information recommended in this guidance may help
 manufacturers meet their obligations for what is required to be in premarket submissions under
-section 524B.
+section 524B of the FD&C Act.
 
 ## V. Using an SPDF to Manage Cybersecurity Risks
 
@@ -545,47 +532,46 @@ use alternative approaches and provide different documentation so long as their 
 documentation satisfy premarket submission requirements in applicable statutory provisions and
 regulations. The increasingly interconnected nature of medical devices has demonstrated the
 importance of addressing cybersecurity risks associated with device connectivity in device
-design because of the effects on safety and effectiveness.^28 Cybersecurity risks to the medical
+design because of the effects on safety and effectiveness.^22 Cybersecurity risks to the medical
 device or to the larger medical device system can be reasonably controlled through using an
 SPDF.
 
 The primary goal of using an SPDF is to manufacture and maintain safe and effective devices.
 From a security standpoint, these are also trustworthy and resilient devices. These devices can
+
+(^21) For more information regarding the substantial equivalence review standard, please refer to FDA’s guidance, “The
+510(k) Program: Evaluating Substantial Equivalence in Premarket Notifications [510(k)].”
+(^22) Addressing cybersecurity risks is in addition to addressing other risks, including software, biocompatibility,
+sterilization, and electromagnetic compatibility, among others.
+
+
 then be managed (e.g., installed, configured, updated, review of device logs) through the device
 design and associated labeling by the device manufacturers and/or users (e.g., patients,
 healthcare facilities). For healthcare facilities, these devices can also be managed within their
 own cybersecurity risk management frameworks, such as the National Institute of Standards and
 Technology (NIST) Framework for Improving Critical Infrastructure Cybersecurity, generally
-referred to as the NIST Cybersecurity Framework or NIST CSF.^29
+referred to as the NIST Cybersecurity Framework or NIST CSF.^23
 
 FDA recommends that manufacturers use device design processes such as those described in the
 QS regulation to support secure product development and maintenance. To preserve flexibility
 for manufacturers, manufacturers may use other existing frameworks that satisfy the QS
 regulation and align with FDA’s recommendations for using an SPDF. Possible frameworks to
-consider include, but are not limited to the medical device-specific framework that can be found
-in the Medical Device and Health IT Joint Security Plan (JSP)^30 and IEC 81001-5-1.
+consider include, but are not limited to, the medical device-specific framework that can be found
+in the Medical Device and Health IT Joint Security Plan (JSP2)^24 and IEC 81001-5-1.
 Frameworks from other sectors may also comply with the QS regulations, like the framework
 provided in ANSI/ISA 62443-4-1 _Security for industrial automation and control systems Part 4-
-1: Product security development life-cycle requirements_.^31
+1: Product security development life-cycle requirements_.^25
 
 The following subsections provide recommendations for using SPDF processes that FDA
 believes provide important considerations for the development of devices that are safe and
 effective, how these processes can complement the QS regulation, and the documentation FDA
-recommends manufacturers provide for review as part of premarket submissions. The
-
-(^28) Addressing cybersecurity risks is in addition to addressing other risks, including software, biocompatibility,
-sterilization, and electromagnetic compatibility, among others.
-(^29) For more information, please see the NIST Cybersecurity Framework available at
-https://www.nist.gov/cyberframework
-(^30) Medical Device and Health IT Joint Security Plan (JSP) is available at https://healthsectorcouncil.org/the-joint-
-security-plan/
-(^31) ANSI/ISA-62443-4-1 _Security for industrial automation and control systems Part 4-1: Product security
-development life-cycle requirements_ outlines a secure product development lifecycle similar to that of the JSP.
-
-
-information in these sections do not represent a complete SPDF. For more information on
-SPDFs, see earlier in Section V. In addition, FDA does not recommend that manufacturers
-discontinue existing, effective processes.
+recommends manufacturers provide for review as part of premarket submissions. These
+recommendations may be helpful for manufacturers of cyber devices that must “design, develop,
+and maintain processes and procedures to provide a reasonable assurance that the device and
+related systems are cybersecure.. .” pursuant to section 524B(b)(2) of the FD&C Act (see
+Section VII.C.2). The information in these sections does not represent a complete SPDF. For
+more information on SPDFs, see earlier in Section V. In addition, FDA does not recommend that
+manufacturers discontinue existing, effective processes.
 
 ### A. Security Risk Management
 
@@ -594,10 +580,18 @@ of each device should be assessed within the context of the larger system in whi
 operates. In the context of cybersecurity, security risk management processes are critical
 because, given the evolving nature of cybersecurity threats and risks, no device is, or can be,
 completely secure. Security risk management should be an integrated part of a manufacturer’s
-entire quality system, addressed throughout the TPLC.^32 The quality system processes entail the
+entire quality system, addressed throughout the TPLC.^26 The quality system processes entail the
 technical, personnel, and management practices, among others, that manufacturers use to manage
 potential risks to their devices and ensure that their devices are, and once on the market, remain,
 safe and effective, which includes security.
+
+(^23) For more information, please see the NIST Cybersecurity Framework.
+(^24) See the Medical Device and Health IT Joint Security Plan version 2 (JSP2).
+(^25) ANSI/ISA-62443-4-1 _Security for industrial automation and control systems Part 4-1: Product security
+development life-cycle requirements_ outlines a secure product development lifecycle similar to that of the JSP2.
+(^26) The TPLC processes include design and development, manufacturing, postmarket monitoring, delivering device
+software and firmware updates, and servicing, among others.
+
 
 Performing security risk management is distinct from performing safety risk management as
 described in ISO 14971. The distinction in the performance of these processes is due to the fact
@@ -612,51 +606,56 @@ The scope and objective of a security risk management process, in conjunction wi
 processes (e.g., security testing), is to expose how threats, through vulnerabilities, can manifest
 patient harm and other potential risks. These processes should also ensure that risk control
 measures for one type of risk assessment do not inadvertently introduce new risks in the other.
-For example, AAMI TIR57 details how the security and safety risk management processes
-should interface to ensure all risks are adequately assessed.^33 FDA recommends that security risk
-management processes, as detailed in the QS regulation,^34 be established or incorporated into
-those that already exist, and should address the manufacturer’s design, manufacturing, and
-distribution processes, as well as updates across the TPLC. The processes in the QS regulation
-which may be relevant in this context include, but are not limited to design controls (21 CFR
-820.30), validation of production processes (21 CFR 820.70), and corrective and preventive
-actions (21 CFR 820.100) to ensure both safety and security risks are adequately addressed. For
-completeness in performing risk analyses under 21 CFR 820.30(g), FDA recommends that
-device manufacturers conduct both a safety risk assessment and a separate, accompanying
-security risk assessment to ensure a more comprehensive identification and management of
-patient safety risks.
-
-(^32) The TPLC processes include design and development, manufacturing, postmarket monitoring, delivering device
-software and firmware updates, and servicing, among others.
-(^33) AAMI TIR57 _Principles for medical device security—Risk management_ describes the security risk management
-process and how the security risk management process should have links into the safety risk management process
-and vice versa.
-(^34) 21 CFR 820.
-
+For example, AAMI TIR57 and ANSI/AAMI SW96 detail how the security and safety risk
+management processes should interface to ensure all risks are adequately assessed.^27 FDA
+recommends that security risk management processes, as detailed in the QS regulation,^28 be
+established or incorporated into those that already exist, and should address the manufacturer’s
+design, manufacturing, and distribution processes, as well as updates across the TPLC. The
+processes in the QS regulation which may be relevant in this context include, but are not limited
+to design controls (21 CFR 820.30), validation of production processes (21 CFR 820.70), and
+corrective and preventive actions (21 CFR 820.100) to ensure both safety and security risks are
+adequately addressed. For completeness in performing risk analyses under 21 CFR 820.30(g),
+FDA recommends that device manufacturers conduct both a safety risk assessment and a
+separate, accompanying security risk assessment to ensure a more comprehensive identification
+and management of patient safety risks.
 
 A device should be designed to eliminate or mitigate known vulnerabilities. For marketed
 devices, if comprehensive design mitigations are not possible, compensating controls should be
 considered. For all devices, when any known vulnerabilities are only partially mitigated or
 unmitigated by the device design, they should be assessed as reasonably foreseeable risks in the
-risk assessment and be assessed for additional control measures or risk transfer^35 to the
+risk assessment and be assessed for additional control measures or risk transfer^29 to the
 user/operator, or, if necessary, the patient. Risk transfer, if appropriate, should only occur when
 all relevant risk information is known, assessed, and appropriately communicated to users and
 includes risks inherited from the supply chain as well as how risk transfer will be handled when
-the device or manufacturer-controlled assets of the medical device system reaches end of support
+the device or manufacturer-controlled assets of the medical device system reach end of support
 and end of life and whether or how the user is able to take on that role (e.g., if the user may be a
 patient).
 
+(^27) AAMI TIR57 _Principles for medical device security—Risk management_ describes the security risk management
+process and how the security risk management process should have links into the safety risk management process
+and vice versa. ANSI/AAMI SW96 _Standard for medical device security - Security risk management for device
+manufacturers_ ( https://doi.org/10.2345/9781570208621.ch1) describes specific requirements for managing security
+related risk across the total product life cycle utilizing the risk management framework defined by ISO 14971
+_Medical devices - Applications of risk management to medical devices._
+(^28) 21 CFR Part 820.
+(^29) For the purposes of this guidance, we consider “risk transfer” to include actions taken to manage risk that shifts
+some or all of the risk to another user, asset, system, network, or geographic area. This definition is adapted from the
+DHS Risk Lexicon.
+
+
 To document the security risk management activities for a medical device system, FDA
 recommends that manufacturers generate a security risk management plan and report such as that
-described in AAMI TIR57.^36 Manufacturers should include their security risk management
-reports—including the outputs of their security risk management processes—in their premarket
-submissions to help demonstrate the safety and effectiveness of the device. A security risk
-management report, such as that described in that in AAMI TIR57, should be sufficient to
-support the security risk management process aspect of demonstrating a reasonable assurance of
-safety and effectiveness. Such report should include the documentation elements for the system
-threat modeling, cybersecurity risk assessment, Software Bill of Materials (SBOM), component
-support information, vulnerability assessments, and unresolved anomaly assessment(s) described
-in the sections below.^37 In the subsections below, we discuss FDA’s recommendations regarding
-the scope and/or content of specific security risk management documentation elements.
+described in AAMI TIR57 and ANSI/AAMI SW96.^30 Manufacturers should include their
+security risk management reports—including the outputs of their security risk management
+processes—in their premarket submissions to help demonstrate the safety and effectiveness of
+the device. A security risk management report, such as that described in AAMI TIR57 and
+ANSI/AAMI SW96, should be sufficient to support the security risk management process aspect
+of demonstrating a reasonable assurance of safety and effectiveness. Such report should include
+the documentation elements for the system threat modeling, cybersecurity risk assessment,
+Software Bill of Materials (SBOM), component support information, vulnerability assessments,
+and unresolved anomaly assessment(s) described in the sections below.^31 In the subsections
+below, we discuss FDA’s recommendations regarding the scope and/or content of specific
+security risk management documentation elements.
 
 In addition to containing the documentation elements listed above, the security risk management
 report should:
@@ -669,17 +668,7 @@ report should:
     testing documentation as discussed later in this guidance as well as other relevant
     cybersecurity risk management documentation.
 
-(^35) For the purposes of this guidance, we consider “risk transfer” to include actions taken to manage risk that shifts
-some or all of the risk to another user, asset, system, network, or geographic area. This definition is adapted from the
-DHS Risk Lexicon available at https://www.cisa.gov/resources-tools/resources/dhs-risk-lexicon
-(^36) Details on the content for security risk management plans and reports beyond those specifically identified can be
-found in AAMI TIR57 _Principles for medical device security—Risk management_.
-(^37) While security architecture is likely captured as a component of the security risk management process, it is
-discussed separately for the purposes of this guidance due to the level of detail recommended to be provided by
-manufacturers in order to facilitate FDA review of the safety and effectiveness of the device.
-
-
-###### 1. Threat Modeling
+#### 1. Threat Modeling
 
 Threat modeling includes a process for identifying security objectives, risks, and vulnerabilities
 across the medical device system, and then defining countermeasures to prevent, mitigate,
@@ -692,6 +681,15 @@ controls for the medical device system, FDA recommends that threat modeling be p
 inform and support the risk analysis activities. As part of the risk assessment, FDA recommends
 threat modeling be performed throughout the design process and be inclusive of all medical
 device system elements.
+
+(^30) Details on the content for security risk management plans and reports beyond those specifically identified can be
+found in AAMI TIR57 _Principles for medical device security—Risk management_ and ANSI/AAMI SW96 _Standard
+for medical device security - Security risk management for device manufacturers_.
+https://doi.org/10.2345/9781570208621.ch
+(^31) While security architecture is likely captured as a component of the security risk management process, it is
+discussed separately for the purposes of this guidance due to the level of detail recommended to be provided by
+manufacturers in order to facilitate FDA review of the safety and effectiveness of the device.
+
 
 The threat model should:
 
@@ -709,10 +707,10 @@ The threat model should:
 FDA recommends that premarket submissions include threat modeling documentation to
 demonstrate how the medical device system has been analyzed to identify potential security risks
 that could impact safety and effectiveness. There are a number of methodologies and/or
-combinations of methods for threat modeling that manufacturers may choose to use.^38 Rationale
+combinations of methods for threat modeling that manufacturers may choose to use.^32 Rationale
 for the methodology(ies) selected should be provided with the threat modeling documentation.
 Additional recommendations on how threat modeling documentation should be submitted to
-FDA are discussed in Section V.B. below.
+FDA are discussed in Section V.B below.
 
 Threat modeling activities can be performed and/or reviewed during design reviews. FDA
 recommends that threat modeling documentation include sufficient information on threat
@@ -720,12 +718,7 @@ modeling activities performed by the manufacturer to assess and review the secur
 built into the device such that they holistically evaluate the device and the system in which the
 device operates, for the safety and effectiveness of the device.
 
-(^38) The MDIC/MITRE Playbook for Threat Modeling Medical Devices is an educational resource that discusses the
-threat modeling process, different threat modeling techniques, and provides fictional medical device examples. The
-playbook is available at https://www.mitre.org/news-insights/publication/playbook-threat-modeling-medical-devices
-
-
-###### 2. Cybersecurity Risk Assessment
+#### 2. Cybersecurity Risk Assessment
 
 As a part of security risk management, security risks and controls should be assessed for residual
 risks as part of a cybersecurity risk assessment. Effective security risk assessments address the
@@ -739,63 +732,59 @@ assessment processes focus on exploitability, or the ability to exploit vulnerab
 within a device and/or system. FDA recommends that manufacturers assess identified risks
 according to the level of risk posed from the device and the system in which it operates.
 Additional discussion on exploitability assessments for the security risk assessment can be found
-in the FDA’s Postmarket Cybersecurity Guidance.
+in FDA’s Postmarket Cybersecurity Guidance.
+
+(^32) The MDIC/MITRE Playbook for Threat Modeling Medical Devices is an educational resource that discusses the
+threat modeling process, different threat modeling techniques, and provides fictional medical device examples.
+
 
 The premarket assessment of exploitability of a cybersecurity risk may be different from the
-exploitability assessment of a vulnerability discovered postmarket. For example, some of the
-exploitability factors discussed in the Postmarket Cybersecurity Guidance (e.g., Exploit Code
-Maturity, Remediation Level, Report Confidence)^39 may not be applicable to unreleased
-software. In these instances, a premarket exploitability assessment could either assume a worst-
-case assessment and implement appropriate controls, or provide a justification for a reasonable
-exploitability assessment of the risk throughout the TPLC and how the risk is controlled.
+exploitability assessment of a vulnerability discovered postmarket. In these instances, a
+premarket exploitability assessment could either assume a worst-case assessment and implement
+appropriate controls, or provide a justification for a reasonable exploitability assessment of the
+risk throughout the TPLC and how the risk is controlled.
 
 Acceptance criteria for cybersecurity risks should carefully consider the TPLC of the medical
 device system, as it might be more difficult to mitigate cybersecurity issues once the device is
-marketed. As discussed above in Sections IV.B. and V.A., known vulnerabilities should be
+marketed. As discussed above in Sections IV.B and V.A, known vulnerabilities should be
 assessed as reasonably foreseeable risks. The cybersecurity risk assessment for vulnerabilities
 identified during cybersecurity testing should also consider the TPLC of the device as the
-exploitability of the vulnerability is likely to increase over the device lifecycle. If a vulnerability
-scan or penetration tester, for example, was able to exploit a vulnerability, the ability of a threat
-actor to exploit that vulnerability is likely to increase over the device lifecycle. Furthermore,
-vulnerabilities identified in Cybersecurity and Infrastructure Security Agency (CISA) Known
-Exploited Vulnerabilities Catalog^40 should be designed out of the device, as they are already
-being exploited and expose the medical device system and users to the risk.
+exploitability of the vulnerability is likely to increase over the device lifecycle. If a penetration
+tester, for example, was able to exploit a vulnerability, the ability of a threat actor to exploit that
+vulnerability is likely to increase over the device lifecycle. Furthermore, vulnerabilities identified
+in CISA’s Known Exploited Vulnerabilities Catalog should be designed out of the device, as
+they are already being exploited and expose the medical device system and users to the risk.
 
 FDA recommends that the cybersecurity risk assessment provided in premarket submissions
-should capture the risks and controls identified from the threat model. The methods used for
-scoring the risk pre- and post-mitigation and the associated acceptance criteria as well as the
-method for transferring security risks into the safety risk assessment process should also be
-provided as part of the premarket submission.
+capture the risks and controls identified from the threat model. The methods used for scoring the
+risk pre- and post-mitigation and the associated acceptance criteria as well as the method for
+transferring security risks into the safety risk assessment process should also be provided as part
+of the premarket submission.
 
-(^39) These factors of exploitability are from the Common Vulnerability Scoring System (CVSS) Version 3.0 as
-identified in the Postmarket Cybersecurity Guidance (available at https://www.fda.gov/regulatory-
-information/search-fda-guidance-documents/postmarket-management-cybersecurity-medical-devices). Additional
-information on CVSS is available at https://www.first.org/cvss/
-(^40) Available at https://www.cisa.gov/known-exploited-vulnerabilities-catalog
-
-
-###### 3. Interoperability Considerations
+#### 3. Interoperability Considerations
 
 Interoperability is an important consideration when assessing the cybersecurity of the end-to-end
-medical device system. As identified in the FDA guidance “Design Considerations and
-Premarket Submission Recommendations for Interoperable Medical Devices,”^41 hereafter
-referred to as the “Interoperability Guidance,” interoperable medical devices have the ability to
-exchange and use information through an electronic interface with another medical or
-nonmedical product, system, or device.
+medical device system. As identified in FDA’s guidance “Design Considerations and Pre-market
+Submission Recommendations for Interoperable Medical Devices,” hereafter referred to as the
+“Interoperability Guidance,” interoperable medical devices have the ability to exchange and use
+information through an electronic interface with another medical or nonmedical product, system,
+or device.
 
 As part of a medical device system, a device may have cybersecurity considerations from
 interoperable functionality, including but not limited to interfaces with:
 
 - Other medical devices and accessories;
-- ‘Other functions’ as identified in the FDA’s guidance “Multiple Function Device
-    Products: Policy and Considerations;”^42
-- Interoperability with healthcare infrastructure (e.g., network, Electronic Medical Records,
-    medical imaging systems); and
-- General purpose computing platforms.
+- “Other functions” as identified in FDA’s guidance “Multiple Function Device Products:
+    Policy and Considerations;”
+- Healthcare infrastructure (e.g., network, Electronic Medical Records, medical imaging
+    systems); and
+- General-purpose computing platforms.
 
 While cybersecurity controls may increase the complexity of interfaces to allow for
-interoperability, when properly implemented, the cybersecurity controls can help assure that
+interoperability, when properly implemented, the cybersecurity controls can help ensure that
 these capabilities remain safe and effective. Cybersecurity controls should be used as a means to
+
+
 allow for the safe and effective exchange and use of information. Additionally, cybersecurity
 controls should not be intended to prohibit a user from accessing their device data.
 
@@ -810,21 +799,10 @@ In addition to the recommendations in the Interoperability Guidance, manufacture
 consider the appropriate cybersecurity risks and controls associated with the interoperability
 capabilities and document these considerations as recommended throughout this guidance.
 
-###### 4. Third-Party Software Components
+#### 4. Third-Party Software Components
 
-As discussed in the FDA guidances “Off-The-Shelf (OTS) Software Use in Medical Devices”^43
-and “Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software,”
-medical devices commonly include third-party software components,^44 including off-the-shelf
-
-(^41) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/design-considerations-
-and-pre-market-submission-recommendations-interoperable-medical-devices
-(^42) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/multiple-function-
-device-products-policy-and-considerations
-(^43) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-
-medical-devices
-(^44) The use of “component” in this guidance is consistent with the definition in 21 CFR 820.3.
-
-
+As discussed in FDA’s guidance “Off-The-Shelf (OTS) Software Use in Medical Devices,”
+medical devices commonly include third-party software components,^33 including off-the-shelf
 and open source software. When these components are incorporated, security risks of the
 software components should become factors of the overall medical device system risk
 management processes and documentation.
@@ -849,8 +827,12 @@ Software is updated over time to provide additional features, address security c
 otherwise be maintained. These changes may introduce new considerations or risks that must be
 accounted for as part of risk management. As a result, device manufacturers should establish and
 maintain custodial control of device source code (the original “copy” of the software) throughout
-the lifecycle of a device as part of configuration management.^45 This may be accomplished
-through different methods, such as source code escrow or source code backups, among others.^46
+
+(^33) The use of “component” in this guidance is consistent with the definition in 21 CFR 820.3.
+
+
+the lifecycle of a device as part of configuration management.^34 This may be accomplished
+through different methods, such as source code escrow or source code backups, among others.^35
 
 Manufacturers may not have control of source code due to licensing restrictions, terms of
 supplier agreements, or other challenges. While source code is not required to be provided in
@@ -864,14 +846,6 @@ other relevant security and risk management considerations.
 One tool to help manage supply chain risk as well as clearly identify and track the software
 incorporated into a device is an SBOM, as described below.
 
-(^45) While some suppliers may not grant access to source code, manufacturers may consider adding to their purchasing
-controls acquisition of the source code should the purchased software reach end of support or end of life from the
-supplier earlier than the intended end of support or end of life of the medical device.
-(^46) Source code escrow involves depositing a copy of a relevant piece of software's source code (and related technical
-components and documentation) with an independent third party (“escrow agent”). Source code backup involves
-storing (and updating as needed) a separate copy of the source code.
-
-
 **(a) Software Bill of Materials (SBOM)**
 An SBOM can aid in the management of cybersecurity risks that exist throughout the software
 stack. A robust SBOM includes both the device manufacturer-developed components and third-
@@ -882,7 +856,7 @@ purchased/licensed, and open-source software.
 An SBOM helps facilitate risk management processes by providing a mechanism to identify
 devices and the systems in which they operate that might be affected by vulnerabilities in the
 software components, both during development when software is being chosen as a component
-and after it has been placed into the market throughout all other phases of a product’s life.^47
+and after it has been placed into the market throughout all other phases of a product’s life.^36
 
 Because vulnerability management is a critical part of a device’s security risk management
 processes, an SBOM or an equivalent capability should be maintained as part of the device’s
@@ -893,34 +867,35 @@ marketed devices, and should support documentation, such as the types detailed i
 To assist FDA’s assessment of the device risks and associated impacts on safety and
 effectiveness related to cybersecurity, FDA recommends that premarket submissions include
 SBOM documentation as outlined below. For cyber devices, an SBOM is required (see section
-524B(b)(3) of the FD&C Act). SBOMs can also be an important tool for transparency with users
-of potential risks as part of labeling as addressed later in Section VI.
+524B(b)(3) of the FD&C Act and Section VII.C.3 of this guidance). SBOMs can also be an
+
+(^34) While some suppliers may not grant access to source code, manufacturers may consider adding to their purchasing
+controls acquisition of the source code should the purchased software reach end of support or end of life from the
+supplier earlier than the intended end of support or end of life of the medical device.
+(^35) Source code escrow involves depositing a copy of a relevant piece of software’s source code (and related technical
+components and documentation) with an independent third party (“escrow agent”). Source code backup involves
+storing (and updating as needed) a separate copy of the source code.
+(^36) For additional information, see the Department of Commerce National Telecommunications and Information
+Administration’s multi-stakeholder process for software transparency available on the following website NTIA
+Software Component Transparency.
+
+
+important tool for transparency with users of potential risks as part of labeling as addressed later
+in Section VI.
 
 **(b) Documentation Supporting Software Bill of Materials**
-FDA’s guidance documents “Off-The-Shelf (OTS) Software Use in Medical Devices”^48 and
-“Cybersecurity for Networked Medical Devices Containing Off-the-Shelf (OTS) Software”^49
-describe information that should be provided in premarket submissions for software components
-for which a manufacturer cannot claim complete control of the software lifecycle. In addition to
-the information recommended in those guidances, manufacturers should provide machine-
-readable SBOMs consistent with the minimum elements (also referred to as “baseline attributes”)
+FDA’s guidance document “Off-The-Shelf (OTS) Software Use in Medical Devices” describes
+information that should be provided in premarket submissions for software components for
+which a manufacturer cannot claim complete software lifecycle control. In addition to the
+information recommended in that guidance, manufacturers should provide machine-readable
+SBOMs consistent with the minimum elements (also referred to as “baseline attributes”)
 identified in the October 2021 National Telecommunications and Information Administration
 (NTIA) Multistakeholder Process on Software Component Transparency document “Framing
 Software Component Transparency: Establishing a Common Software Bill of Materials
-(SBOM).”^50
+(SBOM).”
 
 In addition to the minimum elements identified by NTIA, for each software component
 contained within the SBOM, manufacturers should include in the premarket submission:
-
-(^47) For additional information, see the Department of Commerce National Telecommunications and Information
-Administration’s multi-stakeholder process for software transparency, available at
-https://www.ntia.doc.gov/SoftwareTransparency
-(^48) Available at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/shelf-software-use-
-medical-devices
-(^49) Available at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-
-networked-medical-devices-containing-shelf-ots-software
-(^50) Available at https://ntia.gov/sites/default/files/publications/ntia_sbom_framing_2nd_edition_20211021_0.pdf
-CISA will be providing future updates to this document.
-
 
 - The software level of support provided through monitoring and maintenance from the
     software component manufacturer (e.g., the software is actively maintained, no longer
@@ -936,7 +911,7 @@ provide a justification for why the information cannot be included in the premar
 
 As part of the premarket submission, manufacturers should also identify all known
 vulnerabilities associated with the device and the software components, including those
-identified in CISA’s Known Exploited Vulnerabilities Catalog.^51 For each known vulnerability,
+identified in CISA’s Known Exploited Vulnerabilities Catalog. For each known vulnerability,
 manufacturers should describe how the vulnerabilities were discovered to demonstrate whether
 the assessment methods were sufficiently robust. For components with known vulnerabilities,
 device manufacturers should provide in premarket submissions:
@@ -948,27 +923,22 @@ device manufacturers should provide in premarket submissions:
     of detail.
 
 For additional information and discussion regarding proprietary and third-party components, see
-Section V.B.2., Security Architecture Views, below.
+Section V.B.2, Security Architecture Views, below.
 
-###### 5. Security Assessment of Unresolved Anomalies
 
-FDA’s Premarket Software Guidance, recommends that device manufacturers provide a list of
-software anomalies that exist in a product at the time of submission. For each of these anomalies,
-FDA recommends that device manufacturers conduct an evaluation of the anomaly’s impact on
-the device’s safety and effectiveness, and consult the Premarket Software Guidance to assess the
+#### 5. Security Assessment of Unresolved Anomalies
+
+FDA’s Premarket Software Guidance recommends that device manufacturers provide a list of
+software anomalies that exist in a product at the time of submission. For each anomaly, FDA
+recommends that device manufacturers conduct an evaluation of the anomaly’s impact on the
+device’s safety and effectiveness, and consult the Premarket Software Guidance to assess the
 associated documentation recommended for inclusion in such device’s premarket submission.
 
 Some anomalies discovered during development or testing may have security implications and
 may also be considered vulnerabilities. As a part of ensuring a complete security risk assessment
 under 21 CFR Part 820.30(g), the assessment for impacts to safety and effectiveness may include
 an assessment for the potential security impacts of anomalies. The assessment should also
-include consideration of any present Common Weakness Enumeration (CWE) categories.^52
-
-(^51) Available at https://www.cisa.gov/known-exploited-vulnerabilities-catalog
-(^52) Examples of SW91 defect classification mapped to CWE can be found in Annex D of AAMI SW91 _Classification
-of Defects in Health Software_. Additional information on CWE categories can be found at https://cwe.mitre.org/
-
-
+include consideration of any present Common Weakness Enumeration (CWE) categories.^37
 For example, a clinical user may inadvertently reveal the presence of a previously unknown
 software anomaly during normal use, where the impact of the anomaly might occur sporadically
 and be assessed to be acceptable from a software risk perspective. Conversely, a threat might
@@ -979,7 +949,7 @@ when compared to an anomaly assessment that didn’t include security considerat
 The criteria and rationales for addressing the resulting anomalies with security impacts should be
 provided as part of documentation in the premarket submission.
 
-###### 6. TPLC Security Risk Management
+#### 6. TPLC Security Risk Management
 
 Cybersecurity risks may continue to be identified throughout the device’s TPLC. Manufacturers
 should ensure they have appropriate resources to identify, assess, and mitigate cybersecurity
@@ -988,9 +958,10 @@ vulnerabilities as they are identified throughout the supported device lifecycle
 As part of using an SPDF, manufacturers should update their security risk management
 documentation as new information becomes available, such as when new threats, vulnerabilities,
 assets, or adverse impacts are discovered during development and after the device is released.
-When maintained throughout the device lifecycle, this documentation (e.g., threat modeling) can
-be used to quickly identify vulnerability impacts once a device is released and, when appropriate,
-to support timely corrective and preventive action activities described in 21 CFR 820.100.
+When maintained throughout the device lifecycle, this documentation (e.g., threat modeling,
+cybersecurity risk assessment) can be used to quickly identify vulnerability impacts once a
+device is released and, when appropriate, to support timely corrective and preventive action
+activities described in 21 CFR 820.100.
 
 Over the service life of a device, FDA recommends that the risk management documentation
 account for any differences in the risk management for fielded devices (e.g., marketed devices or
@@ -998,25 +969,24 @@ devices no longer marketed but still in use). For example, if an update is not a
 automatically for all fielded devices, then there will likely be different risk profiles for differing
 software configurations of the device. FDA recommends that vulnerabilities be assessed for any
 differing impacts for all fielded versions to ensure patient risks are being accurately assessed.
+
+(^37) Examples of SW91 defect classification mapped to CWE can be found in Annex D of AAMI SW91 _Classification
+of Defects in Health Software_. For additional information on CWE categories, see CWE Common Weakness
+Enumeration.
+
+
 Additional information as to whether a new premarket submission (e.g., PMA, PMA supplement,
 or 510(k)) or 21 CFR Part 806 reporting is needed based on postmarket vulnerabilities and
 general postmarket cybersecurity risk management is discussed in the Postmarket Cybersecurity
 Guidance.^
 
 To demonstrate the effectiveness of a manufacturer’s processes, FDA recommends that a
-manufacturer track and record the measures and metrics below,^53 and provide them in premarket
-submissions and PMA annual reports (21 CFR 814.84), when available.^54 Selecting appropriate
+manufacturer track and record the measures and metrics below,^38 and provide them in premarket
+submissions and PMA annual reports (21 CFR 814.84), when available.^39 Selecting appropriate
 measures and metrics for the processes that define an SPDF is important to ensure that device
 design appropriately addresses cybersecurity in compliance with the QS regulation. At a
 minimum, FDA recommends tracking the following measures and metrics, or those that provide
 equivalent information:
-
-(^53) The measures and metrics provided are examples; alternative or additional measures and metrics may also be
-considered and reported.
-(^54) If a manufacturer has not marketed prior versions or the premarket submission does not pertain to a marketed
-product (e.g., PMA supplement), FDA acknowledges that these measures and metrics might not be available, but
-recommends that manufacturers include these as part of their risk management plan and SPDF processes.
-
 
 - Percentage of identified vulnerabilities that are updated or patched (defect density);
 - Duration from vulnerability identification to when it is updated or patched; and
@@ -1032,18 +1002,30 @@ response to process or procedure changes to increase efficiencies of these measu
 Manufacturers are responsible for identifying cybersecurity risks in their devices and the systems
 in which they expect those devices to operate, and implementing the appropriate controls to
 mitigate those risks. These risks may include those introduced by device reliance on hospital
-networks, cloud infrastructure, or “other functions” (as defined in FDA’s guidance Multiple
-Function Device Products: Policy and Considerations), for example. A security architecture, like
-a system architecture, defines the system and all end-to-end connections into and/or out of the
-system. A security architecture definition process^55 includes both high-level definitions of the
+networks, cloud infrastructure, or “other functions” (as defined in FDA’s guidance “Multiple
+Function Device Products: Policy and Considerations”), fo r example. A security architecture,
+like a system architecture, defines the system and all end-to-end connections into and/or out of
+the system. A security architecture definition process^40 includes both high-level definitions of the
 devices and/or systems that interact, and detailed information on the implementations for how
 those interactions occur and are secured. It contains information that demonstrates that the risks
 considered during the risk management process are adequately controlled, which, in turn,
 supports the demonstration of the safety and effectiveness of the medical device system.
 
+(^38) The measures and metrics provided are examples; alternative or additional measures and metrics may also be
+considered and reported.
+(^39) If a manufacturer has not marketed prior versions or the premarket submission does not pertain to a marketed
+product (e.g., PMA supplement), FDA acknowledges that these measures and metrics might not be available, but
+recommends that manufacturers include these as part of their risk management plan and SPDF processes.
+(^40) NIST 800-160 vol. 1 rev. 1, _Engineering Trustworthy Secure Systems_ states that security architecture
+definition process generates a set of representative security views of the system architecture to inform the
+selection of an appropriate security architecture. The process also ascertains vulnerability and susceptibility to
+disruptions, hazards, and threats. For additional information, see NIST 800-160 vol. 1 rev. 1.
+https://doi.org/10.6028/NIST.SP.800-160v1r1
+
+
 Under 21 CFR 820.30(b), a manufacturer must establish and maintain plans that describe or
 reference the design and development activities and define responsibility for implementation.
-Such plans must be reviewed, updated, and approved as design and development evolves (21
+Such plans must be reviewed, updated, and approved as design and development evolves ( 21
 CFR 820.30(b)). Under 21 CFR 820.30(c), a manufacturer must establish and maintain
 procedures to ensure that the design requirements relating to a device are appropriate and address
 the intended use of the device, including the needs of the user and patient. Under 21 CFR
@@ -1057,24 +1039,17 @@ FDA recommends that these plans and procedures include design processes, design
 requirements, and acceptance criteria for the security architecture of the device such that they
 holistically address the cybersecurity considerations for the device and the system in which the
 device operates. FDA recommends that all medical devices provide and enforce the security
-objectives in Section IV., above, but recognizes that implementations to address the security
+objectives in Section IV, above, but recognizes that implementations to address the security
 objectives may vary.
-
-(^55) NIST 800-160 vol. 1 rev. 1, Engineering Trustworthy Secure Systems states that security architecture
-definition process generates a set of representative security views of the system architecture to inform the
-selection of an appropriate security architecture. The process also ascertains vulnerability and susceptibility to
-disruptions, hazards, and threats. NIST 800-160 vol. 1 rev. 1 is available at
-https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final
-
 
 FDA recommends that premarket submissions include documentation on the security
 architecture. The objective in providing security architecture information in premarket
-submissions is to provide to the FDA the security context and trust-boundaries of the medical
-device system in terms of the interfaces, interconnections, and interactions that the medical
-device system has with external entities. The details of these elements enable the identification of
-the parts of the medical device system in or through which incidents might occur. These details
-help to provide a sufficient understanding of the system such that FDA can evaluate adequacy of
-the architecture itself as it relates to safety and effectiveness.
+submissions is to provide to FDA the security context and trust-boundaries of the medical device
+system in terms of the interfaces, interconnections, and interactions that the medical device
+system has with external entities. The details of these elements enable the identification of the
+parts of the medical device system in or through which incidents might occur. These details help
+to provide a sufficient understanding of the system such that FDA can evaluate adequacy of the
+architecture itself as it relates to safety and effectiveness.
 
 Manufacturers should analyze the entire system to understand the full environment and context
 in which the device is expected to operate. The security architecture should include a
@@ -1084,7 +1059,7 @@ dependencies such as third-party software, among others), design, production, an
 (i.e., into a connected/networked environment).
 
 FDA recommends that this architecture information take the form of “views,” and that these
-views be provided during premarket submissions to demonstrate safety and effectiveness.^56 If the
+views be provided during premarket submissions to demonstrate safety and effectiveness.^41 If the
 documentation identified in this section already exists in other risk management documentation,
 FDA does not expect manufacturers to separate out this information into new document(s); such
 documentation can be provided and the submission can reference the relevant sections.
@@ -1092,13 +1067,16 @@ documentation can be provided and the submission can reference the relevant sect
 Below, FDA outlines the recommended security controls and ways to document the resultant
 security architecture in premarket submissions through specific Security Architecture Views.
 
-###### 1. Implementation of Security Controls
+(^41) Views are discussed in more detail in the following subsections and Appendix 2.
+
+
+#### 1. Implementation of Security Controls
 
 FDA considers the way in which a device addresses cybersecurity risks and the way in which the
 device responds when exposed to cybersecurity threats as functions of the device design.
 Effective cybersecurity relies upon security being “built in” to a device, and not “bolted on” after
 the device is designed. FDA recommends that device manufacturers’ design processes include
-design inputs for cybersecurity controls.^57 Under 21 CFR 820.30(c), a manufacturer must
+design inputs for cybersecurity controls.^42 Under 21 CFR 820.30(c), a manufacturer must
 establish and maintain procedures to ensure that the design requirements relating to a device are
 appropriate and address the intended use of the device, including the needs of the user and
 patient. Under 21 CFR 820.30(d), a manufacturer must establish and maintain procedures for
@@ -1107,19 +1085,11 @@ conformance to design input requirements. These output procedures shall contain 
 reference to acceptance criteria and shall ensure that those design outputs that are essential for
 the proper functioning of the device are identified.
 
-(^56) Views are discussed in more detail in the following subsections and Appendix 2.
-(^57) There are useful frameworks to use in the generation of these design inputs including the OWASP Security by
-design principles, AAMI/ISA-62443-4-1, as well as medical device specific frameworks including the Hippocratic
-Oath for Connected Medical Devices, Building Code for Medical Device Software Security, and IEC 81001-5-1.
-For a specific implementation of the OWASP Security by design principles, see the Medical Device and Health IT
-Joint Security Plan (JSP) available at https://healthsectorcouncil.org/the-joint-security-plan/
-
-
 FDA recommends that these procedures include design requirements and acceptance criteria for
 the security features built into the device such that they holistically address the cybersecurity
 considerations for the device and the system in which the device operates.
 
-Security controls allow manufacturers to achieve the security objectives outlined in Section IV.
+Security controls allow manufacturers to achieve the security objectives outlined in Section IV
 and are an integral part of an SPDF. FDA recommends that an adequate set of security controls
 should include, but not necessarily be limited to, controls from the following categories:
 
@@ -1140,6 +1110,14 @@ based determinations associated with the subject connections and devices. Withou
 security controls across the medical device system—which include management, technical, and
 operational controls—there is no reasonable assurance of safety and effectiveness. Additionally,
 deficiencies in the design of selected security controls or the implementation of those controls
+
+(^42) There are useful frameworks to use in the generation of these design inputs including the OWASP Security by
+design principles, AAMI/ISA-62443-4-1, as well as medical device specific frameworks including the Hippocratic
+Oath for Connected Medical Devices, Building Code for Medical Device Software Security, and IEC 81001-5-1.
+For a specific implementation of the OWASP Security by design principles, see the Medical Device and Health IT
+Joint Security Plan version 2 (JSP2).
+
+
 can have dramatic impacts on a device’s ability to demonstrate or maintain its safety and
 effectiveness.
 
@@ -1148,7 +1126,7 @@ provided in premarket submissions to demonstrate safety and effectiveness. Manuf
 should submit documentation in their premarket submissions demonstrating that the security
 controls for the categories above, and further detailed in the recommendations in Appendix 1,
 have (1) been implemented, and (2) been tested in order to validate that they were effectively
-implemented. For more information on cybersecurity testing, see Section V.C., below.
+implemented. For more information on cybersecurity testing, see Section V.C, below.
 
 Manufacturers may include the demonstration of security controls that are comparable or in
 addition to those described in Appendix 1 in their premarket submissions. If using alternate
@@ -1157,15 +1135,13 @@ and tracing of specific design features and security controls to the associated 
 demonstrate that they provide appropriate levels of safety and effectiveness. As cybersecurity
 design controls are established early in the development phase, FDA recommends that device
 manufacturers utilize the FDA Q-submission process to discuss design considerations for
-
-
-cybersecurity risk management throughout the device lifecycle with the agency.^58 Additional
+cybersecurity risk management throughout the device lifecycle with the agency.^43 Additional
 information on premarket documentation recommendations for design controls are discussed in
 the Security Architecture Views section below.
 
-###### 2. Security Architecture Views
+#### 2. Security Architecture Views
 
-In addition to the design control requirements,^59 21 CFR 820.100 requires that manufacturers
+In addition to the design control requirements,^44 21 CFR 820.100 requires that manufacturers
 establish and maintain procedures for implementing corrective and preventive action, which
 must include, among other things, requirements for analyzing quality data to identify existing
 and potential causes of quality problems. FDA recommends that manufacturers develop and
@@ -1180,9 +1156,17 @@ in premarket submissions by illustrating how the controls to address cybersecuri
 been applied to the medical device system.
 
 The security architecture may be expressed at different levels of abstraction and with different
-scopes or views.^60 The number and extent of the architecture views provided in the submission
+scopes or views.^45 The number and extent of the architecture views provided in the submission
 depends on the attack surface(s) identified through threat modeling and risk assessments for the
 medical device system. These views can therefore be an effective way to provide threat modeling
+
+(^43) For more information, see FDA’s guidance “Requests for Feedback and Meetings for Medical Device
+Submissions: The Q-Submission Program.”
+(^44) See 21 CFR 820.30.
+(^45) Architecture view is defined by NIST 800-160 vol. 1 rev. 1 as “A work product expressing the architecture of a
+system from the perspective of specific system concerns.” https://doi.org/10.6028/NIST.SP.800-160v1r1
+
+
 information to FDA and will naturally scale the documentation provided with the cybersecurity
 risk of the device.^
 
@@ -1198,16 +1182,6 @@ Documenting these views in premarket submissions should include both diagrams an
 explanatory text. These diagrams and explanatory text should contain sufficient details to permit
 an understanding of how the assets within the medical device system function holistically within
 the associated implementation details. For the security architecture views, manufacturers should
-
-(^58) For more information, see FDA’s guidance “Request for Feedback on Medical Device Submissions: The Q-
-Submission Program,” available at https://www.fda.gov/regulatory-information/search-fda-guidance-
-documents/requests-feedback-and-meetings-medical-device-submissions-q-submission-program
-(^59) _See_ 21 CFR 820.30.
-(^60) Architecture view is defined by NIST 800-160 vol. 1 rev. 1 as “A work product expressing the architecture of a
-system from the perspective of specific system concerns.” NIST 800-160 vol. 1 rev. 1 is available at
-https://csrc.nist.gov/pubs/sp/800/160/v1/r1/final
-
-
 follow the recommendations outlined in Appendix 2 when determining the level of detail to
 include in premarket submissions.
 
@@ -1240,7 +1214,9 @@ Views than a medical device system that has only a USB interface.
 A global system view should describe the overall medical device system, including the device
 itself and all internal and external connections. For interconnected and networked devices, this
 view should identify all interconnected elements, including any software update infrastructure(s),
-healthcare facility network impacts, intermediary connections or devices, cloud connections,
+
+
+healthcare facility network impacts, intermediary connections or devices, cloud connections, and
 patient home network impact.
 
 Depending on the complexity of the medical device system, it may not be feasible to include all
@@ -1256,8 +1232,6 @@ product, to a network, or to the Internet, there is the possibility that multipl
 compromised simultaneously. Because of that connectivity, if a device is compromised, or if a
 non-device function (i.e., any function that does not fall within section 201(h) of the FD&C Act)
 that could impact the device function is compromised, the device may introduce a safety risk to
-
-
 patients through security risk. This may change the device’s functionality. For example, a non-
 device function could be hacked to perform a device function and ultimately harm patients.
 
@@ -1289,8 +1263,11 @@ likely include traversing technology that the device manufacturer does not contr
 the device design should provide for the protection of the end-to-end path and take into account
 any additional cybersecurity risk created or posed by those non-manufacturer-controlled
 technologies.
-**(d) Security Use Case Views**
 
+
+```
+(d) Security Use Case Views
+```
 In addition to the views identified above, security use case views should also be provided.
 Security use cases should be included for all medical device system functionality through which
 a security compromise could impact the safety or effectiveness of the device. These security use
@@ -1305,8 +1282,6 @@ recommended in Appendix 2. For use cases identified that share the same security
 the associated diagrams and explanatory text can describe the multiple use cases covered by the
 view in lieu of providing duplicative information in multiple places. For example, programming
 commands and sending/receiving device data may share the same communication protocol and
-
-
 therefore may not exhibit differences between the security views for both scenarios, despite
 having different clinical risk assessments.
 
@@ -1338,30 +1313,29 @@ be considered for inclusion in the submission:
 - Threat mitigation;
     - Manufacturers should provide details and evidence of testing that demonstrates
        effective risk control measures according to the threat models provided in the
-       global system, multi-patient harm, updatability and patchability, and security use
-       case views.
-    - Manufacturers should ensure the adequacy of each cybersecurity risk control
-       (e.g., security effectiveness in enforcing the specified security policy,
-       performance for maximum traffic conditions, stability, and reliability, as
-       appropriate).
+
+
+```
+global system, multi-patient harm, updatability and patchability, and security use
+case views.
+```
+- Manufacturers should ensure the adequacy of each cybersecurity risk control
+    (e.g., security effectiveness in enforcing the specified security policy,
+    performance for maximum traffic conditions, stability, and reliability, as
+    appropriate).
 - Vulnerability Testing (such as section 9.4 of ANSI/ISA 62443-4- 1); and
-    - Manufacturers should provide details and evidence^61 of the following testing and
-       analyses:
-          - Abuse or misuse cases, malformed and unexpected inputs;
-             - Robustness.
-             - Fuzz testing.
-
-(^61) For any testing tools or software used, the details provided may include, but may not be limited to, the name of the
-tool, version information as applicable, and any settings or configuration options for the tools used.
-
-
+- Manufacturers should provide details and evidence^46 of the following testing and
+analyses:
+- Abuse or misuse cases, malformed and unexpected inputs;
+- Robustness.
+- Fuzz testing.
 - Attack surface analysis;
 - Vulnerability chaining;
 - Closed box testing of known vulnerability scanning;
 - Software composition analysis of binary executable files; and
 - Static and dynamic code analysis, including testing for credentials that are
-    “hardcoded,” default, easily guessed, and easily compromised.
-- Penetration testing;
+“hardcoded,” default, easily guessed, and easily compromised.
+- Penetration testing.^
 - The testing should identify and characterize security-related issues via tests that
 focus on discovering and exploiting security vulnerabilities in the product.
 Penetration test reports should be provided and include the following elements:
@@ -1381,13 +1355,18 @@ provide the original third-party report. For all testing, manufacturers should p
 assessment of any findings including rationales for not implementing or deferring any findings to
 future releases.
 
-As discussed in Sections V.A.2. and V.A.3. above, vulnerabilities and anomalies identified
-during testing should be assessed for their security impacts as part of the security risk
-management process. In non-security software testing, a benefit analysis of a discovered defect
-may lead to the conclusion that an anomaly does not need to be fixed, as its impact on medical
-device system functionality may be small or unlikely. Conversely, in security testing, the
-exploitability of an anomaly may necessitate that it is mitigated because of the greater, and
-different type of, harm that it could facilitate.
+As discussed in Sections V.A.2 and V.A.3 above, vulnerabilities and anomalies identified during
+testing should be assessed for their security impacts as part of the security risk management
+process. In non-security software testing, a benefit analysis of a discovered defect may lead to
+the conclusion that an anomaly does not need to be fixed, as its impact on medical device system
+functionality may be small or unlikely. Conversely, in security testing, the exploitability of an
+
+(^46) For any testing tools or software used, the details provided may include, but may not be limited to, the name of the
+tool, version information as applicable, and any settings or configuration options for the tools used.
+
+
+anomaly may necessitate that it is mitigated because of the greater, and different type of, harm
+that it could facilitate.
 
 For issues that will be addressed in future releases (i.e., remediation deferred for a future
 software release because current risk was assessed to be acceptable), the premarket submission
@@ -1395,9 +1374,8 @@ should contain plans for those releases. Such plans should include the vulnerabi
 software releases will address, anticipated timelines for release, whether devices released in the
 interim will receive those updates, and how long it will take the update to reach the devices.
 
-
 There are numerous authoritative resources for outlining security testing that may partially fulfill
-the testing outlined above.^62
+the testing outlined above.^47
 
 FDA recommends that cybersecurity testing should occur throughout the SPDF. Security testing
 early in development can ensure that security issues are addressed prior to impacting release
@@ -1408,13 +1386,15 @@ their ability to be exploited.
 
 ## VI. Cybersecurity Transparency
 
-In order for users to manage security risks in medical device systems, either by an end user or
-within a larger risk management framework like the NIST CSF, transparency is critical to ensure
-safe and effective use and integration of devices and systems. This transparency can be conveyed
-through both device labeling and the establishment of manufacturer vulnerability management
-plans. However, different types of users (e.g., manufacturers, servicers, patients) will have
-different abilities to take on a mitigation role, and the need for actions to ensure continued
-cybersecurity should be appropriate for the type of user.
+Cybersecurity transparency is critical to ensure safe and effective use and integration of devices
+and systems.^48 This transparency can be conveyed through both device labeling and the
+establishment of manufacturer vulnerability management plans. However, different types of
+users (e.g., manufacturers, servicers, patients) will have different abilities to take on a mitigation
+role, and the need for actions to ensure continued cybersecurity should be appropriate for the
+type of user. Manufacturers of cyber devices should consider the recommendations in this
+section as they “design, develop, and maintain processes and procedures to provide a reasonable
+assurance that the device and related systems are cybersecure.. .” (section 524B(b)(2) of the
+FD&C Act; see Section VII.C.2).
 
 ### A. Labeling Recommendations for Devices with Cybersecurity Risks
 
@@ -1422,6 +1402,14 @@ FDA regulates device labeling in several ways. For example, section 502(f) of th
 requires that labeling include adequate directions for use. Under section 502(a)(1) of the FD&C
 Act, a medical device is deemed misbranded if its labeling is false or misleading in any
 particular.
+
+(^47) The following standards may partially meet the security testing recommendations: ANSI/UL 2900 _Software
+Cybersecurity for Network-Connectable Products_ , ANSI/ISA 62443-4-1 _Security for industrial automation and
+control systems Part 4-1: Product security development life-cycle requirements_ , in addition to IEC 81001-5-1.
+Additional standards may also meet or partially meet the testing recommendations outlined in this section.
+(^48) Users often manage security risks in medical device systems by an end user or within a larger risk management
+framework like the NIST CSF.
+
 
 For devices with cybersecurity risks, informing users of relevant security information may be an
 effective way to comply with labeling requirements relating to such risks. FDA also believes that
@@ -1432,17 +1420,8 @@ submission, a manufacturer should consider all applicable labeling requirements 
 informing users through labeling may be an effective way to manage cybersecurity risks and/or
 to ensure the safe and effective use of the device. Any risks transferred to the user should be
 detailed and considered for inclusion as tasks during usability testing (e.g., human factors
-testing)^63 to ensure that the type of user has the capability to take appropriate actions to manage
+testing)^49 to ensure that the type of user has the capability to take appropriate actions to manage
 those risks.
-
-(^62) The following standards may partially meet the security testing recommendations: ANSI/UL 2900 _Software
-Cybersecurity for Network-Connectable Products_ , ANSI/ISA 62443-4-1 _Security for industrial automation and
-control systems Part 4-1: Product security development life-cycle requirements_ , in addition to IEC 81001-5-1.
-Additional standards may also meet or partially meet the testing recommendations outlined in this section.
-(^63) See FDA’s Guidance “Applying Human Factors and Usability Engineering to Medical Devices,” available at
-https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-
-engineering-medical-devices
-
 
 The recommendations below aim to communicate to users the relevant device security
 information that may enable their own ongoing security posture, thereby helping ensure a device
@@ -1453,10 +1432,10 @@ information. Instructions to manage cybersecurity risks should be understandable
 audience, which might include patients or caregivers with limited technical knowledge. The
 manufacturer may wish to employ methods to ensure certain information is available only to the
 user, and if it does so through an online portal, should ensure that users have up-to-date links that
-contain accurate information.^64
+contain accurate information.^50
 
 The following are examples of information that may be included in labeling to communicate
-relevant security information to users:^65
+relevant security information to users:^51
 
 - Device instructions and product specifications related to recommended cybersecurity
     controls appropriate for the intended use environment (e.g., anti-malware software, use of
@@ -1468,10 +1447,26 @@ relevant security information to users:^65
     are incoming, outgoing, or both, along with approved destination end-points.
 - Specific guidance to users regarding supporting infrastructure requirements so that the
     device can operate as intended (e.g., minimum networking requirements, supported
-    encryption interfaces). Where appropriate, such guidance should include technical
-    instructions to permit secure network deployment and servicing, and instructions for
-    users on how to respond upon detection of a cybersecurity vulnerability or incident.
-- An SBOM as specified in Section V.A.4. or in accordance with an industry accepted
+
+(^49) See FDA’s Guidance “Applying Human Factors and Usability Engineering to Medical Devices.”
+(^50) For more information regarding FDA’s policy on labeling changes and submission requirements, manufacturers
+can use the Search for FDA Guidance Documents tool to identify relevant guidance documents for their product and
+submission type.
+(^51) See IEC TR 80001-2-2 _Application of risk management for IT-networks incorporating medical devices —Part 2-
+2: Guidance for the communication of medical device security needs, risks and controls_ ; IEC TR 80001-2-8
+_Application of risk management for IT-networks incorporating medical devices—Part 2-8: Application guidance —
+Guidance on standards for establishing the security capabilities identified in IEC 80001-2-2_ ; and IEC TR 80001-2- 9
+_Application of risk management for IT-networks incorporating medical devices—Part 2-9: Application guidance —
+Guidance for use of security assurance cases to demonstrate confidence in IEC/TR 80001-2-2 security capabilities_
+for further labeling information for compliance with these standards.
+
+
+```
+encryption interfaces). Where appropriate, such guidance should include technical
+instructions to permit secure network deployment and servicing, and instructions for
+users on how to respond upon detection of a cybersecurity vulnerability or incident.
+```
+- An SBOM as specified in Section V.A.4 or in accordance with an industry accepted
     format to effectively manage their assets, to understand the potential impact of identified
     vulnerabilities to the medical device system, and to deploy countermeasures to maintain
     the device’s safety and effectiveness. Manufacturers should provide or make available
@@ -1484,18 +1479,8 @@ relevant security information to users:^65
 - A description of how the design enables the device to respond when anomalous
     conditions are detected (i.e., security events). This should include notification to the user
     and logging of relevant information. Security event types could be configuration changes,
-
-(^64) For more information regarding FDA’s policy on labeling changes and submission requirements, manufacturers
-can use the FDA Guidance Search Tool to identify relevant guidance documents for their product and submission
-type, available at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/
-(^65) See IEC TR 80001-2-2 and IEC TR 80001-2-8 and IEC TR 80001-2-9 for further labeling information for
-compliance with these standards.
-
-
-```
-network anomalies, login attempts, or anomalous traffic (e.g., send requests to unknown
-entities).
-```
+    network anomalies, login attempts, or anomalous traffic (e.g., send requests to unknown
+    entities).
 - A high-level description of the device features that protect critical functionality (e.g.,
     backup mode, disabling ports/communications).
 - A description of backup and restore features and procedures to restore authenticated
@@ -1523,31 +1508,27 @@ entities).
 - Information on securely decommissioning devices by sanitizing the product of sensitive,
     confidential, and proprietary data and software.
 
-A revision-controlled, Manufacturer Disclosure Statement for Medical Device Security
-(MDS2)^66 and Customer Security Documentation as outlined in the Medical Device and Health
-IT Joint Security Plan (JSP)^67 may address a number of the above recommendations.
+
+A revision-controlled, Manufacturer Disclosure Statement for Medical Device Security (MDS2)
+and Customer Security Documentation as outlined in the Medical Device and Health IT Joint
+Security Plan version 2 (JSP2) may address a number of the above recommendations.
 
 ### B. Cybersecurity Management Plans
 
 Recognizing that cybersecurity risks evolve as technology evolves throughout a device’s TPLC,
 FDA recommends that manufacturers establish a plan for how they will identify and
-communicate to users vulnerabilities that are identified after releasing the device in accordance
-with the 21 CFR 820.100. This plan can also support security risk management processes that are
-described throughout the QS regulation.
+communicate to the relevant parties the vulnerabilities that are identified after releasing the
+device in accordance with the 21 CFR 820.100 and 21 CFR Part 806, as appropriate. This plan
+can also support security risk management processes that are described throughout the QS
+regulation.
 
 FDA recommends that manufacturers submit their cybersecurity management plans as part of
 their premarket submissions so that FDA can assess whether the manufacturer has sufficiently
-
-(^66) The Manufacturer Disclosure Statement for Medical Device Security is available at
-https://www.nema.org/standards/view/manufacturer-disclosure-statement-for-medical-device-security
-(^67) Available at https://healthsectorcouncil.org/the-joint-security-plan/
-
-
 addressed how to maintain the safety and effectiveness of the device after marketing
 authorization is achieved. For cyber devices, “a plan to monitor, identify, and address, as
 appropriate, in a reasonable time, postmarket cybersecurity vulnerabilities and exploits,
 including coordinated vulnerability disclosure and related procedures” is required (see section
-524B(b)(1) of the FD&C Act).
+524B(b)(1) of the FD&C Act and Section VII.C.1 of this guidance).
 
 Cybersecurity management plans should include the following elements:
 
@@ -1555,8 +1536,8 @@ Cybersecurity management plans should include the following elements:
 - Sources, methods, and frequency for monitoring and identifying vulnerabilities (e.g.,
     researchers, NIST national vulnerability database (NIST NVD), third-party software
     manufacturers);
-- Identify and address vulnerabilities identified in CISA Known Exploited Vulnerabilities
-    Catalog;^68
+- Identify and address vulnerabilities identified in CISA’s Known Exploited Vulnerabilities
+    Catalog;
 - Periodic security testing;
 - Timeline to develop and release patches;
 - Update processes;
@@ -1568,13 +1549,337 @@ Cybersecurity management plans should include the following elements:
 Additional recommendations on coordinated vulnerability disclosure plans may be found in
 FDA’s Postmarket Cybersecurity Guidance.
 
-(^68) Available at https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+## VII. Cyber Devices
+
+This section identifies the cybersecurity information FDA considers to generally be necessary to
+support obligations under section 524B of the FD&C Act for cyber devices. This section
+provides recommendations specifically for cyber devices. Manufacturers of cyber devices should
+also consider the recommendations throughout this guidance to help meet their obligations under
+section 524B of the FD&C Act.
+
+
+### A. Who is Required to Comply with Section 524B of the FD&C Act
+
+Under section 524B(a) of the FD&C Act, a person, including a manufacturer,^52 who submits a
+premarket application or submission under any of the following pathways—510(k),^53 PMA,^54
+PDP, De Novo, or HDE^55 —for a device that meets the definition of a “cyber device,” as defined
+in section 524B(c), is required to include such information as FDA may require to ensure that the
+cyber device meets the cybersecurity requirements under section 524B(b).
+
+### B. Devices Subject to Section 524B of the FD&C Act
+
+Section 524B of the FD&C Act and its requirements apply to “cyber devices.” Section 524B(c)
+of the FD&C Act defines a “cyber device” as a device that meets all of the following criteria “(1)
+includes software validated, installed, or authorized by the sponsor as a device or in a device; (2)
+has the ability to connect to the internet; and (3) contains any such technological characteristics
+validated, installed, or authorized by the sponsor that could be vulnerable to cybersecurity
+threats.”
+
+Informed in part by the definitions recognized by NIST for the term “software,” FDA considers a
+“cyber device” to include devices that are or contain software, including software that is
+firmware or programmable logic.^56 FDA also considers the “ability to connect to the internet” to
+include devices that are able to connect to the internet, whether intentionally or unintentionally,
+through any means (including at any point identified in the evaluation of the threat surface^57 of
+the device and the environment of use). It is well-demonstrated that if a device has the ability to
+
+(^52) Section 524B(a) of the FD&C Act places obligations on the “person” who submits a specific type of device
+marketing application. Section 524B(b) of the FD&C Act places obligations on a “sponsor.” For the purposes of this
+guidance, we assume that the manufacturer is the entity submitting the application and use the term accordingly
+throughout the guidance in lieu of the term “person” or “sponsor.” However, if another person submits the
+application or submission enumerated under section 524B(a) of the FD&C Act to the Agency, that person should
+follow the guidance for manufacturers herein. Whatever person submits the application for a cyber device is subject
+to the requirements of section 524B.
+(^53) For the purposes of this guidance, “510(k)” refers to the original, special, and abbreviated 510(k) submissions.
+(^54) For the purposes of this guidance, “PMA” refers to the original PMA and supplement PMAs.
+(^55) For the purposes of this guidance, “HDE” refers to the original HDE and supplement HDEs.
+(^56) NIST defines a programmable logic controller (PLC) as “[a] solid-state control system that has a user-
+programmable memory for storing instructions for the purpose of implementing specific functions such as I/O
+control, logic, timing, counting, three mode (PID) control, communication, arithmetic, and data and file processing.”
+A PLC is therefore a combination of two components: (1) the hardware controller, and (2) the “user-programmable
+memory,” or programmable logic, that instructs the hardware controller to execute specified functions. NIST defines
+software as, among other things, “computer programs and data stored in hardware – typically in read only memory
+or programmable read-only memory.” Programmable logic is therefore a specific type of computer program and/or
+data stored on hardware, and is thus a type of software. See the NIST Computer Security Resource Center Glossary
+for more information on NIST’s definitions of these terms.
+(^57) For the purposes of this guidance, “threat surface” means the set of points on the boundary of a system, a system
+element, or an environment where a cyber threat can try to enter, cause an effect on, or extract data from, that
+system, system element, or environment (definition is adapted from the NIST Computer Security Resource Center
+Glossary). F or the purposes of this guidance “threat surface” is synonymous with the term “attack surface,”
+however, FDA uses the term “threat surface” rather than “attack surface,” because cyber threats need not necessarily
+be an “attack” to pose a risk to a medical device and its related system.
+
+
+connect to the Internet, it is possible that it can be connected to the Internet, regardless of
+whether such connectivity was intended by the device sponsor.^58
+
+FDA considers devices that include any of the following features to have the ability to connect to
+the internet. The list below is illustrative, not exhaustive:
+
+- Network, server, or Cloud Service Provider connections;
+- Radio-frequency communications ( e.g., Wi-Fi, cellular, Bluetooth, Bluetooth Low
+    Energy);
+- Magnetic inductive communications;^59 and
+- Hardware connectors capable of connecting to the internet (e.g., USB, ethernet,
+    serial port).^60
+
+### C. Documentation Recommendations to Comply with Section 524B of the FD&C Act
+
+For applicable premarket submission types, manufacturers must provide documentation to
+comply with the requirements under section 524B of the FD&C Act. Recommendations
+regarding the documentation to support each of the requirements are discussed in the sections
+below.
+
+#### 1. Plans and Procedures (Section 524B(b)(1))
+
+Section 524B(b)(1) of the FD&C Act requires manufacturers of cyber devices to submit to FDA
+“a plan to monitor, identify, and address, as appropriate, in a reasonable time, postmarket
+cybersecurity vulnerabilities and exploits, including coordinated vulnerability disclosure and
+related procedures” in their premarket submissions. We recommend that the plan contain the
+information recommended for the Cybersecurity Management Plan described in Section VI.B. In
+particular, such a plan should address the items discussed below.
+
+First, FDA considers that coordinated vulnerability disclosure (CVD) and related procedures, as
+required in section 524B(b)(1) of the FD&C Act, could include:
+
+- Coordinated disclosure of vulnerabilities and exploits identified by external entities
+    (including third-party software suppliers and researchers);
+- Disclosure of vulnerabilities and exploits identified by the manufacturer of cyber devices;
+    and
+
+(^58) For more information, see WannaCry Ransomware Encrypted Hospital Medical Devices and Indicators
+Associated With WannaCry Ransomware (Update I).
+(^59) For example, magnetic inductive communication allows wireless data transmission between an implantable
+medical device and an external programmer. A transmitter coil in the external programmer sends data by modulating
+magnetic fields which then induces an electrical current in the receiver coil of the implantable medical device. The
+induced current carries encoded data, which allows communication, between the external programmer and the
+implantable medical device.
+(^60) For example, a device may need to be serviced via a USB connection. While the connection may be brief, the
+ability to connect is present and the device is therefore considered to have the ability to connect to the internet.
+
+
+- Manufacturer procedures to carry out disclosures of the vulnerabilities and exploits, as
+    identified above.^61
+
+Second, plans required by section 524B(b)(1) of the FD&C Act should also describe the
+timeline, with associated justifications, to develop and release required updates and patches:
+
+- Section 524B(b)(2)(A) of the FD&C Act requires manufacturers of cyber devices to
+    make available updates and patches^62 to the device and related systems^63 for known
+    unacceptable vulnerabilities, with these updates and patches made available on a
+    reasonably justified regular cycle.^64
+       - A “known unacceptable vulnerability” in 524B(b)(2)(A) contrasts with a “critical
+          vulnerability that could cause uncontrolled risks” in 524B(b)(2)(B). A known
+          unacceptable vulnerability could include a vulnerability that could not cause
+          uncontrolled risks; a vulnerability that is not currently known to cause
+          uncontrolled risks; or a vulnerability that could present controlled risk, as
+          described in FDA’s Postmarket Cybersecurity Guidance. Updates and/or patches
+          to address these vulnerabilities may be intended to maintain the supportability of
+          software. Generally, software should be regularly updated to maintain the
+          supportability of the software. For examples of vulnerabilities associated with
+          controlled risk, see the Postmarket Cybersecurity Guidance. Updates and patches
+          to address these types of vulnerabilities are not to reduce uncontrolled risk, and
+          therefore not to reduce a risk to health or to correct a violation of the FD&C Act.
+          See below for more information on section 524B(b)(2)(B) of the FD&C Act.
+- Section 524B(b)(2)(B) of the FD&C Act requires manufacturers of cyber devices to make
+    available updates and patches to the device and related systems to address as soon as
+    possible out of cycle,^65 critical vulnerabilities that could cause uncontrolled risks.
+
+(^61) For the purposes of this guidance, manufacturer procedures to carry out disclosures of the vulnerabilities and
+exploits may include procedures to inform device users, customers, patients, and other relevant healthcare parties.
+(^62) A n update is defined by NIST as “[a] patch, upgrade, or other modification to code that corrects security and/or
+functionality problems in software” (see NIST Computer Security Resource Center Glossary). Patches are defined
+by CISA as “software and operating system (OS) updates that address security vulnerabilities within a program or
+product” (see Understanding Patches and Software Updates). We consider an update or patch that would satisfy the
+requirements under section 524B(b)(2)(A)-(B) for updates or patches as an action that modifies device code to
+address a cyber risk.
+(^63) For the purposes of this guidance, we refer to the evaluation of “related systems” to the extent needed to
+determine that the device, as it interacts with related systems, remains cybersecure. Related systems are further
+described in Section VII.C.2, below.
+(^64) The justification for the regular cycle should typically be included in the cybersecurity management plan. The
+length of the regular cycle may vary depending on numerous factors for the particular device. One of the primary
+factors that may influence the length of the cycle is risk. For example, an interconnected thermometer whose
+functionality is limited to taking and reporting patient temperature may have lower risk of harm if exploited than an
+interconnected surgery robot, whose risk of harm may be significantly higher. At the same time, exploitation of a
+seemingly lower-risk device may provide opportunities to affect other devices within the environment of use,
+leading to significantly greater risk of harm if these other devices or the larger environment are exploited or
+disrupted. Manufacturers should fully consider the risks to and from their devices, within the larger context(s) of the
+environment(s) in which they will be intended to operate, and design and deploy regular update cycles that provide a
+reasonable assurance of cybersecurity.
+(^65) For example, a manufacturer may make updates outside of the planned reasonably justified regular cycle to
+remediate an uncontrolled risk.
+
+
+- In general, this includes vulnerabilities that could cause uncontrolled risks, as
+    described in FDA’s Postmarket Cybersecurity Guidance. For examples of
+    vulnerabilities associated with uncontrolled risks, see the Postmarket
+    Cybersecurity Guidance.
+
+Third, we recommend that manufacturers of cyber devices anticipate and make appropriate
+updates to these plans,^66 as well as to the processes and procedures discussed in Section VII.C.2
+below,^67 as new information becomes available, such as when new risks, threats, vulnerabilities,
+assets, or adverse impacts are discovered throughout the total product lifecycle. To support such
+efforts, manufacturers should also create or update appropriate documentation (e.g., threat
+modeling, cybersecurity risk assessment) and maintain it throughout the device lifecycle. Doing
+so will allow manufacturers to quickly identify vulnerability impacts once a device is released
+and could also help satisfy the patching requirements of section 524B(b)(2)(A)-(B) of the FD&C
+Act.
+
+The required plans,^68 as well as the processes and procedures discussed in Section VII.C.2
+below,^69 also should, as appropriate, account for any differences in the risk management for
+fielded devices (e.g., differences between marketed devices and devices no longer marketed but
+still in use). For example, if an update is not applied automatically for all fielded devices, then
+there will likely be different risk profiles for the differing software configurations of the device.
+Vulnerabilities should be assessed for any differing impacts for all fielded versions to ensure
+patient risks are being accurately assessed.
+
+**2. Design, Develop, and Maintain Processes and**
+    **Procedures to Provide a Reasonable Assurance of**
+    **Cybersecurity (Section 524B(b)(2))**
+
+Manufacturers of cyber devices must “design, develop, and maintain processes and procedures to
+provide a reasonable assurance that the device and related systems are cybersecure.. .” (section
+524B(b)(2) of the FD&C Act). FDA considers related systems to include, among other things,
+manufacturer-controlled elements, such as other devices, software that performs “other
+functions” as described in FDA’s Guidance “Multiple Function Device Products: Policy and
+Considerations,” software/firmware update servers, and connections to healthcare facility
+networks. In the design, development and maintenance of a cyber device, manufacturers should
+consider the cybersecurity risks of related systems to the cyber device and implement appropriate
+security controls to mitigate those risks. The documentation recommendations identified in this
+guidance and summarized in Appendix 4 should be considered and used to demonstrate
+reasonable assurance that the device and related systems are cybersecure as required by section
+524B(b)(2) of the FD&C Act.
+
+(^66) See section 524B(b)(1) of the FD&C Act.
+(^67) See section 524B(b)(2) of the FD&C Act.
+(^68) See section 524B(b)(1) of the FD&C Act.
+(^69) See section 524B(b)(2) of the FD&C Act.
+
+
+###### 3. Software Bill of Materials (SBOM) (Section 524B(b)(3))
+
+Section 524B(b)(3) of the FD&C Act requires manufacturers of cyber devices to provide an
+SBOM, including commercial, open-source, and off-the-shelf software components. To assist
+with complying with this requirement, we recommend that a cyber device provide SBOMs that
+contain the information recommended in Section V.A.4.b.
+
+### D. Modifications
+
+As previously stated, the requirements under section 524B of the FD&C Act apply to a
+manufacturer who submits an application or submission under any of the following pathways—
+510(k), PMA, PDP, De Novo or HDE—for a device that meets the definition of a cyber device.
+Therefore, a manufacturer required to submit an application or submission under one of the
+enumerated pathways for a device modification would also need to comply with the
+requirements in section 524B of the FD&C Act.^70 In keeping with least burdensome principles,^71
+the information we recommend that manufacturers of cyber devices provide will generally differ
+based on the type of change and whether such change impacts the cybersecurity of the device.
+Overall, we recommend that manufacturers use the recommendations below to determine the
+information FDA recommends manufacturers of cyber devices provide to demonstrate they have
+met the new requirements under section 524B of the FD&C Act when submitting a premarket
+submission for a device modification.
+
+###### 1. Changes That May Impact Cybersecurity
+
+In general, changes that may impact cybersecurity and may require premarket submission could
+include changes to authentication or encryption algorithms, new connectivity features, or
+changing software update process/mechanisms. For these types of changes, see Section VII.C for
+required and recommended documentation to be included with each premarket submission (see
+section 524B of the FD&C Act).
+
+###### 2. Changes Unlikely to Impact Cybersecurity
+
+In general, changes unlikely to impact cybersecurity could include changes in materials,
+sterilization method changes, or a change to an algorithm without change to
+architecture/software structure/connectivity.
+
+For these types of changes, FDA recommends that manufacturers of cyber devices provide the
+following information to meet their premarket submission requirements in section 524B of the
+FD&C Act:
+
+(^70) For more information on when to submit an application for a device modification, see other FDA guidances,
+including “Deciding When to Submit a 510(k) for a Software Change to an Existing Device” and “Modifications to
+Devices Subject to Premarket Approval (PMA) - The PMA Supplement Decision-Making Process.”
+(^71) For more information on FDA’s least burdensome provisions, see FDA’s guidance “The Least Burdensome
+Provisions: Concept and Principles.”
+
+
+- 524B(b)(1)
+    - If not previously provided, manufacturers must provide a plan as described in
+       section 524B(b)(1) of the FD&C Act; we recommend that it contain the
+       information as described in Section VII.C.1, above.
+    - If a plan described in Section VII.C.1, above, was previously provided, the
+       manufacturer should provide a reference to the prior submission and a summary
+       of any changes to the plan.
+- 524B(b)(2)
+    - Instead of the full documentation described as required or recommended in
+       Section VII.C.2, above, manufacturers may provide the following information:
+          o Description of whether there are currently any “critical vulnerabilities
+             that could cause uncontrolled risks.”^72
+          o Description of whether any vulnerabilities with uncontrolled risk were
+             remediated in the device since the last authorization. If so,
+             manufacturers should describe how remediation was performed
+             following the recommendations in FDA’s Postmarket Cybersecurity
+             Guidance.
+- 524B(b)(3)
+    - Section 524B(b)(3) of the FD&C Act requires manufacturers of cyber devices to
+       provide an SBOM, including commercial, open-source, and off-the-shelf software
+       components. To assist with complying with this requirement, we recommend that
+       a manufacturer of a cyber device provide an SBOM that contains the information
+       recommended in Section V.A.4.b above.
+
+In general, in its cybersecurity review, FDA intends to focus substantive review on modifications
+to cybersecurity controls or modifications that are likely to affect cybersecurity. However,
+regardless of the type of change being proposed to the device in the premarket submission, FDA
+intends to take into account known cybersecurity concerns that are applicable to such device
+when conducting its premarket reviews and in determining whether the device has a reasonable
+assurance of cybersecurity.
+
+### E. Reasonable Assurance of Cybersecurity of Cyber Devices
+
+Section 3305(c) of FDORA provides that nothing in section 524B of the FD&C Act “shall be
+construed to affect the Secretary’s authority related to ensuring that there is a reasonable
+assurance of the safety and effectiveness of devices, which may include ensuring that there is a
+reasonable assurance of the cybersecurity of certain cyber devices.. .” FDA interprets this
+provision to mean that a “reasonable assurance of cybersecurity” can be part of FDA’s
+determination of a device’s safety and effectiveness. Moreover, a determination that there is a
+reasonable assurance of cybersecurity is relevant to the various premarket pathways and
+
+(^72) Section 524B(b)(2)(B) of the FD&C Act requires manufacturers to make available postmarket updates and
+patches to the cyber device and related systems to address, as soon as possible out of cycle, critical vulnerabilities
+that could cause uncontrolled risks, among other requirements. See Section VII.C.1 for more information on “critical
+vulnerabilities that could cause uncontrolled risks.”
+
+
+authorization under them, specifically, FDA’s review of a 510(k), PMA, PDP, De Novo, and
+HDE. With the exponential growth of interconnected devices on the market over the past few
+years (see Section I), ensuring cybersecurity has become essential to FDA’s ability to protect the
+public health and provide reasonable assurance of safety and effectiveness of devices.
+
+When evaluating a 510(k) submission, FDA considers changes to the environment of use (e.g.,
+changes in technology the subject device will interact with or operate within, and any new risks
+or vulnerabilities the device will be exposed to), new risks or vulnerabilities in the technological
+characteristics compared to the predicate device submission (e.g., changes to level of support for
+component software, vulnerabilities in communication protocols or technology used by the
+subject device), and how the subject device design and/or performance testing (e.g., see the
+cybersecurity testing recommendations in Section V.C) address these new risks or
+vulnerabilities.^73 For example, if in reviewing the 510(k) for an alarm for a central nursing
+station software, FDA identifies that the device has increased risks compared to its predicate
+because it does not have the necessary encryption to protect against a recently identified cyber
+threat, FDA may ask for additional performance data (e.g., see the documentation
+recommendations in Section V). If the data provided is inadequate, FDA would likely make a
+determination that the new device is not substantially equivalent (NSE) to the predicate device
+because this threat, if exploited, could negatively impact the safety and effectiveness of the
+device because alarm accuracy is essential for healthcare providers to effectively monitor the
+
+## health of patients in a hospital.
+
+(^73) For more information about current review practices for 510(k) submission, see FDA’s guidance “The 510(k)
+Program: Evaluating Substantial Equivalence in Premarket Notifications [510(k)].”
 
 
 ## Appendix 1. Security Control Categories and Associated Recommendations
 
 The following sections provide detailed descriptions of each of the security control categories
-introduced in Section V.B.1., as well as specific recommendations for security controls and their
+introduced in Section V.B.1, as well as specific recommendations for security controls and their
 implementation, to avoid common pitfalls.
 
 ###### Authentication
@@ -1582,7 +1887,7 @@ implementation, to avoid common pitfalls.
 There are generally two types of authentication controls—information and entities—and a
 properly-secured system is able to prove the existence of both.
 
-Authentication of _information_^69 exists where the device and the system in which it operates are
+Authentication of _information_^74 exists where the device and the system in which it operates are
 able to prove that information originated at a known and trusted source, and that the information
 has not been altered in transit between the original source and the point at which authenticity is
 verified. It is important to note that while authenticity implies that data is accurate and has been
@@ -1615,7 +1920,7 @@ necessary to determine the correct “output” of a cryptographic function from
 cryptographically-based authentication scheme is built and which an unauthorized party could
 use to bypass the authentication scheme and gain access to the medical device system.
 
-(^69) For the purposes of this control, “information” includes the software/firmware itself, as well as input and output
+(^74) For the purposes of this control, “information” includes the software/firmware itself, as well as input and output
 data.
 
 
@@ -1639,7 +1944,7 @@ such as a momentary switch, to authorize the command/session.
 The following list provides additional recommendations for the implementation of authentication
 schemes:
 
-- Use cryptographically strong^70 authentication, where the authentication functionality
+- Use cryptographically strong^75 authentication, where the authentication functionality
     resides on the device, to authenticate personnel, messages, commands updates, and as
     applicable, all other communication pathways. Hardware-based security solutions should
     be considered and employed when possible;
@@ -1662,7 +1967,7 @@ schemes:
     of cryptographic nonces (an arbitrary number used only once in a cryptographic
     communication);
 
-(^70) See the definition of security strength in Appendix 5, Terminology.
+(^75) See the definition of security strength in Appendix 5, Terminology.
 
 
 - Provide mechanisms for verifying the authenticity of information originating from the
@@ -1688,7 +1993,7 @@ associated with authenticated sessions, identities and/or roles). These privileg
 allowed behavior, or refuse disallowed behavior in order to ensure that system resources are only
 accessed in accepted ways, by accepted parties.
 
-Within an adequately designed authorization scheme, the principle of least privileges^71 should be
+Within an adequately designed authorization scheme, the principle of least privileges^76 should be
 applied to users, system functions, and others, to only allow those entities the levels of system
 access necessary to perform a specific function.
 
@@ -1700,18 +2005,18 @@ device maintenance routines or the ability to change medication dosage amounts.
 While authentication schemes based on cryptographically proven designs are generally
 considered more robust and are therefore preferred, meaningful authorization checks can be
 performed based on other compelling evidence (e.g., benefit/risk assessment in accordance with
-Section 6.5 of AAMI TIR57 and associated supporting justification and as evidenced through
-security testing). For example, a medical device programmer that is capable of Near-Field
-Communications (NFC) could have elevated privileges that are granted based on a signal of
-intent^72 over NFC that cannot physically be produced by another unauthorized device over
-Radio-Frequency (RF) (e.g., a home monitor).
+Section 6.5 of AAMI TIR57 or Section 7.4 of ANSI/AAMI SW96 and associated supporting
+justification and as evidenced through security testing). For example, a medical device
+programmer that is capable of Near-Field Communications (NFC) could have elevated privileges
+that are granted based on a signal of intent^77 over NFC that cannot physically be produced by
+another unauthorized device over Radio-Frequency (RF) (e.g., a home monitor).
 
 The following list provides recommended design implementations for an authorization scheme:
 
-(^71) CNSSI 4009-2015 defines “least privilege” as “The principle that a security architecture should be designed so
+(^76) CNSSI 4009-2015 defines “least privilege” as “The principle that a security architecture should be designed so
 that each entity (e.g., user, asset) is granted the minimum system resources and authorizations that the entity needs
 to perform its function.”
-(^72) For the purposes of this guidance, “signal of intent” is specific to the implementation of NFC communications.
+(^77) For the purposes of this guidance, “signal of intent” is specific to the implementation of NFC communications.
 
 
 - Limit authorized access to devices through the authentication of users (e.g., user ID and
@@ -1741,9 +2046,9 @@ cryptographic scheme used by a device and the larger system in which it operates
 - Select industry-standard cryptographic algorithms and protocols, and select appropriate
     key generation, distribution, management and protection, as well as robust nonce
     mechanisms.
-- Use current NIST recommended standards for cryptography (e.g., FIPS 140-3,^73 NIST
-    Suite B^74 ), or equivalent-strength cryptographic protection that are expected to be
-    considered cryptographically strong throughout the service life of the device.
+- Use current NIST recommended standards for cryptography (e.g., FIPS 140-3^78 ) or
+    equivalent-strength cryptographic protection that are expected to be considered
+    cryptographically strong throughout the service life of the device.
        - Manufacturers should not implement cryptographic algorithms that have been
           deprecated or disallowed in applicable standards or best practices (e.g., NIST SP
           800-131A, Transitioning the Use of Cryptographic Algorithms and Key Lengths).
@@ -1755,29 +2060,29 @@ cryptographic scheme used by a device and the larger system in which it operates
        - For example, avoid using master-keys stored on device, or key derivation
           algorithms based solely on device identifiers or other readily discoverable
           information.
+       - For example, avoid using device serial numbers as keys or as part of keys. Device
+          serial numbers may be disclosed by patients seeking additional information on
+          their device or might be disclosed during a device recall to identify affected
 
-(^73) NIST FIPS 140-3 Cryptographic Module Validation Program available at
-https://csrc.nist.gov/Projects/cryptographic-module-validation-program/fips-140-2
-(^74) NIST FIPS 140-2 Suite B available at https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-
-validation-program/documents/security-policies/140sp2851.pdf
+(^78) See NIST FIPS 140-3 _Security Requirements for Cryptographic Modules_. https://doi.org/10.6028/NIST.FIPS.140-
+3
 
 
-- For example, avoid using device serial numbers as keys or as part of keys. Device
-    serial numbers may be disclosed by patients seeking additional information on
-    their device or might be disclosed during a device recall to identify affected
-    products and should be avoided as part of the key generation process (e.g., public-
-    key cryptography can be employed to help meet this objective).
+```
+products and should be avoided as part of the key generation process (e.g., public-
+key cryptography can be employed to help meet this objective).
+```
 - Implement cryptographic protocols that permit negotiated parameters/versions such that
-the most recent, secure configurations are used, unless otherwise necessary.
+    the most recent, secure configurations are used, unless otherwise necessary.
 - Do not allow downgrades, or version rollbacks, unless absolutely necessary for safety
-reasons, and log and document the event. Downgrades can allow attackers to exploit
-prior, less protected versions and should be avoided.
+    reasons, and log and document the event. Downgrades can allow attackers to exploit
+    prior, less protected versions and should be avoided.
 
 ###### Code, Data, and Execution Integrity
 
-Many cybersecurity incidents are caused, at their root, by the violation of some form of device
-integrity. This includes the violation of stored code, stored and operational data, or execution
-state. The following recommendations are provided to address each of these categories.
+Many cyber incidents are caused, at their root, by the violation of some form of device integrity.
+This includes the violation of stored code, stored and operational data, or execution state. The
+following recommendations are provided to address each of these categories.
 
 - **Code Integrity**
     - Hardware-based security solutions should be considered and employed when
@@ -1786,7 +2091,7 @@ state. The following recommendations are provided to address each of these categ
        message authentication codes (MACs)) of software/firmware content, version
        numbers, and other metadata. The version numbers intended to be installed should
        themselves be signed or have MACs. Devices should be electronically and visibly
-       identifiable (e.g., Unique device identifier (UDI),^75 model number, serial
+       identifiable (e.g., Unique device identifier (UDI),^79 model number, serial
        number);
     - Allow installation of cryptographically authenticated firmware and software
        updates, and do not allow installation where such cryptographic authentication
@@ -1797,42 +2102,40 @@ state. The following recommendations are provided to address each of these categ
              metadata for downgrade requests which, by definition, only happen in
              exceptional circumstances.
     - Ensure that the authenticity of software, firmware, and configuration are validated
-       prior to execution, e.g., “allow-listing”^76 based on digital signatures;
+       prior to execution, e.g., “allow-listing”^80 based on digital signatures;
     - Disable or otherwise restrict unauthorized access to all test and debug ports (e.g.,
        JTAG, UART) prior to delivering products; and
     - Employ tamper evident seals on device enclosures and their sensitive
        communication ports to help verify physical integrity.
-
-(^75) For more information regarding UDI, see FDA’s webpage https://www.fda.gov/medical-devices/unique-device-
-identification-system-udi-system/udi-rule-guidances-training-and-other-resources
-(^76) For the purposes of this guidance, “allow-list” means a list of discrete entities, such as hosts or applications that
-are known to be benign and are approved for use within an organization and/or information system. This term is
-leveraged from the definition of “whitelist” in NIST SP 800-128, available at
-https://csrc.nist.gov/pubs/sp/800/128/upd1/final
-
-
 - **Data Integrity**
     - Verify the integrity of all incoming data, ensuring that it is not modified in transit
        or at rest. Cryptographic authentication schemes verify data integrity, but do not
        verify data validity. Therefore, the integrity of all incoming data should be
        verified to ensure that it is not modified in transit or at rest;
-    - Validate that all data originating from external sources is well-formed and
-       compliant with the expected protocol or specification. Additionally, as
-       appropriate, validate data ranges to ensure they fall within safe limits; and
-    - Protect the integrity of data necessary to ensure the safety and effectiveness of the
-       device, e.g., critical configuration settings such as energy output.
+
+(^79) For more information regarding UDI, see FDA’s webpage UDI Rule, Guidances, Training, and Other Resources.
+(^80) For the purposes of this guidance, “allow-list” means a list of discrete entities, such as hosts or applications that
+are known to be benign and are approved for use within an organization and/or information system. This term is
+leveraged from the definition of “whitelist” in NIST SP 800-128. https://doi.org/10.6028/NIST.SP.800- 128
+
+
+- Validate that all data originating from external sources is well-formed and
+    compliant with the expected protocol or specification. Additionally, as
+    appropriate, validate data ranges to ensure they fall within safe limits; and
+- Protect the integrity of data necessary to ensure the safety and effectiveness of the
+    device, e.g., critical configuration settings such as energy output.
 - **Execution Integrity**
-    - Use industry-accepted best practices to maintain and verify integrity of code
-       while it is being executed on the device. For example, Host-based Intrusion
-       Detection/Prevention Systems (HIDS/HIPS) can be used to accomplish this goal;
-       and
-    - Carefully design and review all code that handles the parsing of external data
-       using automated (e.g., static and dynamic analyses) and manual (i.e., code review)
-       methods.
+- Use industry-accepted best practices to maintain and verify integrity of code
+while it is being executed on the device. For example, Host-based Intrusion
+Detection/Prevention Systems (HIDS/HIPS) can be used to accomplish this goal;
+and
+- Carefully design and review all code that handles the parsing of external data
+using automated (e.g., static and dynamic analyses) and manual (i.e., code review)
+methods.
 
 #### Confidentiality
 
-Manufacturers should ensure support for the confidentiality^77 of any/all data whose disclosure
+Manufacturers should ensure support for the confidentiality^81 of any/all data whose disclosure
 could lead to patient harm (e.g., through the unauthorized use of otherwise valid credentials, lack
 of encryption). Loss of confidentiality of credentials could be used by a threat-actor to effect
 multi-patient harm. Lack of encryption to protect sensitive information and or data at rest and in
@@ -1841,7 +2144,7 @@ confidentiality is required in the handling and storage of cryptographic keys us
 authentication because disclosure could lead to unauthorized use/abuse of device functionality.
 
 The proper implementation of authorization and authentication schemes as described in Sections
-A. and B. of this appendix will generally assure confidentiality. However, manufacturers should
+A and B of this appendix will generally ensure confidentiality. However, manufacturers should
 evaluate and assess whether this is the case during their threat modeling and other risk
 management activities and make any appropriate changes to their medical device systems to
 ensure appropriate confidentiality controls are in place.
@@ -1851,16 +2154,6 @@ ensure appropriate confidentiality controls are in place.
 Event detection and logging are critical capabilities that should be present in a device and the
 larger system in which it operates in order to ensure that suspected and successful attempts to
 compromise a medical device may be identified and tracked. These event detection capabilities
-
-(^77) For the purposes of this guidance, loss of confidential health information is generally not considered to be a direct
-impact on safety and effectiveness. Although protecting the confidentiality of PHI is beyond the scope of this
-document, it should be noted that manufacturers and other entities, depending on the facts and circumstances, may
-be obligated to protect the confidentiality, integrity and availability of PHI throughout the product lifecycle, in
-accordance with applicable federal and state laws, including the Health Insurance Portability and Accountability Act
-(HIPAA). For more information on HIPAA, please visit https://www.hhs.gov/hipaa/for-professionals/security/laws-
-regulations/index.html
-
-
 and logs should include storage capabilities, if possible, so that forensic discovery may later be
 performed.
 
@@ -1868,18 +2161,27 @@ While many of the following recommendations are tailored for workstations, the c
 presented below also apply to embedded computing devices. Manufacturers should consider the
 following for all devices:
 
+(^81) For the purposes of this guidance, loss of confidential health information is generally not considered to be a direct
+impact on safety and effectiveness. Although protecting the confidentiality of PHI is beyond the scope of this
+document, it should be noted that manufacturers and other entities, depending on the facts and circumstances, may
+be obligated to protect the confidentiality, integrity and availability of PHI throughout the product lifecycle, in
+accordance with applicable federal and state laws, including the Health Insurance Portability and Accountability Act
+(HIPAA). For more information on HIPAA, please see the Summary of the HIPAA Security Rule.
+
+
 - Implement design features that allow for security compromises and suspected
     compromise attempts to be detected, recognized, logged, timed, and acted upon during
     normal use. Acting upon security events should consider the benefit/risk assessment in
-    accordance with Section 6.5 of AAMI TIR57 in determining whether it is appropriate to
-    affect standard device functionality during a security event.
-- Ensure the design enables forensic evidence capture.^78 The design should include
+    accordance with Section 6.5 of AAMI TIR57 or Section 7.4 of ANSI/AAMI SW96 in
+    determining whether it is appropriate to affect standard device functionality during a
+    security event.
+- Ensure the design enables forensic evidence capture.^82 The design should include
     mechanisms to securely create and store log files off the device to track security events.
     Documentation should include how and where log files are located, stored, recycled,
-    archived, and how they could be consumed by automated analysis software (e.g.,
-    Intrusion Detection System (IDS)). Examples of security events include, but are not
-    limited to, configuration changes, network anomalies, login attempts, and anomalous
-    traffic (e.g., sending requests to unknown entities).
+    archived, and how they could be consumed by automated analysis software (e.g., IDS).
+    Examples of security events include, but are not limited to, configuration changes,
+    network anomalies, login attempts, and anomalous traffic (e.g., sending requests to
+    unknown entities).
 - Design devices such that the potential impact of vulnerabilities is limited by specifying a
     secure configuration. Secure configurations may include endpoint protections, such as
     anti-malware, firewall/firewall rules, allow-listing, defining security event parameters,
@@ -1902,24 +2204,24 @@ following for all devices:
              - Antivirus/malware detection/protection software is generally not needed
                 unless a particular risk or threat is identified that would not be addressed
                 by other expected security controls.
-
-(^78) Forensic evidence capture is a necessary part of digital forensics. NIST SP 800-86 available at
-https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-86.pdf defines digital forensics as “The
-application of science to the identification, collection, examination, and analysis, of data while preserving the
-integrity of the information and maintaining a strict chain of custody for the data.”
-
-
 - Design devices to enable software configuration management and permit tracking and
     control of software changes to be electronically obtainable (i.e., machine readable) by
     authorized users.
 - Design devices to facilitate the performance of variant analyses such that the same
     vulnerabilities can be identified across device models and product lines.
+
+(^82) Forensic evidence capture is a necessary part of digital forensics. NIST SP 800-86 defines digital forensics as
+“The application of science to the identification, collection, examination, and analysis, of data while preserving the
+integrity of the information and maintaining a strict chain of custody for the data.”
+https://doi.org/10.6028/NIST.SP.800- 86
+
+
 - Design devices to notify users when malfunctions or anomalous device behavior,
     including those potentially related to a cybersecurity breach, are detected.
-- Consider designing devices such that they are able to produce a SBOM in a machine
-    readable^79 format.
+- Consider designing devices such that they are able to produce an SBOM in a machine
+    readable^ format.
 
-#### Resiliency and Recovery
+###### Resiliency and Recovery
 
 Devices should be designed to be resilient to possible cyber incident scenarios (also known as
 “cyber-resiliency”) and maintain availability. Cyber-resiliency capabilities are important for
@@ -1938,32 +2240,28 @@ The following recommendations are intended to help designers achieve cyber-resil
     capabilities with the rest of the medical device system are disrupted, including disruption
     of significant duration.
 - Design devices to be resilient to possible cyber incident scenarios such as network
-    outages, Denial of Service,^80 excessive bandwidth usage by other products, disrupted
-    quality of service (QoS),^81 and/or excessive jitter^82 (i.e., a variation in the delay of
+    outages, Denial of Service,^83 excessive bandwidth usage by other products, disrupted
+    quality of service (QoS),^84 and/or excessive jitter^85 (i.e., a variation in the delay of
     received packets).
 - Design devices to be resilient to possible noise items (e.g., scanning).
 
-#### Firmware and Software Updates
+###### Firmware and Software Updates
 
 Devices should be capable of being updated in a secure and timely manner to maintain safety and
 effectiveness throughout the product’s lifecycle. Despite best efforts, undiscovered, exploitable
 vulnerabilities may exist in devices after they are marketed. This is especially true over the
-
-(^79) Recommendation 2.2 from the Health Care Industry and Cybersecurity Task Force (HCIC TF) Report on
-Improving Cybersecurity in the Health Care Industry available at https://www.phe.gov/Preparedness/
-planning/CyberTF/Documents/report2017.pdf
-(^80) Denial of Service is an attack that prevents or impairs the authorized use of the information system, resources, or
-services.
-(^81) From CNSSI 4009 Committee on National Security Systems (CNSS) Glossary.
-(^82) From NIST Computer Security Resource Center Glossary available at https://csrc.nist.gov/glossary/term/jitter
-
-
 device’s service life, as threats evolve over time and exploit methods change, and become more
 sophisticated.
 
 FDA recommends that manufacturers should not only build in the ability for devices to be
 updated, but that manufacturers also plan for the rapid testing, evaluation, and patching of
 devices deployed in the field. The following recommendations can help to achieve this:
+
+(^83) Denial of Service is an attack that prevents or impairs the authorized use of the information system, resources, or
+services.
+(^84) From the CNSSI 4009 National Information Assurance (IA) Glossary.
+(^85) From the NIST Computer Security Resource Center Glossary.
+
 
 - Design devices to anticipate the need for software and firmware patches and updates to
     address future cybersecurity vulnerabilities. This will likely necessitate the need for
@@ -2012,12 +2310,12 @@ that engineers and reviewers should be able to logically and easily follow data,
 commands from any asset (e.g., a manufacturer server) to any other associated asset (e.g., a
 medical device), while possibly crossing intermediate assets (e.g., application). The diagrams
 may also include items from the information details identified below for the architecture views
-identified in Section V.B.2. if the information is better represented or conveyed through a
+identified in Section V.B.2 if the information is better represented or conveyed through a
 diagram than explanatory text alone.
 
 ### B. Information Details for an Architecture View
 
-For each view described in Section V.B.2., manufacturers should provide a system-level
+For each view described in Section V.B.2, manufacturers should provide a system-level
 description and analysis inclusive of end-to-end security analyses of all the communications in
 the medical device system regardless of intended use. This should include detailed diagrams and
 traces for all communication paths as described below. Security-relevant analysis requires the
@@ -2026,8 +2324,8 @@ describes how data, code, and commands are protected between any two assets in t
 device system. This analysis can also help identify the software that should be included in the
 SBOM for each device.
 
-The FDA recommends that security architecture views should consider the following examples
-of information for inclusion:
+FDA recommends that security architecture views should consider the following examples of
+information for inclusion:
 
 - Detailed diagrams and supporting explanatory text that identify all medical device system
     assets, including but not limited to:
@@ -2040,7 +2338,7 @@ of information for inclusion:
 - Healthcare facility-operated assets;
 - Communications/networking assets; and
 - Manufacturer-controlled assets, including any servers that interact with external
-    entities (e.g., a service that collects and redistributes device data, or a firmware
+    entities (e.g., a server that collects and redistributes device data, or a firmware
     update server).
 - For every communication path that exists between any two assets in the security use case
 view (and/or explanatory text), including indirect connections when there is at least one
@@ -2062,7 +2360,7 @@ communication channels;
 - Any “handoff” sequences from one communication path to another (e.g., from
 asset to asset, network to network, or Bluetooth to Wi-Fi), and how the data, code,
 and/or commands are secured/protected during handoff (i.e., how is their
-integrity/authenticity assured);
+integrity/authenticity ensured);
 - Explanations of intended behavior in unusual/erroneous/unexpected
 circumstances (e.g., termination of a connection in the middle of a data transfer);
 - Authentication mechanism (if any), including the algorithm name/version (if
@@ -2084,7 +2382,7 @@ both endpoints;
     generated, stored, configured, transferred, and maintained, including both
     manufacturer- and healthcare facility-controlled assets (e.g., key management and
     public key infrastructure (PKI));
-- Identity management83 (if any), including how identities are managed/transferred
+- Identity management^86 (if any), including how identities are managed/transferred
     and configured (e.g., from manufacturer to programmer and from programmer to
     device);
 - If communication sessions are used or supported, a detailed explanation of how
@@ -2096,10 +2394,10 @@ both endpoints;
     and controls, and testing;
 - Explanations or links to the evidence that may be used to justify security claims
     and any assumptions; and
-- Traceability of the asset to the SBOM component described in Section V.B.2.,
+- Traceability of the asset to the SBOM component described in Section V.B.2,
     above, for proprietary and third-party code, when appropriate.
 
-(^83) For the purposes of this guidance, “identity management” means the process that governs the authentication and
+(^86) For the purposes of this guidance, “identity management” means the process that governs the authentication and
 authorization of users to devices and assets.
 
 
@@ -2127,8 +2425,8 @@ applications:
     updateability/process (21 CFR 812.25(f)).
 
 FDA intends to review this information in the context of the overall benefit-risk assessment of
-investigational devices as outlined in the guidance “Factors to Consider When Making Benefit-
-Risk Determinations for Medical Device Investigational Device Exemptions.”^84 Therefore,
+investigational devices as outlined in FDA’s guidance “Factors to Consider When Making
+Benefit-Risk Determinations for Medical Device Investigational Device Exemptions.” Therefore,
 approval of an IDE based on the documentation recommended above does not preclude the
 possibility of future cybersecurity questions or concerns being raised during review of a
 subsequent marketing application. This is, in part, due to the understanding that design changes
@@ -2137,17 +2435,16 @@ be needed between the time of clinical trials and when the device is submitted f
 authorization (e.g., operating system no longer supported or nearing end of support, third-party
 software updates).
 
-(^84) A vailable at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/factors-consider-when-
-making-benefit-risk-determinations-medical-device-investigational-device
-
 
 ## Appendix 4. General Premarket Submission Documentation Elements and Scaling with Risk
 
-As stated in Section IV.D. and throughout the guidance, device cybersecurity design and
+As stated in Section IV.D and throughout the guidance, device cybersecurity design and
 documentation are expected to scale with the cybersecurity risk of that device. While
 documentation breadth is expected to scale, each type of documentation identified throughout the
 guidance is recommended for all premarket submissions for devices with potential cybersecurity
-risks.
+risks. As mentioned previously, the submission documentation recommendations in this
+guidance are intended to help manufacturers meet their obligations for cyber devices under
+section 524B of the FD&C Act.
 
 Table 1 below summarizes the specific documentation elements identified throughout the
 guidance for premarket submissions, the associated sections of the guidance for the document,
@@ -2179,143 +2476,167 @@ most evident in the breadth of the Threat Modeling and Architecture Views docume
 
 ```
 Type of Premarket
-Submission
-Documentation
+Submission Documentation
 ```
 ```
-Guidance Section(s) IDE Submission*
+Guidance
+Section(s)
+```
+```
+IDE Submission*
 ```
 ```
 Cybersecurity Risk
 Management Report
 ```
 ```
-Sections V., VI.B. Could be helpful to submit, but
-not specifically recommended
-```
-- Threat Model
-    (may include
-    Architecture
-    Views)
-
-```
-Sections V.A.1., V.A.3.,
-V.A.4., V.A.5., V.B.2.,
-Appendix 1, Appendix 2
+Sections V,
+VI.B
 ```
 ```
-Could be helpful to submit, but
-not specifically recommended
-(see Architecture View
-recommendations)
+Could be helpful to submit, but not
+specifically recommended
 ```
 
 **Type of Premarket
-Submission
-Documentation**
+Submission Documentation**
 
 ```
-Guidance Section(s) IDE Submission*
+Guidance
+Section(s)
 ```
-- Cybersecurity
-    Risk Assessment
+```
+IDE Submission*
+```
+- Threat Model (may
+    include Architecture
+    Views)
 
 ```
-Sections V.A.2., V.A.3.,
-V.A.4., V.A.5., V.A.6.
+Sections
+V.A.1, V.A.3,
+V.A.4, V.A.5,
+V.B.2,
+Appendix 1,
+Appendix 2
 ```
 ```
-Could be helpful to submit, but
-not specifically recommended
+Could be helpful to submit, but not
+specifically recommended (see Architecture
+View recommendations)
 ```
-- SBOM Sections V.A.4., VI.A. Recommended
+- Cybersecurity Risk
+    Assessment
+
+```
+Sections
+V.A.2, V.A.3,
+V.A.4, V.A.5,
+V.A.6
+```
+```
+Could be helpful to submit, but not
+specifically recommended
+```
+- SBOM Sections
+    V.A.4, VI.A
+
+```
+Recommended
+```
 - Vulnerability
     Assessment and
     Software Support
 
 ```
-Section V.A.4. Could be helpful to submit, but
-not specifically recommended
+Section V.A.4 Could be helpful to submit, but not
+specifically recommended
 ```
 - Unresolved
     Anomalies
     Assessment
 
 ```
-Section V.A.5. Could be helpful to submit, but
-not specifically recommended
+Section V.A.5 Could be helpful to submit, but not
+specifically recommended
 ```
-- Traceability Sections V.A., V.A.1.,
-    V.A.2., V.A.3., V.A.4.,
-    V.A.5, V.A.6., V.B.1., V.B.2.,
-    V.C., VI.A.
+- Traceability Sections V.A,
+    V.A.1, V.A.2,
+    V.A.3, V.A.4.
+    V.A.5, V.A.6,
+    V.B.1, V.B.2,
+    V.C, VI.A
 
 ```
-Could be helpful to submit, but
-not specifically recommended
+Could be helpful to submit, but not
+specifically recommended
 ```
-Measures and Metrics Section V.A.6. Could be helpful to submit, but
-not specifically recommended
-Architecture Views Section V.B. Recommended
+Measures and Metrics Section V.A.6 Could be helpful to submit, but not
+specifically recommended
+Architecture Views Section V.B Recommended
 
 - Global, Multi-patient and
-    Updateability/Patchability
-    views
-- Security Use Case views
-    for functionality with
-    safety risks
-- Requirements Sections V.B.1., Appendix 1 Recommended
-- Global, Multi-patient and
-Updateability/Patchability
-views
-- Security Use Case views
-for functionality with
-safety risks
-- Architecture
-Views (may be
-included in Threat
-Model)
+    Updateability/Patchability views
+- Security Use Case views for
+    functionality with safety risks
+- Requirements Sections
+V.B.1,
+Appendix 1
 
 ```
-Sections V.A.1., V.B.2.,
-Appendix 1, Appendix 2
+Recommended
+```
+- Global, Multi-patient and
+    Updateability/Patchability views
+- Security Use Case views for
+    functionality with safety risks
+- Architecture Views
+(may be included in
+Threat Model)
+
+```
+Sections
+V.A.1, V.B.2,
+Appendix 1,
+Appendix 2
 ```
 ```
 Recommended
 ```
 - Global, Multi-patient and
-    Updateability/Patchability
-    views
-- Security Use Case views
-    for functionality with
-    safety risks
-Testing Section V.C. Could be helpful to submit, but
-not specifically recommended
-Labeling Section VI.A. Recommended
-- Informed Consent Form
-to include cybersecurity
-risks
+    Updateability/Patchability views
+- Security Use Case views for
+    functionality with safety risks
+Testing Section V.C Could be helpful to submit, but not
+specifically recommended
 
 
 ```
 Type of Premarket
-Submission
-Documentation
+Submission Documentation
 ```
 ```
-Guidance Section(s) IDE Submission*
+Guidance
+Section(s)
 ```
-- General Cybersecurity
-    Labeling - Connectivity
-    and associated general
+```
+IDE Submission*
+```
+```
+Labeling Section VI.A Recommended
+```
+- Informed Consent Form to include
+    cybersecurity risks
+- General Cybersecurity Labeling -
+    Connectivity and associated general
     cybersecurity risks,
     updateability/process
-Cybersecurity
-Management Plans
+Cybersecurity Management
+Plans
 
 ```
-Section VI.B. Could be helpful to submit, but
-not specifically recommended
+Section VI.B Could be helpful to submit, but not
+specifically recommended
 ```
 *For the purposes of this table, “recommended” refers to the elements of an IDE submission
 FDA discusses in Appendix 3 of this document; “could be helpful to submit, but not specifically
@@ -2334,124 +2655,118 @@ any context beyond this guidance.
 **Anomaly** – any condition that deviates from the expected behavior based on user needs,
 requirements, specifications, design documents, or standards.
 
-**Asset** – anything that has value to an individual or an organization.^85
+**Asset** – anything that has value to an individual or an organization.^87
 
 **Attack Surface Analysis** – evaluation of attack surface to determine all avenues of ingress and
-egress to and from a system including common vulnerabilities and exposed ports and services.^86
+egress to and from a system including common vulnerabilities and exposed ports and services.^88
 
 **Authentication** – the act of verifying the identity of a user, process, or device as a prerequisite to
 allowing access to the device, its data, information, or systems, or provision of assurance that a
-claimed characteristic of an entity is correct.^87
+claimed characteristic of an entity is correct.^89
 
 **Authenticity** – information, hardware, or software having the property of being genuine and
 being able to be verified and trusted; confidence that the contents of a message originate from the
-expected party and has not been modified during transmission or storage.^88
+expected party and has not been modified during transmission or storage.^90
 
 **Authorization** – the right or a permission that is granted to a system entity to access a system
-resource.^89
+resource.^91
 
 **Availability** – the property of data, information, and information systems to be accessible and
 usable on a timely basis in the expected manner (i.e., the assurance that information will be
-available when needed).^90
+available when needed).^92
 
 **Boundary Analysis** – the process of uniquely assigning information resources to an information
-system, which defines the security boundary for that system.^91
+system, which defines the security boundary for that system.^93
 
 **Closed Box Testing** – a method of software testing that examines the functionality of an
-application without peering into its internal structures of workings.^92
+application without peering into its internal structures of workings.^94
 
-(^85) Definition is adapted from ISO/IEC 27032 Information technology — Security techniques — Guidelines for
-cybersecurity, clause 4.6.
-(^86) Definition is adapted from ANSI/ISA 62443-1-1:2018.
-(^87) Definition is adapted from NIST FIPS 200 Minimum Security Requirements for Federal Information and
-Information Systems and from ISO/IEC 18014-2:2009(E) Information technology – Security techniques - Time-
-stamping Services - Part 2: Mechanisms producing independent tokens, clause 3.
-(^88) Definition is adapted from NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and
-Organizations.
-(^89) Definition is adapted from CNSSI 4009-2015 Committee on National Security Systems (CNSS) Glossary.
-(^90) Definition is adapted from ISO IEC 27000-2018, Clause 3.7 and CNSSI 4009-2015 CNSS Glossary.
-(^91) Definition is adapted from NIST Special Publication 800-18 Revision 1 Guide for Developing Security
-Plans for Federal Information Systems.
-(^92) Definition is adapted from CNSSI 4009-2015 CNSS Glossary.
+(^87) Definition is adapted from ISO/IEC 27032 _Information technology — Security techniques — Guidelines for
+cybersecurity_ , clause 4.6.
+(^88) Definition is adapted from ANSI/ISA 62443-1-1:2018.
+(^89) Definition is adapted from NIST FIPS 200 _Minimum Security Requirements for Federal Information and
+Information Systems_ ( https://doi.org/10.6028/NIST.FIPS.200) and from ISO/IEC 18014 -2:2009(E) _Information
+technology – Security techniques - Time-stamping Services - Part 2: Mechanisms producing independent tokens_ ,
+clause 3.
+(^90) Definition is adapted from NIST SP 800-53 Security and Privacy Controls for Federal Information Systems and
+Organizations. https://doi.org/10.6028/NIST.SP.800-53r5
+(^91) Definition is adapted from CNSSI 4009-2015 _Committee on National Security Systems (CNSS) Glossary_.
+(^92) Definition is adapted from ISO IEC 27000-2018, Clause 3.7 and CNSSI 4009-2015 CNSS Glossary.
+(^93) Definition is adapted from NIST Special Publication 800-18 Revision _1 Guide for Developing Security
+Plans for Federal Information Systems_.
+(^94) Definition is adapted from CNSSI 4009- 2015 _CNSS Glossary_.
 
 
 **Compensating Controls** – a safeguard or countermeasure deployed, in lieu of, or in the absence
 of controls designed in by a device manufacturer. These controls are external to the device
 design, configurable in the field, employed by a user, and provide supplementary or comparable
-cyber protection for a medical device.^93
+cyber protection for a medical device.^95
 
 **Confidentiality** – the property of data, information, or system structures to be accessible only to
 authorized persons and entities and are processed at authorized times and in the authorized
 manner, thereby helping ensure data and system security. Confidentiality provides the assurance
 that no unauthorized users (i.e., only trusted users) have access to the data, information, or
-system structures.^94
+system structures.^96
 
 **Configuration** – the possible conditions, parameters, and specifications with which a device or
-system component can be described or arranged.^95
+system component can be described or arranged.^97
 
 **Configuration Management** – a collection of activities focused on establishing and maintaining
 the integrity of information technology products and information systems, through control of
 processes for initializing, changing, and monitoring the configurations of those products and
-systems throughout the system development lifecycle.^96
+systems throughout the system development lifecycle.^98
+
+**Controlled Risk** – when there is sufficiently low (acceptable) residual risk of patient harm due
+to a device’s particular cybersecurity vulnerability.
 
 **Cryptography** – the discipline that embodies the principles, means, and methods for providing
 information security; including confidentiality, data integrity, non-repudiation, and
-authenticity.^97
+authenticity.^99
 
-**Cybersecurity** – the pr ocess of preventing unauthorized access, modification, misuse or de nial
-of use, or the unauthorized use of infor mation that is stored, accessed, or trans ferred from a
-medical device to an external recipient.^98
+**Cybersecurity** – the process of preventing unauthorized access, modification, misuse or denial
+of use, or the unauthorized use of information that is stored, accessed, or transferred from a
+medical device to an external recipient.^100
 
 **Decommission** – a process in the disposition process that includes proper identification,
 authorization for disposition, and sanitization of the equipment, as well as removal of Patient
-Health Information (PHI) or software, or both.^99
-
-**Decryption** – is the cryptographic transformation of encrypted data (called “ciphertext”) into
-non-encrypted form (called “plaintext”).^100
+Health Information (PHI) or software, or both.^101
 
 ```
 Disposal – a process to end the existence of a system asset or system for a specified intended
 use, appropriately handle replaced or retired assets, and to properly attend to identified critical
 ```
-(^93) Definition is adapted from NIST Special Publication “Assessing Security and Privacy Controls in Federal
-Information Systems and Organizations,” NIST SP 800-53A Rev. 4.
-(^94) Definition is adapted from ISO IEC 27000-2018, Clause 3.10: Property that information is not made available or
+(^95) D efinition is adapted from NIST SP 800-53A Rev. 5 _Assessing Security and Privacy Controls in Federal
+Information Systems and Organizations_. https://doi.org/10.6028/NIST.SP.800-53Ar5
+(^96) Definition is adapted from ISO IEC 27000-2018, Clause 3.10: Property that information is not made available or
 disclosed to unauthorized individuals, entities, or processes.
-(^95) Definition is adapted from NIST SP 800-128 Guide for Security-Focused Configuration Management of
-Information Systems.
-(^96) Definition is adapted from NIST SP 800-53 Rev. 4.
-(^97) Definition is adapted from CNSSI 4009- 2015 CNSS Glossary.
-(^98) Definition is adapted from ISO IEC 27032: 2012, Clause 4.20.
-(^99) Definition is adapted from Medical Device and Health IT Joint Security Plan (JSP).
-(^100) Definition is cited from NIST SP 800-82 Guide to Industrial Control Systems (ICS) Security.
+(^97) Definition is adapted from NIST SP 800-128 _Guide for Security-Focused Configuration Management of
+Information Systems_. https://doi.org/10.6028/NIST.SP.800-128
+(^98) Definition is adapted from NIST SP 800-53 Rev. 5.
+(^99) Definition is adapted from CNSSI 4009- 2015 _CNSS Glossary_.
+(^100) Definition is adapted from ISO IEC 27032: 2012, Clause 4.20.
+(^101) Definition is adapted from Medical Device and Health IT Joint Security Plan version 2 (JSP2).
 
 
 ```
 disposal needs (e.g., per an agreement, per organizational policy, or for environmental, legal,
-safety, security aspects).^101
+safety, or security aspects).^102
 ```
 **Encryption** – is the cryptographic transformation of data (called “plaintext”) into a form (called
 “ciphertext”) that conceals the data’s original meaning to prevent it from being known or
-used.^102
+used.^103
 
 **End of support** – a point beyond which the product manufacturer ceases to provide support,
 which may include cybersecurity support, for a product or service.
 
 **Exploitability** – the feasibility or ease and technical means by which the vulnerability can be
-exploited by a threat.^103
+exploited by a threat.^104
 
 **Firmware** – software program or set of instructions programmed on the flash read-only memory
 (ROM) of a hardware device. It provides the necessary instructions for how the device
-communicates with the other computer hardware.^104
+communicates with the other computer hardware.^105
 
 **Fuzz Testing** – process of creating malformed or unexpected data or call sequences to be
-consumed by the entity under test to verify that they are handled appropriately.^105
-
-**Hardening** – a process intended to eliminate a means of attack by patching vulnerabilities and
-turning off nonessential services.^106 Hardening, when applied to computing, is the practice of
-reducing a system's vulnerability by reducing its attack surface. Hardening may involve a
-reduction in attack vectors by culling the pathways or vectors attackers would use (e.g., patching
-vulnerabilities and turning off nonessential services).
+consumed by the entity under test to verify that they are handled appropriately.^106
 
 **Hardware** – the material physical components of an information system.^107
 
@@ -2464,22 +2779,25 @@ decommissioning and disposal.^109
 **Malware** – software or firmware intended to perform an unauthorized process that will have
 adverse impact on the confidentiality, integrity, or availability of an information system.^110
 
-(^101) Definition is adapted from 6.4.14.1 Disposal process purpose ISO/IEC/IEEE 12207:2017(E).
-(^102) Definition is cited from NIST SP 800-82 Guide to ICS Security.
-(^103) D efinition is adapted from the Common Vulnerability Scoring System (CVSS) specification document (v3.1).
-(^104) Definition is adapted from NISTIR 8183. https://nvlpubs.nist.gov/nistpubs/ir/2017/NIST.IR.8183.pdf
-(^105) Definition is cited from ANSI/ISA 62443-1-1:2018.
-(^106) Definition is cited from NIST SP 800-152.
-(^107) Definition is cited from CNSSI 4009-2015 CNSS Glossary.
-(^108) Definition is adapted from AAMI TIR 57 Clause 2.15.
-(^109) Definition is cited from ANSI/AAMI/ISO 14971:2019 Medical devices – Application of risk management to
-medical devices.
-(^110) Definition is cited from NIST SP 800-53 Rev. 4.
-
-
 **Patch** – a “repair job” for a piece of programming; also known as a “fix”. A patch is the
 immediate solution to an identified problem that is provided to users. The patch is not necessarily
 the best solution for the problem, and the product developers often find a better solution to
+
+(^102) Definition is adapted from ISO/IEC/IEEE 12207:2017(E) _Systems and Software Engineering – Software Life
+Cycle Processes_ , subclause 6.4.14.1 Disposal process purpose.
+(^103) Definition is cited from NIST SP 800-82 _Guide to Operational Technology (OT) Security_.
+https://doi.org/10.6028/NIST.SP.800-82r3
+(^104) D efinition is adapted from the Common Vulnerability Scoring System (CVSS) specification document (v3.1).
+(^105) Definition is adapted from NISTIR 8183. https://doi.org/10.6028/NIST.IR.8183
+(^106) Definition is cited from ANSI/ISA 62443-1-1:2018.
+(^107) Definition is cited from CNSSI 4009-2015 _CNSS Glossary_.
+(^108) Definition is adapted from AAMI TIR 57 _Principles for Medical Device Security – Risk management_ , Clause
+2.15.
+(^109) Definition is cited from ANSI/AAMI/ISO 14971:2019 _Medical Devices – Application of Risk Management to
+Medical Devices_.
+(^110) Definition is cited from NIST SP 800-53 Rev. 4.
+
+
 provide when they package the product for its next release. A patch is usually developed and
 distributed as a replacement for or an insertion in compiled code (that is, in a binary file or object
 module). In many operating systems, a special program is provided to manage and track the
@@ -2487,10 +2805,10 @@ installation of patches.^111
 
 **Patient harm** – injury or damage to the health of patients, including death.^112
 
-**Programmable logic –** hardware that has undefined function at the time of manufacture and
+**Programmable logic** – hardware that has undefined function at the time of manufacture and
 must be programmed with software to function (e.g., Field-programmable gate array).
 
-**Reasonably foreseeable misuse –** use of a product or system in a way not intended by the
+**Reasonably foreseeable misuse** – use of a product or system in a way not intended by the
 manufacturer, but which can result from readily predictable human behavior.^113
 
 **Resilience** – the ability of an information system to continue to: (i) operate under adverse
@@ -2500,7 +2818,7 @@ consistent with mission needs.^114
 
 **Secure Product Development Framework (SPDF)** – a set of processes that reduce the number
 and severity of vulnerabilities in products. Additional information about an SPDF and its
-implementation is discussed in Section IV.C. and throughout the guidance.^115
+implementation is discussed in Sections IV and V, and throughout the guidance.^115
 
 **Security Architecture** – a set of physical and logical security-relevant representations (i.e.,
 views) of system architecture that conveys information about how the system is partitioned into
@@ -2510,22 +2828,25 @@ security architecture reflects security domains, the placement of security-relev
 within the security domains, the interconnections and trust relationships between the security-
 relevant elements, and the behavior and interactions between the security-relevant elements.^116
 
+**Security Strength** – a measure of the computational complexity associated with recovering
+certain secret and/or security-critical information concerning a given cryptographic algorithm
+
 (^111) Definition is adapted from NIST SP 800-45 Version 2.
-(^112) Patient harm from cybersecurity risks is discussed at length throughout this guidance and the FDA guidance
-“Postmarket Management of Cybersecurity in Medical Devices” available at https://www.fda.gov/regulatory-
-information/search-fda-guidance-documents/postmarket-management-cybersecurity-medical-devices
-(^113) Definition is adapted from ISO 14971:2019.
-(^114) Definition is cited from NISTSP 800-53 Rev. 4 definition of Information System Resilience.
+(^112) Patient harm from cybersecurity risks is discussed at length throughout this guidance and the Postmarket
+Cybersecurity Guidance.
+(^113) Definition is adapted from ISO 14971:2019 _Medical Devices – Application of Risk Management to Medical
+Devices_.
+(^114) Definition is cited from NISTSP 800-53 Rev. 4 _Security and Privacy Controls for Federal Information Systems
+and Organizations_ , definition of Information System Resilience. https://doi.org/10.6028/NIST.SP.800-53r4
 (^115) The term “Secure Product Development Framework” was developed for the purposes of this guidance to help
 reflect and encompass the concepts related to secure development lifecycles and frameworks. While the term SPDF
 is new, the concepts around secure product development and risk management are not new, and align with
 expectations in the Quality System and Labeling Regulations. As cybersecurity continues to evolve, FDA continues
 to align its terminology to reflect best practices.
-(^116) Definition is cited from NIST 800-160v1, Systems Security Engineering.
+(^116) Definition is cited from NIST 800-160v1 _Systems Security Engineering_. https://doi.org/10.6028/NIST.SP.800-
+160v1r1
 
 
-**Security Strength** – a measure of the computational complexity associated with recovering
-certain secret and/or security-critical information concerning a given cryptographic algorithm
 from known data (e.g., plaintext/ciphertext pairs for a given encryption algorithm).^117
 Throughout this guidance “strong” and other iterations of this term may be used that apply to this
 definition.
@@ -2537,7 +2858,7 @@ device’s safety and effectiveness, the exploitability, and the severity of pat
 **Software Bill of Materials (SBOM)** – a formal inventory of software components and
 dependencies, information about those components, and their hierarchical relationships.^118 The
 software components in an SBOM include, but are not limited to, commercial, open source, off-
-the-shelf, and custom software components. See Section V.A.2. for a more complete description
+the-shelf, and custom software components. See Section V.A.4 for a more complete description
 of an SBOM.
 
 **System** – the combination of interacting elements or assets organized to achieve one or
@@ -2561,15 +2882,16 @@ security procedures to support correct operation.^122
 **Uncontrolled risk** – when there is unacceptable residual risk of patient harm due to
 inadequate compensating controls and risk mitigations.
 
-(^117) Definition is cited from NIST SP 800-108.
+(^117) Definition is cited from NIST SP 800-108 _Recommendation for Key Derivation Using Pseudorandom Functions_.
+https://doi.org/10.6028/NIST.SP.800- 108
 (^118) Definition is adapted from NTIA’s Framing Software Component Transparency: Establishing a Common
-Software Bill of Materials (SBOM), available at https://www.ntia.gov/files/ntia/publications/
-ntia_sbom_framing_2nd_edition_20211021.pdf
-(^119) Definition is adapted from ISO/IEC/IEEE 12207:2017.
-(^120) Definition is adapted from NIST SP 800-53.
-(^121) Definition is adapted from CNSSI 4009- 2015 CNSS Glossary.
-(^122) Definition is adapted from NIST SP 800-32 Introduction to Public Key Technology and the Federal PKI
-Infrastructure.
+Software Bill of Materials (SBOM).
+(^119) Definition is adapted from ISO/IEC/IEEE 12207:2017 _Systems and Software Engineering – Software Life Cycle
+Processes_. https://doi.org/10.1109/IEEESTD.2017.8100771
+(^120) Definition is adapted from NIST SP 800-53. https://doi.org/10.6028/NIST.SP.800-53r5
+(^121) Definition is adapted from CNSSI 4009- 2015 _CNSS Glossary_.
+(^122) Definition is adapted from NIST SP 800-32 _Introduction to Public Key Technology and the Federal PKI
+Infrastructure_. https://doi.org/10.6028/NIST.SP.800- 32
 
 
 **Unresolved anomaly** – a defect that still resides in the software because a sponsor deemed it
@@ -2589,11 +2911,30 @@ control(s), human behavior, or implementation that could be exploited.
 attack a system, where one or more exploits at the end of the chain require the successful
 completion of prior exploits in order to be exploited.^125
 
-(^123) D efinition is consistent with the Premarket Software Guidance (available at https://www.fda.gov/regulatory-
-information/search-fda-guidance-documents/guidance-content-premarket-submissions-software-contained-medical-
-devices) e ven though we use the terms differently.
-(^124) Definition is cited from IMDRF Guidance “Principles and Practices for Medical Device Cybersecurity” available
-at [http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-pp-mdc-n60.pdf](http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-200318-pp-mdc-n60.pdf)
+(^123) D efinition is consistent with the Premarket Software Guidance even though we use the terms differently.
+(^124) Definition is cited from IMDRF Guidance “Principles and Practices for Medical Device Cybersecurity.”
 (^125) D efinition is adapted from the Common Vulnerability Scoring System (CVSS) specification document (v3.1).
+
+
+```
+Guidance History[*] Date Description
+Level 1 Final Guidance June 2025 See Notice of Availability for
+more information.** This
+guidance supersedes the final
+guidance titled “Cybersecurity
+in Medical Devices: Quality
+System Considerations and
+Content of Premarket
+Submissions” and published
+September 2023.
+Reissued as Level 1 Draft
+Guidance
+```
+March 2024 See Notice of Availability for
+more information.**
+*This table was implemented, beginning June 2025, and previous guidance history may not be
+captured in totality.
+**The Notice of Availability is accessible via the Search for FDA Guidance Documents
+webpage.
 
 
