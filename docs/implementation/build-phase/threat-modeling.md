@@ -74,8 +74,11 @@ For each high or medium-priority threat, define a specific technical control or 
 - **Threat:** An attacker can read the firmware from the external flash chip. (Information Disclosure)
 - **Mitigation:** Encrypt the firmware on the flash storage. This mitigation now becomes a security requirement for your product.
 
-:::tip Example in Practice
-For a detailed, end-to-end example of this process, see our **[Example Threat Model for a Smart Thermostat](../../resources/example-documents/threat-model-smart-thermostat.md)**.
+:::tip Examples in Practice
+For detailed, end-to-end examples of this process, see our example threat models:
+
+- **[Smart Thermostat Threat Model](../../resources/example-documents/threat-model-smart-thermostat.md)**: A classic consumer IoT device.
+- **[CGM System Threat Model](../../resources/example-documents/threat-model-cgm.md)**: A connected medical device with a focus on patient safety.
 :::
 
 ## 3. Accelerating Compliance with Tooling
