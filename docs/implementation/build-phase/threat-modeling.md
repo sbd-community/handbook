@@ -79,6 +79,7 @@ For detailed, end-to-end examples of this process, see our example threat models
 
 - **[Smart Thermostat Threat Model](../../resources/example-documents/threat-model-smart-thermostat.md)**: A classic consumer IoT device.
 - **[CGM System Threat Model](../../resources/example-documents/threat-model-cgm.md)**: A connected medical device with a focus on patient safety.
+- **[Low-Stakes BLE Sensor Threat Model](../../resources/example-documents/threat-model-low-stakes-ble-sensor.md)**: A simple, low-risk device illustrating the principle of proportionality.
 :::
 
 ## 3. Accelerating Compliance with Tooling

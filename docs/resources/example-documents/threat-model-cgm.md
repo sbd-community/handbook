@@ -1,6 +1,7 @@
 ---
 title: "Example: Threat Model for a CGM System"
 sidebar_label: "Example: CGM System Threat Model"
+sidebar_position: 2
 tags: [threat-modeling, example, risk-assessment, stride, medical, fda]
 ---
 # Example Threat Model: A Bluetooth CGM System

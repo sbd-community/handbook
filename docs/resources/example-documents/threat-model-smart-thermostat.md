@@ -1,6 +1,7 @@
 ---
 title: "Example: Threat Model for a Smart Thermostat"
 sidebar_label: "Example: Smart Thermostat Threat Model"
+sidebar_position: 1
 tags: [threat-modeling, example, risk-assessment, stride]
 ---
 # Example Threat Model: A Wi-Fi Smart Thermostat
