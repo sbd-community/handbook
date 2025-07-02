@@ -11,6 +11,8 @@ This section contains ready-to-use compliance and assessment tools to help you i
 
 - **[Policy & Evidence](./policy-and-evidence/policy-templates.md)**: Templates for key documents like a Coordinated Vulnerability Disclosure (CVD) policy.
 
+- **[Example Documents](./example-documents/threat-model-smart-thermostat.md)**: Concrete examples of key compliance documents, like a threat model, to use as a template.
+
 - **[Real-World Vulnerabilities](./real-world-vulnerabilities/contec-patient-monitor-backdoor.md)**: Case studies of security incidents and how a secure-by-design approach could have helped.
 
 - **[Reference](./reference/glossary.md)**: Supporting materials like the Glossary and Tool Directory. 
