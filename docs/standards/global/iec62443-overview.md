@@ -102,12 +102,12 @@ The **IEC 62443-4-2** standard specifies the technical security capabilities tha
 
 | Capabilities from **IEC 62443-4-2** (Product) | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Identification & Authentication Control**<br/>[IAC][iec_1_1]<br/>[CRs 1.1-1.3, 1.5, 1.7, 1.11][iec_4_2]<br/>[NDRs 1.6, 1.13][iec_4_2] | Control and audit access by uniquely identifying and authenticating all users (humans, processes, devices). This includes managing accounts, credentials, and session access. Key capabilities include multi-factor authentication, strong password enforcement, and secure management of authenticators. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
-| **Use Control**<br/>[UC][iec_1_1]<br/>[CRs 2.1, 2.5, 2.8, 2.12][iec_4_2]<br/>[SAR 2.4][iec_4_2]<br/>[EDRs 2.4, 2.13][iec_4_2]<br/>[HDRs 2.4, 2.13][iec_4_2]<br/>[NDRs 2.4, 2.13][iec_4_2] | Enforce assigned privileges and permissions for all users and processes according to the principle of least privilege. This covers authorization based on roles, session control, and generating audit trails for all security-relevant actions. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **System Integrity**<br/>[SI][iec_1_1]<br/>[CRs 3.1, 3.4, 3.10, 3.12, 3.14][iec_4_2]<br/>[EDRs 3.2, 3.10-3.14][iec_4_2]<br/>[HDRs 3.2, 3.10-3.14][iec_4_2]<br/>[NDRs 3.2, 3.10-3.14][iec_4_2] | Protect the integrity of software and information at all times. This is achieved through mechanisms like cryptographic verification of firmware and software (secure boot and signed updates), communication integrity checks, and physical tamper resistance. | [Secure Boot](../../implementation/build-phase/secure-boot.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
-| **Data Confidentiality**<br/>[DC][iec_1_1]<br/>[CRs 4.1, 4.3][iec_4_2] | Prevent the unauthorized disclosure of information. This requires protecting data at rest and data in transit using strong, standardized cryptographic protocols like TLS. | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
-| **Restricted Data Flow**<br/>[RDF][iec_1_1]<br/>[CRs 5.1, 5.2][iec_4_2]<br/>[NDRs 5.2, 5.3][iec_4_2] | Control and restrict the flow of data between different network zones. This is a primary method of network defense, limiting the lateral spread of an attack by enforcing rules on traffic at zone boundaries. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **Resource Availability**<br/>[RA][iec_1_1]<br/>[CRs 7.1, 7.3, 7.4, 7.7][iec_4_2] | Ensure the component is resilient against denial-of-service attacks. This includes robust resource management, the ability to be backed up and restored, and minimizing the attack surface by disabling all unnecessary functions, ports, and services. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Identification & Authentication Control**<br/>[IAC][iec_1_1]<br/>[CRs 1.1-1.5, 1.7-1.12, 1.14][iec_4_2]<br/>[NDRs 1.6, 1.13][iec_4_2] | Control and audit access by uniquely identifying and authenticating all users (humans, processes, devices). This includes the secure management of accounts and authenticators (e.g., passwords, keys, certificates), including their initial state, lifecycle, protection in storage and transit, and policies for handling unsuccessful login attempts. Key capabilities include multi-factor authentication and strong password enforcement. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
+| **Use Control**<br/>[UC][iec_1_1]<br/>[CRs 2.1-2.13][iec_4_2]<br/>[SAR 2.4][iec_4_2]<br/>[EDRs 2.4, 2.13][iec_4_2]<br/>[HDRs 2.4, 2.13][iec_4_2]<br/>[NDRs 2.4, 2.13][iec_4_2] | Enforce assigned privileges for authenticated users according to the principle of least privilege. This includes robust authorization based on roles, secure session management (locking, termination, concurrent control), and the generation of a comprehensive, timestamped audit trail for all security-relevant events, with protection for audit log storage and defined behavior on audit failures. | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
+| **System Integrity**<br/>[SI][iec_1_1]<br/>[CRs 3.1-3.14][iec_4_2]<br/>[EDRs 3.2, 3.10-3.14][iec_4_2]<br/>[HDRs 3.10][iec_4_2]<br/>[NDRs 3.2, 3.10][iec_4_2] | Protect the integrity of the component and its data from unauthorized modification. This is achieved through a wide range of functions, including protection from malicious code, communication integrity, self-tests of security functions, input validation, secure error handling, session integrity, audit log protection, secure boot, signed updates, physical tamper resistance, and secure provisioning of roots of trust. | [Secure Boot](../../implementation/build-phase/secure-boot.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
+| **Data Confidentiality**<br/>[DC][iec_1_1]<br/>[CRs 4.1-4.3][iec_4_2] | Prevent the unauthorized disclosure of information. This requires protecting data at rest and data in transit using strong, standardized cryptographic protocols like TLS, and ensuring that sensitive information can be securely deleted when no longer needed (information persistence). | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
+| **Restricted Data Flow**<br/>[RDF][iec_1_1]<br/>[CRs 5.1-5.4][iec_4_2] | Control the flow of data between different network zones and between applications on the same device. This is a primary method of network defense, limiting the lateral spread of an attack by enforcing rules on traffic at zone boundaries (e.g., via a firewall) and supporting application partitioning. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Resource Availability**<br/>[RA][iec_1_1]<br/>[CRs 7.1-7.4, 7.6-7.8][iec_4_2]<br/>[EDRs 7.1, 7.7, 7.8][iec_4_2]<br/>[HDRs 7.1][iec_4_2]<br/>[NDRs 7.1][iec_4_2] | Ensure the component is resilient against denial-of-service attacks. This includes robust resource management, the ability to be backed up and restored, secure management of all configuration settings, providing a component inventory, and minimizing the attack surface by disabling all unnecessary functions, ports, and services. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
 
 #### 4.1.3 Vulnerability Handling
 A manufacturer's responsibility does not end at shipment. Both frameworks require robust processes for managing vulnerabilities and delivering security updates throughout the product's supported lifecycle. This includes not only fixing flaws but proactively searching for them and ensuring the product has the technical means to report events.
@@ -121,7 +121,7 @@ A key part of vulnerability handling is ensuring the product has the built-in te
 
 | Capabilities from **IEC 62443-4-2** (Product) | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Timely Response to Events**<br/>[TRE][iec_1_1]<br/>[CRs 6.1, 6.2][iec_4_2] | Respond to security violations in a timely manner. Components must have the capability to be monitored for security events and must make their audit logs securely available for analysis. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Timely Response to Events**<br/>[TRE][iec_1_1]<br/>[CRs 6.1, 6.2][iec_4_2] | Respond to security violations in a timely manner. Components must have the capability to be monitored for security events and must make their audit logs securely available for analysis. | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
 
 #### 4.1.4 Other Key Obligations
 This section covers the remaining governance and documentation-related duties required for a compliant secure development process.
@@ -175,6 +175,102 @@ Recognizing the unique challenges of IIoT devices (e.g., direct internet connect
 | **Advanced** | Based on **Security Level 4 (SL 4)**. It includes all Core requirements and adds further protections against sophisticated attacks, such as mitigations against reverse-engineering. |
 
 This tiered approach allows manufacturers to certify their IIoT components against a security baseline that is explicitly designed for their specific risk posture.
+
+## Appendix: Foundational Requirements (FRs)
+
+This section lists the seven Foundational Requirements (FRs) defined in **[IEC 62443-1-1][iec_1_1]**. These FRs form the basis for all technical security requirements in the standard series.
+
+| FR # | Acronym | Foundational Requirement |
+|---|---|---|
+| FR1 | IAC | Identification and Authentication Control |
+| FR2 | UC | Use Control |
+| FR3 | SI | System Integrity |
+| FR4 | DC | Data Confidentiality |
+| FR5 | RDF | Restricted Data Flow |
+| FR6 | TRE | Timely Response to Events |
+| FR7 | RA | Resource Availability |
+
+## Appendix: Component Requirements (CRs)
+
+This section provides a summary of the technical Component Requirements (CRs) for each of the seven Foundational Requirements (FRs) defined in the standard.
+
+| Requirement | Description |
+|---|---|
+| CR 1.1 (IAC) | Identify and authenticate all human users. |
+| CR 1.2 (IAC) | Identify and authenticate all software processes and devices. |
+| CR 1.3 (IAC) | Provide and manage user accounts. |
+| CR 1.4 (IAC) | Provide and manage unique identifiers for each account. |
+| CR 1.5 (IAC) | Manage the lifecycle of authenticators (e.g., passwords, keys), including initial values, changes, and secure storage. |
+| CR 1.6 (IAC) | Identify and authenticate all users and devices on wireless networks. |
+| CR 1.7 (IAC) | Enforce configurable password strength policies. |
+| CR 1.8 (IAC) | Support the use of a public key infrastructure (PKI). |
+| CR 1.9 (IAC) | Define and enforce the strength of public key-based authentication mechanisms. |
+| CR 1.10 (IAC) | Obscure authenticator feedback during the login process (e.g., show asterisks instead of password characters). |
+| CR 1.11 (IAC) | Limit the number of consecutive unsuccessful login attempts. |
+| CR 1.12 (IAC) | Display a configurable system use notification banner before authentication. |
+| CR 1.13 (IAC) | Monitor and control all access attempts from untrusted networks. |
+| CR 1.14 (IAC) | Define and enforce the strength of symmetric key-based authentication mechanisms. |
+| CR 2.1 (UC) | Enforce access controls and permissions based on assigned roles and privileges. |
+| CR 2.2 (UC) | Control and monitor the use of wireless interfaces. |
+| CR 2.3 (UC) | Control and monitor the use of portable and mobile devices. |
+| CR 2.4 (UC) | Control the execution of mobile code (e.g., scripts, applets). |
+| CR 2.5 (UC) | Provide a session lock mechanism that activates after a period of inactivity. |
+| CR 2.6 (UC) | Allow users to terminate their own remote sessions. |
+| CR 2.7 (UC) | Control the number of concurrent sessions allowed per user. |
+| CR 2.8 (UC) | Generate detailed, timestamped audit records for all security-relevant events. |
+| CR 2.9 (UC) | Ensure sufficient storage capacity for audit logs and prevent dysfunction if the log becomes full. |
+| CR 2.10 (UC) | Handle audit processing failures gracefully without losing essential system functions. |
+| CR 2.11 (UC) | Provide the capability to generate accurate timestamps for audit records. |
+| CR 2.12 (UC) | Support non-repudiation by ensuring actions can be uniquely traced to a specific user. |
+| CR 2.13 (UC) | Control the use of physical diagnostic and test interfaces. |
+| CR 3.1 (SI) | Ensure the integrity of all transmitted communications. |
+| CR 3.2 (SI) | Provide protection against malicious code. |
+| CR 3.3 (SI) | Provide the ability for the component to verify the correct operation of its own security functions (self-tests). |
+| CR 3.4 (SI) | Protect the integrity of software and information at rest. |
+| CR 3.5 (SI) | Validate all inputs for syntax and content. |
+| CR 3.6 (SI) | Ensure that the component's output is deterministic and documented. |
+| CR 3.7 (SI) | Handle all error conditions securely without leaking sensitive information. |
+| CR 3.8 (SI) | Ensure the integrity of communication sessions. |
+| CR 3.9 (SI) | Protect audit logs and audit tools from unauthorized access, modification, or deletion. |
+| CR 3.10 (SI) | Provide a secure mechanism to support software and firmware updates. |
+| CR 3.11 (SI) | Provide physical tamper resistance and detection capabilities. |
+| CR 3.12 (SI) | Support the secure provisioning of product supplier roots of trust. |
+| CR 3.13 (SI) | Support the secure provisioning of asset owner roots of trust. |
+| CR 3.14 (SI) | Ensure the integrity of the entire boot process (Secure Boot). |
+| CR 4.1 (DC) | Protect the confidentiality of information at rest and in transit from unauthorized disclosure. |
+| CR 4.2 (DC) | Ensure that data can be securely deleted when no longer needed (information persistence). |
+| CR 4.3 (DC) | Use strong, standardized cryptographic algorithms and protocols correctly. |
+| CR 5.1 (RDF) | Support the logical segmentation of the network (zones and conduits). |
+| CR 5.2 (RDF) | Protect zone boundaries and control the flow of information between them. |
+| CR 5.3 (RDF) | Restrict the use of general-purpose, person-to-person communication protocols (e.g., email, instant messaging). |
+| CR 5.4 (RDF) | Support application partitioning to control data flow between applications on the same device. |
+| CR 6.1 (TRE) | Make audit logs available and accessible for analysis by authorized users and tools. |
+| CR 6.2 (TRE) | Provide the capability for continuous monitoring of security events. |
+| CR 7.1 (RA) | Provide protection against denial-of-service attacks. |
+| CR 7.2 (RA) | Manage system resources (e.g., memory, CPU, network bandwidth) to prevent exhaustion. |
+| CR 7.3 (RA) | Provide a mechanism to back up system state and information. |
+| CR 7.4 (RA) | Provide a mechanism to recover the system to a known secure state after a failure. |
+| CR 7.6 (RA) | Allow for the secure management of all network and security configuration settings. |
+| CR 7.7 (RA) | Support the principle of least functionality by allowing unused ports, protocols, and services to be disabled. |
+| CR 7.8 (RA) | Provide a mechanism to generate an inventory of the component's hardware and software. |
+
+## Appendix: Embedded Device Requirements (EDRs)
+
+This section provides a summary of the technical Embedded Device Requirements (EDRs) defined in the standard. These are specific requirements that apply in addition to the base Component Requirements (CRs) for embedded devices.
+
+| Requirement | Description |
+|---|---|
+| EDR 2.4 (UC) | Control the execution of mobile code (e.g., scripts, applets). |
+| EDR 2.13 (UC) | Control the use of physical diagnostic and test interfaces. |
+| EDR 3.2 (SI) | Provide protection from malicious code. |
+| EDR 3.10 (SI) | Provide a secure mechanism to support software and firmware updates. |
+| EDR 3.11 (SI) | Provide physical tamper resistance and detection capabilities. |
+| EDR 3.12 (SI) | Support the secure provisioning of product supplier roots of trust. |
+| EDR 3.13 (SI) | Support the secure provisioning of asset owner roots of trust. |
+| EDR 3.14 (SI) | Ensure the integrity of the entire boot process (Secure Boot). |
+| EDR 7.1 (RA) | Provide protection against denial-of-service attacks. |
+| EDR 7.7 (RA) | Support the principle of least functionality by allowing unused ports, protocols, and services to be disabled. |
+| EDR 7.8 (RA) | Provide a mechanism to generate an inventory of the component's hardware and software. |
 
 <!-- Citations -->
 [iec_webstore]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC 62443 Series on the IEC Webstore"
