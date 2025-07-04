@@ -76,50 +76,58 @@ To effectively use the standard, it's important to understand its core concepts:
 
 The standard defines clear responsibilities for each stakeholder in the IACS ecosystem.
 
-### 4.1 For Product Suppliers: Secure Process (IEC 62443-4-1)
-The foundation of a secure product is a secure development process. The **IEC 62443-4-1** standard provides a blueprint for this, defining a **Secure Development Lifecycle (SDL)** with eight key practice areas. These practices, detailed below, ensure that security is integrated into every phase of the product lifecycle, from initial design to long-term support.
+### 4.1 For Product Suppliers
+To help manufacturers map their obligations between key regulations, this section organizes the requirements from both **IEC 62443-4-1** (Secure Process) and **IEC 62443-4-2** (Secure Product) into a structure that aligns with the key themes of the EU's Cyber Resilience Act.
 
-#### 4.1.1 Governance, Requirements & Design
-This phase establishes the foundational processes and architectural principles for security. It begins with defining security management structures and responsibilities, and then moves to defining the product's security context, performing a threat model, and establishing clear, verifiable security requirements and design patterns.
+#### 4.1.1 Risk Assessment & Threat Modeling
+Both frameworks mandate a proactive approach to identifying and mitigating risks early in the development lifecycle. This begins with understanding the product's context and performing a systematic threat analysis to inform all subsequent security work.
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Security Management**<br/>[SM 1, 2, 4, 7, 8, 9, 13][iec_4_1] | Establish and maintain a comprehensive secure development lifecycle, including defining roles and responsibilities, ensuring personnel have appropriate security expertise, managing third-party component risks, securing the development environment, protecting private keys, and continuously improving the process. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)<br/>[CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md)<br/>[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
-| **Secure Requirements**<br/>[SR 1, 2, 3][iec_4_1] | Define the product's security context, perform a systematic threat model to identify risks, and derive a comprehensive set of verifiable security requirements based on the findings. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md)<br/>[Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
+| **Risk-Based Requirements**<br/>[SR 1, 2, 3][iec_4_1] | Define the product's security context, perform a systematic threat model to identify risks, and derive a comprehensive set of verifiable security requirements based on the findings. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md)<br/>[Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
+
+#### 4.1.2 Product Security
+A secure process must result in a secure product. This involves implementing security throughout the design and coding phases, verifying its effectiveness through rigorous testing, and building in the core technical capabilities required by the standard.
+
+| Obligations from **IEC 62443-4-1** (Process) | Engineering Tasks | Implementation Guides |
+|---|---|---|
 | **Secure Design**<br/>[SD 4][iec_4_1] | Apply established secure design principles throughout the product architecture, including defense-in-depth, least privilege, and attack surface reduction. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-
-#### 4.1.2 Implementation & Verification
-This phase covers the core engineering work of building the product according to the defined design and then rigorously testing it to find and eliminate vulnerabilities before release.
-
-| Obligations | Engineering Tasks | Implementation Guides |
-|---|---|---|
 | **Secure Implementation**<br/>[SI 1, 2][iec_4_1] | Enforce secure coding standards and conduct rigorous implementation reviews using a combination of static analysis and manual peer review to identify vulnerabilities and deviations from the secure design. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Security Verification & Validation**<br/>[SVV 1, 2, 3, 4][iec_4_1] | Conduct a comprehensive suite of tests, including functional security testing, threat mitigation validation, fuzzing, software composition analysis, and independent penetration testing to proactively discover and eliminate vulnerabilities. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
 
-#### 4.1.3 Lifecycle Support & Guidance
-This final phase covers the crucial long-term responsibilities of maintaining the product's security after release and providing end-users with the information they need to operate it securely.
+The **IEC 62443-4-2** standard specifies the technical security capabilities that a secure component must possess. These capabilities are the direct result of a secure design, implementation, and verification process.
 
-| Obligations | Engineering Tasks | Implementation Guides |
-|---|---|---|
-| **Defect & Update Management**<br/>[DM 1-5; SUM 1, 4, 5][iec_4_1] | Establish a formal process for vulnerability handling and disclosure, and maintain a secure mechanism for delivering timely, cryptographically signed security updates to end-users. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
-| **Security Guidelines**<br/>[SG 1-6][iec_4_1] | Create and maintain comprehensive documentation covering the product's security features, hardening procedures, and instructions for secure decommissioning and data disposal. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md)<br/>[Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
-
-### 4.2 For Product Suppliers: Secure Product (IEC 62443-4-2)
-While **IEC 62443-4-1** defines the secure *process*, **IEC 62443-4-2** defines the secure *product*. This standard specifies the technical security capabilities that components must have to be considered secure. The requirements are organized by the seven Foundational Requirements (FRs) and are tailored for different component types.
-
-The technical capabilities in **IEC 62443-4-2** are grouped under the seven **Foundational Requirements (FRs)** defined in [IEC 62443-1-1][iec_1_1]. The table below summarizes the key capabilities for each FR and provides references to the corresponding Component Requirements (CRs) within the `4-2` standard.
-
-| Obligations | Engineering Tasks | Implementation Guides |
+| Capabilities from **IEC 62443-4-2** (Product) | Engineering Tasks | Implementation Guides |
 |---|---|---|
 | **Identification & Authentication Control**<br/>[IAC][iec_1_1]<br/>[CRs 1.1-1.3, 1.5, 1.7, 1.11][iec_4_2]<br/>[NDRs 1.6, 1.13][iec_4_2] | Control and audit access by uniquely identifying and authenticating all users (humans, processes, devices). This includes managing accounts, credentials, and session access. Key capabilities include multi-factor authentication, strong password enforcement, and secure management of authenticators. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
 | **Use Control**<br/>[UC][iec_1_1]<br/>[CRs 2.1, 2.5, 2.8, 2.12][iec_4_2]<br/>[SAR 2.4][iec_4_2]<br/>[EDRs 2.4, 2.13][iec_4_2]<br/>[HDRs 2.4, 2.13][iec_4_2]<br/>[NDRs 2.4, 2.13][iec_4_2] | Enforce assigned privileges and permissions for all users and processes according to the principle of least privilege. This covers authorization based on roles, session control, and generating audit trails for all security-relevant actions. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **System Integrity**<br/>[SI][iec_1_1]<br/>[CRs 3.1, 3.4, 3.10, 3.12, 3.14][iec_4_2]<br/>[EDRs 3.2, 3.10-3.14][iec_4_2]<br/>[HDRs 3.2, 3.10-3.14][iec_4_2]<br/>[NDRs 3.2, 3.10-3.14][iec_4_2] | Protect the integrity of software and information at all times. This is achieved through mechanisms like cryptographic verification of firmware and software (secure boot and signed updates), communication integrity checks, and physical tamper resistance. | [Secure Boot](../../implementation/build-phase/secure-boot.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
 | **Data Confidentiality**<br/>[DC][iec_1_1]<br/>[CRs 4.1, 4.3][iec_4_2] | Prevent the unauthorized disclosure of information. This requires protecting data at rest and data in transit using strong, standardized cryptographic protocols like TLS. | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
 | **Restricted Data Flow**<br/>[RDF][iec_1_1]<br/>[CRs 5.1, 5.2][iec_4_2]<br/>[NDRs 5.2, 5.3][iec_4_2] | Control and restrict the flow of data between different network zones. This is a primary method of network defense, limiting the lateral spread of an attack by enforcing rules on traffic at zone boundaries. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **Timely Response to Events**<br/>[TRE][iec_1_1]<br/>[CRs 6.1, 6.2][iec_4_2] | Respond to security violations in a timely manner. Components must have the capability to be monitored for security events and must make their audit logs securely available for analysis. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Resource Availability**<br/>[RA][iec_1_1]<br/>[CRs 7.1, 7.3, 7.4, 7.7][iec_4_2] | Ensure the component is resilient against denial-of-service attacks. This includes robust resource management, the ability to be backed up and restored, and minimizing the attack surface by disabling all unnecessary functions, ports, and services. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
 
-### 4.3 For Asset Owners (Operators)
+#### 4.1.3 Vulnerability Handling
+A manufacturer's responsibility does not end at shipment. Both frameworks require robust processes for managing vulnerabilities and delivering security updates throughout the product's supported lifecycle. This includes not only fixing flaws but proactively searching for them and ensuring the product has the technical means to report events.
+
+| Obligations from **IEC 62443-4-1** (Process) | Engineering Tasks | Implementation Guides |
+|---|---|---|
+| **Defect & Update Management**<br/>[DM 1-5; SUM 1, 4, 5][iec_4_1] | Establish a formal process for vulnerability handling and disclosure, and maintain a secure mechanism for delivering timely, cryptographically signed security updates to end-users. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
+| **Security Verification & Validation**<br/>[SVV 1, 2, 3, 4][iec_4_1] | Conduct a comprehensive suite of tests, including functional security testing, threat mitigation validation, fuzzing, software composition analysis, and independent penetration testing to proactively discover and eliminate vulnerabilities. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
+
+A key part of vulnerability handling is ensuring the product has the built-in technical capability to detect and report security events.
+
+| Capabilities from **IEC 62443-4-2** (Product) | Engineering Tasks | Implementation Guides |
+|---|---|---|
+| **Timely Response to Events**<br/>[TRE][iec_1_1]<br/>[CRs 6.1, 6.2][iec_4_2] | Respond to security violations in a timely manner. Components must have the capability to be monitored for security events and must make their audit logs securely available for analysis. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+
+#### 4.1.4 Other Key Obligations
+This section covers the remaining governance and documentation-related duties required for a compliant secure development process.
+
+| Obligations | Engineering Tasks | Implementation Guides |
+|---|---|---|
+| **Security Management**<br/>[SM 1, 2, 4, 7, 8, 9, 13][iec_4_1] | Establish and maintain a comprehensive secure development lifecycle, including defining roles and responsibilities, ensuring personnel have appropriate security expertise, managing third-party component risks, securing the development environment, protecting private keys, and continuously improving the process. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)<br/>[CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md)<br/>[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
+| **Security Guidelines**<br/>[SG 1-6][iec_4_1] | Create and maintain comprehensive documentation covering the product's security features, hardening procedures, and instructions for secure decommissioning and data disposal. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md)<br/>[Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md)<br/>[Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
+
+### 4.2 For Asset Owners (Operators)
 The asset owner is ultimately accountable for the secure operation of the IACS. Their responsibilities are primarily defined in the **62443-2-x** series.
 
 | Obligations | Engineering Tasks | Implementation Guides |
@@ -128,7 +136,7 @@ The asset owner is ultimately accountable for the secure operation of the IACS. 
 | **Perform Risk Assessment**<br/>[IEC 62443-3-2][iec_3_2] | Systematically partition the entire IACS into logical zones and conduits. For each, conduct a detailed cybersecurity risk assessment to identify vulnerabilities, assess potential impacts, and determine the required Target Security Level (SL-T) for all assets. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
 | **Operate & Maintain Securely**<br/>[IEC 62443-2-3][iec_2_3] | Implement and document rigorous processes for the ongoing secure operation of the IACS. This includes timely **Patch Management** as guided by [TR 62443-2-3][iec_2_3], proactive **Incident Response**, and regular **Program Audits** as mandated by the CSMS ([IEC 62443-2-1][iec_2_1]). | [Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 
-### 4.4 For System Integrators & Service Providers
+### 4.3 For System Integrators & Service Providers
 System integrators are responsible for designing and building a secure automation solution that meets the asset owner's requirements. Their duties are covered in the **62443-2-4** and **62443-3-x** documents.
 
 | Obligations | Engineering Tasks | Implementation Guides |
