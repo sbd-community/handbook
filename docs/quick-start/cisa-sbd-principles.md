@@ -21,21 +21,21 @@ This page provides a summary and interpretation. The full document can be downlo
 The guidance is built on three core principles that call on manufacturers to radically rethink their approach to product development.
 
 ### Principle 1: Take Ownership of Customer Security Outcomes
-The central message is that the responsibility for a customer's security rests with the manufacturer, not the user. Security must be a core business priority, not a feature that can be "bolted on" later or left to the customer to configure.
+The central message is that the responsibility for a customer's security rests with the manufacturer, not the user. Security must be a core business priority, not a feature that can be "bolted on" later or left to the customer to configure. The guidance powerfully argues that the industry needs **"more secure products, not more security products."**
 
 - **Security is not a luxury:** Features essential for security (like SSO integration or security logs) should not be sold as premium, add-on features. Just as a car includes seatbelts in the base price, security features must be considered a fundamental right for the customer.
 - **Invest in safety:** Manufacturers must invest in eliminating entire classes of vulnerabilities (e.g., through memory-safe languages) and robust application hardening, rather than just patching individual bugs as they are discovered.
 - **Secure by Default:** Products must be secure out-of-the-box. This means shipping with secure configurations enabled by default, without requiring a customer to be a security expert to protect themselves.
 
 ### Principle 2: Embrace Radical Transparency and Accountability
-To drive industry-wide improvement, manufacturers should be transparent about their security processes and accountable for their outcomes. The guidance argues that the benefit to defenders from this transparency far outweighs the risk of providing a "roadmap for attackers."
+To drive industry-wide improvement, manufacturers should be transparent about their security processes and accountable for their outcomes. The guidance directly confronts the common concern that this provides a "roadmap for attackers," arguing that the **overwhelming benefit to defenders outweighs the risk**.
 
 - **Publish security data:** Share aggregate, anonymized data on topics like MFA adoption rates or the use of unsafe legacy protocols to create benchmarks for what "good" looks like.
 - **Vulnerability transparency:** Ensure CVEs are complete and accurate, including root cause information (CWE), to help the entire ecosystem learn from security flaws.
 - **Be open about processes:** Publish details about your Secure Software Development Lifecycle (SDLC), vulnerability disclosure policies, and roadmaps for security improvements (e.g., memory safety adoption).
 
 ### Principle 3: Lead from the Top
-For security to become a core business requirement, it must be driven by executive leadership. It is a business priority that must be managed with the same rigour as financial objectives.
+For security to become a core business requirement, it must be driven by executive leadership. The guidance frames product security as a sub-category of **product quality**—a familiar business concept. Like quality, it argues, customer security must be personally managed by senior leaders.
 
 - **Executive sponsorship:** A top business executive should be empowered to oversee and drive the Secure-by-Design program.
 - **Board-level accountability:** Product security status and customer risk metrics should be reported to the company's board of directors, treating customer safety as a key indicator of corporate performance.
