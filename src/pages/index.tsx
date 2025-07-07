@@ -20,14 +20,14 @@ function HomepageHeader() {
         </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--primary button--lg"
+            className="button button--secondary button--lg"
             to="/docs/quick-start/what-is-secure-by-design">
             What is Secure-by-Design?
           </Link>
           <Link
-            className="button button--primary button--lg"
-            to="/docs/quick-start/cra-primer">
-            CRA 5-Minute Primer
+            className="button button--secondary button--lg"
+            to="/docs/implementation">
+            View Implementation Guides
           </Link>
         </div>
       </div>
@@ -39,17 +39,17 @@ function ValuePillars(): ReactNode {
   const pillars = [
     {
       title: 'Comply with confidence',
-      description: 'Gap-analysis checklists, clause-by-clause mappings, and audit-ready templates for CRA, NIS 2, and ETSI standards.',
+      description: 'Clause-by-clause mappings for CRA, NIS 2, RED, and IEC 62443. Audit-ready templates and gap-analysis checklists.',
       icon: '📋'
     },
     {
       title: 'Implement securely',
-      description: 'Hands-on guides for secure boot, SBOM generation, VEX workflows, and OTA update hardening.',
+      description: 'Practical guides for secure boot, threat modeling, SBOM/VEX workflows, and hardening OTA update pipelines.',
       icon: '🔧'
     },
     {
       title: 'Operate resiliently',
-      description: 'Disclosure policy templates, patch cadence runbooks, and incident response integration guides.',
+      description: 'Vulnerability disclosure templates, CI/CD hardening playbooks, and security logging and monitoring guides.',
       icon: '🛡️'
     }
   ];
@@ -79,25 +79,25 @@ function ValuePillars(): ReactNode {
 function RoleBasedCards(): ReactNode {
   const roles = [
     {
+      title: 'Product Owner',
+      description: 'Understand your obligations and plan for compliance.',
+      cta: 'Start with the "Why"',
+      link: '/docs/quick-start/what-is-secure-by-design',
+      icon: '🗺️'
+    },
+    {
       title: 'Compliance Lead',
-      description: 'Start with regulatory gap analysis',
+      description: 'Start with regulatory gap analysis.',
       cta: 'Get CRA Checklist',
       link: '/docs/resources/checklists-and-worksheets/cra-gap-analysis',
       icon: '⚖️'
     },
     {
       title: 'Firmware Engineer',
-      description: 'Jump into secure implementation',
-      cta: 'Secure Boot Quick-Start',
+      description: 'Jump into secure implementation.',
+      cta: 'Secure Boot Guide',
       link: '/docs/implementation/build-phase/secure-boot',
       icon: '⚙️'
-    },
-    {
-      title: 'DevOps Engineer',
-      description: 'Harden your CI/CD pipeline',
-      cta: 'CI/CD Security Guide',
-      link: '/docs/implementation/operate-phase/cicd-hardening',
-      icon: '🚀'
     }
   ];
 

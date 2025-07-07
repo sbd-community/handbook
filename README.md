@@ -1,5 +1,7 @@
 # SecureByDesignHandbook.com
 
+This repository contains the source for SecureByDesignHandbook.com, an authoritative, vendor-neutral reference for building secure connected devices. It translates complex regulatory requirements (like the EU's Cyber-Resilience Act) into concrete engineering practices for product security teams.
+
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Documentation
