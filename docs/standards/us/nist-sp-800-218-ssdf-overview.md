@@ -91,6 +91,28 @@ These high-level practices establish the organizational foundation for a success
 | **Define Security Checks**<br/>[SSDF PO.4](#appendix-prepare-the-organization-po-practices--tasks) | Establish criteria for security gates in the development process (e.g., no 'critical' vulnerabilities in SBOM scans before release). | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
 | **Maintain Secure Environments**<br/>[SSDF PO.5](#appendix-prepare-the-organization-po-practices--tasks) | Separate and protect development, build, test, and distribution environments; harden developer endpoints. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
 
+## 4. Assessing Conformance with the SSDF
+
+Unlike a formal regulation like the EU's [Cyber-Resilience Act (CRA)](../eu/cra-overview.md), the SSDF is a *framework*, not a law with a prescribed certification scheme. There is no official "SSDF Certification" or a system of third-party audits that grants market access. Instead, demonstrating conformance is about attestation, internal validation, and preparation for other regulatory requirements.
+
+### 4.1 US Government Self-Attestation
+The most significant driver for SSDF conformance is **US Executive Order 14028**, "Improving the Nation's Cybersecurity." In response, the Office of Management and Budget (OMB) requires that any software provider selling to US federal agencies must sign a **Secure Software Development Attestation Form**.
+
+This form requires the provider to attest that they follow secure development practices, with the SSDF being the primary benchmark. While it is a "self-attestation," it is a formal, legally significant declaration of compliance.
+
+### 4.2 Using the SSDF for Internal Gap Analysis
+Many organizations use the SSDF as a maturity model to benchmark their existing Secure Development Lifecycle (SDL) practices. By mapping their internal processes, tools, and policies against the SSDF's practices and tasks (as detailed in the Appendices below), they can:
+- Identify gaps where their processes fall short.
+- Prioritize areas for improvement.
+- Create a roadmap for maturing their security posture.
+
+### 4.3 Preparing for Formal Audits
+While the SSDF itself doesn't mandate audits, adopting it is excellent preparation for regulations that do. A development process built on the SSDF's principles generates the exact kind of evidence needed for formal audits under other schemes:
+- **For the CRA**: An SSDF-aligned process directly addresses the secure development lifecycle requirements in [CRA Annex I](../eu/cra-overview.md#annex-i-requirements).
+- **For the FDA**: The SSDF aligns with the principles in the FDA's cybersecurity guidance for medical devices.
+
+By treating the SSDF as a blueprint, a manufacturer can be confident they are building the processes and documentation required to pass future mandatory audits.
+
 ## Appendix: Prepare the Organization (PO) Practices & Tasks
 
 This section provides a summary of the practices and tasks for the "Prepare the Organization" (PO) group from the SSDF.
