@@ -30,6 +30,7 @@ This structure reflects the implemented navigation in the `/docs` folder and the
         -   FDA Cybersecurity Guidance
         -   FCC Cyber Trust Mark
         -   NISTIR 8259 Series
+        -   NIST SP 800-218 (SSDF)
         -   CTA-2088
     -   **Global**
         -   ETSI EN 303 645

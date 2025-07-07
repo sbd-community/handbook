@@ -1,6 +1,6 @@
 ---
 title: "ANSI/CTA-2088"
-sidebar_position: 10
+sidebar_position: 5
 tags: [cta, ansi, us, iot, consumer, security, standards, baseline]
 ---
 # ANSI/CTA-2088 – US Consumer IoT Security

@@ -12,6 +12,7 @@ The U.S. approach to IoT security is a mix of voluntary guidance from institutio
 
 | Standard | Summary | Link |
 | :--- | :--- | :--- |
+| **NIST SP 800-218 (SSDF)** | A framework of best practices for secure software development. | [NIST SP 800-218 Overview](./nist-sp-800-218-ssdf-overview.md) |
 | **NIST IR 8259 Series** | Foundational guidance and baseline capabilities for IoT device manufacturers. | [NIST IR 8259 Series Overview](./nistir8259-overview.md) |
 | **FCC Cyber Trust Mark** | Voluntary labeling program to help consumers identify secure IoT products. | [FCC Cyber Trust Mark Overview](./fcc-cyber-trust-mark-overview.md) |
 | **ANSI/CTA-2088** | Industry-led baseline security capabilities for consumer IoT devices. | [ANSI/CTA-2088 Overview](./cta2088-overview.md) |

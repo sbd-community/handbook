@@ -1,7 +1,7 @@
 ---
 title: "FDA Cybersecurity"
 sidebar_label: "US FDA Cybersecurity"
-sidebar_position: 11
+sidebar_position: 2
 tags: [fda, medical, compliance, us, security, 524b, pma, 510k]
 ---
 # FDA Cybersecurity Requirements for Medical Devices

@@ -1,7 +1,7 @@
 ---
 title: "FCC Cyber Trust Mark"
 sidebar_label: "US FCC Cyber Trust Mark"
-sidebar_position: 9
+sidebar_position: 1
 tags: [fcc, us, iot, consumer, security, labeling, certification]
 ---
 # US FCC Cyber Trust Mark Program
