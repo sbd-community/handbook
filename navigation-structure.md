@@ -11,6 +11,7 @@ This structure reflects the implemented navigation in the `/docs` folder and the
 1.  **Quick Start**
     -   What is Secure-by-Design?
     -   How to use this handbook
+    -   CISA Secure by Design Principles
     -   CRA 5-minute primer
     -   First-sprint checklist
 
@@ -26,7 +27,6 @@ This structure reflects the implemented navigation in the `/docs` folder and the
         -   Product Security & Telecoms Infrastructure (PSTI) Act
         -   Privacy & Electronic Communications Regulations (PECR)
     -   **US**
-        -   CISA Secure by Design Principles
         -   FDA Cybersecurity Guidance
         -   FCC Cyber Trust Mark
         -   NISTIR 8259 Series

@@ -1,7 +1,7 @@
 ---
 title: "First-Sprint Checklist"
 sidebar_label: "First Sprint Checklist"
-sidebar_position: 2
+sidebar_position: 5
 tags: [quick-start, checklist, agile, cra, compliance]
 ---
 # First-Sprint Checklist

@@ -8,7 +8,7 @@ tags: [secure-by-design, cra, psti, product-security, sbd, sdd]
 
 **Secure-by-Design (SbD)** is a foundational shift in product development. It mandates that security is a core business requirement, integrated from the very first stages of design and maintained throughout the entire product lifecycle. It is not a technical feature to be added on later.
 
-This approach marks a fundamental change in responsibility. As CISA, the US Cybersecurity & Infrastructure Security Agency, states, the goal is to move away from a system where the "cybersecurity burden is placed disproportionately on the shoulders of consumers and small organizations" and towards a future where technology providers "take ownership at theexecutive level to ensure their products are Secure-by-Design" ([CISA](../standards/us/cisa-sbd-principles.md)).
+This approach marks a fundamental change in responsibility. As CISA, the US Cybersecurity & Infrastructure Security Agency, states, the goal is to move away from a system where the "cybersecurity burden is placed disproportionately on the shoulders of consumers and small organizations" and towards a future where technology providers "take ownership at theexecutive level to ensure their products are Secure-by-Design" ([CISA](./cisa-sbd-principles.md)).
 
 ## 1. Why It Matters: The Regulatory & Standards Shift
 

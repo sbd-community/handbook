@@ -1,15 +1,15 @@
 ---
-title: "CISA: Secure by Design Principles"
-sidebar_position: 1
+title: "CISA Secure by Design Principles"
+sidebar_position: 3
 tags: [cisa, secure-by-design, sbd, principles, us, guidance]
 ---
-# CISA: Secure by Design Principles
+# CISA Secure by Design Principles
 
 ## 1. Why this guidance matters
 
-While not a formal standard or regulation, the **[Principles and Approaches for Secure by Design Software][cisa_pdf]** is arguably the most important foundational document for the modern product security movement. Published by the US Cybersecurity & Infrastructure Security Agency (CISA) and co-authored by national cybersecurity agencies from across the globe, it represents a unified international consensus on the philosophy that underpins new legislation like the [EU's Cyber-Resilience Act](./../eu/cra-overview.md).
+While not a formal standard or regulation, the **[Principles and Approaches for Secure by Design Software][cisa_pdf]** is arguably the most important foundational document for the modern product security movement. Published by the US Cybersecurity & Infrastructure Security Agency (CISA) and co-authored by national cybersecurity agencies from across the globe, it represents a unified international consensus on the philosophy that underpins new legislation like the [EU's Cyber-Resilience Act](../standards/eu/cra-overview.md).
 
-It serves as a manifesto for a fundamental shift in responsibility: moving the burden of security from the consumer to the manufacturer. For any team building connected products, this document explains the "why" behind the specific engineering tasks detailed in this handbook.
+It serves as a manifesto for a fundamental shift in responsibility: moving the burden of security from the consumer to the manufacturer. While the CISA guidance applies broadly to all software manufacturers, this handbook focuses on applying these core principles to the specific challenges of building **connected products**. For any team working with hardware and firmware, this document explains the "why" behind the specific engineering tasks detailed in this handbook.
 
 :::info Official Source
 This page provides a summary and interpretation. The full document can be downloaded from CISA:
@@ -41,17 +41,9 @@ For security to become a core business requirement, it must be driven by executi
 - **Board-level accountability:** Product security status and customer risk metrics should be reported to the company's board of directors, treating customer safety as a key indicator of corporate performance.
 - **Incentivise security:** Reward systems (promotions, bonuses) should be aligned to value and incentivise improvements in customer security, just as they do for feature development or performance goals.
 
-## 3. Key Concepts & How to Implement Them
+## 3. Next Steps
 
-This handbook is designed to help you put CISA's principles into practice. The table below maps the core concepts from the guidance to the relevant implementation playbooks on this site.
-
-| CISA Principle / Tactic | Interpretation & Engineering Tasks | Implementation Guides |
-|---|---|---|
-| **Take Ownership:**<br/>Secure by Default | Ship with a secure baseline configuration. Eliminate default passwords. Enforce strong authentication. | [Secure Configuration](../../implementation/build-phase/secure-configuration.md)<br/>[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
-| **Take Ownership:**<br/>Hardening vs. Loosening Guides | Replace complex hardening guides with "loosening guides" that explain the risks of deviating from a secure baseline. | [Secure Configuration](../../implementation/build-phase/secure-configuration.md)<br/>[User Documentation Guide](../../implementation/build-phase/user-documentation.md) |
-| **Transparency:**<br/>Vulnerability Management | Publish a clear disclosure policy. Be transparent about fixed vulnerabilities and provide complete CVE information. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **Transparency:**<br/>Software Bill of Materials | Maintain and be prepared to share an SBOM so customers understand their supply chain dependencies. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **Lead from the Top:**<br/>Secure SDLC | Implement a secure development framework. Use static analysis, dynamic analysis, and memory-safe languages. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md)<br/>[Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
+These principles provide the foundational "why" for the Secure-by-Design movement. The rest of this handbook is dedicated to the "how," with concrete [Implementation Guides](../implementation/index.md) and [Tools](../tools/index.md) to help you apply this philosophy to your connected products.
 
 <!-- Citations -->
 [cisa_pdf]: https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf "Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Secure by Design Software" 

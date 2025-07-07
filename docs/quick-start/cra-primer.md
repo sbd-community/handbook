@@ -1,7 +1,7 @@
 ---
 title: "CRA 5-Minute Primer"
 sidebar_label: "CRA 5-Minute Primer"
-sidebar_position: 3
+sidebar_position: 4
 tags: [cra, quick-start, compliance, primer]
 ---
 # CRA 5-Minute Primer

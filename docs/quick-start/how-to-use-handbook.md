@@ -1,7 +1,7 @@
 ---
 title: "How to Use This Handbook"
 sidebar_label: "How to Use Handbook"
-sidebar_position: 1
+sidebar_position: 2
 tags: [quick-start, navigation, getting-started]
 ---
 
