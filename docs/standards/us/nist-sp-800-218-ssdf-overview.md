@@ -39,9 +39,9 @@ However, it does not provide the specific "how" for the unique challenges of emb
 
 | High-Level SSDF Practice | Concrete Connected Device Control |
 |---|---|
-| **`PW.9`**: Configure Software to Have Secure Settings by Default | **`ETSI EN 303 645 §4.5`**: No universal default passwords. |
-| **`PS.2`**: Provide a Mechanism for Verifying Software Release Integrity | **`NISTIR 8259A §4.2-3`**: Software/firmware update mechanism is secure. |
-| **`RV.1`**: Identify and Confirm Vulnerabilities on an Ongoing Basis | **`CRA Annex I, Part II §5, 6`**: Publish a Coordinated Vulnerability Disclosure policy. |
+| **PW.9**: Configure Software to Have Secure Settings by Default | **ETSI EN 303 645 §4.5**: No universal default passwords. |
+| **PS.2**: Provide a Mechanism for Verifying Software Release Integrity | **NISTIR 8259A §4.2-3**: Software/firmware update mechanism is secure. |
+| **RV.1**: Identify and Confirm Vulnerabilities on an Ongoing Basis | **CRA Annex I, Part II §5, 6**: Publish a Coordinated Vulnerability Disclosure policy. |
 
 This handbook uses the SSDF as a structuring principle to connect high-level goals to the on-the-ground engineering work needed to secure a connected device.
 
@@ -63,42 +63,42 @@ Before any code is written, the SSDF mandates a proactive approach to identifyin
 
 | SSDF Practice | Key Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **`PO.1` Define Security Requirements** | Gather requirements from regulations (CRA, FDA) and standards; perform a risk assessment to define product-specific requirements; and communicate security requirements to suppliers for all third-party components. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md)<br/>[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **`PW.1` Secure Design** | Use threat modeling to assess security risks; design the software architecture to mitigate those risks based on the identified threats. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
-| **`PW.2` Review the Design** | Have a qualified person or automated tool review the software design and architecture to confirm it meets security requirements and mitigates identified risks. | n/a (Process-oriented) |
+| **Define Security Requirements**<br/>[SSDF PO.1](#appendix-prepare-the-organization-po-practices--tasks) | Gather requirements from regulations (CRA, FDA) and standards; perform a risk assessment to define product-specific requirements; and communicate security requirements to suppliers for all third-party components. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md)<br/>[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Secure Design**<br/>[SSDF PW.1](#appendix-produce-well-secured-software-pw-practices--tasks) | Use threat modeling to assess security risks; design the software architecture to mitigate those risks based on the identified threats. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
+| **Review the Design**<br/>[SSDF PW.2](#appendix-produce-well-secured-software-pw-practices--tasks) | Have a qualified person or automated tool review the software design and architecture to confirm it meets security requirements and mitigates identified risks. | n/a (Process-oriented) |
 
 ### 4.2 Product Security
 This covers the core "build-time" practices for creating a secure product, ensuring the integrity of its components, and shipping it in a secure state.
 
 | SSDF Practice | Key Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **`PS.1` Protect Code** | Use version control with commit signing; restrict access to code repositories based on least privilege. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
-| **`PS.2` Verify Release Integrity** | Use code signing to protect the integrity of executables; provide cryptographic hashes for release files. | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Secure Boot](../../implementation/build-phase/secure-boot.md) |
-| **`PS.3` Archive & Protect Releases** | Securely archive release files and provenance data; create and maintain an SBOM for all software components. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **`PW.4` Reuse Well-Secured Software** | Acquire and maintain well-secured third-party components; track provenance via SBOMs; monitor components for new vulnerabilities. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **`PW.5` Secure Coding** | Follow secure coding practices appropriate to the language and environment, such as validating all inputs and properly encoding all outputs. | n/a (Process-oriented) |
-| **`PW.6` Secure Build Process** | Use up-to-date compilers and build tools with security features enabled (e.g., ASLR, stack canaries). | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **`PW.9` Secure by Default** | Define and implement a secure baseline configuration for the product, disabling unused services and ports. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Protect Code**<br/>[SSDF PS.1](#appendix-protect-the-software-ps-practices--tasks) | Use version control with commit signing; restrict access to code repositories based on least privilege. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
+| **Verify Release Integrity**<br/>[SSDF PS.2](#appendix-protect-the-software-ps-practices--tasks) | Use code signing to protect the integrity of executables; provide cryptographic hashes for release files. | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Secure Boot](../../implementation/build-phase/secure-boot.md) |
+| **Archive & Protect Releases**<br/>[SSDF PS.3](#appendix-protect-the-software-ps-practices--tasks) | Securely archive release files and provenance data; create and maintain an SBOM for all software components. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Reuse Well-Secured Software**<br/>[SSDF PW.4](#appendix-produce-well-secured-software-pw-practices--tasks) | Acquire and maintain well-secured third-party components; track provenance via SBOMs; monitor components for new vulnerabilities. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Secure Coding**<br/>[SSDF PW.5](#appendix-produce-well-secured-software-pw-practices--tasks) | Follow secure coding practices appropriate to the language and environment, such as validating all inputs and properly encoding all outputs. | n/a (Process-oriented) |
+| **Secure Build Process**<br/>[SSDF PW.6](#appendix-produce-well-secured-software-pw-practices--tasks) | Use up-to-date compilers and build tools with security features enabled (e.g., ASLR, stack canaries). | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **Secure by Default**<br/>[SSDF PW.9](#appendix-produce-well-secured-software-pw-practices--tasks) | Define and implement a secure baseline configuration for the product, disabling unused services and ports. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
 
 ### 4.3 Vulnerability Handling
 A manufacturer's responsibility does not end at shipment. This involves both proactively finding flaws before they can be exploited and reactively handling vulnerabilities that are discovered in the field.
 
 | SSDF Practice | Key Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **`PW.7` & `PW.8` Code Analysis & Testing** | Proactively find vulnerabilities by using static analysis (SAST) on source code and dynamic analysis (DAST) on executables. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **`RV.1` Identify & Confirm Vulnerabilities** | Establish a vulnerability disclosure program; monitor public vulnerability databases and threat intelligence for new issues. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **`RV.2` Remediate Vulnerabilities** | Prioritize vulnerabilities based on risk; develop and deliver patches via a secure, automated mechanism. | [Patch Cadence](../../implementation/operate-phase/patch-cadence.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
-| **`RV.3` Root Cause Analysis** | Analyze vulnerabilities to find their root cause, review the codebase for similar weaknesses to eradicate the bug class, and update the development process to prevent recurrence. | n/a (Process-oriented) |
+| **Code Analysis & Testing**<br/>[SSDF PW.7 & PW.8](#appendix-produce-well-secured-software-pw-practices--tasks) | Proactively find vulnerabilities by using static analysis (SAST) on source code and dynamic analysis (DAST) on executables. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
+| **Identify & Confirm Vulnerabilities**<br/>[SSDF RV.1](#appendix-respond-to-vulnerabilities-rv-practices--tasks) | Establish a vulnerability disclosure program; monitor public vulnerability databases and threat intelligence for new issues. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Remediate Vulnerabilities**<br/>[SSDF RV.2](#appendix-respond-to-vulnerabilities-rv-practices--tasks) | Prioritize vulnerabilities based on risk; develop and deliver patches via a secure, automated mechanism. | [Patch Cadence](../../implementation/operate-phase/patch-cadence.md)<br/>[Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
+| **Root Cause Analysis**<br/>[SSDF RV.3](#appendix-respond-to-vulnerabilities-rv-practices--tasks) | Analyze vulnerabilities to find their root cause, review the codebase for similar weaknesses to eradicate the bug class, and update the development process to prevent recurrence. | n/a (Process-oriented) |
 
 ### 4.4 Governance & Supporting Processes
 These high-level practices establish the organizational foundation for a successful product security program.
 
 | SSDF Practice | Key Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **`PO.2` Implement Roles & Responsibilities** | Define security roles (e.g., PSIRT); provide role-based training to engineers and product owners; secure management buy-in for security initiatives. | n/a (Process-oriented) |
-| **`PO.3` Implement Supporting Toolchains** | Integrate security tools into developer toolchains; secure the build pipeline; ensure reproducible builds. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
-| **`PO.4` Define Security Checks** | Establish criteria for security gates in the development process (e.g., no 'critical' vulnerabilities in SBOM scans before release). | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
-| **`PO.5` Maintain Secure Environments** | Separate and protect development, build, test, and distribution environments; harden developer endpoints. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
+| **Implement Roles & Responsibilities**<br/>[SSDF PO.2](#appendix-prepare-the-organization-po-practices--tasks) | Define security roles (e.g., PSIRT); provide role-based training to engineers and product owners; secure management buy-in for security initiatives. | n/a (Process-oriented) |
+| **Implement Supporting Toolchains**<br/>[SSDF PO.3](#appendix-prepare-the-organization-po-practices--tasks) | Integrate security tools into developer toolchains; secure the build pipeline; ensure reproducible builds. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
+| **Define Security Checks**<br/>[SSDF PO.4](#appendix-prepare-the-organization-po-practices--tasks) | Establish criteria for security gates in the development process (e.g., no 'critical' vulnerabilities in SBOM scans before release). | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
+| **Maintain Secure Environments**<br/>[SSDF PO.5](#appendix-prepare-the-organization-po-practices--tasks) | Separate and protect development, build, test, and distribution environments; harden developer endpoints. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
 
 ## Appendix: Prepare the Organization (PO) Practices & Tasks
 
