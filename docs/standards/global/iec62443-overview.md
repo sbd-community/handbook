@@ -272,6 +272,39 @@ This section provides a summary of the technical Embedded Device Requirements (E
 | EDR 7.7 (RA) | Support the principle of least functionality by allowing unused ports, protocols, and services to be disabled. |
 | EDR 7.8 (RA) | Provide a mechanism to generate an inventory of the component's hardware and software. |
 
+## Appendix: Host Device Requirements (HDRs)
+
+This section provides a summary of the technical Host Device Requirements (HDRs) defined in the standard. These are specific requirements that apply in addition to the base Component Requirements (CRs) for host devices, which are typically general-purpose computers running a standard operating system.
+
+| Requirement | Description |
+|---|---|
+| HDR 2.4 (UC) | Control the execution of mobile code (e.g., scripts, applets). |
+| HDR 2.13 (UC) | Control the use of physical diagnostic and test interfaces. |
+| HDR 3.10 (SI) | Provide a secure mechanism to support software and firmware updates. |
+| HDR 7.1 (RA) | Provide protection against denial-of-service attacks. |
+
+## Appendix: Network Device Requirements (NDRs)
+
+This section provides a summary of the technical Network Device Requirements (NDRs) defined in the standard. These are specific requirements that apply in addition to the base Component Requirements (CRs) for network devices like routers, switches, and firewalls.
+
+| Requirement | Description |
+|---|---|
+| NDR 1.6 (IAC) | Identify and authenticate all users and devices on wireless networks. |
+| NDR 1.13 (IAC) | Monitor and control all access attempts from untrusted networks. |
+| NDR 2.4 (UC) | Control the execution of mobile code (e.g., scripts, applets). |
+| NDR 2.13 (UC) | Control the use of physical diagnostic and test interfaces. |
+| NDR 3.2 (SI) | Provide protection against malicious code. |
+| NDR 3.10 (SI) | Provide a secure mechanism to support software and firmware updates. |
+| NDR 7.1 (RA) | Provide protection against denial-of-service attacks. |
+
+## Appendix: Software Application Requirements (SARs)
+
+This section provides a summary of the technical Software Application Requirements (SARs) defined in the standard. These are specific requirements that apply in addition to the base Component Requirements (CRs) for software applications.
+
+| Requirement | Description |
+|---|---|
+| SAR 2.4 (UC) | Control the execution of mobile code (e.g., scripts, applets). |
+
 <!-- Citations -->
 [iec_webstore]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC 62443 Series on the IEC Webstore"
 [isaca_guide]: https://21577316.fs1.hubspotusercontent-na1.net/hubfs/21577316/2023%20ISA%20Website%20Redesigns/ISAGCA/PDFs/ISAGCA%20Quick%20Start%20Guide%20FINAL.pdf "An Overview of ISA/IEC 62443 Standards"

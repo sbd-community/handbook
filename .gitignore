@@ -8,6 +8,9 @@
 .docusaurus
 .cache-loader
 
+# Code assistant helper files
+/.ai-helper-files
+
 # Misc
 .DS_Store
 .env.local
