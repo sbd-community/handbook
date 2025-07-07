@@ -23,6 +23,17 @@ The full text of the framework is available from NIST:
 | Public Draft of SSDF v1.1 released | Draft for public comment | **September 2021** |
 | Current Version Published | **NIST SP 800-218 v1.1** | **February 2022** |
 
+**Relationship to Other Standards**
+
+The SSDF does not exist in a vacuum. It serves as a foundational process framework that enables organizations to meet the requirements of more specific regulations and standards.
+
+| Standard / Framework | How it interacts with the SSDF |
+| :--- | :--- |
+| **[CISA SBD Principles](../../quick-start/cisa-sbd-principles.md)** | CISA provides the high-level philosophy and goals for Secure by Design. The SSDF provides the concrete, structured framework of practices and tasks—the "how-to"—for implementing those principles within a software development lifecycle. |
+| **[NISTIR 8259 Series](./nistir8259-overview.md)** | The SSDF is a generic framework for any software. NISTIR 8259 provides specific, device-centric cybersecurity capabilities and baselines for IoT products. Manufacturers use the SSDF process to build products that meet the NISTIR 8259 technical requirements. |
+| **[EU Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA legally mandates a secure development lifecycle and vulnerability handling processes. The SSDF provides a comprehensive set of practices that can be used as a direct blueprint for meeting the CRA's essential requirements in Annex I. |
+| **[IEC 62443 Series](../global/iec62443-overview.md)** | Similar to NISTIR 8259, IEC 62443 provides detailed technical requirements, but for Industrial Automation and Control Systems (IACS). The SSDF provides the process framework that an IACS manufacturer would use to implement the required security levels from IEC 62443-4-1 (secure product development). |
+
 ## 2. Scope – Who is it for?
 
 The SSDF is intentionally broad. It is designed to be used by any organization that develops, produces, acquires, or uses software, regardless of their size, industry sector, or level of security maturity. The framework is technology-neutral and can be applied to any kind of software, including:
