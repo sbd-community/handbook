@@ -16,24 +16,39 @@ This structure reflects the implemented navigation in the `/docs` folder and the
 
 2.  **Standards & Regulations**
     -   Overview
-    -   Cyber-Resilience Act (CRA)
-    -   NIS 2 Directive
-    -   Radio Equipment Directive (RED)
-    -   ETSI EN 303 645
-    -   IEC 62443 Series
-    -   UK PSTI Act
-    -   EU PECR
+    -   **EU**
+        -   Cyber-Resilience Act (CRA)
+        -   NIS 2 Directive
+        -   Radio Equipment Directive (RED)
+        -   Medical Device Regulation (MDR)
+        -   IVD Regulation (IVDR)
+    -   **UK**
+        -   Product Security & Telecoms Infrastructure (PSTI) Act
+        -   Privacy & Electronic Communications Regulations (PECR)
+    -   **US**
+        -   FDA Cybersecurity Guidance
+        -   FCC Cyber Trust Mark
+        -   NISTIR 8259 Series
+        -   CTA-2088
+    -   **Global**
+        -   ETSI EN 303 645
+        -   IEC 62443 Series
 
 3.  **Implementation Guides**
     -   **Build Phase** (Ordered by workflow)
+        -   Threat Modeling
         -   Unique Device Identity
         -   Secure Boot
         -   Key Provisioning & Storage
+        -   Secure Configuration
+        -   Data Privacy
         -   Secure OTA Updates
         -   SBOM & VEX Workflows
+        -   User Documentation
     -   **Operate Phase**
         -   Vulnerability Disclosure
         -   Patch Cadence
+        -   Security Logging
         -   CI/CD Hardening
 
 4.  **Resources**
@@ -45,16 +60,30 @@ This structure reflects the implemented navigation in the `/docs` folder and the
         -   Audit Evidence Pack
     -   **Reference**
         -   Glossary
+        -   Types of Embedded Device
+    -   **Example Documents**
+        -   Threat Model: Continuous Glucose Monitor
+        -   Threat Model: Low-Stakes BLE Sensor
+        -   Threat Model: Smart Thermostat
     -   **Real-World Vulnerabilities**
-        -   *Case studies of security flaws.*
+        -   Baxter Connex Spot Monitor
+        -   Baxter LIFE2000 Ventilator
+        -   Contec Patient Monitor
+        -   GE Centricity Viewer
+        -   GE Vivid Ultrasound
 
 5.  **Tools** (Ordered by workflow)
+    -   Threat Modeling Tools
+    -   Hardware Root of Trust & Provisioning
+    -   Configuration & Hardening
     -   Static & Dynamic Analysis (SAST / DAST)
+    -   Firmware & Binary Analysis
     -   SBOM & Supply Chain Security
     -   PKI & Key Management
     -   Secure Update & OTA Frameworks
-    -   Firmware & Binary Analysis
+    -   Device Lifecycle Management
     -   Vulnerability & Threat Intelligence
+    -   Security Logging & Monitoring
 
 ### Secondary elements
 
