@@ -26,6 +26,7 @@ This structure reflects the implemented navigation in the `/docs` folder and the
         -   Product Security & Telecoms Infrastructure (PSTI) Act
         -   Privacy & Electronic Communications Regulations (PECR)
     -   **US**
+        -   CISA Secure by Design Principles
         -   FDA Cybersecurity Guidance
         -   FCC Cyber Trust Mark
         -   NISTIR 8259 Series
