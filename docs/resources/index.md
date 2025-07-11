@@ -15,4 +15,6 @@ This section contains ready-to-use compliance and assessment tools to help you i
 
 - **[Real-World Vulnerabilities](./real-world-vulnerabilities/contec-patient-monitor-backdoor.md)**: Case studies of security incidents and how a secure-by-design approach could have helped.
 
+- **[Hardware Selection Guides](./hardware/espressif.md)**: Guidance on choosing MCUs, MPUs, and SoCs with the right security features for regulatory compliance.
+
 - **[Reference](./reference/glossary.md)**: Supporting materials like the Glossary and Tool Directory. 
