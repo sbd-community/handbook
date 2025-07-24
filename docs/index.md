@@ -12,16 +12,16 @@ New to secure-by-design? Start here:
 
 ## Main Sections
 
-### 📚 [Standards & Regulations](./standards)
+### 📚 [Standards & Regulations](./standards/index.md)
 Understanding regulatory requirements including CRA, NIS 2, and ETSI EN 303 645.
 
-### 🔧 [Implementation Guides](./implementation)
+### 🔧 [Implementation Guides](./implementation/index.md)
 Step-by-step technical guidance for build and operational phases.
 
-### 📋 [Resources](./resources)
+### 📋 [Resources](./resources/index.md)
 Ready-to-use compliance and assessment tools.
 
-### 🔗 [Resources](./resources/reference)
+### 🔗 [Resources](./resources/reference/index.md)
 Glossary, tool directory, and maturity model assessments.
 
 ---
