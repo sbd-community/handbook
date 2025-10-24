@@ -77,8 +77,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    // Custom social card for search results and social media
+    image: 'img/sbdc-social-card.png',
     navbar: {
       title: 'Secure-by-Design',
       logo: {
