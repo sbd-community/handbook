@@ -98,6 +98,11 @@ security-culture:
   description: Topics related to building a security-aware mindset in organizations.
   permalink: /security-culture
 
+cryptography:
+  label: Cryptography
+  description: Posts related to cryptography and cryptographic standards for connected devices.
+  permalink: /cryptography
+
 fda:
   label: FDA
   description: Posts related to the US Food and Drug Administration.
