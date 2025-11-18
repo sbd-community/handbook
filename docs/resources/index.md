@@ -17,4 +17,6 @@ This section contains ready-to-use compliance and assessment tools to help you i
 
 - **[Hardware Selection Guides](./hardware/espressif.md)**: Guidance on choosing MCUs, MPUs, and SoCs with the right security features for regulatory compliance.
 
+- **[Cryptography](./cryptography/cryptography-under-cra.md)**: Cross-cutting guidance on cryptography under the CRA and related standards.
+
 - **[Reference](./reference/glossary.md)**: Supporting materials like the Glossary and Tool Directory. 

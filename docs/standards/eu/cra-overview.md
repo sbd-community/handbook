@@ -134,6 +134,16 @@ This proactive approach ensures that security is not an afterthought but a found
 | **Security logging**<br/>[Annex I § 1 (2)(l)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 13][bsi_tr_03183_p1] | Log all security-relevant events by default, including access attempts and setting changes, with a user opt-out. | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
 | **Secure data deletion**<br/>[Annex I § 1 (2)(m)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 14][bsi_tr_03183_p1] | Provide a function for users to securely and completely delete all personal and configuration data. | [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
 
+#### 3.2.1 Cryptography and “state-of-the-art” mechanisms
+
+Annex I does not prescribe specific algorithms, key sizes, or protocol versions. Instead, it requires manufacturers to use **“state-of-the-art mechanisms”** to protect confidentiality and integrity ([Annex I § 1(2)(e,f)][cra_annexI]). In practice, this means:
+
+- Relying on widely reviewed, standardised cryptographic primitives (for example, those listed in the **Agreed Cryptographic Mechanisms (ACM)** guidance maintained under the EU Cybersecurity Act).
+- Avoiding obsolete or home-grown cryptographic schemes, especially for long-lived connected products.
+- Designing products with enough **cryptographic agility** to adopt new recommended mechanisms, and to retire legacy ones, during the support period.
+
+The detailed cryptographic expectations will be specified in CRA harmonised standards (see [§ 4.3 – The Role of Harmonised Standards](#harmonised-standards)) and related guidance. For a practitioner-focused overview of how Annex I’s confidentiality and integrity requirements translate into cryptographic design choices, see **[Cryptography under the Cyber-Resilience Act](../../resources/cryptography/cryptography-under-cra.md)**.
+
 ### 3.3 Vulnerability handling (Annex I Part II)
 
 The CRA makes it a **hard-wired legal duty** for manufacturers to "address and remediate vulnerabilities without undue delay" throughout the product's entire lifecycle ([Annex I, Part II, § 2][cra_annexI]). This obligation lasts for a mandatory **support period**, which the manufacturer must define. This period cannot be shorter than **five years** from the date the product is placed on the market, unless its expected usable life is shorter ([CRA Art. 13 § 8, 9][cra_art13]). During this time, security updates must be provided free of charge.
