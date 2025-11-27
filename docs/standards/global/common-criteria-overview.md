@@ -8,13 +8,13 @@ tags: [common-criteria, iso15408, certification, assurance, global]
 
 ## 1. Why Common Criteria matters now
 
-**Common Criteria (CC)** is the globally recognised framework for **evaluating and certifying the security of IT products**, formally standardised as the **ISO/IEC 15408** series with the companion evaluation methodology **ISO/IEC 18045**.  
-Rather than prescribing a fixed set of security controls, CC provides a **catalogue of security requirements** and an **assurance framework** that lets vendors, customers, and evaluators agree on _what_ will be protected and _how thoroughly_ it will be assessed.
+**Common Criteria (CC)** is the globally recognised framework for **evaluating and certifying the security of IT products**, formally standardised as the **ISO/IEC 15408** series with the companion evaluation methodology **ISO/IEC 18045** ([CC Part 1 § 1][cc_part1_intro]).
+Rather than prescribing a fixed set of security controls, CC provides a **catalogue of security requirements** and an **assurance framework** that lets vendors, customers, and evaluators agree on _what_ will be protected and _how thoroughly_ it will be assessed ([CC Part 1 § 6.3][cc_part1_catalogue]).
 
-For connected devices and embedded products, CC is most relevant when:
+For connected devices and embedded products, CC is most relevant when ([CC Part 1 § 6.2][cc_part1_audience]):
 
-- Customers or regulators require **high assurance** (e.g., secure elements, HSMs, gateways, smart cards, identity & access systems).
-- Certification is needed to access **specific markets or procurement schemes** that reference CC or its successors (e.g., national schemes, emerging EU certification under the Cybersecurity Act).
+- Customers or regulators require **high assurance** (e.g., secure elements, HSMs, gateways, smart cards, identity & access systems) ([NIAP Product Compliant List][niap_pcl]).
+- Certification is needed to access **specific markets or procurement schemes** that reference CC or its successors (e.g., national schemes, emerging EU certification under the Cybersecurity Act [EUCC Scheme][eu_cybersecurity_act]).
 - Vendors want a **structured way to define, implement, and evidence security requirements** that can also support laws like the **Cyber‑Resilience Act (CRA)** or sectoral standards such as **IEC 62443**.
 
 ::::info Official Texts
@@ -63,14 +63,14 @@ For connected devices and embedded products, CC is most relevant when:
 
 ### 2.1 What Common Criteria covers
 
-Common Criteria is focused on **TOEs (Targets of Evaluation)** – concrete IT products or systems that can be evaluated against an agreed **Security Target (ST)**.  
+Common Criteria is focused on **TOEs (Targets of Evaluation)** – concrete IT products or systems that can be evaluated against an agreed **Security Target (ST)** ([CC Part 1 § 2][cc_part1_scope]).
 Typical examples that matter for connected devices include:
 
 - **Secure components and roots of trust:** secure elements, smart cards, trusted platform modules (TPMs), secure microcontrollers, hardware security modules (HSMs).
 - **Network and security appliances:** VPN gateways, firewalls, industrial gateways, identity and access management systems.
 - **Embedded and IoT platforms:** device operating systems, security‑critical middleware, and in some cases complete connected products, when high assurance is required.
 
-Each TOE is evaluated against:
+Each TOE is evaluated against ([CC Part 1 § 9][cc_part1_pp]):
 
 - A **Protection Profile (PP)** – a reusable, standardised set of requirements for a class of products, _or_
 - A **Security Target (ST)** – the vendor’s specific security problem definition and requirements for that individual product.
@@ -87,7 +87,7 @@ In those cases, CC is still useful as a **design reference**, but a full evaluat
 
 ## 3. Using Common Criteria Requirements in Product Design
 
-From an engineering perspective, CC requirements split into:
+From an engineering perspective, CC requirements split into ([CC Part 1 § 6.1.1][cc_part1_reqs]):
 
 - **Security Functional Requirements (SFRs)** – _what_ security features the product must provide.
 - **Security Assurance Requirements (SARs)** – _how much evidence_ is needed that those features are correctly implemented and effective.
@@ -125,7 +125,7 @@ As your **assurance level (e.g., EAL2 vs EAL4+)** increases, evaluators expect *
 
 ### 4.1 Understanding Evaluation Assurance Levels (EALs)
 
-The "level" of a Common Criteria certificate is its **Evaluation Assurance Level (EAL)**, from 1 (lowest) to 7 (highest). The EAL does not measure the security of the product itself, but rather the **rigour and depth of the evaluation process**. A higher EAL means evaluators demanded more formal design documentation, more intrusive testing, and more robust evidence of correctness.
+The "level" of a Common Criteria certificate is its **Evaluation Assurance Level (EAL)**, from 1 (lowest) to 7 (highest). The EAL does not measure the security of the product itself, but rather the **rigour and depth of the evaluation process** ([CC Part 3 § 8][cc_part3_eals]). A higher EAL means evaluators demanded more formal design documentation, more intrusive testing, and more robust evidence of correctness.
 
 For connected devices, EALs 1 through 4 are the most relevant.
 
@@ -139,7 +139,7 @@ For connected devices, EALs 1 through 4 are the most relevant.
 
 ### 4.2 The Evaluation Process
 
-Common Criteria evaluations are typically performed by **accredited third-party laboratories** under the rules of a national or regional **CC scheme**. At a high level, the steps are:
+Common Criteria evaluations are typically performed by **accredited third-party laboratories** under the rules of a national or regional **CC scheme** ([CEM § 8.1][cem_v31r5_process]). At a high level, the steps are:
 
 1.  **Define the Security Target (ST)** – The vendor describes the TOE, its environment, threats, assumptions, and chosen SFR/SAR set (often referencing a Protection Profile where one exists for the product class).
 2.  **Implement and document** – Engineering teams build the product and produce the design, guidance, test, and lifecycle evidence required by the chosen assurance level.
@@ -163,6 +163,14 @@ For secure‑by‑design device teams, the most pragmatic way to use CC is often
 [iso_18045]: https://www.iso.org/standard/72889.html "ISO/IEC 18045:2022 – Methodology for IT security evaluation"
 [iso_15443_1]: https://www.iso.org/standard/59138.html "ISO/IEC TR 15443-1:2012 – Security assurance framework — Part 1: Introduction and concepts"
 [iso_15446]: https://www.iso.org/standard/68904.html "ISO/IEC TR 15446:2017 – Guidance for the production of Protection Profiles and Security Targets"
+[cc_part1_intro]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=11 "CC Part 1: Section 1 - Introduction"
+[cc_part1_scope]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=13 "CC Part 1: Section 2 - Scope"
+[cc_part1_catalogue]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=38 "CC Part 1: Section 6.3 - The different parts of the CC"
+[cc_part1_reqs]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=34 "CC Part 1: Section 6.1.1 - Different representations of the TOE"
+[cc_part1_pp]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=52 "CC Part 1: Section 9 - Protection Profiles and Packages"
+[cc_part1_audience]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=36 "CC Part 1: Section 6.2 - Target audience of the CC"
+[eu_cybersecurity_act]: https://certification.enisa.europa.eu/certification-library/eucc-certification-scheme_en "ENISA: EUCC - Common Criteria-based Cybersecurity Certification Scheme"
+[niap_pcl]: https://www.niap-ccevs.org/protectionprofiles "NIAP: U.S. Government Protection Profiles under the Common Criteria Scheme"
 [cc_part2_fcs]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=48 "CC Part 2: Class FCS - Cryptographic Support"
 [cc_part2_fdp]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=54 "CC Part 2: Class FDP - User Data Protection"
 [cc_part2_fia]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=87 "CC Part 2: Class FIA - Identification and Authentication"
@@ -173,3 +181,5 @@ For secure‑by‑design device teams, the most pragmatic way to use CC is often
 [cc_part3_alc]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=135 "CC Part 3: Class ALC - Life-cycle Support"
 [cc_part3_ate]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=166 "CC Part 3: Class ATE - Tests"
 [cc_part3_ava]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=182 "CC Part 3: Class AVA - Vulnerability Assessment"
+[cc_part3_eals]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=29 "CC Part 3: Section 8 - Evaluation Assurance Levels"
+[cem_v31r5_process]: https://www.commoncriteriaportal.org/files/ccfiles/CEMV3.1R5.pdf#page=21 "CEM: Section 8.1 - The Evaluation Process"
