@@ -12,6 +12,7 @@ The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's
 :::info Official texts
 - **Official Journal** – legally binding record as published on 20 Nov 2024: [OJ:L_202402847 HTML][cra_oj].
 - **Consolidated Version** – integrates subsequent corrections: [CELEX:02024R2847-20241120 HTML][cra_consolidated].
+- **Implementing Regulation (EU) 2025/2392** – published 28 Nov 2025, provides official technical descriptions for product categories in Annexes III and IV: [OJ:L_202502392 HTML][cra_impl_oj]. See [Product Risk Classification](#product-risk-classes).
 
 The consolidated version is easier for clause citations, but in case of doubt the official journal prevails.
 :::
@@ -27,6 +28,7 @@ While harmonised standards are still under development, Germany's Federal Office
 | Text adopted by Parliament & Council                 | Signing date | **2024-10-23** |
 | Published in the *Official Journal* (OJ L 2024/2847) | [CRA Official Journal][cra_oj] | **2024-11-20** |
 | Regulation entered into force (Art. 71 § 1 + 20 d)   | [CRA Art. 71 § 1][cra_art71] | **2024-12-10** |
+| Implementing Regulation on product categories published | [Impl. Reg. (EU) 2025/2392][cra_impl_oj] | **2025-11-28** |
 | Early duties for importers, distributors & authorised reps begin | [CRA Art. 71 § 2][cra_art71] | **2026-06-11** |
 | Vulnerability & incident reporting applies to manufacturers ([CRA Art. 14][cra_art14]) | [CRA Art. 69 § 3][cra_art69] | **2026-09-11** |
 | First set of harmonised standards published<br/>*See [The Role of Harmonised Standards](#harmonised-standards)* | [CRA Art. 27][cra_art27] | **Q2 2027 (est.)** |
@@ -184,7 +186,7 @@ Beyond the direct product and vulnerability requirements in Annex I, the CRA imp
 
 ### 4.1 Product Risk Classification (The Four Tiers) {#product-risk-classes}
 
-The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation.
+The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all 28 product categories, clarifying exactly which products fall into each tier.
 
 - **Default Category (Unclassified):** This is the baseline tier for the vast majority (~90%) of products with digital elements. It covers any product **not listed** in Annex III or Annex IV.
     - **Assessment:** Manufacturers can perform a self-assessment (**Module A**). The manufacturer retains the flexibility to choose a stricter conformity assessment procedure involving a third party if they wish ([CRA Art. 32 § 1][cra_art32], [CRA Rec. 93][cra_rec93]).
@@ -202,6 +204,10 @@ The CRA establishes a four-tier risk classification system. A product's classifi
     - **Assessment:** The Commission may require a mandatory **European cybersecurity certificate** at assurance level 'substantial' or higher. If no such scheme is mandated, these products follow the same rules as Class II ([CRA Art. 32 § 4][cra_art32]).
     - *Examples (from Annex IV):* Hardware Security Modules (HSMs), smart meter gateways, smartcards.
 
+:::info Core Functionality Principle
+A product is classified based on its **core functionality**, not its embedded components. For example, a smartphone integrating a password manager is still Default - its core function is not password management. Similarly, an app embedding a browser does not become a "browser" product. See [Impl. Reg. (EU) 2025/2392, Recitals 3–5][impl_rec3].
+:::
+
 The table below provides a non-exhaustive list of examples mapping product categories to the four risk tiers:
 
 | Product & Category | Default | Important<br/>(Class I) | Important<br/>(Class II) | Critical |
@@ -211,7 +217,8 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Smart TV | ✅ | | | |
 | Smart thermostat | ✅ | | | |
 | Smart refrigerator | ✅ | | | |
-| Smart doorbell (with no lock) | ✅ | | | |
+| Smart doorbell (no camera) | ✅ | | | |
+| Smart doorbell with camera ([CRA Annex III.I.17][cra_annexIII]) | | ✅ | | |
 | Smart Lighting Controller/Hub | ✅ | | | |
 | Smartphone | ✅ | | | |
 | Smart speaker with virtual assistant ([CRA Annex III.I.16][cra_annexIII]) | | ✅ | | |
@@ -219,34 +226,41 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Home alarm system ([CRA Annex III.I.17][cra_annexIII]) | | ✅ | | |
 | Baby monitor ([CRA Annex III.I.17][cra_annexIII]) | | ✅ | | |
 | Fitness band ([CRA Annex III.I.19][cra_annexIII]) | | ✅ | | |
-| Connected toy ([CRA Annex III.I.19][cra_annexIII]) | | ✅ | | |
+| Connected toy ([CRA Annex III.I.18][cra_annexIII]) | | ✅ | | |
 | **General IT** |
 | Printer | ✅ | | | |
 | Office Suite | ✅ | | | |
 | Laptop | ✅ | | | |
 | Network-Attached Storage (NAS) device | ✅ | | | |
 | Digital Signage Display | ✅ | | | |
+| Identity management / PAM software ([CRA Annex III.I.1][cra_annexIII]) | | ✅ | | |
 | Web browser ([CRA Annex III.I.2][cra_annexIII]) | | ✅ | | |
 | Password manager ([CRA Annex III.I.3][cra_annexIII]) | | ✅ | | |
+| Anti-malware / Antivirus software ([CRA Annex III.I.4][cra_annexIII]) | | ✅ | | |
+| VPN software ([CRA Annex III.I.5][cra_annexIII]) | | ✅ | | |
+| Network management system ([CRA Annex III.I.6][cra_annexIII]) | | ✅ | | |
 | SIEM ([CRA Annex III.I.7][cra_annexIII]) | | ✅ | | |
-| Operating System ([CRA Annex III.I.12][cra_annexIII]) | | ✅ | | |
-| Router / Modem ([CRA Annex III.I.13][cra_annexIII]) | | ✅ | | |
+| Boot manager ([CRA Annex III.I.8][cra_annexIII]) | | ✅ | | |
+| PKI / Certificate issuance software ([CRA Annex III.I.9][cra_annexIII]) | | ✅ | | |
+| Operating System ([CRA Annex III.I.11][cra_annexIII]) | | ✅ | | |
+| Router / Modem / Switch ([CRA Annex III.I.12][cra_annexIII]) | | ✅ | | |
 | Hypervisor / Container runtime ([CRA Annex III.II.1][cra_annexIII]) | | | ✅ | |
-| Firewall ([CRA Annex III.II.3][cra_annexIII]) | | | ✅ | |
-| Intrusion Detection System ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
+| Firewall / IDS / IPS ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
 | **Specialised H/W** |
 | Basic Barcode Scanner / RFID Reader | ✅ | | | |
-| Microprocessor w/ security features ([CRA Annex III.I.14][cra_annexIII]) | | ✅ | | |
-| Tamper-resistant microprocessor ([CRA Annex III.II.4][cra_annexIII]) | | | ✅ | |
-| Tamper-resistant microcontroller ([CRA Annex III.II.5][cra_annexIII]) | | | ✅ | |
+| Network interface card (NIC) w/ security features ([CRA Annex III.I.10][cra_annexIII]) | | ✅ | | |
+| Microprocessor w/ security features ([CRA Annex III.I.13][cra_annexIII]) | | ✅ | | |
+| Microcontroller w/ security features ([CRA Annex III.I.14][cra_annexIII]) | | ✅ | | |
+| ASIC / FPGA w/ security features ([CRA Annex III.I.15][cra_annexIII]) | | ✅ | | |
+| Tamper-resistant microprocessor ([CRA Annex III.II.3][cra_annexIII]) | | | ✅ | |
+| Tamper-resistant microcontroller ([CRA Annex III.II.4][cra_annexIII]) | | | ✅ | |
 | HSM ([CRA Annex IV.1][cra_annexIV]) | | | | ✅ |
 | Smartcard / Secure Element ([CRA Annex IV.3][cra_annexIV]) | | | | ✅ |
 | **Industrial (OT)** |
 | Non-critical IoT sensor | ✅ | | | |
 | Industrial IoT Temperature Sensor | ✅ | | | |
 | Industrial VPN gateway ([CRA Annex III.I.5][cra_annexIII]) | | ✅ | | |
-| Industrial firewall ([CRA Annex III.II.3][cra_annexIII]) | | | ✅ | |
-| Industrial IDS ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
+| Industrial firewall / IDS / IPS ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
 | Smart meter gateway ([CRA Annex IV.2][cra_annexIV]) | | | | ✅ |
 | **Component** |
 | General-purpose library ([CRA Art. 3 § 1][cra_art3]) | ✅ | | | |
@@ -283,6 +297,8 @@ The first harmonised standards for the CRA are expected to be published in the O
 <!-- Citations -->
 [cra_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847 "CRA Official Journal – OJ"
 [cra_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120 "CRA consolidated text"
+[cra_impl_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202502392 "Implementing Regulation (EU) 2025/2392 – Technical descriptions for product categories"
+[impl_rec3]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202502392#rct_3 "Impl. Reg. (EU) 2025/2392 Recital 3 – Core functionality principle"
 [cra_chIV]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#cpt_IV "CRA Chapter IV – Notification of Conformity Assessment Bodies"
 [cra_chV]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#cpt_V "CRA Chapter V – Market surveillance and enforcement"
 [cra_art1]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_1 "CRA Article 1 – Subject matter"

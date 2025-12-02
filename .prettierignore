@@ -1,0 +1,15 @@
+# Markdown files - preserve house style (asterisk italics, compact tables)
+*.md
+*.mdx
+docs/
+blog/
+
+# Build outputs
+build/
+.docusaurus/
+node_modules/
+
+# Auto-generated
+package-lock.json
+yarn.lock
+

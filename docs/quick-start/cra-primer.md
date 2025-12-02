@@ -44,7 +44,7 @@ As a manufacturer, you have two main sets of duties:
 
 ## 3. How is my product classified?
 
-The CRA has four risk classes. Your product's class determines how you prove compliance.
+The CRA has four risk classes. Your product's class determines how you prove compliance. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all product categories.
 
 -   **Default (~90% of products):** Standard products like smart speakers, toys, or general software.
     -   **Action:** You can perform a **self-assessment** and declare conformity yourself.
@@ -91,3 +91,4 @@ Market surveillance authorities will also have the power to order product recall
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[cra_impl_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202502392 "Implementing Regulation (EU) 2025/2392 – Technical descriptions for product categories"
