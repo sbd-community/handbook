@@ -15,6 +15,10 @@ Use this checklist to perform a high-level assessment of your organization's rea
 
 ## 1. Scoping & Classification
 
+:::tip Use Official Technical Descriptions
+**[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides precise technical descriptions for all 28 Important and Critical product categories. Use these definitions to accurately classify your product.
+:::
+
 | Question | Status (Yes/No/Partial) | Evidence / Notes |
 | :--- | :--- | :--- |
 | **Is the product a "Product with Digital Elements" (PDE)?**<br/>([CRA Primer](../../quick-start/cra-primer.md)) | | Justification for in/out of scope. |
@@ -68,3 +72,4 @@ _Based on [CRA Annex I.I][cra_annexI]_
 <!-- Citations -->
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[cra_impl_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202502392 "Implementing Regulation (EU) 2025/2392 – Technical descriptions for product categories"
