@@ -66,7 +66,7 @@ The clock is ticking. Here are the key deadlines:
 
 | Date | Requirement |
 | :--- | :--- |
-| **11 Sep 2026** | **Vulnerability Reporting is Mandatory.** You must have a process to notify ENISA of actively exploited vulnerabilities within 24 hours. |
+| **11 Sep 2026** | **Vulnerability Reporting is Mandatory.** You must have a process to notify ENISA of actively exploited vulnerabilities without undue delay. |
 | **11 Dec 2027** | **Full Compliance is Mandatory.** All products placed on the EU market must be fully compliant with all CRA requirements and bear the CE mark. |
 
 ---

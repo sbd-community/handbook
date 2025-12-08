@@ -60,7 +60,7 @@ The practical effect for manufacturers is that cryptographic flexibility is stil
 
 ## 4. What this means for CRA product classes
 
-The CRA splits products into four risk tiers (Default, Important Class I, Important Class II, and Critical), which in turn determine the expected conformity assessment route. Cryptography interacts with these tiers in two important ways:
+The CRA splits products into four risk tiers (Default, Important Class I, Important Class II, and Critical), which in turn determine the expected conformity assessment route ([EC FAQ 3.1–3.4, 6.1–6.3][ec_faq]). Cryptography interacts with these tiers in two important ways:
 
 - **Default-category products** can usually follow a self-assessment route (**Module A**) if they use standard, ACM-aligned cryptographic libraries and follow the horizontal CRA standards.
 - **Important and Critical products** are more likely to face third-party evaluation and formal testing, where any deviation from ACM recommendations or harmonised standards will attract scrutiny.
@@ -80,7 +80,7 @@ This page is a conceptual bridge between CRA’s legal text and the practical en
 
 To turn these ideas into concrete steps:
 
-- **Understand the obligations:** Start with the [CRA Overview](../../standards/eu/cra-overview.md), especially the Annex I tables mapping confidentiality and integrity requirements to engineering tasks.
+- **Understand the obligations:** Start with the [CRA Overview](../../standards/eu/cra-overview.md) and the [European Commission's official FAQ][ec_faq], especially the Annex I tables mapping confidentiality and integrity requirements to engineering tasks.
 - **Design your cryptography stack:** Use the build-phase implementation guides to design and implement cryptography in your product:
   - [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) – how to generate, provision, and protect keys.
   - [Secure Boot](../../implementation/build-phase/secure-boot.md) – how to enforce integrity of firmware and configuration.
@@ -93,5 +93,6 @@ As the CRA standards and ACM guidance mature, we will extend this section with m
 <!-- Citations -->
 [cra_art6]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_6 "CRA Article 6 – Essential requirements"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+[ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.0, 3 December 2025)"
 
 

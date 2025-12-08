@@ -21,6 +21,7 @@ The consolidated version is easier for clause citations, but in case of doubt th
 While harmonised standards are still under development, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance.
 
 - **BSI TR-03183**: [Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
+- **European Commission FAQ**: [FAQs on the Cyber Resilience Act][ec_faq] (Version 1.0, 3 December 2025)
 :::
 
 | CRA milestone                                        | Legal basis | Date |
@@ -38,9 +39,9 @@ While harmonised standards are still under development, Germany's Federal Office
 *Importers*, *distributors* & *authorised representatives* → must verify that a draft EU Declaration of Conformity and technical file exist, keep conformity documentation for **at least 10 years or the product's support period, whichever is longer**, and ensure storage/transport does not compromise firmware integrity ([CRA Ch. IV][cra_chIV]).  
 *Market-surveillance authorities* → gain power to sample, test, and order withdrawals or recalls of insecure products ([CRA Art. 35–51][cra_chV]).
 
-**Early duties from 11 Sep 2026**  
+**Early duties from 11 Sep 2026** ([EC FAQ 7.1][ec_faq])  
 *Manufacturers* → must operate a vulnerability-handling process:  
-• Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively-exploited vulnerability ([CRA Art. 14 § 1][cra_art14] + [CRA Art. 16][cra_art16])  
+• Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively-exploited vulnerability ([CRA Art. 14 § 1][cra_art14] + [CRA Art. 16][cra_art16], [EC FAQ 5.1–5.3][ec_faq])  
 • Publish a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI])  
 • If requested by a CSIRT, provide an intermediate report on the status of a vulnerability ([CRA Art. 14 § 6][cra_art14]).
 
@@ -65,12 +66,13 @@ A **product with digital elements (PDE)** is *"any software or hardware product,
 A **remote data-processing solution**, which is also in scope, is the cloud or back-end essential to the PDE's core function and *"designed and developed by, or under the responsibility of, the manufacturer"* ([CRA Art. 3 § 2][cra_art3], see also [CRA Recital 11][cra_rec11]).
 
 #### Interpretation
-This broad definition effectively covers almost any modern electronic device or piece of software. It creates a two-part test:
+This broad definition effectively covers almost any modern electronic device or piece of software. The [EC FAQ (§1.1)][ec_faq] identifies three cumulative elements that determine if a product is in scope:
 
-1.  **Does it have "digital elements"?** This means does it contain a microprocessor, firmware, or software?
-2.  **Can it connect to something else?** This means does it have a "direct or indirect logical or physical data connection" to another device or network?
+1.  **Does it meet the definition of a product with digital elements?** This means does it contain a microprocessor, firmware, or software? ([EC FAQ 1.2][ec_faq])
+2.  **Is it made available on the market?** ([EC FAQ 1.5][ec_faq])
+3.  **Does its intended purpose or reasonably foreseeable use include a direct or indirect logical or physical data connection?** ([EC FAQ 1.3][ec_faq])
 
-Both conditions must be met.
+All three conditions must be met.
 
 - **Example 1: A "dumb" toaster with a digital timer but no connectivity.**
   - *Digital elements?* **Yes** (firmware for the timer).
@@ -99,7 +101,7 @@ Both conditions must be met.
 | **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 24][cra_art24]) |
 | Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
 | Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
-| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 69 § 2][cra_art69]) |
+| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 69 § 2][cra_art69], [EC FAQ 1.4, 7.2][ec_faq]) |
 
 ## 3 CRA Requirements & How to Implement Them {#annex-i-requirements}
 
@@ -111,9 +113,9 @@ The following tables translate those legal requirements into a practical enginee
 
 ### 3.1 Risk Assessment & Threat Modeling
 
-Before implementing specific security controls, the CRA requires manufacturers to perform and document a comprehensive cybersecurity risk assessment ([CRA Art. 13 § 2, 3][cra_art13]). Threat modeling is the core practice for fulfilling this obligation. It is a structured process to identify, analyze, and mitigate potential threats and vulnerabilities early in the design phase.
+Before implementing specific security controls, the CRA requires manufacturers to perform and document a comprehensive cybersecurity risk assessment ([CRA Art. 13 § 2, 3][cra_art13], [EC FAQ 4.1.1–4.1.8][ec_faq]). Threat modeling is the core practice for fulfilling this obligation. It is a structured process to identify, analyze, and mitigate potential threats and vulnerabilities early in the design phase.
 
-This proactive approach ensures that security is not an afterthought but a foundational part of the product's architecture. The outcomes of this threat model directly inform the security measures required in the subsequent sections.
+This proactive approach ensures that security is not an afterthought but a foundational part of the product's architecture. The outcomes of this threat model directly inform the security measures required in the subsequent sections. Note that the CRA does not mandate a specific risk assessment methodology ([EC FAQ 4.1.2][ec_faq]).
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---|---|---|
@@ -123,8 +125,8 @@ This proactive approach ensures that security is not an afterthought but a found
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
-| **No known vulnerabilities**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1] | Ship without known exploitable vulnerabilities; establish a process to identify vulnerabilities in all product components. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md)<br/>[Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1] | Provide a secure-by-default configuration that supports intended use and can be fully restored via a reset function. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
+| **No known vulnerabilities**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.2][ec_faq] | Ship without known exploitable vulnerabilities; establish a process to identify vulnerabilities in all product components. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md)<br/>[Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
+| **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.4][ec_faq] | Provide a secure-by-default configuration that supports intended use and can be fully restored via a reset function. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
 | **Security updates by design**<br/>[Annex I § 1 (2)(c)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4][bsi_tr_03183_p1] | Provide timely, integrity-protected security updates via a secure and automated mechanism (with user opt-out). | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
 | **Access control**<br/>[Annex I § 1 (2)(d)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 5][bsi_tr_03183_p1] | Implement an access control model based on least privilege; prevent and log unauthorised access attempts. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
 | **Confidentiality protection**<br/>[Annex I § 1 (2)(e)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 6][bsi_tr_03183_p1] | Protect confidentiality of sensitive data at-rest and in-transit using state-of-the-art encryption. | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
@@ -148,12 +150,12 @@ The detailed cryptographic expectations will be specified in CRA harmonised stan
 
 ### 3.3 Vulnerability handling (Annex I Part II)
 
-The CRA makes it a **hard-wired legal duty** for manufacturers to "address and remediate vulnerabilities without undue delay" throughout the product's entire lifecycle ([Annex I, Part II, § 2][cra_annexI]). This obligation lasts for a mandatory **support period**, which the manufacturer must define. This period cannot be shorter than **five years** from the date the product is placed on the market, unless its expected usable life is shorter ([CRA Art. 13 § 8, 9][cra_art13]). During this time, security updates must be provided free of charge.
+The CRA makes it a **hard-wired legal duty** for manufacturers to "address and remediate vulnerabilities without undue delay" throughout the product's entire lifecycle ([Annex I, Part II, § 2][cra_annexI], [EC FAQ 4.3.1–4.3.7][ec_faq]). This obligation lasts for a mandatory **support period**, which the manufacturer must define. This period cannot be shorter than **five years** from the date the product is placed on the market, unless its expected usable life is shorter ([CRA Art. 13 § 8, 9][cra_art13], [EC FAQ 4.5.1–4.5.3][ec_faq]). During this time, security updates must be provided free of charge.
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
 | **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>[BSI TR-03183-2 § 5.2][bsi_tr_03183_p2] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1] | Address and remediate vulnerabilities without undue delay, providing timely security updates via a secure mechanism. | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
+| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1]<br/>[EC FAQ 4.3.1, 4.3.5][ec_faq] | Address and remediate vulnerabilities without undue delay, providing timely security updates via a secure mechanism. | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 | **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Regularly test the product for vulnerabilities using both internal processes and independent experts. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
 | **Public vulnerability information**<br/>[Annex I Part II § 4, 5][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.3][bsi_tr_03183_p3] | Inform users about fixed vulnerabilities, their impact, and mitigation steps via security advisories. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Publish a clear vulnerability disclosure policy and provide an easily accessible contact channel for vulnerability reporting. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
@@ -186,7 +188,7 @@ Beyond the direct product and vulnerability requirements in Annex I, the CRA imp
 
 ### 4.1 Product Risk Classification (The Four Tiers) {#product-risk-classes}
 
-The CRA establishes a four-tier risk classification system. A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all 28 product categories, clarifying exactly which products fall into each tier.
+The CRA establishes a four-tier risk classification system ([EC FAQ 3.1–3.4][ec_faq]). A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all 28 product categories, clarifying exactly which products fall into each tier.
 
 - **Default Category (Unclassified):** This is the baseline tier for the vast majority (~90%) of products with digital elements. It covers any product **not listed** in Annex III or Annex IV.
     - **Assessment:** Manufacturers can perform a self-assessment (**Module A**). The manufacturer retains the flexibility to choose a stricter conformity assessment procedure involving a third party if they wish ([CRA Art. 32 § 1][cra_art32], [CRA Rec. 93][cra_rec93]).
@@ -205,7 +207,7 @@ The CRA establishes a four-tier risk classification system. A product's classifi
     - *Examples (from Annex IV):* Hardware Security Modules (HSMs), smart meter gateways, smartcards.
 
 :::info Core Functionality Principle
-A product is classified based on its **core functionality**, not its embedded components. For example, a smartphone integrating a password manager is still Default - its core function is not password management. Similarly, an app embedding a browser does not become a "browser" product. See [Impl. Reg. (EU) 2025/2392, Recitals 3–5][impl_rec3].
+A product is classified based on its **core functionality**, not its embedded components ([EC FAQ 3.2, 3.4][ec_faq]). For example, a smartphone integrating a password manager is still Default - its core function is not password management. Similarly, an app embedding a browser does not become a "browser" product. See [Impl. Reg. (EU) 2025/2392, Recitals 3–5][impl_rec3].
 :::
 
 The table below provides a non-exhaustive list of examples mapping product categories to the four risk tiers:
@@ -266,7 +268,7 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | General-purpose library ([CRA Art. 3 § 1][cra_art3]) | ✅ | | | |
 
 ### 4.2 Assessment Routes for Each Tier
-Once a manufacturer has determined their product's risk class using the tiers above, the next step is to identify the specific conformity assessment procedure required to earn the CE mark. The CRA lays out several distinct 'modules' or routes, and the path you must take is dictated directly by your product's classification.
+Once a manufacturer has determined their product's risk class using the tiers above, the next step is to identify the specific conformity assessment procedure required to earn the CE mark ([EC FAQ 6.1–6.3][ec_faq]). The CRA lays out several distinct 'modules' or routes, and the path you must take is dictated directly by your product's classification.
 
 | Class | Conditions | Assessment Route |
 |---|---|---|
@@ -289,7 +291,7 @@ This provides two key benefits for manufacturers:
 2.  **Simpler Documentation:** The manufacturer can cite the harmonised standard in their EU Declaration of Conformity, rather than documenting compliance with every requirement in Annex I individually.
 
 :::tip Harmonised Standards Timeline
-The first harmonised standards for the CRA are expected to be published in the Official Journal around **Q2 2027**. This follows a standardisation request ([Mandate M/606][mandate_m606]) and an 18-24 month drafting period.
+The first harmonised standards for the CRA are expected to be published in the Official Journal around **Q2 2027** ([EC FAQ 6.10][ec_faq]). This follows a standardisation request ([Mandate M/606][mandate_m606]) and an 18-24 month drafting period. Per the FAQ, ESOs are targeting: horizontal standards on secure design/development and vulnerability handling by Aug 2026; vertical standards for Important/Critical categories by Oct 2026; and property requirements standard by Oct 2027.
 :::
 
 *In the absence of a suitable harmonised standard, the Commission may issue a **common specification** to provide the same presumption of conformity ([CRA Art. 27 § 2, 5][cra_art27]).*
@@ -354,3 +356,4 @@ The first harmonised standards for the CRA are expected to be published in the O
 [bsi_tr_03183_p3]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-3-0_9_0.pdf "BSI TR-03183 Part 3: Vulnerability Reports and Notifications"
 [mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
 [en303645]: https://www.etsi.org/deliver/etsi_en/303600_303699/303645/03.01.03_60/en_303645v030103p.pdf "ETSI EN 303 645 - Cyber Security for Consumer Internet of Things: Baseline Requirements"
+[ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.0, 3 December 2025)"
