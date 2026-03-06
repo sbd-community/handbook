@@ -122,3 +122,23 @@ us:
   label: Section 524B
   description: Posts related to Section 524B of the FD&C Act.
   permalink: /524b
+
+vulnerability-handling:
+  label: Vulnerability Handling
+  description: Posts about vulnerability disclosure, triage, remediation, and reporting obligations.
+  permalink: /vulnerability-handling
+
+stm32:
+  label: STM32
+  description: Posts related to STMicroelectronics STM32 microcontrollers and their security features.
+  permalink: /stm32
+
+stmicroelectronics:
+  label: STMicroelectronics
+  description: Posts related to STMicroelectronics guidance, products, and security ecosystem.
+  permalink: /stmicroelectronics
+
+supply-chain:
+  label: Supply Chain
+  description: Posts about supplier due diligence, component risk, and product security supply chains.
+  permalink: /supply-chain
