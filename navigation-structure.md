@@ -32,6 +32,8 @@ This structure reflects the implemented navigation in the `/docs` folder and the
         -   NISTIR 8259 Series
         -   NIST SP 800-218 (SSDF)
         -   CTA-2088
+    -   **Australia**
+        -   Smart Device Security Rules
     -   **Global**
         -   ETSI EN 303 645
         -   IEC 62443 Series

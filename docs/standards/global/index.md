@@ -1,7 +1,7 @@
 ---
 title: "Global & International Standards"
 sidebar_label: "Global"
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Global & International Standards Overview
