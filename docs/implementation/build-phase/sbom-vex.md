@@ -12,7 +12,7 @@ tags: [sbom, vex, spdx, cyclonedx, cra, supply-chain]
 
 A **Software Bill of Materials (SBOM)** is a formal, machine-readable inventory of the software components and dependencies included in a product. It is analogous to a list of ingredients on a food package and is a cornerstone of modern software supply chain security.
 
-A **Vulnerability Exploitability eXchange (VEX)** document is a companion to an SBOM. While an SBOM tells you *what* is in your software, a VEX document provides an assertion from the manufacturer about whether a known vulnerability in a component actually affects their product. This provides crucial context, allowing asset owners to filter out the noise from scanners and focus on real risks.
+A **Vulnerability Exploitability eXchange (VEX)** document is a companion to an SBOM. While an SBOM tells you *what* is in your software, a VEX document provides an assertion from the manufacturer about whether a known vulnerability in a component actually affects their product. This provides crucial context, allowing asset owners to [filter out the noise from scanners and focus on real risks](https://crypto-posture.com/resources/cbom-vs-crypto-posture-governance/?utm_source=securebydesignhandbook&utm_medium=referral&utm_campaign=partner_backlinks&utm_content=sbom_vex_scanner_noise_real_risks).
 
 Together, they are the key to efficient and transparent vulnerability management.
 

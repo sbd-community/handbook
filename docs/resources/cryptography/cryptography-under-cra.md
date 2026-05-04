@@ -88,7 +88,7 @@ To turn these ideas into concrete steps:
   - [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) – how to choose secure-by-default protocol and cipher configurations.
 - **Prepare for evolution:** Track updates to ACM and CRA harmonised standards, and design your products with enough agility to swap algorithms or increase key sizes during the support period without a full redesign.
 
-As the CRA standards and ACM guidance mature, we will extend this section with more detailed examples and pointers to post-quantum cryptography (PQC) transition resources.
+As the CRA standards and ACM guidance mature, we will extend this section with more detailed examples and pointers to [post-quantum cryptography (PQC) transition resources](https://crypto-posture.com/resources/pqc-readiness-checklist/?utm_source=securebydesignhandbook&utm_medium=referral&utm_campaign=partner_backlinks&utm_content=cryptography_cra_pqc_transition_resources).
 
 <!-- Citations -->
 [cra_art6]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_6 "CRA Article 6 – Essential requirements"
