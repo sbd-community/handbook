@@ -61,6 +61,13 @@ Provide a glossary page and link from first usage.
 - Break complex sequences into ordered lists.
 - Use tables for clause mappings; keep ≤ 4 columns for mobile readability.
 
+### Blog Excerpts
+
+- Place `<!-- truncate -->` after the opening teaser for every blog post.
+- Keep teaser text between 45 and 75 words, usually as one paragraph.
+- The teaser should state the news hook and why it matters to connected-device product, engineering, security, or compliance teams.
+- Use inline Markdown links before the truncate marker. Docusaurus excerpts may not resolve reference-style links whose definitions appear later in the post, so avoid raw reference labels like `[source-id]` and avoid `[label][source-id]` links in excerpts.
+
 ### Call‑outs
 
 - **Note**: supplementary info.

@@ -11,7 +11,7 @@ move is notable not just because of ST's size, but because it shows how fast
 the market is shifting: component vendors are no longer talking only about
 features, performance, and price. They are increasingly talking about
 **security lifecycle**, **documentation**, and **compliance support** for
-products with digital elements [st-announcement].
+products with digital elements ([ST announcement](https://community.st.com/t5/developer-news/st-launches-dedicated-resource-hub-to-help-developers-navigate/ba-p/883514)).
 
 <!-- truncate -->
 
@@ -25,9 +25,9 @@ their own non-delegable legal responsibilities.
 
 ST's new CRA messaging covers the right high-level themes: secure by design,
 conformity assessment, vulnerability handling, and long-term maintenance
-[st-announcement], [st-cra-page]. That matters because these are exactly the
-areas where manufacturers now need stronger evidence from silicon and
-software suppliers.
+([ST announcement][st-announcement], [ST CRA page][st-cra-page]). That
+matters because these are exactly the areas where manufacturers now need
+stronger evidence from silicon and software suppliers.
 
 It also signals a broader shift in component procurement. Security teams and
 compliance leads will increasingly ask questions such as:
@@ -47,7 +47,8 @@ A vendor like ST can help with a lot:
   cryptography.
 - Publish security collateral, application notes, and assurance material.
 - Provide reference implementations such as **SBSFU** and related
-  **STM32Trust** materials [st-trust], [st-sbsfu-an].
+  **STM32Trust** materials ([STM32Trust][st-trust],
+  [SBSFU][st-sbsfu-an]).
 
 But a supplier page cannot:
 
