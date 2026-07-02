@@ -16,14 +16,14 @@ Hardening the pipeline is the practical application of "DevSecOps," where securi
 
 ### 1.2. The Regulatory Requirement
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates secure development lifecycle practices. A hardened CI/CD pipeline directly addresses several key requirements:
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** mandates secure development lifecycle practices. A hardened CI/CD pipeline directly addresses several key requirements:
 
 -   **No Known Exploitable Vulnerabilities ([Annex I § 1 (2)(a)][cra_annexI])**: The CRA requires products to be delivered "without known exploitable vulnerabilities." An automated scanning process in the CI/CD pipeline is the primary mechanism for identifying and blocking these vulnerabilities before release.
 -   **Vulnerability Handling ([Annex I § 2 (2)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 clarifies this, stating that manufacturers must "continuously search for vulnerabilities in their own product" ([REQ_VH 2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this continuous search.
 
 ### 1.3. Do I Really Need to Do This?
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to follow best practices for a secure development lifecycle. Hardening your development and release process is therefore a direct and non-negotiable legal obligation.
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to follow best practices for a secure development lifecycle. Hardening your development and release process is therefore a direct and non-negotiable legal obligation.
 
 However, the regulations define the **"what" (the security outcomes)**, not the **"how" (the specific tools)**. The real question is not *if* you need a secure process, but **"What does a compliant secure development process look like for a team of my size and a product of my complexity?"**
 

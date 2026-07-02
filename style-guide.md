@@ -68,6 +68,22 @@ Provide a glossary page and link from first usage.
 - The teaser should state the news hook and why it matters to connected-device product, engineering, security, or compliance teams.
 - Use inline Markdown links before the truncate marker. Docusaurus excerpts may not resolve reference-style links whose definitions appear later in the post, so avoid raw reference labels like `[source-id]` and avoid `[label][source-id]` links in excerpts.
 
+### CRA Harmonised-Standard Pages
+
+Use this structure for CRA draft or final harmonised standards, especially product-category standards such as ETSI EN 304 623:
+
+1. **Why this matters now** – explain the product category, who should care, and the practical design or evidence impact.
+2. **Official texts and status** – link to the official draft/final text, work item, CRA hook, and state clearly whether the standard is draft, final, or OJ-cited.
+3. **Timeline** – show key publication, approval, and CRA application dates where known.
+4. **Scope** – explain which products are covered and which are not, including the CRA core-functionality principle.
+5. **Does this apply to my product?** – give role/product-oriented decision guidance.
+6. **Requirements and how to implement them** – group requirements by engineering themes rather than reproducing every clause.
+7. **Assessment and evidence** – describe the records, tests, and technical-file artifacts a team should prepare.
+8. **Relationship to implementation guides** – link to the relevant handbook playbooks and tools.
+9. **Further reading** – include official sources first, then useful external analysis.
+
+Always include a warning callout for drafts: draft standards do not provide presumption of conformity until finalised and cited in the Official Journal. Treat them as design and evidence-planning inputs, not as final compliance claims.
+
 ### Call‑outs
 
 - **Note**: supplementary info.

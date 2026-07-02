@@ -142,3 +142,13 @@ supply-chain:
   label: Supply Chain
   description: Posts about supplier due diligence, component risk, and product security supply chains.
   permalink: /supply-chain
+
+boot-managers:
+  label: Boot Managers
+  description: Posts about boot managers, secure boot, roots of trust, and boot-chain security.
+  permalink: /boot-managers
+
+etsi:
+  label: ETSI
+  description: Posts related to ETSI standards and standardisation activity.
+  permalink: /etsi

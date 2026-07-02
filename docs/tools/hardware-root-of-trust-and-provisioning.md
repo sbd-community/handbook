@@ -12,6 +12,8 @@ A Hardware Root of Trust (RoT) is a secure, immutable foundation within a device
 
 For a detailed explanation of the compliance requirements that a Hardware RoT helps to meet, see our implementation guides on **[Unique Device Identity](../implementation/build-phase/unique-device-identity.md)** and **[Secure Boot](../implementation/build-phase/secure-boot.md)**.
 
+For CRA boot-manager products and boot-chain evidence planning, also see **[ETSI EN 304 623: Boot Managers](../standards/eu/cra/en-304-623-boot-managers.md)**.
+
 ## 2. Build vs. Buy: A Two-Part Decision
 
 The choice in this category breaks down into two distinct parts: the hardware itself, and the software ecosystem required to use it.

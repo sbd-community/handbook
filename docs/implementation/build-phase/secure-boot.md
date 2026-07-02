@@ -18,14 +18,19 @@ The process cryptographically verifies the signature of each software component 
 
 The legal basis for implementing secure boot is clear and direct. Secure boot is the state-of-the-art mechanism for fulfilling the integrity requirements of modern regulations.
 
--   **Integrity Protection ([Annex I § 1 (2)(f)][cra_annexI])**: The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user."
+-   **Integrity Protection ([Annex I § 1 (2)(f)][cra_annexI])**: The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to "protect the integrity of...commands, programs and configuration against any manipulation or modification not authorised by the user."
 -   The BSI TR-03183-1 reinforces this, requiring that the integrity of "all code, data, and configuration" be protected by "state-of-the-art mechanisms" and that any violations are detected ([REQ_ER 7][bsi_tr_03183_p1]).
+-   **Boot managers as Important Class I products:** CRA Annex III lists boot managers as Important Products. The interim **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** draft shows how CRA expectations may translate into testable boot-manager requirements, including verified boot, measured boot, rollback protection, secure updates, key provisioning, debug interface controls, logging, recovery, and assessment evidence.
 
 Implementing secure boot provides auditable proof that only the manufacturer's authentic software is executing on the device.
 
+:::warning Draft standard
+ETSI EN 304 623 v0.1.3 is an interim draft. It is useful for design planning, gap analysis, and supplier due diligence, but it does not confer presumption of conformity until the final standard is cited in the Official Journal.
+:::
+
 ### 1.3. Do I Really Need to Do This?
 
-Secure boot is the state-of-the-art technical solution for meeting the software integrity requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**. For the majority of connected products, it is a mandatory, foundational security control.
+Secure boot is the state-of-the-art technical solution for meeting the software integrity requirement of the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**. For the majority of connected products, it is a mandatory, foundational security control.
 
 However, the question is not whether you can ignore the integrity requirement, but whether there are circumstances where it can be met without a full secure boot implementation. The BSI's technical guideline ([REC_ER 7.1][bsi_tr_03183_p1]) provides a specific condition: the recommendation to verify software integrity applies if "The TOE [product] stores sensitive user or system data."
 
@@ -65,6 +70,14 @@ The mechanism that enables verification is digital signing.
 -   **Offline Process:** The manufacturer uses a highly protected **private key** to sign their firmware images. This key must be kept in a secure environment, such as a Hardware Security Module (HSM).
 -   **On-Device Process:** A corresponding **public key** is provisioned onto the device. Each software component in the boot chain uses this public key to verify the signature of the next component before executing it.
 
+### 2.4 Verified Boot vs. Measured Boot
+
+**Verified boot** enforces policy during startup: each component is cryptographically verified before execution, and the boot process stops or enters recovery if verification fails.
+
+**Measured boot** records cryptographic measurements of boot components for later attestation. It can provide evidence about what booted, but measurement alone does not necessarily block execution of unauthorised code.
+
+CRA-oriented boot architectures often need both concepts: enforcement to prevent unauthorised execution and evidence to support diagnostics, incident response, or attestation.
+
 ## 3. The Secure Boot Process in Detail
 
 A typical secure boot flow on an embedded device follows these steps:
@@ -76,6 +89,8 @@ A typical secure boot flow on an embedded device follows these steps:
 | **3. Bootloader Verification** | The Boot ROM checks the bootloader's signature using the public key hash stored in OTP fuses. | **Boot Halted.** The device will not proceed, preventing execution of a malicious bootloader. |
 | **4. Kernel Verification** | The now-trusted bootloader loads the main OS kernel (e.g., Linux) and verifies its signature. | **Boot Halted.** The device will not proceed, preventing a compromised kernel from running. |
 | **5. System & App Verification** | The trusted kernel mounts and verifies the integrity of the root filesystem and key applications. | The specific service or application fails to start. |
+
+For CRA evidence, document more than the happy path. Auditors and assessors will expect to understand what happens when verification fails, how rollback is prevented, how recovery is authenticated, and how debug or manufacturing modes are disabled before normal operation.
 
 ## 4. Accelerating Compliance with Tooling
 
@@ -93,9 +108,13 @@ To build a secure boot mechanism that meets regulatory requirements, ensure you 
 
 - [ ] **Hardware-Anchored RoT:** Is your chain of trust initiated by immutable code (Boot ROM) and a key hash stored in write-once hardware (eFuses/OTP)?
 - [ ] **Full Chain Verification:** Is every mutable software component in the boot chain cryptographically verified before execution?
+- [ ] **Rollback Protection:** Are version counters, anti-rollback metadata, or equivalent controls protected against unauthorised downgrade?
+- [ ] **Secure Recovery:** If an update or boot attempt fails, does the device recover to a known-good, authenticated state rather than a weak fallback mode?
+- [ ] **Debug Lockdown:** Are JTAG, SWD, UART, DMA, and manufacturing/debug interfaces disabled, fused off, or strongly authenticated before production use?
 - [ ] **Secure Key Storage:** Are your private signing keys generated, stored, and used exclusively within a Hardware Security Module (HSM)?
 - [ ] **Fail-Secure Design:** Does the device refuse to boot or enter a safe recovery mode if any part of the chain of trust is broken?
-- [ ] **Process Documentation:** Is your code signing and key management process documented in your technical file?
+- [ ] **Measurement and Logs:** If measured boot or boot logging is implemented, are measurements and logs protected against tampering and sensitive-data leakage?
+- [ ] **Process Documentation:** Is your code signing, key management, update, recovery, and boot-test evidence documented in your technical file?
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

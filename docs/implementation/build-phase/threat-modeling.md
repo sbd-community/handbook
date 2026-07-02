@@ -25,7 +25,7 @@ The output of your threat model is the primary evidence that you have fulfilled 
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes.** Performing and documenting a cybersecurity risk assessment is the most explicit and foundational requirement of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**. There are no exceptions for any 'product with digital elements'.
+**Yes.** Performing and documenting a cybersecurity risk assessment is the most explicit and foundational requirement of the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**. There are no exceptions for any 'product with digital elements'.
 
 The CRA is a **risk-based** regulation. This means the risk assessment is the engine that drives all other security decisions. You cannot justify the security controls you choose to implement (or not implement) without first having a documented analysis of the risks.
 

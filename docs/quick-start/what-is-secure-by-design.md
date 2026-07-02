@@ -14,7 +14,7 @@ This approach marks a fundamental change in responsibility. As CISA, the US Cybe
 
 Secure-by-Design is no longer just a best practice; it is rapidly becoming a legal and commercial requirement for placing products on the market. Major global economies and standards bodies are codifying these principles.
 
--   The **[EU Cyber-Resilience Act (CRA)](../standards/eu/cra-overview.md)** establishes rigorous security standards for all "products with digital elements" sold in the EU, making SbD the starting point for compliance.
+-   The **[EU Cyber-Resilience Act (CRA)](../standards/eu/cra/index.md)** establishes rigorous security standards for all "products with digital elements" sold in the EU, making SbD the starting point for compliance.
 -   The **[UK's Product Security and Telecommunications Infrastructure (PSTI) Act](../standards/uk/psti-overview.md)** legally requires manufacturers of consumer connectable products to follow a set of security principles.
 -   The **[EU NIS 2 Directive](../standards/eu/nis2-overview.md)** requires essential service operators to manage supply chain risk, implicitly demanding that their suppliers (i.e., device makers) follow Secure-by-Design practices.
 -   The **[IEC 62443 series](../standards/global/iec62443-overview.md)** provides a framework for securing Industrial Automation and Control Systems (IACS) that is rooted in a security lifecycle approach.

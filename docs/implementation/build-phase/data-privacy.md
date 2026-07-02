@@ -16,7 +16,7 @@ It involves integrating privacy-enhancing controls into the product's core archi
 
 ### 1.2. The Regulatory Requirement
 
-Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guidelines:
+Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guidelines:
 
 -   **Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])**: The CRA requires that data collection and processing is limited "to only what is necessary". The BSI guideline ([REQ_ER 8][bsi_tr_03183_p1]) reinforces this, stating data should only be processed for the product's intended purpose.
 -   **Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])**: The CRA mandates that manufacturers must "provide a function for users to securely and completely delete all personal and configuration data." This is mirrored in the BSI's requirement for a secure deletion mechanism ([REQ_ER 14][bsi_tr_03183_p1]).
@@ -25,7 +25,7 @@ Beyond the CRA, the **[Radio Equipment Directive (RED)](./../../standards/eu/red
 
 ### 1.3. Do I Really Need to Do This?
 
-This guide covers two key privacy obligations from the EU's **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)**: **Data Minimisation** and **Secure Data Deletion**. While these principles have a broad scope, their application depends on the specific nature of your product. Rather than being a simple "yes" or "no", the question is about understanding *which* rules apply.
+This guide covers two key privacy obligations from the EU's **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**: **Data Minimisation** and **Secure Data Deletion**. While these principles have a broad scope, their application depends on the specific nature of your product. Rather than being a simple "yes" or "no", the question is about understanding *which* rules apply.
 
 #### Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])
 

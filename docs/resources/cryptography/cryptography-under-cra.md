@@ -80,7 +80,7 @@ This page is a conceptual bridge between CRA’s legal text and the practical en
 
 To turn these ideas into concrete steps:
 
-- **Understand the obligations:** Start with the [CRA Overview](../../standards/eu/cra-overview.md) and the [European Commission's official FAQ][ec_faq], especially the Annex I tables mapping confidentiality and integrity requirements to engineering tasks.
+- **Understand the obligations:** Start with the [CRA Overview](../../standards/eu/cra/index.md) and the [European Commission's official FAQ][ec_faq], especially the Annex I tables mapping confidentiality and integrity requirements to engineering tasks.
 - **Design your cryptography stack:** Use the build-phase implementation guides to design and implement cryptography in your product:
   - [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) – how to generate, provision, and protect keys.
   - [Secure Boot](../../implementation/build-phase/secure-boot.md) – how to enforce integrity of firmware and configuration.

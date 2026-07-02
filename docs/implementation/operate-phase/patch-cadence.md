@@ -19,7 +19,7 @@ This policy is not just a technical document; it's a key part of building custom
 
 ### 1.2. The Regulatory Requirement
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates that manufacturers must address and remediate vulnerabilities "without delay." A patch management policy is the primary way to demonstrate compliance. Key requirements include:
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** mandates that manufacturers must address and remediate vulnerabilities "without delay." A patch management policy is the primary way to demonstrate compliance. Key requirements include:
 
 -   **Handling Vulnerabilities ([Annex I, Part II, § 2][cra_annexI])**: Manufacturers must have processes to "handle and remediate vulnerabilities without delay".
 -   **Distribution of Updates ([Annex I, Part II, § 4][cra_annexI])**: Manufacturers must have a mechanism to "securely distribute updates".
@@ -29,7 +29,7 @@ This policy must be public-facing to set clear expectations for customers about 
 
 ### 1.3. Do I Really Need to Do This?
 
-The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** requires manufacturers to have a process to handle vulnerabilities "without delay." For any product that has updateable software, a documented policy with a risk-based patch cadence is the only credible way to demonstrate compliance.
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to have a process to handle vulnerabilities "without delay." For any product that has updateable software, a documented policy with a risk-based patch cadence is the only credible way to demonstrate compliance.
 
 The real question is not *if* you need a policy, but **"What does a compliant vulnerability handling policy look like for my specific product?"**
 

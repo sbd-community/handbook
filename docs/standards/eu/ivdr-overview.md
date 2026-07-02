@@ -21,7 +21,7 @@ The IVDR's scope is broad, covering everything from simple test kits to complex 
 While the IVDR lays down the legal requirements, the **Medical Device Coordination Group (MDCG)** publishes guidance that represents the "state of the art" for compliance. The key cybersecurity guidance for the MDR applies equally to the IVDR.
 - **Cybersecurity**: [MDCG 2019-16 – Guidance on Cybersecurity for medical devices][mdcg_2019_16]
 
-Because the "state of the art" in cybersecurity evolves rapidly, guidance from other modern regulations can be highly valuable. While primarily a playbook for the [Cyber-Resilience Act](./cra-overview.md), Germany's BSI technical guideline is an excellent resource for implementing best practices that support IVDR compliance.
+Because the "state of the art" in cybersecurity evolves rapidly, guidance from other modern regulations can be highly valuable. While primarily a playbook for the [Cyber-Resilience Act](./cra/index.md), Germany's BSI technical guideline is an excellent resource for implementing best practices that support IVDR compliance.
 - **Best Practice Reference**: [BSI TR-03183 – Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
 :::
 
@@ -39,7 +39,7 @@ Because the "state of the art" in cybersecurity evolves rapidly, guidance from o
 
 | Law | How it interacts with the IVDR |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | Like the MDR, products qualifying as in vitro diagnostic medical devices under the IVDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The IVDR provides its own specific cybersecurity rules. |
+| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | Like the MDR, products qualifying as in vitro diagnostic medical devices under the IVDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The IVDR provides its own specific cybersecurity rules. |
 | **[GDPR](https://gdpr-info.eu/)** | IVDs can generate and process vast amounts of sensitive personal health data. The security requirements in the IVDR are critical for fulfilling the data protection obligations of the GDPR. |
 | **[MDR](./mdr-overview.md)** | The MDR is a parallel regulation covering medical devices. Its structure and cybersecurity requirements are nearly identical to the IVDR's. |
 

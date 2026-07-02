@@ -31,7 +31,7 @@ The SSDF does not provide specific "how-to" guidance for the unique challenges o
 | :--- | :--- |
 | **[CISA SBD Principles](../../quick-start/cisa-sbd-principles.md)** | CISA provides the high-level philosophy and goals for Secure by Design. The SSDF provides the concrete, structured framework of practices and tasks—the "how-to"—for implementing those principles within a software development lifecycle. |
 | **[NISTIR 8259 Series](./nistir8259-overview.md)** | The SSDF is a generic framework for any software. NISTIR 8259 provides specific, device-centric cybersecurity capabilities and baselines for IoT products. Manufacturers use the SSDF process to build products that meet the NISTIR 8259 technical requirements. |
-| **[EU Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA legally mandates a secure development lifecycle and vulnerability handling processes. The SSDF provides a comprehensive set of practices that can be used as a direct blueprint for meeting the CRA's essential requirements in Annex I. |
+| **[EU Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | The CRA legally mandates a secure development lifecycle and vulnerability handling processes. The SSDF provides a comprehensive set of practices that can be used as a direct blueprint for meeting the CRA's essential requirements in Annex I. |
 | **[IEC 62443 Series](../global/iec62443-overview.md)** | Similar to NISTIR 8259, IEC 62443 provides detailed technical requirements, but for Industrial Automation and Control Systems (IACS). The SSDF provides the process framework that an IACS manufacturer would use to implement the required security levels from IEC 62443-4-1 (secure product development). |
 
 ## 2. The SSDF at a Glance: Scope & Pillars
@@ -47,7 +47,7 @@ The framework organizes secure development practices into four groups, or pillar
 
 ## 3. SSDF Practices & Implementation
 
-The following tables remap the SSDF's practices into a structure that aligns with the key phases of a product security program, similar to how we present regulations like the [Cyber-Resilience Act](../eu/cra-overview.md). This provides a clear, task-oriented path from the framework's principles to engineering reality.
+The following tables remap the SSDF's practices into a structure that aligns with the key phases of a product security program, similar to how we present regulations like the [Cyber-Resilience Act](../eu/cra/index.md). This provides a clear, task-oriented path from the framework's principles to engineering reality.
 
 ### 3.1 Risk Assessment & Threat Modeling
 Before any code is written, the SSDF mandates a proactive approach to identifying and mitigating risks. This begins with understanding the product's context and performing a systematic threat analysis to inform all subsequent security work.
@@ -93,7 +93,7 @@ These high-level practices establish the organizational foundation for a success
 
 ## 4. Assessing Conformance with the SSDF
 
-Unlike a formal regulation like the EU's [Cyber-Resilience Act (CRA)](../eu/cra-overview.md), the SSDF is a *framework*, not a law with a prescribed certification scheme. There is no official "SSDF Certification" or a system of third-party audits that grants market access. Instead, demonstrating conformance is about attestation, internal validation, and preparation for other regulatory requirements.
+Unlike a formal regulation like the EU's [Cyber-Resilience Act (CRA)](../eu/cra/index.md), the SSDF is a *framework*, not a law with a prescribed certification scheme. There is no official "SSDF Certification" or a system of third-party audits that grants market access. Instead, demonstrating conformance is about attestation, internal validation, and preparation for other regulatory requirements.
 
 ### 4.1 US Government Self-Attestation
 The most significant driver for SSDF conformance is **US Executive Order 14028**, "Improving the Nation's Cybersecurity." In response, the Office of Management and Budget (OMB) requires that any software provider selling to US federal agencies must sign a **Secure Software Development Attestation Form**.
@@ -108,7 +108,7 @@ Many organizations use the SSDF as a maturity model to benchmark their existing 
 
 ### 4.3 Preparing for Formal Audits
 While the SSDF itself doesn't mandate audits, adopting it is excellent preparation for regulations that do. A development process built on the SSDF's principles generates the exact kind of evidence needed for formal audits under other schemes:
-- **For the CRA**: An SSDF-aligned process directly addresses the secure development lifecycle requirements in [CRA Annex I](../eu/cra-overview.md#annex-i-requirements).
+- **For the CRA**: An SSDF-aligned process directly addresses the secure development lifecycle requirements in [CRA Annex I](../eu/cra/index.md#annex-i-requirements).
 - **For the FDA**: The SSDF aligns with the principles in the FDA's cybersecurity guidance for medical devices.
 
 By treating the SSDF as a blueprint, a manufacturer can be confident they are building the processes and documentation required to pass future mandatory audits.

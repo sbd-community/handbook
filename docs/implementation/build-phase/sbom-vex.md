@@ -18,7 +18,7 @@ Together, they are the key to efficient and transparent vulnerability management
 
 ### 1.2. The Regulatory Requirement
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** establishes the legal obligation for manufacturers to provide an SBOM:
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** establishes the legal obligation for manufacturers to provide an SBOM:
 
 -   **Component Documentation ([Annex I, Part II, § 1][cra_annexI])**: The CRA requires manufacturers to "identify and document components, including by drawing up a software bill of materials".
 -   The BSI TR-03183-1 reinforces this, requiring a documented list of all integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
@@ -26,7 +26,7 @@ The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** estab
 
 ### 1.3. Do I Really Need to Do This?
 
-The legal mandate from the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra-overview.md)** is to "identify and document components, including by drawing up a software bill of materials." This makes the core question for a manufacturer not *if* they need to comply, but rather: **"Does my product contain software components?"**
+The legal mandate from the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** is to "identify and document components, including by drawing up a software bill of materials." This makes the core question for a manufacturer not *if* they need to comply, but rather: **"Does my product contain software components?"**
 
 #### The SBOM Requirement
 
@@ -34,6 +34,8 @@ For any product that runs firmware, uses a real-time operating system (RTOS), in
 
 -   **What if we write all our own code?** The requirement is to document *components*. This includes your own internal modules, not just third-party dependencies. An SBOM is still the required format for this documentation. This practice is essential for tracking vulnerabilities, even in your own first-party code, and is a core part of a secure development lifecycle.
 -   **Is there any exception?** The only credible exception is for a product that contains **no software components at all**. This would be a very simple device where the logic is implemented entirely in a fixed-function hardware chip (an ASIC, or Application-Specific Integrated Circuit) with no associated firmware. For any 'product with digital elements' that uses a microcontroller or a processor, this is extremely rare.
+
+Boot managers and bootloader components should be treated as first-class SBOM entries. The draft **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** makes vulnerability handling and support-period evidence relevant even for low-level firmware that many teams historically tracked outside their normal software inventory.
 
 #### The VEX Requirement
 

@@ -7,7 +7,7 @@ tags: [cisa, secure-by-design, sbd, principles, us, guidance]
 
 ## 1. Why this guidance matters
 
-While not a formal standard or regulation, the **[Principles and Approaches for Secure by Design Software][cisa_pdf]** is arguably the most important foundational document for the modern product security movement. Published by the US Cybersecurity & Infrastructure Security Agency (CISA) and co-authored by national cybersecurity agencies from across the globe, it represents a unified international consensus on the philosophy that underpins new legislation like the [EU's Cyber-Resilience Act](../standards/eu/cra-overview.md).
+While not a formal standard or regulation, the **[Principles and Approaches for Secure by Design Software][cisa_pdf]** is arguably the most important foundational document for the modern product security movement. Published by the US Cybersecurity & Infrastructure Security Agency (CISA) and co-authored by national cybersecurity agencies from across the globe, it represents a unified international consensus on the philosophy that underpins new legislation like the [EU's Cyber-Resilience Act](../standards/eu/cra/index.md).
 
 It serves as a manifesto for a fundamental shift in responsibility: moving the burden of security from the consumer to the manufacturer. While the CISA guidance applies broadly to all software manufacturers, this handbook focuses on applying these core principles to the specific challenges of building **connected products**. For any team working with hardware and firmware, this document explains the "why" behind the specific engineering tasks detailed in this handbook.
 

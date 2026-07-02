@@ -11,6 +11,8 @@ With the **EU Cyber Resilience Act (CRA)** expected to enter into force in lat
 
 Espressif’s **ESP32** portfolio provides these capabilities at a consumer‑grade price, backed by an open‑source SDK (ESP‑IDF) and long‑term support releases. This guide compares every current ESP32 series and shows how to pick the right device (or certified module) when designing for CRA compliance.
 
+Emerging CRA vertical standards make this hardware choice more important. The interim **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** draft for boot managers points toward evidence for verified boot, rollback protection, secure recovery, key provisioning, and debug-interface control. Treat it as design intelligence, not a presumption-of-conformity route, until the final standard is cited in the Official Journal.
+
 ## 1. ESP32 Family Cheat‑Sheet
 
 Espressif divides its chips into five sub‑families:
@@ -70,11 +72,14 @@ Where space is critical and you already control RF design, pick the bare SoC. Ot
 | *Unique device identity*               | Burn device‑unique **[eFuse keys][esp-efuse]** plus optional X.509 cert stored in HMAC‑protected flash.                                                      |
 | *CE marking & documentation*           | Select a **[WROOM/MINI module][esp-modules]** with existing EU certification and include Espressif’s module Declaration of Conformity in your technical file. |
 
+For boot-manager evidence, also confirm that your exact ESP32 variant and production configuration can support the security case you intend to make: immutable or one-time-programmed trust anchors, anti-rollback eFuses, signed update recovery, locked or authenticated debug access, and records showing those settings were applied during manufacturing.
+
 ### 5. Take‑aways
 
 * Start with a security-capable chip from the S2, S3, C, H, or P-series.
 * Use modules to accelerate radio certification.
 * Enable Secure Boot v2 and Flash Encryption.
+* Verify anti-rollback, debug-lockdown, and recovery behaviour on the exact production configuration.
 * Use an LTS version of the ESP-IDF.
 * Automate OTA updates for the required support lifetime.
 

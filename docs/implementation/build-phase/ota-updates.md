@@ -16,14 +16,14 @@ An OTA update is more than just transferring a file; it is a multi-stage defense
 
 ### 1.2. The Regulatory Requirement
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** places a heavy emphasis on the manufacturer's ability to provide timely and secure updates. A compliant OTA system is essential for meeting several key requirements:
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** places a heavy emphasis on the manufacturer's ability to provide timely and secure updates. A compliant OTA system is essential for meeting several key requirements:
 
 -   **Security Updates by Design ([Annex I § 1 (2)(c)][cra_annexI])**: The CRA mandates that products be designed to ensure that security updates "can be installed separately from functionality updates." The BSI TR-03183-1 clarifies this, requiring a mechanism for "timely, integrity-protected security updates" ([REQ_ER 4][bsi_tr_03183_p1]).
 -   **Integrity Protection ([Annex I § 1 (2)(f)][cra_annexI])**: The act requires manufacturers to protect the integrity of all code and data. For OTA, this means the update package itself must be cryptographically protected to prevent tampering.
 
 ### 1.3. Do I Really Need to Do This?
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** makes the ability to address vulnerabilities a cornerstone of compliance. For nearly all modern connected products, this translates to a mandatory requirement for a secure update mechanism.
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** makes the ability to address vulnerabilities a cornerstone of compliance. For nearly all modern connected products, this translates to a mandatory requirement for a secure update mechanism.
 
 However, the regulations do not demand the impossible. The BSI's guideline ([REQ_ER 4.1][bsi_tr_03183_p1]) states that a product's components must be updateable, but makes an exception for components that cannot be updated due to "security architecture or technical limitations." This provides two specific, narrow paths for exemption:
 
@@ -63,6 +63,8 @@ The device must be able to prove that a received update package is from a legiti
 An attacker might try to trick a device into installing an older, known-vulnerable version of the firmware to re-exploit a patched vulnerability. This is known as a rollback attack.
 
 - **How:** The system must enforce version monotonicity. The simplest method is to include a version number with the firmware image and store the current version number in a secure, tamper-proof location on the device (e.g., fuses, or a trusted storage area). The device must reject any update with a version number less than or equal to the currently installed version.
+
+For boot managers, anti-rollback and update recovery are also emerging as assessor-facing evidence topics under **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**. Treat bootloader updates as part of the trust-chain design, not just as another firmware payload.
 
 ### 2.3 Confidentiality
 While not always a strict requirement, encrypting the update package protects the manufacturer's intellectual property (IP) and prevents competitors or attackers from reverse-engineering the firmware.

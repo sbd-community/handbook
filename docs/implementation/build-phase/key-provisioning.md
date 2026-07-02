@@ -21,7 +21,7 @@ This process is distinct from, but closely related to, establishing a **[Unique 
 
 While regulations may not specify the exact method of key storage, they mandate outcomes that depend entirely on secure key management. The primary driver is:
 
--   **Confidentiality Protection ([Annex I § 1 (2)(e)][cra_annexI])**: The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires manufacturers to protect the confidentiality of data "at-rest and in-transit using state-of-the-art encryption." The BSI TR-03183-1 reinforces this, requiring the protection of all "sensitive data and parameters" ([REQ_ER 6][bsi_tr_03183_p1]).
+-   **Confidentiality Protection ([Annex I § 1 (2)(e)][cra_annexI])**: The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to protect the confidentiality of data "at-rest and in-transit using state-of-the-art encryption." The BSI TR-03183-1 reinforces this, requiring the protection of all "sensitive data and parameters" ([REQ_ER 6][bsi_tr_03183_p1]).
 
 State-of-the-art encryption is only effective if the keys themselves are protected from disclosure and modification. Therefore, a robust key provisioning and storage strategy is an implicit and non-negotiable requirement.
 
@@ -29,7 +29,7 @@ State-of-the-art encryption is only effective if the keys themselves are protect
 
 The need for secure key provisioning and storage is a direct consequence of other security requirements. Rather than asking *if* you need to do it, the better question is: **"Does my product use cryptography for any of its functions?"**
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** mandates several security outcomes that implicitly require the use of cryptography, and therefore keys:
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** mandates several security outcomes that implicitly require the use of cryptography, and therefore keys:
 
 -   **Confidentiality ([Annex I § 1 (2)(e)][cra_annexI])**: If you store or transmit any sensitive data (e.g., user credentials, network passwords, personal information), you must encrypt it. Encryption requires keys.
 -   **Integrity of Software Updates ([Annex I § 1 (2)(d)][cra_annexI])**: Your device must be able to address vulnerabilities through security updates. The BSI's guideline ([REQ_ER 4.2][bsi_tr_03183_p1]) clarifies this means verifying the "integrity and authenticity of the update package". This requires cryptographic signatures, which in turn rely on keys.

@@ -34,7 +34,7 @@ The ICO's IoT guidance is the key reference for applying these rules to connecte
 |-----|----------------------------|
 | **UK GDPR** | PECR's rules on consent for cookies and marketing are linked to the GDPR's definition of consent. If you need consent under PECR, you **must** meet the high standard of UK GDPR consent. Information collected via IoT devices (e.g. health data from a wearable) may also be 'special category data', requiring an additional legal basis under GDPR. |
 | **[PSTI Act](./psti-overview.md)** | The Product Security and Telecommunications Infrastructure (PSTI) Act 2022 focuses on the security of the device itself (e.g., banning default passwords). PECR focuses on the privacy of the communications that use that device. The two are complementary: a PSTI-compliant device helps ensure the confidentiality that PECR requires. |
-| **[Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | For UK manufacturers selling into the EU, the Cyber-Resilience Act will impose product security requirements. Like PSTI, the CRA is complementary to PECR, ensuring the device is secure enough to protect the communications flowing through it. |
+| **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | For UK manufacturers selling into the EU, the Cyber-Resilience Act will impose product security requirements. Like PSTI, the CRA is complementary to PECR, ensuring the device is secure enough to protect the communications flowing through it. |
 
 ## 2. Scope – Which Products are Covered?
 

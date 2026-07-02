@@ -12,7 +12,7 @@ The EU has established a comprehensive legal framework for cybersecurity, creati
 
 | Standard | Summary | Link |
 | :--- | :--- | :--- |
-| **Cyber-Resilience Act (CRA)** | Horizontal cybersecurity law for all "products with digital elements". | [CRA Overview](./cra-overview.md) |
+| **Cyber-Resilience Act (CRA)** | Horizontal cybersecurity law for all "products with digital elements", including emerging harmonised standards for specific product categories. | [CRA Overview](./cra/index.md) |
 | **NIS 2 Directive** | Risk management rules for operators of essential and important services. | [NIS 2 Overview](./nis2-overview.md) |
 | **Radio Equipment Directive (RED)** | Security & privacy rules for network-connected radio equipment. | [RED Overview](./red-overview.md) |
 | **Medical Device Regulation (MDR)** | Safety and security requirements for medical devices, which are exempt from the CRA. | [MDR Overview](./mdr-overview.md) |

@@ -1,6 +1,6 @@
 ---
 title: Cyber-Resilience Act (CRA)
-sidebar_position: 1
+slug: /standards/eu/cra-overview
 tags: [cra, compliance, eu, secure-by-design]
 ---
 # Cyber-Resilience Act (CRA)
@@ -20,7 +20,10 @@ The consolidated version is easier for clause citations, but in case of doubt th
 :::info Implementation Guidance
 While harmonised standards are still under development, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance.
 
+Several CRA harmonised standards are now available as mature drafts. They are not yet cited in the Official Journal and do not yet provide presumption of conformity, but they should be treated as important design inputs for relevant product categories. For boot managers, see **[ETSI EN 304 623: Boot Managers](./en-304-623-boot-managers.md)**, which explains the draft technical requirements and assessment criteria for boot managers under CRA Annex III Class I.
+
 - **BSI TR-03183**: [Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
+- **CRA Harmonised Standards**: [overview and draft tracker](./harmonised-standards.md)
 - **European Commission FAQ**: [FAQs on the Cyber Resilience Act][ec_faq] (Version 1.0, 3 December 2025)
 :::
 
@@ -51,8 +54,8 @@ While harmonised standards are still under development, Germany's Federal Office
 
 | Law | How it interacts with CRA |
 |-----|---------------------------|
-| **[NIS 2 Directive](./nis2-overview.md)** | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 13][cra_rec13], [CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
-| **[Radio Equipment Directive (RED)](./red-overview.md)** | Radio device security requirements exist in **[RED Art. 3 § 3 (d-f)][red_art3]**. CRA covers a wider range of products and its requirements include all elements of the RED's. ([CRA Recital 30][cra_rec30]) |
+| **[NIS 2 Directive](../nis2-overview.md)** | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 13][cra_rec13], [CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
+| **[Radio Equipment Directive (RED)](../red-overview.md)** | Radio device security requirements exist in **[RED Art. 3 § 3 (d-f)][red_art3]**. CRA covers a wider range of products and its requirements include all elements of the RED's. ([CRA Recital 30][cra_rec30]) |
 | **RED Delegated Act** | Makes security clauses mandatory for certain wireless devices from **1 August 2025**. This date is the result of a 12-month extension, granted by **[Regulation (EU) 2023/2444][red_del_23_2444]**, to allow more time for harmonised standards to be developed. The original act is **[Regulation (EU) 2022/30][red_del_22_30]**. |
 | **CE-marking framework** | CRA **adds** cybersecurity to the CE mark through Articles **28–30**. A PDE may affix the mark only *after* Annex I/II compliance and completion of the appropriate conformity-assessment route. ([CRA Art. 28][cra_art28], [CRA Art. 30][cra_art30], [CRA Rec. 89][cra_rec89], [CRA Rec. 93][cra_rec93]) |
 
@@ -93,7 +96,7 @@ All three conditions must be met.
 
 | Excluded or separate regime | Legal reason |
 |-----------------------------|--------------|
-| Medical devices | Already covered by **[MDR 2017/745](./mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
+| Medical devices | Already covered by **[MDR 2017/745](../mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
 | Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 2(c)][cra_art2]) |
 | Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 3][cra_art2]) |
 | Defence & national security items | Excluded ([CRA Art. 2 § 7][cra_art2]) |
@@ -119,24 +122,24 @@ This proactive approach ensures that security is not an afterthought but a found
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Cybersecurity risk assessment**<br/>[CRA Art. 13 § 2][cra_art13]<br/>[BSI TR-03183-1: REQ_RA 1][bsi_tr_03183_p1] | Perform and document a risk assessment covering the product's intended and reasonably foreseeable use. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
+| **Cybersecurity risk assessment**<br/>[CRA Art. 13 § 2][cra_art13]<br/>[BSI TR-03183-1: REQ_RA 1][bsi_tr_03183_p1] | Perform and document a risk assessment covering the product's intended and reasonably foreseeable use. | [Threat Modeling](../../../implementation/build-phase/threat-modeling.md) |
 
 ### 3.2 Product security (Annex I Part I)
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
-| **No known vulnerabilities**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.2][ec_faq] | Ship without known exploitable vulnerabilities; establish a process to identify vulnerabilities in all product components. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md)<br/>[Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.4][ec_faq] | Provide a secure-by-default configuration that supports intended use and can be fully restored via a reset function. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **Security updates by design**<br/>[Annex I § 1 (2)(c)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4][bsi_tr_03183_p1] | Provide timely, integrity-protected security updates via a secure and automated mechanism (with user opt-out). | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
-| **Access control**<br/>[Annex I § 1 (2)(d)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 5][bsi_tr_03183_p1] | Implement an access control model based on least privilege; prevent and log unauthorised access attempts. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
-| **Confidentiality protection**<br/>[Annex I § 1 (2)(e)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 6][bsi_tr_03183_p1] | Protect confidentiality of sensitive data at-rest and in-transit using state-of-the-art encryption. | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
-| **Integrity protection**<br/>[Annex I § 1 (2)(f)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 7][bsi_tr_03183_p1] | Protect integrity of all code, data, and configuration using state-of-the-art mechanisms; detect and handle violations. | [Secure Boot](../../implementation/build-phase/secure-boot.md) |
-| **Data minimisation**<br/>[Annex I § 1 (2)(g)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 8][bsi_tr_03183_p1] | Limit data collection and processing to only what is necessary for the product's intended purpose. | [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
-| **Resilience & availability**<br/>[Annex I § 1 (2)(h), (i)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 9, 10][bsi_tr_03183_p1] | Protect essential functions against DoS attacks and prevent the product being used in attacks against other systems. | [Device Lifecycle Management](../../tools/device-lifecycle-management.md) |
-| **Attack surface reduction**<br/>[Annex I § 1 (2)(j)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 11][bsi_tr_03183_p1] | Minimise attack surfaces by securing all interfaces and disabling unused physical ports and network services. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **Exploit mitigation**<br/>[Annex I § 1 (2)(k)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 12][bsi_tr_03183_p1] | Use and enable modern exploit mitigation techniques (e.g., ASLR, stack protection, CET). | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
-| **Security logging**<br/>[Annex I § 1 (2)(l)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 13][bsi_tr_03183_p1] | Log all security-relevant events by default, including access attempts and setting changes, with a user opt-out. | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
-| **Secure data deletion**<br/>[Annex I § 1 (2)(m)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 14][bsi_tr_03183_p1] | Provide a function for users to securely and completely delete all personal and configuration data. | [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md) |
+| **No known vulnerabilities**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.2][ec_faq] | Ship without known exploitable vulnerabilities; establish a process to identify vulnerabilities in all product components. | [CI/CD Hardening](../../../implementation/operate-phase/cicd-hardening.md)<br/>[Static & Dynamic Analysis](../../../tools/static-and-dynamic-analysis.md) |
+| **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.4][ec_faq] | Provide a secure-by-default configuration that supports intended use and can be fully restored via a reset function. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
+| **Security updates by design**<br/>[Annex I § 1 (2)(c)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4][bsi_tr_03183_p1] | Provide timely, integrity-protected security updates via a secure and automated mechanism (with user opt-out). | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md) |
+| **Access control**<br/>[Annex I § 1 (2)(d)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 5][bsi_tr_03183_p1] | Implement an access control model based on least privilege; prevent and log unauthorised access attempts. | [Unique Device Identity](../../../implementation/build-phase/unique-device-identity.md) |
+| **Confidentiality protection**<br/>[Annex I § 1 (2)(e)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 6][bsi_tr_03183_p1] | Protect confidentiality of sensitive data at-rest and in-transit using state-of-the-art encryption. | [Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md) |
+| **Integrity protection**<br/>[Annex I § 1 (2)(f)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 7][bsi_tr_03183_p1] | Protect integrity of all code, data, and configuration using state-of-the-art mechanisms; detect and handle violations. | [Secure Boot](../../../implementation/build-phase/secure-boot.md) |
+| **Data minimisation**<br/>[Annex I § 1 (2)(g)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 8][bsi_tr_03183_p1] | Limit data collection and processing to only what is necessary for the product's intended purpose. | [Data Privacy & Secure Deletion](../../../implementation/build-phase/data-privacy.md) |
+| **Resilience & availability**<br/>[Annex I § 1 (2)(h), (i)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 9, 10][bsi_tr_03183_p1] | Protect essential functions against DoS attacks and prevent the product being used in attacks against other systems. | [Device Lifecycle Management](../../../tools/device-lifecycle-management.md) |
+| **Attack surface reduction**<br/>[Annex I § 1 (2)(j)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 11][bsi_tr_03183_p1] | Minimise attack surfaces by securing all interfaces and disabling unused physical ports and network services. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
+| **Exploit mitigation**<br/>[Annex I § 1 (2)(k)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 12][bsi_tr_03183_p1] | Use and enable modern exploit mitigation techniques (e.g., ASLR, stack protection, CET). | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
+| **Security logging**<br/>[Annex I § 1 (2)(l)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 13][bsi_tr_03183_p1] | Log all security-relevant events by default, including access attempts and setting changes, with a user opt-out. | [Security Logging & Monitoring](../../../implementation/operate-phase/security-logging.md) |
+| **Secure data deletion**<br/>[Annex I § 1 (2)(m)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 14][bsi_tr_03183_p1] | Provide a function for users to securely and completely delete all personal and configuration data. | [Data Privacy & Secure Deletion](../../../implementation/build-phase/data-privacy.md) |
 
 #### 3.2.1 Cryptography and “state-of-the-art” mechanisms
 
@@ -146,7 +149,15 @@ Annex I does not prescribe specific algorithms, key sizes, or protocol versions.
 - Avoiding obsolete or home-grown cryptographic schemes, especially for long-lived connected products.
 - Designing products with enough **cryptographic agility** to adopt new recommended mechanisms, and to retire legacy ones, during the support period.
 
-The detailed cryptographic expectations will be specified in CRA harmonised standards (see [§ 4.3 – The Role of Harmonised Standards](#harmonised-standards)) and related guidance. For a practitioner-focused overview of how Annex I’s confidentiality and integrity requirements translate into cryptographic design choices, see **[Cryptography under the Cyber-Resilience Act](../../resources/cryptography/cryptography-under-cra.md)**.
+The detailed cryptographic expectations will be specified in CRA harmonised standards (see [§ 4.3 – The Role of Harmonised Standards](#harmonised-standards)) and related guidance. For a practitioner-focused overview of how Annex I’s confidentiality and integrity requirements translate into cryptographic design choices, see **[Cryptography under the Cyber-Resilience Act](../../../resources/cryptography/cryptography-under-cra.md)**.
+
+#### 3.2.2 Boot managers and the bottom of the trust chain
+
+Boot managers are explicitly listed as **Important Products — Class I** in [CRA Annex III.I.8][cra_annexIII]. That matters because boot managers establish the first software-controlled link in the chain of trust: they select, verify, measure, or load the boot target before the operating system or application security controls are available.
+
+The interim **[ETSI EN 304 623](./en-304-623-boot-managers.md)** draft shows how CRA expectations may become testable requirements for boot-manager products. It defines use cases for immutable boot managers, verified and updateable boot managers, and hardware-assisted boot managers, with corresponding security profiles. The draft covers topics such as verified boot, measured boot, anti-rollback protection, secure updates, key provisioning, debug interface handling, logging, recovery, and assessment evidence.
+
+For embedded-device manufacturers, the practical lesson is that secure boot cannot be treated as a single firmware feature. MCU or SoC selection, immutable trust anchors, hardware-backed key storage, rollback counters, debug lockdown, update recovery, and technical documentation all affect whether a boot architecture can support CRA conformity.
 
 ### 3.3 Vulnerability handling (Annex I Part II)
 
@@ -154,11 +165,11 @@ The CRA makes it a **hard-wired legal duty** for manufacturers to "address and r
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
-| **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>[BSI TR-03183-2 § 5.2][bsi_tr_03183_p2] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
-| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1]<br/>[EC FAQ 4.3.1, 4.3.5][ec_faq] | Address and remediate vulnerabilities without undue delay, providing timely security updates via a secure mechanism. | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
-| **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Regularly test the product for vulnerabilities using both internal processes and independent experts. | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Public vulnerability information**<br/>[Annex I Part II § 4, 5][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.3][bsi_tr_03183_p3] | Inform users about fixed vulnerabilities, their impact, and mitigation steps via security advisories. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Publish a clear vulnerability disclosure policy and provide an easily accessible contact channel for vulnerability reporting. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>[BSI TR-03183-2 § 5.2][bsi_tr_03183_p2] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components. | [SBOM & VEX Workflows](../../../implementation/build-phase/sbom-vex.md) |
+| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1]<br/>[EC FAQ 4.3.1, 4.3.5][ec_faq] | Address and remediate vulnerabilities without undue delay, providing timely security updates via a secure mechanism. | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../../implementation/operate-phase/patch-cadence.md) |
+| **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Regularly test the product for vulnerabilities using both internal processes and independent experts. | [Static & Dynamic Analysis](../../../tools/static-and-dynamic-analysis.md) |
+| **Public vulnerability information**<br/>[Annex I Part II § 4, 5][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.3][bsi_tr_03183_p3] | Inform users about fixed vulnerabilities, their impact, and mitigation steps via security advisories. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Publish a clear vulnerability disclosure policy and provide an easily accessible contact channel for vulnerability reporting. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
 
 #### How Vulnerabilities are Discovered and Handled
 
@@ -179,7 +190,7 @@ Beyond the direct product and vulnerability requirements in Annex I, the CRA imp
 |---|---|---|
 | **Technical documentation**<br/>[CRA Art. 31, Annex VII][cra_art31] | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **at least 10 years or the support period, whichever is longer**. **Evidence:** Technical file. | n/a |
 | **Conformity & CE mark**<br/>[CRA Art. 13(12), 28, 30][cra_art13] | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). | n/a |
-| **Information to users**<br/>[CRA Art. 13(17-19), Annex II][cra_art13] | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md) |
+| **Information to users**<br/>[CRA Art. 13(17-19), Annex II][cra_art13] | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. | [User Documentation Guide](../../../implementation/build-phase/user-documentation.md) |
 | **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively exploited vulnerability. If requested, provide intermediate status reports. **Evidence:** Incident logs. | n/a |
 
 \* *Dates derive from [CRA Art. 71 § 2][cra_art71] and [Art. 69 § 3][cra_art69]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
@@ -197,6 +208,7 @@ The CRA establishes a four-tier risk classification system ([EC FAQ 3.1–3.4][e
 - **Important Products — Class I:** This tier covers products listed in **[CRA Annex III, Part I][cra_annexIII]**. These products perform functions critical to cybersecurity or pose a significant risk of disruption ([CRA Art. 7 § 2][cra_art7]).
     - **Assessment:** Self-assessment (**Module A**) is possible *if* the manufacturer fully applies relevant harmonised standards. Otherwise, a third-party audit is required ([CRA Art. 32 § 2][cra_art32]).
     - *Examples (from Annex III, Part I):* Identity management systems, password managers, web browsers, smart home products with security functions (e.g., smart locks).
+    - *Boot managers:* ETSI's draft **EN 304 623** is the emerging vertical standard for this category. Until it is finalised and cited in the Official Journal, it should be treated as useful implementation intelligence rather than a presumption-of-conformity route.
 
 - **Important Products — Class II:** This tier covers a smaller list of higher-risk products defined in **[CRA Annex III.II][cra_annexIII]**.
     - **Assessment:** A third-party audit by a Notified Body is **mandatory** ([CRA Art. 32 § 3][cra_art32]).

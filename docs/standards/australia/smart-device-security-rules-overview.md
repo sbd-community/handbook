@@ -33,7 +33,7 @@ The Rules commenced on **4 March 2026**, after a 12-month transition period. Pro
 | :--- | :--- |
 | **[UK PSTI Act](../uk/psti-overview.md)** | The Australian Rules are the closest Australian equivalent to the UK's PSTI security requirements. Both focus on baseline consumer-device controls: passwords, vulnerability reporting, and support-period transparency. |
 | **[ETSI EN 303 645](../global/en303645-overview.md)** | The Rules reflect the first three core consumer IoT security outcomes in EN 303 645: no universal default passwords, vulnerability disclosure, and software update transparency. |
-| **[Cyber-Resilience Act (CRA)](../eu/cra-overview.md)** | The CRA is broader and applies to a wider set of products with digital elements. A manufacturer preparing for CRA obligations will usually already be addressing the engineering controls needed for the Australian baseline, but still needs Australia-specific statements of compliance and scope checks. |
+| **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | The CRA is broader and applies to a wider set of products with digital elements. A manufacturer preparing for CRA obligations will usually already be addressing the engineering controls needed for the Australian baseline, but still needs Australia-specific statements of compliance and scope checks. |
 
 ## 2. Scope - Which products are in?
 

@@ -15,7 +15,7 @@ tags: [logging, monitoring, audit, forensics, cra, secure-by-design]
 -   Perform post-incident forensic analysis to understand an attacker's methods.
 -   Provide evidence of compliance to auditors and regulators.
 
-While much of the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** focuses on prevention, the ability to analyze events after they occur is a key part of state-of-the-art security practices. Without logs, you are operating blind when an incident happens.
+While much of the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** focuses on prevention, the ability to analyze events after they occur is a key part of state-of-the-art security practices. Without logs, you are operating blind when an incident happens.
 
 ### 1.2. The Regulatory Requirement
 
@@ -28,7 +28,7 @@ Effective logging allows you to answer the critical question "What happened?" af
 
 ### 1.3. Do I Really Need to Do This?
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** explicitly requires products to "provide security related information by recording and monitoring relevant internal activity". This is a direct legal requirement.
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly requires products to "provide security related information by recording and monitoring relevant internal activity". This is a direct legal requirement.
 
 The nuance, however, is in the definition of "relevant internal activity." The key question for a manufacturer is not *if* they should log, but **"What events are security-relevant for my product, and what is a proportionate logging mechanism?"**
 

@@ -9,7 +9,7 @@ tags: [nis2, compliance, eu, critical-infrastructure, secure-by-design]
 
 The **NIS 2 Directive (EU) 2022/2555** is a major overhaul of the EU's cybersecurity rules, replacing the original NIS Directive. It aims to create a higher common level of cybersecurity across the Union by expanding its scope, introducing stricter security and reporting requirements, and strengthening enforcement powers.
 
-Unlike the [Cyber-Resilience Act (CRA)](./cra-overview.md), which focuses on the security of *products*, NIS 2 focuses on the cyber resilience of the *organisations* that provide critical services. These organisations—categorised as **'essential'** or **'important'**—must implement robust risk-management measures and report significant incidents to national authorities.
+Unlike the [Cyber-Resilience Act (CRA)](./cra/index.md), which focuses on the security of *products*, NIS 2 focuses on the cyber resilience of the *organisations* that provide critical services. These organisations—categorised as **'essential'** or **'important'**—must implement robust risk-management measures and report significant incidents to national authorities.
 
 :::info Official texts
 - **Official Journal** – Legally binding record as published on 27 Dec 2022: [OJ:L:2022:333 HTML][nis2_oj].
@@ -30,7 +30,7 @@ The consolidated version is the primary reference for this directive.
 
 | Law | How it interacts with NIS 2 |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" must ensure its supply chain is secure ([NIS2 Art. 21(2d)][nis2_art21]), which includes procuring CRA-compliant products. The reporting platform used by manufacturers under the CRA is established and operated under the NIS 2 framework, feeding vulnerability data directly into the EU's incident response system. |
+| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" must ensure its supply chain is secure ([NIS2 Art. 21(2d)][nis2_art21]), which includes procuring CRA-compliant products. The reporting platform used by manufacturers under the CRA is established and operated under the NIS 2 framework, feeding vulnerability data directly into the EU's incident response system. |
 | **[Radio Equipment Directive (RED)](./red-overview.md)** | An organisation may be a NIS 2 entity and also manufacture products subject to the RED. The obligations are cumulative; organisational resilience under NIS 2 must be maintained, and products must meet RED requirements. |
 | **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS2 Art. 4][nis2_art4]). |
 | **CER Directive** | The Critical Entities Resilience Directive (EU 2022/2557) covers the *physical* resilience of critical infrastructure (e.g., against natural disasters). NIS 2 covers their *cyber* resilience. The two directives are designed to work in parallel. |

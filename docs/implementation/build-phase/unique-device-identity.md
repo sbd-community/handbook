@@ -14,7 +14,7 @@ A **Unique Device Identity** is a non-cloneable, permanent, and trustworthy cryp
 
 ### 1.2. The Regulatory Requirement
 
-While regulations like the **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** may not explicitly use the term "unique device identity," they mandate security outcomes that are impossible to achieve without it. The key requirement this guide addresses is:
+While regulations like the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** may not explicitly use the term "unique device identity," they mandate security outcomes that are impossible to achieve without it. The key requirement this guide addresses is:
 
 -   **Access Control ([Annex I § 1 (2)(d)][cra_annexI])**: The CRA requires manufacturers to "implement and document an access control model." The corresponding BSI TR-03183-1 requires preventing unauthorized access and logging attempts ([REQ_ER 5][bsi_tr_03183_p1]).
 
@@ -22,7 +22,7 @@ A robust access control system can only function if it can reliably distinguish 
 
 ### 1.3. Do I Really Need to Do This?
 
-The **[Cyber-Resilience Act (CRA)](./../../standards/eu/cra-overview.md)** requires products to be protected from unauthorized access via "appropriate control mechanisms". For any non-trivial product, this makes some form of authentication mandatory, which in turn requires a form of identity.
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires products to be protected from unauthorized access via "appropriate control mechanisms". For any non-trivial product, this makes some form of authentication mandatory, which in turn requires a form of identity.
 
 The real question is not *if* you need an identity, but **"Does my product's access control model require a unique identity?"**
 

@@ -19,6 +19,8 @@ This structure reflects the implemented navigation in the `/docs` folder and the
     -   Overview
     -   **EU**
         -   Cyber-Resilience Act (CRA)
+            -   Harmonised Standards
+            -   ETSI EN 304 623: Boot Managers
         -   NIS 2 Directive
         -   Radio Equipment Directive (RED)
         -   Medical Device Regulation (MDR)

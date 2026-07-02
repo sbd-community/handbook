@@ -21,7 +21,7 @@ A critical feature of the MDR is its emphasis on software and cybersecurity. For
 While the MDR lays down the legal requirements, it does not specify *how* to meet them. The **Medical Device Coordination Group (MDCG)** publishes guidance that represents the "state of the art" for compliance.
 - **Cybersecurity**: [MDCG 2019-16 – Guidance on Cybersecurity for medical devices][mdcg_2019_16]
 
-Because the "state of the art" in cybersecurity evolves rapidly, guidance from other modern regulations can be highly valuable. While primarily a playbook for the [Cyber-Resilience Act](./cra-overview.md), Germany's BSI technical guideline is an excellent resource for implementing best practices that support MDR compliance.
+Because the "state of the art" in cybersecurity evolves rapidly, guidance from other modern regulations can be highly valuable. While primarily a playbook for the [Cyber-Resilience Act](./cra/index.md), Germany's BSI technical guideline is an excellent resource for implementing best practices that support MDR compliance.
 - **Best Practice Reference**: [BSI TR-03183 – Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
 :::
 
@@ -38,7 +38,7 @@ Because the "state of the art" in cybersecurity evolves rapidly, guidance from o
 
 | Law | How it interacts with the MDR |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | Products qualifying as medical devices under the MDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The MDR is considered *lex specialis*—more specific legislation that provides its own comprehensive set of cybersecurity rules. |
+| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | Products qualifying as medical devices under the MDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The MDR is considered *lex specialis*—more specific legislation that provides its own comprehensive set of cybersecurity rules. |
 | **[GDPR](https://gdpr-info.eu/)** | Medical devices often process sensitive health data, making compliance with the General Data Protection Regulation essential. The MDR's security requirements provide a foundation for protecting this data. |
 | **[IVDR](./ivdr-overview.md)** | The IVDR is a parallel regulation covering in vitro diagnostic devices. Its structure and cybersecurity requirements are nearly identical to the MDR's. |
 

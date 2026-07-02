@@ -38,6 +38,10 @@ announcement that introduced it in March 2026 [st-announcement].
   and **[SBSFU][st-sbsfu-an]** to shorten secure boot and secure update work.
 - Provide **supplier documentation and assurance material** that may support
   your technical file and supplier due diligence.
+- Provide part-level features that may support emerging boot-manager
+  expectations in **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**, such as immutable
+  trust anchors, anti-rollback support, secure debug controls, and recovery
+  mechanisms.
 
 ### STM32 cannot do for you
 
@@ -51,7 +55,7 @@ announcement that introduced it in March 2026 [st-announcement].
   Declaration of Conformity.
 
 For the product-level obligations, start with the
-**[CRA Overview](../../standards/eu/cra-overview.md)**,
+**[CRA Overview](../../standards/eu/cra/index.md)**,
 **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**,
 **[Secure Boot](../../implementation/build-phase/secure-boot.md)**,
 **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**,
@@ -121,6 +125,9 @@ the same way you would from any strategic component supplier.
 - **Reference design maturity**: Are you depending on SBSFU, STM32Cube
   examples, or other collateral? If so, who owns maintenance and validation
   in your final product?
+- **Boot-manager evidence**: Can the selected part support immutable trust
+  anchors, anti-rollback counters, authenticated recovery, and secure debug
+  lockdown consistent with the direction of **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**?
 - **Assurance claims**: Are there certifications or assurance schemes
   attached to this line, and what exactly do they cover:
   silicon, reference software, or the full system? [st-trust-assurance]
@@ -138,7 +145,7 @@ the same way you would from any strategic component supplier.
 If you are using ST hardware in a CRA-scoped product, this is a sensible
 sequence:
 
-1. Read the **[CRA Overview](../../standards/eu/cra-overview.md)** to map
+1. Read the **[CRA Overview](../../standards/eu/cra/index.md)** to map
    the legal obligations.
 2. Use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**
    to identify the product-level risks your MCU must support.
@@ -159,6 +166,8 @@ sequence:
   not replace product-level CRA responsibilities.
 - Treat ST's CRA pages as useful supplier inputs for due diligence and
   technical documentation, not as proof of compliance on their own.
+- Check the exact part's boot, rollback, recovery, and debug-lockdown
+  capabilities against emerging boot-manager standards such as EN 304 623.
 - The right MCU choice is only one layer in the CRA story; your threat
   model, update process, vulnerability handling, and technical file still do
   the heavy lifting.

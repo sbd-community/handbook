@@ -9,7 +9,7 @@ tags: [red, compliance, eu, radio, secure-by-design]
 
 The **Radio Equipment Directive (RED)** cybersecurity rules are defined by two key legal acts. First, the main **Directive 2014/53/EU** established the framework and created dormant security clauses in **[RED Art. 3 § 3(d-f)][red_art3]**. Second, a subsequent **Delegated Regulation (EU) 2022/30** *activated* these clauses for a wide range of consumer and industrial products, making them legally mandatory.
 
-From **1 August 2025**, any in-scope device must meet these essential requirements to receive a CE mark. This regulation acts as a precursor to the broader [Cyber-Resilience Act (CRA)](./cra-overview.md), but with a compliance deadline that is over two years earlier. Manufacturers of products covered by both must meet the RED's deadline first.
+From **1 August 2025**, any in-scope device must meet these essential requirements to receive a CE mark. This regulation acts as a precursor to the broader [Cyber-Resilience Act (CRA)](./cra/index.md), but with a compliance deadline that is over two years earlier. Manufacturers of products covered by both must meet the RED's deadline first.
 
 :::info Official texts
 - **Official Journal (Directive)** – Legally binding text of Directive 2014/53/EU as published on 22 May 2014: [OJ:L:2014:153 HTML][red_oj_dir].
@@ -39,7 +39,7 @@ While harmonised standards are still under development, Germany's Federal Office
 
 | Law | How it interacts with RED Security Rules |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra-overview.md)** | The CRA will become the primary horizontal law for product cybersecurity. Its essential requirements include and build upon those in the RED. Once a product complies with the CRA, it will be presumed to comply with [RED Art. 3 § 3(d-f)][red_art3] ([CRA Art. 11][cra_art11]). However, since the RED deadline (Aug 2025) is earlier, manufacturers must comply with it first. Crucially, the CRA does **not** apply to medical devices covered by the MDR or IVDR. ([CRA Recital 30][cra_rec30]) |
+| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | The CRA will become the primary horizontal law for product cybersecurity. Its essential requirements include and build upon those in the RED. Once a product complies with the CRA, it will be presumed to comply with [RED Art. 3 § 3(d-f)][red_art3] ([CRA Art. 11][cra_art11]). However, since the RED deadline (Aug 2025) is earlier, manufacturers must comply with it first. Crucially, the CRA does **not** apply to medical devices covered by the MDR or IVDR. ([CRA Recital 30][cra_rec30]) |
 | **[NIS 2 Directive](./nis2-overview.md)** | NIS 2 governs *organisational* cyber risk for critical sectors, while the RED focuses on *product* security. An organisation might be a NIS 2 "essential entity" and also manufacture products that must comply with the RED. The obligations are cumulative. ([NIS 2 Art. 21 § 2][nis2_art21]) |
 | **CE-marking framework** | The RED security requirements are enforced through the CE-marking framework. A product may only bear the CE mark if it complies with *all* applicable legislation, which, from Aug 2025, includes [RED Art. 3 § 3(d-f)][red_art3] for in-scope devices. ([Reg. 765/2008 Art. 30][ce_marking_reg]) |
 
@@ -102,7 +102,7 @@ To demonstrate compliance and affix the CE mark, manufacturers must follow a con
 :::info Planning for the Cyber Resilience Act (CRA)
 These modules are foundational concepts in EU regulation. For long-term planning, manufacturers should be aware that the upcoming CRA builds upon them with a more detailed, risk-based approach. The CRA's conformity route depends on a product's risk classification, which determines whether self-assessment (Module A) is permitted or a third-party audit is required.
 
-See the **[CRA Overview](./cra-overview.md#conformity-assessment-routes)** for a full breakdown of its risk classes and assessment routes.
+See the **[CRA Overview](./cra/index.md#conformity-assessment-routes)** for a full breakdown of its risk classes and assessment routes.
 :::
 
 ### 4.2 The Role of Harmonised Standards
