@@ -32,6 +32,7 @@ The following platforms provide the infrastructure needed to issue and manage de
 | [Nexus Go IoT](https://www.nexusgroup.com/solutions/online-services/iot/) | 💰 | A PKI service delivered from the cloud, specifically designed for issuing and managing certificates for IoT devices to automate onboarding. |
 | [DigiCert IoT Trust Manager](https://www.digicert.com/iot-trust-manager) | 💰 | A comprehensive commercial platform that combines a high-availability CA with device and certificate lifecycle management at large scale. |
 | [Kudelski IoT keyStream](https://www.kudelski-iot.com/services-and-systems/keystream-iot-security-system) | 💰 | An end-to-end security solution that provides device-to-cloud data protection, including secure identity provisioning and PKI management. |
+| [Crypto Posture](https://crypto-posture.com/) | 💰 | A different kind of product: a governance platform for PQC migration and cryptographic posture, helping teams track policies, scoped applications and services, remediation, exceptions, and evidence rather than issuing device certificates directly. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*
