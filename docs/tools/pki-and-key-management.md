@@ -27,7 +27,7 @@ The following platforms provide the infrastructure needed to issue and manage de
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
-| [QuarkLink](https://www.cryptoquantique.com/products/quarklink/) | 💰 | A comprehensive IoT security platform that includes a robust, scalable PKI for issuing and managing device certificates throughout the product lifecycle. |
+| [QuarkLink](https://quarklink.io/product/) | 💰 | A comprehensive IoT security platform that includes a robust, scalable PKI for issuing and managing device certificates throughout the product lifecycle. |
 | [Keyfactor EJBCA & Command](https://www.keyfactor.com/products/ejbca-enterprise/) | 🐙💰 | An open-source, enterprise-grade CA software solution (EJBCA) paired with a commercial Certificate Lifecycle Management (CLM) platform (Command). |
 | [Nexus Go IoT](https://www.nexusgroup.com/solutions/online-services/iot/) | 💰 | A PKI service delivered from the cloud, specifically designed for issuing and managing certificates for IoT devices to automate onboarding. |
 | [DigiCert IoT Trust Manager](https://www.digicert.com/iot-trust-manager) | 💰 | A comprehensive commercial platform that combines a high-availability CA with device and certificate lifecycle management at large scale. |

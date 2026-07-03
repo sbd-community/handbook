@@ -92,7 +92,7 @@ Building a secure, robust, and resilient OTA update system from scratch is a sig
 
 -   **The Build vs. Buy Decision:** While you can build your own update client and server, a dedicated solution handles the most complex parts of the process, such as ensuring power-fail safety, managing A/B partitions, and providing a secure connection to the backend.
 -   **Open-Source Frameworks:** Mature open-source solutions provide a strong foundation for building a compliant OTA system. A widely-used example for Linux-based devices that handles the difficult parts of the on-device client is [Mender](https://mender.io/).
--   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://www.cryptoquantique.com/products/quarklink/), integrate secure updates as part of a broader device lifecycle management solution that also includes secure provisioning and key management.
+-   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://quarklink.io/product/), integrate secure updates as part of a broader device lifecycle management solution that also includes secure provisioning and key management.
 
 For more specific examples, see the [Secure Update & OTA Frameworks](../../tools/secure-update-and-ota-frameworks.md) tools page.
 

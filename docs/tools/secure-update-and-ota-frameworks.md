@@ -27,7 +27,7 @@ The following tools provide end-to-end frameworks for deploying OTA updates to a
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
-| [QuarkLink](https://www.cryptoquantique.com/products/quarklink/) | 💰 | A comprehensive IoT security platform that includes a secure OTA update module for creating and deploying signed firmware updates to devices in the field. |
+| [QuarkLink](https://quarklink.io/product/) | 💰 | A comprehensive IoT security platform that includes a secure OTA update module for creating and deploying signed firmware updates to devices in the field. |
 | [Mender](https://mender.io/) | 🐙💰 | An open-source, end-to-end OTA software update manager for connected Linux devices, with both a self-hosted and a managed commercial offering. |
 | [The Update Framework (TUF)](https://theupdateframework.io/) | 🐙 | An open-source specification and framework that provides a comprehensive, resilient design for securing software update systems. |
 | [swupdate](https://github.com/sbabic/swupdate) | 🐙 | A Linux Update agent with a focus on creating a single, atomic update that is resilient against power loss. It supports signed updates and multiple update strategies. |

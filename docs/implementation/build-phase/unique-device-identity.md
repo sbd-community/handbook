@@ -81,7 +81,7 @@ While it is theoretically possible to implement an identity system using a gener
 
 -   **Hardware Root of Trust:** Instead of attempting to protect secret keys in software, using a dedicated hardware component is the industry-standard approach. Integrating a **Secure Element (SE)** like the [NXP EdgeLock SE05x](https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family:SE050) provides a pre-certified, hardware-based "key vault".
 -   **PKI Software:** Building a Public Key Infrastructure (PKI) from scratch is a complex and error-prone undertaking. Using a mature open-source software solution like [Keyfactor EJBCA](https://www.keyfactor.com/products/ejbca-enterprise/) provides a robust, audited system for issuing device certificates.
--   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://www.cryptoquantique.com/products/quarklink/), bundle these capabilities together, offering a single solution for provisioning, identity management, and other lifecycle services.
+-   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://quarklink.io/product/), bundle these capabilities together, offering a single solution for provisioning, identity management, and other lifecycle services.
 
 For more details on these technologies, see the tools pages for [Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md) and [PKI & Key Management](../../tools/pki-and-key-management.md).
 

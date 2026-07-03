@@ -27,7 +27,7 @@ These platforms typically offer a suite of services, including device monitoring
 | Tool | Type | Description |
 | :--- | :--- | :--- |
 | [Golioth](https://golioth.io/) | 💰 | An IoT device management cloud that provides a suite of services for connecting, managing, and collecting data from a fleet of devices. |
-| [QuarkLink](https://www.cryptoquantique.com/products/quarklink/) | 💰 | An end-to-end IoT security platform providing secure provisioning, onboarding, and full lifecycle management. |
+| [QuarkLink](https://quarklink.io/product/) | 💰 | An end-to-end IoT security platform providing secure provisioning, onboarding, and full lifecycle management. |
 | [Memfault](https://memfault.com/) | 💰 | An observability platform for IoT that combines remote debugging, monitoring, and OTA update capabilities to help teams proactively manage device health and security. |
 | [Balena](https://www.balena.io/) | 💰 | A complete IoT fleet management platform that uses a container-based approach to deploy and manage applications on connected Linux devices. |
 | [AWS IoT Device Management](https://aws.amazon.com/iot-device-management/) | 💰 | A suite of services from Amazon Web Services for registering, organizing, monitoring, and remotely managing IoT devices at scale. |

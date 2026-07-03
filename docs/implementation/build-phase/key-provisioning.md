@@ -81,7 +81,7 @@ While it is possible to build key management systems from scratch, leveraging sp
 
 -   **Public Key Infrastructure (PKI)** software provides the system for issuing and managing certificates. While you can build your own, using a mature open-source solution like [Keyfactor EJBCA](https://www.keyfactor.com/products/ejbca-enterprise/) is a common starting point.
 -   **Secure Elements (SEs)** are the on-device hardware component for secure key storage. Integrating a dedicated SE, such as one from the [NXP EdgeLock SE05x](https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family:SE050) family, is often simpler and more secure than trying to protect keys in a general-purpose microcontroller's memory.
--   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://www.cryptoquantique.com/products/quarklink/), bundle these capabilities together, offering a single solution for provisioning, key management, and other lifecycle services.
+-   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://quarklink.io/product/), bundle these capabilities together, offering a single solution for provisioning, key management, and other lifecycle services.
 
 For more details on specific technologies, see the tools pages for [Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md) and [PKI & Key Management](../../tools/pki-and-key-management.md).
 
