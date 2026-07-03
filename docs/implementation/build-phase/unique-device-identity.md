@@ -71,7 +71,7 @@ Establishing a strong identity is the cornerstone of a secure-by-design approach
 -   **Authentication:** Proves a device is genuine and prevents unauthorized access.
 -   **Prevention of Cloning:** A hardware-backed identity makes it computationally infeasible to clone or spoof devices, a critical requirement of `ETSI EN 303 645`.
 -   **Secure Communication:** Enables robust mutual authentication (mTLS) for encrypted channels, as required by `IEC 62443-4-2`.
--   **Supply Chain Integrity:** Allows you to track and validate components from the chipmaker to the final product, and allows your customers (e.g., those complying with the `NIS 2 Directive`) to verify the authenticity of your device.
+-   **Supply Chain Integrity:** Allows you to [track and validate components](https://supplychainsecurityhandbook.com/technology-options/trust-anchors-device-identity/) from the chipmaker to the final product, and allows your customers (e.g., those complying with the `NIS 2 Directive`) to verify the authenticity of your device.
 -   **Traceability & Accountability:** Creates an auditable trail for device actions and simplifies incident response.
 -   **Simplified & Secure Onboarding:** Enables automated and secure "zero-touch" provisioning into cloud platforms and management systems.
 

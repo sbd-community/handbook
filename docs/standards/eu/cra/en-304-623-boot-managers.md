@@ -90,7 +90,7 @@ The following themes are the most useful way to read the draft.
 
 The draft includes assessment criteria, not just requirements. That makes it useful for planning technical-file evidence even before the final standard is cited.
 
-Useful evidence includes:
+[Useful evidence](https://supplychainsecurityhandbook.com/standards-threats/standards-regulations/eu-cyber-resilience-act/etsi-en-304-623-boot-managers/) includes:
 
 - boot architecture diagrams and trust-boundary descriptions,
 - use-case/profile declaration and rationale,

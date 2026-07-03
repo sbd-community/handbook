@@ -64,7 +64,7 @@ An attacker might try to trick a device into installing an older, known-vulnerab
 
 - **How:** The system must enforce version monotonicity. The simplest method is to include a version number with the firmware image and store the current version number in a secure, tamper-proof location on the device (e.g., fuses, or a trusted storage area). The device must reject any update with a version number less than or equal to the currently installed version.
 
-For boot managers, anti-rollback and update recovery are also emerging as assessor-facing evidence topics under **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**. Treat bootloader updates as part of the trust-chain design, not just as another firmware payload.
+For boot managers, [anti-rollback and update recovery](https://supplychainsecurityhandbook.com/technology-options/secure-update-recovery-mechanisms/) are also emerging as assessor-facing evidence topics under **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**. Treat bootloader updates as part of the trust-chain design, not just as another firmware payload.
 
 ### 2.3 Confidentiality
 While not always a strict requirement, encrypting the update package protects the manufacturer's intellectual property (IP) and prevents competitors or attackers from reverse-engineering the firmware.
@@ -83,7 +83,7 @@ A complete OTA solution consists of three main parts:
 | Component | Role | Key Security Functions |
 | :--- | :--- | :--- |
 | **Device-Side Client** | Software on the device responsible for checking for updates, downloading them, performing verifications, and triggering the installation. | Signature verification, version checking, communication with the bootloader. |
-| **Update Server** | A cloud-based service that manages firmware images, deployment campaigns, and device groups. | Securely stores firmware, manages rollout policies (e.g., canary releases), provides an audit trail. |
+| **Update Server** | A cloud-based service that manages firmware images, deployment campaigns, and device groups. | Securely stores firmware, manages [rollout policies](https://supplychainsecurityhandbook.com/practices-controls/secure-updates-lifecycle-monitoring/) (e.g., canary releases), provides an audit trail. |
 | **Code-Signing Infrastructure** | The offline, highly-secured process for signing firmware images before they are uploaded to the update server. | Protects the private signing keys in an HSM; provides a formal, audited release process. |
 
 ## 4. Accelerating Compliance with Tooling

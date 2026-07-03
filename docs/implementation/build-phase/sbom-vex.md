@@ -57,7 +57,7 @@ An SBOM should be comprehensive, accurate, and kept up-to-date.
 -   **Standard Formats:** To be useful, SBOMs must be machine-readable. The two most widely adopted standards are:
     -   **SPDX (Software Package Data Exchange):** An open standard for communicating software bill of materials information, maintained by the Linux Foundation.
     -   **CycloneDX:** A lightweight SBOM standard designed for use in application security contexts and supply chain component analysis, created by the OWASP community.
--   **Why it's required:** An accurate SBOM allows a manufacturer (or their customer) to instantly determine if they are affected by a new vulnerability disclosure (e.g., "Log4Shell"). Without an SBOM, this process can take weeks of manual effort.
+-   **Why it's required:** An accurate SBOM allows a manufacturer (or their customer) to instantly determine if they are affected by a new vulnerability disclosure (e.g., "Log4Shell"). Without [component visibility](https://supplychainsecurityhandbook.com/technology-options/sbom-vex-component-visibility/), this process can take weeks of manual effort.
 
 ## 3. VEX: The Allergy Information
 
@@ -94,7 +94,7 @@ To meet modern security requirements, your vulnerability management workflow sho
 - [ ] **Automated SBOM Generation:** Is an SBOM automatically generated for every production build?
 - [ ] **Standard Format:** Is your SBOM in a standard, machine-readable format like SPDX or CycloneDX?
 - [ ] **Comprehensive Coverage:** Does your SBOM include all dependencies, including transitive dependencies?
-- [ ] **VEX Process:** Do you have a documented process for analyzing and asserting the exploitability of vulnerabilities (VEX)?
+- [ ] **VEX Process:** Do you have a documented process for [analyzing and asserting the exploitability](https://supplychainsecurityhandbook.com/practices-controls/software-components-vulnerability-management/) of vulnerabilities (VEX)?
 - [ ] **Technical Documentation:** Is the SBOM for the shipped version of your product included in the technical file you maintain for compliance?
 - [ ] **Customer Communication:** Do you have a channel for distributing VEX information to your users or customers?
 

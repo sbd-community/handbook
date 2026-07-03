@@ -114,8 +114,7 @@ most interesting.
 
 ## 5. Supplier due-diligence checklist for STM32-based designs
 
-When you evaluate STM32 for a CRA-scoped product, collect evidence from ST
-the same way you would from any strategic component supplier.
+When you evaluate STM32 for a CRA-scoped product, [collect evidence from ST the same way you would from any strategic component supplier](https://supplychainsecurityhandbook.com/resources/supplier-security-questions/).
 
 - **Exact part identification**: Which precise STM32 family and part number
   are you using, and which security features exist on that exact variant?

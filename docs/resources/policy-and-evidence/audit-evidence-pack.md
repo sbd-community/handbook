@@ -5,7 +5,7 @@ tags: [templates, audit, compliance, cra, technical-documentation]
 ---
 # Guide: Assembling Your Audit Evidence Pack
 
-An **Audit Evidence Pack** is a structured collection of documents, records, and technical artefacts that demonstrates your product's compliance with a given regulation. For the **Cyber-Resilience Act (CRA)**, this pack constitutes the **technical documentation** that manufacturers are legally required to maintain and provide to market surveillance authorities upon request ([CRA Art. 31][cra_art31]).
+An **Audit Evidence Pack** is a [structured collection of documents, records, and technical artefacts](https://supplychainsecurityhandbook.com/resources/evidence-package-template/) that demonstrates your product's compliance with a given regulation. For the **Cyber-Resilience Act (CRA)**, this pack constitutes the **technical documentation** that manufacturers are legally required to maintain and provide to market surveillance authorities upon request ([CRA Art. 31][cra_art31]).
 
 This is not a one-time task but a [living collection of evidence](https://crypto-posture.com/resources/pqc-evidence-pack/?utm_source=securebydesignhandbook&utm_medium=referral&utm_campaign=partner_backlinks&utm_content=audit_evidence_living_collection) that must be updated throughout the product's lifecycle. This guide provides a template for organizing this information.
 
