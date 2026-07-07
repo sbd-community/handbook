@@ -1,6 +1,7 @@
 ---
 title: "Policy Templates"
 sidebar_label: "Policy Templates"
+sidebar_position: 2
 tags: [templates, policy, cvd, vulnerability-disclosure, cra]
 ---
 # Policy Templates
