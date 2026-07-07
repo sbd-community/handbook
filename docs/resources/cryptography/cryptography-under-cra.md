@@ -10,7 +10,7 @@ tags: [cra, cryptography, crypto-agility, key-management, secure-boot, firmware-
 
 Use this page to assess whether the cryptography in a connected product is suitable, documented, implemented correctly, and maintainable over the product support period.
 
-The **Cyber Resilience Act (CRA)** does not prescribe a fixed list of algorithms in the regulation itself. It requires products to protect confidentiality and integrity using state-of-the-art mechanisms ([CRA Annex I][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements)). For product teams, that means cryptographic choices need to be standardised where possible, risk-based where necessary, evidence-backed, and reviewed over time.
+The **Cyber Resilience Act (CRA)** does not prescribe a fixed list of algorithms in the regulation itself. It requires products to protect confidentiality and integrity using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e,f)][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements)). For product teams, that means cryptographic choices need to be standardised where possible, risk-based where necessary, evidence-backed, and reviewed over time.
 
 Using modern algorithms is only part of the work. CRA readiness also depends on key management, secure configuration, firmware integrity, certificate lifecycle management, update verification, vulnerability handling, and evidence that production products match the intended design.
 
@@ -28,8 +28,8 @@ Use this page when you need to:
 
 The CRA is technology-neutral, but several requirements are directly affected by cryptography. Product teams should pay particular attention to:
 
-- protecting confidentiality of stored, transmitted, or otherwise processed data using state-of-the-art mechanisms ([CRA Annex I][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements));
-- protecting the integrity of data, commands, programs, and configuration against unauthorised modification;
+- protecting confidentiality of stored, transmitted, or otherwise processed data using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e)][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements));
+- protecting the integrity of data, commands, programs, and configuration against unauthorised modification ([CRA Annex I § 1(2)(f)][cra_annexI]);
 - controlling access to devices, services, and data;
 - authenticating and protecting software, firmware, and configuration updates;
 - supporting vulnerability handling, update distribution, and remediation throughout the support period;
