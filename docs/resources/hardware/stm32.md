@@ -1,11 +1,12 @@
 ---
-title: "STMicroelectronics STM32 Selection for EU CRA Compliance"
+title: "STMicroelectronics STM32 Hardware Selection for CRA-Scoped Products"
 sidebar_label: "STMicroelectronics (STM32)"
 sidebar_position: 2
-tags: [hardware, stm32, stmicroelectronics, cra, compliance, mcu]
+description: "A practical guide to assessing whether STM32 parts and ST collateral can support secure-by-design controls, CRA readiness, supplier evidence, and lifecycle commitments."
+tags: [hardware, stm32, stmicroelectronics, cra, mcu, secure-boot, evidence]
 ---
 
-# STM32 Hardware Selection for EU CRA-Compliant Connected Products
+# STM32 Hardware Selection for CRA-Scoped Connected Products
 
 The **EU Cyber-Resilience Act (CRA)** raises the bar for connected
 products. For microcontroller-based designs, that means choosing hardware
@@ -22,8 +23,8 @@ commitments, and technical documentation required by the CRA.
 ST's newer CRA pages are useful because they show how the company now
 packages its security story for product teams, not just firmware engineers.
 Use them as supplier inputs, not as a substitute for your own engineering
-and compliance work. See ST's **[CRA resource hub][st-cra-page]** and the
-announcement that introduced it in March 2026 [st-announcement].
+and compliance work. See ST's **[CRA resource hub][st-cra-page]** and related
+announcement [st-announcement].
 
 ## 1. What STM32 can and cannot help you with
 
@@ -59,7 +60,7 @@ For the product-level obligations, start with the
 **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**,
 **[Secure Boot](../../implementation/build-phase/secure-boot.md)**,
 **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**,
-and **[Audit Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**.
+and **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**.
 
 ## 2. STM32 family cheat sheet
 
@@ -110,9 +111,23 @@ most interesting.
 | *Cryptographic resilience* | AES, PKA, RNG, OTFDEC, TrustZone, and other hardware features on selected parts | Algorithm choice, protocol design, key lifecycle, crypto agility, cloud-to-device trust model | **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)** and **[Cryptography under CRA](../cryptography/cryptography-under-cra.md)** |
 | *Secure updates and patching* | STM32Cube ecosystem, secure update examples, signed-firmware reference flows | OTA backend, rollback strategy, release signing process, patch SLAs, field support over the declared support period | **[OTA Updates & Patching](../../implementation/build-phase/ota-updates.md)** and **[Patch Cadence](../../implementation/operate-phase/patch-cadence.md)** |
 | *Unique device identity* | Factory-programmed UID and, on some devices, stronger isolation and key-derivation options | Certificate issuance, manufacturing provisioning, enrollment, rotation, revocation, device inventory | **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)** |
-| *Technical documentation and evidence* | ST datasheets, application notes, security collateral, **[STM32Trust assurance materials][st-trust-assurance]** | Risk assessment, architecture rationale, test evidence, supplier records, Declaration of Conformity, technical file | **[Audit Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)** |
+| *Technical documentation and evidence* | ST datasheets, application notes, security collateral, **[STM32Trust assurance materials][st-trust-assurance]** | Risk assessment, architecture rationale, test evidence, supplier records, Declaration of Conformity, technical file | **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)** |
 
-## 5. Supplier due-diligence checklist for STM32-based designs
+## 5. Evidence to Retain
+
+For STM32-based designs, useful evidence includes:
+
+- exact part number, revision, package, and lifecycle status;
+- security feature mapping for the selected part;
+- boot-chain design and secure boot configuration;
+- key-storage and provisioning design;
+- debug-lockdown configuration and manufacturing records;
+- update, rollback, and recovery test evidence;
+- STM32Cube, SBSFU, STM32Trust, datasheet, and application-note references used;
+- supplier security policy, advisory, and lifecycle records;
+- records showing production configuration matches the intended security design.
+
+## 6. Supplier due-diligence checklist for STM32-based designs
 
 When you evaluate STM32 for a CRA-scoped product, [collect evidence from ST the same way you would from any strategic component supplier](https://supplychainsecurityhandbook.com/resources/supplier-security-questions/).
 
@@ -139,25 +154,27 @@ When you evaluate STM32 for a CRA-scoped product, [collect evidence from ST the 
   evidence is needed for **[RED](../../standards/eu/red-overview.md)** as
   well as the CRA?
 
-## 6. Recommended STM32-based reading path
+## 7. Recommended STM32-based reading path
 
 If you are using ST hardware in a CRA-scoped product, this is a sensible
 sequence:
 
-1. Read the **[CRA Overview](../../standards/eu/cra/index.md)** to map
+1. Use **[Types of Embedded Device](../reference/types-of-embedded-device.md)**
+   to confirm the architecture and product boundary.
+2. Read the **[CRA Overview](../../standards/eu/cra/index.md)** to map
    the legal obligations.
-2. Use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**
+3. Use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**
    to identify the product-level risks your MCU must support.
-3. Design your trust architecture using
+4. Design your trust architecture using
    **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**
    and **[Secure Boot](../../implementation/build-phase/secure-boot.md)**.
-4. Plan the operational path with
+5. Plan the operational path with
    **[OTA Updates & Patching](../../implementation/build-phase/ota-updates.md)**
    and **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)**.
-5. Capture supplier artifacts and your own evidence in an
-   **[Audit Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**.
+6. Capture supplier artifacts and your own evidence in an
+   **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**.
 
-## 7. Takeaways
+## 8. Takeaways
 
 - For new security-focused STM32 designs, **STM32U5**, **STM32L5**, and
   often **STM32H5** deserve the closest look.
