@@ -71,7 +71,7 @@ At minimum, a connected-device manufacturer should be able to show:
   summarizes the core principles for connected-product teams.
 - **[Vulnerability Disclosure](/docs/implementation/operate-phase/vulnerability-disclosure)**
   covers the operational process behind public reporting channels.
-- **[Audit Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
+- **[Secure-by-Design Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
   shows how to collect evidence that security is managed, not improvised.
 
 ## The bigger picture

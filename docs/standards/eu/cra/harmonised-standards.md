@@ -47,7 +47,7 @@ These pages explain standards and conformity context. They should point into the
 - **[Secure Boot](../../../implementation/build-phase/secure-boot.md)** for trust-chain design.
 - **[Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)** for update integrity, rollback protection, and recovery.
 - **[Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md)** for trust anchors and signing-key handling.
-- **[Audit Evidence Pack](../../../resources/policy-and-evidence/audit-evidence-pack.md)** for technical-file evidence.
+- **[Secure-by-Design Evidence Pack](../../../resources/policy-and-evidence/audit-evidence-pack.md)** for technical-file evidence.
 
 <!-- Citations -->
 [cra_art27]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_27 "CRA Article 27 - Presumption of conformity"

@@ -81,7 +81,7 @@ Before the deadline, manufacturers should have:
   explains how to receive and handle vulnerability reports.
 - **[Patch Cadence](/docs/implementation/operate-phase/patch-cadence)** helps
   turn vulnerability decisions into remediation timelines.
-- **[Audit Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
+- **[Secure-by-Design Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
   shows how to preserve evidence for later inspection.
 
 ## The practical takeaway

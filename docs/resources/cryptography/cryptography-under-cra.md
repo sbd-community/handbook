@@ -171,17 +171,16 @@ For a real-world example of shared key risk, see the **[Baxter Connex Spot Monit
 
 ## Related Pages
 
-- [CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)
-- [Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)
-- [Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)
-- [Secure-by-Design Policy Starter Kit](../policy-and-evidence/policy-templates.md)
-- [CRA Overview](../../standards/eu/cra/index.md)
-- [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)
-- [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)
-- [Secure Boot](../../implementation/build-phase/secure-boot.md)
-- [OTA Updates & Patching](../../implementation/build-phase/ota-updates.md)
-- [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md)
-- [Data Privacy & Secure Deletion](../../implementation/build-phase/data-privacy.md)
+If you need to:
+
+- assess CRA readiness and retain cryptography evidence, use the **[CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)** and **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**;
+- understand the regulatory context, use the **[CRA Overview](../../standards/eu/cra/index.md)**;
+- create, protect, rotate, or revoke keys and certificates, use **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**;
+- design device certificates, onboarding, and lifecycle identity, use **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**;
+- protect firmware integrity and update verification, use **[Secure Boot](../../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**;
+- understand boot-manager cryptography evidence, use **[ETSI EN 304 623: Boot Managers](../../standards/eu/cra/en-304-623-boot-managers.md)**;
+- choose architecture or hardware constraints that affect cryptographic controls, use **[Types of Embedded Device](../reference/types-of-embedded-device.md)**, **[STM32 Hardware Selection](../hardware/stm32.md)**, or **[ESP32 Hardware Selection](../hardware/espressif.md)**;
+- define supporting organisation policy, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)** and **[Secure-by-Design Policy Starter Kit](../policy-and-evidence/policy-templates.md)**.
 
 <!-- Citations -->
 [acm_v2]: https://certification.enisa.europa.eu/document/download/a845662b-aee0-484e-9191-890c4cfa7aaa_en?filename=ECCG+Agreed+Cryptographic+Mechanisms+version+2.pdf "ECCG Agreed Cryptographic Mechanisms version 2"

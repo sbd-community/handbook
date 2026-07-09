@@ -266,15 +266,14 @@ Transfer approved policies, owners, review dates, operating records, and open ga
 
 ## Related Pages
 
-- [CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)
-- [Secure-by-Design Evidence Pack](./audit-evidence-pack.md)
-- [Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)
-- [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)
-- [Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)
-- [CI/CD Pipeline Hardening](../../implementation/operate-phase/cicd-hardening.md)
-- [Threat Modeling](../../implementation/build-phase/threat-modeling.md)
-- [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)
-- [User Documentation](../../implementation/build-phase/user-documentation.md)
+If you need to:
+
+- identify which policies or procedures are missing, use the **[CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)**;
+- retain approved policies and operating records, use the **[Secure-by-Design Evidence Pack](./audit-evidence-pack.md)**;
+- assess whether policy practices are repeatable across teams, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)**;
+- operate public vulnerability reporting and internal triage, use **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)**;
+- define security update timing and support-period commitments, use **[Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)**;
+- connect policies to engineering and release controls, use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**, **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**, **[CI/CD Pipeline Hardening](../../implementation/operate-phase/cicd-hardening.md)**, and **[User Documentation](../../implementation/build-phase/user-documentation.md)**.
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

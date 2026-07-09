@@ -56,3 +56,12 @@ For a low-stakes product, accepting risk is a key part of the process. This demo
 | Information Disclosure of temperature | **Accept Risk.** This is the intended function of the device. The threat model serves to document this as an intentional design choice. |
 | Spoofing fake temperature readings   | **Accept Risk.** For a low-cost consumer product, the cost and battery-life impact of adding cryptographic authentication to non-critical data is not justified by the low risk. This is a documented business and security decision. |
 | Denial of Service via BLE jamming    | **Accept Risk.** It is not feasible for a low-cost device to defend against dedicated radio jamming attacks. The user guide should mention that other 2.4GHz devices can cause interference. |
+
+## Where To Go Next
+
+Use this example with:
+
+- **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)** to adapt the workflow and threat register fields;
+- **[Types of Embedded Device](../reference/types-of-embedded-device.md)** to record the constrained-device assumptions;
+- **[CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)** to capture whether the accepted risks create readiness gaps;
+- **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)** to retain the scope, assumptions, accepted-risk rationale, and review trigger.

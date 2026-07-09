@@ -7,62 +7,120 @@ tags: [quick-start, navigation, getting-started]
 
 # How to Use This Handbook
 
-The Secure-by-Design Handbook is a practical, actionable guide for anyone involved in building and maintaining connected devices. It translates complex regulatory requirements from laws like the **Cyber-Resilience Act (CRA)** into concrete engineering tasks.
+The Secure-by-Design Handbook helps teams building connected products turn cybersecurity obligations into engineering, operating, and evidence tasks.
 
-This page helps you find the content most relevant to your role and your immediate questions.
+Use this page when you know your role or immediate problem, but not which handbook path to follow.
 
----
+If you are new to the topic, start with **[What is Secure-by-Design?](./what-is-secure-by-design.md)**. If you need a short action plan, use the **[First-Sprint Checklist](./first-sprint-checklist.md)**.
 
-## 1. Structure of the Handbook
+## Choose By Task
 
-The handbook is organized into four main sections:
+| If you need to... | Start here | Then use |
+|-------------------|------------|----------|
+| Understand obligations | [CRA 5-Minute Primer](./cra-primer.md) | [CRA Overview](../standards/eu/cra/index.md), [CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md) |
+| Assess product readiness | [CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md) | [Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md), [Maturity Model](../resources/checklists-and-worksheets/maturity-model.md) |
+| Plan the first sprint | [First-Sprint Checklist](./first-sprint-checklist.md) | [Threat Modeling](../implementation/build-phase/threat-modeling.md), [Types of Embedded Device](../resources/reference/types-of-embedded-device.md) |
+| Design core product controls | [Threat Modeling](../implementation/build-phase/threat-modeling.md) | [Secure Boot](../implementation/build-phase/secure-boot.md), [Secure OTA Updates](../implementation/build-phase/ota-updates.md), [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md), [Unique Device Identity](../implementation/build-phase/unique-device-identity.md) |
+| Handle vulnerabilities | [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md) | [Patch Cadence](../implementation/operate-phase/patch-cadence.md), [SBOM & VEX Workflows](../implementation/build-phase/sbom-vex.md), [Policy Starter Kit](../resources/policy-and-evidence/policy-templates.md) |
+| Assemble evidence | [Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md) | [CRA Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md), [Resources](../resources/index.md) |
+| Choose hardware or architecture | [Types of Embedded Device](../resources/reference/types-of-embedded-device.md) | [STM32 Hardware Selection](../resources/hardware/stm32.md), [ESP32 Hardware Selection](../resources/hardware/espressif.md) |
+| Compare tools | [Tools](../tools/index.md) | Use tools only after the workflow or control is clear. |
 
--   **[Quick Start](./how-to-use-handbook.md):** For when you need the essentials, fast. Start here if you're new to the topic or need a high-level overview.
--   **[Standards & Regulations](../standards):** Deep-dives into the legal texts like the CRA, RED, and NIS 2. Read these for authoritative context on your legal obligations.
--   **[Implementation Guides](../implementation/build-phase):** Step-by-step technical playbooks for implementing specific security controls like secure boot, OTA updates, and CI/CD hardening.
--   **[Resources](../resources):** Downloadable artefacts like checklists and policy templates to use in your projects.
+## Choose By Role
 
----
+Different readers usually need different routes through the same material.
 
-## 2. Paths by Role
+### Product Manager Or Team Lead
 
-Find your role below for a recommended reading path.
+Your job is to make the work visible, owned, and planned.
 
-### 2.1 For the Product Manager or Team Lead
-_Your goal: Understand what we need to do, why, and how to plan the work._
+Start with:
 
-1.  **Start Here:** Read the [CRA 5-Minute Primer](./cra-primer.md) to grasp the business impact and key deadlines.
-2.  **Plan the Work:** Use the [First-Sprint Checklist](./first-sprint-checklist.md) to create an initial project plan and prioritize foundational tasks.
-3.  **Understand the Landscape:** Skim the overviews in the [Standards & Regulations](../standards/eu/cra/index.md) section to understand the legal context your teams are working in.
+1. **[What is Secure-by-Design?](./what-is-secure-by-design.md)**
+2. **[CRA 5-Minute Primer](./cra-primer.md)**
+3. **[First-Sprint Checklist](./first-sprint-checklist.md)**
+4. **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)**
 
-### 2.2 For the Firmware or Embedded Engineer
-_Your goal: Understand what I need to build on the device._
+Expected output: owners, first-sprint backlog, readiness gaps, and evidence owners.
 
-1.  **Understand Requirements:** Read the [CRA Overview](../standards/eu/cra/index.md), focusing on the [Secure-by-Design Engineering Benchmarks](../standards/eu/cra/index.md#annex-i-requirements). This is your list of technical requirements.
-2.  **Implement Core Features:** Dive into the **[Build Phase](../implementation/build-phase)** implementation guides:
-    -   [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)
-    -   [Secure Boot Implementation](../implementation/build-phase/secure-boot.md)
-    -   [Secure OTA Updates](../implementation/build-phase/ota-updates.md)
-3.  **Check Radio Requirements:** If your product has Wi-Fi, Bluetooth, or any other radio, read the [Radio Equipment Directive (RED) Overview](../standards/eu/red-overview.md).
+### Firmware Or Embedded Engineer
 
-### 2.3 For the DevOps or Security Engineer (SecOps)
-_Your goal: Understand how to automate security, manage vulnerabilities, and harden our infrastructure._
+Your job is to design controls that fit the product architecture.
 
-1.  **Automate Security:** Start with the [CI/CD Pipeline Hardening guide](../implementation/operate-phase/cicd-hardening.md) to integrate security checks directly into your development workflow.
-2.  **Manage Supply Chain Risk:** Read the [SBOM & VEX Workflows guide](../implementation/build-phase/sbom-vex.md) to learn how to automate vulnerability detection in your third-party dependencies.
-3.  **Handle Vulnerabilities:** Review the guides for [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md) and establishing a [Patch Cadence](../implementation/operate-phase/patch-cadence.md).
+Start with:
 
-### 2.4 For the Compliance Lead or Auditor
-_Your goal: Understand the legal requirements in detail and find evidence of compliance._
+1. **[Types of Embedded Device](../resources/reference/types-of-embedded-device.md)**
+2. **[Threat Modeling](../implementation/build-phase/threat-modeling.md)**
+3. **[Secure Boot](../implementation/build-phase/secure-boot.md)**
+4. **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**
+5. **[Unique Device Identity](../implementation/build-phase/unique-device-identity.md)**
+6. **[Secure OTA Updates](../implementation/build-phase/ota-updates.md)**
 
-1.  **Know the Law:** Read all the overviews in the **[Standards & Regulations](../standards)** section. These are your primary source of truth for the legal obligations.
-2.  **Assess Gaps:** Use the **[Resources](../resources)** section for gap analysis and audit preparation materials.
-3.  **Verify Controls:** Review the checklists at the end of each **[Implementation Guide](../implementation/build-phase)** to verify that the required technical controls have been implemented by the engineering teams.
+Expected output: architecture decisions, control design, implementation backlog, and test evidence.
 
----
+### Cloud, DevOps, Or Security Engineer
 
-## 3. How to Contribute
+Your job is to connect product security to pipelines, services, monitoring, updates, and vulnerability handling.
 
-This handbook is a living document and a community effort. If you see something missing, find an error, or have a suggestion, please see our [Contributing Guide](https://github.com/sbd-community/handbook/blob/main/CONTRIBUTING.md) or open an issue on our GitHub repository.
+Start with:
 
-<!-- Citations -->
+1. **[CI/CD Pipeline Hardening](../implementation/operate-phase/cicd-hardening.md)**
+2. **[SBOM & VEX Workflows](../implementation/build-phase/sbom-vex.md)**
+3. **[Secure OTA Updates](../implementation/build-phase/ota-updates.md)**
+4. **[Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md)**
+5. **[Security Logging & Monitoring](../implementation/operate-phase/security-logging.md)**
+
+Expected output: pipeline controls, dependency records, vulnerability workflow, update records, and monitoring evidence.
+
+### Compliance Lead Or Auditor
+
+Your job is to understand obligations and check whether product evidence supports the claims.
+
+Start with:
+
+1. **[CRA Overview](../standards/eu/cra/index.md)**
+2. **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)**
+3. **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)**
+4. **[Policy Starter Kit](../resources/policy-and-evidence/policy-templates.md)**
+5. **[Resources](../resources/index.md)**
+
+Expected output: scope notes, gap register, evidence register, policy set, and open issues.
+
+### Hardware Selector Or Architect
+
+Your job is to choose hardware that can support the intended security case.
+
+Start with:
+
+1. **[Types of Embedded Device](../resources/reference/types-of-embedded-device.md)**
+2. **[STM32 Hardware Selection](../resources/hardware/stm32.md)** or **[ESP32 Hardware Selection](../resources/hardware/espressif.md)**
+3. **[Secure Boot](../implementation/build-phase/secure-boot.md)**
+4. **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**
+5. **[Cryptography under the CRA](../resources/cryptography/cryptography-under-cra.md)**
+
+Expected output: hardware rationale, security feature mapping, supplier evidence, and lifecycle assumptions.
+
+## How The Sections Fit Together
+
+| Section | Use it for |
+|---------|------------|
+| Quick Start | Orientation, first actions, and role-based routing. |
+| Standards & Regulations | Legal and standards context, including CRA, RED, NIS 2, PSTI, IEC 62443, FDA, and harmonised standards. |
+| Implementation Guides | Engineering and operating guides for controls such as secure boot, OTA, identity, provisioning, SBOM/VEX, logging, CVD, and patch cadence. |
+| Resources | Checklists, evidence guidance, policy templates, hardware-selection guides, cryptography guidance, examples, and vulnerability case studies. |
+| Tools | Product and open-source tools that may support workflows after the requirements are clear. |
+
+## Working Pattern
+
+For most teams, the handbook works best in this order:
+
+1. Define the product boundary and architecture.
+2. Run a gap analysis.
+3. Pick the highest-risk controls to design or improve.
+4. Capture evidence as you go.
+5. Review policies, vulnerability handling, updates, and support-period commitments.
+6. Use tools to support the workflow, not to replace the workflow.
+
+## Contributing
+
+This handbook is a living document. To suggest a correction or improvement, see the [Contributing Guide](https://github.com/sbd-community/handbook/blob/main/CONTRIBUTING.md) or open an issue on GitHub.

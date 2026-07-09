@@ -65,4 +65,14 @@ The mitigations must be robust enough to ensure patient safety.
 | Tampering with / Spoofing glucose data | The sensor and app **must** use BLE Secure Connections pairing with a message authentication code (MAC) on every single data packet to prevent tampering and ensure authenticity. |
 | Denial of Service on BLE alerts      | The device **must** have an on-body alerting mechanism (e.g., vibration) that is independent of the smartphone connection for critical alerts like "critically low glucose." |
 | Information Disclosure via BLE       | All communication between the sensor and app **must** be encrypted using the authenticated session key established during the BLE pairing process. |
-| Elevation of Privilege on smartphone | The mobile app **must** use the operating system's secure storage keychain/keystore to store any sensitive data, such as authentication tokens for the cloud. | 
+| Elevation of Privilege on smartphone | The mobile app **must** use the operating system's secure storage keychain/keystore to store any sensitive data, such as authentication tokens for the cloud. |
+
+## Where To Go Next
+
+Use this example with:
+
+- **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)** to adapt the workflow and threat register fields;
+- **[Types of Embedded Device](../reference/types-of-embedded-device.md)** to record device, mobile app, cloud, and clinician-dashboard boundaries;
+- **[Cryptography under the CRA](../cryptography/cryptography-under-cra.md)**, **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**, and **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)** for authenticated communication and credential decisions;
+- **[Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md)** and **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)** for post-market safety and incident evidence;
+- **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)** to retain the risk decisions, mitigations, safety assumptions, and review triggers.

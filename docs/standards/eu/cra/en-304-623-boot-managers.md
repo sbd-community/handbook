@@ -12,6 +12,8 @@ tags: [cra, etsi, boot-managers, secure-boot, harmonised-standards]
 
 For product teams, the draft is a strong signal: CRA evidence for secure boot is likely to include more than "we verify firmware signatures." It may require proof of updateability, recovery, anti-rollback protection, trust-anchor management, debug lockdown, measured boot, logging, and assessor-facing test evidence.
 
+Use this page when you need to understand how the draft boot-manager standard affects secure boot, update, key-provisioning, logging, vulnerability-handling, and evidence planning. If you need implementation guidance, start with **[Secure Boot](../../../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)**.
+
 ## Official texts and status
 
 :::warning Draft status
@@ -116,15 +118,19 @@ Use both together:
 
 - Read this page to understand the emerging CRA conformity expectations.
 - Use the Secure Boot guide to design and implement the controls.
-- Use the Audit Evidence Pack to collect the proof.
+- Use the Secure-by-Design Evidence Pack to collect the proof.
 
-## Further reading
+## Related Pages
 
-- [ETSI EN 304 623 v0.1.3 draft][etsi_en_304_623]
-- [ETSI work item report][etsi_work_item]
-- [CRA Overview](./index.md)
-- [Secure Boot Implementation](../../../implementation/build-phase/secure-boot.md)
-- [Audit Evidence Pack](../../../resources/policy-and-evidence/audit-evidence-pack.md)
+If you need to:
+
+- check the source material, use the **[ETSI EN 304 623 v0.1.3 draft][etsi_en_304_623]** and **[ETSI work item report][etsi_work_item]**;
+- understand the CRA context for boot managers and harmonised standards, use the **[CRA Overview](./index.md)** and **[CRA Harmonised Standards](./harmonised-standards.md)**;
+- design the boot chain and failure behaviour, use **[Secure Boot](../../../implementation/build-phase/secure-boot.md)**;
+- plan update recovery, anti-rollback, and rollout evidence, use **[Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)**;
+- protect trust anchors, keys, and certificates, use **[Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md)** and **[Cryptography under the CRA](../../../resources/cryptography/cryptography-under-cra.md)**;
+- connect boot-manager vulnerabilities to remediation and support-period records, use **[Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md)** and **[SBOM & VEX Workflows](../../../implementation/build-phase/sbom-vex.md)**;
+- retain assessor-facing records, use the **[Secure-by-Design Evidence Pack](../../../resources/policy-and-evidence/audit-evidence-pack.md)**.
 
 <!-- Citations -->
 [etsi_en_304_623]: https://www.etsi.org/deliver/etsi_en/304600_304699/304623/00.01.03_20/en_304623v000103ev.pdf "ETSI EN 304 623 v0.1.3 draft – Cybersecurity requirements for boot managers"

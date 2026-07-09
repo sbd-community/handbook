@@ -6,51 +6,97 @@ tags: [secure-by-design, cra, psti, product-security, sbd, sdd]
 
 # What is Secure-by-Design?
 
-**Secure-by-Design (SbD)** is a foundational shift in product development. It mandates that security is a core business requirement, integrated from the very first stages of design and maintained throughout the entire product lifecycle. It is not a technical feature to be added on later.
+**Secure-by-design** means making security part of product architecture, defaults, development, update, vulnerability handling, and lifecycle evidence. It is not a final test before release, a feature added by the security team, or a burden passed to the customer.
 
-This approach marks a fundamental change in responsibility. As CISA, the US Cybersecurity & Infrastructure Security Agency, states, the goal is to move away from a system where the "cybersecurity burden is placed disproportionately on the shoulders of consumers and small organizations" and towards a future where technology providers "take ownership at theexecutive level to ensure their products are Secure-by-Design" ([CISA](./cisa-sbd-principles.md)).
+For connected-product teams, secure-by-design changes the product process. Teams must define the product boundary, assess risk, choose proportionate controls, ship secure defaults, provide secure updates, handle vulnerabilities, and retain evidence showing why security decisions were made.
 
-## 1. Why It Matters: The Regulatory & Standards Shift
+As CISA puts it, the goal is to move away from placing the "cybersecurity burden" on customers and toward technology providers that "take ownership at the executive level to ensure their products are Secure-by-Design" ([CISA](./cisa-sbd-principles.md)).
 
-Secure-by-Design is no longer just a best practice; it is rapidly becoming a legal and commercial requirement for placing products on the market. Major global economies and standards bodies are codifying these principles.
+## Use This Page When
 
--   The **[EU Cyber-Resilience Act (CRA)](../standards/eu/cra/index.md)** establishes rigorous security standards for all "products with digital elements" sold in the EU, making SbD the starting point for compliance.
--   The **[UK's Product Security and Telecommunications Infrastructure (PSTI) Act](../standards/uk/psti-overview.md)** legally requires manufacturers of consumer connectable products to follow a set of security principles.
--   The **[EU NIS 2 Directive](../standards/eu/nis2-overview.md)** requires essential service operators to manage supply chain risk, implicitly demanding that their suppliers (i.e., device makers) follow Secure-by-Design practices.
--   The **[IEC 62443 series](../standards/global/iec62443-overview.md)** provides a framework for securing Industrial Automation and Control Systems (IACS) that is rooted in a security lifecycle approach.
--   The **[FDA's Cybersecurity Guidance](../standards/us/fda-cybersecurity-overview.md)** in the US requires medical device manufacturers to implement a Secure Product Development Framework (SPDF) from design to end-of-life.
+Use this page when you need to:
 
-These regulations signal a clear international trend: manufacturers are now legally accountable for the security of their products.
+- explain secure-by-design to a product, engineering, compliance, or leadership team;
+- understand how secure-by-design differs from security testing at the end of a project;
+- connect secure-by-design principles to CRA readiness and technical documentation;
+- decide which handbook page to use next.
 
-## 2. Core Principles of Secure-by-Design
+This page is guidance for product and engineering planning. It is not legal advice or a conformity assessment.
 
-While specific requirements vary, the underlying philosophy of Secure-by-Design is consistent across international guidance.
+## Secure-by-Design vs Secure-by-Default
 
-### Principle 1: Take Ownership
-The responsibility for the customer's security rests with the manufacturer, not the user.
-- **Executive-Level Priority:** Security must be a primary business consideration, on par with features and time-to-market.
-- **Radical Transparency:** Be open about security processes, vulnerability management, and end-of-life policies.
+Secure-by-design and secure-by-default are related, but they are not the same thing.
 
-### Principle 2: Build for the Long Term
-Products must be designed to be secure by default and resilient over their entire operational lifespan.
-- **Secure Defaults:** Ship with secure configurations enabled out-of-the-box, without requiring a consumer to be a security expert.
-- **Minimize Attack Surface:** Disable all unnecessary ports, services, and features.
-- **Enforce Strong Identity:** Eliminate default passwords and implement secure authentication mechanisms.
+| Concept | Meaning | Product-team question |
+|---------|---------|-----------------------|
+| **Secure-by-design** | Security is built into the product lifecycle: requirements, architecture, implementation, release, support, vulnerability handling, and evidence. | Did we design, build, operate, and evidence the product securely? |
+| **Secure-by-default** | The product ships in a safe configuration without expecting the customer to harden it first. | Is the safest practical configuration the one users get out of the box? |
 
-### Principle 3: Commit to the Lifecycle
-Security does not end when a product ships. Manufacturers must plan for ongoing support.
-- **Vulnerability Management:** Have robust processes to receive vulnerability reports and assess risk.
-- **Timely Updates:** Be capable of delivering security patches to deployed devices without undue burden on the user.
-- **Clear End-of-Life:** Be transparent about the product's support window and security retirement plan.
+Secure-by-default is one outcome of secure-by-design. A product can have secure defaults and still fail secure-by-design if it cannot be updated, lacks vulnerability handling, has no risk assessment, or cannot explain its security decisions.
 
-## 3. How This Handbook Helps
+## What Changes In The Product Process?
 
-Understanding the principles of Secure-by-Design is the first step. Implementing them is the next. This handbook is designed to bridge that gap.
+Taking secure-by-design seriously changes how a connected product is planned, built, released, and supported.
 
--   **[Standards & Regulations](./../standards/index.md):** Get plain-English breakdowns of the key legal requirements you need to meet.
--   **[Implementation Guides](./../implementation/index.md):** Find concrete, step-by-step guidance for engineering tasks like secure boot, key management, and creating SBOMs.
--   **[Tools](./../tools/index.md):** Discover the platforms and open-source projects that can help you automate and scale your security practices.
+| Product activity | What changes |
+|------------------|--------------|
+| **Ownership** | Security becomes a product responsibility with named owners, not an external audit task. |
+| **Scope and architecture** | Teams record device, cloud, mobile app, update service, support tool, and supplier boundaries before choosing controls. |
+| **Risk assessment** | Threat modeling and risk assessment drive security requirements instead of being paperwork after design is complete. |
+| **Secure defaults** | Products avoid default passwords, unnecessary services, weak configuration, and unsafe customer burden. |
+| **Core controls** | Secure boot, key provisioning, identity, updates, logging, SBOM/VEX, and vulnerability handling are planned as product capabilities. |
+| **Lifecycle support** | The product has a declared support period, security update path, vulnerability intake route, and remediation process. |
+| **Evidence** | Architecture decisions, tests, exceptions, release records, vulnerability records, and support commitments are retained and reviewable. |
 
-<!-- Citations -->
-[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[uk_psti_law]: https://www.gov.uk/government/news/new-laws-to-protect-consumers-from-cyber-criminals-come-into-force-in-the-uk "UK Government: New laws to protect consumers from cyber criminals come into force in the UK" 
+## What Good Looks Like
+
+A secure-by-design connected product should be able to show:
+
+- a defined product and system boundary;
+- a documented threat model or cybersecurity risk assessment;
+- secure defaults and minimised attack surface;
+- protected identity, credentials, keys, and firmware integrity;
+- authenticated update and recovery mechanisms where updates are supported;
+- a public vulnerability disclosure route and internal triage process;
+- a declared support period and patch/remediation workflow;
+- technical documentation and evidence tied to the product version or release.
+
+The exact controls should be proportionate to product risk, architecture, and intended use. A low-stakes BLE sensor and a connected medical device should not have identical evidence packs, but both should be able to explain their decisions.
+
+## Why It Matters: Regulation And Standards
+
+Secure-by-design is no longer only a best practice. Major laws, standards, and guidance now expect manufacturers to own product security outcomes.
+
+- **[EU Cyber Resilience Act (CRA)](../standards/eu/cra/index.md)** makes secure-by-design and vulnerability handling central requirements for products with digital elements.
+- **[UK Product Security and Telecommunications Infrastructure (PSTI) Act](../standards/uk/psti-overview.md)** requires baseline security for consumer connectable products.
+- **[EU NIS 2 Directive](../standards/eu/nis2-overview.md)** increases pressure on essential and important entities to manage cyber risk, including risk from products and suppliers.
+- **[IEC 62443](../standards/global/iec62443-overview.md)** frames industrial security around lifecycle processes and technical security requirements.
+- **[FDA cybersecurity guidance](../standards/us/fda-cybersecurity-overview.md)** expects medical device manufacturers to use a Secure Product Development Framework from design through end of support.
+- **[CISA secure-by-design principles](./cisa-sbd-principles.md)** explain the broader shift from user-managed security to manufacturer ownership.
+
+The pattern is consistent: manufacturers are expected to build security into the product lifecycle and be able to explain the evidence behind their decisions.
+
+## Quick Self-Check
+
+Use this as a first diagnostic, not as a complete assessment.
+
+| Question | Good next step |
+|----------|----------------|
+| Do we know whether our product is in CRA scope? | Read the **[CRA 5-Minute Primer](./cra-primer.md)**. |
+| Do we know our product boundary, including cloud and companion apps? | Start a **[Threat Model](../implementation/build-phase/threat-modeling.md)** and classify the **[Types of Embedded Device](../resources/reference/types-of-embedded-device.md)**. |
+| Do we know our biggest secure-by-design gaps? | Run the **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)**. |
+| Can we prove firmware integrity and update safety? | Review **[Secure Boot](../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../implementation/build-phase/ota-updates.md)**. |
+| Do we have unique identity and protected key material? | Review **[Unique Device Identity](../implementation/build-phase/unique-device-identity.md)** and **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**. |
+| Can researchers report vulnerabilities? | Review **[Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md)** and the **[Policy Starter Kit](../resources/policy-and-evidence/policy-templates.md)**. |
+| Can we explain what evidence supports our claims? | Start a **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)**. |
+
+## Where To Go Next
+
+Choose the path closest to your current task:
+
+- **Understand obligations:** start with the **[CRA 5-Minute Primer](./cra-primer.md)**, then use the **[CRA Overview](../standards/eu/cra/index.md)** for detailed regulatory context.
+- **Assess readiness:** run the **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)**.
+- **Plan the first sprint:** use the **[First-Sprint Checklist](./first-sprint-checklist.md)**.
+- **Design controls:** start with **[Threat Modeling](../implementation/build-phase/threat-modeling.md)**, **[Secure Boot](../implementation/build-phase/secure-boot.md)**, **[Secure OTA Updates](../implementation/build-phase/ota-updates.md)**, and **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**.
+- **Assemble evidence:** use the **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)** and **[Secure-by-Design Maturity Model](../resources/checklists-and-worksheets/maturity-model.md)**.
+- **Find tools:** use the **[Tools](../tools/index.md)** section after you know which control or workflow you need to support.

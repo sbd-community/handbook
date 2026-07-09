@@ -171,19 +171,15 @@ Transfer this evidence into the **[Secure-by-Design Evidence Pack](../policy-and
 
 ## Related Pages
 
-- [CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)
-- [Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)
-- [Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)
-- [Threat Modeling](../../implementation/build-phase/threat-modeling.md)
-- [Secure Boot](../../implementation/build-phase/secure-boot.md)
-- [OTA Updates & Patching](../../implementation/build-phase/ota-updates.md)
-- [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)
-- [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)
-- [Cryptography under the CRA](../cryptography/cryptography-under-cra.md)
-- [STM32 Hardware Selection](../hardware/stm32.md)
-- [ESP32 Hardware Selection](../hardware/espressif.md)
-- [Baxter Life2000 case study](../real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md)
-- [GE Vivid local-access case study](../real-world-vulnerabilities/ge-vivid-ultrasound-local-access.md)
+If you need to:
+
+- turn the architecture classification into a risk assessment, use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)** and the **[CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)**;
+- choose controls for firmware integrity and updates, use **[Secure Boot](../../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**;
+- design identity, provisioning, and cryptography around the selected architecture, use **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**, **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**, and **[Cryptography under the CRA](../cryptography/cryptography-under-cra.md)**;
+- compare hardware-specific support and evidence, use **[STM32 Hardware Selection](../hardware/stm32.md)** and **[ESP32 Hardware Selection](../hardware/espressif.md)**;
+- retain architecture evidence, use the **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**;
+- compare real-world failure patterns, see the **[Baxter Life2000 case study](../real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md)** and **[GE Vivid local-access case study](../real-world-vulnerabilities/ge-vivid-ultrasound-local-access.md)**;
+- assess organisational capability, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)**.
 
 <!-- Citations -->
 [ndss18_muench]: https://www.s3.eurecom.fr/docs/ndss18_muench.pdf "Muench et al. - What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices" 

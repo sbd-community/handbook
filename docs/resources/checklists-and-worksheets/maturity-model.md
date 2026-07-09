@@ -193,17 +193,10 @@ For each domain below the target level, record:
 
 ## Related Pages
 
-- [CRA Readiness Gap Analysis](./cra-gap-analysis.md)
-- [Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)
-- [CRA Overview](../../standards/eu/cra/index.md)
-- [Threat Modeling](../../implementation/build-phase/threat-modeling.md)
-- [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md)
-- [Secure Boot](../../implementation/build-phase/secure-boot.md)
-- [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)
-- [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)
-- [OTA Updates & Patching](../../implementation/build-phase/ota-updates.md)
-- [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)
-- [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)
-- [Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)
-- [Security Logging](../../implementation/operate-phase/security-logging.md)
-- [CI/CD Pipeline Hardening](../../implementation/operate-phase/cicd-hardening.md)
+If you need to:
+
+- assess a specific product or release, use the **[CRA Readiness Gap Analysis](./cra-gap-analysis.md)**;
+- retain maturity evidence and roadmap actions, use the **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**;
+- understand the regulatory context, use the **[CRA Overview](../../standards/eu/cra/index.md)**;
+- improve risk and design practices, use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**, **[Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md)**, **[Secure Boot](../../implementation/build-phase/secure-boot.md)**, **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**, and **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**;
+- improve post-market and release practices, use **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**, **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**, **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)**, **[Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)**, **[Security Logging](../../implementation/operate-phase/security-logging.md)**, and **[CI/CD Pipeline Hardening](../../implementation/operate-phase/cicd-hardening.md)**.

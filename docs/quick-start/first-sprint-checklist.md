@@ -4,49 +4,91 @@ sidebar_label: "First Sprint Checklist"
 sidebar_position: 5
 tags: [quick-start, checklist, agile, cra, compliance]
 ---
+
 # First-Sprint Checklist
 
-Getting started with a large compliance framework like the Cyber-Resilience Act (CRA) can be daunting. This checklist is designed to be a practical, actionable guide for development teams and product managers. It breaks down the initial work into concrete tasks that can be planned into your first few agile sprints.
+Use this checklist when a connected-product team needs to start secure-by-design work quickly and turn it into sprint-sized actions.
 
-The goal is not to achieve full compliance in three sprints, but to build foundational momentum and address the highest-priority items first.
+The goal is not to become CRA-ready in one sprint. The goal is to create momentum: name owners, understand scope, identify the biggest gaps, start evidence collection, and choose the next implementation work.
 
-> For each item, we've linked to the relevant deep-dive guide in this handbook for more context.
+This page is a starting route. For a fuller readiness workflow, use the **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)**. For retained records, use the **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)**.
 
----
+## Sprint Output
 
-## 1. First Sprint: Foundational Setup & Policy
+By the end of the first sprint, aim to have:
 
-This sprint focuses on the essential "paperwork" and process setup. These tasks are critical for establishing a compliant posture and can be done in parallel with development work.
+- a named product-security owner;
+- a first product boundary and architecture note;
+- an initial CRA scope and readiness view;
+- a vulnerability reporting route or plan;
+- a first evidence register;
+- a prioritised backlog for secure boot, identity, provisioning, OTA, SBOM/VEX, logging, and vulnerability handling.
 
-- [ ] **Appoint a Product Security Lead:** Assign one person the formal responsibility for leading the security effort. This person is the point of contact for all things security and compliance.
-- [ ] **Classify Your Products:** Inventory all products you ship that have software and connectivity. Use the [CRA Primer](./cra-primer.md) to determine their risk class (most will be "Default"). This dictates your conformity assessment route.
-- [ ] **Create a `security.txt` File:** Create a `security.txt` file and place it in the `.well-known` directory of your company website. This is the standard way to direct security researchers.
-- [ ] **Draft a Public CVD Policy:** Create a basic Coordinated Vulnerability Disclosure (CVD) policy page on your website. It should include a safe harbor statement and a secure reporting channel (e.g., `security@example.com`). Link to it from your `security.txt` file. ([See CVD Guide](../implementation/operate-phase/vulnerability-disclosure.md))
+## Sprint 1: Establish Ownership And Scope
 
----
+Start with the decisions that unblock the rest of the work.
 
-## 2. Second Sprint: Hardening the Build Pipeline ("Shift Left")
+| Task | Output | Handbook route |
+|------|--------|----------------|
+| Appoint a product-security owner | Named owner and escalation path. | [What is Secure-by-Design?](./what-is-secure-by-design.md) |
+| Confirm product scope | Device, cloud, mobile app, update service, support tool, and supplier boundary. | [Types of Embedded Device](../resources/reference/types-of-embedded-device.md) |
+| Check CRA relevance | Initial scope note and likely product class. | [CRA 5-Minute Primer](./cra-primer.md), [CRA Overview](../standards/eu/cra/index.md) |
+| Start a gap register | First set of gaps, owners, and next actions. | [CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md) |
+| Start an evidence register | Evidence locations, owners, and missing records. | [Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md) |
 
-This sprint focuses on automating security checks in your CI/CD pipeline. These steps provide the fastest feedback on new and existing security issues.
+## Sprint 2: Set Up Vulnerability And Supply-Chain Basics
 
-- [ ] **Add Secret Scanning:** Integrate a tool like `TruffleHog` or `git-secrets` into your CI pipeline to automatically block any commits that contain hardcoded credentials. ([See CI/CD Guide](../implementation/operate-phase/cicd-hardening.md))
-- [ ] **Add SAST Scanning:** Add a Static Application Security Testing (SAST) tool like `CodeQL` or `Semgrep` to your pipeline. Configure it to scan on every pull request to find common coding bugs.
-- [ ] **Generate an SBOM:** As part of your build process, automatically generate a Software Bill of Materials (SBOM) in a standard format like CycloneDX or SPDX. ([See SBOM & VEX Guide](../implementation/build-phase/sbom-vex.md))
-- [ ] **Scan the SBOM for CVEs:** Add a step that scans the generated SBOM for known vulnerabilities (CVEs) using a tool like `Trivy` or `Grype`. Configure the pipeline to fail if a new `Critical` or `High` severity vulnerability is found.
+Create the minimum operating routes for reports, dependencies, and security findings.
 
----
+| Task | Output | Handbook route |
+|------|--------|----------------|
+| Create or plan `security.txt` | Public security contact route and owner. | [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md), [Policy Starter Kit](../resources/policy-and-evidence/policy-templates.md) |
+| Draft a public CVD policy | Policy URL, reporting channel, scope, and response expectations. | [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md) |
+| Generate an initial SBOM | SBOM format, build step, and storage location. | [SBOM & VEX Workflows](../implementation/build-phase/sbom-vex.md) |
+| Add dependency and secret scanning | CI checks or backlog items with owners. | [CI/CD Pipeline Hardening](../implementation/operate-phase/cicd-hardening.md) |
+| Define vulnerability intake handling | Triage owner, case log, severity method, and escalation path. | [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md) |
 
-## 3. Third Sprint: Core Product Security Features
+## Sprint 3: Review Core Product Controls
 
-This sprint focuses on auditing and planning for the most critical on-device security features.
+Use the first evidence and scope work to choose technical priorities.
 
-- [ ] **Audit for Default Credentials:** Search your entire codebase and configuration files for any hardcoded, default, or predictable credentials. Replace them with a mechanism that forces a unique, strong password on first use.
-- [ ] **Evaluate Hardware Root of Trust:** Analyze the SoC or microcontroller on your device. Does it support secure boot? Does it have a hardware-backed key vault like a TPM, Secure Element, or support for a TEE? This decision impacts your entire security architecture. ([See Key Provisioning Guide](../implementation/build-phase/key-provisioning.md))
-- [ ] **Review Secure Update Mechanism:** Review your existing OTA update process against the requirements of a secure system. Does it verify signatures? Does it have anti-rollback protection? Is it power-fail safe? ([See Secure OTA Guide](../implementation/build-phase/ota-updates.md))
-- [ ] **Review Secure Boot:** If your hardware supports it, create a plan for enabling and configuring secure boot. This is a foundational control for ensuring firmware integrity. ([See Secure Boot Guide](../implementation/build-phase/secure-boot.md))
+| Task | Output | Handbook route |
+|------|--------|----------------|
+| Review device identity | Identity model, onboarding assumptions, and lifecycle gaps. | [Unique Device Identity](../implementation/build-phase/unique-device-identity.md) |
+| Review key provisioning | Key inventory, trust-anchor choice, and provisioning gaps. | [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md) |
+| Review secure boot | Boot-chain scope, trust-anchor evidence, and failure behaviour gaps. | [Secure Boot](../implementation/build-phase/secure-boot.md) |
+| Review OTA updates | Update verification, rollback, recovery, rollout, and customer communication gaps. | [Secure OTA Updates](../implementation/build-phase/ota-updates.md) |
+| Review cryptography | Crypto inventory, certificate lifecycle, and migration concerns. | [Cryptography under the CRA](../resources/cryptography/cryptography-under-cra.md) |
 
----
+## Backlog Template
 
-*This checklist provides a starting point. Adapt it to your team's specific needs and integrate these tasks into your project management system.* 
+Use this simple format for first-sprint secure-by-design work.
 
-<!-- Citations -->
+| Item | Owner | Evidence | Status | Next action |
+|------|-------|----------|--------|-------------|
+| Product boundary | | Architecture note | Not started / In progress / Done | |
+| CRA scope check | | Scope note | Not started / In progress / Done | |
+| Vulnerability reporting route | | `security.txt`, policy draft | Not started / In progress / Done | |
+| SBOM generation | | SBOM artifact, CI job | Not started / In progress / Done | |
+| Secure boot review | | Boot-chain note, test plan | Not started / In progress / Done | |
+| OTA update review | | Update architecture, recovery tests | Not started / In progress / Done | |
+| Identity and provisioning review | | Identity model, key inventory | Not started / In progress / Done | |
+| Evidence register | | Evidence pack index | Not started / In progress / Done | |
+
+## What Not To Do In The First Sprint
+
+Avoid spending the first sprint trying to:
+
+- buy a tool before defining the workflow it supports;
+- declare CRA readiness without a gap register and evidence map;
+- treat secure-by-design as only firmware work;
+- ignore cloud, mobile app, backend, supplier, update, and support boundaries;
+- create policies that no internal process can actually operate.
+
+## Where To Go Next
+
+After the first sprint:
+
+- use the **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)** to turn gaps into an action plan;
+- use the **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)** to keep records tied to product scope and release;
+- use **[How to Use This Handbook](./how-to-use-handbook.md)** if different teams need role-specific reading paths.

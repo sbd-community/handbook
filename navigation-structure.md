@@ -63,7 +63,7 @@ This structure reflects the implemented navigation in the `/docs` folder and the
         -   Maturity Model
     -   **Policy & Evidence**
         -   Policy Templates
-        -   Audit Evidence Pack
+        -   Secure-by-Design Evidence Pack
     -   **Reference**
         -   Glossary
         -   Types of Embedded Device

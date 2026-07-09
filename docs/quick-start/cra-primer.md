@@ -87,7 +87,7 @@ Market surveillance authorities will also have the power to order product recall
 
 2.  **Identify Your Biggest Gap (1 min):** Review the core obligations. Is your biggest gap in product security (e.g., no secure boot) or process (e.g., no public vulnerability disclosure policy)? Use the [engineering benchmarks](../standards/eu/cra/index.md#annex-i-requirements) as a checklist.
 
-3.  **Assign Ownership (1 min):** Assign a person or team to be responsible for leading your CRA compliance effort. Have them read the [full CRA overview](../standards/eu/cra/index.md) and start a detailed gap analysis.
+3.  **Assign Ownership (1 min):** Assign a person or team to be responsible for leading your CRA compliance effort. Have them run the [CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md), start a [Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md), and use the [full CRA overview](../standards/eu/cra/index.md) for detailed regulatory context.
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

@@ -85,7 +85,7 @@ these handbook pages are the most useful next stops:
   trust-chain design work behind vendor secure-boot features.
 - **[OTA Updates & Patching](/docs/implementation/build-phase/ota-updates)**
   for the operational side of long-term maintenance.
-- **[Audit Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
+- **[Secure-by-Design Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
   for the documentation you need to collect and maintain.
 
 ## The bigger picture

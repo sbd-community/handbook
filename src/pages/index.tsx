@@ -39,7 +39,7 @@ function ValuePillars(): ReactNode {
   const pillars = [
     {
       title: 'Comply with confidence',
-      description: 'Clause-by-clause mappings for CRA, NIS 2, RED, and IEC 62443. Audit-ready templates and gap-analysis checklists.',
+      description: 'Clause-by-clause mappings for CRA, NIS 2, RED, and IEC 62443. Evidence-ready templates and gap-analysis checklists.',
       icon: '📋'
     },
     {
@@ -61,12 +61,73 @@ function ValuePillars(): ReactNode {
           <Heading as="h2">Turn regulatory requirements into engineering reality</Heading>
         </div>
         <div className="row">
-          {pillars.map((pillar, idx) => (
-            <div key={idx} className={clsx('col col--4')}>
+          {pillars.map((pillar) => (
+            <div key={pillar.title} className={clsx('col col--4')}>
               <div className="text--center padding-horiz--md">
                 <div className={styles.pillarIcon}>{pillar.icon}</div>
                 <Heading as="h3">{pillar.title}</Heading>
                 <p>{pillar.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function EntryPaths(): ReactNode {
+  const paths = [
+    {
+      title: 'Understand obligations',
+      description: 'Get the short version of what the Cyber Resilience Act means for connected products.',
+      cta: 'Read the CRA Primer',
+      link: '/docs/quick-start/cra-primer',
+    },
+    {
+      title: 'Assess readiness',
+      description: 'Check product scope, secure-by-design controls, technical documentation, and evidence gaps.',
+      cta: 'Run the CRA Readiness Checklist',
+      link: '/docs/resources/checklists-and-worksheets/cra-gap-analysis',
+    },
+    {
+      title: 'Implement controls',
+      description: 'Move from obligations into practical guidance for secure boot, updates, identity, SBOMs, and hardening.',
+      cta: 'View Implementation Guides',
+      link: '/docs/implementation',
+    },
+    {
+      title: 'Assemble evidence',
+      description: 'Organise the records that show how security decisions were made, tested, released, and maintained.',
+      cta: 'Build an Evidence Pack',
+      link: '/docs/resources/policy-and-evidence/audit-evidence-pack',
+    },
+  ];
+
+  return (
+    <section className={styles.entryPaths}>
+      <div className="container">
+        <div className="text--center margin-bottom--lg">
+          <Heading as="h2">Choose your next step</Heading>
+          <p className="margin-bottom--lg">
+            Start with the task closest to the decision you need to make.
+          </p>
+        </div>
+        <div className="row">
+          {paths.map((path) => (
+            <div key={path.title} className={clsx('col col--3')}>
+              <div className={clsx('card', styles.entryPathCard)}>
+                <div className="card__header">
+                  <Heading as="h3">{path.title}</Heading>
+                </div>
+                <div className="card__body">
+                  <p>{path.description}</p>
+                </div>
+                <div className="card__footer">
+                  <Link className="button button--primary button--block" to={path.link}>
+                    {path.cta}
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
@@ -109,8 +170,8 @@ function RoleBasedCards(): ReactNode {
           <p className="margin-bottom--lg">Choose your path based on your primary responsibilities</p>
         </div>
         <div className="row">
-          {roles.map((role, idx) => (
-            <div key={idx} className={clsx('col col--4')}>
+          {roles.map((role) => (
+            <div key={role.title} className={clsx('col col--4')}>
               <div className={clsx('card', styles.roleCard)}>
                 <div className="card__header">
                   <div className={styles.roleIcon}>{role.icon}</div>
@@ -170,7 +231,6 @@ function CommunitySection(): ReactNode {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="Secure-by-Design Handbook"
@@ -178,6 +238,7 @@ export default function Home(): ReactNode {
       <HomepageHeader />
       <main>
         <ValuePillars />
+        <EntryPaths />
         <RoleBasedCards />
         <CommunitySection />
       </main>

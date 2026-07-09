@@ -1,4 +1,8 @@
 {
   "label": "Real-World Vulnerabilities",
-  "position": 4
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "resources/real-world-vulnerabilities/index"
+  }
 } 

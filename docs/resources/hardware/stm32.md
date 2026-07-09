@@ -8,6 +8,8 @@ tags: [hardware, stm32, stmicroelectronics, cra, mcu, secure-boot, evidence]
 
 # STM32 Hardware Selection for CRA-Scoped Connected Products
 
+Use this page to assess whether an STMicroelectronics **STM32** part can support the secure-by-design controls, evidence, and lifecycle commitments needed for a connected product.
+
 The **EU Cyber-Resilience Act (CRA)** raises the bar for connected
 products. For microcontroller-based designs, that means choosing hardware
 that can support a trustworthy boot chain, strong cryptography, secure
@@ -57,8 +59,10 @@ announcement [st-announcement].
 
 For the product-level obligations, start with the
 **[CRA Overview](../../standards/eu/cra/index.md)**,
+**[Types of Embedded Device](../reference/types-of-embedded-device.md)**,
 **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**,
 **[Secure Boot](../../implementation/build-phase/secure-boot.md)**,
+**[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**,
 **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**,
 and **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**.
 

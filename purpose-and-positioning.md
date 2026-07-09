@@ -25,7 +25,7 @@ SecureByDesignHandbook.com will be an authoritative, vendor-neutral reference an
 1. **Regulatory Explainers** – succinct breakdowns of CRA, NIS 2, EN 303 645, IEC 62443, FDA preemption, etc.
 2. **Implementation Playbooks** – step-by-step guides (e.g., "Enabling Secure Boot on STM32," "Generating a VEX with OpenVEX").
 3. **Lifecycle & Operations** – vulnerability disclosure policy templates, OTA rollback strategies, SBOM maintenance automation.
-4. **Tools & Resources** – maturity-model worksheets, audit evidence packs, reference architectures, sample policies.
+4. **Tools & Resources** – maturity-model worksheets, secure-by-design evidence packs, reference architectures, sample policies.
 
 ## Tone & voice
 

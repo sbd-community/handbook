@@ -36,6 +36,19 @@
   margin-bottom: 1rem;
 }
 
+.entryPaths {
+  padding: 3rem 0;
+}
+
+.entryPathCard {
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.entryPathCard:hover {
+  transform: translateY(-4px);
+}
+
 .roleCards {
   padding: 3rem 0;
   background-color: var(--ifm-color-emphasis-100);

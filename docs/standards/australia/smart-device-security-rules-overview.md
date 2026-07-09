@@ -71,7 +71,7 @@ At minimum, teams should treat the statement as part of the product's release ev
 - Link to evidence for password design, vulnerability reporting, and support-period publication.
 - Retain the statement for the period required by the Rules.
 
-Use the [Audit Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md) to keep the statement of compliance and supporting artefacts together.
+Use the [Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md) to keep the statement of compliance and supporting artefacts together.
 
 ## 4. Practical compliance checklist
 

@@ -4,98 +4,253 @@ sidebar_label: "Key Management"
 sidebar_position: 4
 tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]
 ---
-# Guide: Key Provisioning & Storage
 
-## 1. Introduction to Key Provisioning & Storage
+# Key Provisioning & Storage
 
-### 1.1. What is Key Provisioning & Storage?
+**Key provisioning and storage** is the process of creating, injecting, deriving, protecting, using, rotating, revoking, and evidencing the cryptographic keys a product depends on.
 
-Key Provisioning and Management is the process of securely generating, injecting, and managing the cryptographic keys a device uses to perform secure operations. The core challenge is ensuring that secret keys remain secret throughout the entire manufacturing process and the product's operational life. A breach at any stage can compromise the security of every device that shares the compromised key material.
+For connected devices, key management is not a single firmware feature. It is a manufacturing and lifecycle control. A weak provisioning ceremony, shared key, exposed signing credential, or undocumented factory exception can undermine secure boot, OTA updates, device identity, encrypted communications, and CRA evidence.
 
-This process is distinct from, but closely related to, establishing a **[Unique Device Identity](./unique-device-identity.md)**.
+Use this page to define how keys are generated, protected, linked to device identity, handled during manufacturing, used in operation, and retained as evidence over the support period.
 
--   A **Device Identity** proves *who* a device is.
--   **Provisioned Keys** are the tools the device *uses* to act on that identity (e.g., encrypting data, verifying software signatures, authenticating to a network).
+This page is engineering guidance. It supports secure-by-design planning and technical documentation, but it is not legal advice or a conformity assessment.
 
-### 1.2. The Regulatory Requirement
+## Use This Page When
 
-While regulations may not specify the exact method of key storage, they mandate outcomes that depend entirely on secure key management. The primary driver is:
+Use this page when you need to:
 
--   **Confidentiality Protection ([Annex I § 1 (2)(e)][cra_annexI])**: The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to protect the confidentiality of data "at-rest and in-transit using state-of-the-art encryption." The BSI TR-03183-1 reinforces this, requiring the protection of all "sensitive data and parameters" ([REQ_ER 6][bsi_tr_03183_p1]).
+- design a device key hierarchy or manufacturing provisioning flow;
+- decide where root keys, operational keys, certificates, and signing credentials should live;
+- choose between a secure element, TPM, TEE, PUF, protected MCU storage, or external provisioning service;
+- avoid shared default secrets, hardcoded keys, and extractable credentials;
+- connect key management to secure boot, OTA updates, device identity, TLS, data-at-rest protection, and evidence;
+- document key generation, injection, rotation, revocation, destruction, and exception handling.
 
-State-of-the-art encryption is only effective if the keys themselves are protected from disclosure and modification. Therefore, a robust key provisioning and storage strategy is an implicit and non-negotiable requirement.
+## Key Provisioning vs Device Identity
 
-### 1.3. Do I Really Need to Do This?
+Key provisioning is closely related to **[Unique Device Identity](./unique-device-identity.md)**, but they are not the same thing.
 
-The need for secure key provisioning and storage is a direct consequence of other security requirements. Rather than asking *if* you need to do it, the better question is: **"Does my product use cryptography for any of its functions?"**
+- **Device identity** answers: *What is this device, and how can another system trust that it is genuine?*
+- **Key provisioning and storage** answers: *How are the cryptographic keys, certificates, and credentials created, protected, used, replaced, revoked, and evidenced?*
 
-The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** mandates several security outcomes that implicitly require the use of cryptography, and therefore keys:
+A device identity may be expressed through a certificate or hardware-bound key. Key provisioning covers the wider process that makes that identity and other cryptographic functions trustworthy.
 
--   **Confidentiality ([Annex I § 1 (2)(e)][cra_annexI])**: If you store or transmit any sensitive data (e.g., user credentials, network passwords, personal information), you must encrypt it. Encryption requires keys.
--   **Integrity of Software Updates ([Annex I § 1 (2)(d)][cra_annexI])**: Your device must be able to address vulnerabilities through security updates. The BSI's guideline ([REQ_ER 4.2][bsi_tr_03183_p1]) clarifies this means verifying the "integrity and authenticity of the update package". This requires cryptographic signatures, which in turn rely on keys.
--   **Access Control ([Annex I § 1 (2)(d)][cra_annexI])**: If your product has user accounts or restricted interfaces, it needs a way to authenticate users. Secure authentication mechanisms often rely on cryptographic credentials.
+## What Good Looks Like
 
-#### When is key management *not* required?
+A secure key provisioning and storage process should be able to show:
 
-A product is exempt from these requirements only if it uses **no cryptographic functions at all**. Such a device would have to meet all of the following conditions:
+- every security-relevant key has a defined purpose, owner, protection boundary, lifecycle, and evidence record;
+- root keys and high-value secrets are generated or derived inside a trusted environment and are not extractable in normal operation;
+- each device receives unique credentials where uniqueness is required;
+- no production fleet depends on a shared default secret embedded in firmware;
+- manufacturing stations, HSMs, secure elements, certificates, manifests, and audit logs are part of a controlled provisioning ceremony;
+- operational keys and certificates can be rotated, renewed, revoked, or replaced during the support period;
+- firmware signing keys and device operational keys are separated by purpose and authority;
+- provisioning failures, rework, scrap, and exception cases are recorded;
+- the product evidence pack can tie key-management decisions to product scope, hardware revision, firmware release, manufacturing batch, and support period.
 
--   It does not store or transmit any sensitive, personal, or secret data that requires encryption.
--   It does not have a secure update mechanism that relies on signature verification.
--   It does not implement any cryptographic access control or authentication methods.
--   It has no other feature that relies on cryptography (e.g., secure boot, remote attestation).
+## Regulatory Context
 
-An example of such a device might be a simple, battery-powered sensor that periodically broadcasts non-sensitive data (like a temperature reading) over an unencrypted, local radio protocol.
+The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** does not prescribe a specific key-storage technology. It requires security outcomes that depend on good key management.
 
-#### The Bottom Line
+Relevant CRA outcomes include:
 
-For virtually any modern connected product that receives software updates, connects to a network, or handles any user-specific information, the answer is **yes, this is required**. An insecure key management strategy (like hardcoding a key in firmware) is a critical vulnerability that makes compliance with the CRA impossible. The real engineering decision is not *if* you should do it, but *how*—choosing the right hardware and processes to protect your keys throughout their lifecycle.
+- protecting confidentiality of data at rest and in transit using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e)][cra_annexI]);
+- protecting integrity of data, commands, programs, and configuration against unauthorised modification ([CRA Annex I § 1(2)(f)][cra_annexI]);
+- preventing unauthorised access through appropriate control mechanisms;
+- enabling secure updates and vulnerability remediation during the support period.
 
-## 2. The Key Management Lifecycle & Workflow
+BSI TR-03183-1 reinforces the need to protect sensitive data and parameters ([REQ_ER 6][bsi_tr_03183_p1]) and to verify update package authenticity and integrity.
 
-Effective key management is a continuous process that covers the entire life of a key, from its birth to its eventual retirement. A secure product uses different keys for different purposes, and the provisioning workflow must handle them accordingly.
+Strong algorithms are not enough. A product can use current cryptography and still fail if keys are shared, predictable, extractable, expired, or uncontrolled in manufacturing.
 
-### 2.1 Key Generation & Provisioning
--   **Hardware Root of Trust Keys:** These form the device's core **Hardware-Based Root Identity**. They are provisioned once, at the silicon level or in a highly secure factory environment, often injected by the chipmaker into a Secure Element (SE) or TPM using a Hardware Security Module (HSM). The private key should never be extractable. Keys must be created using a high-quality entropy source, like a hardware-based True Random Number Generator (TRNG).
--   **Operational Keys & Certificates:** These are application-level credentials used for specific tasks (e.g., connecting to the cloud). They can be provisioned in the factory or later in the lifecycle. The device uses its root private key to sign a Certificate Signing Request (CSR), which is sent to a Certificate Authority (CA) to receive a signed operational certificate. This anchors the trust of the operational key to the hardware root key.
+## Do I Need Key Provisioning?
 
-### 2.2 Secure Storage
-Keys must be stored in a way that prevents their unauthorized extraction. The ideal storage location is within a hardware-backed secure vault, such as a Trusted Platform Module (TPM), a Secure Element (SE), or a protected region of memory managed by a Trusted Execution Environment (TEE). Storing keys in regular flash memory is less secure as it may be vulnerable to physical attacks.
+If the product uses cryptography, it needs key management. For most connected products, that means a defined provisioning and storage process.
 
-### 2.3 Usage, Rotation & Revocation
-Cryptographic operations (e.g., signing, encrypting) should be performed *inside* the hardware security boundary. The key material itself should never be exposed to the main, non-secure processor. A mature security posture also includes plans for rotating keys over time and revoking them if they are compromised, often leveraging the device's secure update mechanism.
+Common triggers include:
 
-## 3. Hardware Roots of Trust for Key Storage
+- device authentication to a cloud, gateway, mobile app, service, or customer system;
+- TLS or mTLS communication;
+- firmware signing, secure boot, or OTA update verification;
+- data-at-rest encryption or key wrapping;
+- command authentication or anti-replay protection;
+- secure logging, attestation, license enforcement, or protected configuration;
+- certificates, tokens, credentials, or product secrets issued during manufacturing.
 
-A "Root of Trust" (RoT) is a component that is inherently trusted within a system. For key management, this trust must be anchored in hardware. Here are common hardware technologies used to build a RoT:
+A product may avoid key provisioning only if it has no cryptographic functions, no sensitive data, no authenticated update path, no access control, and no trust relationship with another system. That is unusual for a connected product.
 
-| Technology | Description | Best for... |
-| :--- | :--- | :--- |
-| **Secure Element (SE)** | A dedicated, tamper-resistant microcontroller designed to be a "key vault". It runs a hardened, specialized OS and exposes crypto services to the main processor via a limited interface (e.g., I2C). | Storing high-value keys that must resist physical extraction. Common in payment and SIM applications but widely available for IoT. |
-| **Trusted Platform Module (TPM)** | A standardized component that provides secure key storage, cryptographic functions, and platform integrity measurement (attestation). It is governed by the Trusted Computing Group (TCG) specification. | General-purpose secure storage, remote attestation, and disk encryption. A requirement for many enterprise and industrial systems. |
-| **Trusted Execution Environment (TEE)** | A secure area inside the main processor (e.g., ARM TrustZone, Intel SGX) that isolates security-critical code and data from the normal operating system. Keys are protected in memory, not necessarily a separate chip. | Protecting key *operations* when a separate hardware vault is not available. The keys are only as secure as the TEE's software implementation. |
-| **Physically Unclonable Function (PUF)** | A circuit that leverages minute physical variations from the manufacturing process to produce a unique, device-specific "fingerprint". This can be used as a root key that is never explicitly stored in memory. | Creating a unique, unclonable device identity and a hardware-derived root key without needing to provision one. |
+## Design The Key Inventory First
 
-## 4. Accelerating Compliance with Tooling
+Before choosing a chip or platform, list the keys and credentials the product needs.
 
-While it is possible to build key management systems from scratch, leveraging specialized hardware and software can significantly accelerate the path to compliance and reduce implementation risk.
+| Key or credential | Typical purpose | Lifecycle question |
+|-------------------|-----------------|--------------------|
+| Hardware root key | Anchors device trust or identity. | Is it generated in silicon, injected in factory, or derived from a PUF? |
+| Operational device certificate | Authenticates the device to a service. | Can it be renewed, rotated, and revoked? |
+| Firmware verification key | Verifies signed boot or update images. | How is it protected and updated if the signing authority changes? |
+| Update signing key | Signs firmware, software, or configuration releases. | Is the private key protected in an HSM or controlled signing service? |
+| Data-at-rest key | Protects local sensitive data. | Is it unique, wrapped, derived, erasable, and recoverable only as intended? |
+| Communication credential | Supports TLS, mTLS, VPN, MQTT/TLS, API, or local pairing. | What happens at expiry, compromise, or ownership transfer? |
+| Manufacturing secret | Enables secure provisioning or factory authentication. | Is it temporary, access-controlled, and removed after production? |
+| Recovery or service credential | Supports repair, recovery, debug unlock, or support. | Is use tightly controlled, logged, and disabled for production unless justified? |
 
--   **Public Key Infrastructure (PKI)** software provides the system for issuing and managing certificates. While you can build your own, using a mature open-source solution like [Keyfactor EJBCA](https://www.keyfactor.com/products/ejbca-enterprise/) is a common starting point.
--   **Secure Elements (SEs)** are the on-device hardware component for secure key storage. Integrating a dedicated SE, such as one from the [NXP EdgeLock SE05x](https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family:SE050) family, is often simpler and more secure than trying to protect keys in a general-purpose microcontroller's memory.
--   **End-to-End Platforms:** Some commercial platforms, like [QuarkLink](https://quarklink.io/product/), bundle these capabilities together, offering a single solution for provisioning, key management, and other lifecycle services.
+Record the result in the product cryptographic inventory and decision records. For broader algorithm and lifecycle choices, use **[Cryptography under the CRA](../../resources/cryptography/cryptography-under-cra.md)**.
 
-For more details on specific technologies, see the tools pages for [Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md) and [PKI & Key Management](../../tools/pki-and-key-management.md).
+## Provisioning Ceremony
 
-## 5. Compliance Checklist
+Treat provisioning as a ceremony: a controlled sequence with defined participants, systems, approvals, records, and failure handling.
 
-To meet the requirements of modern cybersecurity standards, your key management strategy should address the following points:
+| Stage | What happens | Evidence to retain |
+|-------|--------------|--------------------|
+| Design | Define key purposes, hierarchy, trust anchors, algorithms, storage locations, certificate profiles, and lifecycle rules. | Key-management design, architecture diagram, cryptographic decision records. |
+| Supplier handover | Receive chips, modules, public-key manifests, certificates, or attestation material from the silicon or module supplier. | Supplier manifest, chain-of-custody record, verification result. |
+| Factory setup | Prepare HSMs, provisioning servers, station credentials, network isolation, access control, and station software versions. | Factory configuration, access approvals, HSM policy, station build record. |
+| Device enrolment | Generate, inject, or derive device-specific key material and bind it to a serial number, product identity, batch, and hardware revision. | Provisioning log, serial mapping, certificate issuance record, failure log. |
+| Verification | Confirm the device can use the credential without exposing key material. | Functional test, attestation result, certificate validation, secure storage test. |
+| Lockdown | Disable debug paths, remove temporary secrets, close provisioning interfaces, and set production configuration. | Production-lock record, debug-disable evidence, final configuration record. |
+| Release to inventory | Associate provisioned devices with batch, firmware, region, customer, or distribution channel where needed. | Batch record, device manifest, release approval. |
+| Rework or scrap | Handle failed, returned, or reworked devices without leaking or reusing credentials. | Rework record, revocation/destruction record, exception approval. |
 
-- [ ] **Hardware-Backed Storage:** Have you selected a hardware RoT (SE, TPM, TEE, or PUF) to protect your most critical keys?
-- [ ] **Secure Provisioning Process:** Is your manufacturing line equipped to inject keys securely, ideally using an HSM to communicate with the device's RoT?
-- [ ] **No Default Keys:** Is every device provisioned with a unique set of keys? Are there no hardcoded, default, or predictable keys anywhere in your firmware?
-- [ ] **Key Hierarchy:** Have you designed a key hierarchy? A hardware-protected root key should be used to protect other, less critical keys (e.g., application keys, communication keys) which can be updated or rotated if needed.
-- [ ] **Limited Access:** Does your application code only access cryptographic *functions*? The raw key material should never be directly readable by the non-secure application processor.
-- [ ] **Lifecycle Documentation:** Is your key management plan (generation, provisioning, rotation, revocation) documented in your technical file to demonstrate compliance to auditors and authorities?
+The exact workflow can be simple or complex. What matters is that it is controlled, repeatable, and evidenced.
 
-<!-- Citations -->
-[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
+## Trust Anchor Options
+
+The trust anchor is the place where the product's most important secrets or trust decisions are rooted.
+
+| Technology | What it provides | Watch-outs |
+|------------|------------------|------------|
+| Secure Element (SE) | Dedicated tamper-resistant key storage and cryptographic services over a narrow interface. | Adds BOM, integration, supply-chain, and certificate-profile decisions. |
+| Trusted Platform Module (TPM) | Standardised key storage, attestation, measurement, and platform-security functions. | Best fit is often Linux, gateway, industrial, or enterprise-class platforms. |
+| Trusted Execution Environment (TEE) | Isolated execution and protected memory inside the main processor. | Security depends on implementation, firmware configuration, and attack surface. |
+| Physically Unclonable Function (PUF) | Device-unique secret derived from physical characteristics rather than stored directly. | Needs careful enrolment, helper-data protection, reliability, and recovery design. |
+| MCU secure storage | Protected flash, OTP, key slots, debug controls, and cryptographic accelerators. | Protection varies widely by family, configuration, lifecycle state, and threat model. |
+| External HSM or signing service | Protects CA, firmware-signing, and provisioning authority keys outside the device. | Operational controls, approvals, logging, backup, and disaster recovery matter. |
+
+Hardware helps, but it does not replace process. A secure element can still be misused if all devices receive the same credential, if certificates are not revocable, or if production lockdown is skipped.
+
+For hardware-selection context, see the **[STM32](../../resources/hardware/stm32.md)** and **[ESP32](../../resources/hardware/espressif.md)** hardware pages.
+
+## Key Lifecycle Decisions
+
+Define the lifecycle for each key class.
+
+| Decision | Questions to answer |
+|----------|---------------------|
+| Generation | Where is the key generated, what entropy source is used, and who can trigger generation? |
+| Injection or derivation | Is the key injected, generated on-device, derived from a hardware secret, or issued by a CA? |
+| Storage | Is the private key non-extractable? What hardware or software boundary protects it? |
+| Use | Can application code read the key, or only request cryptographic operations? |
+| Separation | Are boot, update, identity, communication, data, and service keys separated by role? |
+| Rotation and renewal | Can keys or certificates be replaced before expiry or after compromise? |
+| Revocation | Can a single device, batch, certificate, service credential, or signing authority be revoked? |
+| Destruction | Can keys be erased for decommissioning, repair, return, transfer, or crypto-erasure? |
+| Recovery | What happens if a device loses credentials or a signing key is compromised? |
+| Evidence | Where are issuance, renewal, revocation, and exception records retained? |
+
+## Common Architecture Patterns
+
+Several patterns are common in connected products.
+
+### Supplier-Rooted Device Identity
+
+The silicon or module supplier creates a hardware-rooted identity and provides public-key or certificate manifests to the manufacturer. The manufacturer verifies the manifest during production and issues operational credentials.
+
+This can reduce factory key-injection risk, but the manufacturer still owns product-scope decisions, certificate issuance, onboarding, lifecycle, and evidence.
+
+### OEM Factory Provisioning
+
+The manufacturer generates or injects root or operational credentials during production using a controlled factory station and HSM-backed provisioning service.
+
+This gives more control, but it increases the need for manufacturing security, station hardening, access control, audit logs, rework handling, and disaster recovery.
+
+### On-Device Key Generation With CSR
+
+The device generates a key pair internally, keeps the private key non-extractable, and sends a certificate signing request to a provisioning or onboarding service.
+
+This avoids moving private keys through the factory, but the service must verify that the request came from a genuine in-scope device and bind it to the correct product record.
+
+### Derived Keys
+
+The device derives working keys from a hardware secret, PUF, unique root, or key-encryption key.
+
+This can reduce stored secret material, but derivation context, salt, labels, anti-rollback state, and destruction behavior need careful design.
+
+## Evidence To Retain
+
+Transfer key-management evidence into the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**.
+
+Useful evidence includes:
+
+| Evidence | Why it matters |
+|----------|----------------|
+| Key inventory | Shows what keys exist, why they exist, and who owns them. |
+| Key hierarchy and architecture diagram | Explains trust anchors, operational keys, certificate chains, and separation of duties. |
+| Provisioning process description | Shows how manufacturing creates, injects, derives, verifies, and locks down credentials. |
+| Supplier manifests and verification records | Shows how supplier-rooted identities or modules are checked. |
+| HSM, CA, and signing policy | Shows how high-value authority keys are protected. |
+| Provisioning logs | Links device, batch, serial number, credential, firmware, hardware revision, and date. |
+| Certificate issuance, renewal, and revocation records | Shows lifecycle management and support-period control. |
+| Secure storage test evidence | Shows keys are protected and non-extractable as designed. |
+| Debug and production-lock evidence | Shows provisioning interfaces and temporary access paths are closed. |
+| Rework, scrap, and exception records | Shows failed devices and unusual cases did not leak or reuse secrets. |
+| Compromise and recovery runbook | Shows what the team would do if keys, CA, signing service, or batches were compromised. |
+
+## Common Gaps
+
+Common key-management gaps include:
+
+- using one shared secret across a product line or manufacturing batch;
+- embedding private keys, API tokens, passwords, or certificates in firmware images;
+- generating production keys on an uncontrolled factory PC;
+- allowing application code to read raw key material instead of invoking protected operations;
+- failing to bind credentials to serial number, product scope, hardware revision, or support period;
+- issuing certificates without renewal, expiry, revocation, or replacement planning;
+- protecting device keys but leaving firmware signing keys weakly controlled;
+- skipping debug lockdown after provisioning;
+- losing records for reworked, scrapped, returned, or replacement devices;
+- assuming hardware security features are active without production configuration evidence.
+
+## Tooling And Build-vs-Buy Decisions
+
+Some teams can operate a simple provisioning flow using a secure factory station, HSM-backed CA, and device secure storage. Others benefit from specialised platforms.
+
+Useful tooling categories include:
+
+- public key infrastructure for issuing and managing certificates, such as [Keyfactor EJBCA](https://www.keyfactor.com/products/ejbca-enterprise/);
+- secure elements and hardware trust anchors, such as [NXP EdgeLock SE05x](https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family:SE050);
+- HSMs or signing services for CA keys, firmware signing keys, and release approvals;
+- factory provisioning systems that bind devices to serial numbers, batches, manifests, and certificates;
+- lifecycle platforms such as [QuarkLink](https://quarklink.io/product/) that bundle provisioning, identity management, and related device lifecycle services.
+
+For more details, see **[Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md)** and **[PKI & Key Management](../../tools/pki-and-key-management.md)**.
+
+## Key Provisioning Checklist
+
+Before release, confirm that:
+
+- [ ] **Key inventory:** Every key, certificate, credential, token, and signing authority has a defined purpose and owner.
+- [ ] **Unique credentials:** Devices use unique credentials where uniqueness is required; no shared default secret protects a fleet.
+- [ ] **Protected generation:** Production keys are generated, injected, or derived in a controlled trusted environment.
+- [ ] **Hardware-backed storage:** Critical keys are stored or derived using an appropriate trust anchor.
+- [ ] **Non-extractable private keys:** Application code cannot read raw high-value key material.
+- [ ] **Separation of duties:** Firmware signing, update verification, device identity, communication, and data-protection keys are separated.
+- [ ] **Provisioning ceremony:** Manufacturing stations, HSMs, manifests, access control, audit logs, and failure handling are defined.
+- [ ] **Lifecycle plan:** Rotation, renewal, revocation, destruction, recovery, and compromise handling are documented.
+- [ ] **Production lockdown:** Debug paths, temporary secrets, and provisioning interfaces are removed or disabled for production devices.
+- [ ] **Evidence retention:** Provisioning logs, certificate records, supplier records, test evidence, and exceptions are retained.
+
+## Related Pages
+
+If you need to:
+
+- design the identity model that uses these keys, use **[Unique Device Identity](./unique-device-identity.md)**;
+- anchor key decisions in boot integrity, use **[Secure Boot](./secure-boot.md)**;
+- protect and evidence update verification, use **[Secure OTA Updates](./ota-updates.md)**;
+- assess algorithms, certificate profiles, and cryptographic lifecycle, use **[Cryptography under the CRA](../../resources/cryptography/cryptography-under-cra.md)**;
+- choose hardware features, use **[STM32](../../resources/hardware/stm32.md)** or **[ESP32](../../resources/hardware/espressif.md)**;
+- retain technical documentation, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
+- compare tooling, use **[Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md)** and **[PKI & Key Management](../../tools/pki-and-key-management.md)**.
+
+[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

@@ -65,3 +65,13 @@ Finally, we turn the high-priority threats into concrete engineering tasks. This
 | Information Disclosure of schedules  | The cloud service **must** encrypt all sensitive user data at rest. The mobile app **must** use TLS for all communication.    |
 | Elevation of Privilege via API       | The cloud API **must** re-verify a user's authorization on every single request to ensure they own the resource they are trying to access. |
 | Spoofing commands on local network   | The thermostat **must** use TLS with certificate pinning to ensure it only talks to the legitimate cloud server, preventing man-in-the-middle attacks. |
+
+## Where To Go Next
+
+Use this example with:
+
+- **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)** to adapt the workflow and threat register fields;
+- **[Types of Embedded Device](../reference/types-of-embedded-device.md)** to confirm device, cloud, mobile app, and update-service boundaries;
+- **[Secure Boot](../../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)** for the firmware-update mitigation;
+- **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)** and **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)** for device authentication and credential handling;
+- **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)** to retain the diagram, threats, mitigations, and release evidence.

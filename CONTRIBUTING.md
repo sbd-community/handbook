@@ -14,7 +14,7 @@ We welcome contributions in several areas:
 
 - **Standards Breakdowns**: Plain-English explanations of regulatory requirements
 - **Implementation Playbooks**: Step-by-step technical guides (secure boot, SBOM, OTA, etc.)
-- **Templates & Checklists**: Audit-ready artifacts and gap-analysis tools
+- **Templates & Checklists**: Evidence-ready artifacts and gap-analysis tools
 - **Case Studies**: Real-world implementation examples (anonymized)
 - **Tool Reviews**: Vendor-neutral evaluations of security tooling
 

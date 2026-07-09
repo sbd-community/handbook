@@ -20,11 +20,11 @@ If you are not sure where to begin, choose the task closest to the decision you 
 | If you need to... | Start with | Also useful |
 |-------------------|------------|-------------|
 | Assess CRA readiness | [CRA Gap Analysis](./checklists-and-worksheets/cra-gap-analysis.md) | [Maturity Model](./checklists-and-worksheets/maturity-model.md) |
-| Assemble evidence | [Audit Evidence Pack](./policy-and-evidence/audit-evidence-pack.md) | [Policy Templates](./policy-and-evidence/policy-templates.md) |
+| Assemble evidence | [Secure-by-Design Evidence Pack](./policy-and-evidence/audit-evidence-pack.md) | [Policy Templates](./policy-and-evidence/policy-templates.md) |
 | Reuse example threat models | [Low-Stakes BLE Sensor](./example-documents/threat-model-low-stakes-ble-sensor.md) | [Continuous Glucose Monitor](./example-documents/threat-model-cgm.md), [Smart Thermostat](./example-documents/threat-model-smart-thermostat.md) |
 | Select secure hardware | [Types of Embedded Device](./reference/types-of-embedded-device.md) | [STM32 Selection](./hardware/stm32.md), [ESP32 Selection](./hardware/espressif.md) |
 | Understand cryptography under the CRA | [Cryptography under the CRA](./cryptography/cryptography-under-cra.md) | [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md), [Secure Boot](../implementation/build-phase/secure-boot.md) |
-| Learn from real vulnerabilities | [Contec Patient Monitor](./real-world-vulnerabilities/contec-patient-monitor-backdoor.md) | [Baxter LIFE2000](./real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md), [Baxter Connex shared key](./real-world-vulnerabilities/baxter-connex-spot-monitor-shared-key.md) |
+| Learn from real vulnerabilities | [Real-World Vulnerability Lessons](./real-world-vulnerabilities/index.md) | [Contec Patient Monitor](./real-world-vulnerabilities/contec-patient-monitor-backdoor.md), [Baxter Connex shared key](./real-world-vulnerabilities/baxter-connex-spot-monitor-shared-key.md) |
 | Understand key concepts | [Glossary](./reference/glossary.md) | [Types of Embedded Device](./reference/types-of-embedded-device.md) |
 
 ## What Each Resource Group Is For
@@ -35,7 +35,7 @@ Use the **[CRA Gap Analysis](./checklists-and-worksheets/cra-gap-analysis.md)** 
 
 ### Assemble Evidence
 
-Use the **[Audit Evidence Pack](./policy-and-evidence/audit-evidence-pack.md)** to organise technical documentation, test evidence, vulnerability records, and post-market records. Use **[Policy Templates](./policy-and-evidence/policy-templates.md)** as starter material for public and internal policies.
+Use the **[Secure-by-Design Evidence Pack](./policy-and-evidence/audit-evidence-pack.md)** to organise technical documentation, test evidence, vulnerability records, and post-market records. Use **[Policy Templates](./policy-and-evidence/policy-templates.md)** as starter material for public and internal policies.
 
 ### Reuse Examples
 
@@ -57,7 +57,7 @@ Cryptography guidance can date quickly. Check source dates, draft status, and th
 
 ### Learn From Real Failures
 
-Use the real-world vulnerability case studies to see how design failures appear in deployed products. Start with **[Baxter LIFE2000](./real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md)**, **[Contec Patient Monitor](./real-world-vulnerabilities/contec-patient-monitor-backdoor.md)**, or **[Baxter Connex shared key](./real-world-vulnerabilities/baxter-connex-spot-monitor-shared-key.md)**.
+Use the **[Real-World Vulnerability Lessons](./real-world-vulnerabilities/index.md)** hub to choose case studies by failure pattern, control area, and evidence lesson. Start with **[Baxter LIFE2000](./real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md)**, **[Contec Patient Monitor](./real-world-vulnerabilities/contec-patient-monitor-backdoor.md)**, or **[Baxter Connex shared key](./real-world-vulnerabilities/baxter-connex-spot-monitor-shared-key.md)**.
 
 ### Reference and Background
 

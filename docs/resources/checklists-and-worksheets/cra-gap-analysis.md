@@ -178,20 +178,15 @@ Copy evidence locations, open gaps, owners, review dates, and release-impact not
 
 ## Related Pages
 
-- [CRA Overview](../../standards/eu/cra/index.md)
-- [Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)
-- [Secure-by-Design Maturity Model](./maturity-model.md)
-- [Policy Templates](../policy-and-evidence/policy-templates.md)
-- [Threat Modeling](../../implementation/build-phase/threat-modeling.md)
-- [Secure Boot](../../implementation/build-phase/secure-boot.md)
-- [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)
-- [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)
-- [OTA Updates & Patching](../../implementation/build-phase/ota-updates.md)
-- [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)
-- [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)
-- [Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)
-- [Security Logging](../../implementation/operate-phase/security-logging.md)
-- [User Documentation](../../implementation/build-phase/user-documentation.md)
+If you need to:
+
+- understand CRA obligations before completing the checklist, use the **[CRA Overview](../../standards/eu/cra/index.md)**;
+- retain checklist evidence and open gaps, use the **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**;
+- assess organisational capability behind the product gaps, use the **[Secure-by-Design Maturity Model](./maturity-model.md)**;
+- turn policy gaps into public and internal procedures, use the **[Secure-by-Design Policy Starter Kit](../policy-and-evidence/policy-templates.md)**;
+- assess product risk and architecture, use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**;
+- close technical control gaps, use **[Secure Boot](../../implementation/build-phase/secure-boot.md)**, **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**, **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**, and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**;
+- close release and post-market gaps, use **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**, **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)**, **[Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)**, **[Security Logging](../../implementation/operate-phase/security-logging.md)**, and **[User Documentation](../../implementation/build-phase/user-documentation.md)**.
 
 <!-- Citations -->
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
