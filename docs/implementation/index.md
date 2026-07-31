@@ -34,3 +34,5 @@ Start with the product risk and architecture, then choose controls. Most teams s
 4. Define post-market workflows for vulnerability disclosure, patch cadence, logging, monitoring, and evidence refresh.
 
 For a broader route through the site, use **[How to Use This Handbook](../quick-start/how-to-use-handbook.md)**.
+
+For EU SME release-gate checklists mapped indicatively to CRA Annex I, see ENISA's **[Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook)** ([GitHub playbooks](https://github.com/enisaeu/enisa-sbd-playbook/)).

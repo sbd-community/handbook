@@ -207,7 +207,8 @@ If you need to:
 - manage signing keys and provisioning, use **[Key Provisioning & Storage](./key-provisioning.md)**;
 - assess cryptographic mechanisms, use **[Cryptography under the CRA](../../resources/cryptography/cryptography-under-cra.md)**;
 - plan boot-manager evidence, use **[ETSI EN 304 623: Boot Managers](../../standards/eu/cra/en-304-623-boot-managers.md)**;
-- retain update evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**.
+- retain update evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
+- add Secure-by-Default release gates for automated updates, use ENISA's **[Automated maintenance and updates](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/20-automated-maintenance-and-updates.md)** playbook.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

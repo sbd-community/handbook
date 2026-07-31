@@ -226,7 +226,8 @@ If you need to:
 - target and evidence product updates, use **[Secure OTA Updates](./ota-updates.md)**;
 - choose hardware features, use **[STM32](../../resources/hardware/stm32.md)** or **[ESP32](../../resources/hardware/espressif.md)**;
 - retain technical documentation, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
-- compare supporting tools, use **[Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md)** and **[PKI & Key Management](../../tools/pki-and-key-management.md)**.
+- compare supporting tools, use **[Hardware Root of Trust & Provisioning](../../tools/hardware-root-of-trust-and-provisioning.md)** and **[PKI & Key Management](../../tools/pki-and-key-management.md)**;
+- add Secure-by-Default release gates for identity and secrets, use ENISA's **[Unique device identity and secrets by default](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/18-unique-device-identity-and-secrets-by-default.md)** playbook.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

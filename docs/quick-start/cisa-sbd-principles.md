@@ -45,5 +45,9 @@ For security to become a core business requirement, it must be driven by executi
 
 These principles provide the foundational "why" for the Secure-by-Design movement. The rest of this handbook is dedicated to the "how," with concrete [Implementation Guides](../implementation/index.md) and [Tools](../tools/index.md) to help you apply this philosophy to your connected products.
 
+For EU-facing release checklists and Secure-by-Default gates mapped indicatively to CRA Annex I, see ENISA's **[Secure by Design and Default Playbook][enisa_playbook]** ([GitHub playbooks][enisa_github]). Our **[blog summary](/blog/2026/07/31/enisa-secure-by-design-default-playbook)** explains how that guidance sits alongside this handbook.
+
 <!-- Citations -->
-[cisa_pdf]: https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf "Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Secure by Design Software" 
+[cisa_pdf]: https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf "Shifting the Balance of Cybersecurity Risk: Principles and Approaches for Secure by Design Software"
+[enisa_playbook]: https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook "ENISA Secure by Design and Default Playbook"
+[enisa_github]: https://github.com/enisaeu/enisa-sbd-playbook/ "ENISA Secure by Design and Default playbooks on GitHub" 

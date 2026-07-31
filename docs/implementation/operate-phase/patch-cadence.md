@@ -219,7 +219,8 @@ If you need to:
 - draft public and internal policies, use the **[Secure-by-Design Policy Starter Kit](../../resources/policy-and-evidence/policy-templates.md)**;
 - retain remediation and release evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
 - assess process gaps, use the **[CRA Readiness Gap Analysis](../../resources/checklists-and-worksheets/cra-gap-analysis.md)**;
-- log exploitation and rollout signals, use **[Security Logging & Monitoring](./security-logging.md)**.
+- log exploitation and rollout signals, use **[Security Logging & Monitoring](./security-logging.md)**;
+- add release-gate checklists for vulnerability and patch management, use ENISA's **[Vulnerability and patch management](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/13-vulnerability-and-patch-management.md)** playbook.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

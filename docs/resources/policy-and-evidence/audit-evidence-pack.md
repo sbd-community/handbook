@@ -256,6 +256,7 @@ Review the pack whenever the evidence may no longer support the decision being m
 - [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)
 - [Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)
 - [Security Logging](../../implementation/operate-phase/security-logging.md)
+- [ENISA Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook) — SME checklists with minimum evidence and release gates mapped indicatively to CRA Annex I
 
 <!-- Citations -->
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"

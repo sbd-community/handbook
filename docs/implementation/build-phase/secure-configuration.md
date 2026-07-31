@@ -90,6 +90,14 @@ To ensure your product is sufficiently hardened to meet regulatory requirements,
 - [ ] **Principle of Least Privilege:** Do all software processes on the device run with the minimum permissions necessary to function?
 - [ ] **Hardening Guide:** Is the secure configuration of the device (e.g., which ports are open, what services are running) documented in the technical file?
 
+## Related Pages
+
+If you need to:
+
+- compare configuration and hardening tools, use **[Configuration & Hardening](../../tools/configuration-and-hardening.md)** and **[Firmware & Binary Analysis](../../tools/firmware-and-binary-analysis.md)**;
+- add Secure-by-Default release gates for services and access, use ENISA's **[Minimisation of default services](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/15-minimisation-of-default-services.md)** and **[Restrictive initial access](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/16-restrictive-initial-access.md)** playbooks;
+- retain configuration evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**.
+
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

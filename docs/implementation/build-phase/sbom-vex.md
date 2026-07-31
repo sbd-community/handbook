@@ -198,7 +198,8 @@ If you need to:
 - collect release and vulnerability evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
 - assess gaps across the product, use the **[CRA Readiness Gap Analysis](../../resources/checklists-and-worksheets/cra-gap-analysis.md)**;
 - understand boot-manager component evidence, use **[ETSI EN 304 623: Boot Managers](../../standards/eu/cra/en-304-623-boot-managers.md)**;
-- compare supporting tools, use **[SBOM & Supply Chain Security](../../tools/sbom-and-supply-chain-security.md)**.
+- compare supporting tools, use **[SBOM & Supply Chain Security](../../tools/sbom-and-supply-chain-security.md)**;
+- add release-gate checklists for supply-chain controls, use ENISA's **[Supply-chain controls](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/14-supply-chain-controls.md)** playbook.
 
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 - Obligations of manufacturers"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"

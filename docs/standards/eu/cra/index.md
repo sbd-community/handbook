@@ -18,10 +18,11 @@ The consolidated version is easier for clause citations, but in case of doubt th
 :::
 
 :::info Implementation Guidance
-While harmonised standards are still under development, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance.
+While harmonised standards are still under development, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance. ENISA has also published a **[Secure by Design and Default Playbook][enisa_playbook]** with SME-oriented checklists, minimum evidence, and release gates, plus an indicative mapping to Annex I.
 
 Several CRA harmonised standards are now available as mature drafts. They are not yet cited in the Official Journal and do not yet provide presumption of conformity, but they should be treated as important design inputs for relevant product categories. For boot managers, see **[ETSI EN 304 623: Boot Managers](./en-304-623-boot-managers.md)**, which explains the draft technical requirements and assessment criteria for boot managers under CRA Annex III Class I.
 
+- **ENISA Secure by Design and Default Playbook**: [publication page][enisa_playbook] · [GitHub playbooks][enisa_github] · [handbook blog summary](/blog/2026/07/31/enisa-secure-by-design-default-playbook)
 - **BSI TR-03183**: [Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
 - **CRA Harmonised Standards**: [overview and draft tracker](./harmonised-standards.md)
 - **European Commission FAQ**: [FAQs on the Cyber Resilience Act][ec_faq] (Version 1.0, 3 December 2025)
@@ -369,3 +370,5 @@ The first harmonised standards for the CRA are expected to be published in the O
 [mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
 [en303645]: https://www.etsi.org/deliver/etsi_en/303600_303699/303645/03.01.03_60/en_303645v030103p.pdf "ETSI EN 303 645 - Cyber Security for Consumer Internet of Things: Baseline Requirements"
 [ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.0, 3 December 2025)"
+[enisa_playbook]: https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook "ENISA Secure by Design and Default Playbook"
+[enisa_github]: https://github.com/enisaeu/enisa-sbd-playbook/ "ENISA Secure by Design and Default playbooks on GitHub"

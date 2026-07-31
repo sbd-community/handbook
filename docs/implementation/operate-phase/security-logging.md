@@ -99,6 +99,14 @@ To ensure your logging mechanism is robust and meets best practices, ensure you 
 - [ ] **Log Analysis Process:** Do you have a process, whether manual or automated, for reviewing logs to detect potential security incidents?
 - [ ] **Documentation:** Is the logging mechanism, including what is logged and how logs are protected, documented in your technical file?
 
+## Related Pages
+
+If you need to:
+
+- compare logging and monitoring tools, use **[Security Logging & Monitoring](../../tools/security-logging-and-monitoring.md)**;
+- add release-gate checklists for logging and alerting, use ENISA's **[Logging, monitoring and alerting](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/10-logging-monitoring-and-alerting.md)** playbook;
+- retain logging and monitoring evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**.
+
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

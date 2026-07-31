@@ -216,7 +216,8 @@ If you need to:
 - turn risks into an action plan, use the **[CRA Readiness Gap Analysis](../../resources/checklists-and-worksheets/cra-gap-analysis.md)**;
 - retain risk and mitigation evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
 - compare example models, use the **[Low-Stakes BLE Sensor](../../resources/example-documents/threat-model-low-stakes-ble-sensor.md)**, **[Smart Thermostat](../../resources/example-documents/threat-model-smart-thermostat.md)**, and **[CGM System](../../resources/example-documents/threat-model-cgm.md)** examples;
-- choose technical mitigations, use **[Secure Boot](./secure-boot.md)**, **[Secure OTA Updates](./ota-updates.md)**, **[Unique Device Identity](./unique-device-identity.md)**, and **[Key Provisioning & Storage](./key-provisioning.md)**.
+- choose technical mitigations, use **[Secure Boot](./secure-boot.md)**, **[Secure OTA Updates](./ota-updates.md)**, **[Unique Device Identity](./unique-device-identity.md)**, and **[Key Provisioning & Storage](./key-provisioning.md)**;
+- add release-gate checklists for trust boundaries and threat modelling, use ENISA's **[Trust boundaries and threat modelling](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/01-trust-boundaries-and-threat-modelling.md)** playbook.
 
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 - Obligations of manufacturers"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"

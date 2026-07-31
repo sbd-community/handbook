@@ -73,6 +73,7 @@ Secure-by-design is no longer only a best practice. Major laws, standards, and g
 - **[IEC 62443](../standards/global/iec62443-overview.md)** frames industrial security around lifecycle processes and technical security requirements.
 - **[FDA cybersecurity guidance](../standards/us/fda-cybersecurity-overview.md)** expects medical device manufacturers to use a Secure Product Development Framework from design through end of support.
 - **[CISA secure-by-design principles](./cisa-sbd-principles.md)** explain the broader shift from user-managed security to manufacturer ownership.
+- **[ENISA Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook)** turns those ideas into SME-oriented checklists, minimum evidence, and release gates, with an indicative mapping to CRA Annex I.
 
 The pattern is consistent: manufacturers are expected to build security into the product lifecycle and be able to explain the evidence behind their decisions.
 
@@ -99,4 +100,5 @@ Choose the path closest to your current task:
 - **Plan the first sprint:** use the **[First-Sprint Checklist](./first-sprint-checklist.md)**.
 - **Design controls:** start with **[Threat Modeling](../implementation/build-phase/threat-modeling.md)**, **[Secure Boot](../implementation/build-phase/secure-boot.md)**, **[Secure OTA Updates](../implementation/build-phase/ota-updates.md)**, and **[Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md)**.
 - **Assemble evidence:** use the **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)** and **[Secure-by-Design Maturity Model](../resources/checklists-and-worksheets/maturity-model.md)**.
+- **Use EU release-gate checklists:** see ENISA's **[Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook)** and our **[blog summary](/blog/2026/07/31/enisa-secure-by-design-default-playbook)**.
 - **Find tools:** use the **[Tools](../tools/index.md)** section after you know which control or workflow you need to support.

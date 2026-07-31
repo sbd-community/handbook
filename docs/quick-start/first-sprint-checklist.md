@@ -91,4 +91,5 @@ After the first sprint:
 
 - use the **[CRA Readiness Gap Analysis](../resources/checklists-and-worksheets/cra-gap-analysis.md)** to turn gaps into an action plan;
 - use the **[Secure-by-Design Evidence Pack](../resources/policy-and-evidence/audit-evidence-pack.md)** to keep records tied to product scope and release;
+- use ENISA's **[Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook)** if you want progressive, principle-based release gates to attach to later sprints;
 - use **[How to Use This Handbook](./how-to-use-handbook.md)** if different teams need role-specific reading paths.
