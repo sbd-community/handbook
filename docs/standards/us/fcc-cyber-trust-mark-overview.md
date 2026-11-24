@@ -53,7 +53,7 @@ To obtain the mark, a manufacturer must follow these steps:
 4.  **Receive the Mark**: Once the CLA approves the application, the manufacturer is authorized to affix the U.S. Cyber Trust Mark to its product packaging and promotional materials, and to link the required QR code to the national registry entry.
 5.  **Maintain Registry Information**: Keep the product's information in the registry up-to-date, including the support-period end date and how security updates are delivered.
 
-A key provision of the program is that equipment produced by any entity on the FCC's **[Covered List][fcc_covered_list]** (or other similar government watchlists) is **ineligible** to receive the Cyber Trust Mark. Since 23 March 2026 the Covered List also includes consumer-grade routers produced in a foreign country, unless the Department of War or the Department of Homeland Security has granted them a Conditional Approval ([DA 26-278][fcc_da_26_278]).
+A key provision of the program is that equipment produced by any entity on the FCC's **[Covered List][fcc_covered_list]** (or other similar government watchlists) is **ineligible** to receive the Cyber Trust Mark. Since 23 March 2026 the Covered List also includes consumer-grade routers produced in a foreign country, unless the Department of War or the Department of Homeland Security has granted them a Conditional Approval ([DA 26-278][fcc_da_26_278]). The list also covers foreign-produced uncrewed aircraft systems and their critical components (from 22 December 2025), and foreign-produced power inverters and advanced robotic devices (from 28 July 2026), each with exceptions such as Conditional Approvals.
 
 ## 4. The QR Code & Consumer Information
 

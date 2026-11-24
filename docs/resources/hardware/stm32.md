@@ -197,5 +197,5 @@ sequence:
 [st-announcement]: https://community.st.com/compliance-and-regulations-168/st-launches-dedicated-resource-hub-to-help-developers-navigate-the-eu-cyber-resilience-act-cra-163418 "ST launches dedicated resource hub to help developers navigate the EU Cyber Resilience Act (CRA)"
 [st-cra-page]: https://www.st.com/content/st_com/en/about/security-and-privacy/cyber-resilience-act.html "STMicroelectronics Cyber Resilience Act page"
 [st-trust]: https://www.st.com/content/st_com/en/ecosystems/stm32trust.html "STMicroelectronics STM32Trust Security Framework"
-[st-trust-assurance]: https://www.st.com/content/st_com/en/ecosystems/stm32trust/security-assurance.html "STM32Trust security assurance"
-[st-sbsfu-an]: https://www.st.com/en/embedded-software/x-cube-sbsfu.html "AN5056: STM32 MCUs secure boot and secure firmware update"
+[st-trust-assurance]: https://www.st.com/content/st_com/en/ecosystems/stm32trust.html#security-assurance-and-standards "STM32Trust: Security assurance and standards"
+[st-sbsfu-an]: https://www.st.com/en/embedded-software/x-cube-sbsfu.html "X-CUBE-SBSFU: Secure boot and secure firmware update software expansion for STM32Cube"

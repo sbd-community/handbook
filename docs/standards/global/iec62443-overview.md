@@ -45,9 +45,8 @@ The IEC 62443 series is organized into four main groups of documents, plus a new
 
 - **General (62443-1-x):** Foundational concepts, models, and terminology.
     - **[TS 62443-1-1][iec_1_1]:** Terminology, Concepts and Models
-    - **[TR 62443-1-3][iec_1_3]:** System Security Conformance Metrics
-    - **[TR 62443-1-4][iec_1_4]:** IACS Security Lifecycle and Use-Cases
     - **[TS 62443-1-5][iec_1_5]:** Scheme for IEC 62443 Security Profiles
+    - **[PAS 62443-1-6][iec_1_6]:** Application of the 62443 series to the Industrial Internet of Things (IIoT)
 
 - **Policies & Procedures (62443-2-x):** Focus on the Asset Owner's security program.
     - **[62443-2-1][iec_2_1]:** Security Program Requirements for IACS Asset Owners
@@ -315,8 +314,7 @@ This section provides a summary of the technical Software Application Requiremen
 [isaca_guide]: https://21577316.fs1.hubspotusercontent-na1.net/hubfs/21577316/2023%20ISA%20Website%20Redesigns/ISAGCA/PDFs/ISAGCA%20Quick%20Start%20Guide%20FINAL.pdf "An Overview of ISA/IEC 62443 Standards"
 [iiot_cert_guide]: https://gca.isa.org/blog/study-preview-iiot-component-certification-based-on-62443 "IIoT Component Certification Based on the 62443 Standard"
 [iec_1_1]: https://webstore.iec.ch/en/publication/7029 "IEC TS 62443-1-1:2009"
-[iec_1_3]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC TR 62443-1-3:2011"
-[iec_1_4]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC TR 62443-1-4:2018"
+[iec_1_6]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC PAS 62443-1-6:2025"
 [iec_1_5]: https://webstore.iec.ch/en/publication/67461 "IEC TS 62443-1-5:2023"
 [iec_2_1]: https://webstore.iec.ch/en/publication/62883 "IEC 62443-2-1:2024"
 [iec_2_2]: https://webstore.iec.ch/en/publication/63886 "IEC PAS 62443-2-2:2025"
