@@ -130,6 +130,16 @@ For drafts, state the status clearly near the top and repeat the draft-standard 
 - Reference-style links (`[label][id]`) are fine after the truncate marker. Define each at the bottom of the post, and **remove any definition that is not used in the text** — don't keep inline-linked sources as duplicate definitions.
 - Write dates in full (`11 September 2026`) and spell out acronyms on first use, e.g. "Cyber-Resilience Act (CRA)".
 
+#### Freshness
+
+A post is current at its date. Do not rewrite a published post to say something new.
+
+- Where a later development supersedes what a post reported, add a `:::note[Later update]` admonition after the body. Give the date, say in one or two sentences what changed, and link the newer post or the primary source.
+- Where a post was wrong at its date, add a `:::note[Correction, <date>]` admonition in the same place instead.
+- Update the handbook pages, not the post, to carry the current position.
+
+The [periodic review](periodic-review.md) checks for developments that need a later update.
+
 ### CRA Harmonised-Standard Pages
 
 Use this structure for CRA draft or final harmonised standards, especially product-category standards such as ETSI EN 304 623:
@@ -197,6 +207,8 @@ That document is the single source of truth for the brand's visual identity. Thi
 - [ ] Merge & Deploy (GitHub Actions).
 - [ ] Post‑Publish QA: link checker, Lighthouse a11y audit.
 
+After publication, every page and cited source is rechecked once a month in the [periodic review](periodic-review.md).
+
 ## 12. Living Document
 
-Re‑evaluate this style guide quarterly or when major regs are updated. All contributors may propose edits via pull request to `/style-guide.md`. 
+Re‑evaluate this style guide when major regs are updated, or when the [periodic review](periodic-review.md) proposes a change to it. All contributors may propose edits via pull request to `/style-guide.md`. 
