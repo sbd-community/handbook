@@ -134,6 +134,8 @@ For drafts, state the status clearly near the top and repeat the draft-standard 
 
 A post is current at its date. Do not rewrite a published post to say something new.
 
+- When writing a post, use only sources dated on or before the post's date, and do not link to later posts. Anything that happened afterwards belongs in a later-update note.
+
 - Where a later development supersedes what a post reported, add a `:::note[Later update]` admonition after the body. Give the date, say in one or two sentences what changed, and link the newer post or the primary source.
 - Where a post was wrong at its date, add a `:::note[Correction, <date>]` admonition in the same place instead.
 - Update the handbook pages, not the post, to carry the current position.
@@ -185,8 +187,9 @@ Include full example artefacts in repo `/examples/` and link inline.
 Don't stamp handbook pages with when they were checked. Avoid "last checked on [date]", "last verified", "last reviewed", "as of [date]", "correct at the time of writing", and similar text.
 
 - **Why**: Every page is rechecked each month in the [periodic review](periodic-review.md), so a stamp adds nothing while it is right and misleads once it is not. It also invites readers to distrust the rest of the page.
-- **Instead**: Date the fact itself, from its source: "published on 18 November 2026", "applies from 11 December 2027", "Version 1.4 (4 September 2026)". These stay true.
-- **If a claim cannot be kept current**: Reword it so it does not depend on the changing detail, or remove it.
+- **Instead**: Date the fact itself, from its source: "published on 1 December 2025", "applies from 11 December 2027", "Version 1.4 (4 September 2026)". These stay true.
+- **Which date**: Use the date the document itself gives for its publication or issue (for example, "Document issued on February 3, 2026" in an FDA guidance). Do not use a web page's "last updated" or "content current as of" date, and do not give a date more precisely than the source does: if an announcement gives only the month, write the month.
+- **Conditions and status**: State whatever qualifies a fact wherever the fact appears. That includes a draft or proposal not yet adopted, a standard not yet cited in the Official Journal, and a decision that lapses unless a condition is met (for example, amended deadlines that apply unless a standards body rejects the amendment within a month).
 
 Blog posts are the exception: each post is dated, and later changes are recorded with the notes described in [Freshness](#freshness).
 
