@@ -61,12 +61,74 @@ Provide a glossary page and link from first usage.
 - Break complex sequences into ordered lists.
 - Use tables for clause mappings; keep ≤ 4 columns for mobile readability.
 
-### Blog Excerpts
+### Blog Posts
+
+The blog carries **news and analysis**: short posts that react to a specific publication or deadline and explain what it means for teams building connected products. It is not a venue for standalone opinion pieces. Articles pitched to external trade publications follow the separate [content-marketing style guide](content-marketing/content-marketing-article-style-guide.md).
+
+#### What qualifies for a post
+
+Write a post when **all** of the following hold:
+
+1. **There is a dated, primary-source hook.** One of:
+   - a regulation or delegated/implementing act is published (e.g., CRA, RED delegated act, NIS 2);
+   - a regulator or government agency issues guidance (e.g., EC FAQ, ENISA, CISA, FDA, ICO, NCSC);
+   - a standard is published or a public draft is released (e.g., ETSI EN 304 623, NIST SP 800-213r1);
+   - a compliance deadline is approaching and teams need to act now (e.g., CRA reporting from 11 September 2026).
+2. **It changes what connected-product teams must do or evidence**, or materially clarifies something they were unsure about.
+3. **The handbook has something to say about it**: at least one docs page to link to, and usually one that needs updating as a result.
+
+Vendor announcements qualify only when they change what manufacturers can rely on from their supply chain, and the post must stay vendor-neutral (frame it as what a supplier can and cannot do for you).
+
+#### What ships with a post
+
+A post is normally one commit or PR that also includes:
+
+- the source document converted to Markdown in `/source-material/`, where licensing allows;
+- updates to the affected handbook pages (new links, revised guidance, "Further reading" entries);
+- any new tags added to `blog/tags.yml`.
+
+#### Front matter
+
+```yaml
+---
+title: "ENISA Publishes Secure by Design and Default Playbook"
+authors: [sbd_community]
+tags: [secure-by-design, cra, eu, standards, strategy]
+description: "One or two sentences, ≤ 155 chars: the news, then what product teams should take from it."
+---
+```
+
+- **title**: ≤ 60 characters, headline case, names the publisher and the thing published (or the deadline). No clickbait.
+- **tags**: 4–6 existing tags from `blog/tags.yml` — typically one jurisdiction (`eu`, `uk`, `us`), one or more topics, and the instrument (`cra`, `nis2`, `etsi`). Add a new tag to `tags.yml` rather than using an inline tag.
+- **description**: required. Common pattern: "X has published Y. Here's what connected-product teams should take from it."
+- File name: `blog/YYYY-MM-DD-short-slug.md`, dated to the publication or event, not the writing date.
+
+#### Structure
+
+Target **500–850 words**. Use unnumbered `##` headings in sentence case, in roughly this order:
+
+1. **Teaser** (no heading) – see *Excerpts* below — followed by `<!-- truncate -->` and one context paragraph: what this is and isn't (e.g., "not legal advice", "draft, not yet cited in the OJ", "not the full CRA application date").
+2. **What was published / What changed** – the facts, with links to the primary source.
+3. **Why this matters for connected-product teams** – the engineering, evidence, or process impact.
+4. **How this relates to the handbook / to CRA** – where it fits alongside existing guidance; optional for short news.
+5. **What to do next** – a numbered list of 3–5 concrete actions.
+6. **Handbook resources** (or **We've updated the handbook**) – bulleted, bold internal links (`/docs/...`), each with a one-line description of what the reader will get.
+7. **The practical takeaway** or **The bigger picture** – one short closing paragraph. No call-to-action beyond reading on.
+
+For drafts, state the status clearly near the top and repeat the draft-standard warning used on harmonised-standard pages.
+
+#### Excerpts
 
 - Place `<!-- truncate -->` after the opening teaser for every blog post.
 - Keep teaser text between 45 and 75 words, usually as one paragraph.
 - The teaser should state the news hook and why it matters to connected-device product, engineering, security, or compliance teams.
 - Use inline Markdown links before the truncate marker. Docusaurus excerpts may not resolve reference-style links whose definitions appear later in the post, so avoid raw reference labels like `[source-id]` and avoid `[label][source-id]` links in excerpts.
+
+#### Links and sources
+
+- Link the **primary source** (official publication page, OJ text, PDF) before any secondary commentary.
+- Reference-style links (`[label][id]`) are fine after the truncate marker. Define each at the bottom of the post, and **remove any definition that is not used in the text** — don't keep inline-linked sources as duplicate definitions.
+- Write dates in full (`11 September 2026`) and spell out acronyms on first use, e.g. "Cyber-Resilience Act (CRA)".
 
 ### CRA Harmonised-Standard Pages
 

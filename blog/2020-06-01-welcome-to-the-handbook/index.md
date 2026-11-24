@@ -1,7 +1,7 @@
 ---
 title: Welcome to the Secure-by-Design Handbook
 authors: [sbd_community]
-tags: [hello, secure-by-design, cra]
+tags: [secure-by-design, cra]
 ---
 Welcome to the **SecureByDesignHandbook.com** project!
 

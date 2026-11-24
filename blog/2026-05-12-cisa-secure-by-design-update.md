@@ -81,6 +81,4 @@ will need to demonstrate. A claim that a product was designed securely is
 useful only if it is backed by governance, engineering controls, lifecycle
 support, and public accountability.
 
-[cisa-resource]: https://www.cisa.gov/resources-tools/resources/secure-by-design "CISA Secure-by-Design resource page"
 [cisa-update]: https://www.cisa.gov/news-events/news/cisa-us-and-international-partners-announce-updated-secure-design-principles-joint-guide "CISA and partners announce updated Secure by Design principles joint guide"
-[cisa-bad-practices]: https://www.cisa.gov/resources-tools/resources/product-security-bad-practices "CISA Product Security Bad Practices"

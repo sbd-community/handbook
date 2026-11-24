@@ -126,7 +126,3 @@ Secure-by-Default are moving from policy language into engineering
 routines. For connected-product teams, the opportunity is to use those
 release gates as a common checklist — and to back them with the deeper
 implementation and evidence work that makes the gates meaningful.
-
-[enisa-pub]: https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook "ENISA Secure by Design and Default Playbook publication page"
-[enisa-pdf]: https://www.enisa.europa.eu/sites/default/files/2026-07/ENISA_Secure_By_Design_and_Default_Playbook_v1.pdf "ENISA Secure by Design and Default Playbook PDF"
-[enisa-github]: https://github.com/enisaeu/enisa-sbd-playbook/ "ENISA Secure by Design and Default playbooks on GitHub"

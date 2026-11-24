@@ -93,4 +93,3 @@ inside a day, it needs work before the SRP goes live.
 
 [ec-reporting]: https://digital-strategy.ec.europa.eu/en/policies/cra-reporting "European Commission: Cyber Resilience Act reporting obligations"
 [enisa-srp]: https://www.enisa.europa.eu/topics/product-security-and-certification/single-reporting-platform-srp "ENISA Single Reporting Platform"
-[crowell-alert]: https://www.crowell.com/en/insights/client-alerts/eu-cyber-resilience-act-countdown-11-september-2026-incidentvulnerability-reporting-deadline-is-less-than-100-days-away "Crowell & Moring CRA reporting deadline alert"
