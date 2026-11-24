@@ -1,5 +1,6 @@
 ---
 title: "Security Logging & Monitoring"
+description: "Tools for collecting and monitoring security logs from connected devices, with build-versus-buy considerations and a tooling landscape."
 sidebar_label: "Logging & Monitoring"
 sidebar_position: 9
 tags: [tools, logging, monitoring, siem, security, cra, open-source, commercial]

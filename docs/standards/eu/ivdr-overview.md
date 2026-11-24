@@ -1,5 +1,6 @@
 ---
 title: In Vitro Diagnostic Regulation (IVDR)
+description: "The EU In Vitro Diagnostic Regulation (2017/746) for connected IVD devices: scope, classification, requirements, conformity, and post-market duties."
 sidebar_label: 'EU IVDR 2017/746'
 sidebar_position: 5
 tags: [ivdr, medical, compliance, eu, security]

@@ -1,5 +1,6 @@
 ---
 title: Medical Device Regulation (MDR)
+description: "The EU Medical Device Regulation (2017/745) for connected medical devices: scope, classification, requirements, conformity, and post-market duties."
 sidebar_label: 'EU MDR 2017/745'
 sidebar_position: 4
 tags: [mdr, medical, compliance, eu, security]

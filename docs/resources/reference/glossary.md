@@ -1,5 +1,6 @@
 ---
 title: Glossary of Terms
+description: "Definitions of the terms and acronyms used across the Secure-by-Design Handbook, from CE marking and PDE to SBOM, VEX, and CVD."
 sidebar_label: Glossary
 sidebar_position: 1
 tags: [glossary, definitions, cra, sbom, secure-by-design]

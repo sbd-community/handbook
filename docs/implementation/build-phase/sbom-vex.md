@@ -1,5 +1,6 @@
 ---
 title: "SBOM & VEX Workflows"
+description: "How connected-product teams produce SBOMs and VEX records as part of each release, and use them to show which known vulnerabilities affect a product."
 sidebar_label: "SBOM & VEX"
 sidebar_position: 7
 tags: [sbom, vex, spdx, cyclonedx, cra, supply-chain]

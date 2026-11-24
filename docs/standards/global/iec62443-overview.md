@@ -1,5 +1,6 @@
 ---
 title: IEC 62443 Series
+description: "The IEC 62443 series for industrial automation and control systems: its structure, role-based implementation, and certification for IIoT components."
 sidebar_position: 13
 tags: [iec62443, industrial, ot, iacs, security]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Static & Dynamic Analysis (SAST / DAST)"
+description: "SAST and DAST tools for finding vulnerabilities in connected-product code before compilation and in running software, and where each fits."
 sidebar_label: "SAST / DAST"
 sidebar_position: 2
 tags: [tools, sast, dast, security, scanning, open-source, commercial]

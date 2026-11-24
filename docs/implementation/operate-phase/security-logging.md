@@ -1,5 +1,6 @@
 ---
 title: "Security Logging & Monitoring"
+description: "How to record security-relevant events on connected devices and their services, to detect incidents, support forensics, and evidence compliance."
 sidebar_label: "Security Logging"
 sidebar_position: 3
 tags: [logging, monitoring, audit, forensics, cra, secure-by-design]

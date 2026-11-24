@@ -1,5 +1,6 @@
 ---
 title: "European Union Standards"
+description: "EU regulations that affect connected-device security, including the Cyber-Resilience Act, NIS 2, the Radio Equipment Directive, MDR, and IVDR."
 sidebar_label: "European Union"
 sidebar_position: 1
 ---

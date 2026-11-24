@@ -1,5 +1,6 @@
 ---
 title: "Key Provisioning & Storage"
+description: "How to create, inject, protect, rotate, and revoke the cryptographic keys a connected device depends on, and the provisioning evidence to keep."
 sidebar_label: "Key Management"
 sidebar_position: 4
 tags: [keys, provisioning, hsm, tpm, secure-element, root-of-trust]

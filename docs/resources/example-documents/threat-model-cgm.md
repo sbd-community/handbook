@@ -1,5 +1,6 @@
 ---
 title: "Example: Threat Model for a CGM System"
+description: "An example threat model for a Bluetooth continuous glucose monitor (CGM), showing how patient-safety risks shape a connected medical device's design."
 sidebar_label: "Example: CGM System Threat Model"
 sidebar_position: 2
 tags: [threat-modeling, example, risk-assessment, stride, medical, fda]

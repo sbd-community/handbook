@@ -1,5 +1,6 @@
 ---
 title: "Patch Cadence & Rollback Strategy"
+description: "How to set a patch cadence for connected products and when rollback is safe, so vulnerability fixes ship on time without reintroducing known risk."
 sidebar_label: "Patch Management"
 tags: [patch-management, vulnerability-handling, cra, ota, policy]
 sidebar_position: 2

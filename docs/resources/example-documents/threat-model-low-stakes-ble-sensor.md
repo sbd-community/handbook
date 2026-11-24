@@ -1,5 +1,6 @@
 ---
 title: "Example: Low-Stakes BLE Sensor Threat Model"
+description: "An example threat model for a simple BLE temperature and humidity sensor, showing how to keep risk assessment proportionate for low-stakes devices."
 sidebar_label: "Example: Low-Stakes BLE Sensor"
 sidebar_position: 3
 tags: [threat-modeling, example, risk-assessment, stride, proportionality]

@@ -1,5 +1,6 @@
 ---
 title: "What is Secure-by-Design?"
+description: "What secure-by-design means for connected products: security built into architecture, defaults, updates, vulnerability handling, and evidence."
 sidebar_position: 1
 tags: [secure-by-design, cra, psti, product-security, sbd, sdd]
 ---

@@ -1,5 +1,6 @@
 ---
 title: Cyber-Resilience Act (CRA)
+description: "The EU Cyber-Resilience Act (Regulation 2024/2847) for connected products: scope, essential requirements, conformity assessment, and key dates."
 slug: /standards/eu/cra-overview
 tags: [cra, compliance, eu, secure-by-design]
 ---

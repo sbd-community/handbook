@@ -1,5 +1,6 @@
 ---
 title: "Example: Threat Model for a Smart Thermostat"
+description: "An example threat model for a Wi-Fi smart thermostat, turning consumer IoT threats into concrete engineering requirements in four steps."
 sidebar_label: "Example: Smart Thermostat Threat Model"
 sidebar_position: 1
 tags: [threat-modeling, example, risk-assessment, stride]

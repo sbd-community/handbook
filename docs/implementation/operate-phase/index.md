@@ -1,5 +1,6 @@
 ---
 title: "Operate Phase Guides"
+description: "Operate-phase guides for connected products in the field: vulnerability reports, patching, monitoring, customer communication, and ongoing evidence."
 sidebar_label: "Operate Phase"
 ---
 

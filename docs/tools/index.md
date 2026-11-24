@@ -1,5 +1,6 @@
 ---
 title: "Tools Overview"
+description: "A vendor-neutral guide to secure-by-design tooling for connected devices, organized by lifecycle task from threat modeling to logging."
 sidebar_label: "Overview"
 sidebar_position: 0
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Data Privacy & Secure Deletion"
+description: "How to build privacy into a connected product from the start, with data minimization, user consent, and secure deletion, plus a compliance checklist."
 sidebar_label: "Data Privacy & Deletion"
 sidebar_position: 5
 tags: [privacy, data-protection, gdpr, red, cra, secure-by-design]

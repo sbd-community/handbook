@@ -1,5 +1,6 @@
 ---
 title: "Threat Modeling"
+description: "Threat modeling tools for identifying and prioritizing threats to connected products, with build-versus-buy considerations and a tooling landscape."
 sidebar_label: "Threat Modeling"
 sidebar_position: 1
 tags: [tools, threat-modeling, stride, security, open-source, commercial]

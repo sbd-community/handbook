@@ -1,5 +1,6 @@
 ---
 title: "NIST IR 8259 Series"
+description: "The NIST IR 8259 series of voluntary, risk-based guidance for IoT device manufacturers: technical capabilities and non-technical supporting ones."
 sidebar_position: 3
 tags: [nist, us, iot, cybersecurity, standards, baseline, manufacturing, guidance]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "User Information & Documentation"
+description: "What security information connected-product users need to install, use, and maintain a product securely, and what CRA Annex II requires it to cover."
 sidebar_label: "User Documentation"
 sidebar_position: 8
 tags: [documentation, user-guide, compliance, cra, annex-ii]

@@ -223,7 +223,7 @@ That document is the single source of truth for the brand's visual identity. Thi
 A search result should tell the reader exactly what the page answers, in the words they would search with. No keyword stuffing, clickbait, superlatives, or sales language.
 
 - **Titles**: the browser title is the page `title` followed by ` | Secure-by-Design Handbook`, so do not repeat the brand in the `title`. Name the topic in the reader's terms (*Secure Boot Implementation*, not *Boot Integrity Considerations*) and keep it short enough that the full browser title stays near 60 characters.
-- **Descriptions**: give every doc page a `description` in front matter, 100–155 characters, that says what the page helps the reader do and mentions *connected devices* or *products with digital elements* where it fits. Start with the content, not "This page". Many older pages still lack one; add it when you next edit the page.
+- **Descriptions**: every doc page has a `description` in front matter; keep it that way for new pages. Aim for 110–160 characters, because search engines cut longer snippets, and keep each one distinct. Say what the page helps the reader do, and mention *connected devices*, *connected products*, or *products with digital elements* where it fits. Start with the content, not "This page", and quote the value, since most contain a colon.
 - **Entry pages**: priority entry pages follow the structure and tiers in [entry-page-seo-strategy.md](entry-page-seo-strategy.md), including *Use this page when*, *What good looks like*, *Evidence to retain*, *Common gaps*, and *Related pages* sections.
 - **Social card**: all pages share the site's OpenGraph image (`static/img/sbdc-social-card.png`, 1200 × 630); see the brand guidelines.
 

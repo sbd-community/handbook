@@ -1,5 +1,6 @@
 ---
 title: "Threat Modeling"
+description: "How to threat model a connected product so the output drives security requirements, risk decisions, mitigations, test priorities, and evidence."
 sidebar_label: "Threat Modeling"
 sidebar_position: 0
 tags: [threat-modeling, risk-assessment, stride, cra, secure-by-design]

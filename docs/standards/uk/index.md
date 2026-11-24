@@ -1,5 +1,6 @@
 ---
 title: "United Kingdom Standards"
+description: "UK regulations that affect connected-device security, led by the PSTI Act's baseline requirements for consumer connectable products, and PECR."
 sidebar_label: "United Kingdom"
 sidebar_position: 3
 ---

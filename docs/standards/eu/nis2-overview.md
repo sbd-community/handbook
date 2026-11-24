@@ -1,5 +1,6 @@
 ---
 title: NIS 2 Directive
+description: "The NIS 2 Directive (EU 2022/2555): which organizations it covers, their security and reporting duties, and what it means for product manufacturers."
 sidebar_position: 2
 tags: [nis2, compliance, eu, critical-infrastructure, secure-by-design]
 ---

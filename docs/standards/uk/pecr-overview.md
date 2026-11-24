@@ -1,5 +1,6 @@
 ---
 title: "PECR (UK)"
+description: "The UK Privacy and Electronic Communications Regulations (PECR): which connected products they cover and the obligations they place on device makers."
 sidebar_label: "PECR"
 sidebar_position: 7
 tags: [pecr, compliance, uk, privacy, iot]

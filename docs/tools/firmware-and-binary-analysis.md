@@ -1,5 +1,6 @@
 ---
 title: "Firmware & Binary Analysis"
+description: "Firmware and binary analysis tools for inspecting compiled images for vulnerabilities, hardcoded secrets, and insecure configuration without source."
 sidebar_label: "Firmware & Binary Analysis"
 sidebar_position: 4
 tags: [tools, firmware, binary, analysis, reverse-engineering, open-source, commercial]

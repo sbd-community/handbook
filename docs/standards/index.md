@@ -2,6 +2,7 @@
 sidebar_position: 0
 slug: /standards
 title: Overview
+description: "Summaries of the regulations and standards that require secure-by-design practices for connected devices, grouped by EU, UK, US, Australia, and global."
 ---
 
 # Standards & Regulations Overview

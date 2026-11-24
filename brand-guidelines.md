@@ -26,7 +26,7 @@ The Secure-by-Design Handbook is part of the same open handbook family as the **
 | --- | --- | --- | --- |
 | Header logo | `static/img/logo.svg` | Vector SVG, `200 × 200` viewport, cyan fills | Navbar mark (`alt="Secure-by-Design Handbook Logo"`), slide headers, and compact lockups. |
 | Favicon | `static/img/favicon.ico` | ICO with `16 × 16` and `32 × 32` images | Browser tab and bookmark icon. |
-| Social preview card | `static/img/sbdc-social-card.png` (source `sbdc-social-card.svg`) | `1200 × 630` PNG | OpenGraph and link-preview card (`themeConfig.image`): the tagline in white Inter on a dark navy gradient with a cyan accent bar. Social platforms do not render SVG previews, so re-export the PNG whenever the SVG changes. |
+| Social preview card | `static/img/sbdc-social-card.png` (source `sbdc-social-card.svg`) | `1200 × 630` PNG | OpenGraph and link-preview card (`themeConfig.image`): the logo mark, the site name, and the tagline in Surface Light (`#F5FCFD`) Inter on Deep Teal (`#013B4E` to `#012A38`), with a Primary Cyan (`#00C5D8`) accent bar. Social platforms do not render SVG previews, so re-export the PNG with Inter available whenever the SVG changes; without Inter the renderer falls back to a wider font and the title runs to the edge. |
 
 Logo usage rules:
 
@@ -34,7 +34,7 @@ Logo usage rules:
 - Keep clear space of at least `0.5×` the logo height on all sides and keep it legible down to `24 px` height.
 - Do not stretch, skew, outline, add drop shadows, or recolour it outside the palette.
 
-Known gaps against the family standard: the social card's navy gradient (`#1E3A5F` to `#0F1C2E`) is outside the palette, where the sister sites use Deep Teal; and there is no SVG favicon or Apple touch icon. Fix both together with any other asset change.
+Known gap against the family standard: there is no SVG favicon or Apple touch icon. Add them with the next asset change.
 
 ## Colour Palette
 
@@ -43,7 +43,7 @@ The site uses the handbook-family teal-and-cyan palette in light and dark modes.
 | Role | Hex | Usage |
 | --- | --- | --- |
 | Primary Cyan | `#00C5D8` | Interactive accents, card hover borders, buttons, and focal highlights (`--ifm-color-primary`); links and active states in dark mode. |
-| Link Teal | `#006B78` | Light-mode text links and active states on Surface Light, where Primary Cyan is too pale for text. Not yet set in `custom.css`; see the contrast rules below. |
+| Link Teal | `#006B78` | Light-mode text links, active sidebar items, the active breadcrumb, and the active table-of-contents entry on Surface Light, where Primary Cyan is too pale for text (`--ifm-link-color` and `--ifm-menu-color-active`). |
 | Deep Teal | `#013B4E` | Light-mode navbar, footer in both modes, hero background, and dark-mode page background. |
 | Darker Teal | `#012A38` | Dark-mode navbar background, for subtle elevation against Deep Teal pages. |
 | Surface Light | `#F5FCFD` | Light-mode page background and dark-mode body text and footer links. |
@@ -55,7 +55,7 @@ Colour and accessibility rules:
 
 - Never convey meaning, priority, or status by colour alone; pair colour with text or a structural label.
 - Maintain WCAG AA contrast: Mid Grey on Surface Light is about 5.1:1, Surface Light on Deep Teal about 11.6:1, and Primary Cyan on Deep Teal about 5.7:1.
-- Never set text in Primary Cyan on Surface Light: it is about 2:1. Use Link Teal (about 6:1) for light-mode links and active states. The site currently breaks this rule, because light-mode links inherit `--ifm-color-primary`; setting `--ifm-link-color` to Link Teal under `[data-theme='light']` fixes it.
+- Never set text in Primary Cyan on Surface Light: it is about 2:1. Use Link Teal (about 6:1) for light-mode links and active states; `custom.css` sets it under `[data-theme='light']`, with link hover in Deep Teal.
 - Reference Infima variables in `src/css/custom.css` rather than hardcoding hex values inside components.
 
 ## Typography

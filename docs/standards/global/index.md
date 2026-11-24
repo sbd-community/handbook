@@ -1,5 +1,6 @@
 ---
 title: "Global & International Standards"
+description: "International standards that set a baseline for connected-device security, including ETSI EN 303 645, the IEC 62443 series, and Common Criteria."
 sidebar_label: "Global"
 sidebar_position: 5
 ---

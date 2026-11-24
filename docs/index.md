@@ -1,3 +1,6 @@
+---
+description: "A vendor-neutral handbook that turns regulations such as the EU Cyber-Resilience Act into practical engineering guidance for connected devices."
+---
 # Secure-by-Design Handbook
 
 Welcome to the comprehensive guide for building cyber-resilient connected devices. This handbook translates complex regulatory requirements into practical engineering guidance.

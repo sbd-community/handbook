@@ -1,5 +1,6 @@
 ---
 title: "United States Standards"
+description: "U.S. regulations and guidance that affect connected-device security, from NIST IoT guidance and the SSDF to the FDA and the FCC Cyber Trust Mark."
 sidebar_label: "United States"
 sidebar_position: 2
 ---

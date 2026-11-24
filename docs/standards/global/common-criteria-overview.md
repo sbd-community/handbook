@@ -1,5 +1,6 @@
 ---
 title: "Common Criteria (ISO/IEC 15408)"
+description: "Common Criteria (ISO/IEC 15408) for connected products: what it covers, when it is overkill, its requirement themes, and how evaluation works."
 sidebar_position: 14
 tags: [common-criteria, iso15408, certification, assurance, global]
 ---

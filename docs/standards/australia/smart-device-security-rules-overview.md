@@ -1,5 +1,6 @@
 ---
 title: "Smart Device Security Rules (Australia)"
+description: "Australia's Smart Devices Rules 2025, in force since 4 March 2026: the baseline security requirements consumer smart devices must meet."
 sidebar_label: "Smart Device Security Rules"
 sidebar_position: 1
 tags: [australia, smart-devices, iot, cyber-security-act, secure-by-design]

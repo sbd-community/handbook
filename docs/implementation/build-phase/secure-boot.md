@@ -1,5 +1,6 @@
 ---
 title: "Secure Boot Implementation"
+description: "How to design and evidence secure boot for connected products, so a device runs only manufacturer-approved firmware and updates stay trustworthy."
 sidebar_label: "Secure Boot"
 sidebar_position: 3
 tags: [secure-boot, root-of-trust, chain-of-trust, cra, integrity]

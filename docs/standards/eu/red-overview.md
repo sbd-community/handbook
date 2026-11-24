@@ -1,5 +1,6 @@
 ---
 title: Radio Equipment Directive (RED)
+description: "The Radio Equipment Directive's cybersecurity rules for wireless devices: Article 3(3)(d-f), the delegated act, and the move to the CRA."
 sidebar_position: 3
 tags: [red, compliance, eu, radio, secure-by-design]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "FCC Cyber Trust Mark"
+description: "The FCC's voluntary U.S. Cyber Trust Mark for wireless IoT products: how the program works, the path to certification, and the QR code label."
 sidebar_label: "US FCC Cyber Trust Mark"
 sidebar_position: 1
 tags: [fcc, us, iot, consumer, security, labeling, certification]

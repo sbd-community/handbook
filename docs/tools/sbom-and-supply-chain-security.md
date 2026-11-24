@@ -1,5 +1,6 @@
 ---
 title: "SBOM & Supply Chain Security"
+description: "SBOM and software composition analysis (SCA) tools that inventory a connected product's components and track their vulnerabilities."
 sidebar_label: "SBOM & Supply Chain"
 sidebar_position: 3
 tags: [tools, sbom, sca, supply-chain, security, open-source, commercial]

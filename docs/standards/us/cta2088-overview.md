@@ -1,5 +1,6 @@
 ---
 title: "ANSI/CTA-2088"
+description: "ANSI/CTA-2088, the Consumer Technology Association's baseline cybersecurity standard for consumer IoT devices, and how to apply it."
 sidebar_position: 5
 tags: [cta, ansi, us, iot, consumer, security, standards, baseline]
 ---

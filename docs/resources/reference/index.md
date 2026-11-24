@@ -1,5 +1,6 @@
 ---
 title: Reference Materials
+description: "Reference material for secure-by-design work on connected devices: the handbook glossary and a primer on types of embedded device."
 sidebar_position: 1
 ---
 

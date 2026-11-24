@@ -1,5 +1,6 @@
 ---
 title: ETSI EN 303 645
+description: "ETSI EN 303 645, the baseline security standard for consumer IoT: its 13 provisions, data protection provisions, and links to PSTI and the CRA."
 sidebar_position: 12
 tags: [en303645, iot, consumer, security, etsi, secure-by-design]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "PKI & Key Management"
+description: "PKI and key management tools for issuing and managing connected-device certificates and keys, with build-versus-buy considerations."
 sidebar_label: "PKI & Key Management"
 sidebar_position: 7
 tags: [pki, key-management, hsm, certificate-authority, cra, iec62443, tools, certificates, open-source, commercial]

@@ -1,5 +1,6 @@
 ---
 title: "Build Phase Guides"
+description: "Build-phase guides for connected products: threat modeling, device identity, keys, secure boot, configuration, updates, SBOM, and release evidence."
 sidebar_label: "Build Phase"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Overview
+description: "Implementation guides that turn secure-by-design decisions into product controls, release workflows, and post-market processes for connected devices."
 sidebar_position: 1
 ---
 

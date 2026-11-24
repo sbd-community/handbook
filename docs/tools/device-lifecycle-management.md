@@ -1,5 +1,6 @@
 ---
 title: "Device Lifecycle Management"
+description: "Device lifecycle management platforms for managing connected-device fleets from activation to end of life, and when to build or buy one."
 sidebar_label: "Device Lifecycle Management"
 sidebar_position: 11
 tags: [tools, dlm, device-management, iot, security, cra]

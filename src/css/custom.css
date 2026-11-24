@@ -44,6 +44,19 @@
   --ifm-navbar-background-color: #013b4e; /* Deep Teal */
   --ifm-footer-background-color: #f5fcfd; /* Surface Light */
   --ifm-code-background: #eef9fb;
+  /* Primary Cyan text on Surface Light is about 2:1. Text links and active
+     sidebar items use Link Teal (#006b78, about 6:1) instead (brand-guidelines.md). */
+  --ifm-link-color: #006b78; /* Link Teal */
+  --ifm-link-hover-color: #013b4e; /* Deep Teal */
+  --ifm-menu-color-active: #006b78;
+}
+
+/* Light mode: the active breadcrumb and table-of-contents entry are Primary Cyan
+   text in Infima, about 2:1 on Surface Light. Use Link Teal. */
+[data-theme='light'] .breadcrumbs__item--active .breadcrumbs__link,
+[data-theme='light'] .table-of-contents__link:hover,
+[data-theme='light'] .table-of-contents__link--active {
+  color: #006b78;
 }
 
 .footer--dark {

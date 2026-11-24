@@ -1,5 +1,6 @@
 ---
 title: "Hardware Root of Trust & Provisioning"
+description: "Hardware root of trust options and provisioning tools for connected devices, the foundation for secure boot and on-device cryptography."
 sidebar_label: "Hardware RoT & Provisioning"
 sidebar_position: 5
 tags: [tools, hardware, root-of-trust, rot, puf, provisioning, secure-element]

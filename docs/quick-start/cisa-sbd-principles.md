@@ -1,5 +1,6 @@
 ---
 title: "CISA Secure by Design Principles"
+description: "A summary of CISA's Secure by Design principles, the internationally co-authored guidance that shifts security responsibility onto manufacturers."
 sidebar_position: 3
 tags: [cisa, secure-by-design, sbd, principles, us, guidance]
 ---

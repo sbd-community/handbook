@@ -1,5 +1,6 @@
 ---
 title: "Unique Device Identity"
+description: "How to design unique device identity so a connected product can prove it is genuine and link provisioning, onboarding, authentication, and updates."
 sidebar_position: 2
 tags: [identity, secure-by-design, build, root-of-trust, pki]
 ---

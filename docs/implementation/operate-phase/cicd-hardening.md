@@ -1,5 +1,6 @@
 ---
 title: "CI/CD Pipeline Hardening"
+description: "How to harden the CI/CD pipeline that builds connected-product firmware, with automated security checks and controls in every build and release."
 sidebar_label: "CI/CD Security"
 tags: [cicd, github-actions, devsecops, supply-chain, cra]
 sidebar_position: 4

@@ -1,5 +1,6 @@
 ---
 title: "PSTI Act (UK)"
+description: "The UK PSTI Act 2022 and its 2023 Regulations, in force since 29 April 2024: the security requirements for consumer connectable products."
 sidebar_label: "PSTI Act"
 sidebar_position: 1
 tags: [psti, compliance, uk, security, iot, secure-by-design]

@@ -1,5 +1,6 @@
 ---
 title: NIST SP 800-218 (SSDF)
+description: "NIST SP 800-218, the Secure Software Development Framework (SSDF): its practices, how connected-product teams apply them, and self-attestation."
 sidebar_position: 4
 tags: [nist, ssdf, secure-development, sdlc, us, secure-by-design]
 ---

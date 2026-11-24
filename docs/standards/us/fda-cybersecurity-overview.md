@@ -1,5 +1,6 @@
 ---
 title: "FDA Cybersecurity"
+description: "FDA cybersecurity requirements for connected medical devices under FD&C Act section 524B: which cyber devices are covered and what is expected."
 sidebar_label: "US FDA Cybersecurity"
 sidebar_position: 2
 tags: [fda, medical, compliance, us, security, 524b, pma, 510k]

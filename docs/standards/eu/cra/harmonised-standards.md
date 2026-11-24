@@ -1,5 +1,6 @@
 ---
 title: "CRA Harmonised Standards"
+description: "How CRA harmonised standards give presumption of conformity, the status of EN 40000-1-1 and EN 40000-1-2, and what is still to come."
 sidebar_position: 1
 tags: [cra, harmonised-standards, compliance, eu]
 ---

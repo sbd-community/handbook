@@ -1,5 +1,6 @@
 ---
 title: "Configuration & Hardening"
+description: "Tools that build connected devices to a known secure baseline and keep them there, with build-versus-buy considerations for hardening."
 sidebar_label: "Configuration & Hardening"
 sidebar_position: 6
 tags: [tools, configuration, hardening, security, open-source, commercial, cis]

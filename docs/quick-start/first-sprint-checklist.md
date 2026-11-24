@@ -1,5 +1,6 @@
 ---
 title: "First-Sprint Checklist"
+description: "A checklist for starting secure-by-design work in one sprint: name owners, confirm scope, find the biggest gaps, and start collecting evidence."
 sidebar_label: "First Sprint Checklist"
 sidebar_position: 5
 tags: [quick-start, checklist, agile, cra, compliance]

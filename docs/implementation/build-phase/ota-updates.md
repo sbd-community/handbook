@@ -1,5 +1,6 @@
 ---
 title: "Secure OTA Updates"
+description: "How to design secure over-the-air updates for connected devices: authorization, signing, delivery, verification, recovery, and update evidence."
 sidebar_label: "OTA Updates"
 sidebar_position: 6
 tags: [ota, secure-update, firmware, cra, integrity, rollback-protection]

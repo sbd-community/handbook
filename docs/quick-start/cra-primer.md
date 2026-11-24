@@ -1,5 +1,6 @@
 ---
 title: "CRA 5-Minute Primer"
+description: "A five-minute introduction to the EU Cyber-Resilience Act: which products with digital elements it covers, core manufacturer duties, and CE marking."
 sidebar_label: "CRA 5-Minute Primer"
 sidebar_position: 4
 tags: [cra, quick-start, compliance, primer]

@@ -1,5 +1,6 @@
 ---
 title: "How to Use This Handbook"
+description: "Find the right path through the Secure-by-Design Handbook for your role or immediate problem, from first reading to CRA evidence work."
 sidebar_label: "How to Use Handbook"
 sidebar_position: 2
 tags: [quick-start, navigation, getting-started]

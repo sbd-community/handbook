@@ -1,5 +1,6 @@
 ---
 title: "Secure Update & OTA Frameworks"
+description: "Secure update and OTA frameworks for connected devices, with build-versus-buy considerations for delivering security patches remotely."
 sidebar_label: "Secure Update & OTA"
 sidebar_position: 8
 tags: [tools, ota, secure-update, firmware-update, security, cra, iec62443, open-source, commercial]

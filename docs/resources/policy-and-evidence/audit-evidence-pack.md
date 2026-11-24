@@ -1,5 +1,6 @@
 ---
 title: "Secure-by-Design Evidence Pack"
+description: "What a secure-by-design evidence pack holds and how it supports the technical documentation the CRA requires manufacturers to keep and provide."
 sidebar_label: "Evidence Pack"
 sidebar_position: 1
 tags: [templates, audit, compliance, cra, technical-documentation, evidence]

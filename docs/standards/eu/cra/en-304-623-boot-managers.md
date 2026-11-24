@@ -1,5 +1,6 @@
 ---
 title: "ETSI EN 304 623: Boot Managers"
+description: "ETSI EN 304 623, the draft CRA vertical standard for boot managers: scope, status, requirements, and what product teams can prepare now."
 sidebar_position: 2
 tags: [cra, etsi, boot-managers, secure-boot, harmonised-standards]
 ---

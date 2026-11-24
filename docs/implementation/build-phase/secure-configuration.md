@@ -1,5 +1,6 @@
 ---
 title: "Secure Configuration & Hardening"
+description: "How to ship a connected product secure out of the box: least privilege, secure defaults, and hardening every physical and digital entry point."
 sidebar_label: "Secure Configuration"
 sidebar_position: 1
 tags: [secure-default, hardening, attack-surface, cra, secure-by-design]

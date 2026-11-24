@@ -1,5 +1,6 @@
 ---
 title: "Australian Standards"
+description: "Australia's mandatory security requirements for consumer smart devices under the Cyber Security Act 2024 and the Smart Devices Rules 2025."
 sidebar_label: "Australia"
 sidebar_position: 4
 ---
