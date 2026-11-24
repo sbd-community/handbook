@@ -47,7 +47,7 @@ The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires m
 
 BSI TR-03183-1 v0.9.0 reinforces this by requiring timely vulnerability handling ([REQ_VH 2][bsi_tr_03183_p1]) and a public vulnerability disclosure policy ([REQ_VH 5][bsi_tr_03183_p1]).
 
-The regulation does not prescribe one universal patch deadline for every product and severity. Product teams need a risk-based process that can explain timing, prioritisation, remediation decisions, communication, and evidence.
+The regulation does not prescribe one universal patch deadline for every product and severity. Product teams need a risk-based process that can explain timing, prioritization, remediation decisions, communication, and evidence.
 
 ## Patch Cadence vs OTA Updates
 
@@ -84,9 +84,9 @@ Use severity as an input, not the only decision factor.
 | Priority | Typical triggers | Expected response |
 |----------|------------------|-------------------|
 | Emergency | Active exploitation, remote unauthenticated compromise, safety impact, widespread fleet exposure, severe privacy impact, or regulatory reporting trigger. | Immediate escalation, mitigation guidance where possible, accelerated fix, targeted or out-of-band release, customer notification, close executive and legal/compliance coordination. |
-| High | Network-exploitable vulnerability, credential compromise, update bypass, privilege escalation, sensitive data exposure, or significant customer impact. | Prioritised remediation, accelerated release or next suitable security update, VEX/advisory update, customer communication where action is needed. |
+| High | Network-exploitable vulnerability, credential compromise, update bypass, privilege escalation, sensitive data exposure, or significant customer impact. | Prioritized remediation, accelerated release or next suitable security update, VEX/advisory update, customer communication where action is needed. |
 | Medium | Exploitability depends on local access, unusual configuration, user interaction, limited exposure, or compensating controls. | Scheduled security or maintenance release with documented triage rationale and owner. |
-| Low | Limited impact, hard-to-exploit issue, defence-in-depth fix, or informational exposure with low customer impact. | Opportunistic fix, backlog tracking, periodic review, or accepted risk with rationale. |
+| Low | Limited impact, hard-to-exploit issue, defense-in-depth fix, or informational exposure with low customer impact. | Opportunistic fix, backlog tracking, periodic review, or accepted risk with rationale. |
 
 Define target timeframes that fit the product risk, sector, customer commitments, update mechanism, and support model. Keep the targets realistic enough to operate and specific enough to audit.
 
@@ -98,7 +98,7 @@ A patch cadence should connect vulnerability triage to release evidence.
 |------|--------|--------------------|
 | Intake | Receive vulnerability report, scanner finding, supplier advisory, customer report, or internal finding. | Vulnerability log entry, source, timestamp. |
 | Triage | Confirm affected products, severity, exploitability, and support status. | Affected-version analysis, severity rationale, SBOM/VEX references. |
-| Prioritise | Assign cadence, escalation path, and owner. | Priority decision, target dates, escalation record. |
+| Prioritize | Assign cadence, escalation path, and owner. | Priority decision, target dates, escalation record. |
 | Mitigate | Decide temporary guidance, configuration change, feature disablement, monitoring, or customer warning if needed. | Mitigation record, communication draft, risk rationale. |
 | Fix | Develop, review, test, and approve the security fix. | Change record, test evidence, release approval. |
 | Release | Deliver update, advisory, VEX/status update, release notes, or customer notice. | Update record, rollout/campaign record, advisory URL, customer notice. |
@@ -155,7 +155,7 @@ If a product cannot be updated at all, the support and customer communication ob
 
 Keep public commitments understandable and internal procedures operational.
 
-| Artefact | Audience | Include |
+| Artifact | Audience | Include |
 |----------|----------|---------|
 | Public security update policy | Customers, users, distributors, researchers, assurance reviewers. | Support period, update availability, vulnerability reporting route, high-level remediation expectations, end-of-support statement. |
 | Internal patch procedure | Product security, engineering, release, support, legal/compliance. | Severity criteria, owners, escalation path, target timelines, release gates, rollback rules, authority reporting, customer communication, evidence records. |

@@ -8,7 +8,7 @@ description: "FCC notice DA 26-278 puts routers produced abroad on the Covered L
 On 23 March 2026, the US Federal Communications Commission (FCC) added
 routers produced in a foreign country to its Covered List
 ([Public Notice DA 26-278](https://docs.fcc.gov/public/attachments/DA-26-278A1.pdf)).
-Covered equipment cannot receive FCC equipment authorisation. The only
+Covered equipment cannot receive FCC equipment authorization. The only
 exception is for routers granted a Conditional Approval by the Department of
 War or the Department of Homeland Security, so router makers selling into the
 US need a plan now.
@@ -17,8 +17,8 @@ US need a plan now.
 
 The notice comes from the FCC's Public Safety and Homeland Security Bureau.
 It acts on a national security determination, not a new technical security
-standard, and it changes which routers can be authorised rather than how
-they must be built. This post summarises the notice and is not legal advice.
+standard, and it changes which routers can be authorized rather than how
+they must be built. This post summarizes the notice and is not legal advice.
 
 ## What was published
 
@@ -46,7 +46,7 @@ Two definitions in the determination set the scope:
 
 The notice spells out the consequence. Under section 2.903(a) of the FCC's
 rules, covered equipment is prohibited from receiving equipment
-authorisations, and every application must certify that the equipment is not
+authorizations, and every application must certify that the equipment is not
 covered. Because the routers are identified by place of production rather
 than by company, the rules that apply to entities named on the list are not
 triggered.
@@ -70,12 +70,12 @@ Conditional Approvals last for up to 18 months.
 
 For consumer router makers, the US market now depends on where the product is
 designed and built. A new model produced abroad needs a Conditional Approval
-before it can be authorised.
+before it can be authorized.
 
 The notice also affects the U.S. Cyber Trust Mark. In its
 [2024 Report and Order][fcc_24_26], the FCC decided that any communications
 equipment on the Covered List, "now or in the future", is ineligible for the
-labelling programme and will be denied the mark. Covered routers are
+labeling program and will be denied the mark. Covered routers are
 therefore ineligible for the Cyber Trust Mark, however secure they are.
 
 The Annex A questions also show the supply-chain evidence buyers and
@@ -84,7 +84,7 @@ and a named party responsible for updates.
 
 ## How this relates to the handbook
 
-Our Cyber Trust Mark overview explains the programme and its eligibility
+Our Cyber Trust Mark overview explains the program and its eligibility
 rules, and now records the router entry on the Covered List. Its technical
 basis, the NIST IoT baseline, is unchanged: secure design still matters, but
 it no longer decides on its own whether a router can reach the US market.
@@ -103,7 +103,7 @@ it no longer decides on its own whether a router can reach the US market.
 ## Handbook resources
 
 - **[FCC Cyber Trust Mark](/docs/standards/us/fcc-cyber-trust-mark-overview)**
-  explains the labelling programme and why Covered List equipment is
+  explains the labeling program and why Covered List equipment is
   ineligible.
 - **[SBOM & VEX Workflows](/docs/implementation/build-phase/sbom-vex)**
   covers building and maintaining the component inventory that Annex A-style
@@ -117,4 +117,4 @@ US policy now judges routers by where they come from as well as how they are
 built. Manufacturers who already know the origin of every component, firmware
 image and update process will find a Conditional Approval easier to support.
 
-[fcc_24_26]: https://docs.fcc.gov/public/attachments/FCC-24-26A1.txt "FCC 24-26: Report and Order establishing the IoT labelling programme"
+[fcc_24_26]: https://docs.fcc.gov/public/attachments/FCC-24-26A1.txt "FCC 24-26: Report and Order establishing the IoT labeling program"

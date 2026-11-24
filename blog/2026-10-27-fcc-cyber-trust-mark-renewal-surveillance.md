@@ -15,7 +15,7 @@ It is the clearest sign yet of what keeping the mark will involve.
 <!-- truncate -->
 
 The notice consults on label, renewal and surveillance recommendations
-developed under the programme's first lead administrator, UL Solutions, which
+developed under the program's first lead administrator, UL Solutions, which
 later withdrew. In April 2026 the FCC selected the **ioXt Alliance** as the
 new lead administrator. ioXt's technical recommendations will go out for
 comment separately. Comments are due 30 days after
@@ -27,7 +27,7 @@ that.
 **Renewal every three years.** The stakeholder committee recommended five.
 The FCC says five years does not keep pace with IoT threats and proposes
 three. A renewal would need a new CyberLAB test report covering any new or
-revised programme requirements and 70% of the remaining requirements.
+revised program requirements and 70% of the remaining requirements.
 
 **Post-market surveillance.** Certified products would be subject to ongoing
 surveillance, including ad hoc surveillance, with the lead administrator
@@ -58,7 +58,7 @@ rather than a one-off test:
 
 The FCC has said technical requirements and testing procedures will follow in
 later proceedings. Commissioner Olivia Trusty, who now leads the rollout, has
-said she hopes labelled products reach shelves within about a year
+said she hopes labeled products reach shelves within about a year
 ([Nextgov](https://www.nextgov.com/cybersecurity/2026/10/fcc-commissioner-hopes-cyber-trust-mark-products-reach-shoppers-within-year/416878/)).
 
 ## What to do next
@@ -74,7 +74,7 @@ said she hopes labelled products reach shelves within about a year
 ## Handbook resources
 
 - **[US FCC Cyber Trust Mark Program](/docs/standards/us/fcc-cyber-trust-mark-overview)**
-  explains the programme's roles and certification path.
+  explains the program's roles and certification path.
 - **[CTA-2088 Overview](/docs/standards/us/cta2088-overview)** covers the
   related US consumer IoT baseline.
 - **[NIST IR 8259 Overview](/docs/standards/us/nistir8259-overview)** sets out

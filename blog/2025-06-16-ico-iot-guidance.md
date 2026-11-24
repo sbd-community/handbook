@@ -9,7 +9,7 @@ On 16 June 2025, the UK's Information Commissioner's Office (ICO) published new 
 
 <!--truncate-->
 
-The press release accompanying the guidance calls on the industry to prioritise user privacy and design products with data protection in mind from the outset. This move directly supports the core principles of secure-by-design that we champion in this handbook.
+The press release accompanying the guidance calls on the industry to prioritize user privacy and design products with data protection in mind from the outset. This move directly supports the core principles of secure-by-design that we champion in this handbook.
 
 ### Why This Matters for Device Makers
 
@@ -39,5 +39,5 @@ We have updated our own documentation to reflect this. For a detailed breakdown 
 *The ICO's draft guidance is open for consultation for twelve weeks from the date of publication. You can read the [official announcement here](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2025/06/new-guidance-to-help-smart-product-manufacturers-get-data-protection-right/) and the [full draft guidance here](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/online-tracking/guidance-for-consumer-internet-of-things-products-and-services/).* 
 
 :::note[Later update]
-On 11 June 2026, the ICO published the final version of this guidance after the consultation closed. See [ICO Finalises Its Guidance for Consumer IoT Products](/blog/2026/06/11/ico-final-iot-guidance).
+On 11 June 2026, the ICO published the final version of this guidance after the consultation closed. See [ICO Finalizes Its Guidance for Consumer IoT Products](/blog/2026/06/11/ico-final-iot-guidance).
 :::

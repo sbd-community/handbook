@@ -39,7 +39,7 @@ Management System". That reflects FDA's move from the old Quality System
 Regulation to the QMSR. The guidance also continues to address FDA's
 recommendations on section 524B for cyber devices.
 
-FDA's page does not summarise the changes section by section. If your team
+FDA's page does not summarize the changes section by section. If your team
 relies on specific wording in the June 2025 version, compare the two texts
 directly rather than assuming the content is unchanged.
 
@@ -66,13 +66,13 @@ slows a review and invites additional questions.
 ## How this relates to the handbook
 
 The handbook treats FDA cybersecurity as one of several regimes that ask for
-the same underlying engineering: threat modelling, secure architecture,
+the same underlying engineering: threat modeling, secure architecture,
 software bills of materials (SBOMs), secure updates and coordinated
 vulnerability disclosure. The FDA-specific part is how that evidence is
 packaged for a premarket submission and maintained under the quality system.
 
-Teams that also sell into the EU will recognise the pattern. The
-Cyber-Resilience Act (CRA) and the Medical Device Regulation (MDR) ask for a
+Teams that also sell into the EU will recognize the pattern. The
+Cyber Resilience Act (CRA) and the Medical Device Regulation (MDR) ask for a
 documented risk-based process and lifecycle evidence. Keeping one evidence
 set, mapped to each regime, is still the most efficient approach.
 
@@ -84,7 +84,7 @@ set, mapped to each regime, is still the most efficient approach.
    templates and submission templates to the new guidance and to the QMSR.
 3. Compare your premarket cybersecurity content against the new text,
    section by section, and record any differences you act on.
-4. Check that your section 524B artefacts, such as the SBOM, postmarket
+4. Check that your section 524B artifacts, such as the SBOM, postmarket
    vulnerability plan and update process, are still traceable to the
    quality-system procedures that produce them.
 5. Brief regulatory affairs and engineering together, so both use the same

@@ -5,7 +5,7 @@ tags: [cra, compliance, eu, vulnerability-handling]
 description: "CRA vulnerability and incident reporting starts on 11 September 2026. Product teams need the reporting process ready before the platform goes live."
 ---
 
-The **Cyber-Resilience Act (CRA)** reporting clock starts on
+The **Cyber Resilience Act (CRA)** reporting clock starts on
 **11 September 2026**. From that date, manufacturers must report actively
 exploited vulnerabilities and severe incidents affecting the security of
 products with digital elements through the ENISA Single Reporting Platform

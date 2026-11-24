@@ -1,5 +1,5 @@
 ---
-title: "NIST Finalises IR 8259 Rev. 1 for IoT Product Makers"
+title: "NIST Finalizes IR 8259 Rev. 1 for IoT Product Makers"
 authors: [sbd_community]
 tags: [standards, us, iot, secure-by-design, supply-chain]
 description: "NIST IR 8259 Rev. 1 moves the IoT baseline from devices to products, from pre-market to end of life. Here's what manufacturers should take from it."
@@ -55,7 +55,7 @@ commitments are now part of the foundational activities, not an
 afterthought.
 
 For teams that sell internationally, this is familiar ground. The
-Cyber-Resilience Act (CRA) asks for a support period and vulnerability
+Cyber Resilience Act (CRA) asks for a support period and vulnerability
 handling throughout it. The UK's Product Security and Telecommunications
 Infrastructure (PSTI) regime requires a published minimum security update
 period. NIST IR 8259 Rev. 1 points US-facing teams in the same direction.

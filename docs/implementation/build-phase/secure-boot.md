@@ -8,7 +8,7 @@ tags: [secure-boot, root-of-trust, chain-of-trust, cra, integrity]
 
 # Secure Boot for Connected Products
 
-**Secure boot** is the product control that prevents unauthorised firmware or software from running during startup. For connected products, it is one of the main ways to protect firmware integrity, support trustworthy updates, and retain evidence that the released product boots only code approved by the manufacturer.
+**Secure boot** is the product control that prevents unauthorized firmware or software from running during startup. For connected products, it is one of the main ways to protect firmware integrity, support trustworthy updates, and retain evidence that the released product boots only code approved by the manufacturer.
 
 Use this page to decide what secure boot needs to cover, how it should fail, what evidence to retain, and which related controls matter for a CRA-scoped connected product.
 
@@ -28,7 +28,7 @@ Use this page when you need to:
 
 Secure boot creates a **chain of trust** from an immutable hardware or ROM anchor through each mutable software component loaded during startup.
 
-At each stage, the device verifies that the next component is authentic and has not been tampered with. If verification fails, the product should refuse to boot unauthorised code or enter a known-good recovery path.
+At each stage, the device verifies that the next component is authentic and has not been tampered with. If verification fails, the product should refuse to boot unauthorized code or enter a known-good recovery path.
 
 Secure boot does not make a product secure by itself. It must be paired with protected signing keys, secure provisioning, update integrity, rollback protection, debug lockdown, vulnerability handling, and retained evidence.
 
@@ -40,8 +40,8 @@ A secure boot design for a connected product should be able to show:
 - an immutable or write-protected root of trust;
 - protected trust anchors, public-key hashes, certificates, or equivalent verification material;
 - signed verification of every mutable boot component in scope;
-- defined failure behaviour when verification fails;
-- authenticated recovery or rollback-safe fallback behaviour;
+- defined failure behavior when verification fails;
+- authenticated recovery or rollback-safe fallback behavior;
 - rollback protection for boot firmware, firmware images, configuration, or trust data where downgrade would create risk;
 - production debug, test, and manufacturing interfaces disabled, fused off, or strongly authenticated;
 - signing-key generation, custody, rotation, and revocation process;
@@ -49,7 +49,7 @@ A secure boot design for a connected product should be able to show:
 
 ## Regulatory And Standards Context
 
-The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires products to protect the integrity of commands, programs, and configuration against unauthorised manipulation ([CRA Annex I § 1(2)(f)][cra_annexI]). Secure boot is a common technical control for meeting that integrity objective.
+The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires products to protect the integrity of commands, programs, and configuration against unauthorized manipulation ([CRA Annex I § 1(2)(f)][cra_annexI]). Secure boot is a common technical control for meeting that integrity objective.
 
 BSI TR-03183-1 v0.9.0 reinforces this pattern by calling for state-of-the-art mechanisms to protect code, data, and configuration integrity, and for violations to be detected ([REQ_ER 7][bsi_tr_03183_p1]).
 
@@ -61,7 +61,7 @@ ETSI EN 304 623 v0.1.3 is an interim draft. It is useful for design planning, ga
 
 ## Do I Need Secure Boot?
 
-For most connected products with updateable firmware, credentials, cryptographic keys, sensitive data, safety relevance, or network-facing behaviour, secure boot should be treated as a foundational control.
+For most connected products with updateable firmware, credentials, cryptographic keys, sensitive data, safety relevance, or network-facing behavior, secure boot should be treated as a foundational control.
 
 The question is usually not whether firmware integrity matters, but whether the product has a credible, documented way to protect it.
 
@@ -99,11 +99,11 @@ A typical chain has several links:
 
 | Stage | What happens | What to document |
 |-------|--------------|------------------|
-| Boot ROM | Immutable code starts first and loads the next stage. | Hardware root of trust, Boot ROM behaviour, trust-anchor location. |
-| First-stage bootloader | The next boot component is verified before execution. | Verification algorithm, key material, failure behaviour. |
+| Boot ROM | Immutable code starts first and loads the next stage. | Hardware root of trust, Boot ROM behavior, trust-anchor location. |
+| First-stage bootloader | The next boot component is verified before execution. | Verification algorithm, key material, failure behavior. |
 | Later bootloader or firmware stage | Additional components are verified before handoff. | Full chain coverage and component list. |
 | Kernel, RTOS, root filesystem, or application | The main runtime environment starts only after verification succeeds. | Scope of verification and any excluded components. |
-| Recovery path | Failed verification triggers safe recovery, not weak fallback. | Recovery design, tests, and operator/customer behaviour. |
+| Recovery path | Failed verification triggers safe recovery, not weak fallback. | Recovery design, tests, and operator/customer behavior. |
 
 For CRA evidence, document more than the happy path. Assessors will expect to understand what happens when verification fails, how rollback is prevented, how recovery is authenticated, and how debug or manufacturing modes are disabled before normal operation.
 
@@ -120,9 +120,9 @@ The private signing key is not a device secret. It is a manufacturer asset. Loss
 
 **Verified boot** enforces policy during startup: each component is cryptographically verified before execution, and the boot process stops or enters recovery if verification fails.
 
-**Measured boot** records cryptographic measurements of boot components for later attestation, diagnostics, incident response, or forensics. Measurement alone does not necessarily prevent unauthorised code from executing.
+**Measured boot** records cryptographic measurements of boot components for later attestation, diagnostics, incident response, or forensics. Measurement alone does not necessarily prevent unauthorized code from executing.
 
-CRA-oriented boot architectures often need both concepts: enforcement to prevent unauthorised execution and evidence to support diagnostics, incident response, or attestation.
+CRA-oriented boot architectures often need both concepts: enforcement to prevent unauthorized execution and evidence to support diagnostics, incident response, or attestation.
 
 ## Evidence To Retain
 
@@ -135,7 +135,7 @@ Transfer secure boot evidence into the **[Secure-by-Design Evidence Pack](../../
 | Signing-key procedure | Shows who can sign firmware, where keys are held, and how signing is approved. |
 | Provisioning records | Shows how public keys, certificates, hashes, or fuses are set in production. |
 | Verification test results | Shows valid images boot and modified or unsigned images fail. |
-| Failure-behaviour tests | Shows the product refuses unauthorised code or enters authenticated recovery. |
+| Failure-behavior tests | Shows the product refuses unauthorized code or enters authenticated recovery. |
 | Rollback-protection evidence | Shows older vulnerable images cannot be reintroduced where that creates risk. |
 | Recovery test evidence | Shows interrupted or failed updates recover to a known-good authenticated state. |
 | Debug-lockdown records | Shows production debug, test, and manufacturing modes are disabled or controlled. |
@@ -173,7 +173,7 @@ Before release, confirm that:
 - [ ] **Provisioning evidence:** Public verification material, fuses, certificates, or key hashes are provisioned and recorded for production devices.
 - [ ] **Rollback protection:** Version counters, anti-rollback metadata, or equivalent controls prevent unsafe downgrade.
 - [ ] **Secure recovery:** Failed boot or update attempts recover to a known-good authenticated state.
-- [ ] **Fail-secure behaviour:** Verification failure does not result in unauthorised code execution or weak fallback.
+- [ ] **Fail-secure behavior:** Verification failure does not result in unauthorized code execution or weak fallback.
 - [ ] **Debug lockdown:** JTAG, SWD, UART, DMA, manufacturing, and diagnostic interfaces are disabled, fused off, or strongly authenticated before production use.
 - [ ] **Measurement and logs:** Measurements and boot logs, where implemented, are protected against tampering and sensitive-data leakage.
 - [ ] **Technical documentation:** Boot architecture, signing process, provisioning records, tests, exceptions, and release configuration are retained.

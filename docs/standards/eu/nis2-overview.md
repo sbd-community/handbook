@@ -10,12 +10,12 @@ tags: [nis2, compliance, eu, critical-infrastructure, secure-by-design]
 
 The **NIS 2 Directive (EU) 2022/2555** is a major overhaul of the EU's cybersecurity rules, replacing the original NIS Directive. It aims to create a higher common level of cybersecurity across the Union by expanding its scope, introducing stricter security and reporting requirements, and strengthening enforcement powers.
 
-Unlike the [Cyber-Resilience Act (CRA)](./cra/index.md), which focuses on the security of *products*, NIS 2 focuses on the cyber resilience of the *organisations* that provide critical services. These organisations—categorised as **'essential'** or **'important'**—must implement robust risk-management measures and report significant incidents to national authorities.
+Unlike the [Cyber Resilience Act (CRA)](./cra/index.md), which focuses on the security of *products*, NIS 2 focuses on the cyber resilience of the *organizations* that provide critical services. These organizations—categorized as **'essential'** or **'important'**—must implement robust risk-management measures and report significant incidents to national authorities.
 
 :::info Official texts
 - **Official Journal** – Legally binding record as published on 27 December 2022: [OJ:L:2022:333 HTML][nis2_oj].
 - **Consolidated Version** – The full text of Directive (EU) 2022/2555: [CELEX:02022L2555-20221227 HTML][nis2_consolidated].
-- **Implementing Regulation (EU) 2024/2690** – Sets the technical and methodological requirements for the Art. 21 measures, and when an incident is significant, for DNS, TLD, cloud, data centre, content delivery network, managed (security) service, online marketplace, search engine, social network, and trust service providers: [CELEX:32024R2690 HTML][nis2_impl_2690].
+- **Implementing Regulation (EU) 2024/2690** – Sets the technical and methodological requirements for the Art. 21 measures, and when an incident is significant, for DNS, TLD, cloud, data center, content delivery network, managed (security) service, online marketplace, search engine, social network, and trust service providers: [CELEX:32024R2690 HTML][nis2_impl_2690].
 
 The consolidated version is the primary reference for this directive.
 :::
@@ -26,22 +26,22 @@ The consolidated version is the primary reference for this directive.
 | :--- | :--- | :--- |
 | **2023-01-16** | Directive entered into force. | [NIS2 Art. 45][nis2_art45] |
 | **2024-10-17** | Member States must adopt and publish national laws (transposition deadline). | [NIS2 Art. 41][nis2_art41] |
-| **2024-10-18** | **NIS 2 rules become applicable.** Organisations must be compliant. | [NIS2 Art. 41][nis2_art41] |
+| **2024-10-18** | **NIS 2 rules become applicable.** Organizations must be compliant. | [NIS2 Art. 41][nis2_art41] |
 
 **Relationship to other EU laws**
 
 | Law | How it interacts with NIS 2 |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | NIS 2 governs *organisational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" must ensure its supply chain is secure ([NIS2 Art. 21(2d)][nis2_art21]), which includes procuring CRA-compliant products. The single reporting platform used by manufacturers under the CRA is established and run by ENISA under the CRA, and its notifications go to the CSIRTs designated under NIS 2, feeding vulnerability data into the EU's incident response system. |
-| **[Radio Equipment Directive (RED)](./red-overview.md)** | An organisation may be a NIS 2 entity and also manufacture products subject to the RED. The obligations are cumulative; organisational resilience under NIS 2 must be maintained, and products must meet RED requirements. |
+| **[Cyber Resilience Act (CRA)](./cra/index.md)** | NIS 2 governs *organizational* cyber risk; the CRA governs *product* security. A NIS 2 "essential entity" must ensure its supply chain is secure ([NIS2 Art. 21(2d)][nis2_art21]), which includes procuring CRA-compliant products. The single reporting platform used by manufacturers under the CRA is established and run by ENISA under the CRA, and its notifications go to the CSIRTs designated under NIS 2, feeding vulnerability data into the EU's incident response system. |
+| **[Radio Equipment Directive (RED)](./red-overview.md)** | An organization may be a NIS 2 entity and also manufacture products subject to the RED. The obligations are cumulative; organizational resilience under NIS 2 must be maintained, and products must meet RED requirements. |
 | **DORA (Digital Operational Resilience Act)** | DORA is a *lex specialis* (specific law) for the financial sector. Financial entities that fall under DORA are exempt from NIS 2's main provisions, as DORA's requirements are considered at least equivalent ([NIS2 Art. 4][nis2_art4]). |
 | **CER Directive** | The Critical Entities Resilience Directive (EU 2022/2557) covers the *physical* resilience of critical infrastructure (e.g., against natural disasters). NIS 2 covers their *cyber* resilience. The two directives are designed to work in parallel. |
 
 ---
 
-## 2. Scope – Which Organisations are In?
+## 2. Scope – Which Organizations are In?
 
-NIS 2 applies to public and private entities in specific sectors, categorising them as either **Essential Entities (EE)** or **Important Entities (IE)** based on their criticality to the EU's economy and society. The main obligations apply to entities that are medium-sized or larger, though some are in scope regardless of their size ([NIS2 Art. 2][nis2_art2]).
+NIS 2 applies to public and private entities in specific sectors, categorizing them as either **Essential Entities (EE)** or **Important Entities (IE)** based on their criticality to the EU's economy and society. The main obligations apply to entities that are medium-sized or larger, though some are in scope regardless of their size ([NIS2 Art. 2][nis2_art2]).
 
 ### 2.1 Essential vs. Important Entities
 
@@ -52,14 +52,14 @@ NIS 2 applies to public and private entities in specific sectors, categorising t
 
 ### 2.2 Examples of In-Scope Entities
 
-The table below provides a non-exhaustive list of examples to help organisations identify their likely status. The columns show the sector annex; whether a particular entity is essential or important also depends on its size ([NIS2 Art. 3][nis2_art3]).
+The table below provides a non-exhaustive list of examples to help organizations identify their likely status. The columns show the sector annex; whether a particular entity is essential or important also depends on its size ([NIS2 Art. 3][nis2_art3]).
 
 | Sector | Example Entity | Essential (Annex I) | Important (Annex II) |
 | :--- | :--- | :---: | :---: |
 | **Digital Infrastructure** |
 | | TLD Name Registries, DNS Providers | ✅ | |
 | | Cloud Computing Service Providers | ✅ | |
-| | Data Centre Service Providers | ✅ | |
+| | Data Center Service Providers | ✅ | |
 | | Content Delivery Networks | ✅ | |
 | | Providers of Public Electronic Comms Networks | ✅ | |
 | | Trust Service Providers (Qualified) | ✅ | |
@@ -89,7 +89,7 @@ The table below provides a non-exhaustive list of examples to help organisations
 | | Postal & Courier Services | | ✅ |
 | | Waste Management | | ✅ |
 | | Food Production & Processing | | ✅ |
-| | Research Organisations | | ✅ |
+| | Research Organizations | | ✅ |
 
 ---
 
@@ -136,7 +136,7 @@ All essential and important entities must take "appropriate and proportionate te
 | Requirement Area | Interpretation & Engineering Tasks | Implementation Guides |
 |---|---|---|
 | **Risk Analysis & Security Policies**<br/>[Art. 21(2a)][nis2_art21] | Perform and document a risk assessment; establish and maintain clear information system security policies. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
-| **Incident Handling**<br/>[Art. 21(2b)][nis2_art21] | Define and implement a process for detecting, analysing, containing, and responding to security incidents. | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
+| **Incident Handling**<br/>[Art. 21(2b)][nis2_art21] | Define and implement a process for detecting, analyzing, containing, and responding to security incidents. | [Security Logging & Monitoring](../../implementation/operate-phase/security-logging.md) |
 | **Business Continuity & Crisis Management**<br/>[Art. 21(2c)][nis2_art21] | Establish plans for business continuity, backup management, and disaster recovery to ensure operational resilience. | n/a |
 | **Supply Chain Security**<br/>[Art. 21(2d)][nis2_art21] | Assess and manage security risks arising from suppliers and service providers, including requiring specific security measures in contracts. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
 | **Secure Development & Maintenance**<br/>[Art. 21(2e)][nis2_art21] | Implement secure development practices for network and information systems, including a coordinated vulnerability disclosure process. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)<br/>[CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
@@ -172,8 +172,8 @@ NIS 2 grants national authorities strong powers to supervise and enforce the rul
 ### 6.2 Penalties for Non-Compliance
 Member States must ensure penalties are "effective, proportionate and dissuasive". The Directive sets maximum fines that can be imposed ([NIS2 Art. 34][nis2_art34]):
 
--   **Essential Entities:** Fines of up to **€10,000,000** or **2%** of the total worldwide annual turnover of the preceding financial year, whichever is higher.
--   **Important Entities:** Fines of up to **€7,000,000** or **1.4%** of the total worldwide annual turnover of the preceding financial year, whichever is higher.
+-   **Essential Entities:** Fines of up to **€10 million** or **2%** of the total worldwide annual turnover of the preceding financial year, whichever is higher.
+-   **Important Entities:** Fines of up to **€7 million** or **1.4%** of the total worldwide annual turnover of the preceding financial year, whichever is higher.
 
 <!-- Citations -->
 [nis2_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555 "Official Journal of Directive (EU) 2022/2555"

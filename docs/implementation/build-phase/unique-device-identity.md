@@ -21,7 +21,7 @@ Use this page when you need to:
 
 - decide whether each product unit needs a unique identity;
 - define the difference between hardware root identity and operational identity;
-- design device onboarding, cloud authentication, local pairing, or customer enrolment;
+- design device onboarding, cloud authentication, local pairing, or customer enrollment;
 - avoid shared secrets, cloneable identifiers, and unauthenticated devices;
 - connect identity to secure boot, key provisioning, OTA updates, logging, support, and evidence;
 - document identity lifecycle states such as manufactured, provisioned, activated, transferred, revoked, returned, repaired, or decommissioned.
@@ -46,7 +46,7 @@ A connected-product identity design should be able to show:
 - devices can be authenticated individually, not just as a product family or fleet;
 - identity state can change over time, including activation, suspension, transfer, revocation, replacement, repair, and decommissioning;
 - certificates, credentials, manifests, serial numbers, batches, and customer or service assignments are traceable;
-- identity is used by related controls such as mTLS, command authorisation, OTA update eligibility, logging, and support;
+- identity is used by related controls such as mTLS, command authorization, OTA update eligibility, logging, and support;
 - evidence records can show how identity was created, used, changed, and retired.
 
 ## Regulatory Context
@@ -55,13 +55,13 @@ The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** does not u
 
 Relevant outcomes include:
 
-- preventing unauthorised access through appropriate control mechanisms ([CRA Annex I § 1(2)(d)][cra_annexI]);
+- preventing unauthorized access through appropriate control mechanisms ([CRA Annex I § 1(2)(d)][cra_annexI]);
 - protecting confidentiality and integrity of data, commands, programs, and configuration;
 - enabling secure updates and vulnerability remediation over the support period;
 - recording and monitoring security-relevant events where applicable;
 - retaining technical documentation that explains product security decisions.
 
-BSI TR-03183-1 v0.9.0 reinforces access-control and logging expectations, including preventing unauthorised access and logging attempts ([REQ_ER 5][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 reinforces access-control and logging expectations, including preventing unauthorized access and logging attempts ([REQ_ER 5][bsi_tr_03183_p1]).
 
 An access-control model is weak if the system cannot reliably tell one genuine device from another, revoke a compromised device, or distinguish a legitimate device from a clone.
 
@@ -99,9 +99,9 @@ Most connected products benefit from separating root identity from operational i
 | Identity layer | Purpose | Typical implementation | Lifecycle |
 |----------------|---------|------------------------|-----------|
 | Hardware root identity | Proves the device or module is genuine and hardware-bound. | Initial device identifier, non-extractable asymmetric key, secure element credential, TPM key, PUF-derived root, silicon attestation. | Long-lived, rarely changed, used to anchor trust. |
-| Operational identity | Authenticates the device to a specific service, customer, tenant, region, or use case. | X.509 certificate, mTLS credential, service certificate, enrolment token, attested credential. | Issued, renewed, rotated, revoked, and replaced during support. |
+| Operational identity | Authenticates the device to a specific service, customer, tenant, region, or use case. | X.509 certificate, mTLS credential, service certificate, enrollment token, attested credential. | Issued, renewed, rotated, revoked, and replaced during support. |
 | Local or relationship identity | Authenticates the device to a local controller, mobile app, installer, owner, or accessory. | Pairing credential, local certificate, passkey, token, or shared relationship key. | Created and removed as ownership, pairing, or deployment changes. |
-| Support or recovery identity | Controls repair, recovery, diagnostics, or replacement workflows. | Temporary service credential, signed unlock token, support certificate. | Short-lived, tightly authorised, logged, and revoked after use. |
+| Support or recovery identity | Controls repair, recovery, diagnostics, or replacement workflows. | Temporary service credential, signed unlock token, support certificate. | Short-lived, tightly authorized, logged, and revoked after use. |
 
 The root identity should not usually be used directly for every service connection. Operational identities provide separation, revocation, shorter lifetimes, and service-specific control while remaining anchored to the root.
 
@@ -145,7 +145,7 @@ A good identity model supports more than login.
 
 | Product area | Identity contribution |
 |--------------|----------------------|
-| Access control | Distinguishes genuine devices from unauthorised or cloned devices. |
+| Access control | Distinguishes genuine devices from unauthorized or cloned devices. |
 | Secure communications | Enables device-specific TLS, mTLS, API authentication, or local pairing. |
 | Secure boot and attestation | Helps report or verify what hardware and software state a device is in. |
 | OTA updates | Supports update eligibility, staged rollout, device targeting, and rollback decisions. |
@@ -168,7 +168,7 @@ Useful evidence includes:
 | Supplier identity or attestation records | Shows how silicon or module identity is verified. |
 | Provisioning and onboarding records | Shows how identities are issued and activated. |
 | Certificate profiles and lifecycle rules | Shows validity periods, renewal, revocation, and replacement behavior. |
-| Authentication and access-control design | Shows how identity is used to prevent unauthorised access. |
+| Authentication and access-control design | Shows how identity is used to prevent unauthorized access. |
 | Revocation and suspension records | Shows compromised, unsupported, returned, or decommissioned devices can be controlled. |
 | Transfer, RMA, repair, and decommissioning records | Shows lifecycle state changes are handled safely. |
 | Test evidence | Shows clone attempts, invalid credentials, expired certificates, revoked devices, and onboarding failures are handled correctly. |

@@ -55,7 +55,7 @@ A secure-by-design connected product should be able to show:
 
 - a defined product and system boundary;
 - a documented threat model or cybersecurity risk assessment;
-- secure defaults and minimised attack surface;
+- secure defaults and minimized attack surface;
 - protected identity, credentials, keys, and firmware integrity;
 - authenticated update and recovery mechanisms where updates are supported;
 - a public vulnerability disclosure route and internal triage process;

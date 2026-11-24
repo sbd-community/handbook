@@ -6,7 +6,7 @@ description: "ETSI has put 17 draft CRA product-category standards to public enq
 ---
 
 On 13 August 2026, ETSI announced that **17 final draft European Standards**
-supporting the **Cyber-Resilience Act (CRA)** are under public enquiry
+supporting the **Cyber Resilience Act (CRA)** are under public enquiry
 ([ETSI press release](https://www.etsi.org/newsroom/press-releases/etsi-launches-approval-process-for-17-european-standards-supporting-the-cyber-resilience-act/)).
 These are the product-category standards for important products, such as
 routers, operating systems, smart-home devices and boot managers. They are
@@ -17,7 +17,7 @@ the first detailed view of what CRA conformity may look like for each type.
 ETSI says the approval procedures run until mid-September to mid-November
 2026, depending on the standard. The drafts are intended to become harmonised
 standards, but they give **no presumption of conformity** until they are
-finalised and cited in the Official Journal.
+finalized and cited in the Official Journal.
 
 ## What is under enquiry
 

@@ -5,7 +5,7 @@ tags: [cra, standards, eu, cen-cenelec, etsi, boot-managers]
 description: "The Commission has amended CRA standardisation request M/606. Vertical standards are now due by 31 January 2027. Here's what that means for your plans."
 ---
 
-On 10 November 2026, the European Commission amended the Cyber-Resilience
+On 10 November 2026, the European Commission amended the Cyber Resilience
 Act (CRA) standardisation request M/606 with Implementing Decision
 C(2026)7861
 ([decision](https://ec.europa.eu/transparency/documents-register/api/files/C%282026%297861_0/de00000001090398),
@@ -33,7 +33,7 @@ report of 3 June 2026, and that the Commission considered it appropriate to
 says the deadline for all vertical standards and some horizontal standards
 moves by three months.
 
-The new Annex I sets these adoption deadlines for the European standards
+The new Annex I sets these adoption deadlines for the European standardisation
 organisations:
 
 | Deliverables | Subject | Deadline |
@@ -41,7 +41,7 @@ organisations:
 | 1 | Horizontal: designing, developing and producing products with an appropriate level of cybersecurity based on the risks | 30 November 2026 |
 | 15 | Horizontal: vulnerability handling | 30 November 2026 |
 | 16–41 | Vertical: product-category standards for important and critical products | 31 January 2027 |
-| 2–14 | Horizontal: security properties, such as secure by default, security updates, data minimisation and attack surface | 30 October 2027 |
+| 2–14 | Horizontal: security properties, such as secure by default, security updates, data minimization and attack surface | 30 October 2027 |
 
 The vertical list covers the product categories in the CRA's Annexes III and
 IV. It runs from identity management systems, browsers, password managers,
@@ -54,7 +54,7 @@ secure elements.
 Article 2 adds a condition. If CEN, CENELEC or ETSI indicate that they do not
 accept the amendments within a month of receiving the decision, it ceases to
 apply, and the request continues in its version of 3 February 2025. So the
-new dates hold only if all three organisations accept them.
+new dates hold only if all three organizations accept them.
 
 ## Why this matters for connected-product teams
 
@@ -72,7 +72,7 @@ assessment will lean on.
 - **Property standards (items 2–14).** These are due by 30 October 2027,
   only weeks before the CRA's main obligations apply on 11 December 2027.
 
-Adoption by the standards organisations is not the end of the road.
+Adoption by the standards organizations is not the end of the road.
 A standard gives a presumption of conformity only once it is cited in the
 Official Journal. With some deadlines this close to December 2027, plan on
 meeting the essential requirements directly where a standard is late.
@@ -94,10 +94,10 @@ meeting the essential requirements directly where a standard is late.
   tracks the CRA standards landscape and how to use drafts.
 - **[ETSI EN 304 623: Boot Managers](/docs/standards/eu/cra/en-304-623-boot-managers)**
   walks through one of the vertical drafts now due by 31 January 2027.
-- **[Cyber-Resilience Act (CRA)](/docs/standards/eu/cra-overview)** explains
+- **[Cyber Resilience Act (CRA)](/docs/standards/eu/cra-overview)** explains
   product classes and conformity assessment routes.
 - **[Vulnerability Disclosure](/docs/implementation/operate-phase/vulnerability-disclosure)**
-  covers the process the vulnerability-handling standard will formalise.
+  covers the process the vulnerability-handling standard will formalize.
 
 ## The practical takeaway
 

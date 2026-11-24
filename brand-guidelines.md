@@ -1,6 +1,6 @@
 # Secure-by-Design Handbook – Brand Guidelines
 
-These guidelines define the visual identity, brand assets, colour palette, typography, and presentation standards for the Secure-by-Design Handbook across the website, social previews, diagrams, and external materials. CSS tokens and assets live in `src/css/custom.css`, `src/pages/index.module.css`, and `static/img/`.
+These guidelines define the visual identity, brand assets, color palette, typography, and presentation standards for the Secure-by-Design Handbook across the website, social previews, diagrams, and external materials. CSS tokens and assets live in `src/css/custom.css`, `src/pages/index.module.css`, and `static/img/`.
 
 ## Brand Essence
 
@@ -12,11 +12,11 @@ These guidelines define the visual identity, brand assets, colour palette, typog
 | Personality | Confident, pragmatic, engineer-friendly, and regulation-aware |
 | Visual tone | Calm, utilitarian, and readable – an engineering reference, not a marketing site |
 
-The Secure-by-Design Handbook is part of the same open handbook family as the **PQC Handbook** and the **Supply Chain Security Handbook**. They share the teal-and-cyan visual system and shield mark so readers recognise the family, while each keeps its own editorial identity.
+The Secure-by-Design Handbook is part of the same open handbook family as the **PQC Handbook** and the **Supply Chain Security Handbook**. They share the teal-and-cyan visual system and shield mark so readers recognize the family, while each keeps its own editorial identity.
 
 ## Naming
 
-- Refer to the publication as the **Secure-by-Design Handbook**, and to the practice as **Secure-by-Design** (capital S and D, hyphenated), as set in the style guide's Terminology section. Keep an organisation's own spelling when naming its programme or document (for example, *CISA Secure by Design*).
+- Refer to the publication as the **Secure-by-Design Handbook**, and to the practice as **Secure-by-Design** (capital S and D, hyphenated), as set in the style guide's Terminology section. Keep an organization's own spelling when naming its program or document (for example, *CISA Secure by Design*).
 - Keep naming vendor-neutral and jurisdiction-neutral: avoid phrasing or sub-brands that imply endorsement by a regulator, standards body, notified body, or commercial supplier.
 - For editorial tone and prose mechanics, follow [style-guide.md](./style-guide.md).
 
@@ -32,11 +32,11 @@ Logo usage rules:
 
 - Use the shared family shield in `static/img/`; do not create a separate mark or redraw it.
 - Keep clear space of at least `0.5×` the logo height on all sides and keep it legible down to `24 px` height.
-- Do not stretch, skew, outline, add drop shadows, or recolour it outside the palette.
+- Do not stretch, skew, outline, add drop shadows, or recolor it outside the palette.
 
 Known gap against the family standard: there is no SVG favicon or Apple touch icon. Add them with the next asset change.
 
-## Colour Palette
+## Color Palette
 
 The site uses the handbook-family teal-and-cyan palette in light and dark modes.
 
@@ -47,14 +47,14 @@ The site uses the handbook-family teal-and-cyan palette in light and dark modes.
 | Deep Teal | `#013B4E` | Light-mode navbar, footer in both modes, hero background, and dark-mode page background. |
 | Darker Teal | `#012A38` | Dark-mode navbar background, for subtle elevation against Deep Teal pages. |
 | Surface Light | `#F5FCFD` | Light-mode page background and dark-mode body text and footer links. |
-| Mid Grey | `#5E6E75` | Light-mode body text on Surface Light. |
+| Mid Gray | `#5E6E75` | Light-mode body text on Surface Light. |
 | Code Surface | `#EEF9FB` / `#024C63` | Code backgrounds in light mode (`#EEF9FB`) and dark mode (`#024C63`). |
 | Highlight Orange | `#FF9F45` | Warnings or rare emphasis only (`--ifm-color-warning`). |
 
-Colour and accessibility rules:
+Color and accessibility rules:
 
-- Never convey meaning, priority, or status by colour alone; pair colour with text or a structural label.
-- Maintain WCAG AA contrast: Mid Grey on Surface Light is about 5.1:1, Surface Light on Deep Teal about 11.6:1, and Primary Cyan on Deep Teal about 5.7:1.
+- Never convey meaning, priority, or status by color alone; pair color with text or a structural label.
+- Maintain WCAG AA contrast: Mid Gray on Surface Light is about 5.1:1, Surface Light on Deep Teal about 11.6:1, and Primary Cyan on Deep Teal about 5.7:1.
 - Never set text in Primary Cyan on Surface Light: it is about 2:1. Use Link Teal (about 6:1) for light-mode links and active states; `custom.css` sets it under `[data-theme='light']`, with link hover in Deep Teal.
 - Reference Infima variables in `src/css/custom.css` rather than hardcoding hex values inside components.
 
@@ -89,7 +89,7 @@ Fonts load from Google Fonts (`stylesheets` in `docusaurus.config.ts`). Always k
 
 ## Governance
 
-Review visual changes together with `src/css/custom.css`, `src/pages/index.module.css`, and `static/img/`, and check both colour modes and a phone-width layout before merging. Related maintainer guides cover the non-visual side of the handbook:
+Review visual changes together with `src/css/custom.css`, `src/pages/index.module.css`, and `static/img/`, and check both color modes and a phone-width layout before merging. Related maintainer guides cover the non-visual side of the handbook:
 
 - [purpose-and-positioning.md](./purpose-and-positioning.md) – mission, audience, editorial thesis, sister-site boundaries, and non-goals
 - [navigation-structure.md](./navigation-structure.md) – URL structure, linking, sidebars, and routing

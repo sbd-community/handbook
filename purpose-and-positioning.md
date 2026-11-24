@@ -6,7 +6,7 @@ Mission, audience, editorial stance, sister-site boundaries, and scope exclusion
 
 **Authoritative standards breakdowns and practical playbooks for building cyber-resilient connected devices.**
 
-A vendor-neutral reference and how-to manual (`https://www.securebydesignhandbook.com`) for organisations that make, integrate, or operate products with digital elements, from IoT sensors and industrial controllers to connected consumer and medical devices. It answers one question: *how do we design, build, operate, and evidence secure connected products?*
+A vendor-neutral reference and how-to manual (`https://www.securebydesignhandbook.com`) for organizations that make, integrate, or operate products with digital elements, from IoT sensors and industrial controllers to connected consumer and medical devices. It answers one question: *how do we design, build, operate, and evidence secure connected products?*
 
 - **Promise**: Regulatory obligations (EU Cyber Resilience Act, NIS 2, RED, ETSI EN 303 645, IEC 62443, FDA, PSTI, and others) translated into concrete engineering controls, lifecycle practices, technical documentation, and evidence that a product team can adopt without guesswork.
 - **Limit**: Guidance, not legal advice, certification, or a conformity assessment. Pages say so where a reader might take them that way, and route decisions that need one to the manufacturer's legal adviser, notified body, or market surveillance authority.
@@ -18,7 +18,7 @@ A vendor-neutral reference and how-to manual (`https://www.securebydesignhandboo
 |-------------|------------------|
 | Product & Platform Owners (OEMs, ODMs, brand labels) | Understand obligations, justify security investment, plan release roadmaps. |
 | Embedded / Firmware Engineers & Architects | Clause-by-clause implementation guidance: secure boot flows, key storage, SBOM and VEX generation, OTA update hardening. |
-| Compliance & Certification Leads | Gap-analysis checklists, evidence templates, audit-ready mappings between requirements and artefacts. |
+| Compliance & Certification Leads | Gap-analysis checklists, evidence templates, audit-ready mappings between requirements and artifacts. |
 | Security & DevOps Teams | Practical runbooks for CI/CD, vulnerability disclosure, SBOM lifecycle, and incident response. |
 
 Readers are experienced engineers and product professionals. They need regulatory text made concrete, not security basics explained from scratch, and not simplified prose.
@@ -44,7 +44,7 @@ Secure by Design is a product property that has to be built in and then evidence
 | Handbook | Owns | To Secure-by-Design Handbook |
 | --- | --- | --- |
 | **Secure-by-Design Handbook** | Connected-product secure-by-design engineering: secure boot, identity and keys, SBOM/VEX, OTA, vulnerability handling, CRA engineering and evidence | Primary source for these topics |
-| **PQC Handbook** | Post-quantum cryptography discovery, prioritisation, authority timelines, long-lived verifiers, migration records | Onward reading for post-quantum migration; the authority for PQC dates, never this site |
+| **PQC Handbook** | Post-quantum cryptography discovery, prioritization, authority timelines, long-lived verifiers, migration records | Onward reading for post-quantum migration; the authority for PQC dates, never this site |
 | **Supply Chain Security Handbook** | Supplier assurance, acceptance, attestation, provenance, lifecycle evidence exchange | Onward reading for supplier assurance; supply-chain evidence exchange belongs there |
 
 Each handbook runs its own news feed. A post here that touches post-quantum cryptography (such as one on CRA cryptography) links to the PQC Handbook for PQC dates and positions.
@@ -59,14 +59,14 @@ The blog (`/blog/`) is for the same audience and in the same register as the han
 
 ## Non-Goals
 
-Do not publish or centre:
+Do not publish or center:
 
 - Legal opinions, or statements that a product "is compliant" or "complies with the CRA"
 - Generic cybersecurity explainers with no connected-product implementation value
 - Generic legal summaries of a regulation without implementation guidance
-- Product catalogues, vendor rankings, or endorsements
+- Product catalogs, vendor rankings, or endorsements
 - Reproductions of paywalled standards beyond what is needed to explain and cite them
-- Post-quantum migration programmes (the PQC Handbook's job) or supplier assurance workflows (the Supply Chain Security Handbook's job)
+- Post-quantum migration programs (the PQC Handbook's job) or supplier assurance workflows (the Supply Chain Security Handbook's job)
 - Unsourced survey figures or invented deadlines
 
 Do not cite `.ai-helper-files/` (local drafting aids only), and cite official publications rather than the reference copies in `source-material/`.

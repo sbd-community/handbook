@@ -10,7 +10,7 @@ tags: [hardware, stm32, stmicroelectronics, cra, mcu, secure-boot, evidence]
 
 Use this page to assess whether an STMicroelectronics **STM32** part can support the secure-by-design controls, evidence, and lifecycle commitments needed for a connected product.
 
-The **EU Cyber-Resilience Act (CRA)** raises the bar for connected
+The **EU Cyber Resilience Act (CRA)** raises the bar for connected
 products. For microcontroller-based designs, that means choosing hardware
 that can support a trustworthy boot chain, strong cryptography, secure
 storage for keys, and a maintainable update path over the product's support

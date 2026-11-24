@@ -5,7 +5,7 @@ tags: [cra, compliance, eu, vulnerability-handling]
 description: "From 11 September 2026, manufacturers must report actively exploited vulnerabilities and severe incidents through ENISA's Single Reporting Platform."
 ---
 
-As of today, 11 September 2026, **Cyber-Resilience Act (CRA)** reporting is
+As of today, 11 September 2026, **Cyber Resilience Act (CRA)** reporting is
 mandatory. Manufacturers must notify actively exploited vulnerabilities and
 severe incidents affecting their products through ENISA's Single Reporting
 Platform (SRP), which is now operational

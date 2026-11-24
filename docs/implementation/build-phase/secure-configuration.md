@@ -17,7 +17,7 @@ This means reviewing every potential entry point for an attacker—both physical
 
 ### 1.2. The Regulatory Requirement
 
-The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly mandates this approach through two key essential requirements in Annex I:
+The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly mandates this approach through two key essential requirements in Annex I:
 
 -   **Secure by Default ([§ 1 (2)(b)][cra_annexI])**: The CRA requires that products be "made available on the market with a secure by default configuration". This is further detailed in the BSI's technical guideline TR-03183-1 (v0.9.0), which requires that the product "be able to be reset to its original state" ([REQ_ER 3.1][bsi_tr_03183_p1]).
 -   **Attack Surface Reduction ([§ 1 (2)(j)][cra_annexI])**: The act also requires products to be "designed, developed and produced to limit attack surfaces, including external interfaces". The BSI guideline reinforces this, stating manufacturers must secure interfaces and disable unused ports and services ([REQ_ER 11][bsi_tr_03183_p1]).
@@ -26,7 +26,7 @@ Any insecure setting should require a deliberate, explicit action from the user 
 
 ### 1.3. Do I Really Need to Do This?
 
-This guide covers two foundational principles of the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**: placing products on the market with a **Secure-by-Default Configuration** and ensuring they are designed to **Limit Attack Surfaces**. While these are universal goals, their implementation depends on the nature of your product.
+This guide covers two foundational principles of the **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)**: placing products on the market with a **Secure-by-Default Configuration** and ensuring they are designed to **Limit Attack Surfaces**. While these are universal goals, their implementation depends on the nature of your product.
 
 #### Secure-by-Default Configuration ([§ 1 (2)(b)][cra_annexI])
 

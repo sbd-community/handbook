@@ -5,7 +5,7 @@
 
 ## 1  Audience & Positioning
 
-* **Primary readers:** practising hardware / firmware / systems engineers, engineering managers, and technical executives.
+* **Primary readers:** practicing hardware / firmware / systems engineers, engineering managers, and technical executives.
 * **Knowledge level:** technically fluent—expect precise terminology over marketing jargon.
 * **Takeaway:** deliver strategic insight, industry context, and actionable engineering guidance; *not* a product brochure.
 
@@ -18,14 +18,14 @@
 | *Application Insight*   | 900–1200 words  | Explain how a technology solves a design or business problem—support with at least one real‑world example. |
 | *Technology Overview*   | 1000–1500 words | Provide a survey of an emerging technology, comparing approaches and trade‑offs.                           |
 
-> **Tip:** Reserve deep‑dive tutorials with schematics/code for sites that specialise in hands‑on content (e.g., *Embedded.com*).
+> **Tip:** Reserve deep‑dive tutorials with schematics/code for sites that specialize in hands‑on content (e.g., *Embedded.com*).
 
 ## 3  Voice & Tone
 
 * Write in **first‑person singular** as an engineer or executive—not as “the company.”
 * **Confident yet balanced:** acknowledge limitations and trade‑offs.
 * **Active voice**, present tense, plain American English (unless the publication states otherwise).
-* **Vendor‑neutral language:** name your company only in the by‑line and author bio; avoid mid‑article product mentions unless absolutely necessary and clearly labelled.
+* **Vendor‑neutral language:** name your company only in the by‑line and author bio; avoid mid‑article product mentions unless absolutely necessary and clearly labeled.
 
 ## 4  Word Count & Readability
 
@@ -39,7 +39,7 @@
 1. **Headline (H1):** ≤ 60 characters; keyword rich without click‑bait.
 2. **Dek / Subtitle (optional):** one sentence expanding the hook.
 3. **Lead (≤ 70 words):** establish context + promise the takeaway.
-4. **Body:** organised under *H2* headings; use *H3* sub‑heads, bullet lists, or mini‑tables for clarity.
+4. **Body:** organized under *H2* headings; use *H3* sub‑heads, bullet lists, or mini‑tables for clarity.
 5. **Real‑world vignette:** one short paragraph illustrating impact.
 6. **Key‑point recap:** concise bullet list.
 7. **Forward‑looking close:** suggest next steps or raise an open question; invite reader comments.
@@ -60,7 +60,7 @@
 ## 7  SEO Meta (Most Sites Request)
 
 * **Slug:** simple, descriptive URL string (editor often sets).
-* **Meta description:** ≤ 155 characters summarising the benefit.
+* **Meta description:** ≤ 155 characters summarizing the benefit.
 * **Keywords:** one primary + 1–2 secondary; weave naturally into headline, lead, and at least one sub‑head.
 * **Alt‑text** and **title** attributes for every image.
 
@@ -68,7 +68,7 @@
 
 * Content must be **original and exclusive** to the target publication (no prior web appearance).
 * Disclose any conflicts of interest or client relationships.
-* For regulated domains (medical, automotive safety, defence): avoid prescriptive claims; include a disclaimer: *“Information provided is for engineering discussion, not clinical or safety certification guidance.”*
+* For regulated domains (medical, automotive safety, defense): avoid prescriptive claims; include a disclaimer: *“Information provided is for engineering discussion, not clinical or safety certification guidance.”*
 * Acknowledge any AI assistance in drafting or image generation if required by the publication.
 
 ## 9  Required Assets

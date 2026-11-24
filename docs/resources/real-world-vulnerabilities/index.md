@@ -10,7 +10,7 @@ tags: [case-study, real-world-vulnerability, secure-by-design, evidence, product
 
 Use these case studies to translate real product vulnerabilities into secure-by-design checks, evidence expectations, and implementation priorities.
 
-The point is not to collect vulnerability news. The point is to recognise failure patterns that can appear in connected products: shared credentials, weak firmware integrity, exposed service interfaces, hidden functionality, unsafe update behaviour, insufficient logging, and unclear customer communication.
+The point is not to collect vulnerability news. The point is to recognize failure patterns that can appear in connected products: shared credentials, weak firmware integrity, exposed service interfaces, hidden functionality, unsafe update behavior, insufficient logging, and unclear customer communication.
 
 Use this hub when you want to choose a case by failure pattern, control area, or evidence lesson.
 
@@ -19,7 +19,7 @@ Use this hub when you want to choose a case by failure pattern, control area, or
 | Failure pattern | Start with | What to look for |
 |-----------------|------------|------------------|
 | Shared or default cryptographic keys | **[Baxter Connex Spot Monitor shared key](./baxter-connex-spot-monitor-shared-key.md)** | Whether each device, deployment, or customer has unique credential material and auditable provisioning evidence. |
-| Hidden functionality or undocumented data flows | **[Contec Patient Monitor backdoor](./contec-patient-monitor-backdoor.md)** | Whether update behaviour, data destinations, service functions, and remote paths are documented and reviewable. |
+| Hidden functionality or undocumented data flows | **[Contec Patient Monitor backdoor](./contec-patient-monitor-backdoor.md)** | Whether update behavior, data destinations, service functions, and remote paths are documented and reviewable. |
 | Local access, kiosk escape, and service interfaces | **[GE Vivid Ultrasound local access](./ge-vivid-ultrasound-local-access.md)** | Whether physical access, service tooling, local apps, USB, and maintenance modes are in the threat model. |
 | Service credential exposure in an ecosystem | **[GE Centricity Viewer credential flaw](./ge-centricity-viewer-credential-flaw.md)** | Whether service credentials, customer identity integration, rotation, and audit logging are controlled across the product ecosystem. |
 | Layered firmware, debug, credential, and logging failures | **[Baxter Life2000 ventilator tampering](./baxter-life2000-ventilator-tampering.md)** | Whether debug lockdown, firmware integrity, authentication, logging, update, and recovery evidence work together. |

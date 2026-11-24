@@ -10,7 +10,7 @@ tags: [cra, cryptography, crypto-agility, key-management, secure-boot, firmware-
 
 Use this page to assess whether the cryptography in a connected product is suitable, documented, implemented correctly, and maintainable over the product support period.
 
-The **Cyber Resilience Act (CRA)** does not prescribe a fixed list of algorithms in the regulation itself. It requires products to protect confidentiality and integrity using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e,f)][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements)). For product teams, that means cryptographic choices need to be standardised where possible, risk-based where necessary, evidence-backed, and reviewed over time.
+The **Cyber Resilience Act (CRA)** does not prescribe a fixed list of algorithms in the regulation itself. It requires products to protect confidentiality and integrity using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e,f)][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements)). For product teams, that means cryptographic choices need to be standardized where possible, risk-based where necessary, evidence-backed, and reviewed over time.
 
 Using modern algorithms is only part of the work. CRA readiness also depends on key management, secure configuration, firmware integrity, certificate lifecycle management, update verification, vulnerability handling, and evidence that production products match the intended design.
 
@@ -29,7 +29,7 @@ Use this page when you need to:
 The CRA is technology-neutral, but several requirements are directly affected by cryptography. Product teams should pay particular attention to:
 
 - protecting confidentiality of stored, transmitted, or otherwise processed data using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e)][cra_annexI]; [handbook CRA requirements](../../standards/eu/cra/index.md#annex-i-requirements));
-- protecting the integrity of data, commands, programs, and configuration against unauthorised modification ([CRA Annex I § 1(2)(f)][cra_annexI]);
+- protecting the integrity of data, commands, programs, and configuration against unauthorized modification ([CRA Annex I § 1(2)(f)][cra_annexI]);
 - controlling access to devices, services, and data;
 - authenticating and protecting software, firmware, and configuration updates;
 - supporting vulnerability handling, update distribution, and remediation throughout the support period;
@@ -45,9 +45,9 @@ Start with an inventory. Cryptographic risk is hard to manage if the team cannot
 |--------------|-------------------------------|
 | Device identity | Certificates, keys, credentials, attestation, onboarding. |
 | Communications | TLS, mTLS, VPN, MQTT/TLS, API authentication, message integrity. |
-| Firmware and software updates | Signing, verification, rollback protection, update authorisation. |
+| Firmware and software updates | Signing, verification, rollback protection, update authorization. |
 | Secure boot | Code signing, root of trust, measured or verified boot. |
-| Configuration and commands | Integrity protection, authentication, authorisation, anti-replay. |
+| Configuration and commands | Integrity protection, authentication, authorization, anti-replay. |
 | Data at rest | Encryption, key wrapping, secure storage, key destruction or crypto-erasure support. |
 | Manufacturing and provisioning | Key generation, injection, certificate issuance, audit records. |
 | Cloud, mobile apps, and services | API authentication, token handling, certificate validation, secrets management, key rotation. |
@@ -57,7 +57,7 @@ Start with an inventory. Cryptographic risk is hard to manage if the team cannot
 
 For CRA readiness, "state of the art" should usually mean:
 
-- standardised, publicly reviewed mechanisms;
+- standardized, publicly reviewed mechanisms;
 - current protocol versions and secure configurations;
 - appropriate key sizes and security strength for the product support period;
 - no custom cryptographic constructions unless independently justified;
@@ -65,7 +65,7 @@ For CRA readiness, "state of the art" should usually mean:
 - evidence that chosen mechanisms are implemented and configured correctly;
 - a plan to review and update cryptography during the support period.
 
-Using a recognised algorithm is not enough. Teams also need safe key storage, correct library use, secure defaults, tested update paths, certificate lifecycle management, and evidence that production configurations match the design.
+Using a recognized algorithm is not enough. Teams also need safe key storage, correct library use, secure defaults, tested update paths, certificate lifecycle management, and evidence that production configurations match the design.
 
 ## Use Agreed Cryptographic Mechanisms as a Benchmark
 
@@ -73,7 +73,7 @@ The **European Cybersecurity Certification Group (ECCG)** maintains **Agreed Cry
 
 For CRA work, ACM is best treated as an important benchmark, not as an automatic substitute for the applicable legal text, [harmonised standard](../../standards/eu/cra/index.md#harmonised-standards), certification scheme, or product-specific risk assessment.
 
-Product teams should track ACM, the CRA standardisation process ([M/606][cra_standardisation]), and similar state-of-the-art references when making long-lived cryptographic design decisions, especially for products likely to face [third-party assessment](../../standards/eu/cra/index.md#conformity-assessment-routes), customer assurance review, or certification.
+Product teams should track ACM, the CRA standardization process ([M/606][cra_standardisation]), and similar state-of-the-art references when making long-lived cryptographic design decisions, especially for products likely to face [third-party assessment](../../standards/eu/cra/index.md#conformity-assessment-routes), customer assurance review, or certification.
 
 Non-standard, bespoke, proprietary, or legacy mechanisms may increase the justification burden and attract more scrutiny during assessment, customer review, or certification. If they remain necessary, document the reason, scope, compensating controls, and migration path.
 
@@ -82,7 +82,7 @@ Non-standard, bespoke, proprietary, or legacy mechanisms may increase the justif
 | Question | Evidence to retain |
 |----------|--------------------|
 | Have all cryptographic uses been inventoried? | Crypto inventory, architecture diagram, data-flow diagram. |
-| Are algorithms and protocols standardised and publicly reviewed? | Design record, library list, protocol configuration. |
+| Are algorithms and protocols standardized and publicly reviewed? | Design record, library list, protocol configuration. |
 | Are deprecated, legacy, proprietary, or custom mechanisms avoided by default? | Exception record, interoperability rationale, sunset plan. |
 | Are keys generated, stored, rotated, revoked, and destroyed appropriately? | Key-management design, provisioning records, certificate inventory. |
 | Is random number generation suitable for key generation, nonces, provisioning, and device identity? | RNG design, entropy source evidence, test or certification records. |
@@ -150,7 +150,7 @@ Post-quantum readiness is most urgent where the product protects long-lived conf
 
 For many products, the first step is not immediate PQC deployment. It is crypto inventory, protocol and library visibility, certificate lifecycle control, and enough crypto agility to migrate when standards, ecosystems, and product constraints allow.
 
-Track [NIST PQC standards][nist_pqc], EU PQC transition planning, ACM updates, and sector guidance. NIST finalised FIPS 203, FIPS 204, and FIPS 205 in 2024 for ML-KEM, ML-DSA, and SLH-DSA respectively, while [ACM v2][acm_v2] includes recommendations relevant to PQC in EUCC certification contexts. ENISA's report on hybridising traditional mechanisms with PQC (30 April 2026), published alongside the ACM on the [EUCC guidelines page][eucc_crypto], summarises the standardisation status of hybrid schemes.
+Track [NIST PQC standards][nist_pqc], EU PQC transition planning, ACM updates, and sector guidance. NIST finalized FIPS 203, FIPS 204, and FIPS 205 in 2024 for ML-KEM, ML-DSA, and SLH-DSA respectively, while [ACM v2][acm_v2] includes recommendations relevant to PQC in EUCC certification contexts. ENISA's report on hybridizing traditional mechanisms with PQC (30 April 2026), published alongside the ACM on the [EUCC guidelines page][eucc_crypto], summarizes the standardization status of hybrid schemes.
 
 For products sold into US federal supply chains, [Executive Order 14412][us_eo_14412] (22 June 2026) sets concrete dates: federal high-value assets and high-impact systems must move to PQC key establishment by 31 December 2030 and to PQC digital signatures by 31 December 2031, and the FAR Council must propose a rule requiring covered contractors to comply with NIST FIPS, including the PQC standards, by 31 December 2030. The order also asks CISA and NIST to publish minimum elements for a cryptographic bill of materials, which makes a cryptographic inventory more valuable.
 
@@ -165,7 +165,7 @@ Common cryptography gaps include:
 - certificates expire after deployment with no renewal, revocation, replacement, or recovery path;
 - private keys are stored in firmware, source code, images, logs, or configuration files;
 - customer-specific keys are not separated from manufacturer signing keys;
-- update integrity and update authorisation are confused;
+- update integrity and update authorization are confused;
 - legacy algorithms are retained without an exception record;
 - no plan exists for PQC migration or long-lived confidentiality.
 
@@ -182,7 +182,7 @@ If you need to:
 - protect firmware integrity and update verification, use **[Secure Boot](../../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**;
 - understand boot-manager cryptography evidence, use **[ETSI EN 304 623: Boot Managers](../../standards/eu/cra/en-304-623-boot-managers.md)**;
 - choose architecture or hardware constraints that affect cryptographic controls, use **[Types of Embedded Device](../reference/types-of-embedded-device.md)**, **[STM32 Hardware Selection](../hardware/stm32.md)**, or **[ESP32 Hardware Selection](../hardware/espressif.md)**;
-- define supporting organisation policy, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)** and **[Secure-by-Design Policy Starter Kit](../policy-and-evidence/policy-templates.md)**.
+- define supporting organization policy, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)** and **[Secure-by-Design Policy Starter Kit](../policy-and-evidence/policy-templates.md)**.
 
 <!-- Citations -->
 [acm_v2]: https://certification.enisa.europa.eu/document/download/a845662b-aee0-484e-9191-890c4cfa7aaa_en?filename=ECCG+Agreed+Cryptographic+Mechanisms+version+2.pdf "ECCG Agreed Cryptographic Mechanisms version 2"

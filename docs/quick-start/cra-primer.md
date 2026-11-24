@@ -1,13 +1,13 @@
 ---
 title: "CRA 5-Minute Primer"
-description: "A five-minute introduction to the EU Cyber-Resilience Act: which products with digital elements it covers, core manufacturer duties, and CE marking."
+description: "A five-minute introduction to the EU Cyber Resilience Act: which products with digital elements it covers, core manufacturer duties, and CE marking."
 sidebar_label: "CRA 5-Minute Primer"
 sidebar_position: 4
 tags: [cra, quick-start, compliance, primer]
 ---
 # CRA 5-Minute Primer
 
-The EU **Cyber-Resilience Act (CRA)** is a landmark law that makes cybersecurity a mandatory, legal requirement for all "products with digital elements" sold in the European Union. For the first time, secure-by-design principles are moving from best practice to a legal obligation, enforced through CE marking.
+The EU **Cyber Resilience Act (CRA)** is a landmark law that makes cybersecurity a mandatory, legal requirement for all "products with digital elements" sold in the European Union. For the first time, secure-by-design principles are moving from best practice to a legal obligation, enforced through CE marking.
 
 This primer will help you understand your core obligations in under 5 minutes.
 

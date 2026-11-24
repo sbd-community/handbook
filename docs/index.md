@@ -1,5 +1,5 @@
 ---
-description: "A vendor-neutral handbook that turns regulations such as the EU Cyber-Resilience Act into practical engineering guidance for connected devices."
+description: "A vendor-neutral handbook that turns regulations such as the EU Cyber Resilience Act into practical engineering guidance for connected devices."
 ---
 # Secure-by-Design Handbook
 
@@ -10,7 +10,7 @@ Welcome to the comprehensive guide for building cyber-resilient connected device
 New to secure-by-design? Start here:
 
 - **[How to Use This Handbook](./quick-start/how-to-use-handbook.md)** - Navigation guide based on your role
-- **[CRA 5-Minute Primer](./quick-start/cra-primer.md)** - Quick introduction to the Cyber-Resilience Act
+- **[CRA 5-Minute Primer](./quick-start/cra-primer.md)** - Quick introduction to the Cyber Resilience Act
 - **[First Sprint Checklist](./quick-start/first-sprint-checklist.md)** - Immediate actions for your team
 
 ## Main Sections

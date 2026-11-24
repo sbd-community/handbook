@@ -23,7 +23,7 @@ Use this model when you need to answer:
 - which domains need stronger ownership, process, tooling, or lifecycle review;
 - what maturity gaps should become roadmap actions.
 
-This page is intentionally lighter than broad software-security maturity frameworks. It focuses on connected-product teams that need secure-by-design practices to be practical, evidence-backed, and maintained after release. For a scored, CRA-oriented organisational self-assessment, ENISA's [SME Cyber Resilience Maturity Assessment Model](https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model) (13 July 2026) offers a questionnaire and spreadsheet tool; use it alongside this model rather than instead of product-scoped evidence.
+This page is intentionally lighter than broad software-security maturity frameworks. It focuses on connected-product teams that need secure-by-design practices to be practical, evidence-backed, and maintained after release. For a scored, CRA-oriented organizational self-assessment, ENISA's [SME Cyber Resilience Maturity Assessment Model](https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model) (13 July 2026) offers a questionnaire and spreadsheet tool; use it alongside this model rather than instead of product-scoped evidence.
 
 ## How This Relates to CRA Readiness
 
@@ -53,14 +53,14 @@ Level 3 is often a useful planning target for repeatable secure-by-design practi
 
 ## How to Use This Model
 
-1. Define the product line, product family, release group, business unit, or engineering organisation being assessed.
+1. Define the product line, product family, release group, business unit, or engineering organization being assessed.
 2. Work through each domain with product, engineering, security, compliance, support, and operations stakeholders.
 3. Pick the maturity level that best describes current practice for that domain.
 4. Record the evidence that supports the rating.
 5. Identify the target level for the next planning period.
 6. Turn gaps into roadmap actions with owners and review dates.
 
-Avoid averaging scores too aggressively. If one critical product or release is still ad hoc, record that clearly rather than hiding it behind a higher organisation-wide average. A low score in a safety-critical or release-blocking domain may matter more than a higher average across the model.
+Avoid averaging scores too aggressively. If one critical product or release is still ad hoc, record that clearly rather than hiding it behind a higher organization-wide average. A low score in a safety-critical or release-blocking domain may matter more than a higher average across the model.
 
 ## Outputs
 
@@ -121,7 +121,7 @@ This domain covers secure development lifecycle, design review, threat modeling,
 
 | Level | What it looks like |
 |-------|--------------------|
-| **1** | Security testing is manual, late, or absent. Release decisions rely on individual judgement. |
+| **1** | Security testing is manual, late, or absent. Release decisions rely on individual judgment. |
 | **2** | Some scanning or review exists, but coverage is inconsistent and exceptions are not always recorded. |
 | **3** | Secure development activities, security checks, release gates, and exception handling are documented and applied to products or releases in scope. |
 | **4** | Verification evidence is retained, reviewed for quality, and measured using findings, fix times, coverage, or release-readiness checks. |
@@ -187,7 +187,7 @@ For each domain below the target level, record:
 | Practice exists but is not product-scoped | Tie the practice to products, releases, variants, and support periods. |
 | Practice exists but evidence is weak | Define evidence expectations, owners, storage location, and review cadence. |
 | Evidence exists but is not reviewed | Add quality checks, decision links, exception tracking, and review triggers. |
-| Control exists for some products only | Define target coverage and prioritise high-risk or CRA-scoped products first. |
+| Control exists for some products only | Define target coverage and prioritize high-risk or CRA-scoped products first. |
 | Policy exists but operation is unclear | Add workflow records, ownership, metrics, and post-market examples. |
 | Process works once but is not maintained | Add lifecycle review after updates, vulnerabilities, incidents, supplier changes, and end-of-support decisions. |
 

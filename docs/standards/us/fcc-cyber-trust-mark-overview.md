@@ -22,8 +22,8 @@ Products that meet the program's baseline security standards can display the FCC
   - [DA 26-1162: Public Notice][fcc_da_26_1162]
 :::
 
-:::note Programme status
-In April 2026 the FCC selected the **ioXt Alliance** as Lead Administrator, replacing UL Solutions. In October 2026 it proposed a three-year certification renewal cycle, post-market surveillance, and label rules based on CTA-2120. Technical requirements and testing procedures are still to be finalised. See [FCC Proposes Cyber Trust Mark Renewal and Surveillance Rules](/blog/2026/10/27/fcc-cyber-trust-mark-renewal-surveillance).
+:::note Program status
+In April 2026 the FCC selected the **ioXt Alliance** as Lead Administrator, replacing UL Solutions. In October 2026 it proposed a three-year certification renewal cycle, post-market surveillance, and label rules based on CTA-2120. Technical requirements and testing procedures are still to be finalized. See [FCC Proposes Cyber Trust Mark Renewal and Surveillance Rules](/blog/2026/10/27/fcc-cyber-trust-mark-renewal-surveillance).
 :::
 
 **Relationship to Other Standards**
@@ -41,7 +41,7 @@ The Cyber Trust Mark program is designed as a public-private partnership. The FC
 
 - **Federal Communications Commission (FCC)**: The FCC establishes the rules for the program, provides federal oversight, and selects and accredits the Cybersecurity Label Administrators (CLAs).
 - **Cybersecurity Label Administrators (CLAs)**: A CLA is a third-party organization authorized by the FCC to manage the program. The CLA reviews applications from manufacturers, authorizes the use of the Cyber Trust Mark, and manages the national registry of certified products.
-- **Lead Administrator**: One CLA selected by the FCC to act for all CLAs. It interfaces with the FCC, recognises CyberLABs, and recommends the technical standards, testing procedures, post-market surveillance procedures, and label design for FCC approval. The ioXt Alliance has held this role since April 2026.
+- **Lead Administrator**: One CLA selected by the FCC to act for all CLAs. It interfaces with the FCC, recognizes CyberLABs, and recommends the technical standards, testing procedures, post-market surveillance procedures, and label design for FCC approval. The ioXt Alliance has held this role since April 2026.
 - **CyberLABs**: These are the accredited testing laboratories responsible for evaluating whether a product meets the program's technical security requirements as defined in **NIST IR 8425**.
 - **Manufacturer**: The product manufacturer is responsible for having its product tested, applying to a CLA, and ensuring the information in the national registry remains accurate throughout the product's support period.
 
@@ -61,7 +61,7 @@ A key provision of the program is that equipment produced by any entity on the F
 A central feature of the program is the on-product QR code. This code must link to a publicly accessible entry in the national registry, which the Report and Order requires to provide consumers with the following information:
 
 -   The product name and the manufacturer's name.
--   The date the product was authorised to carry the label, the current status of that authorisation, and the CLA and test lab involved.
+-   The date the product was authorized to carry the label, the current status of that authorization, and the CLA and test lab involved.
 -   Instructions on how to change the default password (or a statement that it cannot be changed).
 -   Information on how to configure the device securely.
 -   Whether software updates are automatic, and how to obtain them if not.

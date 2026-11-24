@@ -1,14 +1,14 @@
 ---
-title: Cyber-Resilience Act (CRA)
-description: "The EU Cyber-Resilience Act (Regulation 2024/2847) for connected products: scope, essential requirements, conformity assessment, and key dates."
+title: Cyber Resilience Act (CRA)
+description: "The EU Cyber Resilience Act (Regulation 2024/2847) for connected products: scope, essential requirements, conformity assessment, and key dates."
 slug: /standards/eu/cra-overview
 tags: [cra, compliance, eu, secure-by-design]
 ---
-# Cyber-Resilience Act (CRA)
+# Cyber Resilience Act (CRA)
 
 ## 1. Why the CRA matters now
 
-The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates Secure-by-Design* for every **"product with digital elements" (PDE)**. It introduces objective-oriented and technology-neutral essential cybersecurity requirements that manufacturers must follow ([CRA Art. 1][cra_art1], [CRA Rec. 8][cra_rec8]).
+The **Cyber Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates Secure-by-Design* for every **"product with digital elements" (PDE)**. It introduces objective-oriented and technology-neutral essential cybersecurity requirements that manufacturers must follow ([CRA Art. 1][cra_art1], [CRA Rec. 8][cra_rec8]).
 
 :::info Official texts
 - **Official Journal** – legally binding record as published on 20 November 2024: [OJ:L_202402847 HTML][cra_oj].
@@ -19,7 +19,7 @@ The consolidated version is easier for clause citations, but in case of doubt th
 :::
 
 :::info Implementation Guidance
-While most CRA harmonised standards are still being finalised, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance. ENISA has also published a **[Secure by Design and Default Playbook][enisa_playbook]** with SME-oriented checklists, minimum evidence, and release gates, plus an indicative mapping to Annex I.
+While most CRA harmonised standards are still being finalized, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance. ENISA has also published a **[Secure by Design and Default Playbook][enisa_playbook]** with SME-oriented checklists, minimum evidence, and release gates, plus an indicative mapping to Annex I.
 
 The first CRA standards, EN 40000-1-1 and EN 40000-1-2, were published by CEN-CENELEC in November 2026, and the ETSI product-category standards are final drafts. None is yet cited in the Official Journal, so none yet provides presumption of conformity, but they should be treated as important design inputs for relevant product categories. For boot managers, see **[ETSI EN 304 623: Boot Managers](./en-304-623-boot-managers.md)**, which explains the draft technical requirements and assessment criteria for boot managers under CRA Annex III Class I.
 
@@ -64,13 +64,13 @@ flowchart LR
 
 These reporting duties also cover products placed on the market before 11 December 2027 ([CRA Art. 69 § 3][cra_art69]). The wider vulnerability-handling requirements of Annex I Part II, including a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI]), apply from 11 December 2027.
 
-**Grace-period end (11 December 2027)** – only Annex I/II-compliant PDEs may bear the CE mark; MSAs may recall or ban non-compliant goods; penalties up to **€ 15 million or 2.5 % of worldwide turnover** for non-compliance with essential requirements ([CRA Art. 64 § 2][cra_art64]).
+**Grace-period end (11 December 2027)** – only Annex I/II-compliant PDEs may bear the CE mark; MSAs may recall or ban non-compliant goods; penalties up to **€15 million or 2.5 % of worldwide turnover** for non-compliance with essential requirements ([CRA Art. 64 § 2][cra_art64]).
 
 **Relationship to other EU laws**
 
 | Law | How it interacts with CRA |
 |-----|---------------------------|
-| **[NIS 2 Directive](../nis2-overview.md)** | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
+| **[NIS 2 Directive](../nis2-overview.md)** | Governs *organizational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
 | **[Radio Equipment Directive (RED)](../red-overview.md)** | Radio device security requirements exist in **[RED Art. 3 § 3 (d-f)][red_art3]**. CRA covers a wider range of products and its requirements include all elements of the RED's. ([CRA Recital 30][cra_rec30]) |
 | **RED Delegated Act** | Has made security clauses mandatory for certain wireless devices since **1 August 2025**. This date is the result of a 12-month extension, granted by **[Regulation (EU) 2023/2444][red_del_23_2444]**, to allow more time for harmonised standards to be developed. The original act is **[Regulation (EU) 2022/30][red_del_22_30]**. **[Delegated Regulation (EU) 2026/339][red_del_26_339]** repeals it with effect from **11 December 2027**, when the CRA applies in full; radio equipment placed on the market from 1 August 2025 to 10 December 2027 remains subject to it. |
 | **CE-marking framework** | CRA **adds** cybersecurity to the CE mark through Articles **28–30**. A PDE may affix the mark only *after* Annex I/II compliance and completion of the appropriate conformity-assessment route. ([CRA Art. 28][cra_art28], [CRA Art. 30][cra_art30], [CRA Rec. 89][cra_rec89]) |
@@ -115,7 +115,7 @@ All three conditions must be met.
 | Medical devices | Already covered by **[MDR 2017/745](../mdr-overview.md)** ([CRA Art. 2 § 2(a)][cra_art2]) |
 | Automotive ECUs | Covered by Vehicle Type-Approval rules 2019/2144 ([CRA Art. 2 § 2(c)][cra_art2]) |
 | Aviation & drones | EASA cyber rules override 2018/1139 ([CRA Art. 2 § 3][cra_art2]) |
-| Defence & national security items | Excluded ([CRA Art. 2 § 7][cra_art2]) |
+| Defense & national security items | Excluded ([CRA Art. 2 § 7][cra_art2]) |
 | Non-commercial OSS distributed "as-is" | Exempt when no commercial support ([CRA Recital 15][cra_rec15], [CRA Recital 18][cra_rec18], [CRA Recital 19][cra_rec19]). *If commercial support is later offered, CRA duties apply.* |
 | **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 24][cra_art24]) |
 | Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
@@ -147,12 +147,12 @@ This proactive approach ensures that security is not an afterthought but a found
 | **No known vulnerabilities**<br/>[Annex I § 1 (2)(a)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 2][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.2][ec_faq] | Ship without known exploitable vulnerabilities; establish a process to identify vulnerabilities in all product components. | [CI/CD Hardening](../../../implementation/operate-phase/cicd-hardening.md)<br/>[Static & Dynamic Analysis](../../../tools/static-and-dynamic-analysis.md) |
 | **Secure by default configuration**<br/>[Annex I § 1 (2)(b)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 3][bsi_tr_03183_p1]<br/>[EC FAQ 4.2.4][ec_faq] | Provide a secure-by-default configuration that supports intended use and can be fully restored via a reset function. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
 | **Security updates by design**<br/>[Annex I § 1 (2)(c)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4][bsi_tr_03183_p1] | Provide timely, integrity-protected security updates via a secure and automated mechanism (with user opt-out). | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md) |
-| **Access control**<br/>[Annex I § 1 (2)(d)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 5][bsi_tr_03183_p1] | Implement an access control model based on least privilege; prevent and log unauthorised access attempts. | [Unique Device Identity](../../../implementation/build-phase/unique-device-identity.md) |
+| **Access control**<br/>[Annex I § 1 (2)(d)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 5][bsi_tr_03183_p1] | Implement an access control model based on least privilege; prevent and log unauthorized access attempts. | [Unique Device Identity](../../../implementation/build-phase/unique-device-identity.md) |
 | **Confidentiality protection**<br/>[Annex I § 1 (2)(e)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 6][bsi_tr_03183_p1] | Protect confidentiality of sensitive data at-rest and in-transit using state-of-the-art encryption. | [Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md) |
 | **Integrity protection**<br/>[Annex I § 1 (2)(f)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 7][bsi_tr_03183_p1] | Protect integrity of all code, data, and configuration using state-of-the-art mechanisms; detect and handle violations. | [Secure Boot](../../../implementation/build-phase/secure-boot.md) |
-| **Data minimisation**<br/>[Annex I § 1 (2)(g)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 8][bsi_tr_03183_p1] | Limit data collection and processing to only what is necessary for the product's intended purpose. | [Data Privacy & Secure Deletion](../../../implementation/build-phase/data-privacy.md) |
+| **Data minimization**<br/>[Annex I § 1 (2)(g)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 8][bsi_tr_03183_p1] | Limit data collection and processing to only what is necessary for the product's intended purpose. | [Data Privacy & Secure Deletion](../../../implementation/build-phase/data-privacy.md) |
 | **Resilience & availability**<br/>[Annex I § 1 (2)(h), (i)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 9, 10][bsi_tr_03183_p1] | Protect essential functions against DoS attacks and prevent the product being used in attacks against other systems. | [Device Lifecycle Management](../../../tools/device-lifecycle-management.md) |
-| **Attack surface reduction**<br/>[Annex I § 1 (2)(j)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 11][bsi_tr_03183_p1] | Minimise attack surfaces by securing all interfaces and disabling unused physical ports and network services. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
+| **Attack surface reduction**<br/>[Annex I § 1 (2)(j)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 11][bsi_tr_03183_p1] | Minimize attack surfaces by securing all interfaces and disabling unused physical ports and network services. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
 | **Exploit mitigation**<br/>[Annex I § 1 (2)(k)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 12][bsi_tr_03183_p1] | Use and enable modern exploit mitigation techniques (e.g., ASLR, stack protection, CET). | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
 | **Security logging**<br/>[Annex I § 1 (2)(l)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 13][bsi_tr_03183_p1] | Log all security-relevant events by default, including access attempts and setting changes, with a user opt-out. | [Security Logging & Monitoring](../../../implementation/operate-phase/security-logging.md) |
 | **Secure data deletion**<br/>[Annex I § 1 (2)(m)][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 14][bsi_tr_03183_p1] | Provide a function for users to securely and completely delete all personal and configuration data. | [Data Privacy & Secure Deletion](../../../implementation/build-phase/data-privacy.md) |
@@ -161,11 +161,11 @@ This proactive approach ensures that security is not an afterthought but a found
 
 Annex I does not prescribe specific algorithms, key sizes, or protocol versions. Instead, it requires manufacturers to use **“state-of-the-art mechanisms”** to protect confidentiality and integrity ([Annex I § 1(2)(e,f)][cra_annexI]). In practice, this means:
 
-- Relying on widely reviewed, standardised cryptographic primitives (for example, those listed in the **Agreed Cryptographic Mechanisms (ACM)** guidance maintained under the EU Cybersecurity Act).
+- Relying on widely reviewed, standardized cryptographic primitives (for example, those listed in the **Agreed Cryptographic Mechanisms (ACM)** guidance maintained under the EU Cybersecurity Act).
 - Avoiding obsolete or home-grown cryptographic schemes, especially for long-lived connected products.
 - Designing products with enough **cryptographic agility** to adopt new recommended mechanisms, and to retire legacy ones, during the support period.
 
-The detailed cryptographic expectations will be specified in CRA harmonised standards (see [§ 4.3 – The Role of Harmonised Standards](#harmonised-standards)) and related guidance. For a practitioner-focused overview of how Annex I’s confidentiality and integrity requirements translate into cryptographic design choices, see **[Cryptography under the Cyber-Resilience Act](../../../resources/cryptography/cryptography-under-cra.md)**.
+The detailed cryptographic expectations will be specified in CRA harmonised standards (see [§ 4.3 – The Role of Harmonised Standards](#harmonised-standards)) and related guidance. For a practitioner-focused overview of how Annex I’s confidentiality and integrity requirements translate into cryptographic design choices, see **[Cryptography under the Cyber Resilience Act](../../../resources/cryptography/cryptography-under-cra.md)**.
 
 #### 3.2.2 Boot managers and the bottom of the trust chain
 
@@ -224,7 +224,7 @@ The CRA establishes a four-tier risk classification system ([EC FAQ 3.1–3.4][e
 - **Important Products — Class I:** This tier covers products listed in **[CRA Annex III, Part I][cra_annexIII]**. These products perform functions critical to cybersecurity or pose a significant risk of disruption ([CRA Art. 7 § 2][cra_art7]).
     - **Assessment:** Self-assessment (**Module A**) is possible *if* the manufacturer fully applies relevant harmonised standards. Otherwise, a third-party audit is required ([CRA Art. 32 § 2][cra_art32]).
     - *Examples (from Annex III, Part I):* Identity management systems, password managers, web browsers, smart home products with security functions (e.g., smart locks).
-    - *Boot managers:* ETSI's draft **EN 304 623** is the emerging vertical standard for this category. Until it is finalised and cited in the Official Journal, it should be treated as useful implementation intelligence rather than a presumption-of-conformity route.
+    - *Boot managers:* ETSI's draft **EN 304 623** is the emerging vertical standard for this category. Until it is finalized and cited in the Official Journal, it should be treated as useful implementation intelligence rather than a presumption-of-conformity route.
 
 - **Important Products — Class II:** This tier covers a smaller list of higher-risk products defined in **[CRA Annex III.II][cra_annexIII]**.
     - **Assessment:** A third-party audit by a Notified Body is **mandatory** ([CRA Art. 32 § 3][cra_art32]).
@@ -276,7 +276,7 @@ The table below provides a non-exhaustive list of examples mapping product categ
 | Router / Modem / Switch ([CRA Annex III.I.12][cra_annexIII]) | | ✅ | | |
 | Hypervisor / Container runtime ([CRA Annex III.II.1][cra_annexIII]) | | | ✅ | |
 | Firewall / IDS / IPS ([CRA Annex III.II.2][cra_annexIII]) | | | ✅ | |
-| **Specialised H/W** |
+| **Specialized H/W** |
 | Basic Barcode Scanner / RFID Reader | ✅ | | | |
 | Network interface card (NIC) w/ security features ([CRA Annex III.I.10][cra_annexIII]) | | ✅ | | |
 | Microprocessor w/ security features ([CRA Annex III.I.13][cra_annexIII]) | | ✅ | | |

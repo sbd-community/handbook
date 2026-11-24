@@ -6,7 +6,7 @@ description: "The Bundestag has passed Germany's CRA implementation act, making 
 ---
 
 On 15 October 2026, the German Bundestag passed the act implementing the
-**Cyber-Resilience Act (CRA)** in Germany
+**Cyber Resilience Act (CRA)** in Germany
 ([Bundestag](https://www.bundestag.de/dokumente/textarchiv/2026/kw42-de-cyberresilienz-1224508)).
 It makes the Federal Office for Information Security (BSI) the central
 authority for CRA market surveillance. For manufacturers selling into

@@ -9,7 +9,7 @@ tags: [templates, policy, cvd, vulnerability-disclosure, vulnerability-handling,
 
 Use these starter templates and outlines when you need to turn secure-by-design intentions into clear public commitments, internal operating procedures, and retained evidence.
 
-Policies are not evidence by themselves. A policy says what the organisation intends to do; operational records show whether the policy is actually followed. Use this page with the **[CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)** and the **[Secure-by-Design Evidence Pack](./audit-evidence-pack.md)**.
+Policies are not evidence by themselves. A policy says what the organization intends to do; operational records show whether the policy is actually followed. Use this page with the **[CRA Readiness Gap Analysis](../checklists-and-worksheets/cra-gap-analysis.md)** and the **[Secure-by-Design Evidence Pack](./audit-evidence-pack.md)**.
 
 :::warning Legal review
 These templates are starting points for product-security policy documentation. They are not legal advice. Review final public commitments, safe-harbor language, support statements, and disclosure wording with appropriate legal and business owners before publishing.
@@ -26,7 +26,7 @@ Use this page to:
 
 The templates are deliberately generic. Adapt them to the product, company size, support model, risk profile, jurisdictions, and customer commitments that apply.
 
-This is not a complete legal template library. It is a starter kit for the policy artefacts connected-product teams commonly need to operate secure-by-design practices and retain evidence.
+This is not a complete legal template library. It is a starter kit for the policy artifacts connected-product teams commonly need to operate secure-by-design practices and retain evidence.
 
 ## Public vs Internal Policies
 
@@ -38,9 +38,9 @@ Do not publish operational detail that would help attackers. Do retain enough in
 
 Most connected-product teams should maintain a small set of public commitments and internal operating procedures.
 
-| Policy artefact | Public or internal | Why it matters | Evidence to retain |
+| Policy artifact | Public or internal | Why it matters | Evidence to retain |
 |-----------------|--------------------|----------------|--------------------|
-| Coordinated Vulnerability Disclosure policy | Public | Gives researchers and users a clear reporting route. | Published policy URL, `security.txt`, report acknowledgements, triage records. |
+| Coordinated Vulnerability Disclosure policy | Public | Gives researchers and users a clear reporting route. | Published policy URL, `security.txt`, report acknowledgments, triage records. |
 | `security.txt` | Public | Makes the security contact and policy machine-readable. | Current file, expiry date, owner, review reminder. |
 | Vulnerability Handling procedure | Internal | Defines intake, triage, severity, remediation, escalation, reporting, and communication. | Vulnerability log, triage records, remediation decisions, reporting runbook. |
 | Security Update and Patch policy | Public summary plus internal procedure | Explains support periods, update commitments, patch timing, rollback/recovery, and customer communication. | Patch policy, release notes, update logs, test evidence, support-period records. |
@@ -180,7 +180,7 @@ The procedure should define:
 
 - product, firmware, software, cloud, mobile app, component, and service scope;
 - intake sources, including CVD reports, internal findings, customers, suppliers, vulnerability databases, and media reports;
-- report acknowledgement process and evidence retained;
+- report acknowledgment process and evidence retained;
 - triage owner, severity model, affected/not-affected decision process, and escalation criteria;
 - how actively exploited vulnerabilities and severe incidents are escalated;
 - who decides whether CRA reporting, customer notification, supplier coordination, or public advisory publication is required;
@@ -199,7 +199,7 @@ The policy should define:
 
 - product, firmware, software, cloud, mobile app, and service scope;
 - declared support period and update commitment;
-- target remediation timelines or prioritisation principles by severity;
+- target remediation timelines or prioritization principles by severity;
 - which update types are provided, such as security, safety, configuration, or functionality updates;
 - whether updates are automatic, manual, staged, customer-managed, or unavailable for specific products;
 - how updates are built, signed, tested, rolled out, monitored, and recovered;

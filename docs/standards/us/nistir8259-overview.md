@@ -28,7 +28,7 @@ The series includes several key documents that build upon each other:
 | **[US IoT Cybersecurity Improvement Act][us_iot_act]** | The series provides the technical baseline that underpins this law, which applies to any IoT device sold to the U.S. federal government. |
 | **[FCC Cyber Trust Mark](./fcc-cyber-trust-mark-overview.md)** | This voluntary labeling program uses NIST guidance as its technical foundation. The specific requirements for the mark are based on NIST work, making the 8259 series essential reading for any manufacturer seeking the label. |
 | **[ETSI EN 303 645](../global/en303645-overview.md)** | Both establish a baseline for IoT security. EN 303 645 is more focused on consumer IoT and underpins several national consumer IoT regimes (such as the UK PSTI regime), while the NIST series is more of a technical capabilities inventory applicable to any IoT device. There is significant overlap in their principles. |
-| **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | Similar to EN 303 645, the principles in the NIST series align closely with the essential requirements in CRA Annex I. A manufacturer compliant with the NIST baseline would be well-positioned for CRA compliance. |
+| **[Cyber Resilience Act (CRA)](../eu/cra/index.md)** | Similar to EN 303 645, the principles in the NIST series align closely with the essential requirements in CRA Annex I. A manufacturer compliant with the NIST baseline would be well-positioned for CRA compliance. |
 
 ## 2. Requirements & How to Implement Them
 
@@ -56,7 +56,7 @@ In addition to the device's technical features, **NIST IR 8259B** outlines the s
 | Obligations | Manufacturer Actions | Implementation Guides |
 | :--- | :--- | :--- |
 | **Documentation**<br/>[NIST IR 8259B: Tbl. 1][nistir8259b]<br/>[NIST IR 8425: § 2.2.2][nistir8425] | Create and maintain clear documentation for customers, outlining the product's intended use, security features, and support lifetime. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md) |
-| **Information & Query Reception**<br/>[NIST IR 8259B: Tbl. 1][nistir8259b]<br/>[NIST IR 8425: § 2.2.2][nistir8425] | Establish and publicise a secure contact channel for receiving vulnerability reports and provide customer support for security-related queries. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Information & Query Reception**<br/>[NIST IR 8259B: Tbl. 1][nistir8259b]<br/>[NIST IR 8425: § 2.2.2][nistir8425] | Establish and publicize a secure contact channel for receiving vulnerability reports and provide customer support for security-related queries. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Information Dissemination**<br/>[NIST IR 8259B: Tbl. 1][nistir8259b]<br/>[NIST IR 8425: § 2.2.2][nistir8425] | Proactively inform customers about fixed vulnerabilities through security advisories and clearly communicate the product's end-of-support date. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)<br/>[Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 | **Education & Awareness**<br/>[NIST IR 8259B: Tbl. 1][nistir8259b]<br/>[NIST IR 8425: § 2.2.2][nistir8425] | Provide customers with guidance on how to securely configure and dispose of the device, clarifying the shared security responsibilities between them and the manufacturer. | [User Documentation Guide](../../implementation/build-phase/user-documentation.md) |
 
@@ -71,10 +71,10 @@ While the NIST IR 8259 series is voluntary guidance, conformance with its princi
 
 The cybersecurity landscape is constantly evolving, and so is NIST's guidance. In 2024, NIST held a workshop to discuss the future of the 8259 series, and the key findings were published in **[NIST IR 8562][nistir8562]**. NIST then published **[NIST IR 8259 Rev. 1][nistir8259]** on 20 April 2026, retitled *Foundational Cybersecurity Activities for IoT Product Manufacturers*, which carries the shift from devices to products into the core document. NIST IR 8259A and 8259B have not been revised.
 
-The key takeaways signal a move towards a more holistic and context-aware approach to IoT security:
+The key takeaways signal a move toward a more holistic and context-aware approach to IoT security:
 - **Software Lifecycle**: Increased focus on the security of the software development lifecycle, not just the final product.
 - **Context is Key**: Recognition that security needs vary greatly depending on the product's intended use and operating environment (e.g., consumer vs. industrial vs. medical).
-- **Vulnerability Communication**: Emphasis on better, more standardised ways to communicate vulnerability information, such as using the Vulnerability Exploitability eXchange (VEX).
+- **Vulnerability Communication**: Emphasis on better, more standardized ways to communicate vulnerability information, such as using the Vulnerability Exploitability eXchange (VEX).
 - **Cloud & Backend**: Explicitly including the security of cloud services and backend infrastructure as part of the product's overall security posture.
 
 <!-- Citations -->

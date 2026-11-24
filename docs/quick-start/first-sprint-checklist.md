@@ -24,7 +24,7 @@ By the end of the first sprint, aim to have:
 - a vulnerability reporting route or plan;
 - a CRA reporting route for actively exploited vulnerabilities and severe incidents, if the product is on the EU market;
 - a first evidence register;
-- a prioritised backlog for secure boot, identity, provisioning, OTA, SBOM/VEX, logging, and vulnerability handling.
+- a prioritized backlog for secure boot, identity, provisioning, OTA, SBOM/VEX, logging, and vulnerability handling.
 
 ## Sprint 1: Establish Ownership And Scope
 
@@ -59,7 +59,7 @@ Use the first evidence and scope work to choose technical priorities.
 |------|--------|----------------|
 | Review device identity | Identity model, onboarding assumptions, and lifecycle gaps. | [Unique Device Identity](../implementation/build-phase/unique-device-identity.md) |
 | Review key provisioning | Key inventory, trust-anchor choice, and provisioning gaps. | [Key Provisioning & Storage](../implementation/build-phase/key-provisioning.md) |
-| Review secure boot | Boot-chain scope, trust-anchor evidence, and failure behaviour gaps. | [Secure Boot](../implementation/build-phase/secure-boot.md) |
+| Review secure boot | Boot-chain scope, trust-anchor evidence, and failure behavior gaps. | [Secure Boot](../implementation/build-phase/secure-boot.md) |
 | Review OTA updates | Update verification, rollback, recovery, rollout, and customer communication gaps. | [Secure OTA Updates](../implementation/build-phase/ota-updates.md) |
 | Review cryptography | Crypto inventory, certificate lifecycle, and migration concerns. | [Cryptography under the CRA](../resources/cryptography/cryptography-under-cra.md) |
 

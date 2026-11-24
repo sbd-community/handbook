@@ -40,7 +40,7 @@
 /* Light Mode Overrides */
 [data-theme='light'] {
   --ifm-background-color: #f5fcfd; /* Surface Light */
-  --ifm-font-color-base: #5e6e75; /* Mid Grey */
+  --ifm-font-color-base: #5e6e75; /* Mid Gray */
   --ifm-navbar-background-color: #013b4e; /* Deep Teal */
   --ifm-footer-background-color: #f5fcfd; /* Surface Light */
   --ifm-code-background: #eef9fb;

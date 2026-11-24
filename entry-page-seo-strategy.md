@@ -69,7 +69,7 @@ Do not call these "SEO landing pages". Use **entry pages**. The term protects th
 | --- | --- | --- |
 | Tier 1 | Primary entry pages | Highest editorial priority. Must work for cold visitors and route to deeper pages. |
 | Tier 2 | Supporting entry pages | Can receive traffic, but mainly deepen journeys from Tier 1 pages. |
-| Tier 3 | Reference, examples, and utility pages | Useful support pages. Optimise only when they have a clear entry role. |
+| Tier 3 | Reference, examples, and utility pages | Useful support pages. Optimize only when they have a clear entry role. |
 | Tier 4 | Blog, news, archive, and generated utility pages | Useful for freshness or navigation, but not main entry architecture. |
 
 The sitemap may be mechanically flat. Editorial priority is not.
@@ -111,7 +111,7 @@ Every P1 rewrite must include a **Preserve** field before editing. Do not remove
 | P1 | Major rewrite | What is Secure-by-Design? | `docs/quick-start/what-is-secure-by-design.md` | What does secure by design mean for connected-product teams? | Explain how secure by design changes product architecture, defaults, development, updates, vulnerability handling, and evidence. | P1 structure, process-change model, SbD vs secure-by-default distinction, checklist, and next-step routing are in place. | Editorial + product-security reviewer | Done | Done |
 | P1 | Light alignment | CRA Primer | `docs/quick-start/cra-primer.md` | What is the CRA and what does it mean for connected products? | Give a short, non-legal first read that routes readers into readiness or detailed reference. | Direct routes to CRA Readiness Gap Analysis, Evidence Pack, and CRA Overview are in place. | Editorial + standards reviewer | Done | Done |
 | P1 | Ready | CRA Readiness Gap Analysis | `docs/resources/checklists-and-worksheets/cra-gap-analysis.md` | How do I assess CRA readiness and turn gaps into actions? | Produce a scoped readiness view, evidence map, gap register, and next actions. | Grouped next-action routing to obligations, evidence, maturity, policies, technical controls, release, and post-market pages is in place. | Editorial + standards reviewer + product-security reviewer | Done | Done |
-| P1 | Light alignment | Secure-by-Design Evidence Pack | `docs/resources/policy-and-evidence/audit-evidence-pack.md` | What evidence should we retain for secure-by-design and CRA technical documentation? | Give teams a lifecycle evidence structure for product security decisions and CRA technical documentation. | Inbound anchor text is standardised; keep slug stable. | Editorial + standards reviewer | Done | Done |
+| P1 | Light alignment | Secure-by-Design Evidence Pack | `docs/resources/policy-and-evidence/audit-evidence-pack.md` | What evidence should we retain for secure-by-design and CRA technical documentation? | Give teams a lifecycle evidence structure for product security decisions and CRA technical documentation. | Inbound anchor text is standardized; keep slug stable. | Editorial + standards reviewer | Done | Done |
 | P1 | Medium rewrite | Secure Boot | `docs/implementation/build-phase/secure-boot.md` | What secure boot decisions and evidence matter for a CRA-scoped connected product? | Explain secure boot decisions, failure behavior, evidence, and related controls for connected products. | P1 entry structure, good-state model, evidence section, common gaps, and grouped related links are in place. | Editorial + technical reviewer + standards reviewer | Done | Done |
 | P1 | Medium rewrite | OTA Updates and Patching | `docs/implementation/build-phase/ota-updates.md` | Can we safely deliver, verify, recover, and evidence security updates over the support period? | Explain the update architecture and lifecycle evidence needed to remediate vulnerabilities safely. | P1 structure, records/customer/remediation/staged-rollout evidence, related links, and checklist fix are in place. | Editorial + technical reviewer | Done | Done |
 | P1 | Medium rewrite | Vulnerability Disclosure | `docs/implementation/operate-phase/vulnerability-disclosure.md` | How do we receive, triage, report, fix, evidence, and communicate vulnerabilities? | Explain public CVD, internal triage, CRA reporting, remediation, evidence, and communication responsibilities. | P1 structure, vulnerability log guidance, customer communication, evidence, Policy Starter Kit route, and grouped related links are in place. | Editorial + standards reviewer + product-security reviewer | Done | Done |
@@ -126,7 +126,7 @@ Every P1 rewrite must include a **Preserve** field before editing. Do not remove
 | P2 | Medium rewrite | Patch Cadence and Rollback Strategy | `docs/implementation/operate-phase/patch-cadence.md` | How do we plan update timing, rollback, and remediation expectations? | Explain update timing, rollback strategy, remediation expectations, and support-period evidence. | P2 entry structure, remediation workflow, rollback distinctions, support-period commitments, evidence, and routing to OTA and Vulnerability Disclosure are in place. | Editorial + technical reviewer + product-security reviewer | Done | Done |
 | P2 | Light alignment | ETSI EN 304 623 Boot Managers | `docs/standards/eu/cra/en-304-623-boot-managers.md` | What does the boot-manager draft imply for secure boot, updates, and evidence? | Translate the draft boot-manager standard into design planning, gap analysis, and evidence considerations. | Entry cue and grouped next-step routing to Secure Boot, OTA, key provisioning, crypto, vulnerability handling, SBOM, and evidence are in place. | Editorial + standards reviewer + technical reviewer | Done | Done |
 | P2 | Ready | Resources hub | `docs/resources/index.md` | I know the job I need to do, but not which resource to use. | Route users by task into checklists, evidence, examples, case studies, hardware, crypto, and reference pages. | Task-routing and Evidence Pack naming are aligned. | Editorial | Done | Done |
-| P2 | Ready | Secure-by-Design Maturity Model | `docs/resources/checklists-and-worksheets/maturity-model.md` | How mature are our secure-by-design capabilities? | Help teams assess organisational capability and turn gaps into a roadmap. | Grouped routing to CRA readiness, Evidence Pack, risk/design controls, and post-market practices is in place. | Editorial + product-security reviewer | Done | Done |
+| P2 | Ready | Secure-by-Design Maturity Model | `docs/resources/checklists-and-worksheets/maturity-model.md` | How mature are our secure-by-design capabilities? | Help teams assess organizational capability and turn gaps into a roadmap. | Grouped routing to CRA readiness, Evidence Pack, risk/design controls, and post-market practices is in place. | Editorial + product-security reviewer | Done | Done |
 | P2 | Ready | Policy Starter Kit | `docs/resources/policy-and-evidence/policy-templates.md` | What policies and procedures should we publish or retain? | Provide public policy templates, internal procedure outlines, and retained evidence guidance. | Grouped routing to Gap Analysis, Evidence Pack, Maturity Model, CVD, Patch Cadence, and engineering/release controls is in place. | Editorial + standards reviewer | Done | Done |
 | P2 | Ready | STM32 hardware page | `docs/resources/hardware/stm32.md` | How can STM32 hardware support a CRA-scoped security case? | Help teams assess STM32 security capabilities, caveats, and evidence needs. | Opening is explicit and routing now includes architecture classification and key provisioning earlier. | Editorial + hardware/embedded reviewer | Done | Done |
 | P2 | Ready | ESP32 hardware page | `docs/resources/hardware/espressif.md` | How can ESP32 hardware support a CRA-scoped security case? | Help teams assess ESP32 security capabilities, caveats, and evidence needs. | Reviewed; caveats and routing remain aligned. | Editorial + hardware/embedded reviewer | Done | Done |
@@ -273,7 +273,7 @@ Use these briefs before rewriting P1 pages. Do not rewrite a P1 page from the ma
 | What good looks like | Evidence is scoped, owned, current, verifiable, decision-linked, exception-aware, and retained for the relevant product, release, or support period. |
 | Unique value | Treats evidence as lifecycle decision support, not just an audit folder. |
 | Current problem | Page is strong; keep inbound anchor text aligned to "Secure-by-Design Evidence Pack". |
-| Required rewrite | Standardise display name and inbound anchor text; keep slug stable. |
+| Required rewrite | Standardize display name and inbound anchor text; keep slug stable. |
 | Preserve | Audit and customer-assurance use cases. |
 | Next-step links | CRA Gap Analysis, Maturity Model, Threat Modeling, Vulnerability Disclosure, Patch Cadence, Types of Embedded Device. |
 | Success signal | Team can create or update an evidence register for a product/release. |
@@ -295,7 +295,7 @@ Use these briefs before rewriting P1 pages. Do not rewrite a P1 page from the ma
 | Primary intent | What secure boot decisions and evidence matter for a CRA-scoped connected product? |
 | Likely query / AI prompt cluster | secure boot connected devices, secure boot CRA, firmware secure boot evidence, bootloader security CRA. |
 | Page promise | Explains secure boot decisions, failure behavior, evidence, and related controls for connected products. |
-| What good looks like | A product has a documented boot chain, protected trust anchor, signed firmware verification, rollback/recovery behaviour, debug-control evidence, and production configuration records. |
+| What good looks like | A product has a documented boot chain, protected trust anchor, signed firmware verification, rollback/recovery behavior, debug-control evidence, and production configuration records. |
 | Unique value | Links secure boot to CRA integrity, EN 304 623, hardware trust, update recovery, and evidence. |
 | Current problem | Strong technical guide, but not yet shaped as a cold-entry page. |
 | Required rewrite | Add use-when opening, what-good-looks-like section, evidence to retain, common gaps, and grouped next-step links. |
@@ -317,10 +317,10 @@ Use these briefs before rewriting P1 pages. Do not rewrite a P1 page from the ma
 | Strategic priority | P1 |
 | Entry readiness | Medium rewrite |
 | Primary audience | Firmware, cloud, DevOps, product-security, and compliance teams. |
-| Primary intent | Can we safely deliver, authorise, verify, recover, and evidence updates over the support period? |
+| Primary intent | Can we safely deliver, authorize, verify, recover, and evidence updates over the support period? |
 | Likely query / AI prompt cluster | secure firmware updates CRA, OTA update security connected devices, firmware update evidence, rollback protection firmware. |
 | Page promise | Explains the update architecture and lifecycle evidence needed to remediate vulnerabilities safely. |
-| What good looks like | Updates are signed, authorised, recoverable, rollback-aware, tested in production-like conditions, logged, communicated where needed, and tied to vulnerability remediation records. |
+| What good looks like | Updates are signed, authorized, recoverable, rollback-aware, tested in production-like conditions, logged, communicated where needed, and tied to vulnerability remediation records. |
 | Unique value | Connects technical update design with support period, vulnerability remediation, customer communication, and evidence. |
 | Current problem | Strong technical core, but missing explicit update records, customer communication, vulnerability remediation, staged-rollout evidence, and evidence retention. |
 | Required rewrite | Add entry opening, evidence section, common gaps, lifecycle links, and fix checklist typo `[_]`. |
@@ -477,7 +477,7 @@ Use these briefs before rewriting P1 pages. Do not rewrite a P1 page from the ma
 #### Do Not
 
 - Overclaim CRA compliance from hardware features.
-- Generalise across STM32 variants without qualification.
+- Generalize across STM32 variants without qualification.
 - Remove part, configuration, lifecycle support, and manufacturer-responsibility caveats.
 
 ### ESP32 Hardware Page
@@ -502,7 +502,7 @@ Use these briefs before rewriting P1 pages. Do not rewrite a P1 page from the ma
 #### Do Not
 
 - Overclaim CRA compliance from hardware features.
-- Generalise across ESP32 variants without qualification.
+- Generalize across ESP32 variants without qualification.
 - Remove eFuse, secure boot, flash encryption, lifecycle support, or manufacturer-responsibility caveats.
 
 ### Real-World Vulnerabilities Hub
@@ -598,7 +598,7 @@ Current cleanup decisions:
 Owner group: Editorial + developer/site config.
 
 - Update homepage routes into obligations, readiness, implementation, and evidence.
-- Standardise inbound links to "Secure-by-Design Evidence Pack".
+- Standardize inbound links to "Secure-by-Design Evidence Pack".
 - Confirm sitemap cleanup for generated utility pages.
 - Add CRA Primer to the practical journey from homepage and What is Secure-by-Design.
 - Add direct CRA Primer to CRA Readiness Gap Analysis routing.

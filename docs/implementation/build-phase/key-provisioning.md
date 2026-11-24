@@ -57,8 +57,8 @@ The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** does not p
 Relevant CRA outcomes include:
 
 - protecting confidentiality of data at rest and in transit using state-of-the-art mechanisms ([CRA Annex I § 1(2)(e)][cra_annexI]);
-- protecting integrity of data, commands, programs, and configuration against unauthorised modification ([CRA Annex I § 1(2)(f)][cra_annexI]);
-- preventing unauthorised access through appropriate control mechanisms;
+- protecting integrity of data, commands, programs, and configuration against unauthorized modification ([CRA Annex I § 1(2)(f)][cra_annexI]);
+- preventing unauthorized access through appropriate control mechanisms;
 - enabling secure updates and vulnerability remediation during the support period.
 
 BSI TR-03183-1 v0.9.0 reinforces the need to protect sensitive data and parameters ([REQ_ER 6][bsi_tr_03183_p1]) and to verify update package authenticity and integrity.
@@ -107,7 +107,7 @@ Treat provisioning as a ceremony: a controlled sequence with defined participant
 | Design | Define key purposes, hierarchy, trust anchors, algorithms, storage locations, certificate profiles, and lifecycle rules. | Key-management design, architecture diagram, cryptographic decision records. |
 | Supplier handover | Receive chips, modules, public-key manifests, certificates, or attestation material from the silicon or module supplier. | Supplier manifest, chain-of-custody record, verification result. |
 | Factory setup | Prepare HSMs, provisioning servers, station credentials, network isolation, access control, and station software versions. | Factory configuration, access approvals, HSM policy, station build record. |
-| Device enrolment | Generate, inject, or derive device-specific key material and bind it to a serial number, product identity, batch, and hardware revision. | Provisioning log, serial mapping, certificate issuance record, failure log. |
+| Device enrollment | Generate, inject, or derive device-specific key material and bind it to a serial number, product identity, batch, and hardware revision. | Provisioning log, serial mapping, certificate issuance record, failure log. |
 | Verification | Confirm the device can use the credential without exposing key material. | Functional test, attestation result, certificate validation, secure storage test. |
 | Lockdown | Disable debug paths, remove temporary secrets, close provisioning interfaces, and set production configuration. | Production-lock record, debug-disable evidence, final configuration record. |
 | Release to inventory | Associate provisioned devices with batch, firmware, region, customer, or distribution channel where needed. | Batch record, device manifest, release approval. |
@@ -122,9 +122,9 @@ The trust anchor is the place where the product's most important secrets or trus
 | Technology | What it provides | Watch-outs |
 |------------|------------------|------------|
 | Secure Element (SE) | Dedicated tamper-resistant key storage and cryptographic services over a narrow interface. | Adds BOM, integration, supply-chain, and certificate-profile decisions. |
-| Trusted Platform Module (TPM) | Standardised key storage, attestation, measurement, and platform-security functions. | Best fit is often Linux, gateway, industrial, or enterprise-class platforms. |
+| Trusted Platform Module (TPM) | Standardized key storage, attestation, measurement, and platform-security functions. | Best fit is often Linux, gateway, industrial, or enterprise-class platforms. |
 | Trusted Execution Environment (TEE) | Isolated execution and protected memory inside the main processor. | Security depends on implementation, firmware configuration, and attack surface. |
-| Physically Unclonable Function (PUF) | Device-unique secret derived from physical characteristics rather than stored directly. | Needs careful enrolment, helper-data protection, reliability, and recovery design. |
+| Physically Unclonable Function (PUF) | Device-unique secret derived from physical characteristics rather than stored directly. | Needs careful enrollment, helper-data protection, reliability, and recovery design. |
 | MCU secure storage | Protected flash, OTP, key slots, debug controls, and cryptographic accelerators. | Protection varies widely by family, configuration, lifecycle state, and threat model. |
 | External HSM or signing service | Protects CA, firmware-signing, and provisioning authority keys outside the device. | Operational controls, approvals, logging, backup, and disaster recovery matter. |
 
@@ -214,7 +214,7 @@ Common key-management gaps include:
 
 ## Tooling And Build-vs-Buy Decisions
 
-Some teams can operate a simple provisioning flow using a secure factory station, HSM-backed CA, and device secure storage. Others benefit from specialised platforms.
+Some teams can operate a simple provisioning flow using a secure factory station, HSM-backed CA, and device secure storage. Others benefit from specialized platforms.
 
 Useful tooling categories include:
 

@@ -22,7 +22,7 @@ A critical feature of the MDR is its emphasis on software and cybersecurity. For
 While the MDR lays down the legal requirements, it does not specify *how* to meet them. The **Medical Device Coordination Group (MDCG)** publishes guidance that represents the "state of the art" for compliance.
 - **Cybersecurity**: [MDCG 2019-16 – Guidance on Cybersecurity for medical devices][mdcg_2019_16]
 
-Because the "state of the art" in cybersecurity evolves rapidly, guidance from other modern regulations can be highly valuable. While primarily a playbook for the [Cyber-Resilience Act](./cra/index.md), Germany's BSI technical guideline is an excellent resource for implementing best practices that support MDR compliance.
+Because the "state of the art" in cybersecurity evolves rapidly, guidance from other modern regulations can be highly valuable. While primarily a playbook for the [Cyber Resilience Act](./cra/index.md), Germany's BSI technical guideline is an excellent resource for implementing best practices that support MDR compliance.
 - **Best Practice Reference**: [BSI TR-03183 – Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
 :::
 
@@ -39,7 +39,7 @@ Because the "state of the art" in cybersecurity evolves rapidly, guidance from o
 
 | Law | How it interacts with the MDR |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | Products qualifying as medical devices under the MDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The MDR is considered *lex specialis*—more specific legislation that provides its own comprehensive set of cybersecurity rules. |
+| **[Cyber Resilience Act (CRA)](./cra/index.md)** | Products qualifying as medical devices under the MDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The MDR is considered *lex specialis*—more specific legislation that provides its own comprehensive set of cybersecurity rules. |
 | **[GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679)** | Medical devices often process sensitive health data, making compliance with the General Data Protection Regulation essential. The MDR's security requirements provide a foundation for protecting this data. |
 | **[IVDR](./ivdr-overview.md)** | The IVDR is a parallel regulation covering in vitro diagnostic devices. Its structure and cybersecurity requirements are nearly identical to the MDR's. |
 
@@ -73,10 +73,10 @@ The following table translates the MDR's General Safety and Performance Requirem
 |---|---|---|
 | **Risk Management System**<br/>[MDR Annex I, §3][mdr_annexI_3]<br/>[MDCG 2019-16, §3.2][mdcg_2019_16_s3_2] | Establish a risk management system as a continuous, iterative process across the entire lifecycle. This must explicitly include information security risks alongside safety risks. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
 | **Secure Software Lifecycle**<br/>[MDR Annex I, §17.2][mdr_annexI_17_2]<br/>[MDCG 2019-16, §3.1][mdcg_2019_16_s3_1] | Develop and manufacture software according to the state of the art, incorporating a secure development lifecycle (SDL) with security integrated into every phase. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
-| **IT Security Measures**<br/>[MDR Annex I, §17.4][mdr_annexI_17_4]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Define and implement minimum requirements for hardware, IT network characteristics, and IT security measures to protect against unauthorised access and ensure the device can be run as intended. | [Secure Configuration](../../implementation/build-phase/secure-configuration.md) |
+| **IT Security Measures**<br/>[MDR Annex I, §17.4][mdr_annexI_17_4]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Define and implement minimum requirements for hardware, IT network characteristics, and IT security measures to protect against unauthorized access and ensure the device can be run as intended. | [Secure Configuration](../../implementation/build-phase/secure-configuration.md) |
 | **Secure Authentication & Access Control**<br/>[MDR Annex I, §17.4][mdr_annexI_17_4]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Implement strong, unique user authentication (not shared passwords) and role-based access control (RBAC) to enforce the principle of least privilege. | [Unique Device Identity](../../implementation/build-phase/unique-device-identity.md) |
 | **Secure Cryptography & Key Management**<br/>[MDR Annex I, §17.2][mdr_annexI_17_2]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Use state-of-the-art encryption to protect data-in-transit and data-at-rest. Protect cryptographic keys in a hardware-backed secure storage environment (e.g., TEE, Secure Element). | [Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md) |
-| **Secure Boot & Integrity Protection**<br/>[MDR Annex I, §17.2][mdr_annexI_17_2]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Verify the integrity and authenticity of all software and firmware during the boot process to prevent tampering and ensure the device only runs authorised code. | [Secure Boot](../../implementation/build-phase/secure-boot.md) |
+| **Secure Boot & Integrity Protection**<br/>[MDR Annex I, §17.2][mdr_annexI_17_2]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Verify the integrity and authenticity of all software and firmware during the boot process to prevent tampering and ensure the device only runs authorized code. | [Secure Boot](../../implementation/build-phase/secure-boot.md) |
 | **Security Logging**<br/>[MDR Annex I, §17.4][mdr_annexI_17_4]<br/>[MDCG 2019-16, §3.3][mdcg_2019_16_s3_3] | Create tamper-resistant event logs for security-relevant events, including access attempts, configuration changes, and errors, with accurate timestamps. | [Security Logging](../../implementation/operate-phase/security-logging.md) |
 | **Secure Updates & Patching**<br/>[MDR Annex I, §17.2][mdr_annexI_17_2]<br/>[MDCG 2019-16, §3.8][mdcg_2019_16_s3_8] | Implement a secure update mechanism. All updates must be cryptographically signed to ensure authenticity and integrity, and the device must verify the signature before installation. | [Secure OTA Updates](../../implementation/build-phase/ota-updates.md) |
 | **Information to Users**<br/>[MDR Annex I, §23.4][mdr_annexI_23_4]<br/>[MDCG 2019-16, §4.2][mdcg_2019_16_s4_2] | Provide clear Instructions for Use (IFU) including: minimum IT requirements; secure configuration guidance; network port/protocol details; instructions for secure deployment and updates; and details of backup/restore features. Maintain security information in an electronic form to allow for dynamic updates. | [User Documentation](../../implementation/build-phase/user-documentation.md) |
@@ -88,7 +88,7 @@ The following table translates the MDR's General Safety and Performance Requirem
 
 ## 4. Conformity Assessment & Notified Bodies
 
-To affix a CE mark to a medical device, manufacturers must undergo a conformity assessment. For nearly all connected devices, this requires a **Notified Body**—an independent organisation designated by an EU authority—to audit the device's documentation and the manufacturer's Quality Management System (QMS).
+To affix a CE mark to a medical device, manufacturers must undergo a conformity assessment. For nearly all connected devices, this requires a **Notified Body**—an independent organization designated by an EU authority—to audit the device's documentation and the manufacturer's Quality Management System (QMS).
 
 The role of the Notified Body includes:
 - **Auditing the QMS:** Conducting on-site audits (including unannounced audits) of the manufacturer's processes.

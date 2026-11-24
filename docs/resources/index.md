@@ -35,7 +35,7 @@ Use the **[CRA Gap Analysis](./checklists-and-worksheets/cra-gap-analysis.md)** 
 
 ### Assemble Evidence
 
-Use the **[Secure-by-Design Evidence Pack](./policy-and-evidence/audit-evidence-pack.md)** to organise technical documentation, test evidence, vulnerability records, and post-market records. Use **[Policy Templates](./policy-and-evidence/policy-templates.md)** as starter material for public and internal policies.
+Use the **[Secure-by-Design Evidence Pack](./policy-and-evidence/audit-evidence-pack.md)** to organize technical documentation, test evidence, vulnerability records, and post-market records. Use **[Policy Templates](./policy-and-evidence/policy-templates.md)** as starter material for public and internal policies.
 
 ### Reuse Examples
 

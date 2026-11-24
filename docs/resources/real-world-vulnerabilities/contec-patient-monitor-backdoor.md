@@ -12,7 +12,7 @@ This case shows why secure-by-design is not just about patching visible bugs. Hi
 
 ## What Happened
 
-In January 2025, CISA and FDA published warnings about vulnerabilities in the Contec CMS8000 patient monitor and re-labelled devices. CISA's fact sheet states that firmware analysis found hidden functionality with a hard-coded IP address and functionality enabling patient-data exposure across the firmware versions analysed.
+In January 2025, CISA and FDA published warnings about vulnerabilities in the Contec CMS8000 patient monitor and re-labeled devices. CISA's fact sheet states that firmware analysis found hidden functionality with a hard-coded IP address and functionality enabling patient-data exposure across the firmware versions analyzed.
 
 CISA's medical advisory describes:
 
@@ -22,7 +22,7 @@ CISA's medical advisory describes:
 
 The advisory and FDA safety communication advised users to disconnect affected devices from networks while risk was addressed.
 
-FDA updated its safety communication on 2 July 2025 after Contec made a software patch available. FDA stated that the patch removes networking functionality from affected devices, making them usable only for local monitoring, and advised patients and caregivers not to install the patch themselves because installation requires specialised expertise.
+FDA updated its safety communication on 2 July 2025 after Contec made a software patch available. FDA stated that the patch removes networking functionality from affected devices, making them usable only for local monitoring, and advised patients and caregivers not to install the patch themselves because installation requires specialized expertise.
 
 ## What Failed
 

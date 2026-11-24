@@ -10,7 +10,7 @@ Define a consistent voice, visual language, and editorial standard so every arti
 
 | Role | Needs |
 |------|-------|
-| Product & Platform Owners | Plain‑English interpretation of CRA/NIS 2 and evidence artefacts. |
+| Product & Platform Owners | Plain‑English interpretation of CRA/NIS 2 and evidence artifacts. |
 | Embedded/Firmware Engineers | Clause‑by‑clause implementation steps, code samples, reference configs. |
 | Compliance Leads & Auditors | Gap‑analysis checklists, maturity models, audit‑ready templates. |
 | Security & DevOps Teams | CI/CD hardening guides, SBOM/VEX pipelines, incident‑response runbooks. |
@@ -20,7 +20,7 @@ Define a consistent voice, visual language, and editorial standard so every arti
 | Attribute | Guideline | Do | Avoid |
 |-----------|-----------|----|----|
 | Authoritative | Cite standards precisely; include clause numbers. | "CRA Art. 10‑3 requires…" | Vague claims ("industry best practice says…"). |
-| Practical | End with next steps, scripts, or templates. | Provide Makefile snippets, checklist PDFs. | Pure theory without artefacts. |
+| Practical | End with next steps, scripts, or templates. | Provide Makefile snippets, checklist PDFs. | Pure theory without artifacts. |
 | Vendor‑neutral | Mention multiple toolchains; disclose affiliations. | "You can use SWUpdate or Mender for OTA…" | Hard sells, single‑vendor bias. |
 | Inclusive & Clear | Use plain language, define acronyms on first use. | Spell out "Software Bill of Materials (SBOM)". | Jargon without explanation. |
 
@@ -30,7 +30,7 @@ Define a consistent voice, visual language, and editorial standard so every arti
 - Use active voice ("Validate keys" not "Keys are validated").
 - Prefer second‑person orientation in tutorials ("You will…").
 - Spell‑out numbers one → nine; 10+ in numerals.
-- American spelling (*organization*, *modeling*, *analyze*, *prioritize*), which most pages already use. Keep official names and terms as their source spells them: *harmonised standard*, *Official Journal of the European Union*, *Product Security and Telecommunications Infrastructure Act*.
+- American spelling (*organization*, *behavior*, *modeling*, *analyze*, *artifact*, *license* as a noun, *program*). The site locale is `en-US`. Keep official names, defined terms, document titles, and quotations as their source spells them: *harmonised standard*, *standardisation request*, *European standardisation organisation*, *authorised representative*, *Official Journal of the European Union*, *National Cyber Security Centre*, *Ministry of Defence*, *Singapore Cybersecurity Labelling Scheme*, *Product Security and Telecommunications Infrastructure Act*. A US term keeps its US spelling (*FCC equipment authorization*, *Cyber Trust Mark program*).
 - Dates in prose as day, month, year (*11 December 2027*); ISO 8601 (`2027-12-11`) in front matter and in dense date tables such as a regulation's timeline.
 
 ### Authority Language
@@ -45,10 +45,10 @@ Overstating an obligation is the most damaging mistake a compliance handbook can
 ## 4. Terminology
 
 - **Secure-by-Design**: Always capitalize S and D, and always hyphenate. The abbreviation (SbD) may be used after the first full use, where appropriate.
-- **Product with Digital Elements (PDE)**: The formal, legal term from the Cyber-Resilience Act. Use this for precision when discussing the CRA's scope. Abbreviate as PDE after the first full mention.
+- **Product with Digital Elements (PDE)**: The formal, legal term from the Cyber Resilience Act. Use this for precision when discussing the CRA's scope. Abbreviate as PDE after the first full mention.
 - **Connected Device**: The preferred, general-purpose term for this handbook. It is a plain-English umbrella term covering PDEs, IoT devices, and other network-connected hardware.
 - **IoT (Internet of Things)**: Use when discussing consumer-focused products or when referencing specific standards or guidance that use the term (e.g., ETSI EN 303 645, ICO's IoT guidance). Define on first use.
-- **Cyber-Resilience Act**: abbreviate as CRA after first mention.
+- **Cyber Resilience Act**: no hyphen, as in the regulation's official title; abbreviate as CRA after first mention.
 - **NIS 2 Directive**: no hyphen (EU style).
 - **SBOM, VEX**: define on first appearance.
 
@@ -140,7 +140,7 @@ For drafts, state the status clearly near the top and repeat the draft-standard 
 
 - Link the **primary source** (official publication page, OJ text, PDF) before any secondary commentary.
 - Reference-style links (`[label][id]`) are fine after the truncate marker. Define each at the bottom of the post, and **remove any definition that is not used in the text** — don't keep inline-linked sources as duplicate definitions.
-- Write dates in full (`11 September 2026`) and spell out acronyms on first use, e.g. "Cyber-Resilience Act (CRA)".
+- Write dates in full (`11 September 2026`) and spell out acronyms on first use, e.g. "Cyber Resilience Act (CRA)".
 
 #### Freshness
 
@@ -168,7 +168,7 @@ Use this structure for CRA draft or final harmonised standards, especially produ
 8. **Relationship to implementation guides** – link to the relevant handbook playbooks and tools.
 9. **Further reading** – include official sources first, then useful external analysis.
 
-Always include a warning callout for drafts: draft standards do not provide presumption of conformity until finalised and cited in the Official Journal. Treat them as design and evidence-planning inputs, not as final compliance claims.
+Always include a warning callout for drafts: draft standards do not provide presumption of conformity until finalized and cited in the Official Journal. Treat them as design and evidence-planning inputs, not as final compliance claims.
 
 ### Call‑outs
 
@@ -214,7 +214,7 @@ That document is the single source of truth for the brand's visual identity. Thi
 ## 9. Accessibility
 
 - All images require descriptive alt text.
-- Don't convey meaning by colour alone; pair with icons or text.
+- Don't convey meaning by color alone; pair with icons or text.
 - Ensure keyboard navigability & visible focus states.
 - Test with screen‑reader (NVDA) before publishing.
 
@@ -243,7 +243,7 @@ Before merging new or revised content, check that the page passes these tests:
 - **Honest sourcing**: Is every date, requirement, and recommendation attributed to its instrument, provision, and audience, with the primary source linked?
 - **Authority language**: Are *must* and *shall* kept for binding obligations, and is each standard's status (draft, final, cited in the OJ) stated where it matters?
 - **Freshness**: Is each fact dated from its source, with no "last checked" or "as of" stamp?
-- **Evidence**: Does the page say what record or artefact demonstrates the work?
+- **Evidence**: Does the page say what record or artifact demonstrates the work?
 - **Posts**: Does a post that changes a date or obligation ship with the handbook-page change?
 - **Search result**: Read out of context, do the title and description say exactly what the page answers?
 - **Clean checks**: Do `npm run typecheck` and `npm run build` pass?

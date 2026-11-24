@@ -38,7 +38,7 @@ By the end of this checklist, you should have:
 | Status | Meaning |
 |--------|---------|
 | `Not started` | No clear owner, plan, control, or evidence exists. |
-| `Planned` | Need recognised, but implementation or evidence is not in place yet. |
+| `Planned` | Need recognized, but implementation or evidence is not in place yet. |
 | `Partial` | Some work exists, but scope, evidence, ownership, or coverage is incomplete. |
 | `Implemented` | Control or process exists for the product or release in scope. |
 | `Evidence available` | Evidence is scoped, current, owned, verifiable, and retained. |
@@ -78,7 +78,7 @@ Understand the likely CRA classification and assessment route. The checklist sup
 
 ## 3. Check Secure Development and Vulnerability Handling
 
-Assess whether the organisation has the processes needed to build and maintain a secure product.
+Assess whether the organization has the processes needed to build and maintain a secure product.
 
 | Question | Status | Evidence | Owner | Next action |
 |----------|--------|----------|-------|-------------|
@@ -96,13 +96,13 @@ Assess product-level secure-by-design controls for the product or release in sco
 
 | Question | Status | Evidence | Owner | Next action |
 |----------|--------|----------|-------|-------------|
-| Is the product secure by default? | | Secure configuration baseline, factory settings, reset behaviour. | | Identify insecure defaults, default credentials, or unsupported configuration states. |
+| Is the product secure by default? | | Secure configuration baseline, factory settings, reset behavior. | | Identify insecure defaults, default credentials, or unsupported configuration states. |
 | Are default passwords, shared credentials, or hard-coded secrets avoided? | | Credential design, secrets scan, provisioning records. | | Remove shared secrets or document compensating controls and remediation plan. |
-| Is access to the device, service, and data controlled? | | Access-control design, authentication model, role definitions. | | Confirm least privilege and logging of unauthorised attempts. |
+| Is access to the device, service, and data controlled? | | Access-control design, authentication model, role definitions. | | Confirm least privilege and logging of unauthorized attempts. |
 | Is sensitive data protected at rest and in transit? | | Data-flow diagram, crypto design, protocol configuration. | | Review algorithms, key handling, and sensitive-data scope. |
 | Is software or firmware integrity protected? | | Secure boot design, firmware signing process, verification tests. | | Confirm the production configuration verifies mutable code before execution. |
 | Is the update mechanism authenticated and protected against rollback where appropriate? | | OTA/update architecture, rollback tests, version-counter design. | | Add recovery and anti-rollback evidence to the evidence pack. |
-| Is the attack surface minimised? | | Port/service list, interface inventory, hardening baseline. | | Disable, authenticate, or justify debug, service, and maintenance interfaces. |
+| Is the attack surface minimized? | | Port/service list, interface inventory, hardening baseline. | | Disable, authenticate, or justify debug, service, and maintenance interfaces. |
 | Are security logs available where appropriate? | | Logging design, sample logs, retention policy. | | Confirm logs support vulnerability handling, incident response, and user privacy. |
 | Have known vulnerabilities been assessed for the product version being released, and has the affected/not-affected decision been recorded? | | Scan results, affected-version analysis, VEX or vulnerability status record. | | Resolve unknown or affected status before release, or record approved risk acceptance. |
 
@@ -182,12 +182,12 @@ If you need to:
 
 - understand CRA obligations before completing the checklist, use the **[CRA Overview](../../standards/eu/cra/index.md)**;
 - retain checklist evidence and open gaps, use the **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**;
-- assess organisational capability behind the product gaps, use the **[Secure-by-Design Maturity Model](./maturity-model.md)**;
+- assess organizational capability behind the product gaps, use the **[Secure-by-Design Maturity Model](./maturity-model.md)**;
 - turn policy gaps into public and internal procedures, use the **[Secure-by-Design Policy Starter Kit](../policy-and-evidence/policy-templates.md)**;
 - assess product risk and architecture, use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**;
 - close technical control gaps, use **[Secure Boot](../../implementation/build-phase/secure-boot.md)**, **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**, **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**, and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**;
 - close release and post-market gaps, use **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**, **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)**, **[Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)**, **[Security Logging](../../implementation/operate-phase/security-logging.md)**, and **[User Documentation](../../implementation/build-phase/user-documentation.md)**;
-- score organisational CRA readiness with an official EU self-assessment, use ENISA's **[SME Cyber Resilience Maturity Assessment Model](https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model)**;
+- score organizational CRA readiness with an official EU self-assessment, use ENISA's **[SME Cyber Resilience Maturity Assessment Model](https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model)**;
 - compare your gaps with EU SME release-gate checklists, use ENISA's **[Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook)** ([GitHub playbooks](https://github.com/enisaeu/enisa-sbd-playbook/)).
 
 <!-- Citations -->

@@ -40,7 +40,7 @@ For CRA readiness, this classification should feed your threat model, risk asses
 |-------------|------------------|-----------------------|
 | **Constrained MCU** | Bare metal or RTOS, usually no MMU | No process isolation, limited logging, tight update and storage constraints. |
 | **Application processor / embedded Linux** | Linux, Android, or another rich OS on an MPU/SoC | Process isolation, richer logging, package and component management, larger attack surface. |
-| **Hybrid or specialised system** | MCU plus MPU, secure element, FPGA, ASIC, radio coprocessor, safety controller | More trust boundaries, more interfaces, harder evidence and update story. |
+| **Hybrid or specialized system** | MCU plus MPU, secure element, FPGA, ASIC, radio coprocessor, safety controller | More trust boundaries, more interfaces, harder evidence and update story. |
 
 ## Class 1: Constrained Microcontrollers
 
@@ -90,9 +90,9 @@ Typical examples include home gateways, smart TVs, industrial gateways, high-end
 
 A richer operating system can provide stronger isolation and observability, but it also increases patch, configuration, package, service, and account-management responsibilities.
 
-## Class 3: Hybrid and Specialised Systems
+## Class 3: Hybrid and Specialized Systems
 
-Hybrid and specialised systems combine multiple processing or trust domains. They may include an application processor, real-time MCU, radio coprocessor, secure element, FPGA, ASIC, safety controller, or custom accelerator.
+Hybrid and specialized systems combine multiple processing or trust domains. They may include an application processor, real-time MCU, radio coprocessor, secure element, FPGA, ASIC, safety controller, or custom accelerator.
 
 Typical characteristics:
 
@@ -128,7 +128,7 @@ Evidence should show:
 
 ## What Changes by Device Type
 
-| Topic | Constrained MCU | Embedded Linux / MPU | Hybrid or specialised |
+| Topic | Constrained MCU | Embedded Linux / MPU | Hybrid or specialized |
 |-------|-----------------|----------------------|-----------------------|
 | Threat modeling | Focus on firmware, peripherals, debug, physical access, and update path. | Include services, users, network interfaces, packages, cloud/mobile dependencies, and local privilege boundaries. | Model each trust domain and the interfaces between them. |
 | Isolation | Often limited to MPU, TrustZone, privilege levels, or coding discipline. | Process, user, kernel, container, sandbox, and service isolation may be available. | Isolation depends on inter-core boundaries, secure elements, buses, and hardware integration. |
@@ -161,7 +161,7 @@ Transfer this evidence into the **[Secure-by-Design Evidence Pack](../policy-and
 
 - Does the product have an MMU, MPU, TrustZone, secure element, TPM, hardware root of trust, or secure debug control?
 - Are we claiming controls the hardware or OS cannot enforce?
-- What happens when memory corruption occurs: clean crash, reset, silent state corruption, or unsafe behaviour?
+- What happens when memory corruption occurs: clean crash, reset, silent state corruption, or unsafe behavior?
 - How are debug, service, manufacturing, and maintenance interfaces controlled?
 - Can the device store useful logs or evidence?
 - Can it support authenticated updates, rollback protection, and recovery?
@@ -179,7 +179,7 @@ If you need to:
 - compare hardware-specific support and evidence, use **[STM32 Hardware Selection](../hardware/stm32.md)** and **[ESP32 Hardware Selection](../hardware/espressif.md)**;
 - retain architecture evidence, use the **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**;
 - compare real-world failure patterns, see the **[Baxter Life2000 case study](../real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md)** and **[GE Vivid local-access case study](../real-world-vulnerabilities/ge-vivid-ultrasound-local-access.md)**;
-- assess organisational capability, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)**.
+- assess organizational capability, use the **[Secure-by-Design Maturity Model](../checklists-and-worksheets/maturity-model.md)**.
 
 <!-- Citations -->
 [ndss18_muench]: https://www.s3.eurecom.fr/docs/ndss18_muench.pdf "Muench et al. - What You Corrupt Is Not What You Crash: Challenges in Fuzzing Embedded Devices" 

@@ -4,7 +4,7 @@ Thank you for your interest in contributing to the Secure-by-Design Handbook! Th
 
 ## 🎯 Our Mission
 
-We're building an authoritative, vendor-neutral reference that helps organizations implement security-by-design practices to comply with regulations like the EU Cyber-Resilience Act, NIS 2 Directive, ETSI EN 303 645, and IEC 62443.
+We're building an authoritative, vendor-neutral reference that helps organizations implement security-by-design practices to comply with regulations like the EU Cyber Resilience Act, NIS 2 Directive, ETSI EN 303 645, and IEC 62443.
 
 ## 🤝 How to Contribute
 

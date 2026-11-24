@@ -20,7 +20,7 @@ SBOM duties into checks teams can run.
 Neither advisory is a standard or a conformity assessment method. They are
 technical guidance, aimed at teams that build and run update and Software
 Bill of Materials (SBOM) processes. Both topics sit at the heart of the
-Cyber-Resilience Act (CRA): security updates for the support period, and an
+Cyber Resilience Act (CRA): security updates for the support period, and an
 SBOM in the technical documentation.
 
 ## What ENISA published
@@ -42,7 +42,7 @@ build time to failures that go undetected after installation.
 The recommended controls will be familiar to anyone who has built a secure
 over-the-air (OTA) update system:
 
-- signed update metadata, with artefacts cryptographically bound to it;
+- signed update metadata, with artifacts cryptographically bound to it;
 - controlled release workflows with approval gates and staged roll-out;
 - trusted update sources, strong transport security and validated
   redirects, treating CDNs and mirrors as untrusted;
@@ -61,7 +61,7 @@ the product's supported lifetime.
 ### Software Bill of Materials
 
 ENISA's SBOM advisory gives practical guidance on adopting SBOMs. It is
-intended for organisations setting up initial SBOM capabilities, especially
+intended for organizations setting up initial SBOM capabilities, especially
 SMEs and stewards. It describes an SBOM implementation
 architecture and data flows based on a defined lifecycle. It also presents an
 indicative SBOM threat model and measures to address security issues across
@@ -70,10 +70,10 @@ the SBOM ecosystem.
 The advisory compares the data fields in Germany's BSI TR-03183-2 with
 CISA's SBOM minimum elements, and describes the SPDX and CycloneDX formats.
 It distinguishes SBOM types, from design and source through build and
-analysed to deployed and runtime. Its risk table names problems many teams
-will recognise: incomplete or outdated SBOMs, poor component identification,
-weak binding between an SBOM and the artefact it describes, and SBOMs that
-are produced but never used to prioritise vulnerabilities.
+analyzed to deployed and runtime. Its risk table names problems many teams
+will recognize: incomplete or outdated SBOMs, poor component identification,
+weak binding between an SBOM and the artifact it describes, and SBOMs that
+are produced but never used to prioritize vulnerabilities.
 
 ## Why this matters for connected-product teams
 
@@ -100,7 +100,7 @@ such as automated maintenance and updates, and supply chain controls.
 3. Write down how you will rotate signing keys and keep the update service
    running for the whole support period.
 4. Review your SBOM against ENISA's risk table, especially accuracy,
-   completeness and binding to the released artefact.
+   completeness and binding to the released artifact.
 5. Connect SBOM output to vulnerability triage, so every new CVE match gets
    a decision.
 

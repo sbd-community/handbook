@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Use the implementation guides when you need to turn secure-by-design decisions into product controls, release workflows, and post-market operating processes.
 
-The guides are organised around two parts of the product lifecycle:
+The guides are organized around two parts of the product lifecycle:
 
 - **[Build Phase](./build-phase/index.md)**: Engineering controls designed into the product, firmware, software, update path, identity model, configuration, and release artifacts.
 - **[Operate Phase](./operate-phase/index.md)**: Processes used after release, including vulnerability intake, patch cadence, logging, monitoring, CI/CD hardening, and support-period evidence.

@@ -9,7 +9,7 @@ tags: [threat-modeling, example, risk-assessment, stride]
 
 This document provides a practical, lightweight example of a threat model for a typical consumer IoT product: a Wi-Fi-connected smart thermostat. It follows the four-step process outlined in the main [Threat Modeling Guide](../../implementation/build-phase/threat-modeling.md).
 
-The goal of this exercise is to proactively identify potential security threats and define concrete engineering requirements to mitigate them. This document serves as a key piece of evidence for a product's technical file, demonstrating that a cybersecurity risk assessment has been performed as required by regulations like the EU's Cyber-Resilience Act.
+The goal of this exercise is to proactively identify potential security threats and define concrete engineering requirements to mitigate them. This document serves as a key piece of evidence for a product's technical file, demonstrating that a cybersecurity risk assessment has been performed as required by regulations like the EU's Cyber Resilience Act.
 
 ---
 

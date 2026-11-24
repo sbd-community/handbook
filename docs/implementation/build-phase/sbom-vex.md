@@ -46,9 +46,9 @@ The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly
 
 BSI TR-03183-1 v0.9.0 reinforces this with a requirement to document integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
 
-The CRA does not prescribe SBOM fields. A good baseline is the **[2026 Minimum Elements for an SBOM][cisa_sbom_2026]**, published in July 2026 by CISA with the NSA, FBI and 15 international partners, including the BSI and ANSSI. It replaces the 2021 NTIA minimum elements and adds fields for component hashes and licences, SBOM author signatures, and SBOM generation context (before build, build, or after build). See [CISA Publishes 2026 SBOM Minimum Elements](/blog/2026/07/29/cisa-2026-sbom-minimum-elements) for a summary.
+The CRA does not prescribe SBOM fields. A good baseline is the **[2026 Minimum Elements for an SBOM][cisa_sbom_2026]**, published in July 2026 by CISA with the NSA, FBI and 15 international partners, including the BSI and ANSSI. It replaces the 2021 NTIA minimum elements and adds fields for component hashes and licenses, SBOM author signatures, and SBOM generation context (before build, build, or after build). See [CISA Publishes 2026 SBOM Minimum Elements](/blog/2026/07/29/cisa-2026-sbom-minimum-elements) for a summary.
 
-The CRA does not make "VEX" the only permitted communication format. VEX is a practical, standardised way to communicate vulnerability status and exploitability analysis, especially where customers or operators need machine-readable context.
+The CRA does not make "VEX" the only permitted communication format. VEX is a practical, standardized way to communicate vulnerability status and exploitability analysis, especially where customers or operators need machine-readable context.
 
 Boot managers and bootloader components should be treated as first-class SBOM entries. The draft **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** makes vulnerability handling and support-period evidence relevant even for low-level firmware that teams may historically have tracked outside the normal software inventory.
 
@@ -56,7 +56,7 @@ Boot managers and bootloader components should be treated as first-class SBOM en
 
 SBOM and VEX answer different questions.
 
-| Artefact | Question it answers | Typical audience |
+| Artifact | Question it answers | Typical audience |
 |----------|---------------------|------------------|
 | SBOM | What components are in this product, release, image, service, or firmware? | Manufacturer, assessor, customer, vulnerability manager, authority on request. |
 | VEX | Does this known vulnerability affect this specific product or release? | Manufacturer, customer, operator, vulnerability manager, support or incident-response team. |
@@ -77,7 +77,7 @@ Common SBOM content includes:
 - firmware images, bootloaders, boot managers, update agents, containers, and services;
 - cryptographic libraries and protocol stacks;
 - mobile apps, cloud services, web components, and gateway software where they affect product security;
-- component names, versions, suppliers, licences, identifiers such as PURL or CPE, hashes, and build metadata.
+- component names, versions, suppliers, licenses, identifiers such as PURL or CPE, hashes, and build metadata.
 
 For [component visibility](https://supplychainsecurityhandbook.com/technology-options/sbom-vex-component-visibility/), the useful question is not just "did we produce an SBOM?" It is "can we quickly identify whether a vulnerability affects a product, version, customer, or support-period decision?"
 

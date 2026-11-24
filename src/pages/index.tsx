@@ -98,7 +98,7 @@ function EntryPaths(): ReactNode {
     },
     {
       title: 'Assemble evidence',
-      description: 'Organise the records that show how security decisions were made, tested, released, and maintained.',
+      description: 'Organize the records that show how security decisions were made, tested, released, and maintained.',
       cta: 'Build an Evidence Pack',
       link: '/docs/resources/policy-and-evidence/audit-evidence-pack',
     },

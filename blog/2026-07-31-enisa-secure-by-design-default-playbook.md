@@ -24,10 +24,10 @@ review.
 
 ## What ENISA published
 
-At the centre of the report are **22 one-page playbooks**:
+At the center of the report are **22 one-page playbooks**:
 
 - **14 Secure-by-Design principles**, covering architectural foundations
-  (trust boundaries, least privilege, identity, attack surface, defence in
+  (trust boundaries, least privilege, identity, attack surface, defense in
   depth, open design) and operational integrity (lifecycle, secure coding,
   logging, change management, incident response, vulnerability handling,
   supply chain).
@@ -38,7 +38,7 @@ At the centre of the report are **22 one-page playbooks**:
 Each playbook follows the same pattern: objective, checklist, minimum
 evidence, and a copy-pasteable **release gate**. Annex C also provides an
 indicative mapping from those principles to the essential requirements in
-Annex I of the **Cyber-Resilience Act (CRA)**.
+Annex I of the **Cyber Resilience Act (CRA)**.
 
 ENISA has also published the 22 playbooks in a navigable GitHub repository
 ([enisaeu/enisa-sbd-playbook](https://github.com/enisaeu/enisa-sbd-playbook/)).
@@ -50,7 +50,7 @@ further and asks whether the control is still true for *this* release.
 
 That is useful for manufacturers because CRA preparation is not only about
 having a security architecture. It is also about being able to show, in
-ordinary engineering artefacts, that security decisions were made,
+ordinary engineering artifacts, that security decisions were made,
 implemented, and checked before shipment.
 
 The playbook is especially helpful for:
@@ -62,7 +62,7 @@ The playbook is especially helpful for:
   the mapping is a conformity assessment method.
 
 ENISA also includes progressive adoption guidance. Start with product
-context and threat modelling, establish a foundational engineering baseline,
+context and threat modeling, establish a foundational engineering baseline,
 then broaden coverage. Unchanged controls can be recorded as not affected
 for a given release. That matters: the value is in using the gates
 deliberately, not in re-answering every question on every sprint.
@@ -93,7 +93,7 @@ If you manufacture connected products, treat the playbook as a release
 readiness prompt rather than a one-off reading list:
 
 1. Skim the 22 playbooks and mark which ones apply to your product boundary.
-2. Start with context and threat modelling, then a baseline around secure
+2. Start with context and threat modeling, then a baseline around secure
    coding, logging, vulnerability handling, and supply-chain controls.
 3. Add the Secure-by-Default playbooks that match your product: restrictive
    access, secure communications, unique identity, and automated updates.
@@ -117,7 +117,7 @@ readiness prompt rather than a one-off reading list:
   **[Vulnerability Disclosure](/docs/implementation/operate-phase/vulnerability-disclosure)**
   cover updateability and vulnerability handling in practice.
 - **[Secure-by-Design Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
-  shows how to keep the artefacts release gates expect.
+  shows how to keep the artifacts release gates expect.
 
 ## The bigger picture
 

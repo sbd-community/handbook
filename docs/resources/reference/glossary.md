@@ -20,7 +20,7 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 <dfn>Conformity Assessment</dfn>
 : The process of demonstrating whether a product meets specified requirements. Under the CRA, this can range from a manufacturer's self-assessment (Module A) to a mandatory third-party audit by a Notified Body, depending on the product's risk classification. See the [CRA Conformity Routes](../../standards/eu/cra/index.md#conformity-assessment-routes) for more.
 
-<dfn>CRA (Cyber-Resilience Act)</dfn>
+<dfn>CRA (Cyber Resilience Act)</dfn>
 : Regulation (EU) 2024/2847, a landmark EU law that legally mandates secure-by-design development and vulnerability management for all "products with digital elements" placed on the EU market. See the [CRA Overview](../../standards/eu/cra/index.md) for a full breakdown.
 
 <dfn>CVD (Coordinated Vulnerability Disclosure)</dfn>
@@ -30,7 +30,7 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 : An independent, not-for-profit standardization organization that develops standards for information and communication technologies in Europe. Its **EN 303 645** standard is the key benchmark for consumer IoT security. See the [ETSI EN 303 645 Overview](../../standards/global/en303645-overview.md).
 
 <dfn>Harmonised Standard</dfn>
-: A standard developed by a recognized European Standards Organisation (like ETSI or CEN-CENELEC) following a request from the European Commission. Using a harmonised standard gives a manufacturer a "presumption of conformity" with the legal requirements of a directive or regulation.
+: A standard developed by a recognized European standardisation organisation (like ETSI or CEN-CENELEC) following a request from the European Commission. Using a harmonised standard gives a manufacturer a "presumption of conformity" with the legal requirements of a directive or regulation.
 
 <dfn>HSM (Hardware Security Module)</dfn>
 : A dedicated crypto-processor designed for securely managing, processing, and storing cryptographic keys in a tamper-resistant environment. HSMs are commonly used in manufacturing to provision device identities. See the [Key Management Guide](../../implementation/build-phase/key-provisioning.md).
@@ -42,7 +42,7 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 : The network of physical products that incorporate sensors, software, and connectivity to exchange data. While it can apply broadly, the term is often associated with consumer products (e.g., smart home devices, wearables). See the [ETSI EN 303 645 Overview](../../standards/global/en303645-overview.md) and [PECR Overview](../../standards/uk/pecr-overview.md) for IoT-specific standards.
 
 <dfn>NIS 2 Directive</dfn>
-: An EU-wide law on cybersecurity that establishes security obligations for "essential" and "important" entities in critical sectors (e.g., energy, transport, health). It primarily governs *organisational* cyber-risk, whereas the CRA governs *product* security.
+: An EU-wide law on cybersecurity that establishes security obligations for "essential" and "important" entities in critical sectors (e.g., energy, transport, health). It primarily governs *organizational* cyber-risk, whereas the CRA governs *product* security.
 
 <dfn>Notified Body</dfn>
 : An independent, third-party organization designated by an EU country to assess the conformity of certain products before they can be placed on the market. They are required for higher-risk products under the CRA. See the [CRA Conformity Routes](../../standards/eu/cra/index.md#conformity-assessment-routes) for more.

@@ -6,7 +6,7 @@ description: "CEN and CENELEC have published the first CRA standards: EN 40000-1
 ---
 
 On 18 November 2026, the first European standards supporting the
-**Cyber-Resilience Act (CRA)** were published: **EN 40000-1-1** (vocabulary)
+**Cyber Resilience Act (CRA)** were published: **EN 40000-1-1** (vocabulary)
 and **EN 40000-1-2** (principles, product risk management and lifecycle
 activities)
 ([CEN-CENELEC](https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-11-19-cra-standards-en-40000-1-1-and-en-40000-1-2/),
@@ -64,8 +64,8 @@ contracts and internal policies. That will save arguments later.
 ## What to do next
 
 1. Buy EN 40000-1-2 from your national standards body and compare it with
-   your current threat modelling and risk assessment process.
-2. Map your lifecycle artefacts, such as threat models, design reviews,
+   your current threat modeling and risk assessment process.
+2. Map your lifecycle artifacts, such as threat models, design reviews,
    release gates and end-of-life plans, to its activities.
 3. Adopt EN 40000-1-1 terms in your technical documentation templates.
 4. Watch for FprEN 40000-1-3. Vulnerability handling is where the CRA's
@@ -76,7 +76,7 @@ contracts and internal policies. That will save arguments later.
 - **[CRA Harmonised Standards](/docs/standards/eu/cra/harmonised-standards)**
   tracks the full CRA standards landscape.
 - **[Threat Modeling](/docs/implementation/build-phase/threat-modeling)**
-  covers the risk assessment work EN 40000-1-2 formalises.
+  covers the risk assessment work EN 40000-1-2 formalizes.
 - **[CRA Maturity Model](/docs/resources/checklists-and-worksheets/maturity-model)**
   helps benchmark lifecycle practices.
 - **[Secure-by-Design Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**
@@ -84,7 +84,7 @@ contracts and internal policies. That will save arguments later.
 
 ## The bigger picture
 
-The CRA standards programme has moved from drafts to published text. The
+The CRA standards program has moved from drafts to published text. The
 process standards come first and the product-specific ones follow. That is
 the right order for teams too: settle your risk and lifecycle process now,
 then tune it to your product category as the vertical standards arrive.

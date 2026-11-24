@@ -13,28 +13,28 @@ tags: [privacy, data-protection, gdpr, red, cra, secure-by-design]
 
 Data privacy is the practice of protecting a user's personal information from unauthorized access, use, or disclosure. While cybersecurity focuses on defending the device itself against attacks, data privacy is centered on the user's rights and control over their data.
 
-It involves integrating privacy-enhancing controls into the product's core architecture from the start—a concept known as 'Privacy by Design'. This means giving users clear control over their information and, just as importantly, collecting only the data that is absolutely necessary for the product to function (data minimisation).
+It involves integrating privacy-enhancing controls into the product's core architecture from the start—a concept known as 'Privacy by Design'. This means giving users clear control over their information and, just as importantly, collecting only the data that is absolutely necessary for the product to function (data minimization).
 
 ### 1.2. The Regulatory Requirement
 
-Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guideline TR-03183-1 (v0.9.0):
+Several regulations mandate privacy-preserving features. For the **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guideline TR-03183-1 (v0.9.0):
 
--   **Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])**: The CRA requires that products process only data that are "adequate, relevant and limited to what is necessary in relation to the intended purpose". The BSI guideline ([REQ_ER 8][bsi_tr_03183_p1]) reinforces this, stating data should only be processed for the product's intended purpose.
+-   **Data Minimization ([Annex I § 1 (2)(g)][cra_annexI])**: The CRA requires that products process only data that are "adequate, relevant and limited to what is necessary in relation to the intended purpose". The BSI guideline ([REQ_ER 8][bsi_tr_03183_p1]) reinforces this, stating data should only be processed for the product's intended purpose.
 -   **Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])**: The CRA requires products to "provide the possibility for users to securely and easily remove on a permanent basis all data and settings". This is mirrored in the BSI's requirement for a secure deletion mechanism ([REQ_ER 14][bsi_tr_03183_p1]).
 
 Beyond the CRA, the **[Radio Equipment Directive (RED)](./../../standards/eu/red-overview.md)** also requires that products incorporate safeguards to ensure that "personal data and privacy of the user... are protected" ([RED Art 3.3.e][red_dir]).
 
 ### 1.3. Do I Really Need to Do This?
 
-This guide covers two key privacy obligations from the EU's **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**: **Data Minimisation** and **Secure Data Deletion**. While these principles have a broad scope, their application depends on the specific nature of your product. Rather than being a simple "yes" or "no", the question is about understanding *which* rules apply.
+This guide covers two key privacy obligations from the EU's **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)**: **Data Minimization** and **Secure Data Deletion**. While these principles have a broad scope, their application depends on the specific nature of your product. Rather than being a simple "yes" or "no", the question is about understanding *which* rules apply.
 
-#### Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])
+#### Data Minimization ([Annex I § 1 (2)(g)][cra_annexI])
 
 The CRA requires that products "process only data, personal or other, that are adequate, relevant and limited to what is necessary".
 
 -   **Is there an exception?** Strictly speaking, the only way this requirement doesn't apply is if your product processes **no data at all**. For any 'product with digital elements', this is exceptionally rare.
--   **What if I don't process personal data?** The principle of data minimisation still applies. You must be able to justify that any non-personal data you collect (e.g., performance metrics, operational logs) is necessary for the product's intended purpose. The BSI guideline ([REQ_ER 8.1][bsi_tr_03183_p1]) is clear on this point.
--   **The Bottom Line:** You almost certainly need to conduct a data minimisation review. The real task is to identify what data you process and justify why it is necessary. If that data includes personal information, additional obligations under regulations like GDPR will also apply.
+-   **What if I don't process personal data?** The principle of data minimization still applies. You must be able to justify that any non-personal data you collect (e.g., performance metrics, operational logs) is necessary for the product's intended purpose. The BSI guideline ([REQ_ER 8.1][bsi_tr_03183_p1]) is clear on this point.
+-   **The Bottom Line:** You almost certainly need to conduct a data minimization review. The real task is to identify what data you process and justify why it is necessary. If that data includes personal information, additional obligations under regulations like GDPR will also apply.
 
 #### Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])
 
@@ -47,8 +47,8 @@ The CRA mandates that manufacturers must "provide the possibility for users to s
 
 ## 2. Key Privacy-Enhancing Practices
 
-### 2.1 Data Minimisation
-The principle of data minimisation means you should only collect and process personal data that is absolutely essential for your product to function.
+### 2.1 Data Minimization
+The principle of data minimization means you should only collect and process personal data that is absolutely essential for your product to function.
 - **Question Everything:** For every piece of data you collect, ask: "Do we truly need this for the feature to work?"
 - **Avoid Over-Collection:** Don't collect data just because you think it might be useful for a future, unplanned feature.
 - **Local vs. Cloud Processing:** Whenever possible, process data on the device itself rather than sending it to the cloud. For example, if you need to detect a keyword in audio, do it locally and only send a notification to the cloud, not the raw audio stream.
@@ -69,7 +69,7 @@ Users have the right to delete their data. You must provide a simple and effecti
 
 To ensure your product's design respects user privacy and meets regulatory requirements, ensure you can answer "yes" to the following:
 
-- [ ] **Data Minimisation Review:** Have you reviewed all data collected by your product and documented the justification for why each piece is necessary?
+- [ ] **Data Minimization Review:** Have you reviewed all data collected by your product and documented the justification for why each piece is necessary?
 - [ ] **Informed Consent:** Does your product obtain explicit user consent before collecting any personal data?
 - [ ] **Easy Opt-Out:** Can a user easily withdraw their consent at any time?
 - [ ] **Secure Factory Reset:** Does the device have a factory reset feature that securely erases all user data from its memory?

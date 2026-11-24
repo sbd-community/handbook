@@ -45,7 +45,7 @@ Espressif divides its chips into several broad families:
 
 - **ESP32**: original dual-core Xtensa family, Wi-Fi 4 plus Bluetooth Classic/BLE.
 - **ESP32-S**: performance-oriented Xtensa variants with additional peripherals.
-- **ESP32-C**: cost-optimised RISC-V Wi-Fi/BLE variants, with newer parts adding Wi-Fi 6 or 802.15.4.
+- **ESP32-C**: cost-optimized RISC-V Wi-Fi/BLE variants, with newer parts adding Wi-Fi 6 or 802.15.4.
 - **ESP32-H**: low-power BLE and 802.15.4 variants without Wi-Fi.
 - **ESP32-P**: higher-performance MCU variants without integrated radio, used for richer HMI or edge processing.
 

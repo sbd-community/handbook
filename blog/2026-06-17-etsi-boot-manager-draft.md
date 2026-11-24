@@ -8,7 +8,7 @@ description: "ETSI's draft EN 304 623 shows how CRA expectations may become test
 On 17 June 2026, ETSI's work item for **EN 304 623**, _Cybersecurity
 requirements for boot managers_, entered the deliverable approval procedure.
 The [public draft](https://www.etsi.org/deliver/etsi_en/304600_304699/304623/00.01.03_20/en_304623v000103ev.pdf)
-shows how the Cyber-Resilience Act (CRA) is reaching below operating systems
+shows how the Cyber Resilience Act (CRA) is reaching below operating systems
 and applications into the firmware that establishes the first chain of trust.
 
 <!-- truncate -->
@@ -36,7 +36,7 @@ and why a dedicated vertical standard is emerging for them.
 
 The draft uses three boot-manager use cases:
 
-| Use case | Security profile | Characterised by |
+| Use case | Security profile | Characterized by |
 |----------|------------------|------------------|
 | `UC-IMM` | Low | Immutable code and trust anchors |
 | `UC-VER` | Medium | Verified boot, update capability, logging, and key provisioning |
@@ -50,7 +50,7 @@ The draft covers topics including:
 
 - verified boot and measured boot,
 - anti-rollback protection,
-- secure update and recovery behaviour,
+- secure update and recovery behavior,
 - trust anchors and key provisioning,
 - debug-interface control,
 - boot logging and attestation data,

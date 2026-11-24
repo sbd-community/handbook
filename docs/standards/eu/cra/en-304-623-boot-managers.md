@@ -18,7 +18,7 @@ Use this page when you need to understand how the draft boot-manager standard af
 ## Official texts and status
 
 :::warning Draft status
-ETSI EN 304 623 is still under development. It does not provide presumption of conformity until finalised and cited in the Official Journal of the EU. Use it as a design and evidence-planning input, not as a final compliance claim.
+ETSI EN 304 623 is still under development. It does not provide presumption of conformity until finalized and cited in the Official Journal of the EU. Use it as a design and evidence-planning input, not as a final compliance claim.
 :::
 
 | Source | What it is |
@@ -43,7 +43,7 @@ The ETSI draft states that it is intended to define technical cybersecurity requ
 
 ## Scope: which boot managers are covered?
 
-The draft focuses on boot managers in the CRA Annex III Class I category. It describes boot managers as software or firmware that manage initial system startup after power-on or restart by initialising hardware, loading or transferring control to the operating system environment or system resources, and selecting boot options. Examples include UEFI firmware, single-stage bootloaders, and multi-stage bootloaders.
+The draft focuses on boot managers in the CRA Annex III Class I category. It describes boot managers as software or firmware that manage initial system startup after power-on or restart by initializing hardware, loading or transferring control to the operating system environment or system resources, and selecting boot options. Examples include UEFI firmware, single-stage bootloaders, and multi-stage bootloaders.
 
 The draft is especially relevant where the boot manager is:
 
@@ -70,7 +70,7 @@ The practical rule: use EN 304 623 directly when boot management is the product 
 
 The draft uses three use cases and security profiles.
 
-| Use case | Profile | Characterised by |
+| Use case | Profile | Characterized by |
 |----------|---------|------------------|
 | `UC-IMM` | Low | Immutable boot manager code and trust anchors |
 | `UC-VER` | Medium | Verified boot, update capability, logging, and key provisioning |
@@ -84,11 +84,11 @@ The following themes are the most useful way to read the draft.
 | Verified boot and updateability | Verify boot components before execution and maintain a secure update path for remediation. | [Secure Boot](../../../implementation/build-phase/secure-boot.md) |
 | Atomic updates and recovery | Prevent interrupted updates from leaving the device bricked or in an insecure fallback state. | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md) |
 | Anti-rollback protection | Prevent downgrade to vulnerable boot firmware, configuration, or trust data. | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md) |
-| Trust anchors, keys, and certificates | Protect trust anchors and authorise key or certificate updates. | [Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md) |
+| Trust anchors, keys, and certificates | Protect trust anchors and authorize key or certificate updates. | [Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md) |
 | Debug, test, and diagnostic lockdown | Disable, fuse off, or strongly authenticate production debug access. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
 | DMA and peripheral attack-surface reduction | Reduce pre-boot attack surfaces before handing control to the boot target. | [Secure Configuration & Hardening](../../../implementation/build-phase/secure-configuration.md) |
 | Measured boot, logging, and attestation | Protect measurements and logs so they can support evidence and incident analysis. | [Security Logging & Monitoring](../../../implementation/operate-phase/security-logging.md) |
-| State-of-the-art cryptography | Use recognised cryptographic mechanisms and preserve cryptographic agility. | [Cryptography under CRA](../../../resources/cryptography/cryptography-under-cra.md) |
+| State-of-the-art cryptography | Use recognized cryptographic mechanisms and preserve cryptographic agility. | [Cryptography under CRA](../../../resources/cryptography/cryptography-under-cra.md) |
 | Vulnerability handling and support-period evidence | Show how boot-manager vulnerabilities are found, triaged, remediated, and communicated during the support period. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
 
 ## Assessment and evidence
@@ -129,7 +129,7 @@ If you need to:
 
 - check the source material, use the **[ETSI EN 304 623 v0.1.3 draft][etsi_en_304_623]** and **[ETSI work item report][etsi_work_item]**;
 - understand the CRA context for boot managers and harmonised standards, use the **[CRA Overview](./index.md)** and **[CRA Harmonised Standards](./harmonised-standards.md)**;
-- design the boot chain and failure behaviour, use **[Secure Boot](../../../implementation/build-phase/secure-boot.md)**;
+- design the boot chain and failure behavior, use **[Secure Boot](../../../implementation/build-phase/secure-boot.md)**;
 - plan update recovery, anti-rollback, and rollout evidence, use **[Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)**;
 - protect trust anchors, keys, and certificates, use **[Key Provisioning & Storage](../../../implementation/build-phase/key-provisioning.md)** and **[Cryptography under the CRA](../../../resources/cryptography/cryptography-under-cra.md)**;
 - connect boot-manager vulnerabilities to remediation and support-period records, use **[Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md)** and **[SBOM & VEX Workflows](../../../implementation/build-phase/sbom-vex.md)**;

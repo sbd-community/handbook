@@ -10,7 +10,7 @@ in the Official Journal
 ([European Commission](https://single-market-economy.ec.europa.eu/sectors/electrical-and-electronic-engineering-industries-eei/radio-equipment-directive-red_en),
 [EUR-Lex](https://eur-lex.europa.eu/eli/reg_del/2026/339/oj/eng)). It repeals
 the Radio Equipment Directive (RED) cybersecurity Delegated Regulation
-(EU) 2022/30 from 11 December 2027, when the Cyber-Resilience Act (CRA)
+(EU) 2022/30 from 11 December 2027, when the Cyber Resilience Act (CRA)
 applies. Until then, the RED rules still bite, so radio product teams must
 plan for both regimes at once.
 
@@ -85,7 +85,7 @@ layer.
 
 - **[Radio Equipment Directive (RED)](/docs/standards/eu/red-overview)**
   explains the RED cybersecurity requirements and assessment routes.
-- **[Cyber-Resilience Act (CRA)](/docs/standards/eu/cra-overview)** explains
+- **[Cyber Resilience Act (CRA)](/docs/standards/eu/cra-overview)** explains
   the CRA obligations that take over from 11 December 2027.
 - **[CRA Gap Analysis](/docs/resources/checklists-and-worksheets/cra-gap-analysis)**
   helps turn a RED baseline into a CRA backlog.

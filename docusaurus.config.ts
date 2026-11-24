@@ -43,12 +43,15 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // Single-locale site in American English (see the style guide). htmlLang sets
+  // <html lang="en-US">; blog dates are formatted day-month-year by the
+  // swizzled components in src/theme.
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    localeConfigs: {
+      en: {htmlLang: 'en-US'},
+    },
   },
 
   presets: [

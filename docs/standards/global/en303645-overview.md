@@ -10,7 +10,7 @@ tags: [en303645, iot, consumer, security, etsi, secure-by-design]
 
 **ETSI EN 303 645** is the globally-recognized baseline standard for the security of consumer-facing "Internet of Things" (IoT) devices. It establishes a practical, risk-based set of 13 high-level security provisions and additional data protection provisions that manufacturers can implement to protect their products against common cybersecurity threats.
 
-While it began as a European standard, its straightforward, outcome-focused approach has led to its adoption as the foundation for IoT security regulations and certification schemes worldwide, including in the UK, Singapore, and Australia. For companies selling consumer IoT products globally, complying with EN 303 645 is the single most effective step towards meeting multiple international requirements.
+While it began as a European standard, its straightforward, outcome-focused approach has led to its adoption as the foundation for IoT security regulations and certification schemes worldwide, including in the UK, Singapore, and Australia. For companies selling consumer IoT products globally, complying with EN 303 645 is the single most effective step toward meeting multiple international requirements.
 
 :::info Official Texts & Guidance
 - **ETSI EN 303 645 (V3.1.3):** [Download from ETSI website][en303645]. The core standard defining the security and data protection provisions. This is the legally significant text.
@@ -33,7 +33,7 @@ While it began as a European standard, its straightforward, outcome-focused appr
 | Law | How it interacts with EN 303 645 |
 |-----|---------------------------|
 | **[Radio Equipment Directive (RED)](../eu/red-overview.md)** | EN 303 645 is **not** a harmonised standard under the RED Delegated Act (EU) 2022/30, which has applied since 1 August 2025 and is repealed from 11 December 2027, when the CRA applies (Delegated Regulation (EU) 2026/339). The harmonised standards are **EN 18031-1, EN 18031-2, and EN 18031-3:2024**, cited with restrictions by [Commission Implementing Decision (EU) 2025/138][red_hs_decision]. Following EN 303 645 is still useful evidence for the RED's network protection, privacy, and fraud-prevention requirements, but it does not give a presumption of conformity. |
-| **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | The CRA's essential security requirements in Annex I are heavily based on the principles in EN 303 645. EN 303 645 itself is not a CRA harmonised standard: the CRA's horizontal standards are the CEN-CENELEC EN 40000 series (EN 40000-1-1 and EN 40000-1-2 were published in November 2026 but are not yet cited in the Official Journal), and ETSI is drafting product-category standards in the EN 304 6xx series. For manufacturers of "Default" category consumer products, compliance with EN 303 645 is still an excellent way to prepare for CRA obligations. |
+| **[Cyber Resilience Act (CRA)](../eu/cra/index.md)** | The CRA's essential security requirements in Annex I are heavily based on the principles in EN 303 645. EN 303 645 itself is not a CRA harmonised standard: the CRA's horizontal standards are the CEN-CENELEC EN 40000 series (EN 40000-1-1 and EN 40000-1-2 were published in November 2026 but are not yet cited in the Official Journal), and ETSI is drafting product-category standards in the EN 304 6xx series. For manufacturers of "Default" category consumer products, compliance with EN 303 645 is still an excellent way to prepare for CRA obligations. |
 
 ## 2. Scope
 

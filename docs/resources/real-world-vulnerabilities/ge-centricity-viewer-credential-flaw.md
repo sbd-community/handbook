@@ -14,7 +14,7 @@ This case shows that connected-product security is often ecosystem security. A v
 
 In 2025, FDA recall records and international safety notices described a potential security vulnerability affecting GE HealthCare Centricity Universal Viewer, PACS-IW, Radiology RA600, and Cardiology CA1000 systems. The FDA recall record states that service login credentials could be identified, potentially allowing a malicious actor with those credentials to access the system and manipulate patient data.
 
-GE HealthCare's correction notice of 19 February 2025, as summarised in the FDA recall record, asked customers to make sure their hospital network was secure and to add safeguards such as a VPN outside the hospital network. A follow-up notice dated 13 May 2025 provided an installation manual addendum with instructions for changing passwords. FDA classified the action as a Class 2 recall (Z-1487-2025).
+GE HealthCare's correction notice of 19 February 2025, as summarized in the FDA recall record, asked customers to make sure their hospital network was secure and to add safeguards such as a VPN outside the hospital network. A follow-up notice dated 13 May 2025 provided an installation manual addendum with instructions for changing passwords. FDA classified the action as a Class 2 recall (Z-1487-2025).
 
 ## What Failed
 
@@ -43,7 +43,7 @@ GE HealthCare's correction notice of 19 February 2025, as summarised in the FDA 
 | Credential rotation test evidence | Shows credentials can be changed without breaking clinical workflow. |
 | Secure configuration baseline | Shows default deployment avoids exposed or shared credentials. |
 | Audit logging evidence | Shows privileged access and credential changes can be monitored. |
-| Customer correction and acknowledgement records | Shows customers received, understood, and applied mitigation or correction instructions. |
+| Customer correction and acknowledgment records | Shows customers received, understood, and applied mitigation or correction instructions. |
 
 ## What Product Teams Should Check
 

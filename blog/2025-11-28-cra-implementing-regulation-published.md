@@ -4,13 +4,13 @@ authors: [sbd_community]
 tags: [cra, standards, eu, compliance, secure-by-design]
 ---
 
-The European Commission has published **Implementing Regulation (EU) 2025/2392**, providing the detailed technical descriptions that define exactly which products fall into the CRA's "Important" and "Critical" risk categories. This is the first major piece of secondary legislation under the Cyber-Resilience Act, and it removes much of the ambiguity around product classification.
+The European Commission has published **Implementing Regulation (EU) 2025/2392**, providing the detailed technical descriptions that define exactly which products fall into the CRA's "Important" and "Critical" risk categories. This is the first major piece of secondary legislation under the Cyber Resilience Act, and it removes much of the ambiguity around product classification.
 
 <!-- truncate -->
 
 ### Why This Matters
 
-The Cyber-Resilience Act divides products with digital elements into four risk tiers: Default, Important (Class I), Important (Class II), and Critical. The tier determines your conformity assessment route—self-assessment for most products, but mandatory third-party audits for higher-risk categories.
+The Cyber Resilience Act divides products with digital elements into four risk tiers: Default, Important (Class I), Important (Class II), and Critical. The tier determines your conformity assessment route—self-assessment for most products, but mandatory third-party audits for higher-risk categories.
 
 Until now, the CRA's Annexes III and IV listed product _categories_ (e.g., "identity management systems", "firewalls") without defining exactly what those terms meant. Manufacturers were left to interpret scope based on general descriptions.
 

@@ -10,7 +10,7 @@ tags: [red, compliance, eu, radio, secure-by-design]
 
 The **Radio Equipment Directive (RED)** cybersecurity rules are defined by two key legal acts. First, the main **Directive 2014/53/EU** established the framework and created dormant security clauses in **[RED Art. 3 § 3(d-f)][red_art3]**. Second, a subsequent **Delegated Regulation (EU) 2022/30** *activated* these clauses for a wide range of consumer and industrial products, making them legally mandatory.
 
-Since **1 August 2025**, any in-scope device has had to meet these essential requirements to receive a CE mark. This regulation acts as a precursor to the broader [Cyber-Resilience Act (CRA)](./cra/index.md), which applies in full from **11 December 2027**. From that date, **Delegated Regulation (EU) 2026/339** repeals Delegated Regulation (EU) 2022/30 so that the CRA takes over these cybersecurity requirements; radio equipment placed on the market from 1 August 2025 to 10 December 2027 remains subject to the RED requirements.
+Since **1 August 2025**, any in-scope device has had to meet these essential requirements to receive a CE mark. This regulation acts as a precursor to the broader [Cyber Resilience Act (CRA)](./cra/index.md), which applies in full from **11 December 2027**. From that date, **Delegated Regulation (EU) 2026/339** repeals Delegated Regulation (EU) 2022/30 so that the CRA takes over these cybersecurity requirements; radio equipment placed on the market from 1 August 2025 to 10 December 2027 remains subject to the RED requirements.
 
 :::info Official texts
 - **Official Journal (Directive)** – Legally binding text of Directive 2014/53/EU as published on 22 May 2014: [OJ:L:2014:153 HTML][red_oj_dir].
@@ -42,8 +42,8 @@ The harmonised standards for the RED cybersecurity requirements (EN 18031-1, -2 
 
 | Law | How it interacts with RED Security Rules |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | The CRA becomes the primary horizontal law for product cybersecurity from 11 December 2027. Its essential requirements include all the elements of [RED Art. 3 § 3(d-f)][red_art3] ([CRA Recital 30][cra_rec30]), so [Delegated Regulation (EU) 2026/339][red_del_act_repeal] repeals Delegated Regulation (EU) 2022/30 from that date to avoid overlap. Until then, in-scope radio equipment must meet the RED requirements. EU-type examination certificates issued for these RED requirements remain valid until 11 June 2028, unless they expire earlier ([CRA Art. 69 § 1][cra_art69]). Crucially, the CRA does **not** apply to medical devices covered by the MDR or IVDR ([CRA Art. 2 § 2][cra_art2]), and the Delegated Regulation also excludes them ([DA Art. 2][red_del_act_art2]). |
-| **[NIS 2 Directive](./nis2-overview.md)** | NIS 2 governs *organisational* cyber risk for critical sectors, while the RED focuses on *product* security. An organisation might be a NIS 2 "essential entity" and also manufacture products that must comply with the RED. The obligations are cumulative. ([NIS 2 Art. 21 § 2][nis2_art21]) |
+| **[Cyber Resilience Act (CRA)](./cra/index.md)** | The CRA becomes the primary horizontal law for product cybersecurity from 11 December 2027. Its essential requirements include all the elements of [RED Art. 3 § 3(d-f)][red_art3] ([CRA Recital 30][cra_rec30]), so [Delegated Regulation (EU) 2026/339][red_del_act_repeal] repeals Delegated Regulation (EU) 2022/30 from that date to avoid overlap. Until then, in-scope radio equipment must meet the RED requirements. EU-type examination certificates issued for these RED requirements remain valid until 11 June 2028, unless they expire earlier ([CRA Art. 69 § 1][cra_art69]). Crucially, the CRA does **not** apply to medical devices covered by the MDR or IVDR ([CRA Art. 2 § 2][cra_art2]), and the Delegated Regulation also excludes them ([DA Art. 2][red_del_act_art2]). |
+| **[NIS 2 Directive](./nis2-overview.md)** | NIS 2 governs *organizational* cyber risk for critical sectors, while the RED focuses on *product* security. An organization might be a NIS 2 "essential entity" and also manufacture products that must comply with the RED. The obligations are cumulative. ([NIS 2 Art. 21 § 2][nis2_art21]) |
 | **CE-marking framework** | The RED security requirements are enforced through the CE-marking framework. A product may only bear the CE mark if it complies with *all* applicable legislation, which, from Aug 2025, includes [RED Art. 3 § 3(d-f)][red_art3] for in-scope devices. ([Reg. 765/2008 Art. 30][ce_marking_reg]) |
 
 ---
@@ -122,7 +122,7 @@ The CE mark signals that a product complies with all applicable EU legislation. 
 ---
 
 ## 5. Maintaining Compliance & Vulnerability Handling
-While the RED is less explicit than the CRA about post-market duties, maintaining compliance with the essential requirements over time requires an effective vulnerability management process. The following practices, which are formalised in the CRA, should be considered best practice for any manufacturer placing a product on the EU market:
+While the RED is less explicit than the CRA about post-market duties, maintaining compliance with the essential requirements over time requires an effective vulnerability management process. The following practices, which are formalized in the CRA, should be considered best practice for any manufacturer placing a product on the EU market:
 
 -   **Vulnerability Remediation:** Address and fix vulnerabilities without undue delay, providing security updates that are free of charge and, where possible, delivered automatically.
 -   **Component Inventory:** Identify and document all software components, including by drawing up a Software Bill of Materials (SBOM), to enable vulnerability tracking.

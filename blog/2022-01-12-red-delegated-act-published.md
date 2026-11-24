@@ -11,9 +11,9 @@ The new rules apply to a wide range of products, including any internet-connecte
 
 ### An Earlier, Stricter Deadline
 
-The most critical takeaway for manufacturers is the compliance deadline: **August 1, 2025**.
+The most critical takeaway for manufacturers is the compliance deadline: **1 August 2025**.
 
-This is more than two years *before* the main compliance date for the Cyber-Resilience Act (CRA). This means that any company producing in-scope radio products for the EU market must meet these specific cybersecurity requirements first. Failure to do so could result in products being barred from the market.
+This is more than two years *before* the main compliance date for the Cyber Resilience Act (CRA). This means that any company producing in-scope radio products for the EU market must meet these specific cybersecurity requirements first. Failure to do so could result in products being barred from the market.
 
 The regulation activates three key articles of the RED:
 *   **Article 3(3)(d):** Protection of the network.

@@ -2,7 +2,7 @@
 title: "CISA Publishes 2026 SBOM Minimum Elements"
 authors: [sbd_community]
 tags: [sbom, supply-chain, us, standards, cra]
-description: "CISA and 17 partner agencies replace the 2021 NTIA SBOM minimum elements, adding hashes, licences, signatures and generation context."
+description: "CISA and 17 partner agencies replace the 2021 NTIA SBOM minimum elements, adding hashes, licenses, signatures and generation context."
 ---
 
 On 29 July 2026, CISA and partner agencies published the
@@ -82,7 +82,7 @@ well as a US one.
 - **[SBOM & VEX Workflows](/docs/implementation/build-phase/sbom-vex)**
   covers generating, publishing and maintaining SBOMs alongside VEX.
 - **[SBOM & Supply-Chain Security Tools](/docs/tools/sbom-and-supply-chain-security)**
-  compares generators and analysers.
+  compares generators and analyzers.
 - **[Key Provisioning & Storage](/docs/implementation/build-phase/key-provisioning)**
   helps protect the keys behind SBOM signatures.
 - **[Secure-by-Design Evidence Pack](/docs/resources/policy-and-evidence/audit-evidence-pack)**

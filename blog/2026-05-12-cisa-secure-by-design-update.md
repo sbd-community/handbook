@@ -34,7 +34,7 @@ to build safer products; it is also giving customers a clearer basis for
 asking whether suppliers are doing so.
 
 That aligns with the broader trend we are seeing under the EU
-**Cyber-Resilience Act (CRA)**: security claims need to become evidence,
+**Cyber Resilience Act (CRA)**: security claims need to become evidence,
 not just positioning.
 
 ## Why product teams should care

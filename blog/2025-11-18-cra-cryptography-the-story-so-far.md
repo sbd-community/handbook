@@ -2,10 +2,10 @@
 title: "CRA & Cryptography: The Story So Far"
 authors: [sbd_community]
 tags: [cra, cryptography, standards, eu, secure-by-design]
-description: "What the Cyber-Resilience Act means for cryptography in connected devices, and how emerging EU standards are shaping 'state-of-the-art' crypto."
+description: "What the Cyber Resilience Act means for cryptography in connected devices, and how emerging EU standards are shaping 'state-of-the-art' crypto."
 ---
 
-The **Cyber-Resilience Act (CRA)** is the EU's first horizontal law that legally mandates **Secure-by-Design** for products with digital elements. It sets clear obligations for confidentiality and integrity, but it deliberately avoids naming specific algorithms or key sizes. That raises an immediate question for device makers:
+The **Cyber Resilience Act (CRA)** is the EU's first horizontal law that legally mandates **Secure-by-Design** for products with digital elements. It sets clear obligations for confidentiality and integrity, but it deliberately avoids naming specific algorithms or key sizes. That raises an immediate question for device makers:
 
 > *What exactly counts as “state-of-the-art” cryptography under the CRA?*
 
@@ -36,11 +36,11 @@ For short-lived web services this is already risky; for long-lived connected dev
 
 For CRA, this model is not good enough. Annex I explicitly requires **state-of-the-art** mechanisms, and the associated standardisation request pushes the European standards bodies to give that phrase real technical content.
 
-## 3. Towards an EU “state-of-the-art” model: ACM and allow lists
+## 3. Toward an EU “state-of-the-art” model: ACM and allow lists
 
 Under the EU Cybersecurity Act, the **European Cybersecurity Certification Group (ECCG)** maintains a document called **Agreed Cryptographic Mechanisms (ACM)**. Version 2.0 already underpins the EUCC certification scheme for high-assurance products such as HSMs and smartcards.
 
-The same ACM catalogue is now being used as a reference point for CRA:
+The same ACM catalog is now being used as a reference point for CRA:
 
 - **Recommended mechanisms** are considered practical state-of-the-art (typically ≥ 125-bit security).
 - **Legacy mechanisms** remain usable in constrained scenarios, but have **sunset dates**.
@@ -50,7 +50,7 @@ The emerging model for CRA products looks like this:
 
 - **Defaults must come from ACM-recommended algorithms and parameters.**
 - **Legacy mechanisms** are only acceptable for well-justified use cases (e.g., accessing historic data or interoperating with legacy systems), and even then only during a limited transition window.
-- **Non-listed or bespoke mechanisms** are still possible, but they tend to push products towards higher risk classes and/or require third-party assessment.
+- **Non-listed or bespoke mechanisms** are still possible, but they tend to push products toward higher risk classes and/or require third-party assessment.
 
 In other words: cryptographic freedom is not dead, but the path of least resistance for CRA compliance is to use ACM-recommended building blocks everywhere you can.
 
@@ -78,7 +78,7 @@ Putting it all together, Saarinen’s analysis leads to a few practical takeaway
 
 We have started incorporating these insights into the handbook:
 
-- **For a deeper reference on cryptography under CRA**, see our new resource page: [Cryptography under the Cyber-Resilience Act](/docs/resources/cryptography/cryptography-under-cra).
+- **For a deeper reference on cryptography under CRA**, see our new resource page: [Cryptography under the Cyber Resilience Act](/docs/resources/cryptography/cryptography-under-cra).
 - **For the full legal and engineering context**, read the [CRA Overview](/docs/standards/eu/cra-overview), which maps Annex I requirements to implementation guides.
 - **For implementation details**, explore build-phase guides such as:
   - [Key Provisioning & Storage](/docs/implementation/build-phase/key-provisioning)

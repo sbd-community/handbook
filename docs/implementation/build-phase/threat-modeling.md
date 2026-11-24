@@ -35,7 +35,7 @@ A useful threat model should be able to show:
 - a diagram or description of components, data flows, trust boundaries, and assumptions;
 - important assets, security goals, users, attackers, and misuse cases;
 - threats identified using a repeatable method such as STRIDE, attack trees, misuse cases, or scenario review;
-- risk ratings or prioritisation criteria;
+- risk ratings or prioritization criteria;
 - mitigations linked to threats and product requirements;
 - accepted risks, deferred work, and exceptions with owners and review dates;
 - test, verification, and evidence actions linked to the mitigations;
@@ -74,7 +74,7 @@ Use a repeatable workflow that turns analysis into decisions.
 | Map architecture | Identify device, hardware, firmware, OS, cloud, app, APIs, update service, manufacturing, support, and supplier components. | Architecture and trust-boundary diagram. |
 | Identify assets and goals | Identify data, credentials, keys, firmware, commands, safety functions, availability, privacy, and customer operations that need protection. | Asset list and security goals. |
 | Identify threats | Use STRIDE, misuse cases, attack trees, known failure patterns, vulnerability history, or architecture-specific prompts. | Threat list or threat register. |
-| Rate and prioritise | Estimate likelihood, impact, exposure, exploitability, safety/privacy effect, support burden, and customer impact. | Risk rating and priority. |
+| Rate and prioritize | Estimate likelihood, impact, exposure, exploitability, safety/privacy effect, support burden, and customer impact. | Risk rating and priority. |
 | Define mitigations | Choose controls, design changes, operational processes, tests, or customer guidance. | Security requirements and mitigation plan. |
 | Record decisions | Mark risks as mitigated, accepted, deferred, transferred, or under investigation. | Decision record with owner and review date. |
 | Connect evidence | Decide what tests, records, policies, release artifacts, or monitoring prove the mitigation exists. | Evidence map and release gate actions. |
@@ -106,7 +106,7 @@ STRIDE is a practical way to prompt threat discovery.
 | Repudiation | Can a user, device, service, or operator deny an important action? | A privileged command has no reliable audit trail. |
 | Information disclosure | Can sensitive data, credentials, keys, logs, or telemetry be exposed? | Private keys are readable from flash or debug access. |
 | Denial of service | Can the product, update path, cloud dependency, battery, storage, or safety function be made unavailable? | Repeated malformed packets crash the device. |
-| Elevation of privilege | Can a low-privilege user, process, device, or network actor gain higher privilege? | A local API allows unauthorised admin configuration. |
+| Elevation of privilege | Can a low-privilege user, process, device, or network actor gain higher privilege? | A local API allows unauthorized admin configuration. |
 
 STRIDE is not mandatory. Use it when it helps. For some products, misuse cases, attack trees, safety hazard analysis, privacy review, or sector-specific prompts may be more effective.
 
@@ -121,7 +121,7 @@ Use a threat register to connect findings to action.
 | Threat | What could happen and who could cause it. |
 | Asset or goal | What would be harmed: safety, data, integrity, availability, privacy, support, customer operation. |
 | Scenario | How the threat could occur in realistic use or foreseeable misuse. |
-| Impact | Consequence if the threat is realised. |
+| Impact | Consequence if the threat is realized. |
 | Likelihood or exposure | Practical chance, accessibility, attacker capability, known exploitation, or exposure. |
 | Risk rating | High, medium, low, or the team's chosen scale. |
 | Mitigation | Control, design change, test, process, monitoring, or customer guidance. |
@@ -153,7 +153,7 @@ Useful evidence includes:
 | Evidence | Why it matters |
 |----------|----------------|
 | Scope and assumptions | Shows what product, release, feature, or architecture was assessed. |
-| Architecture and trust-boundary diagram | Shows what was analysed and where trust changes. |
+| Architecture and trust-boundary diagram | Shows what was analyzed and where trust changes. |
 | Asset and security-goal list | Shows what the team intended to protect. |
 | Threat register | Shows identified threats, risks, mitigations, owners, and status. |
 | Risk rating method | Shows how priorities were decided. |
@@ -205,7 +205,7 @@ Before release, confirm that:
 - [ ] **Boundary:** Device, firmware, cloud, mobile app, update service, support tooling, and supplier dependencies are considered where relevant.
 - [ ] **Architecture:** Components, data flows, trust boundaries, and assumptions are documented.
 - [ ] **Threat discovery:** A repeatable method such as STRIDE, misuse cases, or attack trees was used.
-- [ ] **Risk decisions:** Threats are prioritised with a documented method.
+- [ ] **Risk decisions:** Threats are prioritized with a documented method.
 - [ ] **Mitigations:** High-priority threats map to requirements, controls, tests, or operational processes.
 - [ ] **Evidence:** Threats, mitigations, release gates, accepted risks, and review records are retained.
 - [ ] **Refresh:** Review triggers are defined for major changes, vulnerabilities, incidents, and support-period decisions.
@@ -220,7 +220,7 @@ If you need to:
 - retain risk and mitigation evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
 - compare example models, use the **[Low-Stakes BLE Sensor](../../resources/example-documents/threat-model-low-stakes-ble-sensor.md)**, **[Smart Thermostat](../../resources/example-documents/threat-model-smart-thermostat.md)**, and **[CGM System](../../resources/example-documents/threat-model-cgm.md)** examples;
 - choose technical mitigations, use **[Secure Boot](./secure-boot.md)**, **[Secure OTA Updates](./ota-updates.md)**, **[Unique Device Identity](./unique-device-identity.md)**, and **[Key Provisioning & Storage](./key-provisioning.md)**;
-- add release-gate checklists for trust boundaries and threat modelling, use ENISA's **[Trust boundaries and threat modelling](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/01-trust-boundaries-and-threat-modelling.md)** playbook.
+- add release-gate checklists for trust boundaries and threat modeling, use ENISA's **[Trust boundaries and threat modelling](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/01-trust-boundaries-and-threat-modelling.md)** playbook.
 
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 - Obligations of manufacturers"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

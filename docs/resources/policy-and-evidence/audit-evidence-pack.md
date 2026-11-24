@@ -7,9 +7,9 @@ tags: [templates, audit, compliance, cra, technical-documentation, evidence]
 ---
 # Secure-by-Design Evidence Pack
 
-A **secure-by-design evidence pack** is a structured collection of documents, records, and technical artefacts that helps show how a connected product was designed, built, assessed, released, supported, and maintained.
+A **secure-by-design evidence pack** is a structured collection of documents, records, and technical artifacts that helps show how a connected product was designed, built, assessed, released, supported, and maintained.
 
-For the **Cyber-Resilience Act (CRA)**, this evidence supports the **technical documentation** manufacturers must keep and provide to market surveillance authorities when required ([CRA Art. 31][cra_art31]). It can also support customer assurance, internal governance, product-security reviews, conformity assessment, and post-market vulnerability handling.
+For the **Cyber Resilience Act (CRA)**, this evidence supports the **technical documentation** manufacturers must keep and provide to market surveillance authorities when required ([CRA Art. 31][cra_art31]). It can also support customer assurance, internal governance, product-security reviews, conformity assessment, and post-market vulnerability handling.
 
 An evidence pack is not just a folder of documents. It should make the following visible:
 
@@ -70,7 +70,7 @@ For a broader evidence-review model, see the Supply Chain Security Handbook's [E
 
 ## Evidence Pack Structure
 
-A useful evidence pack should be organised around how the product is governed, designed, verified, released, and operated.
+A useful evidence pack should be organized around how the product is governed, designed, verified, released, and operated.
 
 ### 1. Governance and Risk Management
 
@@ -229,7 +229,7 @@ Common evidence-pack gaps include:
 - patch policy exists but has no operational records;
 - secure boot is described but not verified on the production configuration;
 - hardware security claims are copied from a supplier without product-level validation;
-- user documentation omits support period, update behaviour, or vulnerability reporting instructions;
+- user documentation omits support period, update behavior, or vulnerability reporting instructions;
 - evidence is stored in multiple places with no owner or index.
 
 ## Lifecycle Review Triggers

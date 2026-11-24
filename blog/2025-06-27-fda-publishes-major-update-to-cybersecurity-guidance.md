@@ -4,7 +4,7 @@ authors: [sbd_community]
 tags: [fda, us, medical, 524b, compliance, secure-by-design]
 ---
 
-On June 27, 2025, the US Food and Drug Administration (FDA) published a landmark update to its premarket cybersecurity guidance, superseding the version from September 2023. This new document provides critical clarity for medical device manufacturers by consolidating previous guidances and formally defining the legal obligations for "cyber devices" under Section 524B of the FD&C Act.
+On 27 June 2025, the US Food and Drug Administration (FDA) published a landmark update to its premarket cybersecurity guidance, superseding the version from September 2023. This new document provides critical clarity for medical device manufacturers by consolidating previous guidances and formally defining the legal obligations for "cyber devices" under Section 524B of the FD&C Act.
 
 <!-- truncate -->
 

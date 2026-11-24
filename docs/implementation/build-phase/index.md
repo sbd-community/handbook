@@ -18,9 +18,9 @@ This section will help you answer questions like:
 -   **[Threat Modeling](./threat-modeling.md):** Identify product risks, mitigations, decisions, and evidence.
 -   **[Secure Configuration & Hardening](./secure-configuration.md):** Reduce attack surface and lock down production configuration.
 -   **[Unique Device Identity](./unique-device-identity.md):** Define how each device proves what it is across onboarding, authentication, updates, and support.
--   **[Secure Boot](./secure-boot.md):** Protect the boot chain so only authorised firmware or software runs.
+-   **[Secure Boot](./secure-boot.md):** Protect the boot chain so only authorized firmware or software runs.
 -   **[Key Provisioning & Storage](./key-provisioning.md):** Define how keys are created, protected, rotated, revoked, and evidenced.
--   **[Data Privacy & Secure Deletion](./data-privacy.md):** Protect sensitive data and define deletion or removal behaviour.
+-   **[Data Privacy & Secure Deletion](./data-privacy.md):** Protect sensitive data and define deletion or removal behavior.
 -   **[Secure OTA Updates](./ota-updates.md):** Deliver, verify, recover, roll out, and evidence security updates.
 -   **[SBOM & VEX Workflows](./sbom-vex.md):** Connect component inventory to release evidence and vulnerability status.
 -   **[User Information & Documentation](./user-documentation.md):** Provide users with security, update, support, and vulnerability-reporting information.

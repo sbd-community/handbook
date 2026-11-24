@@ -5,7 +5,7 @@ secure-by-design:
 
 cra:
   label: CRA
-  description: Posts related to the EU's Cyber-Resilience Act.
+  description: Posts related to the EU's Cyber Resilience Act.
   permalink: /cra
 
 standards:
@@ -130,7 +130,7 @@ boot-managers:
 
 etsi:
   label: ETSI
-  description: Posts related to ETSI standards and standardisation activity.
+  description: Posts related to ETSI standards and standardization activity.
   permalink: /etsi
 
 sbom:

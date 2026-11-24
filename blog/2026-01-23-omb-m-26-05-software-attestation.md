@@ -72,7 +72,7 @@ Our SSDF overview describes the framework's four practice groups and how
 they map to engineering work. Its conformance section now reflects
 M-26-05: the attestation form is optional and agencies decide what to
 require. The same SSDF-aligned evidence also supports the secure development
-requirements of other regimes, such as the EU Cyber-Resilience Act (CRA).
+requirements of other regimes, such as the EU Cyber Resilience Act (CRA).
 
 ## What to do next
 

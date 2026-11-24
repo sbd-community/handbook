@@ -6,7 +6,7 @@ description: "The Commission's CRA guidance clarifies scope, open source, update
 ---
 
 On 27 July 2026, the European Commission published its guidance on applying
-the **Cyber-Resilience Act (CRA)**
+the **Cyber Resilience Act (CRA)**
 ([Commission announcement](https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation)).
 It answers many of the scoping and lifecycle questions product teams have been
 stuck on, and it lands six weeks before CRA reporting starts on
@@ -33,7 +33,7 @@ engineering impact are:
 - **Free and open-source software.** Obligations follow whoever supplies the
   software in the course of a commercial activity. Contributing code to a
   project you are not responsible for does not make you a manufacturer, and
-  the guidance explains when an organisation is an open-source steward
+  the guidance explains when an organization is an open-source steward
   instead (sections 3.1–3.4).
 - **Spare parts.** The Article 2(6) exemption only applies when a part is
   supplied specifically to repair or extend the life of a product already on

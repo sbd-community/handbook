@@ -1,5 +1,5 @@
 ---
-title: "NIS 2 Directive Raises the Bar for Organisational Cyber Risk"
+title: "NIS 2 Directive Raises the Bar for Organizational Cyber Risk"
 authors: [sbd_community]
 tags: [standards, nis2, compliance, eu]
 ---
@@ -7,7 +7,7 @@ The **NIS 2 Directive (EU 2022/2555)** was published in the Official Journal of 
 
 <!-- truncate -->
 
-While the Cyber-Resilience Act (CRA) focuses on the security of *products*, NIS 2 targets the cybersecurity posture of the *organisations* that provide essential services.
+While the Cyber Resilience Act (CRA) focuses on the security of *products*, NIS 2 targets the cybersecurity posture of the *organizations* that provide essential services.
 
 ### Key Changes from NIS 1
 
@@ -18,6 +18,6 @@ While the Cyber-Resilience Act (CRA) focuses on the security of *products*, NIS 
 
 ### The Link to Product Security
 
-For manufacturers, the link between NIS 2 and the CRA is crucial. An organisation that is deemed an "essential entity" under NIS 2 *and* manufactures products with digital elements will have to comply with both sets of regulations. The organisational security practices mandated by NIS 2 (like vulnerability management) are the necessary foundation for producing the secure products required by the CRA.
+For manufacturers, the link between NIS 2 and the CRA is crucial. An organization that is deemed an "essential entity" under NIS 2 *and* manufactures products with digital elements will have to comply with both sets of regulations. The organizational security practices mandated by NIS 2 (like vulnerability management) are the necessary foundation for producing the secure products required by the CRA.
 
 For more details on how NIS 2 interacts with product-specific laws, see our main **[NIS 2 Directive Overview](/docs/standards/eu/nis2-overview)** and our [**CRA Overview**](/docs/standards/eu/cra-overview). 

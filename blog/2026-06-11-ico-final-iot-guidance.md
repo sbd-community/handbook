@@ -1,8 +1,8 @@
 ---
-title: "ICO Finalises Its Guidance for Consumer IoT Products"
+title: "ICO Finalizes Its Guidance for Consumer IoT Products"
 authors: [sbd_community]
 tags: [ico, pecr, privacy, uk, iot, consumer]
-description: "The ICO has finalised its consumer IoT guidance. Its five expectations include treating security as an ongoing legal obligation. Here's what to do."
+description: "The ICO has finalized its consumer IoT guidance. Its five expectations include treating security as an ongoing legal obligation. Here's what to do."
 ---
 
 On 11 June 2026, the UK Information Commissioner's Office (ICO) published its
@@ -96,7 +96,7 @@ data is a privacy risk, not just a security one.
 - **[PECR (UK)](/docs/standards/uk/pecr-overview)** explains how PECR applies
   to connected devices and how it is enforced.
 - **[Data Privacy & Secure Deletion](/docs/implementation/build-phase/data-privacy)**
-  covers data minimisation and deletion in device design.
+  covers data minimization and deletion in device design.
 - **[PSTI Act (UK)](/docs/standards/uk/psti-overview)** covers the UK's
   product security baseline that sits alongside the ICO's expectations.
 - **[Secure OTA Updates](/docs/implementation/build-phase/ota-updates)**

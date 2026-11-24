@@ -13,7 +13,7 @@ This repository contains the source for the Secure-by-Design Handbook, a Docusau
 
 ## Content requirements
 
-- Write for product owners, embedded and firmware engineers, compliance and certification leads, and security and DevOps teams at organisations that make, integrate, or operate connected devices.
+- Write for product owners, embedded and firmware engineers, compliance and certification leads, and security and DevOps teams at organizations that make, integrate, or operate connected devices.
 - Keep guidance vendor-neutral, practical, and evidence-led. Cite the primary source with the clause-level citation format in the style guide, and attribute dates and obligations to the regulation, standard, or authority that sets them.
 - Date facts from their source; never add "last checked", "as of", or similar freshness stamps to handbook pages (see the style guide's Dates and freshness section).
 - `source-material/` holds local text copies of regulations and standards for checking facts. Cite the official publication, never the copy in this repository.
