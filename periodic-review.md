@@ -2,14 +2,14 @@
 
 How the handbook is kept current: a full review of the whole site, run once a month from Claude Code with `/goal`, that finds new developments, rechecks every cited source and page, and leaves a dated report. Mission and audience: [purpose-and-positioning.md](./purpose-and-positioning.md). Sourcing, citation, and post rules: [style-guide.md](./style-guide.md). Placement and structure: [navigation-structure.md](./navigation-structure.md).
 
-**Status**: Proposed on 24 November 2026; not yet run.
+**Status**: First run in November 2026 ([report](./reviews/2026-11.md)).
 
 ## Principles
 
 - **Full, every month**: Every run reviews every doc page and every source cited in `docs/`. Nothing is skipped because it was fine last month, and nothing is carried forward between runs except the date of the last report and the list of sources that could not be verified.
 - **Derived, not maintained**: The source list is built from the pages at the start of each run, and the watchlist from the publishers the handbook already cites, so neither can drift from what is published.
 - **Unverified is a status, not a pass**: A source that cannot be fetched is recorded as could not verify, with the reason, and is never counted as confirmed or as broken.
-- **Correctness is fixed, relevance is proposed**: The run corrects what is wrong or out of date, but changes to guidance, structure, or the reader paths in [navigation-structure.md](./navigation-structure.md#user-journeys) are written up as proposals for a maintainer to decide.
+- **Decide and do**: The run makes every change it judges necessary, from correcting a date to revising guidance, adding or removing a page or tool, or upgrading a dependency, and records each decision in the report with its reason and source. A change is held back only when a guide's own rule cannot be met in the run, and then the report says which rule and why. The maintainer reviews the committed result before it is pushed.
 - **Existing rules apply**: Posts follow [Blog Posts](./style-guide.md#blog-posts), including the rule that a post ships with its page updates and its source copy in `source-material/`, and the [Freshness](./style-guide.md#freshness) rule for later updates. Harmonised-standard pages follow [CRA Harmonised-Standard Pages](./style-guide.md#cra-harmonised-standard-pages). Citations follow [Citation & References](./style-guide.md#7-citation--references). This guide does not restate them.
 
 ## What a Run Covers
@@ -57,7 +57,7 @@ Confirm that each source is the document cited and that what the citing pages sa
 
 Two kinds of page need a different test:
 
-- **Tools pages** (`docs/tools/`) cite products, not documents. Confirm that each product still exists, under the name and owner the page gives, and that the link reaches its official page. Record a product that has been renamed, sold, merged, or discontinued as updated or replaced. Adding or removing a product is a proposal, because it changes the guidance and must stay vendor-neutral.
+- **Tools pages** (`docs/tools/`) cite products, not documents. Confirm that each product still exists, under the name and owner the page gives, and that the link reaches its official page. Record a product that has been renamed, sold, merged, or discontinued as updated or replaced. Add, remove, or replace a product where the evidence calls for it (for example, a discontinued product or an expired domain), keeping the page vendor-neutral, and record the decision.
 - **Real-world vulnerability pages** cite advisories that are revised after publication. Check the advisory's latest revision, affected versions, and remediation status, not only that it loads.
 
 ### 3. Is it still current?
@@ -66,23 +66,23 @@ Read every page for text that time alone has made wrong: application dates, repo
 
 Pay particular attention to the CRA timeline: the conformity-assessment body provisions from 11 June 2026, the reporting obligations from 11 September 2026, and full application from 11 December 2027. The pages state these dates in prose (11 September 2026), in ISO form (2026-09-11), and as periods from entry into force (21 months, 36 months), so search for all three forms. Check worked examples, threat models, checklists, and the evidence pack for dates presented as still to come.
 
-On the [Standards overview](./docs/standards/index.md), add or update the sentence "Status and dates were last checked against the official sources on [run date]." in prose date format (for example, 24 November 2026). The PQC Handbook uses the same sentence.
+Also remove any "last checked", "as of [date]", or "at the time of writing" text that has found its way onto a page; [Dates and freshness](./style-guide.md#dates-and-freshness) explains why the handbook does not use it. The review report, not the pages, records when the site was last checked.
 
 ### 4. Is it consistent?
 
 Every date, status, and position that appears on more than one page must agree everywhere: the Standards summaries and harmonised-standards pages, the CRA primer and first-sprint checklist, the Implementation guides, the CRA gap analysis, maturity model, and evidence pack, the threat-model examples, the cryptography and hardware pages, and the glossary. When a run changes one, search for every other statement of it and change those too.
 
-Also check that statements shared with the [Supply Chain Security Handbook](https://supplychainsecurityhandbook.com) do not contradict it, such as the status of EN 304 623 or SBOM requirements. Record a conflict as a proposal; do not edit the sister site in this run.
+Also check that statements shared with the [Supply Chain Security Handbook](https://supplychainsecurityhandbook.com) do not contradict it, such as the status of EN 304 623 or SBOM requirements. Where this handbook is wrong, fix it here. Where the sister site is wrong, do not edit it from this run; record the conflict in the report for that site's own review.
 
 ### 5. Is it still relevant?
 
-Read each section as its audience would, against the developments found in question 1 and the run date. Do the Implementation guides still reflect what the harmonised standards now expect? Does the first-sprint checklist still put the right work first? Do the reader paths in [navigation-structure.md](./navigation-structure.md#user-journeys) still lead each persona to what they need? Is there a regulation, standard, technology, or situation that readers now meet and the handbook does not cover, or a page that no longer earns its place? Write each answer that calls for change as a proposal in the report, with its reason and the source behind it. Do not make the change in the run.
+Read each section as its audience would, against the developments found in question 1 and the run date. Do the Implementation guides still reflect what the harmonised standards now expect? Does the first-sprint checklist still put the right work first? Do the reader paths in [navigation-structure.md](./navigation-structure.md#user-journeys) still lead each persona to what they need? Is there a regulation, standard, technology, or situation that readers now meet and the handbook does not cover, or a page that no longer earns its place? Where the answer calls for change, make it, following the guide that owns that kind of change: [navigation-structure.md](./navigation-structure.md) for a new, moved, or removed page and for the reader paths, [purpose-and-positioning.md](./purpose-and-positioning.md) for scope and audience, and [style-guide.md](./style-guide.md) for everything written. Record each decision in the report with its reason and the source behind it, including decisions not to change something a reader might expect to have changed.
 
 ### 6. Is the site healthy?
 
 - Run `npm run typecheck` and `npm run build`. The build fails on broken internal links (`onBrokenLinks: 'throw'`) but only warns on broken Markdown links, so record every build warning and fix those that point to a broken link.
 - Check every link to a sister handbook (`supplychainsecurityhandbook.com` and `pqchandbook.com`) still resolves to the page and section it names.
-- Run `npm outdated` and `npm audit`. Apply patch and minor dependency updates only if both commands above still pass afterwards and the updated packages support the Node version in `.github/workflows/deploy.yml`; otherwise record the update as a proposal. Record major updates and security advisories as proposals too. On 24 November 2026 the site ran Docusaurus 3.8.1 and the deploy workflow used Node 18, while Docusaurus 3.9 and later need Node 20, so that minor update must wait for the workflow change.
+- Run `npm outdated` and `npm audit`. Apply dependency updates, including major versions and fixes for security advisories, one package or related group at a time. Keep each only if both commands above still pass afterwards, the built site still renders its homepage, a doc page, and a post correctly, and the updated packages support the Node version in `.github/workflows/deploy.yml`. Where an update needs a newer Node version, raise the workflow's Node version in the same change, to a version the updated packages and the checks pass on. Revert any update that fails, and record it in the report with the failure. The November 2026 run moved the site to Docusaurus 3.10.2 and the deploy workflow to Node 24, and kept MDX 1 compatibility on in `docusaurus.config.ts` so that existing comments, heading anchors and admonitions still work.
 
 News posts are not rechecked as current, because each is a snapshot at its date. Where a development found in question 1 supersedes what a post reported, add the later-update note described in [Freshness](./style-guide.md#freshness).
 
@@ -95,19 +95,20 @@ Some publishers block automated requests, and which ones do varies by run and by
 - **Use the issuer's own alternative route**: Where the issuing body offers another official route to the same facts (such as its publication listing, a DOI record, the Official Journal page, or the EU Publications Office's data service), confirming through it counts. A third-party copy, cache, or archive does not. The first run should try the Publications Office route for EU acts and record here whether it works.
 - **Use `source-material/` for wording, not status**: The copies in `source-material/` can confirm that a page quotes an article or clause correctly. They cannot confirm that the text is still current, so a source checked only this way stays could not verify.
 - **Hand-check afterwards**: After the goal finishes, a maintainer opens each could-not-verify source in a browser, and Claude records the result in the report as confirmed, updated, or replaced, with "checked by hand" in its note. Anything still unverified stays so.
-- **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report. Look for another official copy from the same issuer; if none can be checked, add "last confirmed on [date]" next to the claim on the page, so the handbook never presents an unchecked claim as current.
+- **Escalate what stays unverified**: A source that could not be verified in two consecutive reports is listed at the top of the next report, and the maintainer's hand-check of it is required that month. A blocked or failed fetch says nothing about whether the claim is right, so it is never a reason to change the page: the run leaves the claim as it is and looks for another official route from the same issuer.
+- **Change the page only on evidence about the source**: Change a claim when a check, automated or by hand, shows that the source has changed, has moved, or no longer exists with no official replacement. A hand-check that finds the source gone with no official copy is the only case for removing the claim. Do not add a "last confirmed" date to the page.
 
 ## Running the Review
 
 1. Start Claude Code in the repository on an up-to-date `main`, in auto mode so the run is not stopped for permission prompts. Auto mode can still refuse an action it judges risky; if it does, the run records the refusal and moves on.
 2. Paste the goal below, with `YYYY-MM` replaced by the year and month of the run.
 3. When the goal ends, read the closing summary and the report, then do the hand-check of could-not-verify sources and ask Claude to record the results in the report.
-4. Decide the proposals, review the diff, and push the branch and open a pull request yourself. Merging to `main` deploys the site.
+4. Review the decisions in the report and the diff, and push the branch and open a pull request yourself. To undo a decision, ask Claude to revert it on the branch and note the reversal in the report. Merging to `main` deploys the site.
 
 ### The goal
 
 ```text
-/goal The YYYY-MM periodic review in periodic-review.md is complete. Steps: (1) Create branch review/YYYY-MM from main before any edit. (2) Create reviews/YYYY-MM.md with the six sections in periodic-review.md and fill each section as you work, so the report is the record if the session compacts or resumes. (3) Check every watchlist publisher for developments since the last report. (4) Build the source list with the command in periodic-review.md and give every listed source exactly one status (confirmed, updated, replaced, or could not verify with a reason), fetching each document once, politely, and never bypassing bot protection. (5) Review every page under docs/, split by sidebar section across subagents if useful; fix what is wrong, out of date, or inconsistent, and record relevance changes as proposals without making them. (6) Write any blog posts, page updates, source-material copies and later-update notes that new developments need. (7) Run npm run typecheck and npm run build, and fix failures. (8) Confirm the current branch is review/YYYY-MM, then commit all changes. Do not push. Done when your final message, in one turn, shows: the branch name; the number of sources listed and the count for each status; doc pages reviewed out of the total; the number of new developments, page changes, posts, and proposals; both commands with exit code 0 from this session; and the commit hash. Stop and report what remains if not done after 40 turns.
+/goal The YYYY-MM periodic review in periodic-review.md is complete. Steps: (1) Create branch review/YYYY-MM from main before any edit. (2) Create reviews/YYYY-MM.md with the six sections in periodic-review.md and fill each section as you work, so the report is the record if the session compacts or resumes. (3) Check every watchlist publisher for developments since the last report. (4) Build the source list with the command in periodic-review.md and give every listed source exactly one status (confirmed, updated, replaced, or could not verify with a reason), fetching each document once, politely, and never bypassing bot protection. (5) Review every page under docs/, split by sidebar section across subagents if useful; fix what is wrong, out of date, or inconsistent, make the relevance changes you judge necessary under the guide that owns each, and record every decision with its reason. (6) Write any blog posts, page updates, source-material copies and later-update notes that new developments need. (7) Apply dependency updates as periodic-review.md describes, reverting any that fail. Run npm run typecheck and npm run build, and fix failures. (8) Confirm the current branch is review/YYYY-MM, then commit all changes. Do not push. Done when your final message, in one turn, shows: the branch name; the number of sources listed and the count for each status; doc pages reviewed out of the total; the number of new developments, page changes, posts, relevance decisions, and dependency updates kept and reverted; both commands with exit code 0 from this session; and the commit hash. Stop and report what remains if not done after 40 turns.
 ```
 
 The goal stays under the 4,000-character limit. The evaluator that decides whether a goal is met reads only the conversation, not files, so the final message must show the evidence itself. Until the first run, the goal is untested; adjust it here after that run.
@@ -119,7 +120,7 @@ Each run writes `reviews/YYYY-MM.md`, which is the review log. It is not part of
 - the run date, the branch, the commit, and the closing summary counts;
 - sources that could not be verified in the previous report as well as this one, if any;
 - one section for each of the six questions, with sources as a table of URL, citing pages, status, and note, and pages listed by sidebar section;
-- the proposals, each with its reason and source, for a maintainer to decide;
+- every decision the run made beyond a straight correction (relevance changes, new, moved, or removed pages and tools, reader-path changes, dependency updates kept or reverted, and changes held back with the rule that held them), each with its reason and source;
 - the hand-check results, added after the goal ends.
 
 Never rewrite an earlier report; correct it in the next one.

@@ -180,6 +180,16 @@ Include full example artefacts in repo `/examples/` and link inline.
 - **External links**: Use Markdown footnotes `[^1]` or inline links `[text](url)`. Open external sites in a new tab.
 - For long reference tables, link to downloadable CSV/Excel.
 
+### Dates and freshness
+
+Don't stamp handbook pages with when they were checked. Avoid "last checked on [date]", "last verified", "last reviewed", "as of [date]", "correct at the time of writing", and similar text.
+
+- **Why**: Every page is rechecked each month in the [periodic review](periodic-review.md), so a stamp adds nothing while it is right and misleads once it is not. It also invites readers to distrust the rest of the page.
+- **Instead**: Date the fact itself, from its source: "published on 18 November 2026", "applies from 11 December 2027", "Version 1.4 (4 September 2026)". These stay true.
+- **If a claim cannot be kept current**: Reword it so it does not depend on the changing detail, or remove it.
+
+Blog posts are the exception: each post is dated, and later changes are recorded with the notes described in [Freshness](#freshness).
+
 ## 8. Visual Identity & Branding
 
 All visual elements of the brand—including the logo, color palette, typography, and iconography—are defined in the official **[Brand Guidelines](brand-guidelines.md)**.
