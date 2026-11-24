@@ -1,7 +1,7 @@
 ---
 title: "Case Study: GE Vivid Ultrasound Local Access"
 sidebar_label: "GE Vivid Local Access"
-description: "A secure-by-design case study showing how local access, hard-coded credentials, kiosk escape, and command injection can affect clinical devices."
+description: "A secure-by-design case study of how local access, hard-coded credentials, kiosk escape, and command injection can affect clinical devices."
 tags: [case-study, real-world-vulnerability, secure-by-design, cra, product-security, evidence, credentials, local-access, medical]
 ---
 # Case Study: GE Vivid Ultrasound Local Access Flaws (2024)

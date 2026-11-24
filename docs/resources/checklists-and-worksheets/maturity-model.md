@@ -2,7 +2,7 @@
 title: "Secure-by-Design Maturity Model"
 sidebar_label: "Maturity Model"
 sidebar_position: 2
-description: "A practical secure-by-design maturity model for connected-product teams assessing CRA readiness, product-security practices, evidence quality, vulnerability handling, secure updates, and lifecycle support."
+description: "A secure-by-design maturity model for assessing CRA readiness across product-security practices, evidence quality, vulnerability handling, and updates."
 tags: [maturity-model, assessment, cra, secure-by-design, product-security, evidence, technical-documentation, vulnerability-handling, secure-update]
 ---
 # Secure-by-Design Maturity Model

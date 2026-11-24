@@ -2,7 +2,7 @@
 title: "CRA Readiness Gap Analysis"
 sidebar_label: "CRA Readiness"
 sidebar_position: 1
-description: "A practical CRA readiness checklist for connected-product teams assessing scope, secure-by-design controls, vulnerability handling, technical documentation, evidence gaps, and next actions."
+description: "A CRA readiness checklist for connected-product teams: scope, secure-by-design controls, vulnerability handling, technical documentation, and evidence gaps."
 tags: [cra, compliance, checklist, gap-analysis, readiness, secure-by-design, technical-documentation]
 ---
 # CRA Readiness Gap Analysis

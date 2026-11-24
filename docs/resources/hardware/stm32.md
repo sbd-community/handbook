@@ -2,7 +2,7 @@
 title: "STMicroelectronics STM32 Hardware Selection for CRA-Scoped Products"
 sidebar_label: "STMicroelectronics (STM32)"
 sidebar_position: 2
-description: "A practical guide to assessing whether STM32 parts and ST collateral can support secure-by-design controls, CRA readiness, supplier evidence, and lifecycle commitments."
+description: "How to assess whether STM32 parts and ST collateral can support secure-by-design controls, CRA readiness, supplier evidence, and lifecycle commitments."
 tags: [hardware, stm32, stmicroelectronics, cra, mcu, secure-boot, evidence]
 ---
 

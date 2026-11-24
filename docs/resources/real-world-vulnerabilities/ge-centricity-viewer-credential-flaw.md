@@ -1,7 +1,7 @@
 ---
 title: "Case Study: GE Centricity Viewer Credential Flaw"
 sidebar_label: "GE Centricity Credentials"
-description: "A secure-by-design case study showing how service credential exposure in a networked medical imaging ecosystem can affect patient-data integrity and availability."
+description: "A secure-by-design case study of how service credential exposure in a networked medical imaging ecosystem can affect patient-data integrity and availability."
 tags: [case-study, real-world-vulnerability, secure-by-design, cra, product-security, evidence, credentials, pacs, medical]
 ---
 # Case Study: GE Centricity Viewer Credential Flaw (2025)

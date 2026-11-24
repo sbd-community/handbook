@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Contec Patient Monitor Backdoor"
 sidebar_label: "Contec Patient Monitor"
-description: "A secure-by-design case study showing how hidden firmware functionality, insecure update behavior, and patient-data exposure affected a connected patient monitor."
+description: "A secure-by-design case study of how hidden firmware functionality, insecure update behavior, and patient-data exposure affected a connected patient monitor."
 tags: [case-study, real-world-vulnerability, secure-by-design, cra, product-security, evidence, firmware, rce, medical]
 ---
 # Case Study: Contec Patient Monitor Backdoor (2025)

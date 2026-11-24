@@ -2,7 +2,7 @@
 title: "Espressif ESP32 Hardware Selection for CRA-Scoped Products"
 sidebar_label: "Espressif (ESP32)"
 sidebar_position: 1
-description: "A practical guide to assessing whether Espressif ESP32 chips and modules can support secure-by-design controls, CRA readiness, supplier evidence, and lifecycle commitments."
+description: "How to assess whether Espressif ESP32 chips and modules can support secure-by-design controls, CRA readiness, supplier evidence, and lifecycle commitments."
 tags: [hardware, espressif, esp32, cra, mcu, soc, secure-boot, ota, evidence]
 ---
 

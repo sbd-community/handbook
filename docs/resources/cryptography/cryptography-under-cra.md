@@ -2,7 +2,7 @@
 title: "Cryptography under the CRA"
 sidebar_label: "Cryptography"
 sidebar_position: 1
-description: "Practical guidance for connected-product teams assessing cryptographic algorithms, protocols, keys, firmware integrity, data protection, crypto agility, and CRA evidence."
+description: "How connected-product teams assess cryptography under the CRA: algorithms, protocols, keys, firmware integrity, crypto agility, and the evidence to keep."
 tags: [cra, cryptography, crypto-agility, key-management, secure-boot, firmware-signing, tls, pqc, evidence, technical-documentation, secure-by-design]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Baxter Life2000 Ventilator Firmware Tampering"
 sidebar_label: "Baxter Life2000"
-description: "A secure-by-design case study showing how hard-coded credentials, weak firmware integrity, exposed interfaces, and insufficient logging affected a portable ventilator."
+description: "A secure-by-design case study of how hard-coded credentials, weak firmware integrity, exposed interfaces, and insufficient logging affected a ventilator."
 tags: [case-study, real-world-vulnerability, secure-by-design, cra, product-security, evidence, credentials, firmware, medical, defense-in-depth]
 ---
 # Case Study: Baxter Life2000 Ventilator Firmware Tampering (2024)

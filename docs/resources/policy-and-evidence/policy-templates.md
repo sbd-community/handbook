@@ -2,7 +2,7 @@
 title: "Secure-by-Design Policy Starter Kit"
 sidebar_label: "Policy Templates"
 sidebar_position: 2
-description: "Starter policy templates and outlines for connected-product teams covering coordinated vulnerability disclosure, vulnerability handling, security updates, secure development, and CRA evidence records."
+description: "Starter policy templates for connected-product teams covering vulnerability disclosure and handling, security updates, secure development, and CRA records."
 tags: [templates, policy, cvd, vulnerability-disclosure, vulnerability-handling, patch-management, secure-development, cra, technical-documentation, evidence, security-txt]
 ---
 # Secure-by-Design Policy Starter Kit

@@ -2,7 +2,7 @@
 title: Resources
 sidebar_label: Overview
 sidebar_position: 1
-description: "Practical secure-by-design resources for CRA readiness, evidence packs, threat-model examples, hardware choices, cryptography guidance, and real-world vulnerability lessons."
+description: "Secure-by-design resources for CRA readiness: checklists, evidence packs, example threat models, hardware and cryptography guidance, and case studies."
 ---
 
 # Resources

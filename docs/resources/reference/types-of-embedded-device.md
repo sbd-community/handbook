@@ -2,7 +2,7 @@
 title: "Types of Embedded Device"
 sidebar_label: "Types of Embedded Device"
 sidebar_position: 2
-description: "A practical guide to classifying embedded device architectures and understanding how MCUs, embedded Linux systems, and hybrid designs affect secure-by-design controls, CRA readiness, and evidence."
+description: "How MCUs, embedded Linux systems, and hybrid designs differ, and how each architecture shapes secure-by-design controls, CRA readiness, and evidence."
 tags: [classification, mcu, mpu, embedded-linux, rtos, secure-by-design, cra, evidence, architecture]
 ---
 # Types of Embedded Device

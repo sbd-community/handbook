@@ -2,7 +2,7 @@
 title: "Real-World Vulnerability Lessons"
 sidebar_label: "Overview"
 sidebar_position: 0
-description: "A practical hub for secure-by-design case studies, routing real product vulnerabilities by failure pattern, control area, evidence lesson, and product-team check."
+description: "A hub of secure-by-design case studies, routing real product vulnerabilities by failure pattern, control area, evidence lesson, and product-team check."
 tags: [case-study, real-world-vulnerability, secure-by-design, evidence, product-security, cra]
 ---
 

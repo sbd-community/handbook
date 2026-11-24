@@ -1,7 +1,7 @@
 ---
 title: "Case Study: Baxter Connex Spot Monitor Shared Key"
 sidebar_label: "Baxter Connex Shared Key"
-description: "A secure-by-design case study showing how a default cryptographic key created a shared failure domain across connected patient monitors."
+description: "A secure-by-design case study of how a default cryptographic key created a shared failure domain across connected patient monitors."
 tags: [case-study, real-world-vulnerability, secure-by-design, cra, product-security, evidence, cryptography, keys, medical]
 ---
 # Case Study: Baxter Connex Spot Monitor Shared Key (2024)
