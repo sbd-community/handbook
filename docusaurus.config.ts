@@ -87,10 +87,26 @@ const config: Config = {
             '/blog/authors/**',
             '/docs/tags',
             '/docs/tags/**',
+            '/search',
+            '/search/**',
           ],
           filename: 'sitemap.xml',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['en'],
+        indexDocs: true,
+        // Blog posts are dated news snapshots, so site search stays on the reference pages.
+        indexBlog: false,
+        indexPages: false,
+      },
     ],
   ],
 
