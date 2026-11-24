@@ -18,6 +18,7 @@ const config: Config = {
   // <!-- Citations --> and <!-- vale off --> comments, {#id} heading anchors
   // and `:::warning Title` admonitions, and posts use <!-- truncate -->.
   markdown: {
+    mermaid: true,
     hooks: {
       onBrokenMarkdownLinks: 'warn',
     },
@@ -97,6 +98,7 @@ const config: Config = {
   ],
 
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       '@easyops-cn/docusaurus-search-local',
       {
@@ -223,7 +225,12 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-  } satisfies Preset.ThemeConfig,
+    mermaid: {
+      theme: {light: 'neutral', dark: 'dark'},
+    },
+  } satisfies Preset.ThemeConfig & {
+    mermaid: {theme: {light: 'neutral'; dark: 'dark'}};
+  },
 };
 
 export default config;

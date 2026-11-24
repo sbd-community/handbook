@@ -48,7 +48,19 @@ The first CRA standards, EN 40000-1-1 and EN 40000-1-2, were published by CEN-CE
 **Reporting obligations from 11 September 2026** ([CRA Art. 71 § 2][cra_art71], [EC FAQ 7.1][ec_faq])  
 *Manufacturers* → since 11 September 2026, must notify actively exploited vulnerabilities and severe incidents having an impact on the security of their products via ENISA's single reporting platform, which reaches the CSIRT designated as coordinator and ENISA simultaneously ([CRA Art. 14 § 1, 3][cra_art14] + [CRA Art. 16][cra_art16], [EC FAQ 5.1–5.3][ec_faq]):  
 • An early warning **without undue delay and in any event within 24 hours** of becoming aware, a notification within 72 hours, and a final report (for vulnerabilities, within 14 days after a corrective or mitigating measure is available; for incidents, within one month of the notification) ([CRA Art. 14 § 2, 4][cra_art14])  
-• If requested by the CSIRT, an intermediate report on status updates ([CRA Art. 14 § 6][cra_art14]).  
+• If requested by the CSIRT, an intermediate report on status updates ([CRA Art. 14 § 6][cra_art14]).
+
+```mermaid
+flowchart LR
+    aware(["Manufacturer becomes aware"])
+    aware --> vuln["Actively exploited vulnerability"]
+    aware --> inc["Severe incident affecting product security"]
+    vuln --> v24["Early warning<br/>within 24 hours"] --> v72["Vulnerability notification<br/>within 72 hours"] --> vfinal["Final report<br/>within 14 days after a corrective<br/>or mitigating measure is available"]
+    inc --> i24["Early warning<br/>within 24 hours"] --> i72["Incident notification<br/>within 72 hours"] --> ifinal["Final report<br/>within 1 month of the notification"]
+```
+
+*Both clocks start when the manufacturer becomes aware. Every report goes through ENISA's single reporting platform, and where necessary the CSIRT can ask for an intermediate status report ([CRA Art. 14 § 2, 4, 6][cra_art14]).*
+
 These reporting duties also cover products placed on the market before 11 December 2027 ([CRA Art. 69 § 3][cra_art69]). The wider vulnerability-handling requirements of Annex I Part II, including a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI]), apply from 11 December 2027.
 
 **Grace-period end (11 December 2027)** – only Annex I/II-compliant PDEs may bear the CE mark; MSAs may recall or ban non-compliant goods; penalties up to **€ 15 million or 2.5 % of worldwide turnover** for non-compliance with essential requirements ([CRA Art. 64 § 2][cra_art64]).
