@@ -16,10 +16,10 @@ It involves integrating privacy-enhancing controls into the product's core archi
 
 ### 1.2. The Regulatory Requirement
 
-Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guidelines:
+Several regulations mandate privacy-preserving features. For the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)**, the key obligations are found in Annex I and clarified by the BSI's technical guideline TR-03183-1 (v0.9.0):
 
--   **Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])**: The CRA requires that data collection and processing is limited "to only what is necessary". The BSI guideline ([REQ_ER 8][bsi_tr_03183_p1]) reinforces this, stating data should only be processed for the product's intended purpose.
--   **Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])**: The CRA mandates that manufacturers must "provide a function for users to securely and completely delete all personal and configuration data." This is mirrored in the BSI's requirement for a secure deletion mechanism ([REQ_ER 14][bsi_tr_03183_p1]).
+-   **Data Minimisation ([Annex I § 1 (2)(g)][cra_annexI])**: The CRA requires that products process only data that are "adequate, relevant and limited to what is necessary in relation to the intended purpose". The BSI guideline ([REQ_ER 8][bsi_tr_03183_p1]) reinforces this, stating data should only be processed for the product's intended purpose.
+-   **Secure Data Deletion ([Annex I § 1 (2)(m)][cra_annexI])**: The CRA requires products to "provide the possibility for users to securely and easily remove on a permanent basis all data and settings". This is mirrored in the BSI's requirement for a secure deletion mechanism ([REQ_ER 14][bsi_tr_03183_p1]).
 
 Beyond the CRA, the **[Radio Equipment Directive (RED)](./../../standards/eu/red-overview.md)** also requires that products incorporate safeguards to ensure that "personal data and privacy of the user... are protected" ([RED Art 3.3.e][red_dir]).
 
@@ -78,4 +78,4 @@ To ensure your product's design respects user privacy and meets regulatory requi
 <!-- Citations -->
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

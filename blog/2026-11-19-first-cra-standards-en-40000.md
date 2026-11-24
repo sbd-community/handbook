@@ -88,3 +88,7 @@ The CRA standards programme has moved from drafts to published text. The
 process standards come first and the product-specific ones follow. That is
 the right order for teams too: settle your risk and lifecycle process now,
 then tune it to your product category as the vertical standards arrive.
+
+:::note[Later update]
+Under standardisation request M/606 as amended on 10 November 2026, the vulnerability-handling standard (FprEN 40000-1-3) has a deadline of 30 November 2026. See [Commission Sets New Deadlines for CRA Standards](/blog/2026/11/10/cra-standards-deadlines-m606-amended).
+:::

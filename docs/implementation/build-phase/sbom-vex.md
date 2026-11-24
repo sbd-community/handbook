@@ -43,7 +43,7 @@ A mature SBOM and VEX workflow should be able to show:
 
 The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly requires manufacturers to identify and document components, including by drawing up a software bill of materials ([CRA Annex I, Part II § 1][cra_annexI]). It also requires manufacturers to provide information and documentation to market surveillance authorities when requested ([CRA Article 13][cra_art13]).
 
-BSI TR-03183-1 reinforces this with a requirement to document integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 reinforces this with a requirement to document integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
 
 The CRA does not prescribe SBOM fields. A good baseline is the **[2026 Minimum Elements for an SBOM][cisa_sbom_2026]**, published in July 2026 by CISA with the NSA, FBI and 15 international partners, including the BSI and ANSSI. It replaces the 2021 NTIA minimum elements and adds fields for component hashes and licences, SBOM author signatures, and SBOM generation context (before build, build, or after build). See [CISA Publishes 2026 SBOM Minimum Elements](/blog/2026/07/29/cisa-2026-sbom-minimum-elements) for a summary.
 
@@ -201,9 +201,10 @@ If you need to:
 - assess gaps across the product, use the **[CRA Readiness Gap Analysis](../../resources/checklists-and-worksheets/cra-gap-analysis.md)**;
 - understand boot-manager component evidence, use **[ETSI EN 304 623: Boot Managers](../../standards/eu/cra/en-304-623-boot-managers.md)**;
 - compare supporting tools, use **[SBOM & Supply Chain Security](../../tools/sbom-and-supply-chain-security.md)**;
-- add release-gate checklists for supply-chain controls, use ENISA's **[Supply-chain controls](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/14-supply-chain-controls.md)** playbook.
+- add release-gate checklists for supply-chain controls, use ENISA's **[Supply-chain controls](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/14-supply-chain-controls.md)** playbook;
+- check your SBOM practice against EU guidance written for manufacturers, use ENISA's **[Technical Advisory for Software Bill of Materials](https://www.enisa.europa.eu/publications/enisa-technical-advisory-for-software-bill-of-materials)** (22 October 2026).
 
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 - Obligations of manufacturers"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"
 [cisa_sbom_2026]: https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom "CISA: 2026 Minimum Elements for a Software Bill of Materials"

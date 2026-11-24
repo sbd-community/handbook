@@ -14,12 +14,14 @@ Rather than prescribing a fixed set of security controls, CC provides a **catalo
 For connected devices and embedded products, CC is most relevant when ([CC Part 1 § 6.2][cc_part1_audience]):
 
 - Customers or regulators require **high assurance** (e.g., secure elements, HSMs, gateways, smart cards, identity & access systems) ([NIAP Product Compliant List][niap_pcl]).
-- Certification is needed to access **specific markets or procurement schemes** that reference CC or its successors (e.g., national schemes, emerging EU certification under the Cybersecurity Act [EUCC Scheme][eu_cybersecurity_act]).
+- Certification is needed to access **specific markets or procurement schemes** that reference CC or its successors (e.g., national schemes, or the EU's Common Criteria-based [EUCC Scheme][eu_cybersecurity_act] under the Cybersecurity Act, adopted in 2024 and amended in December 2024 and December 2025).
 - Vendors want a **structured way to define, implement, and evidence security requirements** that can also support laws like the **Cyber‑Resilience Act (CRA)** or sectoral standards such as **IEC 62443**.
 
 ::::info Official Texts
 
-- **Common Criteria v3.1 R5 core documents (freely available):**
+- **CC:2022 and CEM:2022 (Release 1, freely available):** Parts 1 to 5 and the evaluation methodology, with the CCRA transition policy, are published on the [Common Criteria portal][cc_portal]. New evaluations use CC:2022.
+
+- **Common Criteria v3.1 R5 core documents (freely available; cited for clause references on this page):**
 
   - **CC Part 1: Introduction and general model** – [CCPART1V3.1R5.pdf][cc_part1]
   - **CC Part 2: Security functional components** – [CCPART2V3.1R5.pdf][cc_part2]
@@ -47,8 +49,9 @@ For connected devices and embedded products, CC is most relevant when ([CC Part 
 | Year      | Milestone                                         | Why it matters                                                                                 |
 | --------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | 1999–2005 | Early ISO/IEC 15408 & 18045 editions              | Established CC and its methodology as the global IT security evaluation framework.             |
-| 2017      | CC v3.1 R5 and CEM v3.1 R5                        | Latest public CC and evaluation methodology texts used by most national and regional schemes.  |
+| 2017      | CC v3.1 R5 and CEM v3.1 R5                        | Last release of the 3.1 series; under the CCRA transition policy it could be used only for evaluations started by 30 June 2024. |
 | 2022      | ISO/IEC 15408‑1/‑2/‑3:2022 and ISO/IEC 18045:2022 | Updated ISO/IEC editions aligning CC with current practice; useful for clause‑level citations. |
+| 2022      | CC:2022 and CEM:2022 Release 1                    | Current public CC and evaluation methodology texts; security targets conformant to CC:2022 that use CC 3.1 protection profiles are accepted until 31 December 2027. |
 
 **Relationship to other standards & regulations**
 
@@ -183,3 +186,4 @@ For secure‑by‑design device teams, the most pragmatic way to use CC is often
 [cc_part3_ava]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=182 "CC Part 3: Class AVA - Vulnerability Assessment"
 [cc_part3_eals]: https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=29 "CC Part 3: Section 8 - Evaluation Assurance Levels"
 [cem_v31r5_process]: https://www.commoncriteriaportal.org/files/ccfiles/CEMV3.1R5.pdf#page=21 "CEM: Section 8.1 - The Evaluation Process"
+[cc_portal]: https://www.commoncriteriaportal.org/cc/index.cfm "Common Criteria portal: CC:2022, CEM:2022 and transition policy"

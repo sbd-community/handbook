@@ -14,6 +14,20 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // The v4 future flag turns off MDX 1 compatibility. Keep it on: pages use
+  // <!-- Citations --> and <!-- vale off --> comments, {#id} heading anchors
+  // and `:::warning Title` admonitions, and posts use <!-- truncate -->.
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
+  },
+
   // Set the production url of your site here
   url: 'https://www.securebydesignhandbook.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -27,7 +41,6 @@ const config: Config = {
   projectName: 'handbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

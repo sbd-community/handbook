@@ -44,7 +44,9 @@ A useful threat model should be able to show:
 
 The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to undertake a cybersecurity risk assessment and account for the result during product planning, design, development, production, delivery, and maintenance ([CRA Article 13 § 2][cra_art13]).
 
-BSI TR-03183-1 provides practical interpretation by requiring a documented risk assessment covering the product's intended and reasonably foreseeable use ([REQ_RA 1][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 provides practical interpretation by requiring a documented risk assessment covering the product's intended and reasonably foreseeable use ([REQ_RA 1][bsi_tr_03183_p1]).
+
+**EN 40000-1-2** (principles, product risk management and lifecycle activities), published by CEN-CENELEC in November 2026, is the first horizontal CRA standard for product risk management. It is not yet cited in the Official Journal, so it does not yet give presumption of conformity, but it is the agreed reference for structuring the risk assessment. See **[CRA Harmonised Standards](../../standards/eu/cra/harmonised-standards.md)**.
 
 Threat modeling is not the only way to perform a risk assessment, but it is one of the most practical ways for engineering teams to produce the decisions and evidence the risk assessment needs.
 
@@ -187,7 +189,7 @@ Threat modeling can start with a whiteboard, architecture diagram, and spreadshe
 Useful tooling categories include:
 
 - diagramming tools for data-flow and trust-boundary diagrams;
-- threat-modeling tools such as the [Microsoft Threat Modeling Tool](https://aka.ms/tmt);
+- threat-modeling tools such as the [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool);
 - risk-register or issue-tracking systems;
 - requirements-management tools that link threats to mitigations and tests;
 - evidence repositories that preserve diagrams, decisions, reviews, and release gates.
@@ -220,4 +222,4 @@ If you need to:
 - add release-gate checklists for trust boundaries and threat modelling, use ENISA's **[Trust boundaries and threat modelling](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/01-trust-boundaries-and-threat-modelling.md)** playbook.
 
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 - Obligations of manufacturers"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

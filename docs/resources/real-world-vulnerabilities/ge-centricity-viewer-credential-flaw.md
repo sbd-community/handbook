@@ -14,7 +14,7 @@ This case shows that connected-product security is often ecosystem security. A v
 
 In 2025, FDA recall records and international safety notices described a potential security vulnerability affecting GE HealthCare Centricity Universal Viewer, PACS-IW, Radiology RA600, and Cardiology CA1000 systems. The FDA recall record states that service login credentials could be identified, potentially allowing a malicious actor with those credentials to access the system and manipulate patient data.
 
-Published recall and safety-notice materials described customer actions including securing networks, using Active Directory or LDAP where possible, following mitigation guidance, and applying corrections or password-change procedures provided by GE HealthCare.
+GE HealthCare's correction notice of 19 February 2025, as summarised in the FDA recall record, asked customers to make sure their hospital network was secure and to add safeguards such as a VPN outside the hospital network. A follow-up notice dated 13 May 2025 provided an installation manual addendum with instructions for changing passwords. FDA classified the action as a Class 2 recall (Z-1487-2025).
 
 ## What Failed
 

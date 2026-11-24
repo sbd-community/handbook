@@ -81,3 +81,7 @@ Member States must have CRA authorities and notified bodies ready well before
 December 2027. Germany is one of the first large markets to settle its
 approach. Expect other national acts to follow, and differences in how they
 enforce to show up in the first market surveillance campaigns.
+
+:::note[Later update]
+On 20 November 2026, the Bundesrat decided at its 1070th plenary session not to call the mediation committee on the act (Drucksache 621/26), so it has completed its passage through parliament. Promulgation in the Bundesgesetzblatt is pending ([Bundesrat](https://www.bundesrat.de/SharedDocs/beratungsvorgaenge/2026/0601-0700/0621-26.html)).
+:::

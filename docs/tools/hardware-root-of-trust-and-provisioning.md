@@ -40,7 +40,7 @@ The tools and platforms in this category help manufacturers either create this i
 | [Zymbit](https://www.zymbit.com/) | 💰 | Provides secure compute modules and security supervisors that act as a hardware root of trust, protecting keys and managing critical security functions for single-board computers. |
 | [Microchip Trust Platform](https://www.microchip.com/en-us/products/security/trust-platform) | 💰 | A service for securely provisioning Microchip's secure element and crypto-authentication ICs with credentials and keys before they are shipped to the customer's factory. |
 | [NXP EdgeLock SE05x](https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family:SE050) | 💰 | A family of secure elements that come pre-provisioned or can be securely provisioned to act as a hardware root of trust for IoT devices. |
-| [U-Boot](https://www.denx.de/wiki/U-Boot) | 🐙 | A widely-used open-source bootloader for embedded systems. Its 'Verified Boot' feature is a key component for building a compliant Secure Boot implementation. |
+| [U-Boot](https://docs.u-boot-project.org/en/latest/) | 🐙 | A widely-used open-source bootloader for embedded systems. Its 'Verified Boot' feature is a key component for building a compliant Secure Boot implementation. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*

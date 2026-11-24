@@ -1,0 +1,337 @@
+https://21577316.fs1.hubspotusercontent-na1.net/hubfs/21577316/2023%20ISA%20Website%20Redesigns/ISAGCA/PDFs/ISAGCA%20Quick%20Start%20Guide%20FINAL.pdf	docs/standards/global/iec62443-overview.md
+https://aka.ms/threatmodelingtool	docs/tools/threat-modeling-tools.md
+https://aka.ms/tmt	docs/implementation/build-phase/threat-modeling.md
+https://anchore.com/	docs/tools/sbom-and-supply-chain-security.md
+https://aws.amazon.com/iot-device-management/	docs/tools/device-lifecycle-management.md
+https://azure.microsoft.com/en-us/products/iot-hub	docs/tools/device-lifecycle-management.md
+https://bandit.readthedocs.io/	docs/tools/static-and-dynamic-analysis.md
+https://certification.enisa.europa.eu/certification-library/eucc-certification-scheme_en	docs/standards/global/common-criteria-overview.md
+https://certification.enisa.europa.eu/document/download/a845662b-aee0-484e-9191-890c4cfa7aaa_en?filename=ECCG+Agreed+Cryptographic+Mechanisms+version+2.pdf	docs/resources/cryptography/cryptography-under-cra.md
+https://certification.enisa.europa.eu/publications/eucc-guidelines-cryptography_en	docs/resources/cryptography/cryptography-under-cra.md
+https://checkmarx.com/	docs/tools/static-and-dynamic-analysis.md
+https://cisofy.com/lynis/	docs/tools/configuration-and-hardening.md
+https://codeql.github.com/	docs/implementation/operate-phase/cicd-hardening.md, docs/tools/static-and-dynamic-analysis.md
+https://community.st.com/t5/developer-news/st-launches-dedicated-resource-hub-to-help-developers-navigate/ba-p/883514	docs/resources/hardware/stm32.md
+https://crypto-posture.com/	docs/tools/pki-and-key-management.md
+https://datatracker.ietf.org/doc/html/rfc9116	docs/resources/policy-and-evidence/policy-templates.md
+https://dependencytrack.org/	docs/tools/sbom-and-supply-chain-security.md
+https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation	docs/implementation/operate-phase/vulnerability-disclosure.md
+https://digital-strategy.ec.europa.eu/en/policies/cra-standardisation	docs/resources/cryptography/cryptography-under-cra.md
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/efuse.html	docs/resources/hardware/espressif.md
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/flash-encryption.html	docs/resources/hardware/espressif.md
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html	docs/resources/hardware/espressif.md
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32/versions.html	docs/resources/hardware/espressif.md
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32s2/api-reference/peripherals/ds.html	docs/resources/hardware/espressif.md
+https://docs.espressif.com/projects/esp-idf/en/v5.0.4/esp32/hw-reference/chip-series-comparison.html	docs/resources/hardware/espressif.md
+https://docs.fcc.gov/public/attachments/DA-26-1162A1.pdf	docs/standards/us/fcc-cyber-trust-mark-overview.md
+https://docs.fcc.gov/public/attachments/FCC-24-26A1.txt	docs/standards/us/fcc-cyber-trust-mark-overview.md
+https://doi.org/10.6028/NIST.IR.8259	docs/standards/us/nistir8259-overview.md
+https://doi.org/10.6028/NIST.IR.8259A	docs/standards/us/nistir8259-overview.md
+https://doi.org/10.6028/NIST.IR.8259B	docs/standards/us/nistir8259-overview.md
+https://doi.org/10.6028/NIST.IR.8425	docs/standards/us/nistir8259-overview.md
+https://doi.org/10.6028/NIST.IR.8562	docs/standards/us/nistir8259-overview.md
+https://ec.europa.eu/docsroom/documents/41863/attachments/1/translations/en/renditions/native	docs/standards/eu/ivdr-overview.md, docs/standards/eu/mdr-overview.md
+https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en	docs/standards/eu/cra/harmonised-standards.md, docs/standards/eu/cra/index.md
+https://ec.europa.eu/growth/tools-databases/mandates/index.cfm?fuseaction=search.detail&id=612	docs/standards/eu/red-overview.md
+https://ec.europa.eu/newsroom/dae/redirection/document/122331	docs/resources/checklists-and-worksheets/cra-gap-analysis.md, docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I	docs/implementation/build-phase/data-privacy.md, docs/implementation/build-phase/key-provisioning.md, docs/implementation/build-phase/ota-updates.md, docs/implementation/build-phase/sbom-vex.md, docs/implementation/build-phase/secure-boot.md, docs/implementation/build-phase/secure-configuration.md, docs/implementation/build-phase/unique-device-identity.md, docs/implementation/build-phase/user-documentation.md, docs/implementation/operate-phase/cicd-hardening.md, docs/implementation/operate-phase/patch-cadence.md, docs/implementation/operate-phase/security-logging.md, docs/implementation/operate-phase/vulnerability-disclosure.md, docs/quick-start/cra-primer.md, docs/resources/cryptography/cryptography-under-cra.md, docs/resources/policy-and-evidence/policy-templates.md, docs/standards/eu/cra/index.md, docs/standards/eu/ivdr-overview.md, docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_II	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_III	docs/standards/eu/cra/en-304-623-boot-managers.md, docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_IV	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_VII	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_1	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13	docs/implementation/build-phase/sbom-vex.md, docs/implementation/build-phase/threat-modeling.md, docs/standards/eu/cra/index.md, docs/standards/eu/ivdr-overview.md, docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14	docs/implementation/operate-phase/vulnerability-disclosure.md, docs/resources/checklists-and-worksheets/cra-gap-analysis.md, docs/resources/policy-and-evidence/audit-evidence-pack.md, docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_16	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_18	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_19	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_2	docs/standards/eu/cra/index.md, docs/standards/eu/ivdr-overview.md, docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_20	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_28	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_29	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_3	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_30	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_31	docs/resources/policy-and-evidence/audit-evidence-pack.md, docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_32	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_43	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_6	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_64	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_69	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_7	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_71	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_8	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#cpt_IV	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#cpt_V	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202502392	docs/quick-start/cra-primer.md, docs/resources/checklists-and-worksheets/cra-gap-analysis.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#anx_II	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#anx_III	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#anx_IV	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_10	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_16	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_17	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_20	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014L0053-20241228#art_3	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_I	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_II	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_III	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_123	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_52	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_83	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_86	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_87	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_I	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_II	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_III	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_113	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_48	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_78	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_81	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_82	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_2	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_20	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_21	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_23	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_24	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_32	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_33	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_34	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_4	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_41	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_42	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02022L2555-20221227#art_45	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_11	docs/standards/eu/cra/index.md, docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_24	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_27	docs/standards/eu/cra/en-304-623-boot-managers.md, docs/standards/eu/cra/harmonised-standards.md, docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R0765#art_30	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053	docs/implementation/build-phase/data-privacy.md, docs/standards/eu/cra/index.md, docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053#art_3	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R0745	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R0746	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555	docs/standards/eu/nis2-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21	docs/standards/eu/cra/index.md, docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030	docs/standards/eu/cra/index.md, docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030#art_1	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030#art_2	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030#rec_7	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030#rec_8	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030#rec_9	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0112	docs/standards/eu/ivdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R0607	docs/standards/eu/mdr-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R2444	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202302444	docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_11	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_12	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_13	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_15	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_18	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_19	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_24	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30	docs/standards/eu/cra/index.md, docs/standards/eu/red-overview.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_39	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_76	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_89	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_9	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_93	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202502392	docs/standards/eu/cra/index.md
+https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202502392#rct_3	docs/standards/eu/cra/index.md
+https://finitestate.io/	docs/tools/firmware-and-binary-analysis.md, docs/tools/sbom-and-supply-chain-security.md, docs/tools/static-and-dynamic-analysis.md, docs/tools/vulnerability-and-threat-intelligence.md
+https://fkie-cad.github.io/fact_documentation/	docs/tools/firmware-and-binary-analysis.md
+https://fossa.com/	docs/tools/sbom-and-supply-chain-security.md
+https://gca.isa.org/blog/study-preview-iiot-component-certification-based-on-62443	docs/standards/global/iec62443-overview.md
+https://gdpr-info.eu/	docs/standards/eu/ivdr-overview.md, docs/standards/eu/mdr-overview.md
+https://ghidra-sre.org/	docs/tools/firmware-and-binary-analysis.md
+https://github.com/CycloneDX/cyclonedx-cli	docs/tools/sbom-and-supply-chain-security.md
+https://github.com/ReFirmLabs/binwalk	docs/implementation/build-phase/secure-configuration.md, docs/tools/firmware-and-binary-analysis.md
+https://github.com/advisories	docs/tools/vulnerability-and-threat-intelligence.md
+https://github.com/anchore/grype	docs/implementation/build-phase/sbom-vex.md, docs/tools/sbom-and-supply-chain-security.md
+https://github.com/anchore/syft	docs/implementation/build-phase/sbom-vex.md, docs/tools/sbom-and-supply-chain-security.md
+https://github.com/aquasecurity/trivy	docs/implementation/operate-phase/cicd-hardening.md, docs/tools/configuration-and-hardening.md, docs/tools/sbom-and-supply-chain-security.md
+https://github.com/craigz28/firmwalker	docs/tools/firmware-and-binary-analysis.md
+https://github.com/enisaeu/enisa-sbd-playbook/	docs/implementation/index.md, docs/quick-start/cisa-sbd-principles.md, docs/resources/checklists-and-worksheets/cra-gap-analysis.md, docs/standards/eu/cra/index.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/01-trust-boundaries-and-threat-modelling.md	docs/implementation/build-phase/threat-modeling.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/10-logging-monitoring-and-alerting.md	docs/implementation/operate-phase/security-logging.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/13-vulnerability-and-patch-management.md	docs/implementation/operate-phase/patch-cadence.md, docs/implementation/operate-phase/vulnerability-disclosure.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/14-supply-chain-controls.md	docs/implementation/build-phase/sbom-vex.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/15-minimisation-of-default-services.md	docs/implementation/build-phase/secure-configuration.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/16-restrictive-initial-access.md	docs/implementation/build-phase/secure-configuration.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/18-unique-device-identity-and-secrets-by-default.md	docs/implementation/build-phase/key-provisioning.md, docs/implementation/build-phase/unique-device-identity.md
+https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/20-automated-maintenance-and-updates.md	docs/implementation/build-phase/ota-updates.md
+https://github.com/gitleaks/gitleaks	docs/tools/static-and-dynamic-analysis.md
+https://github.com/sbabic/swupdate	docs/tools/secure-update-and-ota-frameworks.md
+https://golioth.io/	docs/tools/device-lifecycle-management.md, docs/tools/security-logging-and-monitoring.md
+https://grafana.com/oss/loki/	docs/tools/security-logging-and-monitoring.md
+https://hex-rays.com/ida-pro/	docs/tools/firmware-and-binary-analysis.md
+https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/	docs/standards/uk/pecr-overview.md
+https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/online-tracking/guidance-for-consumer-internet-of-things-products-and-services/	docs/standards/uk/pecr-overview.md
+https://man7.org/linux/man-pages/man1/strings.1.html	docs/tools/firmware-and-binary-analysis.md
+https://memfault.com/	docs/tools/device-lifecycle-management.md, docs/tools/security-logging-and-monitoring.md
+https://mender.io/	docs/implementation/build-phase/ota-updates.md, docs/tools/secure-update-and-ota-frameworks.md
+https://nmap.org/	docs/implementation/build-phase/secure-configuration.md, docs/tools/configuration-and-hardening.md
+https://nvd.nist.gov/	docs/tools/vulnerability-and-threat-intelligence.md
+https://nvd.nist.gov/vuln/detail/CVE-2024-1275	docs/resources/real-world-vulnerabilities/baxter-connex-spot-monitor-shared-key.md
+https://nvd.nist.gov/vuln/detail/CVE-2024-48971	docs/resources/real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf	docs/standards/us/nist-sp-800-218-ssdf-overview.md
+https://osv.dev/	docs/tools/vulnerability-and-threat-intelligence.md
+https://owasp.org/www-project-threat-dragon/	docs/tools/threat-modeling-tools.md
+https://pelion.com/	docs/tools/device-lifecycle-management.md
+https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?SearchPage=TRUE&WKI_ID=74414&butExpertSearch=Search&curItemNr=10&includeNonActiveTB=FALSE&includeSubProjectCode=FALSE&optDisplay=10&qCLUSTER_BOOLEAN=OR&qEND_CURRENT_STATUS_CODE=9+AB%3BN24&qETSI_ALL=	docs/standards/eu/cra/en-304-623-boot-managers.md
+https://quarklink.io/product/	docs/implementation/build-phase/key-provisioning.md, docs/implementation/build-phase/ota-updates.md, docs/implementation/build-phase/secure-boot.md, docs/implementation/build-phase/unique-device-identity.md, docs/tools/device-lifecycle-management.md, docs/tools/hardware-root-of-trust-and-provisioning.md, docs/tools/pki-and-key-management.md, docs/tools/secure-update-and-ota-frameworks.md
+https://rada.re/n/	docs/tools/firmware-and-binary-analysis.md
+https://rauc.io/	docs/tools/secure-update-and-ota-frameworks.md
+https://recalls-rappels.canada.ca/en/alert-recall/centricitytm-universal-viewer-uv-pacs-iw-radiology-and-cardiology-systems	docs/resources/real-world-vulnerabilities/ge-centricity-viewer-credential-flaw.md
+https://semgrep.dev/	docs/tools/static-and-dynamic-analysis.md
+https://shop.cta.tech/products/cta-2088	docs/standards/us/cta2088-overview.md
+https://snyk.io/	docs/tools/sbom-and-supply-chain-security.md, docs/tools/static-and-dynamic-analysis.md
+https://theupdateframework.io/	docs/tools/secure-update-and-ota-frameworks.md
+https://thingsboard.io/	docs/tools/device-lifecycle-management.md
+https://thistle.tech/	docs/implementation/build-phase/secure-boot.md, docs/tools/device-lifecycle-management.md, docs/tools/secure-update-and-ota-frameworks.md
+https://threagile.io/	docs/tools/threat-modeling-tools.md
+https://tools.spdx.org/app/	docs/tools/sbom-and-supply-chain-security.md
+https://uptane.github.io/	docs/tools/secure-update-and-ota-frameworks.md
+https://vector.dev/	docs/tools/security-logging-and-monitoring.md
+https://wazuh.com/	docs/implementation/operate-phase/security-logging.md, docs/tools/security-logging-and-monitoring.md
+https://webstore.iec.ch/en/iec-search/result?q=62443	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/22811	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/30727	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/33615	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/34421	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/62883	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/63886	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/67461	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/67462	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/67463	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/67631	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/7029	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/7031	docs/standards/global/iec62443-overview.md
+https://webstore.iec.ch/en/publication/7033	docs/standards/global/iec62443-overview.md
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfres/res.cfm?id=212701	docs/resources/real-world-vulnerabilities/ge-centricity-viewer-credential-flaw.md
+https://www.ansible.com/	docs/tools/configuration-and-hardening.md
+https://www.balena.io/	docs/tools/device-lifecycle-management.md, docs/tools/secure-update-and-ota-frameworks.md
+https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html	docs/standards/eu/cra/index.md, docs/standards/eu/ivdr-overview.md, docs/standards/eu/mdr-overview.md, docs/standards/eu/red-overview.md
+https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf	docs/implementation/build-phase/data-privacy.md, docs/implementation/build-phase/key-provisioning.md, docs/implementation/build-phase/ota-updates.md, docs/implementation/build-phase/sbom-vex.md, docs/implementation/build-phase/secure-boot.md, docs/implementation/build-phase/secure-configuration.md, docs/implementation/build-phase/threat-modeling.md, docs/implementation/build-phase/unique-device-identity.md, docs/implementation/build-phase/user-documentation.md, docs/implementation/operate-phase/cicd-hardening.md, docs/implementation/operate-phase/patch-cadence.md, docs/implementation/operate-phase/security-logging.md, docs/implementation/operate-phase/vulnerability-disclosure.md, docs/standards/eu/cra/index.md
+https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-2-2_0_0.pdf	docs/standards/eu/cra/index.md
+https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-3-0_9_0.pdf	docs/standards/eu/cra/index.md
+https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-11-19-cra-standards-en-40000-1-1-and-en-40000-1-2/	docs/standards/eu/cra/harmonised-standards.md
+https://www.chef.io/	docs/tools/configuration-and-hardening.md
+https://www.cisa.gov/known-exploited-vulnerabilities-catalog	docs/tools/vulnerability-and-threat-intelligence.md
+https://www.cisa.gov/news-events/ics-medical-advisories/icsma-24-151-02	docs/resources/real-world-vulnerabilities/baxter-connex-spot-monitor-shared-key.md
+https://www.cisa.gov/news-events/ics-medical-advisories/icsma-24-319-01	docs/resources/real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md
+https://www.cisa.gov/news-events/ics-medical-advisories/icsma-25-030-01	docs/resources/real-world-vulnerabilities/contec-patient-monitor-backdoor.md
+https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom	docs/implementation/build-phase/sbom-vex.md
+https://www.cisa.gov/resources-tools/resources/contec-cms8000-contains-backdoor	docs/resources/real-world-vulnerabilities/contec-patient-monitor-backdoor.md
+https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf	docs/quick-start/cisa-sbd-principles.md
+https://www.cisecurity.org/cis-benchmarks/	docs/implementation/build-phase/secure-configuration.md, docs/tools/configuration-and-hardening.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=11	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=13	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=34	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=36	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=38	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf#page=52	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=103	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=127	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=48	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=54	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf#page=87	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=129	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=135	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=166	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=182	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=29	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf#page=90	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CEMV3.1R5.pdf	docs/standards/global/common-criteria-overview.md
+https://www.commoncriteriaportal.org/files/ccfiles/CEMV3.1R5.pdf#page=21	docs/standards/global/common-criteria-overview.md
+https://www.congress.gov/bill/116th-congress/house-bill/1668	docs/standards/us/nistir8259-overview.md
+https://www.congress.gov/bill/117th-congress/house-bill/2617/text#H1A3A8E9495E44A179269458983944B4C	docs/standards/us/fda-cybersecurity-overview.md
+https://www.datadoghq.com/	docs/tools/security-logging-and-monitoring.md
+https://www.denx.de/wiki/U-Boot	docs/tools/hardware-root-of-trust-and-provisioning.md
+https://www.digicert.com/iot-trust-manager	docs/tools/pki-and-key-management.md
+https://www.elastic.co/	docs/tools/security-logging-and-monitoring.md
+https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook	docs/implementation/index.md, docs/quick-start/cisa-sbd-principles.md, docs/quick-start/first-sprint-checklist.md, docs/quick-start/how-to-use-handbook.md, docs/quick-start/what-is-secure-by-design.md, docs/resources/checklists-and-worksheets/cra-gap-analysis.md, docs/resources/policy-and-evidence/audit-evidence-pack.md, docs/standards/eu/cra/index.md
+https://www.enisa.europa.eu/topics/product-security/vulnerability-services/eu-incident-response-and-cyber-crisis-management/single-reporting-platform-srp/frequently-asked-questions	docs/implementation/operate-phase/vulnerability-disclosure.md
+https://www.etsi.org/deliver/etsi_en/303600_303699/303645/02.01.01_60/en_303645v020101p.pdf	docs/standards/global/en303645-overview.md
+https://www.etsi.org/deliver/etsi_en/303600_303699/303645/03.01.03_60/en_303645v030103p.pdf	docs/standards/eu/cra/index.md, docs/standards/global/en303645-overview.md
+https://www.etsi.org/deliver/etsi_en/304600_304699/304623/00.01.03_20/en_304623v000103ev.pdf	docs/standards/eu/cra/en-304-623-boot-managers.md, docs/standards/eu/cra/harmonised-standards.md
+https://www.etsi.org/deliver/etsi_tr/103600_103699/103621/01.01.01_60/tr_103621v010101p.pdf	docs/standards/global/en303645-overview.md
+https://www.etsi.org/deliver/etsi_ts/103700_103799/103701/01.01.01_60/ts_103701v010101p.pdf	docs/standards/global/en303645-overview.md
+https://www.etsi.org/newsroom/press-releases/etsi-launches-approval-process-for-17-european-standards-supporting-the-cyber-resilience-act/	docs/standards/eu/cra/harmonised-standards.md
+https://www.exploit-db.com/	docs/tools/vulnerability-and-threat-intelligence.md
+https://www.fcc.gov/CyberTrustMark	docs/standards/us/fcc-cyber-trust-mark-overview.md
+https://www.fcc.gov/supplychain/coveredlist	docs/standards/us/fcc-cyber-trust-mark-overview.md
+https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions-faqs	docs/standards/us/fda-cybersecurity-overview.md
+https://www.fda.gov/medical-devices/safety-communications/cybersecurity-vulnerabilities-certain-patient-monitors-contec-and-epsimed-fda-safety-communication	docs/resources/real-world-vulnerabilities/contec-patient-monitor-backdoor.md
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations-and-content-premarket-submissions	docs/standards/us/fda-cybersecurity-overview.md
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/refuse-accept-policy-510ks	docs/standards/us/fda-cybersecurity-overview.md
+https://www.first.org/epss/	docs/tools/vulnerability-and-threat-intelligence.md
+https://www.fluentd.org/	docs/implementation/operate-phase/security-logging.md, docs/tools/security-logging-and-monitoring.md
+https://www.govinfo.gov/app/details/USCODE-2010-title21/USCODE-2010-title21-chap9-subchapV-partA-sec352	docs/standards/us/fda-cybersecurity-overview.md
+https://www.greynoise.io/	docs/tools/vulnerability-and-threat-intelligence.md
+https://www.hackerone.com/	docs/implementation/operate-phase/vulnerability-disclosure.md, docs/tools/vulnerability-and-threat-intelligence.md
+https://www.hillrom.com/content/dam/hillrom-aem/us/en/sap-documents/LIT/80031/80031154LITPDF.pdf	docs/resources/real-world-vulnerabilities/baxter-life2000-ventilator-tampering.md
+https://www.homeaffairs.gov.au/ABOUT-US/OUR-PORTFOLIOS/CYBER-SECURITY/SECURITY-STANDARDS-FOR-SMART-DEVICES	docs/standards/australia/smart-device-security-rules-overview.md
+https://www.iriusrisk.com/	docs/tools/threat-modeling-tools.md
+https://www.isagca.org/l/secure-integration-practices	docs/standards/global/iec62443-overview.md
+https://www.isagca.org/l/security-program-development	docs/standards/global/iec62443-overview.md
+https://www.iso.org/standard/59138.html	docs/standards/global/common-criteria-overview.md
+https://www.iso.org/standard/68904.html	docs/standards/global/common-criteria-overview.md
+https://www.iso.org/standard/72889.html	docs/standards/global/common-criteria-overview.md
+https://www.iso.org/standard/72891.html	docs/standards/global/common-criteria-overview.md
+https://www.iso.org/standard/72892.html	docs/standards/global/common-criteria-overview.md
+https://www.iso.org/standard/72906.html	docs/standards/global/common-criteria-overview.md
+https://www.keyfactor.com/products/ejbca-enterprise/	docs/implementation/build-phase/key-provisioning.md, docs/implementation/build-phase/unique-device-identity.md, docs/tools/pki-and-key-management.md
+https://www.kudelski-iot.com/services-and-systems/keystream-iot-security-system	docs/tools/pki-and-key-management.md
+https://www.legislation.gov.au/C2024A00098/asmade/text	docs/standards/australia/smart-device-security-rules-overview.md
+https://www.legislation.gov.au/F2025L00276/asmade/text	docs/standards/australia/smart-device-security-rules-overview.md
+https://www.legislation.gov.uk/ukpga/2018/12	docs/standards/uk/pecr-overview.md
+https://www.legislation.gov.uk/ukpga/2022/46	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/ukpga/2022/46#section-10	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/ukpga/2022/46#section-11	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/ukpga/2022/46#section-12	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/ukpga/2022/46#section-37	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/ukpga/2022/46#section-9	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/uksi/2003/2426	docs/standards/uk/pecr-overview.md
+https://www.legislation.gov.uk/uksi/2003/2426#regulation-1	docs/standards/uk/pecr-overview.md
+https://www.legislation.gov.uk/uksi/2003/2426#regulation-19	docs/standards/uk/pecr-overview.md
+https://www.legislation.gov.uk/uksi/2003/2426#regulation-5	docs/standards/uk/pecr-overview.md
+https://www.legislation.gov.uk/uksi/2003/2426#regulation-6	docs/standards/uk/pecr-overview.md
+https://www.legislation.gov.uk/uksi/2023/1007	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/uksi/2023/1007#regulation-8	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/uksi/2023/1007#schedule-1	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/uksi/2023/1007#schedule-2	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/uksi/2023/1007#schedule-3	docs/standards/uk/psti-overview.md
+https://www.legislation.gov.uk/uksi/2023/1007#schedule-4	docs/standards/uk/psti-overview.md
+https://www.mandiant.com/threat-intelligence	docs/tools/vulnerability-and-threat-intelligence.md
+https://www.microchip.com/en-us/products/security/trust-platform	docs/tools/hardware-root-of-trust-and-provisioning.md
+https://www.nexusgroup.com/solutions/online-services/iot/	docs/tools/pki-and-key-management.md
+https://www.niap-ccevs.org/protectionprofiles	docs/standards/global/common-criteria-overview.md
+https://www.nist.gov/news-events/news/2024/08/announcing-approval-three-federal-information-processing-standards-fips	docs/resources/cryptography/cryptography-under-cra.md
+https://www.nozominetworks.com/blog/ge-healthcare-vivid-ultrasound-vulnerabilities	docs/resources/real-world-vulnerabilities/ge-vivid-ultrasound-local-access.md
+https://www.nxp.com/products/security-and-authentication/authentication/edgelock-se050-plug-trust-secure-element-family:SE050	docs/implementation/build-phase/key-provisioning.md, docs/tools/hardware-root-of-trust-and-provisioning.md
+https://www.open-scap.org/	docs/tools/configuration-and-hardening.md
+https://www.pnfsoftware.com/	docs/tools/firmware-and-binary-analysis.md
+https://www.puppet.com/	docs/tools/configuration-and-hardening.md
+https://www.recordedfuture.com/	docs/tools/vulnerability-and-threat-intelligence.md
+https://www.s3.eurecom.fr/docs/ndss18_muench.pdf	docs/resources/reference/types-of-embedded-device.md
+https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2900-2-1_1_S_20171030	docs/standards/us/fda-cybersecurity-overview.md
+https://www.sonarsource.com/products/sonarqube/	docs/tools/static-and-dynamic-analysis.md
+https://www.sonatype.com/	docs/tools/sbom-and-supply-chain-security.md
+https://www.splunk.com/	docs/tools/security-logging-and-monitoring.md
+https://www.st.com/content/st_com/en/about/security-and-privacy/cyber-resilience-act.html	docs/resources/hardware/stm32.md
+https://www.st.com/content/st_com/en/ecosystems/stm32trust.html	docs/resources/hardware/stm32.md
+https://www.st.com/content/st_com/en/ecosystems/stm32trust/security-assurance.html	docs/resources/hardware/stm32.md
+https://www.st.com/en/embedded-software/x-cube-sbsfu.html	docs/resources/hardware/stm32.md
+https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html	docs/tools/static-and-dynamic-analysis.md
+https://www.tenable.com/products/nessus	docs/tools/configuration-and-hardening.md
+https://www.tutum.tech	docs/tools/threat-modeling-tools.md
+https://www.veracode.com/	docs/tools/static-and-dynamic-analysis.md
+https://www.zaproxy.org/	docs/tools/static-and-dynamic-analysis.md
+https://www.zymbit.com/	docs/tools/hardware-root-of-trust-and-provisioning.md
+https://xray.boldwark.com/	docs/tools/firmware-and-binary-analysis.md

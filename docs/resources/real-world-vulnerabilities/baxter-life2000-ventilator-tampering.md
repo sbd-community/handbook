@@ -25,6 +25,8 @@ In November 2024, CISA published a medical advisory for the Baxter Life2000 Vent
 
 CISA identified CVE-2024-48971 as a hard-coded credential issue involving clinician passwords stored in plaintext. The broader advisory describes a set of weaknesses that could affect confidentiality, integrity, availability, and device operation.
 
+No fix followed. On 10 April 2025, Baxter sent all affected customers an urgent recall letter, and FDA's recall alert states that Baxter is permanently removing the Life2000 Ventilation System because of a cybersecurity issue found through internal testing: a person with physical access to an unattended device could change therapy settings or access device data. FDA identified it as the most serious type of recall and advises users to stop using Life2000 ventilators and discuss replacement options with their healthcare provider.
+
 ## What Failed
 
 - Credentials and clinician access paths were not protected strongly enough for the product context.
@@ -84,3 +86,4 @@ CISA identified CVE-2024-48971 as a hard-coded credential issue involving clinic
 - [CISA: Baxter Life2000 Ventilation System](https://www.cisa.gov/news-events/ics-medical-advisories/icsma-24-319-01)
 - [Baxter/Hillrom: Baxter Life2000 Ventilation System advisory PDF](https://www.hillrom.com/content/dam/hillrom-aem/us/en/sap-documents/LIT/80031/80031154LITPDF.pdf)
 - [NVD: CVE-2024-48971](https://nvd.nist.gov/vuln/detail/CVE-2024-48971)
+- [FDA: Recall Alert: Baxter Permanently Removes Life2000 Ventilation System](https://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/recall-alert-baxter-permanently-removes-life2000-ventilation-system)

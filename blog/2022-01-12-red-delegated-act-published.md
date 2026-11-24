@@ -23,3 +23,6 @@ The regulation activates three key articles of the RED:
 Compliance with these articles can be achieved by following harmonised standards, with **[ETSI EN 303 645](/docs/standards/global/en303645-overview)** being the most prominent one for consumer devices.
 
 This delegated act signals a clear shift in the EU's approach: cybersecurity is no longer optional. For a detailed guide on the scope, timelines, and its relationship with the CRA, see our [**RED Overview**](/docs/standards/eu/red-overview). 
+:::note[Later update]
+The delegated act applied from 1 August 2025, after a 12-month extension. The harmonised standards cited for it are EN 18031-1, -2 and -3:2024 from CEN-CENELEC, not ETSI EN 303 645, cited with restrictions by Implementing Decision (EU) 2025/138. Delegated Regulation (EU) 2026/339 repeals the act from 11 December 2027, when the CRA applies. See [EU Repeals RED Cybersecurity Delegated Act Before CRA](/blog/2026/04/29/red-cybersecurity-act-repealed) and the [RED overview](/docs/standards/eu/red-overview).
+:::

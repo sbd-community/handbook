@@ -41,16 +41,17 @@ For manufacturers of IIoT devices, the ISAGCA has published a detailed study on 
 
 ## 2. Structure of the Standard
 
-The IEC 62443 series is organized into four main groups of documents, each targeting a different audience or aspect of industrial security. Documents marked with "TR" are Technical Reports that provide information and guidance, while those marked "IS" are International Standards containing normative requirements.
+The IEC 62443 series is organized into four main groups of documents, plus a newer group of evaluation methodologies, each targeting a different audience or aspect of industrial security. Documents marked "TR" are Technical Reports that provide information and guidance, "TS" are Technical Specifications, and "PAS" is a Publicly Available Specification; unmarked parts are International Standards containing normative requirements.
 
 - **General (62443-1-x):** Foundational concepts, models, and terminology.
-    - **[62443-1-1][iec_1_1]:** Concepts and Models
+    - **[TS 62443-1-1][iec_1_1]:** Terminology, Concepts and Models
     - **[TR 62443-1-3][iec_1_3]:** System Security Conformance Metrics
     - **[TR 62443-1-4][iec_1_4]:** IACS Security Lifecycle and Use-Cases
-    - **[62443-1-5][iec_1_5]:** Security for Safety-Instrumented Systems (SIS)
+    - **[TS 62443-1-5][iec_1_5]:** Scheme for IEC 62443 Security Profiles
 
 - **Policies & Procedures (62443-2-x):** Focus on the Asset Owner's security program.
-    - **[62443-2-1][iec_2_1]:** Establishing an IACS Security Program
+    - **[62443-2-1][iec_2_1]:** Security Program Requirements for IACS Asset Owners
+    - **[PAS 62443-2-2][iec_2_2]:** IACS Security Protection Scheme
     - **[TR 62443-2-3][iec_2_3]:** Patch Management in the IACS Environment
     - **[62443-2-4][iec_2_4]:** Security Program Requirements for IACS Service Providers
 
@@ -62,6 +63,10 @@ The IEC 62443 series is organized into four main groups of documents, each targe
 - **Component (62443-4-x):** Requirements for manufacturers of IACS components.
     - **[62443-4-1][iec_4_1]:** Secure Product Development Lifecycle Requirements
     - **[62443-4-2][iec_4_2]:** Technical Security Requirements for IACS Components
+
+- **Evaluation (62443-6-x):** Methodologies for evaluating conformance.
+    - **[TS 62443-6-1][iec_6_1]:** Security Evaluation Methodology for IEC 62443-2-4
+    - **[TS 62443-6-2][iec_6_2]:** Security Evaluation Methodology for IEC 62443-4-2
 
 ## 3. Key Concepts
 
@@ -136,7 +141,7 @@ The asset owner is ultimately accountable for the secure operation of the IACS. 
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Establish Security Program**<br/>[IEC 62443-2-1][iec_2_1] | Define, implement, and continuously maintain a comprehensive IACS Cybersecurity Management System (CSMS). This program must establish a risk-management framework, define clear security policies and procedures, assign roles and responsibilities, and include a robust incident response plan. | [Security Program Development](https://www.isagca.org/l/security-program-development) |
+| **Establish Security Program**<br/>[IEC 62443-2-1][iec_2_1] | Define, implement, and continuously maintain a comprehensive IACS Cybersecurity Management System (CSMS). This program must establish a risk-management framework, define clear security policies and procedures, assign roles and responsibilities, and include a robust incident response plan. | [ISAGCA: Implementing an Industrial Cybersecurity Program](https://www.isagca.org/hubfs/2023%20ISA%20Website%20Redesigns/ISAGCA/PDFs/ISAGCA_Implementing%20an%20Industrial%20Cybersecurity%20Program_White%20Paper.pdf) |
 | **Perform Risk Assessment**<br/>[IEC 62443-3-2][iec_3_2] | Systematically partition the entire IACS into logical zones and conduits. For each, conduct a detailed cybersecurity risk assessment to identify vulnerabilities, assess potential impacts, and determine the required Target Security Level (SL-T) for all assets. | [Threat Modeling](../../implementation/build-phase/threat-modeling.md) |
 | **Operate & Maintain Securely**<br/>[IEC 62443-2-3][iec_2_3] | Implement and document rigorous processes for the ongoing secure operation of the IACS. This includes timely **Patch Management** as guided by [TR 62443-2-3][iec_2_3], proactive **Incident Response**, and regular **Program Audits** as mandated by the CSMS ([IEC 62443-2-1][iec_2_1]). | [Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 
@@ -145,7 +150,7 @@ System integrators are responsible for designing and building a secure automatio
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---|---|---|
-| **Secure Integration Process**<br/>[IEC 62443-2-4][iec_2_4] | Adhere to a defined and documented security program for the delivery of IACS solutions. This requires demonstrating robust capabilities for secure solution design, installation, commissioning, ongoing maintenance, secure remote access, and incident management. | [Secure Integration Practices](https://www.isagca.org/l/secure-integration-practices) |
+| **Secure Integration Process**<br/>[IEC 62443-2-4][iec_2_4] | Adhere to a defined and documented security program for the delivery of IACS solutions. This requires demonstrating robust capabilities for secure solution design, installation, commissioning, ongoing maintenance, secure remote access, and incident management. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md)<br/>[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Secure System Design**<br/>[IEC 62443-3-3][iec_3_3] | Design and engineer the integrated IACS to meet the asset owner's specified Target Security Levels (SL-T). This involves correctly applying the seven **Foundational Requirements (FRs)** at the system level, selecting and integrating components with the appropriate **Security Level capabilities (SL-C)**, and implementing **compensating countermeasures** to address any identified gaps. | [Secure Configuration & Hardening](../../implementation/build-phase/secure-configuration.md) |
 
 ## 5. Certification & Conformity
@@ -309,7 +314,7 @@ This section provides a summary of the technical Software Application Requiremen
 [iec_webstore]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC 62443 Series on the IEC Webstore"
 [isaca_guide]: https://21577316.fs1.hubspotusercontent-na1.net/hubfs/21577316/2023%20ISA%20Website%20Redesigns/ISAGCA/PDFs/ISAGCA%20Quick%20Start%20Guide%20FINAL.pdf "An Overview of ISA/IEC 62443 Standards"
 [iiot_cert_guide]: https://gca.isa.org/blog/study-preview-iiot-component-certification-based-on-62443 "IIoT Component Certification Based on the 62443 Standard"
-[iec_1_1]: https://webstore.iec.ch/en/publication/7029 "IEC 62443-1-1:2009"
+[iec_1_1]: https://webstore.iec.ch/en/publication/7029 "IEC TS 62443-1-1:2009"
 [iec_1_3]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC TR 62443-1-3:2011"
 [iec_1_4]: https://webstore.iec.ch/en/iec-search/result?q=62443 "IEC TR 62443-1-4:2018"
 [iec_1_5]: https://webstore.iec.ch/en/publication/67461 "IEC TS 62443-1-5:2023"

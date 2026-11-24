@@ -56,7 +56,7 @@ This glossary defines key terms, acronyms, and concepts used throughout the Secu
 : The official term used in the CRA for any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network. This broad definition covers almost any modern connected device. See the [CRA Scope Definition](../../standards/eu/cra/index.md#statutory-definition).
 
 <dfn>RED (Radio Equipment Directive)</dfn>
-: Directive 2014/53/EU, which sets rules for placing radio equipment on the EU market. A Delegated Act has activated cybersecurity requirements under the RED, which become mandatory from **1 August 2025**, over two years before the CRA. See the [RED Overview](../../standards/eu/red-overview.md).
+: Directive 2014/53/EU, which sets rules for placing radio equipment on the EU market. A Delegated Act, Delegated Regulation (EU) 2022/30, activated cybersecurity requirements under the RED, which have been mandatory since **1 August 2025**. Delegated Regulation (EU) 2026/339 repeals it with effect from **11 December 2027**, when the CRA applies, to avoid overlapping requirements. See the [RED Overview](../../standards/eu/red-overview.md).
 
 <dfn>Root of Trust (RoT)</dfn>
 : A component or set of components within a system that is inherently trusted. In hardware, this is often a Secure Element or TPM that anchors the device's security guarantees (like secure boot) in a physically protected environment. See the [Key Management Guide](../../implementation/build-phase/key-provisioning.md).

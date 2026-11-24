@@ -34,7 +34,6 @@ These platforms typically offer a suite of services, including device monitoring
 | [Azure IoT Hub](https://azure.microsoft.com/en-us/products/iot-hub) | 💰 | Microsoft's cloud service for bi-directional communication between IoT applications and the devices it manages. Includes device management capabilities. |
 | [ThingsBoard](https://thingsboard.io/) | 🐙💰 | An open-source IoT platform for data collection, processing, visualization, and device management. It offers both a community edition and commercial options. |
 | [Thistle Technologies](https://thistle.tech/) | 💰 | A commercial security platform providing a device control center for fleet monitoring and management. |
-| [Pelion](https://pelion.com/) | 💰 | An Arm-backed platform providing secure device onboarding and lifecycle management for a wide range of IoT devices. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*

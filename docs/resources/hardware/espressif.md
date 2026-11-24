@@ -114,7 +114,7 @@ When you evaluate ESP32 for a CRA-scoped product, collect evidence from Espressi
 - **Reference design maturity**: Are you depending on ESP-IDF examples or reference flows? If so, who owns maintenance and validation in your final product?
 - **Module evidence**: If using a [module][esp-modules], which radio certificates, declarations, test reports, and integration instructions apply?
 - **Security lifecycle**: How does Espressif publish security advisories, vulnerability information, ESP-IDF fixes, and support policy updates?
-- **Support horizon**: Does the chip, module, ESP-IDF branch, radio stack, and supplier lifecycle align with your declared product support period?
+- **Support horizon**: Does the chip, module, ESP-IDF branch, radio stack, and supplier lifecycle align with your declared product support period? Each ESP-IDF major and minor release is supported for 30 months after its first stable release, which is usually shorter than a CRA support period, so plan release migrations ([ESP-IDF versions][esp-idf-lts]). Espressif also states that its long-term support (LTS) branches receive critical security fixes for at least 30 months ([Espressif security updates][esp-security-updates]).
 - **Boot-manager evidence**: Can the selected variant support the direction of **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** for verified boot, rollback protection, recovery, key provisioning, and debug-interface control?
 
 ## 7. Evidence to Retain
@@ -154,7 +154,8 @@ If you are using ESP32 hardware in a CRA-scoped product, this is a sensible sequ
 <!-- Citations -->
 [esp-secure-boot]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/secure-boot-v2.html "ESP-IDF Programming Guide: Secure Boot V2"
 [esp-flash-enc]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/flash-encryption.html "ESP-IDF Programming Guide: Flash Encryption"
-[esp-ds]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32s2/api-reference/peripherals/ds.html "ESP-IDF Programming Guide: Digital Signature (DS) Peripheral"
-[esp-idf-lts]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/versions.html "ESP-IDF Support Policy: Long-Term Support (LTS) Releases"
+[esp-ds]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32s2/api-reference/peripherals/ds.html "ESP-IDF Programming Guide: RSA Digital Signature Peripheral (RSA_DS)"
+[esp-idf-lts]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/versions.html "ESP-IDF Programming Guide: ESP-IDF Versions (support periods)"
 [esp-efuse]: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/system/efuse.html "ESP-IDF Programming Guide: eFuse Manager"
-[esp-modules]: https://docs.espressif.com/projects/esp-idf/en/v5.0.4/esp32/hw-reference/chip-series-comparison.html "Espressif Modules" 
+[esp-modules]: https://www.espressif.com/en/products/modules "Espressif: ESP Modules"
+[esp-security-updates]: https://developer.espressif.com/blog/2026/03/esp32-security-updates/ "Espressif Developer Portal: Staying Ahead with ESP32 Security Updates (5 March 2026)" 

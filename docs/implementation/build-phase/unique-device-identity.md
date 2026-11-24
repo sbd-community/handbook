@@ -60,7 +60,7 @@ Relevant outcomes include:
 - recording and monitoring security-relevant events where applicable;
 - retaining technical documentation that explains product security decisions.
 
-BSI TR-03183-1 reinforces access-control and logging expectations, including preventing unauthorised access and logging attempts ([REQ_ER 5][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 reinforces access-control and logging expectations, including preventing unauthorised access and logging attempts ([REQ_ER 5][bsi_tr_03183_p1]).
 
 An access-control model is weak if the system cannot reliably tell one genuine device from another, revoke a compromised device, or distinguish a legitimate device from a clone.
 
@@ -230,4 +230,4 @@ If you need to:
 - add Secure-by-Default release gates for identity and secrets, use ENISA's **[Unique device identity and secrets by default](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/18-unique-device-identity-and-secrets-by-default.md)** playbook.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

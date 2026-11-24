@@ -22,6 +22,7 @@ The full text of the framework is available from NIST:
 | US Executive Order 14028 released | "Improving the Nation's Cybersecurity" | **May 2021** |
 | Public Draft of SSDF v1.1 released | Draft for public comment | **September 2021** |
 | Current Version Published | **NIST SP 800-218 v1.1** | **February 2022** |
+| Public Draft of SSDF v1.2 released | [NIST SP 800-218 Rev. 1 (initial public draft)][nist_ssdf_pubs] | **December 2025** |
 
 **Relationship to Other Standards**
 
@@ -96,9 +97,9 @@ These high-level practices establish the organizational foundation for a success
 Unlike a formal regulation like the EU's [Cyber-Resilience Act (CRA)](../eu/cra/index.md), the SSDF is a *framework*, not a law with a prescribed certification scheme. There is no official "SSDF Certification" or a system of third-party audits that grants market access. Instead, demonstrating conformance is about attestation, internal validation, and preparation for other regulatory requirements.
 
 ### 4.1 US Government Self-Attestation
-The most significant driver for SSDF conformance is **US Executive Order 14028**, "Improving the Nation's Cybersecurity." In response, the Office of Management and Budget (OMB) requires that any software provider selling to US federal agencies must sign a **Secure Software Development Attestation Form**.
+The original driver for SSDF conformance was **US Executive Order 14028**, "Improving the Nation's Cybersecurity." In response, the Office of Management and Budget (OMB) memoranda M-22-18 and M-23-16 required software providers selling to US federal agencies to sign a **Secure Software Development Attestation Form**, with the SSDF as the primary benchmark.
 
-This form requires the provider to attest that they follow secure development practices, with the SSDF being the primary benchmark. While it is a "self-attestation," it is a formal, legally significant declaration of compliance.
+On 23 January 2026, **[OMB Memorandum M-26-05][omb_m_26_05]** rescinded M-22-18 and M-23-16. The attestation form is no longer a government-wide requirement: each agency now sets software and hardware assurance requirements based on its own risk assessment, and may still choose to use the attestation form or require a software bill of materials (SBOM) on request. M-26-05 continues to point agencies to NIST SP 800-218, so expect federal customers to keep asking for SSDF-aligned evidence.
 
 ### 4.2 Using the SSDF for Internal Gap Analysis
 Many organizations use the SSDF as a maturity model to benchmark their existing Secure Development Lifecycle (SDL) practices. By mapping their internal processes, tools, and policies against the SSDF's practices and tasks (as detailed in the Appendices below), they can:
@@ -204,3 +205,5 @@ This section provides a summary of the practices and tasks for the "Respond to V
 
 <!-- Citations -->
 [nist_sp_800-218]: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf "NIST Special Publication 800-218: Secure Software Development Framework (SSDF) Version 1.1" 
+[nist_ssdf_pubs]: https://csrc.nist.gov/projects/ssdf/publications "NIST SSDF project publications"
+[omb_m_26_05]: https://www.whitehouse.gov/wp-content/uploads/2026/01/M-26-05-Adopting-a-Risk-based-Approach-to-Software-and-Hardware-Security.pdf "OMB M-26-05: Adopting a Risk-based Approach to Software and Hardware Security"

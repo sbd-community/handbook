@@ -19,11 +19,11 @@ Hardening the pipeline is the practical application of "DevSecOps," where securi
 The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** mandates secure development lifecycle practices. A hardened CI/CD pipeline directly addresses several key requirements:
 
 -   **No Known Exploitable Vulnerabilities ([Annex I § 1 (2)(a)][cra_annexI])**: The CRA requires products to be delivered "without known exploitable vulnerabilities." An automated scanning process in the CI/CD pipeline is the primary mechanism for identifying and blocking these vulnerabilities before release.
--   **Vulnerability Handling ([Annex I § 2 (2)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 clarifies this, stating that manufacturers must "continuously search for vulnerabilities in their own product" ([REQ_VH 2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this continuous search.
+-   **Vulnerability Handling ([Annex I § 2 (2)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 v0.9.0 clarifies this, stating that the manufacturer "MUST have a process in place to identify vulnerabilities affecting the TOE" and may match SBOM components against vulnerability databases ([REQ_VH 1.2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this process.
 
 ### 1.3. Do I Really Need to Do This?
 
-The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to follow best practices for a secure development lifecycle. Hardening your development and release process is therefore a direct and non-negotiable legal obligation.
+The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to follow best practices for a secure development lifecycle. A secure, documented development and release process is therefore part of meeting those obligations, even though the CRA does not prescribe CI/CD tooling.
 
 However, the regulations define the **"what" (the security outcomes)**, not the **"how" (the specific tools)**. The real question is not *if* you need a secure process, but **"What does a compliant secure development process look like for a team of my size and a product of my complexity?"**
 
@@ -89,7 +89,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Scan for secrets
-        uses: trufflesecurity/truffle-hog@main
+        # Pin to a release tag or commit SHA in production
+        uses: trufflesecurity/trufflehog@main
 
       - name: Run SAST scan
         uses: github/codeql-action/analyze@v3
@@ -100,16 +101,17 @@ jobs:
           # ...
 
       - name: Generate SBOM
-        uses: anchore/syft-action@v0
+        uses: anchore/sbom-action@v0 # Runs Syft
         with:
           format: 'cyclonedx-json'
           output-file: 'sbom.json'
       
       - name: Scan SBOM for CVEs
-        uses: anchore/grype-action@v0
+        uses: anchore/scan-action@v7 # Runs Grype
         with:
           sbom: 'sbom.json'
-          fail-on: 'critical' # Fail build if critical vulns found
+          fail-build: true # Fail build if critical vulns found
+          severity-cutoff: 'critical'
 ```
 
 ## 6. Compliance Checklist
@@ -124,4 +126,4 @@ jobs:
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

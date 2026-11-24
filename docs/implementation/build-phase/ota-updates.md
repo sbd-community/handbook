@@ -58,10 +58,10 @@ The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** expects ma
 
 Two CRA Annex I requirements are especially relevant:
 
-- **Security updates by design ([Annex I § 1(2)(c)][cra_annexI]):** products should be designed so security updates can be installed separately from functionality updates where technically feasible.
+- **Security updates by design ([Annex I § 1(2)(c)][cra_annexI]):** products should ensure that vulnerabilities can be addressed through security updates, including, where applicable, automatic security updates enabled by default with a clear opt-out. Annex I, Part II § 2 adds that new security updates should be provided separately from functionality updates where technically feasible.
 - **Integrity protection ([Annex I § 1(2)(f)][cra_annexI]):** products should protect the integrity of programs, data, commands, and configuration against unauthorised manipulation.
 
-BSI TR-03183-1 reinforces this by requiring timely, integrity-protected security updates ([REQ_ER 4][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 reinforces this by requiring timely, integrity-protected security updates ([REQ_ER 4][bsi_tr_03183_p1]).
 
 For boot managers, update recovery and anti-rollback are also emerging as assessor-facing evidence topics under **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**. Treat bootloader and trust-chain updates as security-critical update flows, not just another firmware payload.
 
@@ -208,7 +208,8 @@ If you need to:
 - assess cryptographic mechanisms, use **[Cryptography under the CRA](../../resources/cryptography/cryptography-under-cra.md)**;
 - plan boot-manager evidence, use **[ETSI EN 304 623: Boot Managers](../../standards/eu/cra/en-304-623-boot-managers.md)**;
 - retain update evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**;
-- add Secure-by-Default release gates for automated updates, use ENISA's **[Automated maintenance and updates](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/20-automated-maintenance-and-updates.md)** playbook.
+- add Secure-by-Default release gates for automated updates, use ENISA's **[Automated maintenance and updates](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/20-automated-maintenance-and-updates.md)** playbook;
+- check your update mechanism against EU guidance written for manufacturers, use ENISA's **[Technical Advisory on Secure Update Mechanisms](https://www.enisa.europa.eu/publications/enisa-technical-advisory-on-secure-update-mechanisms)** (4 November 2026).
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

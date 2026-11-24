@@ -163,14 +163,14 @@ At minimum, RFC 9116 requires `Contact` and `Expires`. Add `Policy` so researche
 ```text
 Contact: mailto:security@example.com
 Contact: https://www.example.com/security/report
-Expires: 2027-01-01T00:00:00Z
+Expires: <YYYY-MM-DDThh:mm:ssZ, less than a year ahead>
 Policy: https://www.example.com/security
 Canonical: https://www.example.com/.well-known/security.txt
 Preferred-Languages: en
 Encryption: https://www.example.com/.well-known/pgp-key.txt
 ```
 
-Review the file before it expires. Stale contact details can cause vulnerability reports to be missed or sent to the wrong place.
+Set `Expires` to a date less than a year ahead, as RFC 9116 recommends, and review the file before it expires. Stale contact details can cause vulnerability reports to be missed or sent to the wrong place.
 
 ## Internal Vulnerability Handling Procedure Outline
 

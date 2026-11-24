@@ -16,13 +16,13 @@ Under modern regulations like the CRA, clear and comprehensive documentation is 
 
 ### 1.2. The Regulatory Requirement
 
-The primary legal basis for user documentation is **[Annex II of the CRA][cra_annexII]**, which outlines the "Information and instructions to be provided to the user." The BSI's technical guideline TR-03183-1 provides a corresponding set of requirements ([REQ_UD 1-6][bsi_tr_03183_p1]) that mirror the CRA's list.
+The primary legal basis for user documentation is **[Annex II of the CRA][cra_annexII]**, which sets out the "Information and instructions to the user". The BSI's technical guideline TR-03183-1 (v0.9.0) provides a corresponding set of requirements ([REQ_UD 1-6][bsi_tr_03183_p1]) that mirror the CRA's list.
 
 Failing to provide this information renders a product non-compliant.
 
 ### 1.3. Do I Really Need to Do This?
 
-**Yes.** Providing documentation is a non-negotiable legal requirement for any product with digital elements placed on the EU market. Market surveillance authorities will use the list in **[CRA Annex II][cra_annexII]** as an objective checklist, and missing information can block a product from the market.
+**Yes.** From 11 December 2027, providing this documentation is a non-negotiable legal requirement for any product with digital elements placed on the EU market. Market surveillance authorities will use the list in **[CRA Annex II][cra_annexII]** as an objective checklist, and missing information can block a product from the market.
 
 However, while the requirement to provide the information is absolute, the **form and audience** of that documentation can differ. The real question is not *if* you must provide it, but **"Who is the 'user' for my product?"**
 
@@ -49,19 +49,23 @@ You cannot place a product with digital elements on the EU market without provid
 Your user manual, whether printed or online, must include, at a minimum, the following information.
 
 ### 2.1 Product & Manufacturer Information
-- **Manufacturer's Details:** Name, registered trade name, and a postal address where they can be contacted. ([REQ_UD 1][bsi_tr_03183_p1])
+- **Manufacturer's Details:** Name, registered trade name or registered trademark, postal address, and an email address or other digital contact (plus the website, where available). ([REQ_UD 1][bsi_tr_03183_p1])
 - **Product Identification:** The product's type, batch, or serial number so it can be uniquely identified. ([REQ_UD 2][bsi_tr_03183_p1])
-- **Intended Use:** A clear description of the product's intended use, including the security environment provided by the manufacturer. ([REQ_UD 3][bsi_tr_03183_p1])
+- **Intended Use:** A clear description of the product's intended use, including the security environment provided by the manufacturer, its essential functionalities, and its security properties. ([REQ_UD 3][bsi_tr_03183_p1])
+- **Foreseeable Risks:** Any known or foreseeable circumstance, in intended use or reasonably foreseeable misuse, that may lead to significant cybersecurity risks.
+- **Declaration of Conformity:** Where applicable, the internet address at which the EU declaration of conformity can be accessed.
 
 ### 2.2 Security Properties & Configuration
 - **Security Features:** Any security properties of the product (e.g., "This product uses end-to-end encryption").
-- **Secure Configuration Guide:** Step-by-step instructions on how to securely install, configure, and operate the product. This should include guidance on changing default passwords. ([REQ_UD 5][bsi_tr_03183_p1])
-- **Included Software:** Information on the software components included in the product, including the open-source components. This is most easily accomplished by providing a link to a web page containing the product's SBOM. ([REQ_UD 6][bsi_tr_03183_p1])
+- **Secure Configuration Guide:** Step-by-step instructions on how to securely install, configure, and operate the product, from initial commissioning and throughout its lifetime. This should include guidance on changing default passwords. ([REQ_UD 5][bsi_tr_03183_p1])
+- **Effect of Changes:** How changes to the product can affect the security of data.
+- **Included Software:** If you decide to make the product's SBOM available to users, state where it can be accessed (Annex II point 9). This is optional under the CRA, and most easily done by linking to a web page containing the SBOM. ([REQ_UD 6][bsi_tr_03183_p1])
 
 ### 2.3 Support & Vulnerability Handling
-- **Support Period End-Date:** The month and year until which the user can expect to receive security updates. This is a critical requirement. ([REQ_UD 4][bsi_tr_03183_p1])
-- **How to Get Updates:** Instructions on how to receive and apply security updates, including whether the process is automatic or manual.
-- **How to Report Vulnerabilities:** A link to the manufacturer's Coordinated Vulnerability Disclosure (CVD) policy and instructions on how users can report a potential security issue.
+- **Support Period End-Date:** The type of technical security support offered, and the month and year until which the user can expect vulnerabilities to be handled and security updates to be provided. This is a critical requirement. ([REQ_UD 4][bsi_tr_03183_p1])
+- **How to Get Updates:** Instructions on how to receive and apply security updates, including whether the process is automatic or manual, and how to turn off automatic installation of security updates where it is enabled by default.
+- **How to Report Vulnerabilities:** The single point of contact for reporting vulnerabilities, and where the manufacturer's Coordinated Vulnerability Disclosure (CVD) policy can be found.
+- **Secure Decommissioning:** How to decommission the product securely, including how user data can be securely removed.
 
 ## 3. Compliance Checklist
 
@@ -71,11 +75,13 @@ To ensure your user documentation meets the CRA's requirements, use this checkli
 - [ ] **Product Identity:** Does the documentation specify how to identify the product's model and version?
 - [ ] **Intended Use:** Have you clearly described the product's function and expected security environment?
 - [ ] **Secure Setup Guide:** Are there clear, step-by-step instructions for secure installation and configuration?
-- [ ] **Support Period Defined:** Is the end-of-support date (at least month and year) explicitly stated?
+- [ ] **Foreseeable Risks:** Are known or foreseeable circumstances that may lead to significant cybersecurity risks described?
+- [ ] **Support Period Defined:** Is the end-of-support date (at least month and year) explicitly stated, with the type of security support offered?
+- [ ] **Updates and Decommissioning:** Do the instructions explain how to install security updates, how to turn off automatic updates, and how to decommission the product and remove user data securely?
 - [ ] **Vulnerability Reporting:** Is information provided on how to report a security vulnerability?
-- [ ] **SBOM/OSS Information:** Is there information on the software components, or a link to where it can be found?
+- [ ] **SBOM/OSS Information:** If you make the SBOM available to users, does the documentation say where it can be found?
 - [ ] **Accessibility:** Is the information provided in a clear and understandable way for a non-technical user?
 
 <!-- Citations -->
-[cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[cra_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_II "CRA Annex II – Information and instructions to the user"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

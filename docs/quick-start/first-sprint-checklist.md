@@ -21,6 +21,7 @@ By the end of the first sprint, aim to have:
 - a first product boundary and architecture note;
 - an initial CRA scope and readiness view;
 - a vulnerability reporting route or plan;
+- a CRA reporting route for actively exploited vulnerabilities and severe incidents, if the product is on the EU market;
 - a first evidence register;
 - a prioritised backlog for secure boot, identity, provisioning, OTA, SBOM/VEX, logging, and vulnerability handling.
 
@@ -47,6 +48,7 @@ Create the minimum operating routes for reports, dependencies, and security find
 | Generate an initial SBOM | SBOM format, build step, and storage location. | [SBOM & VEX Workflows](../implementation/build-phase/sbom-vex.md) |
 | Add dependency and secret scanning | CI checks or backlog items with owners. | [CI/CD Pipeline Hardening](../implementation/operate-phase/cicd-hardening.md) |
 | Define vulnerability intake handling | Triage owner, case log, severity method, and escalation path. | [Vulnerability Disclosure](../implementation/operate-phase/vulnerability-disclosure.md) |
+| Confirm the CRA reporting route | Single Reporting Platform access, CSIRT designated as coordinator for your main establishment, and an owner for the 24-hour, 72-hour, and final-report deadlines. CRA reporting has applied since 11 September 2026, including to products already on the market. | [CRA 5-Minute Primer](./cra-primer.md), [CRA Overview](../standards/eu/cra/index.md) |
 
 ## Sprint 3: Review Core Product Controls
 
@@ -69,6 +71,7 @@ Use this simple format for first-sprint secure-by-design work.
 | Product boundary | | Architecture note | Not started / In progress / Done | |
 | CRA scope check | | Scope note | Not started / In progress / Done | |
 | Vulnerability reporting route | | `security.txt`, policy draft | Not started / In progress / Done | |
+| CRA reporting route | | Platform access, reporting owner, deadline runbook | Not started / In progress / Done | |
 | SBOM generation | | SBOM artifact, CI job | Not started / In progress / Done | |
 | Secure boot review | | Boot-chain note, test plan | Not started / In progress / Done | |
 | OTA update review | | Update architecture, recovery tests | Not started / In progress / Done | |

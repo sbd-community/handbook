@@ -7,25 +7,26 @@ tags: [cra, compliance, eu, secure-by-design]
 
 ## 1. Why the CRA matters now
 
-The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates Secure-by-Design* for every **"product with digital elements" (PDE)**. It introduces objective-oriented and technology-neutral essential cybersecurity requirements that manufacturers must follow ([CRA Art. 1][cra_art1], [CRA Rec. 39][cra_rec39]).
+The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates Secure-by-Design* for every **"product with digital elements" (PDE)**. It introduces objective-oriented and technology-neutral essential cybersecurity requirements that manufacturers must follow ([CRA Art. 1][cra_art1], [CRA Rec. 8][cra_rec8]).
 
 :::info Official texts
 - **Official Journal** – legally binding record as published on 20 Nov 2024: [OJ:L_202402847 HTML][cra_oj].
 - **Consolidated Version** – integrates subsequent corrections: [CELEX:02024R2847-20241120 HTML][cra_consolidated].
-- **Implementing Regulation (EU) 2025/2392** – published 28 Nov 2025, provides official technical descriptions for product categories in Annexes III and IV: [OJ:L_202502392 HTML][cra_impl_oj]. See [Product Risk Classification](#product-risk-classes).
+- **Implementing Regulation (EU) 2025/2392** – adopted 28 Nov 2025 and published 1 Dec 2025, provides official technical descriptions for product categories in Annexes III and IV: [OJ:L_202502392 HTML][cra_impl_oj]. See [Product Risk Classification](#product-risk-classes).
 
 The consolidated version is easier for clause citations, but in case of doubt the official journal prevails.
 :::
 
 :::info Implementation Guidance
-While harmonised standards are still under development, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance. ENISA has also published a **[Secure by Design and Default Playbook][enisa_playbook]** with SME-oriented checklists, minimum evidence, and release gates, plus an indicative mapping to Annex I.
+While most CRA harmonised standards are still being finalised, Germany's Federal Office for Information Security (BSI) has published a detailed technical guideline that serves as a practical playbook for CRA compliance. ENISA has also published a **[Secure by Design and Default Playbook][enisa_playbook]** with SME-oriented checklists, minimum evidence, and release gates, plus an indicative mapping to Annex I.
 
-Several CRA harmonised standards are now available as mature drafts. They are not yet cited in the Official Journal and do not yet provide presumption of conformity, but they should be treated as important design inputs for relevant product categories. For boot managers, see **[ETSI EN 304 623: Boot Managers](./en-304-623-boot-managers.md)**, which explains the draft technical requirements and assessment criteria for boot managers under CRA Annex III Class I.
+The first CRA standards, EN 40000-1-1 and EN 40000-1-2, were published by CEN-CENELEC in November 2026, and the ETSI product-category standards are final drafts. None is yet cited in the Official Journal, so none yet provides presumption of conformity, but they should be treated as important design inputs for relevant product categories. For boot managers, see **[ETSI EN 304 623: Boot Managers](./en-304-623-boot-managers.md)**, which explains the draft technical requirements and assessment criteria for boot managers under CRA Annex III Class I.
 
 - **ENISA Secure by Design and Default Playbook**: [publication page][enisa_playbook] · [GitHub playbooks][enisa_github] · [handbook blog summary](/blog/2026/07/31/enisa-secure-by-design-default-playbook)
 - **BSI TR-03183**: [Cyber Resilience Requirements for Manufacturers and Products][bsi_tr_03183]
 - **CRA Harmonised Standards**: [overview and draft tracker](./harmonised-standards.md)
-- **European Commission FAQ**: [FAQs on the Cyber Resilience Act][ec_faq] (Version 1.0, 3 December 2025)
+- **European Commission FAQ**: [FAQs on the Cyber Resilience Act][ec_faq] (Version 1.4, 4 September 2026)
+- **European Commission guidance (Art. 26)**: [Communication C(2026) 6013 on CRA guidance][ec_guidance] (27 July 2026)
 :::
 
 | CRA milestone                                        | Legal basis | Date |
@@ -33,21 +34,22 @@ Several CRA harmonised standards are now available as mature drafts. They are no
 | Text adopted by Parliament & Council                 | Signing date | **2024-10-23** |
 | Published in the *Official Journal* (OJ L 2024/2847) | [CRA Official Journal][cra_oj] | **2024-11-20** |
 | Regulation entered into force (Art. 71 § 1 + 20 d)   | [CRA Art. 71 § 1][cra_art71] | **2024-12-10** |
-| Implementing Regulation on product categories published | [Impl. Reg. (EU) 2025/2392][cra_impl_oj] | **2025-11-28** |
-| Early duties for importers, distributors & authorised reps begin | [CRA Art. 71 § 2][cra_art71] | **2026-06-11** |
-| Vulnerability & incident reporting applies to manufacturers ([CRA Art. 14][cra_art14]) | [CRA Art. 69 § 3][cra_art69] | **2026-09-11** |
-| First set of harmonised standards published<br/>*See [The Role of Harmonised Standards](#harmonised-standards)* | [CRA Art. 27][cra_art27] | **Q2 2027 (est.)** |
+| Implementing Regulation on product categories published | [Impl. Reg. (EU) 2025/2392][cra_impl_oj] | **2025-12-01** |
+| Rules on notification of conformity assessment bodies (Chapter IV, Art. 35–51) apply | [CRA Art. 71 § 2][cra_art71] | **2026-06-11** |
+| Vulnerability & incident reporting applies to manufacturers ([CRA Art. 14][cra_art14]) | [CRA Art. 71 § 2][cra_art71] | **2026-09-11** |
+| First CRA standards published (EN 40000-1-1 and EN 40000-1-2); citation in the OJ still to come<br/>*See [The Role of Harmonised Standards](#harmonised-standards)* | [CRA Art. 27][cra_art27] | **Nov 2026** |
+| Commission target: sufficient conformity assessment bodies notified across Member States | [Commission implementation timeline][ec_cra_impl] | **2026-12-11** |
 | All CRA requirements apply (Annex I/II, CE-marking, enforcement) | [CRA Art. 71 § 2][cra_art71] | **2027-12-11** |
 
-**Early duties from 11 Jun 2026**  
-*Importers*, *distributors* & *authorised representatives* → must verify that a draft EU Declaration of Conformity and technical file exist, keep conformity documentation for **at least 10 years or the product's support period, whichever is longer**, and ensure storage/transport does not compromise firmware integrity ([CRA Ch. IV][cra_chIV]).  
-*Market-surveillance authorities* → gain power to sample, test, and order withdrawals or recalls of insecure products ([CRA Art. 35–51][cra_chV]).
+**Early provisions from 11 Jun 2026**  
+*Notifying authorities* & *conformity assessment bodies* → the rules for designating and notifying the bodies that carry out third-party conformity assessment apply ([CRA Ch. IV, Art. 35–51][cra_chIV]), so that notified bodies can be in place before the main obligations apply.  
+*Importers*, *distributors* & *authorised representatives* → their obligations, including checking the EU Declaration of Conformity and technical documentation and keeping it for **at least 10 years or the product's support period, whichever is longer**, apply with the rest of the Regulation from **11 Dec 2027**. Market-surveillance powers ([CRA Ch. V][cra_chV]) also apply from that date.
 
-**Early duties from 11 Sep 2026** ([EC FAQ 7.1][ec_faq])  
-*Manufacturers* → must operate a vulnerability-handling process:  
-• Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively-exploited vulnerability ([CRA Art. 14 § 1][cra_art14] + [CRA Art. 16][cra_art16], [EC FAQ 5.1–5.3][ec_faq])  
-• Publish a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI])  
-• If requested by a CSIRT, provide an intermediate report on the status of a vulnerability ([CRA Art. 14 § 6][cra_art14]).
+**Reporting obligations from 11 Sep 2026** ([CRA Art. 71 § 2][cra_art71], [EC FAQ 7.1][ec_faq])  
+*Manufacturers* → since 11 September 2026, must notify actively exploited vulnerabilities and severe incidents having an impact on the security of their products via ENISA's single reporting platform, which reaches the CSIRT designated as coordinator and ENISA simultaneously ([CRA Art. 14 § 1, 3][cra_art14] + [CRA Art. 16][cra_art16], [EC FAQ 5.1–5.3][ec_faq]):  
+• An early warning **without undue delay and in any event within 24 hours** of becoming aware, a notification within 72 hours, and a final report (for vulnerabilities, within 14 days after a corrective or mitigating measure is available; for incidents, within one month of the notification) ([CRA Art. 14 § 2, 4][cra_art14])  
+• If requested by the CSIRT, an intermediate report on status updates ([CRA Art. 14 § 6][cra_art14]).  
+These reporting duties also cover products placed on the market before 11 Dec 2027 ([CRA Art. 69 § 3][cra_art69]). The wider vulnerability-handling requirements of Annex I Part II, including a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI]), apply from 11 Dec 2027.
 
 **Grace-period end (11 Dec 2027)** – only Annex I/II-compliant PDEs may bear the CE mark; MSAs may recall or ban non-compliant goods; penalties up to **€ 15 million or 2.5 % of worldwide turnover** for non-compliance with essential requirements ([CRA Art. 64 § 2][cra_art64]).
 
@@ -55,19 +57,19 @@ Several CRA harmonised standards are now available as mature drafts. They are no
 
 | Law | How it interacts with CRA |
 |-----|---------------------------|
-| **[NIS 2 Directive](../nis2-overview.md)** | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 13][cra_rec13], [CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
+| **[NIS 2 Directive](../nis2-overview.md)** | Governs *organisational* cyber-risk; CRA covers *product* security. Manufacturers that are NIS-2 "essential" entities must comply with both. ([CRA Rec. 24][cra_rec24], [NIS 2 Art. 21 § 2][nis2_art21]) |
 | **[Radio Equipment Directive (RED)](../red-overview.md)** | Radio device security requirements exist in **[RED Art. 3 § 3 (d-f)][red_art3]**. CRA covers a wider range of products and its requirements include all elements of the RED's. ([CRA Recital 30][cra_rec30]) |
-| **RED Delegated Act** | Makes security clauses mandatory for certain wireless devices from **1 August 2025**. This date is the result of a 12-month extension, granted by **[Regulation (EU) 2023/2444][red_del_23_2444]**, to allow more time for harmonised standards to be developed. The original act is **[Regulation (EU) 2022/30][red_del_22_30]**. |
-| **CE-marking framework** | CRA **adds** cybersecurity to the CE mark through Articles **28–30**. A PDE may affix the mark only *after* Annex I/II compliance and completion of the appropriate conformity-assessment route. ([CRA Art. 28][cra_art28], [CRA Art. 30][cra_art30], [CRA Rec. 89][cra_rec89], [CRA Rec. 93][cra_rec93]) |
+| **RED Delegated Act** | Has made security clauses mandatory for certain wireless devices since **1 August 2025**. This date is the result of a 12-month extension, granted by **[Regulation (EU) 2023/2444][red_del_23_2444]**, to allow more time for harmonised standards to be developed. The original act is **[Regulation (EU) 2022/30][red_del_22_30]**. **[Delegated Regulation (EU) 2026/339][red_del_26_339]** repeals it with effect from **11 December 2027**, when the CRA applies in full; radio equipment placed on the market from 1 August 2025 to 10 December 2027 remains subject to it. |
+| **CE-marking framework** | CRA **adds** cybersecurity to the CE mark through Articles **28–30**. A PDE may affix the mark only *after* Annex I/II compliance and completion of the appropriate conformity-assessment route. ([CRA Art. 28][cra_art28], [CRA Art. 30][cra_art30], [CRA Rec. 89][cra_rec89]) |
 
 ## 2 Scope – which products are in?
 
 ### 2.1 Statutory Definition & Interpretation {#statutory-definition}
 
 #### Official Definition
-A **product with digital elements (PDE)** is *"any software or hardware product, and its remote data-processing solution, that is directly or indirectly connected to another device or network"* ([CRA Art. 3 § 1][cra_art3]). 
+A **product with digital elements (PDE)** is *"a software or hardware product and its remote data processing solutions, including software or hardware components being placed on the market separately"* ([CRA Art. 3 § 1][cra_art3]). The CRA applies to PDEs whose intended purpose or reasonably foreseeable use includes *"a direct or indirect logical or physical data connection to a device or network"* ([CRA Art. 2 § 1][cra_art2]).
 
-A **remote data-processing solution**, which is also in scope, is the cloud or back-end essential to the PDE's core function and *"designed and developed by, or under the responsibility of, the manufacturer"* ([CRA Art. 3 § 2][cra_art3], see also [CRA Recital 11][cra_rec11]).
+A **remote data-processing solution**, which is also in scope, is data processing at a distance whose absence would prevent the PDE from performing one of its functions, and for which the software is *"designed and developed by the manufacturer, or under the responsibility of the manufacturer"* ([CRA Art. 3 § 2][cra_art3], see also [CRA Recital 11][cra_rec11]).
 
 #### Interpretation
 This broad definition effectively covers almost any modern electronic device or piece of software. The [EC FAQ (§1.1)][ec_faq] identifies three cumulative elements that determine if a product is in scope:
@@ -113,7 +115,7 @@ The CRA's mandatory security obligations are detailed in **[CRA Annex I][cra_ann
 - **Part I** defines the **product security requirements** that must be designed into the device from the start.
 - **Part II** defines the **vulnerability handling requirements** the manufacturer must follow throughout the product's support lifecycle.
 
-The following tables translate those legal requirements into a practical engineering checklist. To provide a more concrete technical interpretation, they also map each CRA clause to the corresponding requirement in Germany's influential **BSI TR-03183** technical guideline. It is important to note that the BSI TR is an official *guideline* from a national cybersecurity agency, designed as a playbook for compliance, not a legal text itself. Each row links to the relevant implementation guide in this handbook, providing a clear, actionable path from the legal text to the code and configuration required for compliance.
+The following tables translate those legal requirements into a practical engineering checklist. To provide a more concrete technical interpretation, they also map each CRA clause to the corresponding requirement in Germany's influential **BSI TR-03183** technical guideline. The BSI identifiers cited are from TR-03183-1 version 0.9.0, which BSI has since superseded with version 1.0.0 (restructured, with different identifiers). It is important to note that the BSI TR is an official *guideline* from a national cybersecurity agency, designed as a playbook for compliance, not a legal text itself. Each row links to the relevant implementation guide in this handbook, providing a clear, actionable path from the legal text to the code and configuration required for compliance.
 
 ### 3.1 Risk Assessment & Threat Modeling
 
@@ -162,15 +164,15 @@ For embedded-device manufacturers, the practical lesson is that secure boot cann
 
 ### 3.3 Vulnerability handling (Annex I Part II)
 
-The CRA makes it a **hard-wired legal duty** for manufacturers to "address and remediate vulnerabilities without undue delay" throughout the product's entire lifecycle ([Annex I, Part II, § 2][cra_annexI], [EC FAQ 4.3.1–4.3.7][ec_faq]). This obligation lasts for a mandatory **support period**, which the manufacturer must define. This period cannot be shorter than **five years** from the date the product is placed on the market, unless its expected usable life is shorter ([CRA Art. 13 § 8, 9][cra_art13], [EC FAQ 4.5.1–4.5.3][ec_faq]). During this time, security updates must be provided free of charge.
+The CRA makes it a **hard-wired legal duty** for manufacturers to "address and remediate vulnerabilities without delay" throughout the product's entire lifecycle ([Annex I, Part II, § 2][cra_annexI], [EC FAQ 4.3.1–4.3.7][ec_faq]). This obligation lasts for a mandatory **support period**, which the manufacturer must define. This period cannot be shorter than **five years** from the date the product is placed on the market, unless its expected usable life is shorter ([CRA Art. 13 § 8, 9][cra_art13], [EC FAQ 4.5.1–4.5.3][ec_faq]). During this time, security updates must be provided free of charge.
 
 | Obligations | Engineering Tasks | Implementation Guides |
 |---------------|----------------------|-------------------|
 | **Identify components (SBOM)**<br/>[Annex I Part II § 1][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 1][bsi_tr_03183_p1]<br/>[BSI TR-03183-2 § 5.2][bsi_tr_03183_p2] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components. | [SBOM & VEX Workflows](../../../implementation/build-phase/sbom-vex.md) |
-| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1]<br/>[EC FAQ 4.3.1, 4.3.5][ec_faq] | Address and remediate vulnerabilities without undue delay, providing timely security updates via a secure mechanism. | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../../implementation/operate-phase/patch-cadence.md) |
+| **Handle & remediate vulnerabilities**<br/>[Annex I Part II § 2, 7, 8][cra_annexI]<br/>[BSI TR-03183-1: REQ_ER 4, REQ_VH 6][bsi_tr_03183_p1]<br/>[EC FAQ 4.3.1, 4.3.5][ec_faq] | Address and remediate vulnerabilities without delay, providing timely security updates via a secure mechanism. | [Secure OTA Updates](../../../implementation/build-phase/ota-updates.md)<br/>[Patch Cadence](../../../implementation/operate-phase/patch-cadence.md) |
 | **Regular security testing**<br/>[Annex I Part II § 3][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 3][bsi_tr_03183_p1] | Regularly test the product for vulnerabilities using both internal processes and independent experts. | [Static & Dynamic Analysis](../../../tools/static-and-dynamic-analysis.md) |
-| **Public vulnerability information**<br/>[Annex I Part II § 4, 5][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.3][bsi_tr_03183_p3] | Inform users about fixed vulnerabilities, their impact, and mitigation steps via security advisories. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
-| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Publish a clear vulnerability disclosure policy and provide an easily accessible contact channel for vulnerability reporting. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Public vulnerability information**<br/>[Annex I Part II § 4][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 5][bsi_tr_03183_p1]<br/>[BSI TR-03183-3 § 4.4.10][bsi_tr_03183_p3] | Inform users about fixed vulnerabilities, their impact, and mitigation steps via security advisories. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
+| **Coordinated Vulnerability Disclosure**<br/>[Annex I Part II § 5, 6][cra_annexI]<br/>[BSI TR-03183-1: REQ_VH 2][bsi_tr_03183_p1] | Publish a clear vulnerability disclosure policy and provide an easily accessible contact channel for vulnerability reporting. | [Vulnerability Disclosure](../../../implementation/operate-phase/vulnerability-disclosure.md) |
 
 #### How Vulnerabilities are Discovered and Handled
 
@@ -181,7 +183,7 @@ The CRA anticipates that vulnerabilities will be discovered through multiple cha
 | **Internal Security Testing** | [Annex I, Part II, § 3][cra_annexI]: *"apply effective and regular tests and reviews"* | DevSecOps pipelines flag flaws before and after release; automated SBOM scanning against vulnerability databases (e.g., NVD) catches new CVEs in third-party libraries. |
 | **Supply-Chain Monitoring** | [Annex I, Part II, § 1, 2][cra_annexI]: *"identify and document components... address and remediate vulnerabilities"* | The manufacturer monitors advisories for all components in their SBOM (e.g., OpenSSL, Linux kernel, RTOS, chipset firmware) and integrates or back-ports security patches. |
 | **Coordinated Disclosure** | [Annex I, Part II, § 5, 6][cra_annexI], [Recital 76][cra_rec76] | Security researchers, customers, or bug bounty hunters report flaws via the manufacturer's published CVD policy and secure contact channel. |
-| **In-Field Detection** | [Art. 14][cra_art14], [Annex I, Part II, § 4, 8][cra_annexI] | If active exploitation is detected in the wild, the manufacturer must: (i) notify the designated CSIRT **without undue delay** (within 24h), (ii) develop a remediation, and (iii) provide a security update to users. |
+| **In-Field Detection** | [Art. 14][cra_art14], [Annex I, Part II, § 4, 8][cra_annexI] | If active exploitation is detected in the wild, the manufacturer must: (i) send an early warning via the single reporting platform **within 24 hours** of becoming aware, (ii) develop a remediation, and (iii) provide a security update to users. |
 
 ### 3.4 Other Key Obligations
 
@@ -192,18 +194,18 @@ Beyond the direct product and vulnerability requirements in Annex I, the CRA imp
 | **Technical documentation**<br/>[CRA Art. 31, Annex VII][cra_art31] | Create & maintain technical file with risk assessment, SBOM, design specs, and evidence of Annex I compliance. Keep for **at least 10 years or the support period, whichever is longer**. **Evidence:** Technical file. | n/a |
 | **Conformity & CE mark**<br/>[CRA Art. 13(12), 28, 30][cra_art13] | Perform conformity assessment (self-assessment or third-party audit); draw up EU Declaration of Conformity (DoC); affix CE mark. **Evidence:** DoC, Notified Body certificate (if applicable). | n/a |
 | **Information to users**<br/>[CRA Art. 13(17-19), Annex II][cra_art13] | Provide clear instructions on intended use, secure configuration, support period end-date, and how to report vulnerabilities. **Evidence:** User manual/documentation. | [User Documentation Guide](../../../implementation/build-phase/user-documentation.md) |
-| **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Notify the designated CSIRT **without undue delay** (expected within 24h) of an actively exploited vulnerability. If requested, provide intermediate status reports. **Evidence:** Incident logs. | n/a |
+| **ENISA reporting**<br/>[CRA Art. 14][cra_art14] | Since 11 September 2026, notify actively exploited vulnerabilities and severe incidents via ENISA's single reporting platform: early warning **within 24 hours**, notification within 72 hours, then a final report. If requested, provide intermediate status reports. **Evidence:** Incident logs. | n/a |
 
-\* *Dates derive from [CRA Art. 71 § 2][cra_art71] and [Art. 69 § 3][cra_art69]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 begin earlier, at 21 months.*
+\* *Dates derive from [CRA Art. 71 § 2][cra_art71] and [Art. 69 § 3][cra_art69]: most obligations apply 36 months after entry into force (2024-12-10). Reporting duties under Art. 14 began earlier, at 21 months (11 September 2026).*
 
 ## 4 Self-Assessment vs. Third-Party Audit? {#conformity-assessment-routes}
 
 ### 4.1 Product Risk Classification (The Four Tiers) {#product-risk-classes}
 
-The CRA establishes a four-tier risk classification system ([EC FAQ 3.1–3.4][ec_faq]). A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all 28 product categories, clarifying exactly which products fall into each tier.
+The CRA establishes a four-tier risk classification system ([EC FAQ 3.1–3.4][ec_faq]). A product's classification determines the conformity assessment procedure it must undergo before receiving a CE mark. The classification depends on whether the product is listed in [CRA Annex III][cra_annexIII] or [CRA Annex IV][cra_annexIV] of the regulation. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all 26 product categories, clarifying exactly which products fall into each tier.
 
 - **Default Category (Unclassified):** This is the baseline tier for the vast majority (~90%) of products with digital elements. It covers any product **not listed** in Annex III or Annex IV.
-    - **Assessment:** Manufacturers can perform a self-assessment (**Module A**). The manufacturer retains the flexibility to choose a stricter conformity assessment procedure involving a third party if they wish ([CRA Art. 32 § 1][cra_art32], [CRA Rec. 93][cra_rec93]).
+    - **Assessment:** Manufacturers can perform a self-assessment (**Module A**). The manufacturer retains the flexibility to choose a stricter conformity assessment procedure involving a third party if they wish ([CRA Art. 32 § 1][cra_art32], [CRA Rec. 91][cra_rec91]).
     - *Example:* A smart toaster, a simple connected sensor, or a general-purpose software library.
 
 - **Important Products — Class I:** This tier covers products listed in **[CRA Annex III, Part I][cra_annexIII]**. These products perform functions critical to cybersecurity or pose a significant risk of disruption ([CRA Art. 7 § 2][cra_art7]).
@@ -296,7 +298,7 @@ Once a manufacturer has determined their product's risk class using the tiers ab
 
 ### 4.3 The Role of Harmonised Standards {#harmonised-standards}
 
-A **harmonised standard (hEN)** is a standard created by a European Standardisation Organisation (e.g., ETSI) following a formal request from the European Commission. When a product complies with a relevant hEN—such as **[ETSI EN 303 645][en303645]** for consumer IoT—it gains a **"presumption of conformity"** with the CRA's essential requirements ([CRA Art. 27][cra_art27]).
+A **harmonised standard (hEN)** is a standard created by a European Standardisation Organisation (e.g., ETSI) following a formal request from the European Commission. When a product complies with a relevant hEN whose reference has been published in the Official Journal, it gains a **"presumption of conformity"** with the CRA's essential requirements covered by that standard ([CRA Art. 27][cra_art27]). Widely used European standards such as **[ETSI EN 303 645][en303645]** for consumer IoT are useful inputs but are not CRA harmonised standards.
 
 This provides two key benefits for manufacturers:
 
@@ -304,7 +306,7 @@ This provides two key benefits for manufacturers:
 2.  **Simpler Documentation:** The manufacturer can cite the harmonised standard in their EU Declaration of Conformity, rather than documenting compliance with every requirement in Annex I individually.
 
 :::tip Harmonised Standards Timeline
-The first harmonised standards for the CRA are expected to be published in the Official Journal around **Q2 2027** ([EC FAQ 6.10][ec_faq]). This follows a standardisation request ([Mandate M/606][mandate_m606]) and an 18-24 month drafting period. Per the FAQ, ESOs are targeting: horizontal standards on secure design/development and vulnerability handling by Aug 2026; vertical standards for Important/Critical categories by Oct 2026; and property requirements standard by Oct 2027.
+The first CRA standards, **EN 40000-1-1** (vocabulary) and **EN 40000-1-2** (principles, product risk management and lifecycle activities), were published by CEN-CENELEC in November 2026 ([CEN-CENELEC announcement][cen_en_40000]). Their references are not yet cited in the Official Journal; the Commission assesses each adopted standard before citing it ([CRA Art. 27 § 6][cra_art27], [EC FAQ 6.10][ec_faq]). Under the standardisation request ([Mandate M/606][mandate_m606]), as amended by Commission Implementing Decision C(2026)7861 of 10 November 2026, the European standardisation organisations must adopt the horizontal standards on secure design and development and on vulnerability handling by **30 November 2026**, the vertical standards for Important and Critical categories by **31 January 2027**, and the standards on product properties by **30 October 2027** ([Commission CRA standardisation page][ec_cra_std]).
 :::
 
 *In the absence of a suitable harmonised standard, the Commission may issue a **common specification** to provide the same presumption of conformity ([CRA Art. 27 § 2, 5][cra_art27]).*
@@ -322,7 +324,7 @@ The first harmonised standards for the CRA are expected to be published in the O
 [cra_art6]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_6 "CRA Article 6 – Essential requirements"
 [cra_art7]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_7 "CRA Article 7 – Important products with digital elements"
 [cra_art8]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_8 "CRA Article 8 – Critical products with digital elements"
-[cra_art11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_11 "CRA Article 11 – More specific Union law"
+[cra_art11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_11 "CRA Article 11 – General product safety"
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
 [cra_art16]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_16 "CRA Article 16 – Establishment of a single reporting platform"
@@ -348,27 +350,31 @@ The first harmonised standards for the CRA are expected to be published in the O
 [cra_rec9]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_9 "CRA Recital 9 – All connected products as potential attack vectors"
 [cra_rec11]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_11 "CRA Recital 11 – Remote data processing"
 [cra_rec12]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_12 "CRA Recital 12 – Cloud services vs remote data processing"
-[cra_rec13]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_13 "CRA Recital 13 – Relationship with NIS 2"
 [cra_rec15]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_15 "CRA Recital 15 – Definition of commercial activity"
 [cra_rec18]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_18 "CRA Recital 18 – Non-commercial free and open-source software"
 [cra_rec19]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_19 "CRA Recital 19 – Open-source software stewards"
 [cra_rec24]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_24 "CRA Recital 24 – Relationship with other Union law"
 [cra_rec30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_30 "CRA Recital 30 – Relationship with Radio Equipment Directive (RED)"
-[cra_rec39]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_39 "CRA Recital 39 – Objective-oriented and technology-neutral requirements"
+[cra_rec8]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_8 "CRA Recital 8 – Objective-oriented and technology-neutral requirements"
 [cra_rec76]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_76 "CRA Recital 76 - Coordinated vulnerability disclosure"
 [cra_rec89]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_89 "CRA Recital 89 – General principles of the CE marking"
-[cra_rec93]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_93 "CRA Recital 93 – Conformity assessment procedures"
+[cra_rec91]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202402847#rct_91 "CRA Recital 91 – Internal control and choice of conformity assessment procedure"
 [nis2_art21]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022L2555#art_21 "Cybersecurity risk-management measures"
 [red_dir]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053 "Directive 2014/53/EU (Radio Equipment Directive) – full text"
 [red_art3]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0053#art_3 "RED Article 3 – Essential Requirements"
 [red_del_22_30]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0030 "Delegated Regulation (EU) 2022/30"
 [red_del_23_2444]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R2444 "Delegated Regulation (EU) 2023/2444"
+[red_del_26_339]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R0339 "Delegated Regulation (EU) 2026/339 repealing Delegated Regulation (EU) 2022/30"
 [bsi_tr_03183]: https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/TR-nach-Thema-sortiert/tr03183/TR-03183_node.html "BSI Technical Guideline TR-03183"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
-[bsi_tr_03183_p2]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-2-2_0_0.pdf "BSI TR-03183 Part 2: Software Bill of Materials (SBOM)"
-[bsi_tr_03183_p3]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-3-0_9_0.pdf "BSI TR-03183 Part 3: Vulnerability Reports and Notifications"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, version 0.9.0 (superseded by version 1.0.0)"
+[bsi_tr_03183_p2]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-2_v2_1_0.pdf?__blob=publicationFile "BSI TR-03183 Part 2: Software Bill of Materials (SBOM), version 2.1.0"
+[bsi_tr_03183_p3]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-3_v1_0_0.pdf?__blob=publicationFile "BSI TR-03183 Part 3: Vulnerability Reports and Notifications, version 1.0.0"
 [mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
+[ec_guidance]: https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation "European Commission – Communication C(2026) 6013 on Cyber Resilience Act guidance (27 July 2026)"
+[ec_cra_impl]: https://digital-strategy.ec.europa.eu/en/factpages/cyber-resilience-act-implementation "European Commission – Cyber Resilience Act implementation"
+[ec_cra_std]: https://digital-strategy.ec.europa.eu/en/policies/cra-standardisation "European Commission – Cyber Resilience Act standardisation"
+[cen_en_40000]: https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-11-19-cra-standards-en-40000-1-1-and-en-40000-1-2/ "CEN-CENELEC: first European standards supporting the CRA"
 [en303645]: https://www.etsi.org/deliver/etsi_en/303600_303699/303645/03.01.03_60/en_303645v030103p.pdf "ETSI EN 303 645 - Cyber Security for Consumer Internet of Things: Baseline Requirements"
-[ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.0, 3 December 2025)"
+[ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.4, 4 September 2026)"
 [enisa_playbook]: https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook "ENISA Secure by Design and Default Playbook"
 [enisa_github]: https://github.com/enisaeu/enisa-sbd-playbook/ "ENISA Secure by Design and Default playbooks on GitHub"

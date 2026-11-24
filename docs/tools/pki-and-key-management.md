@@ -29,9 +29,9 @@ The following platforms provide the infrastructure needed to issue and manage de
 | :--- | :--- | :--- |
 | [QuarkLink](https://quarklink.io/product/) | 💰 | A comprehensive IoT security platform that includes a robust, scalable PKI for issuing and managing device certificates throughout the product lifecycle. |
 | [Keyfactor EJBCA & Command](https://www.keyfactor.com/products/ejbca-enterprise/) | 🐙💰 | An open-source, enterprise-grade CA software solution (EJBCA) paired with a commercial Certificate Lifecycle Management (CLM) platform (Command). |
-| [Nexus Go IoT](https://www.nexusgroup.com/solutions/online-services/iot/) | 💰 | A PKI service delivered from the cloud, specifically designed for issuing and managing certificates for IoT devices to automate onboarding. |
-| [DigiCert IoT Trust Manager](https://www.digicert.com/iot-trust-manager) | 💰 | A comprehensive commercial platform that combines a high-availability CA with device and certificate lifecycle management at large scale. |
-| [Kudelski IoT keyStream](https://www.kudelski-iot.com/services-and-systems/keystream-iot-security-system) | 💰 | An end-to-end security solution that provides device-to-cloud data protection, including secure identity provisioning and PKI management. |
+| [Nexus GO IoT](https://nexus.ingroupe.com/solutions/online-services/iot/) | 💰 | A PKI service delivered from the cloud, specifically designed for issuing and managing certificates for IoT devices to automate onboarding. |
+| [DigiCert Device Trust Manager](https://www.digicert.com/device-trust-manager) | 💰 | A commercial platform for IoT device identity and certificate lifecycle management at scale, with zero-touch provisioning and support for EST, SCEP, ACME, and CMPv2. |
+| [Kudelski Labs keySTREAM](https://www.kudelskilabs.com/embedded-security-solutions/keystream) | 💰 | An end-to-end security solution that provides device-to-cloud data protection, including secure identity provisioning and PKI management. |
 | [Crypto Posture](https://crypto-posture.com/) | 💰 | A different kind of product: a governance platform for PQC migration and cryptographic posture, helping teams track policies, scoped applications and services, remediation, exceptions, and evidence rather than issuing device certificates directly. |
 
 <!-- vale off -->

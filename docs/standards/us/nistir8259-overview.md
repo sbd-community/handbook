@@ -13,11 +13,11 @@ While not a law itself, this document series serves as an authoritative, globall
 
 :::info Official Texts
 The series includes several key documents that build upon each other:
-- **[NIST IR 8259: Foundational Cybersecurity Activities for IoT Device Manufacturers][nistir8259]**: The core document outlining recommended activities for manufacturers to perform before and after their products go to market.
+- **[NIST IR 8259 Rev. 1: Foundational Cybersecurity Activities for IoT Product Manufacturers][nistir8259]**: The core document outlining recommended activities for manufacturers in the pre-market and post-market phases. Revision 1 (April 2026) superseded the original 2020 edition and shifts the focus from IoT devices to IoT products, meaning the device together with its supporting product components.
 - **[NIST IR 8259A: IoT Device Cybersecurity Capability Core Baseline][nistir8259a]**: Defines a baseline of technical capabilities (e.g., device identity, secure update, data protection) that IoT devices should possess to be considered securable.
 - **[NIST IR 8259B: IoT Non-Technical Supporting Capability Core Baseline][nistir8259b]**: Defines the non-technical actions manufacturers should take to support customers, such as documentation and vulnerability disclosure.
-- **[NIST IR 8425: Profile for the IoT Core Baseline for Consumer IoT Products][nistir8425]**: The technical profile that underpins the **[FCC Cyber Trust Mark](./fcc-cyber-trust-mark-overview.md)** program.
-- **[NIST IR 8562: Workshop Report on Updating Manufacturer Guidance][nistir8562]**: A summary of feedback that indicates the future direction of the 8259 series.
+- **[NIST IR 8425: Profile of the IoT Core Baseline for Consumer IoT Products][nistir8425]**: The technical profile that underpins the **[FCC Cyber Trust Mark](./fcc-cyber-trust-mark-overview.md)** program.
+- **[NIST IR 8562: Workshop on Updating Manufacturer Guidance for Securable Connected Product Development][nistir8562]**: A summary of workshop feedback that informed the revision of the 8259 series.
 :::
 
 **Relationship to Other Standards & Laws**
@@ -26,7 +26,7 @@ The series includes several key documents that build upon each other:
 |---|---|
 | **[US IoT Cybersecurity Improvement Act][us_iot_act]** | The series provides the technical baseline that underpins this law, which applies to any IoT device sold to the U.S. federal government. |
 | **[FCC Cyber Trust Mark](./fcc-cyber-trust-mark-overview.md)** | This voluntary labeling program uses NIST guidance as its technical foundation. The specific requirements for the mark are based on NIST work, making the 8259 series essential reading for any manufacturer seeking the label. |
-| **[ETSI EN 303 645](../global/en303645-overview.md)** | Both establish a baseline for IoT security. EN 303 645 is more focused on consumer IoT and has become a harmonised standard for EU law, while the NIST series is more of a technical capabilities inventory applicable to any IoT device. There is significant overlap in their principles. |
+| **[ETSI EN 303 645](../global/en303645-overview.md)** | Both establish a baseline for IoT security. EN 303 645 is more focused on consumer IoT and underpins several national consumer IoT regimes (such as the UK PSTI regime), while the NIST series is more of a technical capabilities inventory applicable to any IoT device. There is significant overlap in their principles. |
 | **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | Similar to EN 303 645, the principles in the NIST series align closely with the essential requirements in CRA Annex I. A manufacturer compliant with the NIST baseline would be well-positioned for CRA compliance. |
 
 ## 2. Requirements & How to Implement Them
@@ -68,7 +68,7 @@ While the NIST IR 8259 series is voluntary guidance, conformance with its princi
 
 ## 4. Future Direction – NIST IR 8562
 
-The cybersecurity landscape is constantly evolving, and so is NIST's guidance. In 2024, NIST held a workshop to discuss the future of the 8259 series, and the key findings were published in **[NIST IR 8562][nistir8562]**. This report signals the direction that future mandatory and voluntary requirements are likely to take in the US.
+The cybersecurity landscape is constantly evolving, and so is NIST's guidance. In 2024, NIST held a workshop to discuss the future of the 8259 series, and the key findings were published in **[NIST IR 8562][nistir8562]**. NIST then published **[NIST IR 8259 Rev. 1][nistir8259]** on 20 April 2026, retitled *Foundational Cybersecurity Activities for IoT Product Manufacturers*, which carries the shift from devices to products into the core document. NIST IR 8259A and 8259B have not been revised.
 
 The key takeaways signal a move towards a more holistic and context-aware approach to IoT security:
 - **Software Lifecycle**: Increased focus on the security of the software development lifecycle, not just the final product.
@@ -78,8 +78,8 @@ The key takeaways signal a move towards a more holistic and context-aware approa
 
 <!-- Citations -->
 [us_iot_act]: https://www.congress.gov/bill/116th-congress/house-bill/1668 "IoT Cybersecurity Improvement Act of 2020"
-[nistir8259]: https://doi.org/10.6028/NIST.IR.8259 "NIST IR 8259: Foundational Cybersecurity Activities for IoT Device Manufacturers"
+[nistir8259]: https://doi.org/10.6028/NIST.IR.8259r1 "NIST IR 8259 Rev. 1: Foundational Cybersecurity Activities for IoT Product Manufacturers (April 2026)"
 [nistir8259a]: https://doi.org/10.6028/NIST.IR.8259A "NIST IR 8259A: IoT Device Cybersecurity Capability Core Baseline"
 [nistir8259b]: https://doi.org/10.6028/NIST.IR.8259B "NIST IR 8259B: IoT Non-Technical Supporting Capability Core Baseline"
 [nistir8425]: https://doi.org/10.6028/NIST.IR.8425 "NIST IR 8425: Profile of the IoT Core Baseline for Consumer IoT Products"
-[nistir8562]: https://doi.org/10.6028/NIST.IR.8562 "NIST IR 8562: Future of the NIST IoT Cybersecurity Program" 
+[nistir8562]: https://doi.org/10.6028/NIST.IR.8562 "NIST IR 8562: Summary Report for Workshop on Updating Manufacturer Guidance for Securable Connected Product Development" 

@@ -14,7 +14,7 @@ A critical feature of the MDR is its emphasis on software and cybersecurity. For
 
 :::info Official Texts
 - **Official Journal**: [EUR-Lex 32017R0745][mdr_oj]
-- **Consolidated Version**: [EUR-Lex 02017R0745-20250110][mdr_consolidated]
+- **Consolidated Version**: [EUR-Lex 02017R0745-20261109][mdr_consolidated]
 :::
 
 :::info Key Guidance & State of the Art
@@ -31,15 +31,15 @@ Because the "state of the art" in cybersecurity evolves rapidly, guidance from o
 | :--- | :--- | :--- |
 | **2017-05-25** | MDR entered into force. | [MDR Art. 123(1)][mdr_art123] |
 | **2021-05-26** | MDR fully applies, replacing the MDD. | [MDR Art. 123(2)][mdr_art123] |
-| **2027-12-31** | End of transition for higher-risk (Class III, IIb) devices certified under the old MDD. | [Regulation (EU) 2023/607][mdr_transition_reg] |
-| **2028-12-31** | End of transition for lower-risk (Class IIa, I) devices certified under the old MDD. | [Regulation (EU) 2023/607][mdr_transition_reg] |
+| **2027-12-31** | End of transition, under conditions, for legacy devices in Class III and Class IIb implantable (with some exceptions) covered by the old MDD/AIMDD. | [Regulation (EU) 2023/607][mdr_transition_reg] |
+| **2028-12-31** | End of transition, under conditions, for other legacy Class IIb, Class IIa, and sterile or measuring Class I devices. | [Regulation (EU) 2023/607][mdr_transition_reg] |
 
 **Relationship to other EU laws**
 
 | Law | How it interacts with the MDR |
 |-----|---------------------------|
 | **[Cyber-Resilience Act (CRA)](./cra/index.md)** | Products qualifying as medical devices under the MDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The MDR is considered *lex specialis*—more specific legislation that provides its own comprehensive set of cybersecurity rules. |
-| **[GDPR](https://gdpr-info.eu/)** | Medical devices often process sensitive health data, making compliance with the General Data Protection Regulation essential. The MDR's security requirements provide a foundation for protecting this data. |
+| **[GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679)** | Medical devices often process sensitive health data, making compliance with the General Data Protection Regulation essential. The MDR's security requirements provide a foundation for protecting this data. |
 | **[IVDR](./ivdr-overview.md)** | The IVDR is a parallel regulation covering in vitro diagnostic devices. Its structure and cybersecurity requirements are nearly identical to the MDR's. |
 
 ## 2. Scope & Classification
@@ -81,7 +81,7 @@ The following table translates the MDR's General Safety and Performance Requirem
 | **Information to Users**<br/>[MDR Annex I, §23.4][mdr_annexI_23_4]<br/>[MDCG 2019-16, §4.2][mdcg_2019_16_s4_2] | Provide clear Instructions for Use (IFU) including: minimum IT requirements; secure configuration guidance; network port/protocol details; instructions for secure deployment and updates; and details of backup/restore features. Maintain security information in an electronic form to allow for dynamic updates. | [User Documentation](../../implementation/build-phase/user-documentation.md) |
 | **No Known Vulnerabilities (*)**<br/>[CRA Annex I §1(2)(a)][cra_annexI] | Ship without known exploitable vulnerabilities. Establish a process to identify vulnerabilities in all product components, including third-party software. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
 | **Regular Security Testing (*)**<br/>[CRA Annex I, Part II, §3][cra_annexI] | Regularly test the product for vulnerabilities using both internal processes (e.g., SAST/DAST) and independent experts (e.g., penetration testing). | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Identify Components (SBOM) (*)**<br/>[CRA Art. 13 §3][cra_art13] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components to facilitate vulnerability management. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Identify Components (SBOM) (*)**<br/>[CRA Annex I Part II §1][cra_annexI] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components to facilitate vulnerability management. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
 | **Coordinated Vulnerability Disclosure (*)**<br/>[CRA Art. 13(8)][cra_art13] | Publish a clear Coordinated Vulnerability Disclosure (CVD) policy and provide an easily accessible contact channel for third parties to report vulnerabilities. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Minimum Support Period (*)**<br/>[CRA Art. 13(8)][cra_art13] | Define and publish the minimum length of time security updates will be provided. This support period should be appropriate for the device type and its expected lifetime. | [Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 
@@ -99,7 +99,7 @@ The role of the Notified Body includes:
 |---|---|---|
 | **Class I** | Manufacturer prepares technical documentation and declares conformity. | **No**, unless the device is sterile (Is), has a measuring function (Im), or is a reusable surgical instrument (Ir). |
 | **Class IIa** | Audit of the QMS and assessment of technical documentation for at least one representative device per category. | ✅ **Yes** |
-| **Class IIb** | Audit of the QMS and assessment of technical documentation for at least one representative device per generic group. For implantables, assessment of every device's technical documentation is required. | ✅ **Yes** |
+| **Class IIb** | Audit of the QMS and assessment of technical documentation for at least one representative device per generic group. For implantables, assessment of every device's technical documentation is required, except for certain well-established implantables listed in [MDR Art. 52(4)][mdr_art52] (list extended by Delegated Regulation (EU) 2026/1359). | ✅ **Yes** |
 | **Class III** | Full audit of the QMS and scrutiny of every device's technical documentation. May require consultation with expert panels. | ✅ **Yes** |
 
 ## 5. Post-Market Surveillance & Vigilance
@@ -126,20 +126,20 @@ For cybersecurity, the technical documentation must include:
 
 <!-- Citations -->
 [mdr_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32017R0745 "MDR Official Journal"
-[mdr_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110 "MDR Consolidated Version"
-[mdr_art52]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_52 "MDR Article 52 - Conformity assessment procedures"
-[mdr_art83]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_83 "MDR Article 83 - Post-market surveillance system"
-[mdr_art86]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_86 "MDR Article 86 - Periodic safety update report"
-[mdr_art87]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_87 "MDR Article 87 - Reporting of serious incidents"
-[mdr_art123]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#art_123 "MDR Article 123 - Entry into force and date of application"
+[mdr_consolidated]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109 "MDR Consolidated Version"
+[mdr_art52]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#art_52 "MDR Article 52 - Conformity assessment procedures"
+[mdr_art83]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#art_83 "MDR Article 83 - Post-market surveillance system"
+[mdr_art86]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#art_86 "MDR Article 86 - Periodic safety update report"
+[mdr_art87]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#art_87 "MDR Article 87 - Reporting of serious incidents"
+[mdr_art123]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#art_123 "MDR Article 123 - Entry into force and date of application"
 [mdr_transition_reg]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R0607 "Regulation (EU) 2023/607 on transitional provisions"
-[mdr_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_I "MDR Annex I – General Safety and Performance Requirements"
-[mdr_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_II "MDR Annex II - Technical Documentation"
-[mdr_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_III "MDR Annex III - Technical Documentation on Post-Market Surveillance"
-[mdr_annexI_3]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_I "MDR Annex I, Section 3 - Risk management system"
-[mdr_annexI_17_2]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_I "MDR Annex I, Section 17.2 - Secure Software Lifecycle"
-[mdr_annexI_17_4]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_I "MDR Annex I, Section 17.4 - IT Security Measures"
-[mdr_annexI_23_4]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20250110#anx_I "MDR Annex I, Section 23.4 - Information for Users"
+[mdr_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_I "MDR Annex I – General Safety and Performance Requirements"
+[mdr_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_II "MDR Annex II - Technical Documentation"
+[mdr_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_III "MDR Annex III - Technical Documentation on Post-Market Surveillance"
+[mdr_annexI_3]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_I "MDR Annex I, Section 3 - Risk management system"
+[mdr_annexI_17_2]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_I "MDR Annex I, Section 17.2 - Secure Software Lifecycle"
+[mdr_annexI_17_4]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_I "MDR Annex I, Section 17.4 - IT Security Measures"
+[mdr_annexI_23_4]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0745-20261109#anx_I "MDR Annex I, Section 23.4 - Information for Users"
 [cra_art2]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_2 "CRA Article 2 – Scope"
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 – Obligations of manufacturers"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"

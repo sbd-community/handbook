@@ -50,7 +50,7 @@ A secure boot design for a connected product should be able to show:
 
 The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires products to protect the integrity of commands, programs, and configuration against unauthorised manipulation ([CRA Annex I § 1(2)(f)][cra_annexI]). Secure boot is a common technical control for meeting that integrity objective.
 
-BSI TR-03183-1 reinforces this pattern by calling for state-of-the-art mechanisms to protect code, data, and configuration integrity, and for violations to be detected ([REQ_ER 7][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 reinforces this pattern by calling for state-of-the-art mechanisms to protect code, data, and configuration integrity, and for violations to be detected ([REQ_ER 7][bsi_tr_03183_p1]).
 
 Boot managers are also listed as Important Class I products under CRA Annex III. The draft **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** shows how CRA expectations may translate into testable boot-manager requirements, including verified boot, measured boot, rollback protection, secure updates, key provisioning, debug interface controls, logging, recovery, and assessment evidence.
 
@@ -191,4 +191,4 @@ If you need to:
 - retain product evidence, use the **[Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md)**.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

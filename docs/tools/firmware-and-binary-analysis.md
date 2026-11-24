@@ -30,8 +30,7 @@ These tools allow engineers to reverse-engineer compiled firmware images, inspec
 | [Ghidra](https://ghidra-sre.org/) | 🐙 | A full-featured, high-end software reverse engineering (SRE) framework developed by the NSA. |
 | [radare2](https://rada.re/n/) | 🐙 | A complete framework for reverse-engineering and analyzing binaries, composed of a set of small, scriptable utilities. |
 | [strings](https://man7.org/linux/man-pages/man1/strings.1.html) | 🐙 | A basic utility that prints the printable character sequences in a file. A simple but effective first step for finding hardcoded secrets. |
-| [FACT (Firmware Analysis & Comparison Tool)](https://fkie-cad.github.io/fact_documentation/) | 🐙 | An extensible platform for performing automated firmware security analysis and comparing firmware versions. |
-| [Firmwalker](https://github.com/craigz28/firmwalker) | 🐙 | A script for searching extracted firmware filesystems for common vulnerabilities and interesting artifacts. |
+| [FACT (Firmware Analysis & Comparison Tool)](https://fkie-cad.github.io/FACT_core/) | 🐙 | An extensible platform for performing automated firmware security analysis and comparing firmware versions. |
 | [Boldwark Firmware X-Ray](https://xray.boldwark.com/) | 🥦 | A firmware analyzer that can identify common vulnerabilities and weaknesses from compiled code. |
 | [Finite State](https://finitestate.io/) | 💰 | A commercial product security platform that performs deep binary analysis on firmware to uncover vulnerabilities and generate SBOMs from compiled code. |
 | [IDA Pro](https://hex-rays.com/ida-pro/) | 💰 | A powerful, industry-standard commercial disassembler and debugger for software reverse engineering. |

@@ -18,8 +18,8 @@ This means reviewing every potential entry point for an attacker—both physical
 
 The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly mandates this approach through two key essential requirements in Annex I:
 
--   **Secure by Default ([§ 1 (2)(b)][cra_annexI])**: The CRA requires that products be "placed on the market with a secure-by-default configuration." This is further detailed in the BSI's technical guideline as requiring a configuration that "can be fully restored via a reset function" ([REQ_ER 3][bsi_tr_03183_p1]).
--   **Attack Surface Reduction ([§ 1 (2)(j)][cra_annexI])**: The act also requires products to be "designed, developed and produced to limit attack surfaces." The BSI guideline reinforces this, stating manufacturers must secure interfaces and disable unused ports and services ([REQ_ER 11][bsi_tr_03183_p1]).
+-   **Secure by Default ([§ 1 (2)(b)][cra_annexI])**: The CRA requires that products be "made available on the market with a secure by default configuration". This is further detailed in the BSI's technical guideline TR-03183-1 (v0.9.0), which requires that the product "be able to be reset to its original state" ([REQ_ER 3.1][bsi_tr_03183_p1]).
+-   **Attack Surface Reduction ([§ 1 (2)(j)][cra_annexI])**: The act also requires products to be "designed, developed and produced to limit attack surfaces, including external interfaces". The BSI guideline reinforces this, stating manufacturers must secure interfaces and disable unused ports and services ([REQ_ER 11][bsi_tr_03183_p1]).
 
 Any insecure setting should require a deliberate, explicit action from the user to enable, and only after being warned of the potential risks.
 
@@ -100,4 +100,4 @@ If you need to:
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

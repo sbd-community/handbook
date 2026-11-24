@@ -21,8 +21,8 @@ While much of the **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md
 
 The legal basis for logging comes from the CRA's essential requirements, which are designed to enable forensic analysis:
 
--   **Security Logging ([Annex I § 1 (2)(l)][cra_annexI])**: The CRA requires that products "log all security-relevant events by default."
--   This is reinforced by the BSI's technical guideline, which requires the capability to "create logs for security-relevant events" ([REQ_ER 13][bsi_tr_03183_p1]).
+-   **Security Logging ([Annex I § 1 (2)(l)][cra_annexI])**: The CRA requires that products "provide security related information by recording and monitoring relevant internal activity, including the access to or modification of data, services or functions".
+-   This is reinforced by the BSI's technical guideline TR-03183-1 (v0.9.0), which requires a mechanism to "record and monitor all security relevant setting modifications" ([REQ_ER 13.1][bsi_tr_03183_p1]).
 
 Effective logging allows you to answer the critical question "What happened?" after a security event has occurred.
 
@@ -109,4 +109,4 @@ If you need to:
 
 <!-- Citations -->
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

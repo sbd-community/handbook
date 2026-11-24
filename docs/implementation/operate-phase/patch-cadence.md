@@ -44,7 +44,7 @@ A practical patch cadence and rollback strategy should be able to show:
 
 The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** requires manufacturers to handle and remediate vulnerabilities without delay and to securely distribute updates where updates are provided ([CRA Annex I, Part II][cra_annexI]).
 
-BSI TR-03183-1 reinforces this by requiring timely vulnerability handling ([REQ_VH 2][bsi_tr_03183_p1]) and a public vulnerability disclosure policy ([REQ_VH 5][bsi_tr_03183_p1]).
+BSI TR-03183-1 v0.9.0 reinforces this by requiring timely vulnerability handling ([REQ_VH 2][bsi_tr_03183_p1]) and a public vulnerability disclosure policy ([REQ_VH 5][bsi_tr_03183_p1]).
 
 The regulation does not prescribe one universal patch deadline for every product and severity. Product teams need a risk-based process that can explain timing, prioritisation, remediation decisions, communication, and evidence.
 
@@ -223,4 +223,4 @@ If you need to:
 - add release-gate checklists for vulnerability and patch management, use ENISA's **[Vulnerability and patch management](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/13-vulnerability-and-patch-management.md)** playbook.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

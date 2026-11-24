@@ -13,7 +13,7 @@ The aim is not just to answer "yes" or "no". The aim is to identify what evidenc
 
 Use the completed checklist as an input to your **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)**. The checklist identifies readiness and gaps; the evidence pack retains the supporting records.
 
-This checklist is a starting point. Use it with the **[CRA Overview](../../standards/eu/cra/index.md)** and the [European Commission's official FAQ][ec_faq]. It does not replace legal advice or a formal conformity assessment.
+This checklist is a starting point. Use it with the **[CRA Overview](../../standards/eu/cra/index.md)**, the [Commission's CRA guidance][ec_cra_guidance], and the [European Commission's official FAQ][ec_faq]. It does not replace legal advice or a formal conformity assessment.
 
 ## How to Use This Checklist
 
@@ -56,7 +56,7 @@ Establish whether the product is in scope and what exactly is being assessed.
 |----------|--------|----------|-------|-------------|
 | Is the product a **Product with Digital Elements** under the CRA? ([CRA Primer](../../quick-start/cra-primer.md), [EC FAQ 1.1-1.3][ec_faq]) | | Product description, connectivity analysis, scope memo. | | Confirm whether physical or logical data connections bring the product into scope. |
 | What product, version, model, product family, hardware revision, firmware release, or service component is in scope? | | Product list, release baseline, variant list. | | Identify any variants or configurations that need separate review. |
-| Does the product depend on a remote data-processing solution? | | Architecture diagram, cloud/service description, data-flow diagram. | | Decide whether cloud, mobile app, backend, or broker dependencies are part of the assessed product. |
+| Does the product depend on a remote data-processing solution? ([Commission guidance, section 8][ec_cra_guidance]) | | Architecture diagram, cloud/service description, data-flow diagram. | | Decide whether cloud, mobile app, backend, or broker dependencies are part of the assessed product. |
 | Are companion apps, cloud services, configuration tools, modules, or third-party services included? | | System boundary diagram, supplier list, dependency map. | | Record what is included and what is excluded. |
 | What is explicitly out of scope? | | Scope statement, exclusion list, rationale. | | Confirm exclusions do not hide security-critical dependencies. |
 
@@ -83,7 +83,7 @@ Assess whether the organisation has the processes needed to build and maintain a
 | Question | Status | Evidence | Owner | Next action |
 |----------|--------|----------|-------|-------------|
 | Is there a documented secure development lifecycle? | | SDL policy, engineering process, release gates. | | Link process controls to product release decisions. |
-| Is threat modeling required for new products or major changes? | | Threat model, risk assessment, design review records. | | Update model if product architecture, cloud dependencies, or update paths changed. |
+| Is threat modeling required for new products or major changes? | | Threat model, risk assessment, design review records. | | Update model if product architecture, cloud dependencies, or update paths changed. Compare the process with [EN 40000-1-2][cen_en_40000] (published November 2026, not yet cited in the Official Journal). |
 | Are SAST, SCA, secrets scanning, firmware analysis, or other checks integrated into development or release? | | CI/CD configuration, scan outputs, exception records. | | Identify missing checks and owners. |
 | Is there a public Coordinated Vulnerability Disclosure policy and contact route? | | CVD policy, `security.txt`, security contact page. | | Publish or update reporting channel and safe-harbor wording. |
 | Is there a vulnerability triage process with owners, severity handling, and remediation tracking? | | Triage workflow, vulnerability log, SLA/policy. | | Assign owners for intake, triage, engineering, customer communication, and closure. |
@@ -187,9 +187,12 @@ If you need to:
 - assess product risk and architecture, use **[Threat Modeling](../../implementation/build-phase/threat-modeling.md)**;
 - close technical control gaps, use **[Secure Boot](../../implementation/build-phase/secure-boot.md)**, **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)**, **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)**, and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)**;
 - close release and post-market gaps, use **[SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md)**, **[Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md)**, **[Patch Cadence & Rollback Strategy](../../implementation/operate-phase/patch-cadence.md)**, **[Security Logging](../../implementation/operate-phase/security-logging.md)**, and **[User Documentation](../../implementation/build-phase/user-documentation.md)**;
+- score organisational CRA readiness with an official EU self-assessment, use ENISA's **[SME Cyber Resilience Maturity Assessment Model](https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model)**;
 - compare your gaps with EU SME release-gate checklists, use ENISA's **[Secure by Design and Default Playbook](https://www.enisa.europa.eu/publications/enisa-secure-by-design-and-default-playbook)** ([GitHub playbooks](https://github.com/enisaeu/enisa-sbd-playbook/)).
 
 <!-- Citations -->
 [cra_art14]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_14 "CRA Article 14 – Reporting obligations of manufacturers"
 [cra_impl_oj]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202502392 "Implementing Regulation (EU) 2025/2392 – Technical descriptions for product categories"
-[ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.0, 3 December 2025)"
+[ec_cra_guidance]: https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation "European Commission – Guidance on the application of the Cyber Resilience Act (C/2026/6013)"
+[cen_en_40000]: https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-11-19-cra-standards-en-40000-1-1-and-en-40000-1-2/ "CEN-CENELEC: first European standards supporting the CRA"
+[ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.4, 4 September 2026)"

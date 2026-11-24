@@ -27,7 +27,7 @@ If yes, it is considered a **"product with digital elements" (PDE)** and you mus
 
 ## 2. What are my core obligations?
 
-As a manufacturer, you have two main sets of duties:
+As a manufacturer, you have two main sets of duties, set out in [CRA Annex I][cra_annexI]:
 
 #### Product Requirements (Secure-by-Design)
 -   Ship products without any known exploitable vulnerabilities.
@@ -44,15 +44,15 @@ As a manufacturer, you have two main sets of duties:
 
 ## 3. How is my product classified?
 
-The CRA has four risk classes. Your product's class determines how you prove compliance. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions for all product categories.
+The CRA has four risk classes. Your product's class determines how you prove compliance. **[Implementing Regulation (EU) 2025/2392][cra_impl_oj]** provides the official technical descriptions of the important and critical product categories.
 
--   **Default (~90% of products):** Standard products like smart speakers, toys, or general software.
+-   **Default (~90% of products):** Standard products like smart speakers without a virtual assistant, connected toys without social-interaction or location-tracking features, or general software.
     -   **Action:** You can perform a **self-assessment** and declare conformity yourself.
 
 -   **Important - Class I:** Products with higher security risk, like password managers, browsers, or smart locks.
-    -   **Action:** Self-assessment is possible *if* you use harmonised standards. Otherwise, a **third-party audit** is required.
+    -   **Action:** Self-assessment is possible *if* you fully apply harmonised standards, common specifications, or a European cybersecurity certification scheme at assurance level 'substantial' or higher. Otherwise, a **third-party audit** is required. The first CRA standards, EN 40000-1-1 and EN 40000-1-2, were published by CEN-CENELEC in November 2026, but no CRA harmonised standard is yet cited in the Official Journal, so none yet gives a presumption of conformity.
 
--   **Important - Class II:** A smaller list of high-risk products like firewalls, hypervisors, and industrial control systems.
+-   **Important - Class II:** A smaller list of high-risk products like firewalls, hypervisors, and tamper-resistant microprocessors and microcontrollers.
     -   **Action:** A **mandatory third-party audit** by a Notified Body is required.
 
 -   **Critical:** A very small list of products like Hardware Security Modules (HSMs) or smart meter gateways.
@@ -62,11 +62,12 @@ The CRA has four risk classes. Your product's class determines how you prove com
 
 ## 4. When does this happen?
 
-The clock is ticking. Here are the key deadlines:
+Reporting obligations already apply; full application follows in December 2027:
 
 | Date | Requirement |
 | :--- | :--- |
-| **11 Sep 2026** | **Vulnerability Reporting is Mandatory.** You must have a process to notify ENISA of actively exploited vulnerabilities without undue delay. |
+| **11 Jun 2026** | **Notified Bodies.** Rules for notifying the conformity assessment bodies that carry out third-party assessments apply (Chapter IV), so that they can be in place before full application. |
+| **11 Sep 2026** | **Vulnerability Reporting is Mandatory (in force).** You must notify actively exploited vulnerabilities and severe incidents to the CSIRT designated as coordinator and to ENISA through ENISA's Single Reporting Platform, live since 11 September 2026, with an early warning within 24 hours. |
 | **11 Dec 2027** | **Full Compliance is Mandatory.** All products placed on the EU market must be fully compliant with all CRA requirements and bear the CE mark. |
 
 ---

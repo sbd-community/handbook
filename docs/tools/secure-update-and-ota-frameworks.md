@@ -34,7 +34,7 @@ The following tools provide end-to-end frameworks for deploying OTA updates to a
 | [RAUC](https://rauc.io/) | 🐙 | A lightweight, open-source update framework for embedded Linux systems that is safe, secure, and reliable. It supports cryptographic signatures and atomic updates. |
 | [Balena](https://www.balena.io/) | 💰 | A complete IoT fleet management platform that includes robust OTA update capabilities for Linux-based devices, focusing on containerized applications. |
 | [Thistle Technologies](https://thistle.tech/) | 💰 | A commercial security platform providing secure OTA updates for embedded Linux and Zephyr, with a memory-safe client and fail-safe fallbacks. |
-| [Uptane](https://uptane.github.io/) | 🐙 | An extension of TUF specifically designed for the high-security demands of automotive software updates. |
+| [Uptane](https://uptane.org/) | 🐙 | An extension of TUF specifically designed for the high-security demands of automotive software updates. |
 
 <!-- vale off -->
 *Type: 💰=Commercial, 🐙=Open-Source*

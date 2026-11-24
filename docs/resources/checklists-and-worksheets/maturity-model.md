@@ -23,7 +23,7 @@ Use this model when you need to answer:
 - which domains need stronger ownership, process, tooling, or lifecycle review;
 - what maturity gaps should become roadmap actions.
 
-This page is intentionally lighter than broad software-security maturity frameworks. It focuses on connected-product teams that need secure-by-design practices to be practical, evidence-backed, and maintained after release.
+This page is intentionally lighter than broad software-security maturity frameworks. For a scored, CRA-oriented organisational self-assessment, ENISA's [SME Cyber Resilience Maturity Assessment Model](https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model) (13 July 2026) offers a questionnaire and spreadsheet tool; use it alongside this model rather than instead of product-scoped evidence. It focuses on connected-product teams that need secure-by-design practices to be practical, evidence-backed, and maintained after release.
 
 ## How This Relates to CRA Readiness
 

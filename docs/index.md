@@ -19,10 +19,10 @@ Understanding regulatory requirements including CRA, NIS 2, and ETSI EN 303 645.
 Step-by-step technical guidance for build and operational phases.
 
 ### 📋 [Resources](./resources/index.md)
-Ready-to-use compliance and assessment tools.
+Checklists, maturity model, policy templates, example threat models, real-world vulnerabilities, and the glossary.
 
-### 🔗 [Resources](./resources/reference/index.md)
-Glossary, tool directory, and maturity model assessments.
+### 🔗 [Tools](./tools/index.md)
+A vendor-neutral directory of tools for each stage of the device lifecycle.
 
 ---
 

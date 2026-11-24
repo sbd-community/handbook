@@ -46,7 +46,7 @@ The Department of Home Affairs guidance lists common excluded products, includin
 - Smartphones
 - Tablet computers
 
-Section 8 of the Rules contains the complete list of exempted products. Manufacturers and suppliers should check that list early, especially for products that may already be regulated under another product-safety or sector-specific regime.
+Section 8 of the Rules contains the complete list of exempted products, which also covers therapeutic goods and road vehicles and road vehicle components. Manufacturers and suppliers should check that list early, especially for products that may already be regulated under another product-safety or sector-specific regime.
 
 ## 3. Requirements and how to implement them
 
@@ -62,14 +62,14 @@ The Rules impose three practical baseline requirements. Each maps cleanly to exi
 
 ### 3.2 Statement of compliance duties
 
-The Act and Rules also require in-scope products to be supplied with a **statement of compliance**. The statement is the product-level declaration that the relevant security standard has been met.
+The Act and Rules also require in-scope products to be supplied with a **statement of compliance**. The statement is the product-level declaration that the relevant security standard has been met; section 9 of the Rules sets out what it must contain.
 
 At minimum, teams should treat the statement as part of the product's release evidence:
 
 - Identify the product, manufacturer, and supplier details used for the Australian market.
 - Record which security standard applies and how each requirement was met.
 - Link to evidence for password design, vulnerability reporting, and support-period publication.
-- Retain the statement for the period required by the Rules.
+- Retain the statement for five years, the period set by section 10 of the Rules.
 
 Use the [Secure-by-Design Evidence Pack](../../resources/policy-and-evidence/audit-evidence-pack.md) to keep the statement of compliance and supporting artefacts together.
 

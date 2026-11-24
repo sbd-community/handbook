@@ -16,7 +16,7 @@ For a detailed explanation of how these tools fit into a compliant development p
 
 The market for SAST and DAST tooling is mature, with many excellent open-source options. The decision to build a program around these or buy a commercial platform often comes down to integration, correlation, and support.
 
--   **Integration & Automation**: While tools like `Semgrep` or `OWASP ZAP` are powerful, integrating them into a seamless, automated CI/CD pipeline requires significant engineering effort. Commercial platforms often provide pre-built integrations for popular development tools (e.g., GitHub, Jira) to streamline this process.
+-   **Integration & Automation**: While tools like `Semgrep` or `ZAP` are powerful, integrating them into a seamless, automated CI/CD pipeline requires significant engineering effort. Commercial platforms often provide pre-built integrations for popular development tools (e.g., GitHub, Jira) to streamline this process.
 -   **False Positive Management**: All SAST/DAST tools produce false positives. Commercial platforms typically invest heavily in features to help manage, triage, and suppress these findings, reducing the noise and allowing developers to focus on real issues.
 -   **Breadth of Coverage**: A comprehensive program requires scanning source code (SAST), running applications (DAST), open-source dependencies (SCA), and more. A commercial platform can provide a single, unified view across all these different types of findings, whereas an in-house solution would require integrating and correlating results from multiple, separate tools.
 -   **Compliance Reporting**: Commercial vendors often provide pre-built dashboards and reports that can help demonstrate compliance with regulations like the CRA, saving significant time during audits.
@@ -31,9 +31,9 @@ The following table provides a non-exhaustive list of popular open-source and co
 | [CodeQL](https://codeql.github.com/) | 🐙 | A powerful semantic code analysis engine, developed by GitHub, for automating security checks. |
 | [Bandit](https://bandit.readthedocs.io/) | 🐙 | An open-source tool specifically designed to find common security issues in Python code. |
 | [gitleaks](https://github.com/gitleaks/gitleaks) | 🐙 | An open-source tool for scanning git repository history for hardcoded secrets and sensitive data. |
-| [OWASP ZAP](https://www.zaproxy.org/) | 🐙 | The world's most widely used open-source web application scanner. Excellent for DAST. |
+| [ZAP](https://www.zaproxy.org/) | 🐙 | The world's most widely used open-source web application scanner, formerly OWASP ZAP and now an independent project (ZAP by Checkmarx). Excellent for DAST. |
 | [Veracode](https://www.veracode.com/) | 💰 | A commercial application security platform that provides SAST, DAST, and SCA capabilities. |
-| [Synopsys Coverity](https://www.synopsys.com/software-integrity/security-testing/static-analysis-sast.html) | 💰 | A commercial static analysis tool known for its low false-positive rates in large C/C++ codebases. |
+| [Black Duck Coverity](https://www.blackduck.com/static-analysis-tools-sast/coverity.html) | 💰 | A commercial static analysis tool (formerly Synopsys Coverity), with particular strength in C and C++ analysis for safety-critical and embedded software. |
 | [SonarQube](https://www.sonarsource.com/products/sonarqube/) | 💰🐙 | A platform for continuous inspection of code quality and security, with both free (community) and paid editions. |
 | [Checkmarx](https://checkmarx.com/) | 💰 | A commercial enterprise platform for SAST, DAST, IAST, and SCA. |
 | [Finite State](https://finitestate.io/) | 💰 | A comprehensive product security platform that combines source code analysis (SAST) with advanced binary analysis for connected devices. |

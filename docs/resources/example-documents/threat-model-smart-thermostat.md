@@ -29,6 +29,8 @@ First, we break the system down into its core parts and how they communicate.
     *   Between the user's home network and the public internet.
     *   Between the mobile app and the cloud service.
 
+The cloud service is in scope, not just the device. The Commission's CRA guidance uses a smart thermostat as a worked example: because the thermostat cannot perform its smart functions without the manufacturer's cloud back end, that back end is a remote data processing solution, and the manufacturer must cover it, and any reliance on third-party infrastructure, in the risk assessment and technical documentation ([Commission guidance C/2026/6013, section 8.3.2][ec_cra_guidance]).
+
 ### **Step 2: Identify Threats (using STRIDE)**
 
 Now, we brainstorm what could go wrong for each data flow.
@@ -75,3 +77,6 @@ Use this example with:
 - **[Secure Boot](../../implementation/build-phase/secure-boot.md)** and **[Secure OTA Updates](../../implementation/build-phase/ota-updates.md)** for the firmware-update mitigation;
 - **[Unique Device Identity](../../implementation/build-phase/unique-device-identity.md)** and **[Key Provisioning & Storage](../../implementation/build-phase/key-provisioning.md)** for device authentication and credential handling;
 - **[Secure-by-Design Evidence Pack](../policy-and-evidence/audit-evidence-pack.md)** to retain the diagram, threats, mitigations, and release evidence.
+
+<!-- Citations -->
+[ec_cra_guidance]: https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation "European Commission – Guidance on the application of the Cyber Resilience Act (C/2026/6013)"

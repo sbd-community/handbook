@@ -51,3 +51,7 @@ The regulation entered into force on **29 November 2025**.
 ### What to Do Next
 
 Use the new technical descriptions to classify your products, then follow the appropriate conformity assessment route. For a complete breakdown of all 28 categories and their assessment requirements, see our updated **[CRA Overview](/docs/standards/eu/cra-overview)**.
+
+:::note[Correction, 24 November 2026]
+Implementing Regulation (EU) 2025/2392 was adopted on 28 November 2025 and published in the Official Journal on 1 December 2025. It describes 26 product categories (19 Important Class I, 4 Important Class II and 3 Critical), not 28. It entered into force on the twentieth day after publication, 21 December 2025, not on 29 November 2025 ([Official Journal text](https://eur-lex.europa.eu/eli/reg_impl/2025/2392/oj/eng)).
+:::

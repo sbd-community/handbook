@@ -60,7 +60,7 @@ Relevant CRA outcomes include:
 - preventing unauthorised access through appropriate control mechanisms;
 - enabling secure updates and vulnerability remediation during the support period.
 
-BSI TR-03183-1 reinforces the need to protect sensitive data and parameters ([REQ_ER 6][bsi_tr_03183_p1]) and to verify update package authenticity and integrity.
+BSI TR-03183-1 v0.9.0 reinforces the need to protect sensitive data and parameters ([REQ_ER 6][bsi_tr_03183_p1]) and to verify update package authenticity and integrity.
 
 Strong algorithms are not enough. A product can use current cryptography and still fail if keys are shared, predictable, extractable, expired, or uncontrolled in manufacturing.
 
@@ -254,4 +254,4 @@ If you need to:
 - add Secure-by-Default release gates for identity and secrets, use ENISA's **[Unique device identity and secrets by default](https://github.com/enisaeu/enisa-sbd-playbook/blob/main/playbooks/18-unique-device-identity-and-secrets-by-default.md)** playbook.
 
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
-[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1_v0_9_0.pdf?__blob=publicationFile "BSI TR-03183 Part 1: General requirements, v0.9.0 (archived; superseded by v1.0.0)"

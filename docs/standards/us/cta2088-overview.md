@@ -12,7 +12,7 @@ The **ANSI/CTA-2088** standard, developed by the Consumer Technology Association
 As a U.S. industry standard, it serves as a crucial benchmark for manufacturers selling into the North American market. It is designed to be a practical, testable standard that can help companies demonstrate due diligence and build more secure products.
 
 :::info Official Text
-The standard can be purchased from the CTA webstore. A free version is also available.
+The standard can be purchased from the CTA webstore; it is free to CTA members.
 
 - **ANSI/CTA-2088-A Standard:** [shop.cta.tech/products/cta-2088][cta2088_std]
 :::

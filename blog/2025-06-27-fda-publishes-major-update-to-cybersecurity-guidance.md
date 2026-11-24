@@ -42,3 +42,7 @@ Beyond the restructuring, there are important content updates:
 #### 4. Granular Wording and Phrasing Refinements
 
 Finally, dozens of minor wording changes throughout the document improve its precision. Verbs are strengthened (e.g., *assure* becomes *ensure*), hyperlink text is made more descriptive, and overall consistency is improved, resulting in a more polished and professional final document. 
+
+:::note[Later update]
+In February 2026, FDA issued final guidance titled _Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submissions_, which supersedes the June 2025 guidance described here. See [FDA Updates Premarket Cybersecurity Guidance for QMSR](/blog/2026/02/03/fda-cybersecurity-guidance-qmsr).
+:::

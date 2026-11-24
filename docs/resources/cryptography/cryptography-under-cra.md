@@ -69,7 +69,7 @@ Using a recognised algorithm is not enough. Teams also need safe key storage, co
 
 ## Use Agreed Cryptographic Mechanisms as a Benchmark
 
-The **European Cybersecurity Certification Group (ECCG)** maintains **Agreed Cryptographic Mechanisms (ACM)** material for EU cybersecurity certification. ENISA describes the [EUCC Guidelines on Cryptography][eucc_crypto] as recommendations about cryptographic mechanisms that should preferably be used in ICT products submitted to EUCC certification. [ACM v2][acm_v2] also includes recommendations relevant to post-quantum cryptography.
+The **European Cybersecurity Certification Group (ECCG)** maintains **Agreed Cryptographic Mechanisms (ACM)** material for EU cybersecurity certification. ENISA describes the [EUCC Guidelines on Cryptography][eucc_crypto] as recommendations about cryptographic mechanisms that should preferably be used in ICT products submitted to EUCC certification. [ACM v2][acm_v2] also includes recommendations relevant to post-quantum cryptography. ACM v2 remains the applicable version; the ECCG published a draft ACM version 3 for public review on 2 June 2026, so check the [EUCC guidelines page][eucc_crypto] for the current version before fixing long-lived design decisions.
 
 For CRA work, ACM is best treated as an important benchmark, not as an automatic substitute for the applicable legal text, [harmonised standard](../../standards/eu/cra/index.md#harmonised-standards), certification scheme, or product-specific risk assessment.
 
@@ -150,7 +150,9 @@ Post-quantum readiness is most urgent where the product protects long-lived conf
 
 For many products, the first step is not immediate PQC deployment. It is crypto inventory, protocol and library visibility, certificate lifecycle control, and enough crypto agility to migrate when standards, ecosystems, and product constraints allow.
 
-Track [NIST PQC standards][nist_pqc], EU PQC transition planning, ACM updates, and sector guidance. NIST finalised FIPS 203, FIPS 204, and FIPS 205 in 2024 for ML-KEM, ML-DSA, and SLH-DSA respectively, while [ACM v2][acm_v2] includes recommendations relevant to PQC in EUCC certification contexts.
+Track [NIST PQC standards][nist_pqc], EU PQC transition planning, ACM updates, and sector guidance. NIST finalised FIPS 203, FIPS 204, and FIPS 205 in 2024 for ML-KEM, ML-DSA, and SLH-DSA respectively, while [ACM v2][acm_v2] includes recommendations relevant to PQC in EUCC certification contexts. ENISA's report on hybridising traditional mechanisms with PQC (30 April 2026), published alongside the ACM on the [EUCC guidelines page][eucc_crypto], summarises the standardisation status of hybrid schemes.
+
+For products sold into US federal supply chains, [Executive Order 14412][us_eo_14412] (22 June 2026) sets concrete dates: federal high-value assets and high-impact systems must move to PQC key establishment by 31 December 2030 and to PQC digital signatures by 31 December 2031, and the FAR Council must propose a rule requiring covered contractors to comply with NIST FIPS, including the PQC standards, by 31 December 2030. The order also asks CISA and NIST to publish minimum elements for a cryptographic bill of materials, which makes a cryptographic inventory more valuable.
 
 ## Common Gaps
 
@@ -188,3 +190,4 @@ If you need to:
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I – Essential cybersecurity requirements"
 [eucc_crypto]: https://certification.enisa.europa.eu/publications/eucc-guidelines-cryptography_en "ENISA EUCC Guidelines on Cryptography"
 [nist_pqc]: https://www.nist.gov/news-events/news/2024/08/announcing-approval-three-federal-information-processing-standards-fips "NIST approval of FIPS 203, 204, and 205 for post-quantum cryptography"
+[us_eo_14412]: https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/ "Executive Order 14412 – Securing the Nation Against Advanced Cryptographic Attacks"

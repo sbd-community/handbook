@@ -10,7 +10,7 @@ tags: [secure-by-design, cra, psti, product-security, sbd, sdd]
 
 For connected-product teams, secure-by-design changes the product process. Teams must define the product boundary, assess risk, choose proportionate controls, ship secure defaults, provide secure updates, handle vulnerabilities, and retain evidence showing why security decisions were made.
 
-As CISA puts it, the goal is to move away from placing the "cybersecurity burden" on customers and toward technology providers that "take ownership at the executive level to ensure their products are Secure-by-Design" ([CISA](./cisa-sbd-principles.md)).
+As CISA and its partner agencies put it, "the burden of security should not fall solely on the customer", and manufacturers "are encouraged to take ownership of improving the security outcomes of their customers" ([CISA](./cisa-sbd-principles.md)).
 
 ## Use This Page When
 

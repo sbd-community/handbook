@@ -27,7 +27,7 @@ These tools help automate the creation, management, and analysis of SBOMs. They 
 
 | Tool | Type | Description |
 | :--- | :--- | :--- |
-| [SPDX Tool](https://tools.spdx.org/app/) | 🐙 | Official command-line tool from the SPDX project for creating and validating SPDX SBOMs. |
+| [SPDX Online Tools](https://tools.spdx.org/app/) | 🐙 | Official web-based tools from the SPDX project for validating, converting, and comparing SPDX SBOMs. |
 | [CycloneDX CLI](https://github.com/CycloneDX/cyclonedx-cli) | 🐙 | Official command-line tool from the CycloneDX project for converting between formats and validating SBOMs. |
 | [Trivy](https://github.com/aquasecurity/trivy) | 🐙 | A popular open-source scanner that can find vulnerabilities in container images and filesystems, and also generate SBOMs. |
 | [Syft](https://github.com/anchore/syft) | 🐙 | An open-source CLI tool and library from Anchore for generating an SBOM from container images and filesystems. |

@@ -31,16 +31,16 @@ Because the "state of the art" in cybersecurity evolves rapidly, guidance from o
 | :--- | :--- | :--- |
 | **2017-05-25** | IVDR entered into force. | [IVDR Art. 113(1)][ivdr_art113] |
 | **2022-05-26** | IVDR fully applies, replacing the IVDD. | [IVDR Art. 113(2)][ivdr_art113] |
-| **2025-05-26** | End of transition for high-risk (Class D) devices certified under the old IVDD. | [Regulation (EU) 2022/112][ivdr_transition_reg] |
-| **2026-05-26** | End of transition for Class C devices certified under the old IVDD. | [Regulation (EU) 2022/112][ivdr_transition_reg] |
-| **2027-05-26** | End of transition for Class B and sterile Class A devices certified under the old IVDD. | [Regulation (EU) 2022/112][ivdr_transition_reg] |
+| **2027-12-31** | End of transition, under conditions, for devices with a valid IVDD certificate and for legacy Class D devices. | [IVDR Art. 110(3a)–(3c)][ivdr_art110], as amended by Regulation (EU) 2024/1860 |
+| **2028-12-31** | End of transition, under conditions, for legacy Class C devices. | [IVDR Art. 110(3b)–(3c)][ivdr_art110] |
+| **2029-12-31** | End of transition, under conditions, for legacy Class B and sterile Class A devices. | [IVDR Art. 110(3b)–(3c)][ivdr_art110] |
 
 **Relationship to other EU laws**
 
 | Law | How it interacts with the IVDR |
 |-----|---------------------------|
-| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | Like the MDR, products qualifying as in vitro diagnostic medical devices under the IVDR are **exempt** from the CRA ([CRA Art. 2 § 2(a)][cra_art2]). The IVDR provides its own specific cybersecurity rules. |
-| **[GDPR](https://gdpr-info.eu/)** | IVDs can generate and process vast amounts of sensitive personal health data. The security requirements in the IVDR are critical for fulfilling the data protection obligations of the GDPR. |
+| **[Cyber-Resilience Act (CRA)](./cra/index.md)** | Like the MDR, products qualifying as in vitro diagnostic medical devices under the IVDR are **exempt** from the CRA ([CRA Art. 2 § 2(b)][cra_art2]). The IVDR provides its own specific cybersecurity rules. |
+| **[GDPR](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679)** | IVDs can generate and process vast amounts of sensitive personal health data. The security requirements in the IVDR are critical for fulfilling the data protection obligations of the GDPR. |
 | **[MDR](./mdr-overview.md)** | The MDR is a parallel regulation covering medical devices. Its structure and cybersecurity requirements are nearly identical to the IVDR's. |
 
 ## 2. Scope & Classification
@@ -84,7 +84,7 @@ The following table translates the IVDR's General Safety and Performance Require
 | **Information to Users**<br/>[IVDR Annex I, §20.4.1][ivdr_annexI_20_4_1]<br/>[MDCG 2019-16, §4.2][mdcg_2019_16_s4_2] | Provide clear Instructions for Use (IFU) including: minimum IT requirements; secure configuration guidance; network port/protocol details; instructions for secure deployment and updates; and details of backup/restore features. Maintain security information in an electronic form to allow for dynamic updates. | [User Documentation](../../implementation/build-phase/user-documentation.md) |
 | **No Known Vulnerabilities (*)**<br/>[CRA Annex I §1(2)(a)][cra_annexI] | Ship without known exploitable vulnerabilities. Establish a process to identify vulnerabilities in all product components, including third-party software. | [CI/CD Hardening](../../implementation/operate-phase/cicd-hardening.md) |
 | **Regular Security Testing (*)**<br/>[CRA Annex I, Part II, §3][cra_annexI] | Regularly test the product for vulnerabilities using both internal processes (e.g., SAST/DAST) and independent experts (e.g., penetration testing). | [Static & Dynamic Analysis](../../tools/static-and-dynamic-analysis.md) |
-| **Identify Components (SBOM) (*)**<br/>[CRA Art. 13 §3][cra_art13] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components to facilitate vulnerability management. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
+| **Identify Components (SBOM) (*)**<br/>[CRA Annex I Part II §1][cra_annexI] | Create and maintain an up-to-date, machine-readable Software Bill of Materials (SBOM) for all software components to facilitate vulnerability management. | [SBOM & VEX Workflows](../../implementation/build-phase/sbom-vex.md) |
 | **Coordinated Vulnerability Disclosure (*)**<br/>[CRA Art. 13(8)][cra_art13] | Publish a clear Coordinated Vulnerability Disclosure (CVD) policy and provide an easily accessible contact channel for third parties to report vulnerabilities. | [Vulnerability Disclosure](../../implementation/operate-phase/vulnerability-disclosure.md) |
 | **Minimum Support Period (*)**<br/>[CRA Art. 13(8)][cra_art13] | Define and publish the minimum length of time security updates will be provided. This support period should be appropriate for the device type and its expected lifetime. | [Patch Cadence](../../implementation/operate-phase/patch-cadence.md) |
 
@@ -135,7 +135,7 @@ For cybersecurity, the technical documentation must include:
 [ivdr_art81]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_81 "IVDR Article 81 - Periodic safety update report"
 [ivdr_art82]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_82 "IVDR Article 82 - Reporting of serious incidents"
 [ivdr_art113]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_113 "IVDR Article 113 - Entry into force and date of application"
-[ivdr_transition_reg]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32022R0112 "Regulation (EU) 2022/112 on transitional provisions"
+[ivdr_art110]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#art_110 "IVDR Article 110 - Transitional provisions"
 [ivdr_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_I "IVDR Annex I – General Safety and Performance Requirements"
 [ivdr_annexII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_II "IVDR Annex II - Technical Documentation"
 [ivdr_annexIII]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R0746-20250110#anx_III "IVDR Annex III - Technical Documentation on Post-Market Surveillance"

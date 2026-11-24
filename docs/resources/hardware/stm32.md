@@ -25,8 +25,8 @@ commitments, and technical documentation required by the CRA.
 ST's newer CRA pages are useful because they show how the company now
 packages its security story for product teams, not just firmware engineers.
 Use them as supplier inputs, not as a substitute for your own engineering
-and compliance work. See ST's **[CRA resource hub][st-cra-page]** and related
-announcement [st-announcement].
+and compliance work. See ST's **[CRA resource hub][st-cra-page]** and the related
+[announcement][st-announcement].
 
 ## 1. What STM32 can and cannot help you with
 
@@ -139,7 +139,7 @@ When you evaluate STM32 for a CRA-scoped product, [collect evidence from ST the 
   are you using, and which security features exist on that exact variant?
 - **Security lifecycle**: Does ST publish a clear security policy,
   vulnerability channel, and security advisories for the relevant product
-  line? [st-cra-page]
+  line? See ST's [CRA page][st-cra-page].
 - **Reference design maturity**: Are you depending on SBSFU, STM32Cube
   examples, or other collateral? If so, who owns maintenance and validation
   in your final product?
@@ -148,7 +148,8 @@ When you evaluate STM32 for a CRA-scoped product, [collect evidence from ST the 
   lockdown consistent with the direction of **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)**?
 - **Assurance claims**: Are there certifications or assurance schemes
   attached to this line, and what exactly do they cover:
-  silicon, reference software, or the full system? [st-trust-assurance]
+  silicon, reference software, or the full system? See
+  [STM32Trust security assurance][st-trust-assurance].
 - **Documentation for the technical file**: Which ST artifacts can you cite:
   datasheets, application notes, security manuals, lifecycle statements, or
   public policies?
@@ -193,7 +194,7 @@ sequence:
   the heavy lifting.
 
 <!-- Citations -->
-[st-announcement]: https://community.st.com/t5/developer-news/st-launches-dedicated-resource-hub-to-help-developers-navigate/ba-p/883514 "ST launches dedicated resource hub to help developers navigate the EU Cyber Resilience Act (CRA)"
+[st-announcement]: https://community.st.com/compliance-and-regulations-168/st-launches-dedicated-resource-hub-to-help-developers-navigate-the-eu-cyber-resilience-act-cra-163418 "ST launches dedicated resource hub to help developers navigate the EU Cyber Resilience Act (CRA)"
 [st-cra-page]: https://www.st.com/content/st_com/en/about/security-and-privacy/cyber-resilience-act.html "STMicroelectronics Cyber Resilience Act page"
 [st-trust]: https://www.st.com/content/st_com/en/ecosystems/stm32trust.html "STMicroelectronics STM32Trust Security Framework"
 [st-trust-assurance]: https://www.st.com/content/st_com/en/ecosystems/stm32trust/security-assurance.html "STM32Trust security assurance"

@@ -18,19 +18,20 @@ Failure to provide the required cybersecurity information will result in the FDA
 - **The Law**: The text of the law creating the new cybersecurity requirements.
   - [FD&C Act § 524B][fdc_524b]
 - **Premarket Cybersecurity Guidance**: The core FDA guidance detailing the specific documentation and technical controls required.
-  - [Cybersecurity in Medical Devices (2025)][fda_guidance]
+  - [Cybersecurity in Medical Devices (2026)][fda_guidance]
 - **Refuse to Accept (RTA) Policy**: Explains how the FDA will reject incomplete submissions.
   - [Refuse to Accept Policy for 510(k)s][fda_rta_policy]
 - **Frequently Asked Questions**: A helpful resource answering common questions.
-  - [Cybersecurity in Medical Devices FAQs][fda_faq]
+  - [Cybersecurity Resources for Medical Device Manufacturers: Guidance, Resources, and FAQs][fda_faq]
 :::
 
 | FDA Milestone | Legal Basis | Date |
 | :--- | :--- | :--- |
 | Consolidated Appropriations Act enacted | [FDORA § 3305][fdora_3305] | **2022-12-29** |
 | Section 524B requirements become effective | [FD&C Act § 524B][fdc_524b] | **2023-03-29** |
-| Previous Premarket Guidance Published | Superseded | **2023-09-27** |
-| Current Premarket Guidance Published | [FDA Guidance][fda_guidance] | **2025-06-27** |
+| Earlier Premarket Guidance Published | Superseded | **2023-09-27** |
+| Previous Premarket Guidance Published | Superseded | **2025-06-27** |
+| Current Premarket Guidance Published | [FDA Guidance][fda_guidance] | **2026-02-03** |
 
 **Relationship to other regulations**
 
@@ -109,7 +110,6 @@ The FDA assesses a manufacturer's compliance with cybersecurity requirements dur
 [fdora_3305]: https://www.congress.gov/bill/117th-congress/house-bill/2617/text#H1A3A8E9495E44A179269458983944B4C "Consolidated Appropriations Act, 2023 (FDORA), Section 3305"
 [fdc_524b]: https://www.congress.gov/bill/117th-congress/house-bill/2617/text#H1A3A8E9495E44A179269458983944B4C "FD&C Act Section 524B"
 [fdc_502]: https://www.govinfo.gov/app/details/USCODE-2010-title21/USCODE-2010-title21-chap9-subchapV-partA-sec352 "FD&C Act Section 502"
-[fda_guidance]: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations-and-content-premarket-submissions "Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submissions (2025)"
+[fda_guidance]: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket "Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submissions (February 2026)"
 [fda_rta_policy]: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/refuse-accept-policy-510ks "Refuse to Accept Policy for 510(k)s"
-[fda_faq]: https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity-medical-devices-frequently-asked-questions-faqs "Cybersecurity in Medical Devices FAQs"
-[ul_2900_std]: https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2900-2-1_1_S_20171030 "UL 2900-2-1 Standard" 
+[fda_faq]: https://www.fda.gov/medical-devices/medical-device-cybersecurity/cybersecurity-resources-medical-device-manufacturers-guidance-resources-and-faqs "Cybersecurity Resources for Medical Device Manufacturers: Guidance, Resources, and FAQs" 

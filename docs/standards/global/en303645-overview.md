@@ -13,8 +13,8 @@ While it began as a European standard, its straightforward, outcome-focused appr
 
 :::info Official Texts & Guidance
 - **ETSI EN 303 645 (V3.1.3):** [Download from ETSI website][en303645]. The core standard defining the security and data protection provisions. This is the legally significant text.
-- **ETSI TS 103 701:** [Conformance Assessment Specification][ts103701]. This document defines the mandatory test cases for verifying that each provision in the standard has been met. It is used by test labs for conformity assessment.
-- **ETSI TR 103 621:** [Implementation Guide][tr103621]. This technical report provides non-exhaustive examples and guidance for implementing the standard's provisions. It is a helpful resource but not legally binding.
+- **ETSI TS 103 701 (V2.1.1, May 2025):** [Conformance Assessment Specification][ts103701]. This document defines the mandatory test cases for verifying that each provision in the standard has been met. It is used by test labs for conformity assessment.
+- **ETSI TR 103 621 (V2.1.1, July 2025):** [Implementation Guide][tr103621]. This technical report provides non-exhaustive examples and guidance for implementing the standard's provisions. It is a helpful resource but not legally binding.
 :::
 
 **Timeline of Key Dates**
@@ -25,14 +25,14 @@ While it began as a European standard, its straightforward, outcome-focused appr
 | **2024-09-11** | Current version (V3.1.3) adopted by ETSI.                          | [EN 303 645 Foreword][en303645] |
 | **2024-12-31** | Latest date for announcement of the EN at national level.          | [EN 303 645 Foreword][en303645] |
 | **2025-06-30** | Date of publication for new National Standards endorsing the EN, and withdrawal of any conflicting national standards. | [EN 303 645 Foreword][en303645] |
-| **2025-08-01** | RED Delegated Act becomes mandatory; compliance with a future harmonised version of EN 303 645 will likely provide presumption of conformity. | [RED Delegated Act](../eu/red-overview.md) |
+| **2025-08-01** | RED Delegated Act applies. Its harmonised standards are the CEN-CENELEC EN 18031 series, not EN 303 645. | [RED Delegated Act](../eu/red-overview.md) |
 
 **Relationship to EU law**
 
 | Law | How it interacts with EN 303 645 |
 |-----|---------------------------|
-| **[Radio Equipment Directive (RED)](../eu/red-overview.md)** | EN 303 645 is the primary candidate to become the **harmonised standard** for demonstrating compliance with the cybersecurity requirements of the RED Delegated Act (EU) 2022/30. Manufacturers who follow this standard will likely gain a "presumption of conformity" with the RED's essential requirements for network protection, privacy, and fraud prevention when the deadline arrives on 1 August 2025. |
-| **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | The CRA's essential security requirements in Annex I are heavily based on the principles in EN 303 645. It is expected that a future version of this standard (or a new standard based on it) will become a harmonised standard for the CRA. For manufacturers of "Default" category consumer products, compliance with EN 303 645 is an excellent way to prepare for future CRA obligations. |
+| **[Radio Equipment Directive (RED)](../eu/red-overview.md)** | EN 303 645 is **not** a harmonised standard under the RED Delegated Act (EU) 2022/30, which has applied since 1 August 2025 and is repealed from 11 December 2027, when the CRA applies (Delegated Regulation (EU) 2026/339). The harmonised standards are **EN 18031-1, EN 18031-2, and EN 18031-3:2024**, cited with restrictions by [Commission Implementing Decision (EU) 2025/138][red_hs_decision]. Following EN 303 645 is still useful evidence for the RED's network protection, privacy, and fraud-prevention requirements, but it does not give a presumption of conformity. |
+| **[Cyber-Resilience Act (CRA)](../eu/cra/index.md)** | The CRA's essential security requirements in Annex I are heavily based on the principles in EN 303 645. EN 303 645 itself is not a CRA harmonised standard: the CRA's horizontal standards are the CEN-CENELEC EN 40000 series (EN 40000-1-1 and EN 40000-1-2 were published in November 2026 but are not yet cited in the Official Journal), and ETSI is drafting product-category standards in the EN 304 6xx series. For manufacturers of "Default" category consumer products, compliance with EN 303 645 is still an excellent way to prepare for CRA obligations. |
 
 ## 2. Scope
 
@@ -86,17 +86,18 @@ The following tables translate those provisions into a practical engineering che
 
 ## 4. Assessment & Conformance
 
-Compliance with EN 303 645 is voluntary. However, it serves as the primary technical specification for several mandatory regulatory schemes. Conformance provides a **presumption of conformity** with those regulations, simplifying the path to market access.
+Compliance with EN 303 645 is voluntary. However, it serves as the technical basis for several mandatory regulatory schemes, and some of them, such as the UK PSTI regime, treat conformance with specific provisions as **deemed compliance**, simplifying the path to market access.
 
 The standard itself defines the security outcomes, while a separate specification, **[ETSI TS 103 701][ts103701]**, provides the corresponding test cases for third-party assessment. A manufacturer can submit their product to a testing laboratory, which will perform the tests defined in TS 103 701 to verify that each provision in EN 303 645 has been implemented correctly.
 
 This assessment can be used to demonstrate compliance with regulations such as:
-- **EU Radio Equipment Directive (RED)**: EN 303 645 is expected to be the harmonised standard used to show compliance with the RED's cybersecurity articles.
+- **EU Radio Equipment Directive (RED)**: EN 303 645 test results can support a RED technical file, but the harmonised standards for the RED's cybersecurity articles are the EN 18031 series.
 - **UK Product Security and Telecommunications Infrastructure (PSTI) regime**: The UK's regulation is directly based on EN 303 645.
 - **Other international schemes**: Similar regulations in Singapore, Finland, and Australia are also based on this standard.
 
 <!-- Citations -->
 [en303645]: https://www.etsi.org/deliver/etsi_en/303600_303699/303645/03.01.03_60/en_303645v030103p.pdf "ETSI EN 303 645 - Cyber Security for Consumer Internet of Things: Baseline Requirements"
 [en303645-v2.1.1]: https://www.etsi.org/deliver/etsi_en/303600_303699/303645/02.01.01_60/en_303645v020101p.pdf "ETSI EN 303 645 V2.1.1"
-[ts103701]: https://www.etsi.org/deliver/etsi_ts/103700_103799/103701/01.01.01_60/ts_103701v010101p.pdf "ETSI TS 103 701 - Conformance Assessment of Baseline Requirements"
-[tr103621]: https://www.etsi.org/deliver/etsi_tr/103600_103699/103621/01.01.01_60/tr_103621v010101p.pdf "ETSI TR 103 621 - Guide to Cyber Security for Consumer Internet of Things"
+[ts103701]: https://www.etsi.org/deliver/etsi_ts/103700_103799/103701/02.01.01_60/ts_103701v020101p.pdf "ETSI TS 103 701 V2.1.1 (2025-05) - Conformance Assessment of Baseline Requirements"
+[tr103621]: https://www.etsi.org/deliver/etsi_tr/103600_103699/103621/02.01.01_60/tr_103621v020101p.pdf "ETSI TR 103 621 V2.1.1 (2025-07) - Guide to Cyber Security for Consumer Internet of Things"
+[red_hs_decision]: https://eur-lex.europa.eu/eli/dec_impl/2025/138/oj "Commission Implementing Decision (EU) 2025/138 on harmonised standards for the RED Delegated Regulation (EU) 2022/30"
