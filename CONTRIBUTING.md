@@ -43,7 +43,7 @@ Please review our [Style Guide](style-guide.md) before contributing. Key princip
 2. **Review** existing content to avoid duplication
 3. **Create** a new branch for your contribution
 4. **Write** your content following our style guide
-5. **Test** locally with `npm start`
+5. **Preview** locally with `npm start`, then check that `npm run typecheck` and `npm run build` pass
 6. **Submit** a pull request with a clear description
 
 ### For Technical Contributors
@@ -57,21 +57,24 @@ Please review our [Style Guide](style-guide.md) before contributing. Key princip
 
 ### New Standard/Regulation
 
+Add an overview page in the folder for its region, next to the existing ones:
+
 ```
 docs/standards/
-├── standard-name-overview.md
-├── standard-name-requirements.md
-└── standard-name-implementation.md
+└── <region>/              # eu, uk, us, australia, or global
+    └── standard-name-overview.md
 ```
 
 ### New Playbook
 
+Add it to the lifecycle phase it belongs to:
+
 ```
-docs/playbooks/
-└── topic-name/
-    ├── overview.md
-    ├── implementation.md
-    └── examples/
+docs/implementation/
+├── build-phase/
+│   └── topic-name.md
+└── operate-phase/
+    └── topic-name.md
 ```
 
 ## ✅ Submission Checklist
@@ -86,7 +89,7 @@ docs/playbooks/
 
 ## 🔍 Review Process
 
-1. **Automated checks**: Link validation, style checks
+1. **Automated checks**: Typecheck and site build on every pull request (broken links fail the build)
 2. **Technical review**: Accuracy of implementation guidance
 3. **Compliance review**: Regulatory interpretation correctness
 4. **Editorial review**: Style, clarity, accessibility
@@ -94,8 +97,8 @@ docs/playbooks/
 
 ## 📞 Getting Help
 
-- **Questions**: Open a [Discussion](https://github.com/sbd-community/handbook/discussions)
-- **Issues**: Use [Issues](https://github.com/sbd-community/handbook/issues) for bugs/feature requests
+- **Questions, bugs, and suggestions**: Open an [Issue](https://github.com/sbd-community/handbook/issues)
+- **Security vulnerabilities**: Report privately as described in [SECURITY.md](SECURITY.md)
 - **Style Questions**: Refer to our [Style Guide](style-guide.md)
 
 ## 🙋‍♀️ Contributor Recognition

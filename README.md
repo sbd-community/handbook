@@ -1,53 +1,93 @@
-# SecureByDesignHandbook.com
+# Secure-by-Design Handbook
 
-This repository contains the source for SecureByDesignHandbook.com, an authoritative, vendor-neutral reference for building secure connected devices. It translates complex regulatory requirements (like the EU's Cyber-Resilience Act) into concrete engineering practices for product security teams.
+**Authoritative standards breakdowns and practical playbooks for building cyber-resilient connected devices.**
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the source for [securebydesignhandbook.com](https://www.securebydesignhandbook.com), a vendor-neutral reference for organisations that make, integrate, or operate connected devices. It translates regulatory requirements such as the EU Cyber Resilience Act (CRA) into concrete engineering practices for product security teams.
+
+The handbook is built with [Docusaurus 3](https://docusaurus.io/) and is a sister site to the **PQC Handbook** and the **Supply Chain Security Handbook**.
 
 ## Documentation
 
-- [Purpose & Positioning Statement](purpose-and-positioning.md) - Mission, audience, and strategic vision
-- [Navigation Structure](navigation-structure.md) - Proposed site structure and user journeys (draft)
-- [Content & Brand Style Guide](style-guide.md) - Editorial standards and guidelines for contributors
-- [Periodic Review](periodic-review.md) - How the handbook is rechecked each month for accuracy, currency, and relevance
+### Maintainer Guides
 
-## Installation
+Read these root documents before changing structure, prose, or styling, and the periodic review guide before running a review:
+
+- [Purpose & Positioning](./purpose-and-positioning.md) — Mission, audience, success criteria, content pillars, and tone
+- [Navigation Structure](./navigation-structure.md) — Top-level menu and user journeys
+- [Style Guide](./style-guide.md) — Voice, terminology, page and blog post structure, citation format, dates, accessibility, and SEO metadata
+- [Brand Guidelines](./brand-guidelines.md) — Logo, colour palette, typography, and iconography
+- [Entry Page SEO Strategy](./entry-page-seo-strategy.md) — Which pages are entry points from search and how they are titled and described
+- [Periodic Review](./periodic-review.md) — The monthly full-site review: what it checks, how sources are fetched, and the report it leaves under `reviews/`
+- [Content Marketing Article Style Guide](./content-marketing/content-marketing-article-style-guide.md) — Writing articles for engineering trade publications
+
+### Handbook Content (`docs/`)
+
+- [Quick Start](./docs/quick-start/) — What Secure by Design means, a CRA primer, the CISA principles, and a first-sprint checklist
+- [Standards](./docs/standards/index.md) — Breakdowns of regulations and standards by region: EU (CRA, NIS 2, RED, MDR, IVDR), UK, US, Australia, and global standards such as ETSI EN 303 645 and IEC 62443
+- [Implementation](./docs/implementation/index.md) — Build-phase and operate-phase playbooks: threat modelling, secure boot, key provisioning, SBOM and VEX, OTA updates, vulnerability disclosure, and more
+- [Resources](./docs/resources/index.md) — Checklists, example threat models, policy templates, hardware notes, cryptography under the CRA, real-world vulnerability lessons, and the glossary
+- [Tools](./docs/tools/index.md) — Vendor-neutral tool landscapes by security task
+- [Blog](./blog/) — Dated posts on regulatory and standards developments, each linking to the handbook pages that hold the lasting guidance
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) **20.0** or newer (`engines.node` in `package.json`)
+
+### Install and Run Locally
 
 ```bash
 npm install
-```
-
-## Local Development
-
-```bash
 npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Starts the local development server with hot reloading. Docs are served under `/docs/` and blog posts under `/blog/`.
 
-## Build
+## Verification and Build
+
+Run these checks locally before opening a pull request or pushing to `main`. The [GitHub Actions workflow](./.github/workflows/deploy.yml) runs the same commands on every pull request and on every push to `main`, and deploys to GitHub Pages only when they pass:
 
 ```bash
+npm run typecheck
 npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+| Command | Description |
+| --- | --- |
+| `npm run typecheck` | Runs TypeScript (`tsc`) against `docusaurus.config.ts`, `sidebars.ts`, and `src/` |
+| `npm run build` | Builds static files and the local search index into `build/` (broken links fail the build) |
+| `npm run serve` | Serves the production `build/` output locally |
+
+## Repository Layout
+
+| Path | Purpose |
+| --- | --- |
+| `docs/` | Public handbook Markdown content, served under `/docs/` |
+| `blog/` | Dated blog posts, served under `/blog/` with RSS and Atom feeds; `tags.yml` and `authors.yml` hold the tags and authors a post may use |
+| `src/pages/` | Homepage (`index.tsx` and `index.module.css`) |
+| `src/theme/` | Theme wrappers: `noindex` for the search results page |
+| `src/css/custom.css` | Infima colour palette, typography, and theme overrides |
+| `static/img/` | Logo, favicon, and the OpenGraph social card (PNG, with its SVG source) |
+| `sidebars.ts` | One autogenerated sidebar per top-level docs folder |
+| `docusaurus.config.ts` | Site configuration, navbar, footer, sitemap, Mermaid diagrams, local search, and link policy |
+| `reviews/` | Periodic review reports and their working tables |
+| `source-material/` | Local text copies of regulations and standards, used to check facts during writing and reviews; pages cite the official publications, not these copies |
+
+*(If present locally, `.ai-helper-files/` holds gitignored private drafting material and must never be linked or cited on public pages.)*
 
 ## Deployment
 
-The site is automatically deployed to GitHub Pages using GitHub Actions. 
+Pushes to `main` automatically build and deploy the site to GitHub Pages via [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml):
 
-- **Live Site**: [https://securebydesignhandbook.com](https://securebydesignhandbook.com)
-- **Trigger**: Any push to the `main` branch automatically triggers deployment
-- **Workflow**: See [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) for the deployment configuration
-- **Process**: Build → Deploy to GitHub Pages → Live in ~2-3 minutes
+- **Live site**: [https://www.securebydesignhandbook.com](https://www.securebydesignhandbook.com) (custom domain set in the repository's Pages settings)
+- **CI steps**: Node 24 setup, `npm ci`, `npm run typecheck`, and `npm run build` on every pull request and push; on a push to `main`, the GitHub Pages artifact upload and deployment follow only if every step passed
 
-## Contributing
+## Contributing, Security, and Licence
 
-We welcome contributions from security practitioners, compliance experts, and engineers building connected devices! 
+Contributions from security practitioners, compliance experts, and engineers building connected devices are welcome:
 
-- **📋 How to contribute**: See our [Contributing Guide](CONTRIBUTING.md)
-- **💡 Suggest improvements**: Open an [Issue](https://github.com/sbd-community/handbook/issues)
-- **💬 Ask questions**: Start a [Discussion](https://github.com/sbd-community/handbook/discussions)
-
-Whether you want to add implementation guides, fix typos, or suggest new topics, your contributions help make connected devices more secure.
+- **Report a stale reference or issue**: Open an issue on [github.com/sbd-community/handbook/issues](https://github.com/sbd-community/handbook/issues)
+- **Propose content or structural changes**: Follow [CONTRIBUTING.md](./CONTRIBUTING.md) and the [style guide](./style-guide.md), and check that `npm run typecheck` and `npm run build` pass locally
+- **Report a security vulnerability**: Report it privately as described in [SECURITY.md](./SECURITY.md)
+- **Licence**: The handbook is licensed under [CC BY-SA 4.0](./LICENSE), the same licence as its sister sites
