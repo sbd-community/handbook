@@ -10,9 +10,9 @@ tags: [cra, compliance, eu, secure-by-design]
 The **Cyber-Resilience Act (CRA)**—Regulation (EU) **2024/2847**—is the EU's first horizontal law that *legally mandates Secure-by-Design* for every **"product with digital elements" (PDE)**. It introduces objective-oriented and technology-neutral essential cybersecurity requirements that manufacturers must follow ([CRA Art. 1][cra_art1], [CRA Rec. 8][cra_rec8]).
 
 :::info Official texts
-- **Official Journal** – legally binding record as published on 20 Nov 2024: [OJ:L_202402847 HTML][cra_oj].
+- **Official Journal** – legally binding record as published on 20 November 2024: [OJ:L_202402847 HTML][cra_oj].
 - **Consolidated Version** – integrates subsequent corrections: [CELEX:02024R2847-20241120 HTML][cra_consolidated].
-- **Implementing Regulation (EU) 2025/2392** – adopted 28 Nov 2025 and published 1 Dec 2025, provides official technical descriptions for product categories in Annexes III and IV: [OJ:L_202502392 HTML][cra_impl_oj]. See [Product Risk Classification](#product-risk-classes).
+- **Implementing Regulation (EU) 2025/2392** – adopted 28 November 2025 and published 1 December 2025, provides official technical descriptions for product categories in Annexes III and IV: [OJ:L_202502392 HTML][cra_impl_oj]. See [Product Risk Classification](#product-risk-classes).
 
 The consolidated version is easier for clause citations, but in case of doubt the official journal prevails.
 :::
@@ -38,20 +38,20 @@ The first CRA standards, EN 40000-1-1 and EN 40000-1-2, were published by CEN-CE
 | Rules on notification of conformity assessment bodies (Chapter IV, Art. 35–51) apply | [CRA Art. 71 § 2][cra_art71] | **2026-06-11** |
 | Vulnerability & incident reporting applies to manufacturers ([CRA Art. 14][cra_art14]) | [CRA Art. 71 § 2][cra_art71] | **2026-09-11** |
 | First CRA standards published (EN 40000-1-1 and EN 40000-1-2); citation in the OJ still to come<br/>*See [The Role of Harmonised Standards](#harmonised-standards)* | [CRA Art. 27][cra_art27] | **Nov 2026** |
-| Commission target: sufficient conformity assessment bodies notified across Member States | [Commission implementation timeline][ec_cra_impl] | **2026-12-11** |
+| Member States to strive for a sufficient number of notified bodies in the Union | [CRA Art. 35 § 2][cra_art35] | **2026-12-11** |
 | All CRA requirements apply (Annex I/II, CE-marking, enforcement) | [CRA Art. 71 § 2][cra_art71] | **2027-12-11** |
 
-**Early provisions from 11 Jun 2026**  
+**Early provisions from 11 June 2026**  
 *Notifying authorities* & *conformity assessment bodies* → the rules for designating and notifying the bodies that carry out third-party conformity assessment apply ([CRA Ch. IV, Art. 35–51][cra_chIV]), so that notified bodies can be in place before the main obligations apply.  
-*Importers*, *distributors* & *authorised representatives* → their obligations, including checking the EU Declaration of Conformity and technical documentation and keeping it for **at least 10 years or the product's support period, whichever is longer**, apply with the rest of the Regulation from **11 Dec 2027**. Market-surveillance powers ([CRA Ch. V][cra_chV]) also apply from that date.
+*Importers*, *distributors* & *authorised representatives* → their obligations, including checking the EU Declaration of Conformity and technical documentation and keeping it for **at least 10 years or the product's support period, whichever is longer**, apply with the rest of the Regulation from **11 December 2027**. Market-surveillance powers ([CRA Ch. V][cra_chV]) also apply from that date.
 
-**Reporting obligations from 11 Sep 2026** ([CRA Art. 71 § 2][cra_art71], [EC FAQ 7.1][ec_faq])  
+**Reporting obligations from 11 September 2026** ([CRA Art. 71 § 2][cra_art71], [EC FAQ 7.1][ec_faq])  
 *Manufacturers* → since 11 September 2026, must notify actively exploited vulnerabilities and severe incidents having an impact on the security of their products via ENISA's single reporting platform, which reaches the CSIRT designated as coordinator and ENISA simultaneously ([CRA Art. 14 § 1, 3][cra_art14] + [CRA Art. 16][cra_art16], [EC FAQ 5.1–5.3][ec_faq]):  
 • An early warning **without undue delay and in any event within 24 hours** of becoming aware, a notification within 72 hours, and a final report (for vulnerabilities, within 14 days after a corrective or mitigating measure is available; for incidents, within one month of the notification) ([CRA Art. 14 § 2, 4][cra_art14])  
 • If requested by the CSIRT, an intermediate report on status updates ([CRA Art. 14 § 6][cra_art14]).  
-These reporting duties also cover products placed on the market before 11 Dec 2027 ([CRA Art. 69 § 3][cra_art69]). The wider vulnerability-handling requirements of Annex I Part II, including a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI]), apply from 11 Dec 2027.
+These reporting duties also cover products placed on the market before 11 December 2027 ([CRA Art. 69 § 3][cra_art69]). The wider vulnerability-handling requirements of Annex I Part II, including a Coordinated Vulnerability Disclosure (CVD) policy ([CRA Annex I Part II § 5][cra_annexI]), apply from 11 December 2027.
 
-**Grace-period end (11 Dec 2027)** – only Annex I/II-compliant PDEs may bear the CE mark; MSAs may recall or ban non-compliant goods; penalties up to **€ 15 million or 2.5 % of worldwide turnover** for non-compliance with essential requirements ([CRA Art. 64 § 2][cra_art64]).
+**Grace-period end (11 December 2027)** – only Annex I/II-compliant PDEs may bear the CE mark; MSAs may recall or ban non-compliant goods; penalties up to **€ 15 million or 2.5 % of worldwide turnover** for non-compliance with essential requirements ([CRA Art. 64 § 2][cra_art64]).
 
 **Relationship to other EU laws**
 
@@ -107,7 +107,7 @@ All three conditions must be met.
 | **Open-source software stewards** (foundations, maintainers) | Light-touch obligations ([CRA Recital 19][cra_rec19] + [CRA Art. 24][cra_art24]) |
 | Commercial FOSS in Annex III classes | May use self-assessment (Module A) if technical documentation is made public ([CRA Art. 32 § 5][cra_art32]). |
 | Pure SaaS (no local client) | Distinguished from a PDE's *remote data-processing solution*; general cloud services are covered by NIS 2 ([CRA Recital 12][cra_rec12]). |
-| Legacy products placed on the market before 11 Dec 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 69 § 2][cra_art69], [EC FAQ 1.4, 7.2][ec_faq]) |
+| Legacy products placed on the market before 11 December 2027 | Exempt **unless** they undergo a *substantial modification* after that date ([CRA Art. 69 § 2][cra_art69], [EC FAQ 1.4, 7.2][ec_faq]) |
 
 ## 3 CRA Requirements & How to Implement Them {#annex-i-requirements}
 
@@ -306,7 +306,7 @@ This provides two key benefits for manufacturers:
 2.  **Simpler Documentation:** The manufacturer can cite the harmonised standard in their EU Declaration of Conformity, rather than documenting compliance with every requirement in Annex I individually.
 
 :::tip Harmonised Standards Timeline
-The first CRA standards, **EN 40000-1-1** (vocabulary) and **EN 40000-1-2** (principles, product risk management and lifecycle activities), were published by CEN-CENELEC in November 2026 ([CEN-CENELEC announcement][cen_en_40000]). Their references are not yet cited in the Official Journal; the Commission assesses each adopted standard before citing it ([CRA Art. 27 § 6][cra_art27], [EC FAQ 6.10][ec_faq]). Under the standardisation request ([Mandate M/606][mandate_m606]), as amended by Commission Implementing Decision C(2026)7861 of 10 November 2026, the European standardisation organisations must adopt the horizontal standards on secure design and development and on vulnerability handling by **30 November 2026**, the vertical standards for Important and Critical categories by **31 January 2027**, and the standards on product properties by **30 October 2027** ([Commission CRA standardisation page][ec_cra_std]).
+The first CRA standards, **EN 40000-1-1** (vocabulary) and **EN 40000-1-2** (principles, product risk management and lifecycle activities), were published by CEN-CENELEC in November 2026 ([CEN-CENELEC announcement][cen_en_40000]). Their references are not yet cited in the Official Journal; the Commission assesses each adopted standard before citing it ([CRA Art. 27 § 6][cra_art27], [EC FAQ 6.10][ec_faq]). Under the standardisation request ([Mandate M/606][mandate_m606]), as amended by Commission Implementing Decision C(2026)7861 of 10 November 2026, the European standardisation organisations must adopt the horizontal standards on secure design and development and on vulnerability handling by **30 November 2026**, the vertical standards for Important and Critical categories by **31 January 2027**, and the standards on product properties by **30 October 2027** ([Implementing Decision C(2026)7861][m606_amendment]). The new deadlines lapse, and the earlier ones apply again, if CEN, CENELEC or ETSI indicate within a month of receiving the decision that they do not accept it.
 :::
 
 *In the absence of a suitable harmonised standard, the Commission may issue a **common specification** to provide the same presumption of conformity ([CRA Art. 27 § 2, 5][cra_art27]).*
@@ -335,6 +335,8 @@ The first CRA standards, **EN 40000-1-1** (vocabulary) and **EN 40000-1-2** (pri
 [cra_art27]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_27 "CRA Article 27 - Presumption of conformity"
 [cra_art28]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_28 "CRA Article 28 – EU declaration of conformity"
 [cra_art29]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_29 "CRA Article 29 – General principles of the CE marking"
+[m606_amendment]: https://ec.europa.eu/transparency/documents-register/api/files/C%282026%297861_0/de00000001090398 "Commission Implementing Decision C(2026)7861 amending standardisation request M/606"
+[cra_art35]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_35 "CRA Article 35 – Notification"
 [cra_art30]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_30 "CRA Article 30 – Rules and conditions for affixing the CE marking"
 [cra_art31]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_31 "CRA Article 31 – Technical documentation"
 [cra_art32]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_32 "CRA Article 32 – Conformity assessment procedures for products with digital elements"
@@ -372,7 +374,6 @@ The first CRA standards, **EN 40000-1-1** (vocabulary) and **EN 40000-1-2** (pri
 [mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
 [ec_guidance]: https://digital-strategy.ec.europa.eu/en/library/commission-publishes-new-guidance-support-timely-cyber-resilience-act-implementation "European Commission – Communication C(2026) 6013 on Cyber Resilience Act guidance (27 July 2026)"
 [ec_cra_impl]: https://digital-strategy.ec.europa.eu/en/factpages/cyber-resilience-act-implementation "European Commission – Cyber Resilience Act implementation"
-[ec_cra_std]: https://digital-strategy.ec.europa.eu/en/policies/cra-standardisation "European Commission – Cyber Resilience Act standardisation"
 [cen_en_40000]: https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-11-19-cra-standards-en-40000-1-1-and-en-40000-1-2/ "CEN-CENELEC: first European standards supporting the CRA"
 [en303645]: https://www.etsi.org/deliver/etsi_en/303600_303699/303645/03.01.03_60/en_303645v030103p.pdf "ETSI EN 303 645 - Cyber Security for Consumer Internet of Things: Baseline Requirements"
 [ec_faq]: https://ec.europa.eu/newsroom/dae/redirection/document/122331 "European Commission – FAQs on the Cyber Resilience Act (Version 1.4, 4 September 2026)"

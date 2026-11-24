@@ -15,8 +15,8 @@ Since **1 August 2025**, any in-scope device has had to meet these essential req
 - **Official Journal (Directive)** – Legally binding text of Directive 2014/53/EU as published on 22 May 2014: [OJ:L:2014:153 HTML][red_oj_dir].
 - **Consolidated Version (RED)** – Integrates subsequent corrections and amendments: [CELEX:02014L0053-20260530 HTML][red_consolidated].
 - **Delegated Act (DA)** – Activates the security requirements for specific product classes: [CELEX:32022R0030 HTML][red_del_act].
-- **Amendment to DA** – Postponed the application date to 1 Aug 2025: [OJ:L_202302444 HTML][red_del_act_amend].
-- **Repeal of DA** – Repeals the DA with effect from 11 Dec 2027, when the CRA applies in full: [CELEX:32026R0339 HTML][red_del_act_repeal].
+- **Amendment to DA** – Postponed the application date to 1 August 2025: [OJ:L_202302444 HTML][red_del_act_amend].
+- **Repeal of DA** – Repeals the DA with effect from 11 December 2027, when the CRA applies in full: [CELEX:32026R0339 HTML][red_del_act_repeal].
 
 The consolidated version is easier for clause citations, but in case of doubt the official journal prevails.
 :::

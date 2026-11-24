@@ -19,7 +19,7 @@ Hardening the pipeline is the practical application of "DevSecOps," where securi
 The **[Cyber-Resilience Act (CRA)](../../standards/eu/cra/index.md)** mandates secure development lifecycle practices. A hardened CI/CD pipeline directly addresses several key requirements:
 
 -   **No Known Exploitable Vulnerabilities ([Annex I § 1 (2)(a)][cra_annexI])**: The CRA requires products to be delivered "without known exploitable vulnerabilities." An automated scanning process in the CI/CD pipeline is the primary mechanism for identifying and blocking these vulnerabilities before release.
--   **Vulnerability Handling ([Annex I § 2 (2)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 v0.9.0 clarifies this, stating that the manufacturer "MUST have a process in place to identify vulnerabilities affecting the TOE" and may match SBOM components against vulnerability databases ([REQ_VH 1.2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this process.
+-   **Vulnerability Handling ([Annex I Part II (1)][cra_annexI])**: The act requires manufacturers to have a process for handling vulnerabilities. BSI TR-03183-1 v0.9.0 clarifies this, stating that the manufacturer "MUST have a process in place to identify vulnerabilities affecting the TOE" and may match SBOM components against vulnerability databases ([REQ_VH 1.2][bsi_tr_03183_p1]). A CI/CD pipeline that scans dependencies is a key part of this process.
 
 ### 1.3. Do I Really Need to Do This?
 

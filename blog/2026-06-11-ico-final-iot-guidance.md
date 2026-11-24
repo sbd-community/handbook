@@ -10,7 +10,7 @@ final guidance for consumer Internet of Things (IoT) products and services
 ([ICO announcement](https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/06/setting-out-our-expectations-for-the-smart-device-industry/)).
 It sets five expectations for manufacturers and developers, including that
 security is an ongoing legal obligation. It arrives after stronger UK privacy
-enforcement powers took effect in February.
+enforcement powers took effect on 5 February 2026.
 
 <!-- truncate -->
 

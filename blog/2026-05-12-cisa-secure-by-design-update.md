@@ -82,7 +82,7 @@ useful only if it is backed by governance, engineering controls, lifecycle
 support, and public accountability.
 
 :::note[Correction, 24 November 2026]
-The updated joint guide this post describes was announced by CISA on 25 October 2023 ([announcement](https://www.cisa.gov/news-events/news/cisa-us-and-international-partners-announce-updated-secure-design-principles-joint-guide)), not on 12 May 2026. CISA's [Secure by Design page](https://www.cisa.gov/securebydesign) shows no later update to the joint guide. What the post says about the guide's principles still applies.
+The updated joint guide this post describes was announced by CISA on 16 October 2023 ([announcement](https://www.cisa.gov/news-events/news/cisa-us-and-international-partners-announce-updated-secure-design-principles-joint-guide)), not on 12 May 2026. CISA's [Secure by Design page](https://www.cisa.gov/securebydesign) shows no later update to the joint guide. What the post says about the guide's principles still applies.
 :::
 
 [cisa-update]: https://www.cisa.gov/news-events/news/cisa-us-and-international-partners-announce-updated-secure-design-principles-joint-guide "CISA and partners announce updated Secure by Design principles joint guide"

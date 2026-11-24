@@ -101,5 +101,5 @@ products. They are not final, but teams that read them now will have far
 fewer surprises when the cited versions arrive.
 
 :::note[Later update]
-On 10 November 2026, the Commission amended standardisation request M/606, and the vertical standards are now due by 31 January 2027. None of the 17 had been published by then. See [Commission Sets New Deadlines for CRA Standards](/blog/2026/11/10/cra-standards-deadlines-m606-amended).
+On 10 November 2026, the Commission amended standardisation request M/606, and the vertical standards are now due by 31 January 2027. None of the 17 had been published by then. The amendment lapses if CEN, CENELEC or ETSI reject it within a month of receiving it. See [Commission Sets New Deadlines for CRA Standards](/blog/2026/11/10/cra-standards-deadlines-m606-amended).
 :::

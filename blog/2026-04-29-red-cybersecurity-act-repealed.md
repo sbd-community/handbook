@@ -25,7 +25,7 @@ obligations apply. This post is a summary, not legal advice.
 
 Delegated Regulation (EU) 2022/30 activated the RED's cybersecurity
 essential requirements, Articles 3(3)(d), (e) and (f), for certain
-categories of radio equipment. It has applied since August 2025. We covered
+categories of radio equipment. It has applied since 1 August 2025. We covered
 its adoption in
 [RED Delegated Act Activates Mandatory Cyber Requirements](/blog/2022/01/12/red-delegated-act-published).
 

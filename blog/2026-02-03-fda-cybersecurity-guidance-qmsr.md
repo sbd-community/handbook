@@ -5,7 +5,7 @@ tags: [fda, medical, us, 524b, compliance]
 description: "FDA's February 2026 final guidance supersedes the June 2025 version and aligns premarket cybersecurity with the QMSR. Here's what device teams should do."
 ---
 
-In February 2026, the US Food and Drug Administration (FDA) issued final
+On 3 February 2026, the US Food and Drug Administration (FDA) issued final
 guidance titled _Cybersecurity in Medical Devices: Quality Management System
 Considerations and Content of Premarket Submissions_
 ([FDA guidance page](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket)).
@@ -24,8 +24,8 @@ change a submission.
 
 ## What was published
 
-FDA's guidance page lists the document as **final**, issued in
-**February 2026** under docket **FDA-2021-D-1158**. It was issued by the
+FDA lists the document as **final**, issued on
+**3 February 2026** under docket **FDA-2021-D-1158**. It was issued by the
 Center for Devices and Radiological Health (CDRH) and the Center for
 Biologics Evaluation and Research (CBER).
 

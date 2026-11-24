@@ -12,7 +12,7 @@ The **NIS 2 Directive (EU) 2022/2555** is a major overhaul of the EU's cybersecu
 Unlike the [Cyber-Resilience Act (CRA)](./cra/index.md), which focuses on the security of *products*, NIS 2 focuses on the cyber resilience of the *organisations* that provide critical services. These organisations—categorised as **'essential'** or **'important'**—must implement robust risk-management measures and report significant incidents to national authorities.
 
 :::info Official texts
-- **Official Journal** – Legally binding record as published on 27 Dec 2022: [OJ:L:2022:333 HTML][nis2_oj].
+- **Official Journal** – Legally binding record as published on 27 December 2022: [OJ:L:2022:333 HTML][nis2_oj].
 - **Consolidated Version** – The full text of Directive (EU) 2022/2555: [CELEX:02022L2555-20221227 HTML][nis2_consolidated].
 - **Implementing Regulation (EU) 2024/2690** – Sets the technical and methodological requirements for the Art. 21 measures, and when an incident is significant, for DNS, TLD, cloud, data centre, content delivery network, managed (security) service, online marketplace, search engine, social network, and trust service providers: [CELEX:32024R2690 HTML][nis2_impl_2690].
 

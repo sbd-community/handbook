@@ -66,9 +66,9 @@ Reporting obligations already apply; full application follows in December 2027:
 
 | Date | Requirement |
 | :--- | :--- |
-| **11 Jun 2026** | **Notified Bodies.** Rules for notifying the conformity assessment bodies that carry out third-party assessments apply (Chapter IV), so that they can be in place before full application. |
-| **11 Sep 2026** | **Vulnerability Reporting is Mandatory (in force).** You must notify actively exploited vulnerabilities and severe incidents to the CSIRT designated as coordinator and to ENISA through ENISA's Single Reporting Platform, live since 11 September 2026, with an early warning within 24 hours. |
-| **11 Dec 2027** | **Full Compliance is Mandatory.** All products placed on the EU market must be fully compliant with all CRA requirements and bear the CE mark. |
+| **11 June 2026** | **Notified Bodies.** Rules for notifying the conformity assessment bodies that carry out third-party assessments apply (Chapter IV), so that they can be in place before full application. |
+| **11 September 2026** | **Vulnerability Reporting is Mandatory (in force).** You must notify actively exploited vulnerabilities and severe incidents to the CSIRT designated as coordinator and to ENISA through ENISA's Single Reporting Platform, live since 11 September 2026, with an early warning within 24 hours. |
+| **11 December 2027** | **Full Compliance is Mandatory.** All products placed on the EU market must be fully compliant with all CRA requirements and bear the CE mark. |
 
 ---
 

@@ -100,7 +100,7 @@ recovery, and debug controls determine whether the rest of the product can
 be trusted.
 
 :::note[Later update]
-On 10 November 2026, the Commission amended standardisation request M/606, and the boot-manager standard is now due by 31 January 2027. EN 304 623 had not been published by then; the public draft remained v0.1.3. See [Commission Sets New Deadlines for CRA Standards](/blog/2026/11/10/cra-standards-deadlines-m606-amended).
+On 10 November 2026, the Commission amended standardisation request M/606, and the boot-manager standard is now due by 31 January 2027. EN 304 623 had not been published by then; the public draft remained v0.1.3. The amendment lapses if CEN, CENELEC or ETSI reject it within a month of receiving it. See [Commission Sets New Deadlines for CRA Standards](/blog/2026/11/10/cra-standards-deadlines-m606-amended).
 :::
 
 [etsi_work_item]: https://portal.etsi.org/webapp/WorkProgram/Report_WorkItem.asp?SearchPage=TRUE&WKI_ID=74414&butExpertSearch=Search&curItemNr=10&includeNonActiveTB=FALSE&includeSubProjectCode=FALSE&optDisplay=10&qCLUSTER_BOOLEAN=OR&qEND_CURRENT_STATUS_CODE=9+AB%3BN24&qETSI_ALL= "ETSI work item report for EN 304 623"

@@ -36,9 +36,8 @@ The ETSI draft states that it is intended to define technical cybersecurity requ
 | **2025-03-04** | ETSI work item created for EN 304 623. |
 | **2026-06-16 / 2026-06-17** | Version `0.1.3` draft and deliverable approval activity appear in the ETSI work item record. |
 | **2026-08-13** | ETSI announces public enquiry on 17 CRA vertical final drafts. |
-| **2026-11-19** | ETSI work item status: draft review after public enquiry. |
-| **2027-01-31** | Deadline for vertical standards under the amended standardisation request M/606. |
 | **2026-09-11** | CRA vulnerability and incident reporting obligations began for manufacturers. |
+| **2027-01-31** | Deadline for vertical standards under the amended standardisation request M/606, unless a European standardisation organisation rejects the amendment within a month of receiving it. |
 | **2027-12-11** | Full CRA application date for product requirements, conformity assessment, and CE marking. |
 
 ## Scope: which boot managers are covered?
