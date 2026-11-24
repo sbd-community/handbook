@@ -45,6 +45,8 @@ The **[Cyber Resilience Act (CRA)](../../standards/eu/cra/index.md)** explicitly
 
 BSI TR-03183-1 reinforces this with a requirement to document integrated components ([REQ_VH 1][bsi_tr_03183_p1]).
 
+The CRA does not prescribe SBOM fields. A good baseline is the **[2026 Minimum Elements for an SBOM][cisa_sbom_2026]**, published in July 2026 by CISA with the NSA, FBI and 15 international partners, including the BSI and ANSSI. It replaces the 2021 NTIA minimum elements and adds fields for component hashes and licences, SBOM author signatures, and SBOM generation context (before build, build, or after build). See [CISA Publishes 2026 SBOM Minimum Elements](/blog/2026/07/29/cisa-2026-sbom-minimum-elements) for a summary.
+
 The CRA does not make "VEX" the only permitted communication format. VEX is a practical, standardised way to communicate vulnerability status and exploitability analysis, especially where customers or operators need machine-readable context.
 
 Boot managers and bootloader components should be treated as first-class SBOM entries. The draft **[ETSI EN 304 623](../../standards/eu/cra/en-304-623-boot-managers.md)** makes vulnerability handling and support-period evidence relevant even for low-level firmware that teams may historically have tracked outside the normal software inventory.
@@ -204,3 +206,4 @@ If you need to:
 [cra_art13]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#art_13 "CRA Article 13 - Obligations of manufacturers"
 [cra_annexI]: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R2847-20241120#anx_I "CRA Annex I - Essential cybersecurity requirements"
 [bsi_tr_03183_p1]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03183/BSI-TR-03183-1-0_9_0.pdf "BSI TR-03183 Part 1: General requirements"
+[cisa_sbom_2026]: https://www.cisa.gov/resources-tools/resources/2026-minimum-elements-software-bill-materials-sbom "CISA: 2026 Minimum Elements for a Software Bill of Materials"

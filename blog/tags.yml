@@ -132,3 +132,23 @@ etsi:
   label: ETSI
   description: Posts related to ETSI standards and standardisation activity.
   permalink: /etsi
+
+sbom:
+  label: SBOM
+  description: Posts about software bills of materials and related supply-chain transparency guidance.
+  permalink: /sbom
+
+germany:
+  label: Germany
+  description: Posts about German regulation and national implementation of EU cybersecurity law.
+  permalink: /germany
+
+fcc:
+  label: FCC
+  description: Posts related to the US Federal Communications Commission, including the U.S. Cyber Trust Mark.
+  permalink: /fcc
+
+cen-cenelec:
+  label: CEN-CENELEC
+  description: Posts related to CEN and CENELEC European standards, including the EN 40000 series.
+  permalink: /cen-cenelec

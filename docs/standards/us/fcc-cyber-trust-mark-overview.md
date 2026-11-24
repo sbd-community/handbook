@@ -17,6 +17,12 @@ Products that meet the program's baseline security standards can display the FCC
   - [FCC-24-26A1: Report and Order and Further Notice of Proposed Rulemaking][fcc_order_txt]
 - **Program Overview**: The FCC's main page for the Cyber Trust Mark.
   - [FCC Cyber Trust Mark Homepage][fcc_homepage]
+- **Label, renewal and surveillance proposals**: Public Notice released 27 October 2026, PS Docket No. 23-239.
+  - [DA 26-1162: Public Notice][fcc_da_26_1162]
+:::
+
+:::note Programme status (November 2026)
+In April 2026 the FCC selected the **ioXt Alliance** as Lead Administrator, replacing UL Solutions. In October 2026 it proposed a three-year certification renewal cycle, post-market surveillance, and label rules based on CTA-2120. Technical requirements and testing procedures are still to be finalised. See [FCC Proposes Cyber Trust Mark Renewal and Surveillance Rules](/blog/2026/10/27/fcc-cyber-trust-mark-renewal-surveillance).
 :::
 
 **Relationship to Other Standards**
@@ -62,4 +68,5 @@ A central feature of the program is the on-product QR code. This code must link 
 <!-- Citations -->
 [fcc_order_txt]: https://docs.fcc.gov/public/attachments/FCC-24-26A1.txt "FCC Report and Order (FCC 24-26)"
 [fcc_homepage]: https://www.fcc.gov/CyberTrustMark "FCC Cyber Trust Mark"
+[fcc_da_26_1162]: https://docs.fcc.gov/public/attachments/DA-26-1162A1.pdf "FCC DA 26-1162: Public Notice on label design, certification renewal, and post-market surveillance"
 [fcc_covered_list]: https://www.fcc.gov/supplychain/coveredlist "FCC Covered Communications Equipment or Services List" 

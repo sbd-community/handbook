@@ -10,7 +10,7 @@ tags: [cra, harmonised-standards, compliance, eu]
 
 The Cyber-Resilience Act (CRA) sets legal obligations in broad, technology-neutral terms. Harmonised standards are the implementation layer that turns those obligations into more concrete, testable expectations for specific products, processes, and product categories.
 
-For manufacturers, the important point is timing. Several CRA standards are now available as mature drafts, but a draft standard is not the same thing as a presumption-of-conformity route.
+For manufacturers, the important point is timing. The first two horizontal CRA standards, EN 40000-1-1 and EN 40000-1-2, were published in November 2026, and 17 ETSI product-category standards went to public enquiry in August 2026. But neither a published nor a draft standard is a presumption-of-conformity route until it is cited in the Official Journal.
 
 :::warning Draft standards
 Draft CRA harmonised standards do not provide presumption of conformity until finalised and cited in the Official Journal of the EU. Use them as design and evidence-planning inputs, not as final compliance claims.
@@ -26,7 +26,12 @@ Until citation happens, draft standards are still useful because they show how r
 |--------|------------|--------|
 | [CRA Article 27][cra_art27] | Legal basis for presumption of conformity | In force |
 | [Standardisation request M/606][mandate_m606] | Commission request for CRA harmonised standards | Accepted by European standards organisations |
+| [EN 40000-1-1 and EN 40000-1-2][cen_en_40000] | Horizontal standards: vocabulary; principles, product risk management and lifecycle activities | Published 18 November 2026; OJ citation not yet announced |
+| FprEN 40000-1-3 | Horizontal standard: vulnerability handling | Approval stage; publication announced as coming soon |
+| [17 ETSI vertical standards (EN 304 6xx)][etsi_17_verticals] | Product-category standards for Annex III Class I and Class II products | Public enquiry announced 13 August 2026; procedures closing mid-September to mid-November 2026 |
 | [ETSI EN 304 623][etsi_en_304_623] | Draft vertical standard for boot managers | Draft / approval procedure |
+
+For summaries, see [First CRA Standards Published: EN 40000-1-1 and 1-2](/blog/2026/11/19/first-cra-standards-en-40000) and [ETSI Opens Enquiry on 17 CRA Product Standards](/blog/2026/08/13/etsi-cra-vertical-standards-enquiry).
 
 ## How to use this section
 
@@ -52,4 +57,6 @@ These pages explain standards and conformity context. They should point into the
 <!-- Citations -->
 [cra_art27]: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02024R2847-20241120#art_27 "CRA Article 27 - Presumption of conformity"
 [mandate_m606]: https://ec.europa.eu/growth/tools-databases/enorm/mandate/606_en "Standardisation request M/606"
+[cen_en_40000]: https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-11-19-cra-standards-en-40000-1-1-and-en-40000-1-2/ "CEN-CENELEC: first European standards supporting the CRA"
+[etsi_17_verticals]: https://www.etsi.org/newsroom/press-releases/etsi-launches-approval-process-for-17-european-standards-supporting-the-cyber-resilience-act/ "ETSI: approval process for 17 European Standards supporting the CRA"
 [etsi_en_304_623]: https://www.etsi.org/deliver/etsi_en/304600_304699/304623/00.01.03_20/en_304623v000103ev.pdf "ETSI EN 304 623 v0.1.3 draft – Cybersecurity requirements for boot managers"
