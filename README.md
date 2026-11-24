@@ -12,17 +12,17 @@ The handbook is built with [Docusaurus 3](https://docusaurus.io/) and is a siste
 
 Read these root documents before changing structure, prose, or styling, and the periodic review guide before running a review:
 
-- [Purpose & Positioning](./purpose-and-positioning.md) — Mission, audience, success criteria, content pillars, and tone
-- [Navigation Structure](./navigation-structure.md) — Top-level menu and user journeys
-- [Style Guide](./style-guide.md) — Voice, terminology, page and blog post structure, citation format, dates, accessibility, and SEO metadata
-- [Brand Guidelines](./brand-guidelines.md) — Logo, colour palette, typography, and iconography
-- [Entry Page SEO Strategy](./entry-page-seo-strategy.md) — Which pages are entry points from search and how they are titled and described
+- [Purpose & Positioning](./purpose-and-positioning.md) — Mission, promise and limit, audience, editorial thesis, content pillars, sister-site boundaries, news scope, and non-goals
+- [Navigation Structure](./navigation-structure.md) — Navbar and sidebars, URL and linking conventions, sitemap, user journeys, homepage and footer routing, and where new pages go
+- [Style Guide](./style-guide.md) — Voice, authority language, spelling and dates, terminology, page and blog post structure, citation format, SEO metadata, and the editorial review checklist
+- [Brand Guidelines](./brand-guidelines.md) — Naming, logo and assets, colour palette and contrast, typography, UI style, and diagrams
+- [Entry Page SEO Strategy](./entry-page-seo-strategy.md) — What the site owns, which pages are entry points from search, their required structure, and cross-page routing
 - [Periodic Review](./periodic-review.md) — The monthly full-site review: what it checks, how sources are fetched, and the report it leaves under `reviews/`
 - [Content Marketing Article Style Guide](./content-marketing/content-marketing-article-style-guide.md) — Writing articles for engineering trade publications
 
 ### Handbook Content (`docs/`)
 
-- [Quick Start](./docs/quick-start/) — What Secure by Design means, a CRA primer, the CISA principles, and a first-sprint checklist
+- [Quick Start](./docs/quick-start/) — What Secure-by-Design means, a CRA primer, the CISA principles, and a first-sprint checklist
 - [Standards](./docs/standards/index.md) — Breakdowns of regulations and standards by region: EU (CRA, NIS 2, RED, MDR, IVDR), UK, US, Australia, and global standards such as ETSI EN 303 645 and IEC 62443
 - [Implementation](./docs/implementation/index.md) — Build-phase and operate-phase playbooks: threat modelling, secure boot, key provisioning, SBOM and VEX, OTA updates, vulnerability disclosure, and more
 - [Resources](./docs/resources/index.md) — Checklists, example threat models, policy templates, hardware notes, cryptography under the CRA, real-world vulnerability lessons, and the glossary

@@ -1,110 +1,96 @@
 # Secure-by-Design Handbook – Brand Guidelines
 
-> **Purpose**  This document codifies visual and written conventions so every contributor can present a consistent, credible brand experience across web, slide decks, and social channels.
+These guidelines define the visual identity, brand assets, colour palette, typography, and presentation standards for the Secure-by-Design Handbook across the website, social previews, diagrams, and external materials. CSS tokens and assets live in `src/css/custom.css`, `src/pages/index.module.css`, and `static/img/`.
 
----
+## Brand Essence
 
-## 1  Brand Essence
+| Element | Guidance |
+| --- | --- |
+| Name | **Secure-by-Design Handbook** (navbar title: **Secure-by-Design**) |
+| Domain | `www.securebydesignhandbook.com` |
+| Tagline | Authoritative standards breakdowns and practical playbooks for building cyber-resilient connected devices |
+| Personality | Confident, pragmatic, engineer-friendly, and regulation-aware |
+| Visual tone | Calm, utilitarian, and readable – an engineering reference, not a marketing site |
 
-* **Tag‑line**  *Cyber‑security guidance for connected‑device makers.*
-* **Personality**  Confident, pragmatic, engineer‑friendly, European‑law aware.
-* **Voice**  Active, inclusive, plain English; avoid marketing fluff.
+The Secure-by-Design Handbook is part of the same open handbook family as the **PQC Handbook** and the **Supply Chain Security Handbook**. They share the teal-and-cyan visual system and shield mark so readers recognise the family, while each keeps its own editorial identity.
 
----
+## Naming
 
-## 2  Logo Suite
+- Refer to the publication as the **Secure-by-Design Handbook**, and to the practice as **Secure-by-Design** (capital S and D, hyphenated), as set in the style guide's Terminology section. Keep an organisation's own spelling when naming its programme or document (for example, *CISA Secure by Design*).
+- Keep naming vendor-neutral and jurisdiction-neutral: avoid phrasing or sub-brands that imply endorsement by a regulator, standards body, notified body, or commercial supplier.
+- For editorial tone and prose mechanics, follow [style-guide.md](./style-guide.md).
 
-| Variant      | File                                    | Usage                                                        |
-| ------------ | --------------------------------------- | ------------------------------------------------------------ |
-| Primary mark | `static/img/tech_shield_padlock_v5.svg` | Header (64 px), slide titles, favicons (export 32 × 32 PNG). |
-| Monochrome   | Export SVG set to `stroke:black`        | Print docs & dark backgrounds.                               |
+## Logo and Asset Suite
 
-**Clear‑space**  ≥ 0.5 × logo height around all sides.
-**Minimum size**  24 px height (stroke remains legible).
+| Asset | File | Format / Size | Usage |
+| --- | --- | --- | --- |
+| Header logo | `static/img/logo.svg` | Vector SVG, `200 × 200` viewport, cyan fills | Navbar mark (`alt="Secure-by-Design Handbook Logo"`), slide headers, and compact lockups. |
+| Favicon | `static/img/favicon.ico` | ICO with `16 × 16` and `32 × 32` images | Browser tab and bookmark icon. |
+| Social preview card | `static/img/sbdc-social-card.png` (source `sbdc-social-card.svg`) | `1200 × 630` PNG | OpenGraph and link-preview card (`themeConfig.image`): the tagline in white Inter on a dark navy gradient with a cyan accent bar. Social platforms do not render SVG previews, so re-export the PNG whenever the SVG changes. |
 
-*Do not* skew, outline, or change stroke thickness.  Use colour overrides only via CSS `currentColor`.
+Logo usage rules:
 
----
+- Use the shared family shield in `static/img/`; do not create a separate mark or redraw it.
+- Keep clear space of at least `0.5×` the logo height on all sides and keep it legible down to `24 px` height.
+- Do not stretch, skew, outline, add drop shadows, or recolour it outside the palette.
 
-## 3  Colour Palette
+Known gaps against the family standard: the social card's navy gradient (`#1E3A5F` to `#0F1C2E`) is outside the palette, where the sister sites use Deep Teal; and there is no SVG favicon or Apple touch icon. Fix both together with any other asset change.
 
-| Role                    | Hex       | Preview                                                         |
-| ----------------------- | --------- | --------------------------------------------------------------- |
-| **Primary Cyan**        | `#00C5D8` | ![#00C5D8](https://via.placeholder.com/24/00C5D8/000000?text=+) |
-| **Deep Teal (Dark BG)** | `#013B4E` | ![#013B4E](https://via.placeholder.com/24/013B4E/000000?text=+) |
-| **Surface Light**       | `#F5FCFD` | ![#F5FCFD](https://via.placeholder.com/24/F5FCFD/000000?text=+) |
-| **Mid Grey**            | `#5E6E75` | ![#5E6E75](https://via.placeholder.com/24/5E6E75/000000?text=+) |
-| **Highlight Orange**    | `#FF9F45` | ![#FF9F45](https://via.placeholder.com/24/FF9F45/000000?text=+) |
+## Colour Palette
 
-Accessibility AA checked for text on backgrounds.
-Light‑mode body text: Mid Grey on Surface Light (AA); Dark‑mode: Surface Light on Deep Teal.
+The site uses the handbook-family teal-and-cyan palette in light and dark modes.
 
----
+| Role | Hex | Usage |
+| --- | --- | --- |
+| Primary Cyan | `#00C5D8` | Interactive accents, card hover borders, buttons, and focal highlights (`--ifm-color-primary`); links and active states in dark mode. |
+| Link Teal | `#006B78` | Light-mode text links and active states on Surface Light, where Primary Cyan is too pale for text. Not yet set in `custom.css`; see the contrast rules below. |
+| Deep Teal | `#013B4E` | Light-mode navbar, footer in both modes, hero background, and dark-mode page background. |
+| Darker Teal | `#012A38` | Dark-mode navbar background, for subtle elevation against Deep Teal pages. |
+| Surface Light | `#F5FCFD` | Light-mode page background and dark-mode body text and footer links. |
+| Mid Grey | `#5E6E75` | Light-mode body text on Surface Light. |
+| Code Surface | `#EEF9FB` / `#024C63` | Code backgrounds in light mode (`#EEF9FB`) and dark mode (`#024C63`). |
+| Highlight Orange | `#FF9F45` | Warnings or rare emphasis only (`--ifm-color-warning`). |
 
-## 4  Typography
+Colour and accessibility rules:
 
-| Use        | Font family             | CSS sample                                           |
-| ---------- | ----------------------- | ---------------------------------------------------- |
-| Headings   | **Inter SemiBold 700**  | `font-family: "Inter", sans-serif; font-weight:700;` |
-| Body       | **Inter Regular 400**   | `font-family: "Inter", sans-serif;`                  |
-| Code / CLI | **Source Code Pro 500** | `font-family: "Source Code Pro", monospace;`         |
+- Never convey meaning, priority, or status by colour alone; pair colour with text or a structural label.
+- Maintain WCAG AA contrast: Mid Grey on Surface Light is about 5.1:1, Surface Light on Deep Teal about 11.6:1, and Primary Cyan on Deep Teal about 5.7:1.
+- Never set text in Primary Cyan on Surface Light: it is about 2:1. Use Link Teal (about 6:1) for light-mode links and active states. The site currently breaks this rule, because light-mode links inherit `--ifm-color-primary`; setting `--ifm-link-color` to Link Teal under `[data-theme='light']` fixes it.
+- Reference Infima variables in `src/css/custom.css` rather than hardcoding hex values inside components.
 
-Load via Google Fonts or self‑host WOFF2; always include system‑sans fall‑back.
+## Typography
 
----
+| Role | Typeface | Weight | CSS reference |
+| --- | --- | --- | --- |
+| Headings | **Inter** | `700` | `--ifm-font-family-base: 'Inter', sans-serif; --ifm-heading-font-weight: 700;` |
+| Body and UI | **Inter** | `400` (`700` strong) | `--ifm-font-family-base: 'Inter', sans-serif;` |
+| Code and identifiers | **Source Code Pro** | `500` | `--ifm-font-family-monospace: 'Source Code Pro', monospace; --ifm-code-font-size: 95%;` |
 
-## 5  Iconography & Illustrations
+Fonts load from Google Fonts (`stylesheets` in `docusaurus.config.ts`). Always keep system sans-serif and monospace fallbacks. Code blocks use the `github` syntax theme in light mode and `dracula` in dark mode.
 
-* Use simple stroked icons (Lucide React) matching logo stroke width (\~2 px at 24 px).
-* Illustrations: flat‑vector, 2‑colour max, primary cyan accent.
+## UI Visual Style
 
----
+| Element | Visual guidance |
+| --- | --- |
+| Navbar | Deep Teal (`#013B4E` in light mode, `#012A38` in dark mode) with light text and the five section items on one line. |
+| Footer | Deep Teal (`#013B4E`) with Surface Light text and links in both modes. |
+| Cards | Homepage entry-path and role cards: Infima cards that lift slightly on hover and stack to one column on narrow screens through the grid; hero and community buttons stack below `768px`. |
+| Homepage | A calm reference entry point. A Deep Teal hero with the site title, tagline, and two buttons; then the pillars, *Choose your next step*, *Get started by role*, and a closing community and news section (routing in [navigation-structure.md](./navigation-structure.md#homepage-and-footer-routing)). Avoid promotional banners, gradients, and decorative splash graphics. |
+| Blog | The listing and posts use the standard page, card, and table styles, with reading time shown. No hero images, per-post illustrations, or promotional banners; posts share the site's social preview card. |
+| Tables | Clean borders and scannable density; keep to four columns or fewer so tables stay readable on phones (style guide, Paragraphs & Lists). |
+| Icons | The homepage uses emoji as card icons. Do not add an icon library for decoration alone; if icons are needed, use one consistent stroked set at about `2 px` stroke at `24 px`. |
 
-## 6  UI Components (Docusaurus)
+## Diagrams and Illustrations
 
-| Component      | Spec                                                               |
-| -------------- | ------------------------------------------------------------------ |
-| Navbar BG      | `background-color:#013B4E; color:#F5FCFD;`                         |
-| Primary Button | Cyan BG, white text; hover → darker teal border.                   |
-| Code block     | Deep Teal BG, `font-family: "Source Code Pro"`, cyan line‑numbers. |
+- Keep diagrams and illustrations functional and low-noise: each should clarify a workflow, timeline, decision, or trust boundary.
+- Draw diagrams in Mermaid (`mermaid` code blocks), which uses the `neutral` theme in light mode and `dark` theme in dark mode so diagrams stay legible in both. Follow each diagram with a sentence that states its source, so the diagram is never the only place a fact appears.
+- For vector illustrations, prefer flat vector or consistent `~2 px` stroke line work, using Primary Cyan as an accent rather than a fill.
+- Avoid stock art, padlock-and-hacker clichés, and seal or badge motifs that suggest certification, CE marking, or regulatory approval.
 
----
+## Governance
 
-## 7  Tone of Voice & Writing
+Review visual changes together with `src/css/custom.css`, `src/pages/index.module.css`, and `static/img/`, and check both colour modes and a phone-width layout before merging. Related maintainer guides cover the non-visual side of the handbook:
 
-Follow `docs/style-guide.md`. Key reminders:
-
-* Active voice, Oxford comma.
-* Define acronyms on first use.
-* Avoid hyperbole ("world‑class", "ground‑breaking").
-
----
-
-## 8   Linking Best Practices
-
-All internal links to other documents within the handbook **must** be relative file paths. This ensures that the navigation remains robust and does not break if the site's URL structure is changed in the future.
-
--   **Good:** `[CRA Overview](../standards/eu/cra/index.md)`
--   **Bad:** `[CRA Overview](/docs/standards/cra-overview)`
-
-When linking to a specific section, use the markdown file extension and the anchor:
-
--   **Good:** `[Engineering Benchmarks](../standards/eu/cra/index.md#annex-i-benchmarks)`
--   **Bad:** `[Engineering Benchmarks](/docs/standards/cra-overview#annex-i-benchmarks)`
-
----
-
-## 9  Asset Export Cheatsheet
-
-| Asset             | Dimension  | Format                          |
-| ----------------- | ---------- | ------------------------------- |
-| Website favicon   | 32 × 32    | PNG (optimised)                 |
-| Social Open‑Graph | 1200 × 630 | PNG (logo top‑left, title text) |
-| Slide title       | 1280 × 200 | SVG (primary mark)              |
-
----
-
-## 10  Governance
-
-* Brand steward: **{TBD}** reviews logo changes.
-* Major palette or logo shifts require PR + two approvals.
+- [purpose-and-positioning.md](./purpose-and-positioning.md) – mission, audience, editorial thesis, sister-site boundaries, and non-goals
+- [navigation-structure.md](./navigation-structure.md) – URL structure, linking, sidebars, and routing
+- [style-guide.md](./style-guide.md) – editorial voice, terminology, page patterns, and sourcing
